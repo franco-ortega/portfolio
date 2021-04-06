@@ -1,8 +1,7 @@
-import React from 'react'
-// import PropTypes from 'prop-types'
+import React from 'react';
 import './App.css';
 
-const App = props => {
+const App = () => {
   return (
     <div className="App">
       <h1>Franco Ortega</h1>
@@ -12,9 +11,5 @@ const App = props => {
     </div>
   );
 };
-
-// App.propTypes = {
-
-// };
 
 export default App;
