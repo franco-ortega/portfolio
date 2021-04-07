@@ -225,3 +225,13 @@
     font-size: 3.25vw;
   }
 }
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @supports (not (-ms-accelerator:true))
+    and (not (-moz-appearance:none)) {
+      .CornerSW, .CornerSE {
+        bottom: -2.5%;
+        
+      }
+} }
