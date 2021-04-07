@@ -145,7 +145,7 @@
         transform: rotate(-90deg);
         transform-origin: left top;
 
-        position: fixed;
+        position: absolute;
         top: 100%; 
         
         height: 100vw;
