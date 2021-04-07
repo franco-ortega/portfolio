@@ -6,6 +6,10 @@ const Ocean = () => {
   return (
     <div className={styles.Ocean}>
       <ComingSoon />
+      <div className={styles.CornerNW}></div>
+      <div className={styles.CornerNE}></div>
+      <div className={styles.CornerSW}></div>
+      <div className={styles.CornerSE}></div>
     </div>
   );
 };
