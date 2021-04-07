@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
 
+  position: fixed;
+  left: 32%;
+
   color: goldenrod;
   font-size: x-large;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -11,4 +14,4 @@
 
 .Margins {
     margin: .75vw;
-  }
+}

@@ -86,7 +86,31 @@
     right: 0%;
   }
 
-  
+.OceanGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  height: 100%;
+}
+
+.OceanGridItem {
+  border: none solid black;
+}
+
+.OceanGridName {
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: goldenrod;
+  font-size: x-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 @media screen and (max-width: 900px) and (orientation: portrait) {
     .Ocean {
