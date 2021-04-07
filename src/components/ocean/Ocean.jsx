@@ -15,9 +15,9 @@ const Ocean = () => {
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
         <div className={`${styles.OceanGridItem} ${styles.OceanGridName}`}>
-          <h1>Franco Ortega</h1>
-          <h3>Full Stack Software Engineer</h3>
-          <h4>&lowast; &lowast; &lowast; portfolio coming soon &lowast; &lowast; &lowast;</h4>
+          <p className={styles.Name}>Franco Ortega</p>
+          <p className={styles.Title}>Full Stack Software Engineer</p>
+          <p className={styles.Message}>&lowast; &lowast; &lowast; portfolio coming soon &lowast; &lowast; &lowast;</p>
         </div>
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
@@ -45,6 +45,42 @@ const Ocean = () => {
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        
 
       </div>
     </div>
