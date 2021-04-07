@@ -1,6 +1,4 @@
 .Ocean {
-    background: blue;
-
     background: linear-gradient(90deg, #241192, #1d2ec9,  #291181, #2e1dcc, #1567d1);
     background-blend-mode: soft-light;
     background-size: 400% 400%;
@@ -11,8 +9,9 @@
 
     height: 100vh;
     width: 100vw;
-}
 
+    border: 1vw solid goldenrod;
+}
 
   @keyframes gradient {
     0% {
@@ -56,18 +55,105 @@
     }
   }
 
+  .CornerNW, .CornerNE, .CornerSW, .CornerSE {
+    background: goldenrod;
+    height: 4vw;
+    width: 4vw;
+    position: fixed;
+  }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+  .CornerNW {
+    border-radius: 75% 200% 500% 200%;
+    top: 0%;
+    left: 0%;
+  }
+
+  .CornerNE {
+    border-radius: 200% 200% 75% 500%;
+    top: 0%;
+    right: 0%;
+  }
+
+  .CornerSW {
+    border-radius: 75% 500% 200% 200%;
+    bottom: 0%;
+    left: 0%;
+  }
+
+  .CornerSE {
+    border-radius: 500% 200% 75% 200%;
+    bottom: 0%;
+    right: 0%;
+  }
+
+  
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
     .Ocean {
         transform: rotate(-90deg);
-
         transform-origin: left top;
+
+        position: absolute;
+        top: 100%; 
         
         height: 100vw;
         width: 100vh;
-
-        overflow-x: hidden;
-        position: absolute;
-        top: 100%; 
     }
+
+    .CornerNW, .CornerNE, .CornerSW, .CornerSE {
+      height: 4vw;
+      width: 4vw;
+    }
+
+    .CornerNW {
+      top: -1%;
+      left: -1%;
+    }
+
+    .CornerNE {
+      top: -1%;
+      right: -1%;
+    }
+
+    .CornerSW {
+      bottom: -1%;
+      left: -1%;
+    }
+
+    .CornerSE {
+      bottom: -1%;
+      right: -1%;
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+
+  .Ocean {
+    border: 1.5vw solid goldenrod;
+  }
+    
+  .CornerNW, .CornerNE, .CornerSW, .CornerSE {
+    height: 6vw;
+    width: 6vw;
+  }
+
+  .CornerNW {
+    top: -1.5%;
+    left: -1%;
+  }
+
+  .CornerNE {
+    top: -1.5%;
+    right: -1%;
+  }
+
+  .CornerSW {
+    bottom: -1.5%;
+    left: -1%;
+  }
+
+  .CornerSE {
+    bottom: -1.5%;
+    right: -1%;
+  }
 }
