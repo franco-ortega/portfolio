@@ -5,15 +5,10 @@ import styles from './Ocean.module.css';
 const Ocean = () => {
   return (
     <div className={styles.Ocean}>
-      {/* <ComingSoon /> */}
-      {/* <div className={styles.CornerNW}></div> */}
-      {/* <div className={styles.CornerNE}></div> */}
-      {/* <div className={styles.CornerSW}></div> */}
-      {/* <div className={styles.CornerSE}></div> */}
       <div className={styles.OceanGrid}>
 
         {/* Top Left Corner */}
-        <div className={styles.OceanGridItem}>
+        <div className={`${styles.OceanGridItem} ${styles.CornerNWContainer}`}>
           <div className={styles.CornerNW}></div>
         </div>
 
@@ -27,7 +22,7 @@ const Ocean = () => {
         {/* Title */}
         <div className={`${styles.OceanGridItem} ${styles.OceanGridTitle}`}>
           <p className={styles.Title}>Full Stack Software Engineer</p>
-          <p className={styles.Message}>&lowast; &lowast; &lowast; portfolio coming soon &lowast; &lowast; &lowast;</p>
+          <p className={styles.Message}>&lowast; &lowast; &lowast; portfolio in progress &lowast; &lowast; &lowast;</p>
         </div>
 
         <div className={`${styles.OceanGridItem} ${styles.Test}`}></div>
@@ -114,7 +109,7 @@ const Ocean = () => {
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
+        
 
         {/* Bottom Right Corner */}
         <div className={`${styles.OceanGridItem} ${styles.CornerSEContainer}`}>
