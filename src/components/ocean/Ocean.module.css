@@ -58,7 +58,6 @@
 
 
 @media screen and (max-width: 500px) and (orientation: portrait) {
-
     .Ocean {
         transform: rotate(-90deg);
 
@@ -69,8 +68,6 @@
 
         overflow-x: hidden;
         position: absolute;
-        top: 100%;
-        
+        top: 100%; 
     }
 }
-
