@@ -55,3 +55,21 @@
       background-position: 0% 50%;
     }
   }
+
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    .Ocean {
+        transform: rotate(-90deg);
+
+        transform-origin: left top;
+        
+        height: 100vw;
+        width: 100vh;
+
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        
+    }
+}
+
