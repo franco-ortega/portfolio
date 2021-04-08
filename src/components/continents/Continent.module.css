@@ -1,0 +1,39 @@
+.ContinentContainer {
+  grid-column: 5 / 9;
+  grid-row: 3 / 6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.OuterCoastline {
+    background: #57abdf;
+    box-shadow: 0vw 0vw 2vw 2vw darkblue;
+    padding: 0.75vw;
+}
+
+.Coastline {
+    background: #6fbae9;
+    border: .15vw dashed brown;
+    border-radius: inherit;
+    
+    padding: 1vw;
+    height: fit-content;
+    width: fit-content;
+}
+
+.Continent {
+    background: tan;
+    height: 25vh;
+    width: 25vw;
+    border: .25vw solid brown;
+    border-radius: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 3vw;
+
+}
