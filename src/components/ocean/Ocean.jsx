@@ -46,8 +46,17 @@ const Ocean = () => {
         </div>
 
         <Continent
+          title={continentData.projects.title}
+          shape={continentData.projects.shape}
+          size={continentData.projects.size}
+          grid={continentData.projects.grid}
+        />
+
+        <Continent
           title={continentData.profile.title}
-          shape={continentData.shape}
+          shape={continentData.profile.shape}
+          size={continentData.profile.size}
+          grid={continentData.profile.grid}
         />
 
 

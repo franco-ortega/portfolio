@@ -1,10 +1,11 @@
 .ContinentContainer {
-  grid-column: 5 / 9;
-  grid-row: 3 / 6;
-
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.OuterCoastline:hover {
+    cursor: pointer;
 }
 
 .OuterCoastline {
@@ -35,5 +36,6 @@
     justify-content: center;
     
     font-size: 3vw;
+    font-weight: bold;
 
 }
