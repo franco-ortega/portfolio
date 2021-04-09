@@ -29,11 +29,6 @@ const Ocean = () => {
           <div className={styles.CornerSE}></div>
         </div>
 
-
-
-
-        <div className={styles.OceanGridItem}></div>
-
         {/* Name */}
         <div className={`${styles.OceanGridItem} ${styles.OceanGridName}`}>
           <p className={styles.Name}>Franco Ortega</p>
@@ -108,28 +103,7 @@ const Ocean = () => {
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
 
-
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
 
 
 
