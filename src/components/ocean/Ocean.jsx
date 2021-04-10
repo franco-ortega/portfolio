@@ -2,9 +2,9 @@ import React from 'react';
 // import Continent from '../continents/Continent';
 // import { continentData } from '../continents/continentData';
 import resume from '../../assets/FrancoOrtega_Resume.pdf';
-import styles from './Ocean.module.css';
-import ProfileSmall from '../continents/ProfileSmall';
 import Projects from '../continents/Projects';
+import Profile from '../continents/Profile';
+import styles from './Ocean.module.css';
 
 const Ocean = () => {
   return (
@@ -60,7 +60,7 @@ const Ocean = () => {
           size={continentData.profile.size}
           title={continentData.profile.title}
         /> */}
-        <ProfileSmall />
+        <Profile />
 
         {/* Resume */}
         <a
