@@ -9,14 +9,14 @@
 }
 
 .OuterCoastline {
-    background: #57abdf;
-    box-shadow: 0vw 0vw 2vw 2vw darkblue;
+    background: var(--outer-coastline);
+    box-shadow: 0vw 0vw 2vw 2vw var(--coastline-shadow);
     padding: 0.75vw;
 }
 
 .Coastline {
-    background: #6fbae9;
-    border: .15vw dashed brown;
+    background: var(--inner-coastline);
+    border: .15vw dashed var(--continent-border);
     border-radius: inherit;
     
     padding: 1vw;
@@ -25,10 +25,10 @@
 }
 
 .Continent {
-    background: tan;
+    background: var(--continent);
     height: 25vh;
     width: 25vw;
-    border: .25vw solid brown;
+    border: .25vw solid var(--continent-border);
     border-radius: inherit;
 
     display: flex;
