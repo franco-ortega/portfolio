@@ -1,6 +1,5 @@
 import React from 'react';
 import Continent from '../continents/Continent';
-// import ComingSoon from '../../comingSoon/ComingSoon';
 import { continentData } from '../continents/continentData';
 import resume from '../../assets/FrancoOrtega_Resume.pdf';
 import styles from './Ocean.module.css';
@@ -96,26 +95,6 @@ const Ocean = () => {
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-
-
-
-
-
       </div>
     </div>
   );
