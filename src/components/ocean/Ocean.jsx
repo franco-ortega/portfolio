@@ -1,7 +1,7 @@
 import React from 'react';
-// import Continent from '../continents/Continent';
+import Continent from '../continents/Continent';
 // import ComingSoon from '../../comingSoon/ComingSoon';
-// import { continentData } from '../continents/continentData';
+import { continentData } from '../continents/continentData';
 import styles from './Ocean.module.css';
 
 const Ocean = () => {
@@ -41,18 +41,20 @@ const Ocean = () => {
         </div>
 
         {/* <Continent
-          title={continentData.projects.title}
+          grid={continentData.projects.grid}
+          link={continentData.projects.link}
           shape={continentData.projects.shape}
           size={continentData.projects.size}
-          grid={continentData.projects.grid}
-        />
+          title={continentData.projects.title}
+        /> */}
 
         <Continent
-          title={continentData.profile.title}
+          grid={continentData.profile.grid}
+          link={continentData.profile.link}
           shape={continentData.profile.shape}
           size={continentData.profile.size}
-          grid={continentData.profile.grid}
-        /> */}
+          title={continentData.profile.title}
+        />
 
 
         <div className={`${styles.OceanGridItem} ${styles.Test}`}></div>
