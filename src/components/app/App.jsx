@@ -4,7 +4,8 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import Profile from '../continents/Profile';
+import ProfileDetails from '../continents/ProfileDetails';
+import ProjectsDetails from '../continents/ProjectsDetails';
 import Resume from '../continents/Resume';
 
 import Ocean from '../ocean/Ocean';
@@ -17,7 +18,8 @@ const App = () => {
         <Ocean />
         {/* <Profile /> */}
         <Switch>
-          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/projects" component={ProjectsDetails} />
+          <Route exact path="/profile" component={ProfileDetails} />
           <Route exact path="/resume" component={Resume} />
         </Switch>
       </Router>

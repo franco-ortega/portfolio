@@ -1,27 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // import PropTypes from 'prop-types';
-import styles from './Profile.module.css';
+import styles from './Projects.module.css';
 
-const Profile = () => {
+const Projects = () => {
   return (
-    <main className={styles.Profile}>
-      <Link to="/profile">
+    <main className={styles.Projects}>
+      <Link to="/projects">
         <section className={styles.OuterCoastline}>
           <section className={styles.InnerCoastline}>
             <section className={styles.Continent}>
-            Profile
+            Team Projects
             </section>
           </section>
         </section>
       </Link>
-        
     </main>
   );
 };
 
-Profile.propTypes = {
+Projects.propTypes = {
 
 };
 
-export default Profile;
+export default Projects;

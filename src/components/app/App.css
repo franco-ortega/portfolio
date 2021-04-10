@@ -22,3 +22,12 @@
   --coastline-shadow: darkblue;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: darkblue;
+  opacity: 93%;
+}

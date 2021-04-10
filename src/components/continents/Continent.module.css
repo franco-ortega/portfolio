@@ -14,7 +14,7 @@
     padding: 0.75vw;
 }
 
-.Coastline {
+.InnerCoastline {
     background: var(--inner-coastline);
     border: 0.15vw dashed var(--continent-border);
     border-radius: inherit;
@@ -36,3 +36,19 @@
     font-size: 3vw;
     font-weight: bold;
 }
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+  .OuterCoastline, .InnerCoastline, .Continent {
+
+      height: 20vw;
+      width: 30vh;
+  }
+
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  .Ocean {
+    border: 1.5vw solid var(--bordercolor);
+  }
+}
+

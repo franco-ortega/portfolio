@@ -161,6 +161,50 @@
   font-weight: bold;
 }
 
+.ResumeContainer {
+  grid-column: 8 / 11;
+  grid-row: 5 / 8;
+  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ResumeOuterCoastline {
+  background: var(--outer-coastline);
+  box-shadow: 0vw 0vw 2vw 2vw var(--coastline-shadow);
+  border-radius: 520vw 270vw 495vw 90vw;
+  padding: 0.75vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ResumeInnerCoastline {
+  background: var(--inner-coastline);
+  border: 0.15vw dashed var(--continent-border);
+  border-radius: inherit;
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+.ResumeContinent {
+  background: var(--continent);
+  border: .25vw solid var(--continent-border);
+  border-radius: inherit;
+  height: 15vh;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
 
 @media screen and (max-width: 900px) and (orientation: portrait) {
   .Ocean {
@@ -211,6 +255,11 @@
     font-size: 2.5vw;
     font-weight: bold;
   }
+
+  .ResumeContinent {
+    height: 10vh;
+    width: 25vw;
+  }
 }
 
 @media screen and (max-width: 500px) and (orientation: portrait) {
@@ -246,9 +295,9 @@
   .Title {
     font-size: 3.25vw;
   }
-}
 
-
-.Test {
-  
+  .ResumeContinent {
+    height: 10vh;
+    width: 30vw;
+  }
 }

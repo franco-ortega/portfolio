@@ -1,8 +1,9 @@
 import React from 'react';
-import Continent from '../continents/Continent';
-// import ComingSoon from '../../comingSoon/ComingSoon';
-import { continentData } from '../continents/continentData';
+// import Continent from '../continents/Continent';
+// import { continentData } from '../continents/continentData';
 import resume from '../../assets/FrancoOrtega_Resume.pdf';
+import Projects from '../continents/Projects';
+import Profile from '../continents/Profile';
 import styles from './Ocean.module.css';
 
 const Ocean = () => {
@@ -49,26 +50,28 @@ const Ocean = () => {
           size={continentData.projects.size}
           title={continentData.projects.title}
         /> */}
+        <Projects />
 
         {/* Profile */}
-        <Continent
+        {/* <Continent
           grid={continentData.profile.grid}
           link={continentData.profile.link}
           shape={continentData.profile.shape}
           size={continentData.profile.size}
           title={continentData.profile.title}
-        />
+        /> */}
+        <Profile />
 
         {/* Resume */}
         <a
           href={resume}
           rel="noreferrer"
           target="_blank"
-          style={continentData.resume.grid}
+          className={styles.ResumeContainer}
         >
-          <div style={continentData.resume.outerCoastline} >
-            <div style={continentData.resume.innerCoastline}>
-              <div style={continentData.resume.continent}>
+          <div className={styles.ResumeOuterCoastline}>
+            <div className={styles.ResumeInnerCoastline}>
+              <div className={styles.ResumeContinent}>
                 Resume
               </div>
             </div>
@@ -96,33 +99,6 @@ const Ocean = () => {
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-
-
-
-
       </div>
     </div>
   );
