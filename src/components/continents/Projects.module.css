@@ -27,8 +27,8 @@
     background: var(--continent);
     border: .25vw solid var(--continent-border);
     border-radius: inherit;
-    height: 20vh;
-    width: 23vw;
+    height: 22vh;
+    width: 22vw;
 
     display: flex;
     align-items: center;
