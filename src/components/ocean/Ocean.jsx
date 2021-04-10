@@ -6,6 +6,7 @@ import Projects from '../continents/Projects';
 import Profile from '../continents/Profile';
 import styles from './Ocean.module.css';
 import Resume from '../continents/Resume';
+import Scale from '../mapElements/Scale';
 
 const Ocean = () => {
   return (
@@ -79,6 +80,9 @@ const Ocean = () => {
           </div>
         </a> */}
         <Resume />
+
+        {/* Scale */}
+        <Scale />
 
 
 
