@@ -1,5 +1,5 @@
 .Ocean {
-  background: linear-gradient(90deg, var(--darkerblue), var(--lighterblue),  var(--darkestblue), var(--middleblue), var(--lightestblue));
+  background: linear-gradient(90deg, var(--darkerblue), var(--lighterblue), var(--darkestblue), var(--middleblue), var(--lightestblue));
   background-blend-mode: soft-light;
   background-size: 400% 400%;
 
