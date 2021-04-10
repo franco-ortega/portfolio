@@ -40,18 +40,20 @@ const Ocean = () => {
           <p className={styles.Message}>&lowast; &lowast; &lowast; portfolio in progress &lowast; &lowast; &lowast;</p>
         </div>
 
-        <Continent
-          title={continentData.projects.title}
+        {/* <Continent
+          grid={continentData.projects.grid}
+          link={continentData.projects.link}
           shape={continentData.projects.shape}
           size={continentData.projects.size}
-          grid={continentData.projects.grid}
-        />
+          title={continentData.projects.title}
+        /> */}
 
         <Continent
-          title={continentData.profile.title}
+          grid={continentData.profile.grid}
+          link={continentData.profile.link}
           shape={continentData.profile.shape}
           size={continentData.profile.size}
-          grid={continentData.profile.grid}
+          title={continentData.profile.title}
         />
 
 

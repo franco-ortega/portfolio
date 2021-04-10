@@ -1,16 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './Continent.module.css';
 
 const Continent = ({ grid, link, shape, size, title }) => {
   console.log(shape);
   return (
-    <div
+    <Link to={link}
       className={styles.ContinentContainer}
       style={grid}
     >
-      {link}
-
       <div
         className={`${styles.OuterCoastline}`}
         style={shape}
@@ -24,8 +23,7 @@ const Continent = ({ grid, link, shape, size, title }) => {
           </div>
         </div>
       </div>
-            
-    </div>
+    </Link>
   );
 };
 
