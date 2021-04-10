@@ -10,7 +10,7 @@ const Projects = () => {
         <section className={styles.OuterCoastline}>
           <section className={styles.InnerCoastline}>
             <section className={styles.Continent}>
-            Team Projects
+              Team Projects
             </section>
           </section>
         </section>

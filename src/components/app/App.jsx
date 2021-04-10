@@ -16,7 +16,6 @@ const App = () => {
     <div className="App">
       <Router>
         <Ocean />
-        {/* <Profile /> */}
         <Switch>
           <Route exact path="/projects" component={ProjectsDetails} />
           <Route exact path="/profile" component={ProfileDetails} />

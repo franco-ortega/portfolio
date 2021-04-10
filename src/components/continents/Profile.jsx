@@ -10,7 +10,7 @@ const Profile = () => {
         <section className={styles.OuterCoastline}>
           <section className={styles.InnerCoastline}>
             <section className={styles.Continent}>
-            Profile
+              Profile
             </section>
           </section>
         </section>

@@ -1,10 +1,11 @@
 import React from 'react';
 // import Continent from '../continents/Continent';
 // import { continentData } from '../continents/continentData';
-import resume from '../../assets/FrancoOrtega_Resume.pdf';
+// import resume from '../../assets/FrancoOrtega_Resume.pdf';
 import Projects from '../continents/Projects';
 import Profile from '../continents/Profile';
 import styles from './Ocean.module.css';
+import Resume from '../continents/Resume';
 
 const Ocean = () => {
   return (
@@ -63,7 +64,7 @@ const Ocean = () => {
         <Profile />
 
         {/* Resume */}
-        <a
+        {/* <a
           href={resume}
           rel="noreferrer"
           target="_blank"
@@ -76,7 +77,8 @@ const Ocean = () => {
               </div>
             </div>
           </div>
-        </a>
+        </a> */}
+        <Resume />
 
 
 
