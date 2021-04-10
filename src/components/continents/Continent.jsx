@@ -30,11 +30,11 @@ const Continent = ({ grid, link, shape, size, title }) => {
 };
 
 Continent.propTypes = {
-  grid: PropTypes.object,
-  link: PropTypes.string,
-  shape: PropTypes.object,
-  size: PropTypes.string,
-  title: PropTypes.string
+  grid: PropTypes.object.isRequired,
+  link: PropTypes.string.isRequired,
+  shape: PropTypes.object.isRequired,
+  size: PropTypes.object.isRequired,
+  title: PropTypes.string.isRequired
 };
 
 export default Continent;
