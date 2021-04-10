@@ -3,6 +3,7 @@ import Continent from '../continents/Continent';
 import { continentData } from '../continents/continentData';
 import resume from '../../assets/FrancoOrtega_Resume.pdf';
 import styles from './Ocean.module.css';
+import ProfileSmall from '../continents/ProfileSmall';
 
 const Ocean = () => {
   return (
@@ -50,13 +51,14 @@ const Ocean = () => {
         />
 
         {/* Profile */}
-        <Continent
+        {/* <Continent
           grid={continentData.profile.grid}
           link={continentData.profile.link}
           shape={continentData.profile.shape}
           size={continentData.profile.size}
           title={continentData.profile.title}
-        />
+        /> */}
+        <ProfileSmall />
 
         {/* Resume */}
         <a

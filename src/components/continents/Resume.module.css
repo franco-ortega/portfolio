@@ -12,3 +12,12 @@
     z-index: 1;
 
 }
+
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    .Continent {
+        height: 25vw;
+        width: 20vh;
+    }
+}
+  

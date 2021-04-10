@@ -1,16 +1,19 @@
-.ContinentContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.ProfileSmall {
+    grid-column: 5 / 9;
+    grid-Row: 3 / 6;
 
-.OuterCoastline:hover {
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
 }
 
 .OuterCoastline {
     background: var(--outer-coastline);
+    border-radius: 120vw 70vw 95vw 90vw;
     box-shadow: 0vw 0vw 2vw 2vw var(--coastline-shadow);
+    margin-right: 2vw;
+    
     padding: 0.75vw;
 }
 
@@ -28,6 +31,8 @@
     background: var(--continent);
     border: .25vw solid var(--continent-border);
     border-radius: inherit;
+    height: 25vh;
+    width: 25vw;
 
     display: flex;
     align-items: center;
@@ -38,17 +43,9 @@
 }
 
 @media screen and (max-width: 900px) and (orientation: portrait) {
-  .OuterCoastline, .InnerCoastline, .Continent {
-
-      height: 20vw;
-      width: 30vh;
-  }
-
+    .Continent {
+        height: 25vw;
+        width: 20vh;
+    }
 }
-
-@media screen and (max-width: 500px) and (orientation: portrait) {
-  .Ocean {
-    border: 1.5vw solid var(--bordercolor);
-  }
-}
-
+  

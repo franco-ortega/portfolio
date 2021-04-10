@@ -10,7 +10,7 @@ const Continent = ({ grid, link, shape, size, title }) => {
       <Link to={link}>
         <section className={`${styles.OuterCoastline}`} style={shape}>
           <section className={styles.InnerCoastline}>
-            <section className={styles.Continent} style={size}>
+            <section className={`${styles.Continent} ${styles.Mobile}`} style={size}>
               {title}
             </section>
           </section>

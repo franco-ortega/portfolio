@@ -39,7 +39,7 @@ export const continentData = {
       marginTop: '2vw',
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'center'
     },
     outerCoastline: {
       background: 'var(--outer-coastline)',
@@ -48,7 +48,7 @@ export const continentData = {
       padding: '0.75vw',
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'center'
     },
     innerCoastline: {
       background: 'var(--inner-coastline)',
@@ -60,7 +60,6 @@ export const continentData = {
       justifyContent: 'center',
       height: 'fit-content',
       width: 'fit-content'
-
     },
     continent: {
       background: 'var(--continent)',
@@ -74,8 +73,5 @@ export const continentData = {
       fontSize: '3vw',
       fontWeight: 'bold'
     }
-      
   }
-  
-  
 };
