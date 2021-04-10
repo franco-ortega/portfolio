@@ -44,8 +44,14 @@
 
 @media screen and (max-width: 900px) and (orientation: portrait) {
     .Continent {
+        height: 20vw;
+        width: 25vh;
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    .Continent {
         height: 25vw;
         width: 20vh;
     }
 }
-  

@@ -65,11 +65,11 @@ const Ocean = () => {
           href={resume}
           rel="noreferrer"
           target="_blank"
-          style={continentData.resume.grid}
+          className={styles.ResumeContainer}
         >
-          <div style={continentData.resume.outerCoastline} >
-            <div style={continentData.resume.innerCoastline}>
-              <div style={continentData.resume.continent}>
+          <div className={styles.ResumeOuterCoastline}>
+            <div className={styles.ResumeInnerCoastline}>
+              <div className={styles.ResumeContinent}>
                 Resume
               </div>
             </div>
