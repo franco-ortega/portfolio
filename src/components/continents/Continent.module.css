@@ -16,7 +16,7 @@
 
 .Coastline {
     background: var(--inner-coastline);
-    border: .15vw dashed var(--continent-border);
+    border: 0.15vw dashed var(--continent-border);
     border-radius: inherit;
     
     padding: 1vw;
@@ -26,8 +26,6 @@
 
 .Continent {
     background: var(--continent);
-    height: 25vh;
-    width: 25vw;
     border: .25vw solid var(--continent-border);
     border-radius: inherit;
 
@@ -37,5 +35,4 @@
     
     font-size: 3vw;
     font-weight: bold;
-
 }
