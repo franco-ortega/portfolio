@@ -42,13 +42,13 @@ const Ocean = () => {
         </div>
 
         {/* Team Projects */}
-        {/* <Continent
+        <Continent
           grid={continentData.projects.grid}
           link={continentData.projects.link}
           shape={continentData.projects.shape}
           size={continentData.projects.size}
           title={continentData.projects.title}
-        /> */}
+        />
 
         {/* Profile */}
         <Continent
@@ -111,14 +111,7 @@ const Ocean = () => {
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
+
 
 
 

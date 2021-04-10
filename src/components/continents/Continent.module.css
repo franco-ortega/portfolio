@@ -14,7 +14,7 @@
     padding: 0.75vw;
 }
 
-.Coastline {
+.InnerCoastline {
     background: var(--inner-coastline);
     border: 0.15vw dashed var(--continent-border);
     border-radius: inherit;
