@@ -2,6 +2,7 @@ import React from 'react';
 import Continent from '../continents/Continent';
 // import ComingSoon from '../../comingSoon/ComingSoon';
 import { continentData } from '../continents/continentData';
+import resume from '../../assets/FrancoOrtega_Resume.pdf';
 import styles from './Ocean.module.css';
 
 const Ocean = () => {
@@ -40,6 +41,7 @@ const Ocean = () => {
           <p className={styles.Message}>&lowast; &lowast; &lowast; portfolio in progress &lowast; &lowast; &lowast;</p>
         </div>
 
+        {/* Team Projects */}
         {/* <Continent
           grid={continentData.projects.grid}
           link={continentData.projects.link}
@@ -48,6 +50,7 @@ const Ocean = () => {
           title={continentData.projects.title}
         /> */}
 
+        {/* Profile */}
         <Continent
           grid={continentData.profile.grid}
           link={continentData.profile.link}
@@ -56,16 +59,27 @@ const Ocean = () => {
           title={continentData.profile.title}
         />
 
+        {/* Resume */}
+        <a
+          href={resume}
+          rel="noreferrer"
+          target="_blank"
+          style={continentData.resume.grid}
+        >
+          <div style={continentData.resume.outerCoastline} >
+            <div style={continentData.resume.innerCoastline}>
+              <div style={continentData.resume.continent}>
+                Resume
+              </div>
+            </div>
+          </div>
+        </a>
 
-        <div className={`${styles.OceanGridItem} ${styles.Test}`}></div>
-        <div className={`${styles.OceanGridItem} ${styles.Test}`}></div>
+
+
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
-
-
-
-
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>

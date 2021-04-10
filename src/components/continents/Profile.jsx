@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import photo from '../../assets/franco.jpg';
 import styles from './Profile.module.css';
 
 const Profile = () => {
@@ -10,7 +11,7 @@ const Profile = () => {
           <section className={styles.Continent}>
             <header className={styles.Header}>Profile</header>
             <section className={styles.Bio}>
-              <img src="./assets/franco.jpg" alt="profile photo" className={styles.Photo} />
+              <img src={photo} alt="profile photo" className={styles.Photo} />
               <p className={styles.BioParagraph}>
                 Compassion, communication, creativity, collaboration, and curiosity are qualities that I value dearly and strive to continuously improve. Optimism guides my efforts while realistic practicality ensures that my goals are brought to fruition. Doing work that improves the lives of others brings me great joy.
               </p>
