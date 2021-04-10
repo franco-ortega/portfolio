@@ -2,4 +2,22 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  --darkestblue: rgb(41, 17, 129);
+  --darkerblue: rgb(36, 17, 146);
+  --middleblue: rgb(46, 29, 204);
+  --lighterblue: rgb(29, 46, 201);
+  --lightestblue: rgb(21, 103, 209);
+
+  --bordercolor: goldenrod;
+
+  --name-and-title: gold;
+
+  --continent: tan;
+  --continent-border: brown;
+
+  --outer-coastline: rgb(87, 171, 223);
+  --inner-coastline: rgb(111, 186, 233);
+  --coastline-shadow: darkblue;
 }
