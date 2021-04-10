@@ -1,0 +1,53 @@
+.Projects {
+    grid-column: 1 / 5;
+    grid-Row: 2 / 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OuterCoastline {
+    background: var(--outer-coastline);
+    border-radius: 220vw 170vw 395vw 90vw;
+    box-shadow: 0vw 0vw 2vw 2vw var(--coastline-shadow);
+    padding: 0.75vw;
+}
+
+.InnerCoastline {
+    background: var(--inner-coastline);
+    border: 0.15vw dashed var(--continent-border);
+    border-radius: inherit;
+    padding: 1vw;
+    height: fit-content;
+    width: fit-content;
+}
+
+.Continent {
+    background: var(--continent);
+    border: .25vw solid var(--continent-border);
+    border-radius: inherit;
+    height: 20vh;
+    width: 23vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    .Continent {
+        height: 20vw;
+        width: 25vh;
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    .Continent {
+        height: 25vw;
+        width: 20vh;
+    }
+}

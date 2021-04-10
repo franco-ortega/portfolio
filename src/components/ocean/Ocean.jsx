@@ -1,9 +1,10 @@
 import React from 'react';
-import Continent from '../continents/Continent';
-import { continentData } from '../continents/continentData';
+// import Continent from '../continents/Continent';
+// import { continentData } from '../continents/continentData';
 import resume from '../../assets/FrancoOrtega_Resume.pdf';
 import styles from './Ocean.module.css';
 import ProfileSmall from '../continents/ProfileSmall';
+import Projects from '../continents/Projects';
 
 const Ocean = () => {
   return (
@@ -42,13 +43,14 @@ const Ocean = () => {
         </div>
 
         {/* Team Projects */}
-        <Continent
+        {/* <Continent
           grid={continentData.projects.grid}
           link={continentData.projects.link}
           shape={continentData.projects.shape}
           size={continentData.projects.size}
           title={continentData.projects.title}
-        />
+        /> */}
+        <Projects />
 
         {/* Profile */}
         {/* <Continent

@@ -5,6 +5,7 @@ import {
   Switch
 } from 'react-router-dom';
 import Profile from '../continents/Profile';
+import Projects from '../continents/Projects';
 import Resume from '../continents/Resume';
 
 import Ocean from '../ocean/Ocean';
@@ -17,6 +18,7 @@ const App = () => {
         <Ocean />
         {/* <Profile /> */}
         <Switch>
+          <Route exact path="/projects" component={Projects} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/resume" component={Resume} />
         </Switch>
