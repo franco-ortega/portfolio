@@ -9,36 +9,58 @@
     padding: 1vw;
 }
 
-.Distance {
-    color: white;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-right: 5vw;
-}
-
-.Header {
-    color: white;
-    font-size: 1.25vw;
-    margin-right: 0.25vw;
-}
 
 .Scale {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    border: 1px gray solid;
-    margin-right: 5.5vw;
+    display: flex;    
+    color: white;
 }
 
-.Black {
+.ScaleNumber {
+    position: relative;
+    left: -0.75vw;
+}
+
+.ScaleStart {
+    border-left: .1vw gray solid;
+}
+
+.ScaleEnd {
+    border-right: .1vw gray solid;
+}
+
+.ScaleBlockBlack {
     background: black;
-    height: 1vw;
+    height: 2vw;
     width: 5vw;
+    border-top: .1vw gray solid;
+    border-bottom: .1vw gray solid;
 }
 
-.White {
+.ScaleBlockWhite {
     background: white;
-    height: 1vw;
+    height: 2vw;
     width: 5vw;
+    border-top: .1vw gray solid;
+    border-bottom: .1vw gray solid;
+}
+
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    .ScaleBlockBlack {
+        width: 7vw;
+    }
+    
+    .ScaleBlockWhite {
+        width: 7vw;
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    .ScaleBlockBlack {
+        width: 9vw;
+    }
+    
+    .ScaleBlockWhite {
+        width: 9vw;
+    }
 }
