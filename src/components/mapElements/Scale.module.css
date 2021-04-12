@@ -1,44 +1,77 @@
 .ScaleContainer {
-    grid-column: 2 / 6;
-    grid-Row: 7 / 8;
-
+    grid-column: 1 / 5;
+    grid-row: 7 / 8;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 1vw;
-}
-
-.Distance {
+    padding: 2vw 0vw 2vw 3vw;
     color: white;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-right: 5vw;
 }
 
-.Header {
-    color: white;
-    font-size: 1.25vw;
-    margin-right: 0.25vw;
+.ScaleNumber {
+    position: relative;
+    left: -0.5vw;
 }
 
-.Scale {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    border: 1px gray solid;
-    margin-right: 5.5vw;
+.ScaleNumberFirst {
+    left: 0vw;
 }
 
-.Black {
+.ScaleBlockFirst {
+    border-left: .2vw gray solid;
+}
+
+.ScaleBlockLast {
+    border-right: .2vw gray solid;
+}
+
+.ScaleBlockBlack, .ScaleBlockWhite {
+    height: 1vw;
+    width: 4vw;
+    border-top: .2vw gray solid;
+    border-bottom: .2vw gray solid;
+}
+
+.ScaleBlockBlack {
     background: black;
-    height: 1vw;
-    width: 5vw;
 }
 
-.White {
+.ScaleBlockWhite {
     background: white;
-    height: 1vw;
-    width: 5vw;
+}
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    .ScaleContainer {
+        padding: 7vw 0vw 2vw 5vw;
+    }
+
+    .ScaleNumber {
+        left: -1vw;
+    }
+
+    .ScaleNumberFirst {
+        left: 0vw;
+    }
+    
+    .ScaleBlockBlack, .ScaleBlockWhite {
+        height: 1.5vw;
+        width: 5vw;
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    .ScaleContainer {
+        padding: 3vw 0vw 2vw 6vw;
+    }
+
+    .ScaleNumber {
+        left: -1.5vw;
+    }
+
+    .ScaleNumberFirst {
+        left: 0vw;
+    }
+    
+    .ScaleBlockBlack, .ScaleBlockWhite {
+        height: 2vw;
+        width: 7vw;
+    }
 }

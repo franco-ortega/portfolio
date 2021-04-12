@@ -1,49 +1,42 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import styles from './Scale.module.css';
 
 const Scale = () => {
   return (
-    <main className={styles.ScaleContainer}>
-      <section className={styles.Distance}>
-        <p>
-          0
-        </p>
-        <p>
-          10
-        </p>
-        <p>
-          20
-        </p>
-        <p>
-          30
-        </p>
-        <p>
-          40
-        </p>
-        <p>
-          50
-        </p>
-        <p>
-          60
-        </p>
+    <main className={styles.ScaleContainer} title="scale">
+      <section>
+        <section className={`${styles.ScaleNumber} ${styles.ScaleNumberFirst}`}>0</section>
+        <section className={`${styles.ScaleBlockBlack} ${styles.ScaleBlockFirst}`}></section>
       </section>
-      {/* <header className={styles.Header}>Scale</header> */}
-      <section className={styles.Scale}>
-        <section className={styles.Black}></section>
-        <section className={styles.White}></section>
-        <section className={styles.Black}></section>
-        <section className={styles.White}></section>
-        <section className={styles.Black}></section>
-        <section className={styles.White}></section>
+      <section>
+        <section className={styles.ScaleNumber}>10</section>
+        <section className={styles.ScaleBlockWhite}></section>
       </section>
-
+      <section>
+        <section className={styles.ScaleNumber}>20</section>
+        <section className={styles.ScaleBlockBlack}></section>
+      </section>
+      <section>
+        <section className={styles.ScaleNumber}>30</section>
+        <section className={styles.ScaleBlockWhite}></section>
+      </section>
+      <section>
+        <section className={styles.ScaleNumber}>40</section>
+        <section className={styles.ScaleBlockBlack}></section>
+      </section>
+      <section>
+        <section className={styles.ScaleNumber}>50</section>
+        <section className={styles.ScaleBlockWhite}></section>
+      </section>
+      <section>
+        <section className={styles.ScaleNumber}>60</section>
+        <section className={`${styles.ScaleBlockBlack} ${styles.ScaleBlockLast}`}></section>
+      </section>
+      <section>
+        <section className={styles.ScaleNumber}>70</section>
+      </section>
     </main>
   );
-};
-
-Scale.propTypes = {
-
 };
 
 export default Scale;
