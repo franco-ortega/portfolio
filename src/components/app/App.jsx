@@ -9,7 +9,7 @@ import ProjectsDetails from '../continents/ProjectsDetails';
 // import Resume from '../continents/Resume';
 
 import Ocean from '../ocean/Ocean';
-import BeHumanDetails from '../projects/BeHumanDetails';
+import BeHumanDetails from '../projects/BeHuman/BeHumanDetails';
 import ChooseGifDetails from '../projects/ChooseGifDetails';
 import WeatherBeatsDetails from '../projects/WeatherBeatsDetails';
 import './App.css';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BeHuman from '../projects/BeHuman';
+import BeHuman from '../projects/BeHuman/BeHuman';
 import ChooseGif from '../projects/ChooseGif';
 import WeatherBeats from '../projects/WeatherBeats';
 // import PropTypes from 'prop-types';
