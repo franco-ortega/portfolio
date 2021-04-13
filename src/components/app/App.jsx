@@ -10,6 +10,7 @@ import ProjectsDetails from '../continents/ProjectsDetails';
 
 import Ocean from '../ocean/Ocean';
 import BeHumanDetails from '../projects/BeHumanDetails';
+import ChooseGifDetails from '../projects/ChooseGifDetails';
 import WeatherBeatsDetails from '../projects/WeatherBeatsDetails';
 import './App.css';
 
@@ -24,6 +25,7 @@ const App = () => {
           {/* <Route exact path="/resume" component={Resume} /> */}
           <Route exact path="/weatherbeats" component={WeatherBeatsDetails} />
           <Route exact path="/behuman" component={BeHumanDetails} />
+          <Route exact path="/choosegif" component={ChooseGifDetails} />
         </Switch>
       </Router>
     </div>
