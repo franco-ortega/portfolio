@@ -16,7 +16,7 @@ const BeHumanDetails = () => {
         <section className={styles.ProjectInfo}>
             VSCode extension that prompts users to take breaks with an hourly pop-up that provides wellness tips and movement videos. Users may adjust the time increment and reset the timer. My efforts included sandboxing to develop the initial time tracking functionality and pop-ups; making a model with endpoints and testing; building an admin website to update the database and invite new admins.
         </section>
-        <section className={styles.IconAndLinks}>
+        <section className={styles.ProjectLinks}>
           <a href="https://marketplace.visualstudio.com/items?itemName=not-bot.be-human" rel="noreferrer" target="_blank">Extension</a>
           <img
             src={beHumanIcon}
