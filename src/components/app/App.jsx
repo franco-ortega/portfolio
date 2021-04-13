@@ -9,7 +9,7 @@ import ProfileDetails from '../continents/ProfileDetails';
 import ProjectsDetails from '../continents/ProjectsDetails';
 import BeHumanDetails from '../projects/BeHuman/BeHumanDetails';
 import ChooseGifDetails from '../projects/ChooseGif/ChooseGifDetails';
-import WeatherBeatsDetails from '../projects/WeatherBeatsDetails';
+import WeatherBeatsDetails from '../projects/WeatherBeats/WeatherBeatsDetails';
 import './App.css';
 
 const App = () => {
