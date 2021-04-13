@@ -8,7 +8,7 @@
     position: absolute;
     top: 33%;
     left: 23%;
-    z-index: 2;
+    z-index: 1;
 
     height: 55%;
     width: 54%;
@@ -23,13 +23,13 @@
 
 
 .ProjectTech {
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     font-weight: bold;
     margin: 1vw;
 }
 
 .ProjectInfo {
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     text-align: justify;
 }
 
@@ -54,4 +54,23 @@
     padding: .25vw;
     width: max-content;
     font-size: 1.25vw;
+}
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    .BeHumanDetails {
+        transform: rotate(-90deg);
+        top: 35%;
+        left: 20%;
+        height: 35vw;
+        width: 40vh;
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    .BeHumanDetails {
+        top: 40%;
+        left: 10%;
+        height: 45vw;
+        width: 40vh;
+    }
 }

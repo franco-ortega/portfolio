@@ -20,15 +20,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    overflow: auto;
 }
 
 .ProjectTech {
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 
 .ProjectInfo {
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     text-align: justify;
 }
 
@@ -44,4 +46,23 @@
     padding: .25vw;
     width: max-content;
     font-size: 1.25vw;
+}
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    .WeatherBeatsDetails {
+        transform: rotate(-90deg);
+        top: 35%;
+        left: 20%;
+        height: 35vw;
+        width: 40vh;
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    .WeatherBeatsDetails {
+        top: 40%;
+        left: 10%;
+        height: 45vw;
+        width: 40vh;
+    }
 }
