@@ -3,7 +3,7 @@ import React from 'react';
 // import { continentData } from '../continents/continentData';
 // import resume from '../../assets/FrancoOrtega_Resume.pdf';
 import Projects from '../continents/Projects';
-import Profile from '../continents/Profile';
+import Profile from '../continents//Profile/Profile';
 import styles from './Ocean.module.css';
 import Resume from '../continents/Resume';
 import Scale from '../mapElements/Scale';

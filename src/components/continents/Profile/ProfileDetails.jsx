@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import photo from '../../assets/franco.jpg';
+import photo from '../../../assets/FrancoOrtega.jpg';
 import styles from './ProfileDetails.module.css';
 
 const Profile = () => {
