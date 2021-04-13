@@ -1,5 +1,5 @@
-import ChooseGif1 from '../../assets/ChooseGif1.gif';
-import ChooseGif2 from '../../assets/ChooseGif2.gif';
+import ChooseGif1 from '../../../assets/ChooseGif1.gif';
+import ChooseGif2 from '../../../assets/ChooseGif2.gif';
 
 const gifs = [
   ChooseGif1,
