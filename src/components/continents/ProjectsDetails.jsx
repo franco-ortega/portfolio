@@ -24,9 +24,13 @@ const ProjectsDetails = () => {
               </section>
               <section className={styles.Project}>
                 Choose GIF
+                <br/><br/>
+                *** coming soon ***
               </section>
               <section className={styles.Project}>
                 Major Arcana Divinator
+                <br/><br/>
+                *** coming soon ***
               </section>
 
             </section>

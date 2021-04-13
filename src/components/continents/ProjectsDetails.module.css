@@ -57,7 +57,7 @@
     height: 65%;
     width: 75%;
 
-    border: 1px dashed brown;
+    border: .1vw solid black;
     border-radius: 1vw;
 
     padding: 0.5vw;
@@ -80,6 +80,7 @@
 
     height: 90%;
     width: 45%;
+    text-align: center;
 }
 
 
