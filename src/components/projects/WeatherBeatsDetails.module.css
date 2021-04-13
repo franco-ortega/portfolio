@@ -1,0 +1,43 @@
+.WeatherBeatsDetails {
+    background-image: url(../../assets/WeatherBeats_full.jpg);
+    background-position: 5% 55%;
+    background-repeat: no-repeat;
+    background-size: 155%;
+
+    border: .25vw solid brown;
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+
+    position: absolute;
+    top: 33%;
+    left: 25%;
+    z-index: 2;
+
+    height: 55%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ProjectTech {
+    font-size: 1.25vw;
+    font-weight: bold;
+}
+
+.ProjectInfo {
+    font-size: 1.25vw;
+    text-align: justify;
+}
+
+
+.CloseButton {
+    background: yellow;
+    border-radius: 50%;
+    margin: 1vw;
+    padding: .25vw;
+    width: max-content;
+    font-size: 1.25vw;
+}
