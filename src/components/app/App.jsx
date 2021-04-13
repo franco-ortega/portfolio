@@ -4,14 +4,12 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+import Ocean from '../ocean/Ocean';
 import ProfileDetails from '../continents/ProfileDetails';
 import ProjectsDetails from '../continents/ProjectsDetails';
-// import Resume from '../continents/Resume';
-
-import Ocean from '../ocean/Ocean';
 import BeHumanDetails from '../projects/BeHuman/BeHumanDetails';
-import ChooseGifDetails from '../projects/ChooseGifDetails';
-import WeatherBeatsDetails from '../projects/WeatherBeatsDetails';
+import ChooseGifDetails from '../projects/ChooseGif/ChooseGifDetails';
+import WeatherBeatsDetails from '../projects/WeatherBeats/WeatherBeatsDetails';
 import './App.css';
 
 const App = () => {
