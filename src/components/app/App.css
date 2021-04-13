@@ -22,13 +22,24 @@
   --outer-coastline: rgb(87, 171, 223);
   --inner-coastline: rgb(111, 186, 233);
   --coastline-shadow: darkblue;
+
+  --outer-coastline-padding: 0.75vw;
+  --inner-coastline-padding: 1vw;
+  --outer-coastline-details-padding: 1.25vw;
+  --inner-coastline-details-padding: 1.5vw;
+
+  --continent-details-title: 4vw;
+  --continent-details-intro: 1.25vw;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+  color: darkblue;
 }
 
 a:hover {
   color: darkblue;
+}
+
+button {
+  outline: none;
 }

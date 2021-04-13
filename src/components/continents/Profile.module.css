@@ -10,18 +10,16 @@
 .OuterCoastline {
     background: var(--outer-coastline);
     border-radius: 120vw 70vw 95vw 90vw;
+    padding: var(--outer-coastline-padding);
     box-shadow: 0vw 0vw 2vw 2vw var(--coastline-shadow);
     margin-right: 2vw;
-    
-    padding: 0.75vw;
 }
 
 .InnerCoastline {
     background: var(--inner-coastline);
     border: 0.15vw dashed var(--continent-border);
     border-radius: inherit;
-    
-    padding: 1vw;
+    padding: var(--inner-coastline-padding);
     height: fit-content;
     width: fit-content;
 }

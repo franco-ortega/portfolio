@@ -17,17 +17,16 @@
     border-radius: inherit;
     height: 100%;
     width: 100%;
-    padding: 1.5vw;
+    padding: var(--outer-coastline-details-padding);
 }
 
 .InnerCoastline {
     background: var(--inner-coastline);
+    border: 0.35vw dashed var(--continent-border);
     border-radius: inherit;
     height: 100%;
     width: 100%;
-    padding: 2vw;
-
-    border: 0.35vw dashed var(--continent-border);
+    padding: var(--inner-coastline-details-padding);
 }
 
 .Continent {
@@ -47,6 +46,10 @@
 
 .Header {
     font-size: 4vw;
+}
+
+.Title {
+    font-size: var(--continent-details-title);
 }
 
 .Bio {

@@ -1,11 +1,8 @@
 .ProjectsDetails {
     background: var(--continent);
-
-    border-radius: 220vw 170vw 395vw 90vw;
-
+    border-radius: 84vw 75vw 51vw 38vw;
     height: 80vh;
     width: 80vw;
-
     position: absolute;
     top: 15%;
     left: 10%;
@@ -17,25 +14,25 @@
     border-radius: inherit;
     height: 100%;
     width: 100%;
-    padding: 1.5vw;
+    padding: var(--outer-coastline-details-padding);
 }
 
 .InnerCoastline {
     background: var(--inner-coastline);
     border-radius: inherit;
-    height: 100%;
-    width: 100%;
-    padding: 2vw;
+    height: inherit;
+    width: inherit;
+    padding: var(--inner-coastline-details-padding);
 
-    border: 0.35vw dashed var(--continent-border);
+    border: 0.3vw dashed var(--continent-border);
 }
 
 .Continent {
     background: var(--continent);
     border-radius: inherit;
-    height: 100%;
-    width: 100%;
-    padding: 2vw;
+    height: inherit;
+    width: inherit;
+    padding: 1vw;
 
     display: flex;
     flex-direction: column;
@@ -45,28 +42,48 @@
     overflow: auto;
 }
 
-.Header {
-    font-size: 4vw;
-
-    margin-bottom: 2vw;
+.Title {
+    font-size: var(--continent-details-title);
+    margin-bottom: 0.25vw;
 }
 
-.Bio {
-    margin: 2vw 4vw;
-    height: 75%;
+.Intro {
+    font-size: var(--continent-details-intro);
+    margin: 0.5vw 2vw;
+}
+
+.ProjectsDisplayCase {
+    background: lightgreen;
+    height: 65%;
+    width: 75%;
+
+    border: .1vw solid black;
+    border-radius: 1vw;
+
+    padding: 0.5vw;
+    
+    display: flex;
+    flex-wrap: wrap;
+
     overflow: auto;
 }
 
-.BioParagraph {
-    margin-bottom: 1vw;
+.Project {
+    background: tan;
+    border-radius: 1vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0.5vw auto;
+
+    height: 90%;
+    width: 45%;
+    text-align: center;
 }
 
-.Photo {
-    float: right;
-    border-radius: 50%;
-    margin: 0vw 0vw 1vw 1vw;
-    height: 20vw;
-}
+
 
 .Button {
     background: black;
@@ -76,4 +93,25 @@
     outline: none;
 
     margin-top: 2vw;
+}
+
+
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    .ProjectsDetails {
+        transform: rotate(-90deg);
+        top: 20%;
+        left: 0%;
+        height: 80vw;
+        width: 80vh;
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    .ProjectsDetails {
+        top: 32%;
+        left: -10%;
+        height: 75vw;
+        width: 65vh;
+    }
 }
