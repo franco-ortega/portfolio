@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BeHuman from '../projects/BeHuman';
+import ChooseGif from '../projects/ChooseGif';
 import WeatherBeats from '../projects/WeatherBeats';
 // import PropTypes from 'prop-types';
 import styles from './ProjectsDetails.module.css';
@@ -23,9 +24,7 @@ const ProjectsDetails = () => {
                 <BeHuman />
               </section>
               <section className={styles.Project}>
-                Choose GIF
-                <br/><br/>
-                *** coming soon ***
+                <ChooseGif />
               </section>
               <section className={styles.Project}>
                 Major Arcana Divinator
