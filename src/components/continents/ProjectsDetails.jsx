@@ -11,7 +11,7 @@ const ProjectsDetails = () => {
           <section className={styles.Continent}>
             <header className={styles.Header}>Team Projects</header>
             <h2>
-                &lowast; &lowast; &lowast; coming soon &lowast; &lowast; &lowast;
+                These projects were completed remotely with 3-5 member teams over 5-10 day sprints.
             </h2>
             <Link to="/">
               <button className={styles.Button}>X</button>
