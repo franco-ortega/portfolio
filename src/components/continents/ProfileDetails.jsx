@@ -9,7 +9,7 @@ const Profile = () => {
       <section className={styles.OuterCoastline}>
         <section className={styles.InnerCoastline}>
           <section className={styles.Continent}>
-            <header className={styles.Header}>Profile</header>
+            <header className={styles.Title}>Profile</header>
             <section className={styles.Bio}>
               <img src={photo} alt="profile photo" className={styles.Photo} />
               <p className={styles.BioParagraph}>

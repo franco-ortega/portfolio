@@ -27,6 +27,9 @@
   --inner-coastline-padding: 1vw;
   --outer-coastline-details-padding: 1.25vw;
   --inner-coastline-details-padding: 1.5vw;
+
+  --continent-details-title: 4vw;
+  --continent-details-intro: 1.5vw;
 }
 
 a {

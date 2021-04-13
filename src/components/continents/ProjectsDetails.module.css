@@ -46,10 +46,17 @@
     overflow: auto;
 }
 
-.Header {
-    font-size: 4vw;
-
+.Title {
+    font-size: var(--continent-details-title);
     margin-bottom: 2vw;
+}
+
+.Intro {
+    font-size: var(--continent-details-intro);
+    margin: 0vw 2vw;
+    
+
+    border: 1px black solid;
 }
 
 .Bio {
@@ -62,12 +69,6 @@
     margin-bottom: 1vw;
 }
 
-.Photo {
-    float: right;
-    border-radius: 50%;
-    margin: 0vw 0vw 1vw 1vw;
-    height: 20vw;
-}
 
 .Button {
     background: black;
@@ -77,4 +78,25 @@
     outline: none;
 
     margin-top: 2vw;
+}
+
+
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    .ProjectsDetails {
+        transform: rotate(-90deg);
+        top: 20%;
+        left: 0%;
+        height: 80vw;
+        width: 80vh;
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    .ProjectsDetails {
+        top: 32%;
+        left: -10%;
+        height: 75vw;
+        width: 65vh;
+    }
 }
