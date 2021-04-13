@@ -1,11 +1,8 @@
 .ProfileDetails {
     background: var(--continent);
-
     border-radius: 120vw 70vw 95vw 90vw;
-
     height: 80vh;
     width: 80vw;
-
     position: absolute;
     top: 15%;
     left: 10%;
@@ -24,17 +21,17 @@
     background: var(--inner-coastline);
     border: 0.35vw dashed var(--continent-border);
     border-radius: inherit;
-    height: 100%;
-    width: 100%;
+    height: inherit;
+    width: inherit;
     padding: var(--inner-coastline-details-padding);
 }
 
 .Continent {
     background: var(--continent);
     border-radius: inherit;
-    height: 100%;
-    width: 100%;
-    padding: 2vw;
+    height: inherit;
+    width: inherit;
+    padding: 1vw;
 
     display: flex;
     flex-direction: column;
@@ -44,10 +41,6 @@
     overflow: auto;
 }
 
-.Header {
-    font-size: 4vw;
-}
-
 .Title {
     font-size: var(--continent-details-title);
 }
@@ -55,6 +48,7 @@
 .Bio {
     margin: 2vw 4vw;
     height: 75%;
+    font-size: var(--continent-details-body);
     overflow: auto;
 }
 
@@ -74,5 +68,33 @@
     border-radius: 50%;
     padding: .5vw;
     color: white;
-    outline: none;
+}
+
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    .ProfileDetails {
+        transform: rotate(-90deg);
+        top: 31%;
+        left: 0%;
+        height: 50vw;
+        width: 70vh;
+    }
+
+    .Bio {
+        padding: 2vw;
+        font-size: 1.75vw;
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    .ProfileDetails {
+        top: 35%;
+        height: 60vw;
+        width: 50vh;
+    }
+
+    .Bio {
+        padding: 6vw;
+        font-size: 2vw;
+    }
 }

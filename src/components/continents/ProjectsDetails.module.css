@@ -19,12 +19,11 @@
 
 .InnerCoastline {
     background: var(--inner-coastline);
+    border: 0.3vw dashed var(--continent-border);
     border-radius: inherit;
     height: inherit;
     width: inherit;
     padding: var(--inner-coastline-details-padding);
-
-    border: 0.3vw dashed var(--continent-border);
 }
 
 .Continent {
@@ -44,16 +43,15 @@
 
 .Title {
     font-size: var(--continent-details-title);
-    margin-bottom: 0.25vw;
 }
 
 .Intro {
     font-size: var(--continent-details-intro);
-    margin: 0.5vw 2vw;
+    margin: 0.25vw 2vw 0.75vw;
 }
 
 .ProjectsDisplayCase {
-    background: lightgreen;
+    background: rgb(216, 241, 216);
     height: 65%;
     width: 75%;
 
@@ -83,15 +81,11 @@
     text-align: center;
 }
 
-
-
 .Button {
     background: black;
     border-radius: 50%;
     padding: .5vw;
     color: white;
-    outline: none;
-
     margin-top: 2vw;
 }
 
@@ -100,10 +94,14 @@
 @media screen and (max-width: 900px) and (orientation: portrait) {
     .ProjectsDetails {
         transform: rotate(-90deg);
-        top: 20%;
+        top: 31%;
         left: 0%;
-        height: 80vw;
-        width: 80vh;
+        height: 50vw;
+        width: 70vh;
+    }
+
+    .ProjectsDisplayCase {
+        padding: 2vw;
     }
 }
 
