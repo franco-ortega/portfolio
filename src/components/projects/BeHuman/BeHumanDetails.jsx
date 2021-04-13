@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProjectsDetails from '../../continents/ProjectsDetails';
+import ProjectsDetails from '../../continents/Projects/ProjectsDetails';
 import beHumanIcon from '../../../assets/beHuman_halfSize.png';
 import styles from './BeHumanDetails.module.css';
 
