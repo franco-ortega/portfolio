@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BeHuman from '../projects/BeHuman';
 import WeatherBeats from '../projects/WeatherBeats';
 // import PropTypes from 'prop-types';
 import styles from './ProjectsDetails.module.css';
@@ -19,7 +20,7 @@ const ProjectsDetails = () => {
                 <WeatherBeats />
               </section>
               <section className={styles.Project}>
-                beHuman
+                <BeHuman />
               </section>
               <section className={styles.Project}>
                 Choose GIF

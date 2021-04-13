@@ -9,6 +9,7 @@ import ProjectsDetails from '../continents/ProjectsDetails';
 // import Resume from '../continents/Resume';
 
 import Ocean from '../ocean/Ocean';
+import BeHumanDetails from '../projects/BeHumanDetails';
 import WeatherBeatsDetails from '../projects/WeatherBeatsDetails';
 import './App.css';
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route exact path="/profile" component={ProfileDetails} />
           {/* <Route exact path="/resume" component={Resume} /> */}
           <Route exact path="/weatherbeats" component={WeatherBeatsDetails} />
+          <Route exact path="/behuman" component={BeHumanDetails} />
         </Switch>
       </Router>
     </div>
