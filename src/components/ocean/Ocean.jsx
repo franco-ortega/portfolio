@@ -1,7 +1,4 @@
 import React from 'react';
-// import Continent from '../continents/Continent';
-// import { continentData } from '../continents/continentData';
-// import resume from '../../assets/FrancoOrtega_Resume.pdf';
 import Projects from '../continents/Projects/Projects';
 import Profile from '../continents/Profile/Profile';
 import styles from './Ocean.module.css';
@@ -45,40 +42,12 @@ const Ocean = () => {
         </div>
 
         {/* Team Projects */}
-        {/* <Continent
-          grid={continentData.projects.grid}
-          link={continentData.projects.link}
-          shape={continentData.projects.shape}
-          size={continentData.projects.size}
-          title={continentData.projects.title}
-        /> */}
         <Projects />
 
         {/* Profile */}
-        {/* <Continent
-          grid={continentData.profile.grid}
-          link={continentData.profile.link}
-          shape={continentData.profile.shape}
-          size={continentData.profile.size}
-          title={continentData.profile.title}
-        /> */}
         <Profile />
 
         {/* Resume */}
-        {/* <a
-          href={resume}
-          rel="noreferrer"
-          target="_blank"
-          className={styles.ResumeContainer}
-        >
-          <div className={styles.ResumeOuterCoastline}>
-            <div className={styles.ResumeInnerCoastline}>
-              <div className={styles.ResumeContinent}>
-                Resume
-              </div>
-            </div>
-          </div>
-        </a> */}
         <Resume />
 
         {/* Scale */}
