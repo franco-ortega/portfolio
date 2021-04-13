@@ -5,7 +5,7 @@ import React from 'react';
 import Projects from '../continents/Projects/Projects';
 import Profile from '../continents/Profile/Profile';
 import styles from './Ocean.module.css';
-import Resume from '../continents/Resume';
+import Resume from '../continents/Resume/Resume';
 import Scale from '../mapElements/Scale';
 
 const Ocean = () => {
