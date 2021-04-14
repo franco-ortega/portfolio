@@ -33,7 +33,7 @@
     text-align: justify;
     
     margin: 1vw;
-    border: 1px dashed white;
+    border: 2px dashed yellow;
 }
 
 .ProjectLinks {
@@ -51,6 +51,8 @@
     border-radius: 50%;
     margin: 1vw;
     width: 10vw;
+
+    border: 2px dotted pink;
 }
 
 .CloseButton {
@@ -69,6 +71,9 @@
         left: 20%;
         height: 35vw;
         width: 40vh;
+
+        -webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
     }
 }
 
