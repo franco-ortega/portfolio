@@ -18,6 +18,8 @@
     align-items: center;
     justify-content: space-between;
 
+    font-size: 1.5vw;
+
     overflow: auto;
 }
 
@@ -29,7 +31,7 @@
 }
 
 .ProjectInfo {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     text-align: justify;
 }
 
