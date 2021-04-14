@@ -64,6 +64,23 @@
 
 
 
+@media screen and (max-width: 900px) {
+    .BeHumanDetails {
+        top: 15%;
+        height: 35vw;
+        width: 54%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .BeHumanDetails {
+        top: 38%;
+        left: 10%;
+        height: 50vw;
+        height: 75%;
+    }
+}
 
 
 
@@ -103,20 +120,3 @@
 
 
 
-@media screen and (max-width: 900px) {
-    .BeHumanDetails {
-        top: 15%;
-        height: 35vw;
-        width: 54%;
-    }
-}
-
-
-@media screen and (max-width: 500px) {
-    .BeHumanDetails {
-        top: 38%;
-        left: 10%;
-        height: 50vw;
-        height: 75%;
-    }
-}
