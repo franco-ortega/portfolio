@@ -4,31 +4,51 @@ import Profile from '../continents/Profile/Profile';
 import styles from './Ocean.module.css';
 import Resume from '../continents/Resume/Resume';
 import Scale from '../mapElements/Scale';
+import BorderCorner from '../mapElements/BorderCorner';
+import { borderCornerData } from '../mapElements/borderCornerData';
 
 const Ocean = () => {
   return (
-    <div className={styles.Ocean}>
+    <main className={styles.Ocean}>
       <div className={styles.OceanGrid}>
 
         {/* Top Left Corner */}
-        <div className={`${styles.OceanGridItem} ${styles.CornerNWContainer}`}>
+        {/* <div className={`${styles.OceanGridItem} ${styles.CornerNWContainer}`}>
           <div className={styles.CornerNW}></div>
-        </div>
+        </div> */}
+        <BorderCorner
+          grid={borderCornerData.cornerNW.grid}
+          shape={borderCornerData.cornerNW.shape}
+        />
 
         {/* Top Right Corner */}
-        <div className={`${styles.OceanGridItem} ${styles.CornerNEContainer}`}>
+        {/* <div className={`${styles.OceanGridItem} ${styles.CornerNEContainer}`}>
           <div className={styles.CornerNE}></div>
-        </div>
+        </div> */}
+        <BorderCorner
+          grid={borderCornerData.cornerNE.grid}
+          shape={borderCornerData.cornerNE.shape}
+        />
 
         {/* Bottom Left Corner */}
-        <div className={`${styles.OceanGridItem} ${styles.CornerSWContainer}`}>
+        {/* <div className={`${styles.OceanGridItem} ${styles.CornerSWContainer}`}>
           <div className={styles.CornerSW}></div>
-        </div>
+        </div> */}
+        <BorderCorner
+          grid={borderCornerData.cornerSW.grid}
+          shape={borderCornerData.cornerSW.shape}
+        />
+
 
         {/* Bottom Right Corner */}
-        <div className={`${styles.OceanGridItem} ${styles.CornerSEContainer}`}>
+        {/* <div className={`${styles.OceanGridItem} ${styles.CornerSEContainer}`}>
           <div className={styles.CornerSE}></div>
-        </div>
+        </div> */}
+        <BorderCorner
+          grid={borderCornerData.cornerSE.grid}
+          shape={borderCornerData.cornerSE.shape}
+        />
+
 
         {/* Name */}
         <div className={`${styles.OceanGridItem} ${styles.OceanGridName}`}>
@@ -53,29 +73,9 @@ const Ocean = () => {
         {/* Scale */}
         <Scale />
 
-
-
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
-        <div className={styles.OceanGridItem}></div>
         <div className={styles.OceanGridItem}></div>
       </div>
-    </div>
+    </main>
   );
 };
 
