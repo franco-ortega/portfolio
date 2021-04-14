@@ -34,6 +34,8 @@
     
     margin: 1vw;
     border: 2px dashed yellow;
+
+    overflow: auto;
 }
 
 .ProjectLinks {
@@ -43,7 +45,7 @@
     font-size: 1.5vw;
 
     border: 1px solid black;
-    height: 40%;
+    
 }
 
 .ProjectIcon {
@@ -74,6 +76,10 @@
 
         -webkit-text-size-adjust: 100%;
 		-ms-text-size-adjust: 100%;
+    }
+
+    .ProjectLinks {
+        height: 140px;
     }
 }
 
