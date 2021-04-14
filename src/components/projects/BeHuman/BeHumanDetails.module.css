@@ -10,8 +10,8 @@
     left: 23%;
     z-index: 1;
 
-    height: 55%;
-    width: 54%;
+    height: 55vh;
+    width: 55vw;
 
     display: flex;
     flex-direction: column;
