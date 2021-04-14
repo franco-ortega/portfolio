@@ -31,6 +31,9 @@
 .ProjectInfo {
     font-size: 1.5vw;
     text-align: justify;
+    
+    margin: 1vw;
+    border: 1px dashed white;
 }
 
 .ProjectLinks {
@@ -38,6 +41,8 @@
     align-items: center;
     margin-right: 1.4vw;
     font-size: 1.5vw;
+
+    border: 1px solid black;
 }
 
 .ProjectIcon {
