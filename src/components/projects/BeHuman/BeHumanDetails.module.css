@@ -40,7 +40,6 @@
     font-size: 1.5vw;
 
     border: dotted 2px pink;
-    height: fit-content;
     
 }
 
@@ -64,7 +63,7 @@
 @media screen and (max-width: 900px) and (orientation: portrait) {
     .BeHumanDetails {
         transform: rotate(-90deg);
-        top: 35%;
+        top: 33%;
         left: 20%;
         height: 45vw;
         width: 40vh;
@@ -74,7 +73,6 @@
     .BeHumanDetails {
         top: 15%;
         height: 35vw;
-        width: 40vh;
         height: 75%;
         width: 54%;
     }
@@ -82,9 +80,8 @@
 
 @media screen and (max-width: 500px) and (orientation: portrait) {
     .BeHumanDetails {
-        top: 40%;
+        top: 38%;
         left: 10%;
         height: 50vw;
-        width: 40vh;
     }
 }
