@@ -31,8 +31,6 @@
 .ProjectInfo {
     font-size: 1.5vw;
     text-align: justify;
-
-    border: dashed 2px yellow;
 }
 
 .ProjectLinks {
@@ -68,12 +66,13 @@
         transform: rotate(-90deg);
         top: 35%;
         left: 20%;
-        height: 75%;
+        height: 45vw;
         width: 40vh;
     }
 }
 @media screen and (max-width: 900px) and (orientation: landscape) {
     .BeHumanDetails {
+        top: 15%;
         height: 35vw;
         width: 40vh;
         height: 75%;
@@ -85,7 +84,7 @@
     .BeHumanDetails {
         top: 40%;
         left: 10%;
-        height: 45vw;
+        height: 50vw;
         width: 40vh;
     }
 }
