@@ -85,7 +85,7 @@
     }
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 500px) and (orientation: landscape) {
     .BeHumanDetails {
         top: 38%;
         left: 10%;
