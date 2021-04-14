@@ -10,7 +10,7 @@
     left: 23%;
     z-index: 1;
 
-    height: 55%;
+    height: 60vh;
     width: 54%;
 
     display: flex;
@@ -35,6 +35,8 @@
     margin: 1vw;
     border: 2px dashed yellow;
 
+    
+    height: 25vw;
     overflow: auto;
 }
 
@@ -45,6 +47,7 @@
     font-size: 1.5vw;
 
     border: 1px solid black;
+    height: 140px;
     
 }
 
@@ -76,11 +79,9 @@
 
         -webkit-text-size-adjust: 100%;
 		-ms-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
     }
 
-    .ProjectLinks {
-        height: 140px;
-    }
 }
 
 @media screen and (max-width: 500px) and (orientation: portrait) {
@@ -89,5 +90,9 @@
         left: 10%;
         height: 45vw;
         width: 40vh;
+
+        -webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
     }
 }
