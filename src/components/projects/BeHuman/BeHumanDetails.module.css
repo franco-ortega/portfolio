@@ -10,7 +10,7 @@
     left: 23%;
     z-index: 1;
 
-    height: 60vh;
+    height: 55%;
     width: 54%;
 
     display: flex;
@@ -31,13 +31,8 @@
 .ProjectInfo {
     font-size: 1.5vw;
     text-align: justify;
-    
-    margin: 1vw;
-    border: 2px dashed yellow;
 
-    
-    height: 25vw;
-    overflow: auto;
+    border: dashed 2px yellow;
 }
 
 .ProjectLinks {
@@ -46,18 +41,17 @@
     margin-right: 1.4vw;
     font-size: 1.5vw;
 
-    border: 1px solid black;
-    height: 140px;
-    
+    border: dotted 2px pink;
+    height: 20vh;
 }
 
 .ProjectIcon {
     border: 0.2vw solid black;
     border-radius: 50%;
     margin: 1vw;
-    width: 10vw;
+    
 
-    border: 2px dotted pink;
+    height: 10vw;
 }
 
 .CloseButton {
@@ -76,12 +70,7 @@
         left: 20%;
         height: 35vw;
         width: 40vh;
-
-        -webkit-text-size-adjust: 100%;
-		-ms-text-size-adjust: 100%;
-        -moz-text-size-adjust: 100%;
     }
-
 }
 
 @media screen and (max-width: 500px) and (orientation: portrait) {
@@ -90,9 +79,5 @@
         left: 10%;
         height: 45vw;
         width: 40vh;
-
-        -webkit-text-size-adjust: 100%;
-		-ms-text-size-adjust: 100%;
-        -moz-text-size-adjust: 100%;
     }
 }
