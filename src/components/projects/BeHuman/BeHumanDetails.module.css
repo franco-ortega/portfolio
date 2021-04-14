@@ -40,14 +40,13 @@
     font-size: 1.5vw;
 
     border: dotted 2px pink;
-    height: 20vh;
+    
 }
 
 .ProjectIcon {
     border: 0.2vw solid black;
     border-radius: 50%;
     margin: 1vw;
-    
 
     height: 10vw;
 }
