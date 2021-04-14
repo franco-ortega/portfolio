@@ -12,20 +12,19 @@
     align-items: center;
     justify-content: space-between;
 
-    
-    padding: 1%;
+    padding: 1vw;
     height: 100%;
     width: 100%;
 
-    font-size: 1.25vw;
+    font-size: var(--project-summary-title);
     text-align: justify;
 
     overflow: auto;
 }
 
 .Summary {
-    margin: 5%;
-    font-size: 1.3vw;
+    margin: 1.5vw;
+    font-size: var(--project-summary-text);
 }
 
 .DetailsButton {
@@ -33,5 +32,30 @@
     margin: 1vw;
     padding: .25vw;
     width: max-content;
-    font-size: 1.25vw;
+    font-size: var(--project-details-button);
+}
+
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    .WeatherBeats {
+        font-size: var(--project-summary-title-tablet);
+    }
+
+    .Summary {
+        font-size: var(--project-summary-text-tablet);
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    .WeatherBeats {
+        font-size: var(--project-summary-title-mobile);
+    }
+
+    .Summary {
+        font-size: var(--project-summary-text-mobile);
+    }
+
+    .DetailsButton {
+        font-size: var(--project-details-button-mobile);
+    }
 }

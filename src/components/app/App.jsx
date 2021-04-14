@@ -5,8 +5,8 @@ import {
   Switch
 } from 'react-router-dom';
 import Ocean from '../ocean/Ocean';
-import ProfileDetails from '../continents/ProfileDetails';
-import ProjectsDetails from '../continents/ProjectsDetails';
+import ProfileDetails from '../continents/Profile/ProfileDetails';
+import ProjectsDetails from '../continents/Projects/ProjectsDetails';
 import BeHumanDetails from '../projects/BeHuman/BeHumanDetails';
 import ChooseGifDetails from '../projects/ChooseGif/ChooseGifDetails';
 import WeatherBeatsDetails from '../projects/WeatherBeats/WeatherBeatsDetails';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProjectsDetails from '../../continents/ProjectsDetails';
+import ProjectsDetails from '../../continents/Projects/ProjectsDetails';
 import styles from './WeatherBeatsDetails.module.css';
 
 const WeatherBeatsDetails = () => {

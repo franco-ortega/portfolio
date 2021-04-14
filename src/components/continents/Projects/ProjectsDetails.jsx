@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BeHuman from '../projects/BeHuman/BeHuman';
-import ChooseGif from '../projects/ChooseGif/ChooseGif';
-import WeatherBeats from '../projects/WeatherBeats/WeatherBeats';
+import BeHuman from '../../projects/BeHuman/BeHuman';
+import ChooseGif from '../../projects/ChooseGif/ChooseGif';
+import WeatherBeats from '../../projects/WeatherBeats/WeatherBeats';
 // import PropTypes from 'prop-types';
 import styles from './ProjectsDetails.module.css';
 

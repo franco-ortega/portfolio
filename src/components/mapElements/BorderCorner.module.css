@@ -1,0 +1,10 @@
+.BorderCorner {
+    display: flex;
+}
+
+.CornerShape {
+    background: var(--bordercolor);
+    height: 3vw;
+    width: 3vw;
+    margin: -0.2vw;
+}

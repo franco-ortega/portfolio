@@ -55,73 +55,12 @@
   }
 }
 
-
 .OceanGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(7, 1fr);
 
   height: 100%;
-}
-
-.OceanGridItem {
-  
-}
-
-
-.CornerNWContainer, .CornerNEContainer, .CornerSWContainer, .CornerSEContainer {
-  display: flex;
-}
-
-.CornerNW, .CornerNE, .CornerSW, .CornerSE {
-  background: var(--bordercolor);
-  height: 3vw;
-  width: 3vw;
-  margin: -0.2vw;
-}
-
-.CornerNWContainer {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.CornerNW {
-  border-radius: 0% 0% 90% 0%;
-}
-
-.CornerNEContainer {
-  grid-column: 12 / 13;
-  grid-row: 1 / 2;
-  align-items: flex-start;
-  justify-content: flex-end;
-}
-
-.CornerNE {
-  border-radius: 0% 0% 0% 90%;
-}
-
-.CornerSWContainer {
-  grid-column: 1 / 2;
-  grid-row: 7 / 8;
-  align-items: flex-end;
-  justify-content: flex-start;
-}
-
-.CornerSW {
-  border-radius: 0% 90% 0% 0%;
-}
-
-.CornerSEContainer {
-  grid-column: 12 / 13;
-  grid-row: 7 / 8;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-
-.CornerSE {
-  border-radius: 90% 0% 0% 0%;
 }
 
 .OceanGridName, .OceanGridTitle {
