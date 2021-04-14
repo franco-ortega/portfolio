@@ -21,11 +21,11 @@
     overflow: auto;
 }
 
-
 .ProjectTech {
+    margin: 1vw;
     font-size: 1.5vw;
     font-weight: bold;
-    margin: 1vw;
+    text-align: center;
 }
 
 .ProjectInfo {
@@ -38,16 +38,13 @@
     align-items: center;
     margin-right: 1.4vw;
     font-size: 1.5vw;
-
-    border: dotted 2px pink;
-    
+    height: 35vh;
 }
 
 .ProjectIcon {
     border: 0.2vw solid black;
     border-radius: 50%;
     margin: 1vw;
-
     height: 10vw;
 }
 
@@ -60,6 +57,25 @@
     font-size: 1.25vw;
 }
 
+@media screen and (max-width: 900px) {
+    .ProjectTech {
+        width: 75%;
+        font-size: 1.75vw;
+    }
+    
+    .ProjectInfo {
+        font-size: 1.75vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ProjectInfo {
+        font-size: 2vw;
+    }
+}
+
+
+
 @media screen and (max-width: 900px) and (orientation: portrait) {
     .BeHumanDetails {
         transform: rotate(-90deg);
@@ -69,6 +85,7 @@
         width: 40vh;
     }
 }
+
 @media screen and (max-width: 900px) and (orientation: landscape) {
     .BeHumanDetails {
         top: 15%;
