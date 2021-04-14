@@ -77,13 +77,6 @@
     }
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
-    .BeHumanDetails {
-        top: 38%;
-        left: 10%;
-        height: 50vw;
-    }
-}
 
 @media screen and (max-width: 500px) and (orientation: landscape) {
     .BeHumanDetails {
