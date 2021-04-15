@@ -61,11 +61,11 @@
     .WeatherBeatsDetails {
         background-position: 0% 55%;
         background-repeat: no-repeat;
-        background-size: 175%;
+        background-size: 200%;
 
         top: 30%;
         left: 4%;
-        height: 40vh;
+        height: 45vh;
         width: 92vw;
     }
 
