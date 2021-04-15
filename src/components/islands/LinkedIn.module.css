@@ -1,0 +1,34 @@
+.LinkedIn {
+    grid-column: 6 / 8;
+    grid-row: 4 / 7;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.OuterCoastline {
+    background: var(--outer-coastline);
+    border-radius: 50%;
+    box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow);
+    padding: 0.4vw;
+}
+
+.InnerCoastline {
+    background: var(--inner-coastline);
+    border: 0.1vw dashed var(--continent-border);
+    border-radius: inherit;
+    padding: 0.5vw;
+}
+
+.Island {
+    background: var(--continent);
+    border-radius: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    height: 5vw;
+    width: 5vw;
+}
