@@ -69,34 +69,36 @@
     .BeHumanDetails {
         font-size: 2vw;
     }
-
+    
     .ProjectTech {
-        font-size: 1.5vw;
-        font-weight: bold;
-        margin: 1vw;
-
-        width: 75%;
+        width: 80%;
         font-size: 1.75vw;
     }
     
     .ProjectInfo {
-        font-size: 1.3vw;
-        text-align: justify;
-
-
         margin: 1vw;
         font-size: 1.5vw;
     }
-    
 }
 
 
 @media screen and (max-width: 500px) {
     .BeHumanDetails {
-        top: 38%;
-        left: 10%;
-        height: 50vw;
-        height: 75%;
+        font-size: 2vw;
+    }
+    
+    .ProjectTech {
+        width: 80%;
+        font-size: 1.75vw;
+
+        font-size: 2vw;
+    }
+    
+    .ProjectInfo {
+        margin: 1vw;
+        font-size: 1.5vw;
+
+        font-size: 1.75vw;
     }
 }
 
