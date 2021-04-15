@@ -21,6 +21,8 @@
     align-items: center;
     justify-content: space-between;
 
+    text-align: center;
+
     overflow: auto;
 }
 
@@ -48,21 +50,50 @@
     font-size: 1.25vw;
 }
 
-@media screen and (max-width: 900px) and (orientation: portrait) {
+@media screen and (max-width: 900px) {
     .WeatherBeatsDetails {
-        transform: rotate(-90deg);
-        top: 35%;
-        left: 20%;
+        
         height: 35vw;
         width: 40vh;
     }
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 500px) {
     .WeatherBeatsDetails {
-        top: 40%;
-        left: 10%;
-        height: 45vw;
-        width: 40vh;
+        background-position: 0% 55%;
+        background-repeat: no-repeat;
+        background-size: 175%;
+
+        top: 30%;
+        left: 4%;
+        height: 40vh;
+        width: 92vw;
     }
+
+    .ProjectTech {
+        width: 75%;
+        font-size: 3.5vw;
+        font-weight: bold;
+    }
+    
+    .ProjectInfo {
+        margin: 2vw;
+        font-size: 3.5vw;
+        text-align: justify;
+    }
+
+    .ProjectLinks {
+        margin: 1vw;
+        font-size: 4vw;
+        font-weight: 600;
+    }
+
+    .CloseButton {
+        margin: 2vw;
+        padding: 0.5vw;
+        font-size: 3.25vw;
+    }
+
+    
+    
 }
