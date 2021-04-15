@@ -60,8 +60,7 @@
 
 @media screen and (max-width: 900px) {
     .BeHumanDetails {
-        height: 35vw;
-        width: 40vh;
+        
     }
 }
 
@@ -69,7 +68,7 @@
     .BeHumanDetails {
         top: 30%;
         left: 4%;
-        height: 45vh;
+        height: 50vh;
         width: 92vw;
     }
 
