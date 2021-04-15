@@ -12,10 +12,10 @@ const Profile = () => {
             <section className={styles.Header}>
               <header className={styles.Name}>Franco Ortega</header>
               <p className={styles.Contact}>
-                <a href="mailto:francopdx@gmail.com" rel="noreferrer" target="_blank">francopdx@gmail.com</a>
-                <a href="tel:503-998-7444">503-998-7444</a>
+                <a href="mailto:francopdx@gmail.com" rel="noreferrer" target="_blank" className={styles.ContactLink}>francopdx@gmail.com</a>
+                <a href="tel:503-998-7444" className={styles.ContactLink}>503-998-7444</a>
                 <section>
-                  <a href="https://github.com/franco-ortega" rel="noreferrer" target="_blank">GitHub</a> &lowast; <a href="https://www.linkedin.com/in/franco-ortega/" rel="noreferrer" target="_blank">LinkedIn</a>
+                  <a href="https://github.com/franco-ortega" rel="noreferrer" target="_blank" className={styles.ContactLink}>GitHub</a> &lowast; <a href="https://www.linkedin.com/in/franco-ortega/" rel="noreferrer" target="_blank" className={styles.ContactLink}>LinkedIn</a>
                 </section>
               </p>
             </section>
