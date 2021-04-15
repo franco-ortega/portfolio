@@ -65,6 +65,47 @@
 
 
 
+
+
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    .BeHumanDetails {
+        transform: rotate(-90deg);
+        top: 33%;
+        left: 20%;
+        height: 45vw;
+        width: 40vh;
+    }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    .BeHumanDetails {
+        top: 15%;
+        height: 35vw;
+        width: 54%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) and (orientation: landscape) {
+    .BeHumanDetails {
+        top: 38%;
+        left: 10%;
+        height: 50vw;
+
+        height: 55vw;
+    }
+}
+
+
+
+
+
+
 @media screen and (max-width: 900px) {
     .BeHumanDetails {
         font-size: 2vw;
@@ -113,42 +154,4 @@
     }
     
 }
-
-
-
-
-
-@media screen and (max-width: 900px) and (orientation: portrait) {
-    .BeHumanDetails {
-        transform: rotate(-90deg);
-        top: 33%;
-        left: 20%;
-        height: 45vw;
-        width: 40vh;
-    }
-}
-
-@media screen and (max-width: 900px) and (orientation: landscape) {
-    .BeHumanDetails {
-        top: 15%;
-        height: 35vw;
-        width: 54%;
-    }
-}
-
-
-
-
-
-
-@media screen and (max-width: 500px) and (orientation: landscape) {
-    .BeHumanDetails {
-        top: 38%;
-        left: 10%;
-        height: 50vw;
-        height: 55vw;
-    }
-}
-
-
 
