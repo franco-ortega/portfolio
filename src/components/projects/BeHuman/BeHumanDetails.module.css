@@ -69,25 +69,16 @@
     .BeHumanDetails {
         font-size: 2vw;
     }
-
+    
     .ProjectTech {
-        font-size: 1.5vw;
-        font-weight: bold;
-        margin: 1vw;
-
-        width: 75%;
+        width: 80%;
         font-size: 1.75vw;
     }
     
     .ProjectInfo {
-        font-size: 1.3vw;
-        text-align: justify;
-
-
         margin: 1vw;
         font-size: 1.5vw;
     }
-    
 }
 
 
