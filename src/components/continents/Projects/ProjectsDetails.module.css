@@ -93,6 +93,7 @@
 
 @media screen and (max-width: 900px) {
     .ProjectsDetails {
+        left: 3%;
         height: 50vw;
         width: 70vh;
     }
