@@ -72,6 +72,7 @@
 
 .Title {
   font-size: 2.35vw;
+  font-weight: 100;
 }
 
 .Message {
@@ -125,10 +126,60 @@
   }
 }
 
+
+
+
+
+
+
+
 @media screen and (max-width: 500px) {
   .Ocean {
     border: 1.5vw solid var(--bordercolor);
   }
+
+
+  .OceanGrid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+  }
+
+  .OceanGridName {
+  grid-column: 2 / 12;
+  grid-row: 1 / 4;
+
+  border: dashed 2px pink;
+}
+
+.Name {
+  font-size: 10vw;
+  
+  border: 1px solid black;
+  margin: 1vw;
+}
+
+.OceanGridTitle {
+  grid-column: 3 / 11;
+  grid-row: 3 / 5;
+}
+
+
+.Title {
+  font-size: 5vw;
+
+  border: 1px solid black;
+}
+
+.Message {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+
+
+
+
+  
     
   .CornerNW, .CornerNE, .CornerSW, .CornerSE {
     height: 5vw;
@@ -151,11 +202,5 @@
     bottom: -1.5%;
   }
 
-  .Name {
-    font-size: 7vw;
-  }
 
-  .Title {
-    font-size: 3.25vw;
-  }
 }
