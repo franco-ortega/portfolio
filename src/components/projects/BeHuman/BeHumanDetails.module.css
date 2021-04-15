@@ -111,6 +111,12 @@
     .BeHumanDetails {
         font-size: 2vw;
     }
+
+    .ProjectTech {
+        width: 80%;
+        font-size: 1.75vw;
+    }
+
 }
 
 
