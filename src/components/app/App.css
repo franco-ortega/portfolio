@@ -39,9 +39,9 @@
   --project-summary-title-tablet: 2vw;
   --project-summary-text-tablet: 1.5vw;
   
-  --project-summary-title-mobile: 3vw;
-  --project-summary-text-mobile: 2.5vw;
-  --project-details-button-mobile: 2.25vw;
+  --project-summary-title-mobile: 4.5vw;
+  --project-summary-text-mobile: 3.5vw;
+  --project-details-button-mobile: 3vw;
 }
 
 a {

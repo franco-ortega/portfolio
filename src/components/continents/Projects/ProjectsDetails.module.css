@@ -111,6 +111,16 @@
         width: 92vw;
     }
 
+    .ProjectsDisplayCase {
+        width: 85%;
+    }
+
+    .Project {
+        margin: 1vw;
+        width: 95%;
+    }
+    
+
     .Title {
         padding-top: 7vw;
         font-size: 7vw;
@@ -121,5 +131,4 @@
         width: 75%;
         font-size: 3vw;
     }
-
 }
