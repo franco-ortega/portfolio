@@ -39,16 +39,27 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 900px) and (orientation: portrait) {
+@media screen and (max-width: 900px) {
     .Continent {
         height: 20vw;
         width: 25vh;
     }
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 500px) {
+    .Profile {
+        grid-column: 2 / 12;
+        grid-Row: 7 / 16;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid pink;
+    }
+    
     .Continent {
-        height: 25vw;
-        width: 20vh;
+        height: 35vw;
+        width: 30vh;
     }
 }
