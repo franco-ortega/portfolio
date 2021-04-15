@@ -43,7 +43,7 @@
     font-size: 1.5vw;
 
     border: dotted 2px pink;
-    height: 35vh;
+    height: 45vh;
 }
 
 .ProjectIcon {
@@ -147,6 +147,7 @@
         font-size: 1.5vw;
 
         font-size: 3vw;
+        background: lightgreen;
     }
 
     .CloseButton {
