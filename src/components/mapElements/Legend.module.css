@@ -51,10 +51,7 @@
         align-items: flex-start;
         justify-content: flex-end;
         margin: 1vw;
-
-        border: 1px pink dashed;
     }
-
 
     .Legend {
         border: solid 1vw rgb(10, 10, 10);
