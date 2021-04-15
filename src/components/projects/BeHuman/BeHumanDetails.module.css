@@ -1,25 +1,22 @@
 .BeHumanDetails {
     background: #9cc4d7;
 
-    border: .3vw solid darkblue;
+    border: .25vw solid darkblue;
     border-radius: 1vw;
     padding: 1vw 2vw;
 
     position: absolute;
     top: 33%;
     left: 23%;
-    z-index: 2;
+    z-index: 1;
 
-    height: 55vh;
-    width: 55vw;
+    height: 55%;
+    width: 54%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
-    font-size: 1.5vw;
-    text-align: center;
 
     overflow: auto;
 }
@@ -32,7 +29,7 @@
 }
 
 .ProjectInfo {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     text-align: justify;
 }
 
@@ -41,17 +38,13 @@
     align-items: center;
     margin-right: 1.4vw;
     font-size: 1.5vw;
-
-    border: dotted 2px pink;
-    height: 45vh;
 }
 
 .ProjectIcon {
     border: 0.2vw solid black;
     border-radius: 50%;
     margin: 1vw;
-
-    height: 10vw;
+    width: 10vw;
 }
 
 .CloseButton {
@@ -63,124 +56,21 @@
     font-size: 1.25vw;
 }
 
-
-
-
-
-
-@media (max-width: 800px) and (orientation: portrait) {
+@media screen and (max-width: 900px) and (orientation: portrait) {
     .BeHumanDetails {
         transform: rotate(-90deg);
-        top: 33%;
+        top: 35%;
         left: 20%;
-        height: 45vw;
-        width: 40vh;
-
-        background: darkgray;
-    }
-}
-
-@media screen and (max-width: 900px) and (orientation: landscape) {
-    .BeHumanDetails {
-        top: 15%;
         height: 35vw;
-        width: 54vw;
-
-        background: darkslategray;
+        width: 40vh;
     }
 }
-
-
-@media (max-width: 850px) and (orientation: landscape) {
-    .BeHumanDetails {
-        top: 15%;
-        height: 40vw;
-        width: 54vw;
-
-        background: purple;
-    }
-}
-
-
-
-
 
 @media screen and (max-width: 500px) and (orientation: portrait) {
     .BeHumanDetails {
-        top: 34%;
+        top: 40%;
         left: 10%;
-        height: 60vw;
-
-        background: lightyellow;
-
-        
+        height: 45vw;
+        width: 40vh;
     }
 }
-
-@media screen and (max-width: 500px) and (orientation: landscape) {
-    .BeHumanDetails {
-        top: 38%;
-        left: 10%;
-        height: 50vw;
-        height: 55vw;
-
-        background: goldenrod;
-    }
-}
-
-
-
-
-
-
-@media screen and (max-width: 900px) {
-    .BeHumanDetails {
-        font-size: 2vw;
-    }
-    
-    .ProjectTech {
-        width: 80%;
-        font-size: 1.75vw;
-    }
-    
-    .ProjectInfo {
-        margin: 1vw;
-        font-size: 1.5vw;
-        background: lightgray;
-    }
-}
-
-
-@media screen and (max-width: 500px) {
-    .BeHumanDetails {
-        font-size: 2vw;
-    }
-    
-    .ProjectTech {
-        width: 80%;
-        font-size: 1.75vw;
-
-        font-size: 2.25vw;
-    }
-    
-    .ProjectInfo {
-        margin: 1vw;
-        font-size: 1.5vw;
-
-        font-size: 3vw;
-        background: lightgreen;
-    }
-
-    .CloseButton {
-        background: lightcyan;
-        border-radius: 50%;
-        margin: 1vw;
-        padding: .25vw;
-        width: max-content;
-        font-size: 1.25vw;
-        
-        margin: 2vw;
-    }
-    
-}
-
