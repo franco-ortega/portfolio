@@ -43,14 +43,25 @@
 }
 
 
-@media screen and (max-width: 900px) and (orientation: portrait) {
+@media screen and (max-width: 900px) {
   .Continent {
     height: 10vh;
     width: 25vw;
   }
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 500px) {
+  .Resume {
+    grid-column: 7 / 13;
+    grid-row: 15 / 19;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: pink solid 1px;
+}
+
   .Continent {
     height: 10vh;
     width: 30vw;

@@ -1,7 +1,7 @@
 import React from 'react';
-// import Projects from '../continents/Projects/Projects';
-// import Profile from '../continents/Profile/Profile';
-// import Resume from '../continents/Resume/Resume';
+import Projects from '../continents/Projects/Projects';
+import Profile from '../continents/Profile/Profile';
+import Resume from '../continents/Resume/Resume';
 import Scale from '../mapElements/Scale';
 import BorderCorner from '../mapElements/BorderCorner';
 import { borderCornerData } from '../mapElements/borderCornerData';
@@ -40,9 +40,9 @@ const Ocean = () => {
         </div>
 
         {/* Continents */}
-        {/* <Projects />
+        <Projects />
         <Profile />
-        <Resume /> */}
+        <Resume />
 
         {/* Scale */}
         <Scale />
