@@ -51,11 +51,11 @@
 }
 
 .ProjectsDisplayCase {
-    background: rgb(216, 241, 216);
+    
     height: 65%;
     width: 75%;
 
-    border: .1vw solid black;
+    
     border-radius: 1vw;
 
     padding: 0.5vw;
