@@ -52,20 +52,19 @@
 
 @media screen and (max-width: 900px) {
     .WeatherBeatsDetails {
-        height: 35vw;
-        width: 40vh;
+        
     }
 }
 
 @media screen and (max-width: 500px) {
     .WeatherBeatsDetails {
-        background-position: 0% 55%;
+        background-position: 20% 55%;
         background-repeat: no-repeat;
-        background-size: 200%;
+        background-size: 220%;
 
         top: 30%;
         left: 4%;
-        height: 45vh;
+        height: 50vh;
         width: 92vw;
     }
 
