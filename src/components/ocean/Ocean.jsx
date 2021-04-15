@@ -31,12 +31,12 @@ const Ocean = () => {
         />
 
         {/* Name & Title */}
-        <div className={`${styles.OceanGridItem} ${styles.OceanGridName}`}>
+        <div className={styles.OceanGridHeader}>
           <h1 className={styles.Name}>Franco Ortega</h1>
           <h2 className={styles.Title}>Full Stack Software Engineer</h2>
         </div>
-        <div className={`${styles.OceanGridItem} ${styles.OceanGridTitle}`}>
-          {/* <p className={styles.Message}>&lowast; &lowast; &lowast; portfolio in progress &lowast; &lowast; &lowast;</p> */}
+        <div className={styles.OceanGridMessage}>
+          <p className={styles.Message}>&lowast; &lowast; &lowast; portfolio in progress &lowast; &lowast; &lowast;</p>
         </div>
 
         {/* Continents */}
@@ -48,6 +48,7 @@ const Ocean = () => {
         <Scale />
 
         {/* <div className={styles.OceanGridItem}></div> */}
+
       </section>
     </main>
   );

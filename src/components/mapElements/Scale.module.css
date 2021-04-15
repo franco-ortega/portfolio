@@ -2,7 +2,7 @@
     grid-column: 1 / 5;
     grid-row: 7 / 8;
     display: flex;
-    padding: 2vw 0vw 2vw 3vw;
+    padding: 2vw 0vw 0vw 4vw;
     color: white;
 }
 
@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 900px) {
     .ScaleContainer {
-        padding: 7vw 0vw 2vw 5vw;
+        padding: 10vw 0vw 0vw 5vw;
     }
 
     .ScaleNumber {
@@ -65,7 +65,7 @@
     .ScaleContainer {
         grid-column: 1 / 10;
         grid-row: 23 / 25;
-        padding: 5vw 0vw 2vw 6vw;
+        padding: 6vw 0vw 0vw 6vw;
         justify-content: center;
     }
 
