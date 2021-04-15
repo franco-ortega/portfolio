@@ -19,6 +19,7 @@
     justify-content: space-between;
 
     font-size: 1.5vw;
+    text-align: center;
 
     overflow: auto;
 }
@@ -66,10 +67,27 @@
 
 @media screen and (max-width: 900px) {
     .BeHumanDetails {
-        top: 15%;
-        height: 35vw;
-        width: 54%;
+        font-size: 2vw;
     }
+
+    .ProjectTech {
+        font-size: 1.5vw;
+        font-weight: bold;
+        margin: 1vw;
+
+        width: 75%;
+        font-size: 1.75vw;
+    }
+    
+    .ProjectInfo {
+        font-size: 1.3vw;
+        text-align: justify;
+
+
+        margin: 1vw;
+        font-size: 1.5vw;
+    }
+    
 }
 
 
@@ -81,6 +99,7 @@
         height: 75%;
     }
 }
+
 
 
 
@@ -102,7 +121,6 @@
         width: 54%;
     }
 }
-
 
 
 
