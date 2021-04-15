@@ -59,11 +59,13 @@
     align-items: center;
     justify-content: center;
 
-    border: pink solid 1px;
+    
 }
 
   .Continent {
     height: 10vh;
     width: 30vw;
+
+    font-size: 6vw;
   }
 }
