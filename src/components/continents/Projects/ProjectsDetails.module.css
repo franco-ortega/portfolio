@@ -106,8 +106,20 @@
 @media screen and (max-width: 500px) {
     .ProjectsDetails {
         top: 32%;
-        left: -10%;
-        height: 75vw;
-        width: 65vh;
+        left: 4%;
+        height: 35vh;
+        width: 92vw;
     }
+
+    .Title {
+        padding-top: 7vw;
+        font-size: 7vw;
+        font-weight: 600;
+    }
+
+    .Intro {
+        width: 75%;
+        font-size: 3vw;
+    }
+
 }
