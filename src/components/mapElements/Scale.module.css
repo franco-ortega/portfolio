@@ -6,9 +6,6 @@
     color: white;
 
     border: 1px dashed pink;
-    grid-column: 8 / 13;
-    align-items: flex-end;
-    
 }
 
 .ScaleNumber {
