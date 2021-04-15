@@ -75,6 +75,8 @@
         left: 20%;
         height: 45vw;
         width: 40vh;
+
+        background: darkgray;
     }
 }
 
@@ -83,6 +85,8 @@
         top: 15%;
         height: 35vw;
         width: 54vw;
+
+        background: darkslategray;
     }
 }
 
