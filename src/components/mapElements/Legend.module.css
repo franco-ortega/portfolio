@@ -9,6 +9,9 @@
 
 .Legend {
     background: rgb(245, 245, 101);
+    background: linear-gradient(125deg, rgb(245, 245, 80), rgb(245, 245, 148), rgb(245, 245, 120), rgb(248, 248, 93), rgb(245, 245, 148));
+    background-size: 100% 100%;
+
     border: solid 0.5vw rgb(10, 10, 10);
     display: flex;
     flex-direction: column;
@@ -55,7 +58,7 @@
 
     .Legend {
         border: solid 1vw rgb(10, 10, 10);
-        height: 40vw;
+        height: 38vw;
         width: 35vw;
         padding: 1vw;
     }
@@ -66,8 +69,6 @@
 
     .Tech {
         font-size: 2.25vw;
+        justify-content: space-between;
     }
-    
-       
-
 }
