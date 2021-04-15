@@ -72,6 +72,7 @@
 
 .Title {
   font-size: 2.35vw;
+  font-weight: 100;
 }
 
 .Message {
@@ -79,14 +80,10 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 900px) and (orientation: portrait) {
+@media screen and (max-width: 900px) {
   .Ocean {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      position: absolute;
-      top: 100%;
-      height: 100vw;
-      width: 100vh;
+      
+
   }
 
   .CornerNW, .CornerNE, .CornerSW, .CornerSE {
@@ -129,10 +126,54 @@
   }
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
   .Ocean {
     border: 1.5vw solid var(--bordercolor);
   }
+
+
+  .OceanGrid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+  }
+
+  .OceanGridName {
+  grid-column: 1 / 13;
+  grid-row: 1 / 4;
+}
+
+.Name {
+  font-size: 12vw;
+  margin: 1vw;
+}
+
+.OceanGridTitle {
+  grid-column: 3 / 11;
+  grid-row: 3 / 5;
+}
+
+
+.Title {
+  font-size: 5.5vw;
+}
+
+.Message {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+
+
+
+
+  
     
   .CornerNW, .CornerNE, .CornerSW, .CornerSE {
     height: 5vw;
@@ -155,11 +196,5 @@
     bottom: -1.5%;
   }
 
-  .Name {
-    font-size: 7vw;
-  }
 
-  .Title {
-    font-size: 3.25vw;
-  }
 }

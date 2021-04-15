@@ -1,11 +1,11 @@
 import React from 'react';
 import Projects from '../continents/Projects/Projects';
 import Profile from '../continents/Profile/Profile';
-import styles from './Ocean.module.css';
 import Resume from '../continents/Resume/Resume';
 import Scale from '../mapElements/Scale';
 import BorderCorner from '../mapElements/BorderCorner';
 import { borderCornerData } from '../mapElements/borderCornerData';
+import styles from './Ocean.module.css';
 
 const Ocean = () => {
   return (
@@ -32,11 +32,11 @@ const Ocean = () => {
 
         {/* Name & Title */}
         <div className={`${styles.OceanGridItem} ${styles.OceanGridName}`}>
-          <p className={styles.Name}>Franco Ortega</p>
+          <h1 className={styles.Name}>Franco Ortega</h1>
+          <h2 className={styles.Title}>Full Stack Software Engineer</h2>
         </div>
         <div className={`${styles.OceanGridItem} ${styles.OceanGridTitle}`}>
-          <p className={styles.Title}>Full Stack Software Engineer</p>
-          <p className={styles.Message}>&lowast; &lowast; &lowast; portfolio in progress &lowast; &lowast; &lowast;</p>
+          {/* <p className={styles.Message}>&lowast; &lowast; &lowast; portfolio in progress &lowast; &lowast; &lowast;</p> */}
         </div>
 
         {/* Continents */}

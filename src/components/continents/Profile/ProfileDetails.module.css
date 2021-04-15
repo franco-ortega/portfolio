@@ -71,11 +71,9 @@
 }
 
 
-@media screen and (max-width: 900px) and (orientation: portrait) {
+@media screen and (max-width: 900px) {
     .ProfileDetails {
-        transform: rotate(-90deg);
-        top: 31%;
-        left: 0%;
+        left: 3%;
         height: 50vw;
         width: 70vh;
     }
@@ -86,15 +84,26 @@
     }
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 500px) {
     .ProfileDetails {
-        top: 35%;
-        height: 60vw;
-        width: 50vh;
+        top: 25%;
+        left: 4%;
+        height: 60vh;
+        width: 92vw;
+    }
+
+    .Title {
+        padding-top: 5vw;
+        font-size: 8vw;
+        font-weight: 600;
     }
 
     .Bio {
-        padding: 6vw;
-        font-size: 2vw;
+        padding: 6vw 5vw;
+        font-size: 4vw;
+    }
+
+    .BioParagraph {
+        margin-bottom: 2vw;
     }
 }

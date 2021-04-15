@@ -91,11 +91,9 @@
 
 
 
-@media screen and (max-width: 900px) and (orientation: portrait) {
+@media screen and (max-width: 900px) {
     .ProjectsDetails {
-        transform: rotate(-90deg);
-        top: 31%;
-        left: 0%;
+        left: 3%;
         height: 50vw;
         width: 70vh;
     }
@@ -105,11 +103,32 @@
     }
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 500px) {
     .ProjectsDetails {
         top: 32%;
-        left: -10%;
-        height: 75vw;
-        width: 65vh;
+        left: 4%;
+        height: 35vh;
+        width: 92vw;
+    }
+
+    .ProjectsDisplayCase {
+        width: 85%;
+    }
+
+    .Project {
+        margin: 1vw;
+        width: 95%;
+    }
+    
+
+    .Title {
+        padding-top: 7vw;
+        font-size: 7vw;
+        font-weight: 600;
+    }
+
+    .Intro {
+        width: 75%;
+        font-size: 3vw;
     }
 }
