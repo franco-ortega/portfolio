@@ -53,13 +53,11 @@
 @media screen and (max-width: 500px) {
   .Resume {
     grid-column: 7 / 13;
-    grid-row: 15 / 19;
+    grid-row: 16 / 20;
     margin-top: 2vw;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
 }
 
   .Continent {
