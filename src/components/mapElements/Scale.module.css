@@ -65,7 +65,7 @@
     .ScaleContainer {
         grid-column: 1 / 10;
         grid-row: 23 / 25;
-        padding: 6vw 0vw 0vw 6vw;
+        padding: 4vw 0vw 2vw 6vw;
         justify-content: center;
     }
 
