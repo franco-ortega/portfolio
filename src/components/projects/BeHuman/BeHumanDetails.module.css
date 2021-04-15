@@ -98,8 +98,20 @@
         margin: 1vw;
         font-size: 1.5vw;
 
-        font-size: 2vw;
+        font-size: 3vw;
     }
+
+    .CloseButton {
+        background: lightcyan;
+        border-radius: 50%;
+        margin: 1vw;
+        padding: .25vw;
+        width: max-content;
+        font-size: 1.25vw;
+
+        margin: 2vw;
+    }
+    
 }
 
 
