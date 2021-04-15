@@ -91,11 +91,8 @@
 
 
 
-@media screen and (max-width: 900px) and (orientation: portrait) {
+@media screen and (max-width: 900px) {
     .ProjectsDetails {
-        transform: rotate(-90deg);
-        top: 31%;
-        left: 0%;
         height: 50vw;
         width: 70vh;
     }
@@ -105,7 +102,7 @@
     }
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 500px) {
     .ProjectsDetails {
         top: 32%;
         left: -10%;
