@@ -48,22 +48,13 @@
 @media screen and (max-width: 500px) {
     .Projects {
         grid-column: 1 / 9;
-        grid-Row: 5 / 9;
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        
+        grid-Row: 6 / 10;
     }
     
     .Continent {
         height: 27vw;
         width: 22vh;
-
-        
         padding: 2vw;
-        
         font-size: 8vw;
         text-align: center;
     }
