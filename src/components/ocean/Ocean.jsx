@@ -7,6 +7,7 @@ import BorderCorner from '../mapElements/BorderCorner';
 import { borderCornerData } from '../mapElements/borderCornerData';
 import styles from './Ocean.module.css';
 import Legend from '../mapElements/Legend';
+import IslandChain from '../islands/IslandChain';
 
 const Ocean = () => {
   return (
@@ -44,6 +45,9 @@ const Ocean = () => {
         <Projects />
         <Profile />
         <Resume />
+
+        {/* Islands */}
+        <IslandChain />
 
         {/* Map Elements */}
         <Legend />

@@ -1,0 +1,14 @@
+.IslandChain {
+    border: 1px dashed orangered;
+    grid-column: 1 / 6;
+    grid-row: 4 / 8;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 100%;
+}
+
+.IslandGridBlock {
+    border: 1px yellow dashed;
+}

@@ -3,15 +3,17 @@
     grid-Row: 3 / 6;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+
+    border: 1px dashed pink;
 }
 
 .OuterCoastline {
     background: var(--outer-coastline);
     border-radius: 120vw 70vw 95vw 90vw;
-    padding: var(--outer-coastline-padding);
     box-shadow: 0vw 0vw 2vw 2vw var(--coastline-shadow);
+    padding: var(--outer-coastline-padding);
     margin-right: 2vw;
 }
 
@@ -50,6 +52,7 @@
     .Profile {
         grid-column: 2 / 11;
         grid-Row: 11 / 16;
+        align-items: center;
     }
     
     .Continent {
