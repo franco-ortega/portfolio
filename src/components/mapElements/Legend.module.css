@@ -42,14 +42,14 @@
         grid-row: 1 / 6;
         
         grid-column: 8 / 13;
-        grid-row: 5 / 12;
+        grid-row: 5 / 11;
 
-        
-        
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
         margin: 1vw;
+
+        border: 1px pink dashed;
     }
 
 
