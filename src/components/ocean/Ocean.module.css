@@ -145,16 +145,12 @@
   }
 
   .OceanGridName {
-  grid-column: 2 / 12;
+  grid-column: 1 / 13;
   grid-row: 1 / 4;
-
-  border: dashed 2px pink;
 }
 
 .Name {
-  font-size: 10vw;
-  
-  border: 1px solid black;
+  font-size: 12vw;
   margin: 1vw;
 }
 
@@ -165,9 +161,7 @@
 
 
 .Title {
-  font-size: 5vw;
-
-  border: 1px solid black;
+  font-size: 5.5vw;
 }
 
 .Message {
