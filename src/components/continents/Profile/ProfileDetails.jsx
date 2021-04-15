@@ -9,7 +9,16 @@ const Profile = () => {
       <section className={styles.OuterCoastline}>
         <section className={styles.InnerCoastline}>
           <section className={styles.Continent}>
-            <header className={styles.Title}>Profile</header>
+            <section className={styles.Header}>
+              <header className={styles.Name}>Franco Ortega</header>
+              <p className={styles.Contact}>
+                <a href="mailto:francopdx@gmail.com" rel="noreferrer" target="_blank">francopdx@gmail.com</a>
+                <a href="tel:503-998-7444">503-998-7444</a>
+                <section>
+                  <a href="https://github.com/franco-ortega" rel="noreferrer" target="_blank">GitHub</a> &lowast; <a href="https://www.linkedin.com/in/franco-ortega/" rel="noreferrer" target="_blank">LinkedIn</a>
+                </section>
+              </p>
+            </section>
             <section className={styles.Bio}>
               <img src={photo} alt="profile photo" className={styles.Photo} />
               <p className={styles.BioParagraph}>
@@ -23,15 +32,6 @@ const Profile = () => {
               </p>
               <p className={styles.BioParagraph}>
                 Yes to social justice, climate justice, and economic justice. 
-              </p>
-              <p className={styles.BioParagraph}>
-                <a href="mailto:francopdx@gmail.com" rel="noreferrer" target="_blank">francopdx@gmail.com</a>
-                <br/>
-                <a href="tel:503-998-7444">503-998-7444</a>
-                <br/>
-                <a href="https://github.com/franco-ortega" rel="noreferrer" target="_blank">GitHub</a>
-                <br/>
-                <a href="https://www.linkedin.com/in/franco-ortega/" rel="noreferrer" target="_blank">LinkedIn</a>
               </p>
             </section>
             <Link to="/">

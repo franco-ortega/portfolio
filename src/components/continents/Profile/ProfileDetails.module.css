@@ -41,12 +41,26 @@
     overflow: auto;
 }
 
-.Title {
+.Header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+.Name {
     font-size: var(--continent-details-title);
 }
 
+.Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15vw;
+}
+
 .Bio {
-    margin: 2vw 4vw;
+    margin: 2vw 5vw 1vw 6vw;
     height: 75%;
     font-size: var(--continent-details-body);
     overflow: auto;
@@ -73,6 +87,7 @@
 
 @media screen and (max-width: 900px) {
     .ProfileDetails {
+        border-radius: 400vw 320vw 215vw 210vw;
         left: 3%;
         height: 50vw;
         width: 70vh;
@@ -92,14 +107,27 @@
         width: 92vw;
     }
 
-    .Title {
+    .Header {
+        flex-direction: column;
+        margin-top: 5vw;
+        width: 85%;
+    }
+
+    .Name {
+        width: 75%;
+        margin-left: 10vw;
         padding-top: 5vw;
         font-size: 8vw;
         font-weight: 600;
     }
 
+    .Contact {
+        font-size: 3vw;
+    }
+
     .Bio {
-        padding: 6vw 5vw;
+        margin: 2vw 5vw 2vw 6vw;
+        padding: 1vw 5vw;
         font-size: 4vw;
     }
 
