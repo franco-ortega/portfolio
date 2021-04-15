@@ -31,7 +31,7 @@ const Ocean = () => {
         />
 
         {/* Name & Title */}
-        <div className={`${styles.OceanGridItem} ${styles.OceanGridName}`}>
+        <div className={`${styles.OceanGridItem} ${styles.OceanGridHeader}`}>
           <h1 className={styles.Name}>Franco Ortega</h1>
           <h2 className={styles.Title}>Full Stack Software Engineer</h2>
         </div>
@@ -47,7 +47,38 @@ const Ocean = () => {
         {/* Scale */}
         <Scale />
 
-        {/* <div className={styles.OceanGridItem}></div> */}
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+        <div className={styles.OceanGridItem}></div>
+
       </section>
     </main>
   );

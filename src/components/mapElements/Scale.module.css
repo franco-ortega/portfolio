@@ -4,6 +4,9 @@
     display: flex;
     padding: 2vw 0vw 2vw 3vw;
     color: white;
+
+
+    border: 1px pink solid;
 }
 
 .ScaleNumber {

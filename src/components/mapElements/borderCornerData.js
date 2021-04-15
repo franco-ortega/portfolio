@@ -1,8 +1,7 @@
 export const borderCornerData = {
   cornerNW: {
     grid: {
-      gridColumn: '1 / 2',
-      gridRow: '1 / 2',
+      
       alignItems: 'flex-start',
       justifyContent: 'flex-start'
     },
@@ -12,8 +11,7 @@ export const borderCornerData = {
   },
   cornerNE: {
     grid: {
-      gridColumn: '12 / 13',
-      gridRow: '1 / 2',
+      
       alignItems: 'flex-start',
       justifyContent: 'flex-end'
     },
@@ -23,8 +21,7 @@ export const borderCornerData = {
   },
   cornerSW: {
     grid: {
-      gridColumn: '1 / 2',
-      gridRow: '24 / 25',
+      
       alignItems: 'flex-end',
       justifyContent: 'flex-start'
     },
@@ -34,8 +31,7 @@ export const borderCornerData = {
   },
   cornerSE: {
     grid: {
-      gridColumn: '12 / 13',
-      gridRow: '24 / 25',
+      
       alignItems: 'flex-end',
       justifyContent: 'flex-end'
     },

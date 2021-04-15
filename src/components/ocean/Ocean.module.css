@@ -44,7 +44,11 @@
   height: 100%;
 }
 
-.OceanGridName, .OceanGridTitle {
+.OceanGridItem {
+  border: 1px solid black;
+}
+
+.OceanGridHeader, .OceanGridTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,9 +57,9 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.OceanGridName {
-  grid-column: 5 / 9;
-  grid-row: 1 / 2;
+.OceanGridHeader {
+  grid-column: 4 / 10;
+  grid-row: 1 / 3;
   justify-content: center;
 }
 
@@ -83,7 +87,6 @@
 @media screen and (max-width: 900px) {
   .Ocean {
       
-
   }
 
   .CornerNW, .CornerNE, .CornerSW, .CornerSE {
@@ -144,7 +147,7 @@
     grid-template-rows: repeat(24, 1fr);
   }
 
-  .OceanGridName {
+  .OceanGridHeader {
   grid-column: 1 / 13;
   grid-row: 1 / 4;
 }
