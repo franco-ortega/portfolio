@@ -68,7 +68,7 @@
 
 
 
-@media screen and (max-width: 900px) and (orientation: portrait) {
+@media screen and (max-width: 800px) and (orientation: portrait) {
     .BeHumanDetails {
         transform: rotate(-90deg);
         top: 33%;
@@ -77,6 +77,16 @@
         width: 40vh;
 
         background: darkgray;
+    }
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape) {
+    .BeHumanDetails {
+        top: 15%;
+        height: 35vw;
+        width: 54vw;
+
+        background: darkslategray;
     }
 }
 
