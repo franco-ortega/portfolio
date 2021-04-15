@@ -52,7 +52,6 @@
 
 @media screen and (max-width: 900px) {
     .WeatherBeatsDetails {
-        
         height: 35vw;
         width: 40vh;
     }
@@ -93,7 +92,4 @@
         padding: 0.5vw;
         font-size: 3.25vw;
     }
-
-    
-    
 }
