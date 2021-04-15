@@ -63,7 +63,6 @@
     margin-bottom: 0.5vw;
 }
 
-
 .Bio {
     margin: 2vw 5vw 1vw 6vw;
     height: 75%;
@@ -89,17 +88,28 @@
     color: white;
 }
 
-
 @media screen and (max-width: 900px) {
     .ProfileDetails {
         border-radius: 400vw 320vw 215vw 210vw;
-        left: 3%;
-        height: 50vw;
-        width: 70vh;
+        left: 5%;
+        height: 50vh;
+        width: 90vw;
+    }
+
+    .Header {
+        margin: 5vw 2vw 0vw 2vw;
+    }
+
+    .Name {
+        font-size: 5vw;
+    }
+
+    .Contact {
+        font-size: 1.25vw;
     }
 
     .Bio {
-        padding: 2vw;
+        padding: 0vw 5vw;
         font-size: 1.75vw;
     }
 }
@@ -121,6 +131,7 @@
     .Name {
         width: 75%;
         margin-left: 10vw;
+        margin-bottom: 2vw;
         padding-top: 5vw;
         font-size: 8vw;
         font-weight: 600;
