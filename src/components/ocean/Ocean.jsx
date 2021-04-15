@@ -6,6 +6,7 @@ import Scale from '../mapElements/Scale';
 import BorderCorner from '../mapElements/BorderCorner';
 import { borderCornerData } from '../mapElements/borderCornerData';
 import styles from './Ocean.module.css';
+import Legend from '../mapElements/Legend';
 
 const Ocean = () => {
   return (
@@ -44,7 +45,8 @@ const Ocean = () => {
         <Profile />
         <Resume />
 
-        {/* Scale */}
+        {/* Map Elements */}
+        <Legend />
         <Scale />
 
         {/* <div className={styles.OceanGridItem}></div> */}
