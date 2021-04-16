@@ -37,6 +37,7 @@
         grid-column: 2 / 8;
         grid-row: 2 / 6;
         align-items: center;
+        border: pink dashed 2px;
     }
 
     .OuterCoastline {
