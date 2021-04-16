@@ -79,8 +79,9 @@
 }
 
 .Message {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: bold;
+  color: orangered;
 }
 
 @media screen and (max-width: 900px) {

@@ -1,9 +1,10 @@
 .GitHub {
-    grid-column: 8 / 10;
-    grid-row: 3 / 6;
+    grid-column: 7 / 9;
+    grid-row: 2 / 5;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    border: 2px dashed pink;
 }
 
 .OuterCoastline {

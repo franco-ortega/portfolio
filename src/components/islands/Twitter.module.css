@@ -1,9 +1,10 @@
 .Twitter {
-    grid-column: 11 / 13;
-    grid-row: 6 / 9;
+    grid-column: 10 / 13;
+    grid-row: 5 / 9;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px dashed pink;
 }
 
 .OuterCoastline {
