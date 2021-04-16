@@ -38,7 +38,6 @@
     .Email {
         grid-column: 5 / 11;
         grid-row: 4 / 7;
-        border: pink dashed 2px;
     }
 
     .OuterCoastline {

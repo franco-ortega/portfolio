@@ -12,7 +12,5 @@
     .IslandChain {
         grid-column: 1 / 10;
         grid-row: 16 / 24;
-    
-        border: 1px dashed pink;
     }
 }
