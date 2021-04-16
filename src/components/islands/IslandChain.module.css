@@ -10,8 +10,8 @@
 
 @media screen and (max-width: 500px) {
     .IslandChain {
-        grid-column: 1 / 8;
-        grid-row: 15 / 24;
+        grid-column: 1 / 10;
+        grid-row: 16 / 24;
     
         border: 1px dashed pink;
     }
