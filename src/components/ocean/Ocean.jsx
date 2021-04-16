@@ -8,6 +8,7 @@ import { borderCornerData } from '../mapElements/borderCornerData';
 import styles from './Ocean.module.css';
 import Legend from '../mapElements/Legend';
 import IslandChain from '../islands/IslandChain';
+import Compass from '../mapElements/Compass';
 
 const Ocean = () => {
   return (
@@ -52,6 +53,7 @@ const Ocean = () => {
         {/* Map Elements */}
         <Legend />
         <Scale />
+        <Compass />
 
         {/* <div className={styles.OceanGridItem}></div> */}
 
