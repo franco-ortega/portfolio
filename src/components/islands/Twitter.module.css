@@ -37,7 +37,7 @@
     .Twitter {
         grid-column: 7 / 13;
         grid-row: 6 / 12;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-end;
         border: pink dashed 2px;
     }

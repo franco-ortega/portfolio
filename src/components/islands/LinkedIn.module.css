@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 500px) {
     .LinkedIn {
-        grid-column: 2 / 8;
+        grid-column: 1 / 7;
         grid-row: 2 / 6;
         align-items: center;
         border: pink dashed 2px;

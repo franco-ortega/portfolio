@@ -34,8 +34,9 @@
 
 @media screen and (max-width: 500px) {
     .GitHub {
-        grid-column: 6 / 12;
+        grid-column: 5 / 11;
         grid-row: 1 / 4;
+        align-items: flex-start;
         justify-content: center;
         border: pink dashed 2px;
     }
