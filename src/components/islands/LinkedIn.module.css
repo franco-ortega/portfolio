@@ -35,9 +35,9 @@
 
 @media screen and (max-width: 500px) {
     .LinkedIn {
-        grid-column: 1 / 7;
+        grid-column: 1 / 6;
         grid-row: 2 / 6;
-        align-items: center;
+        justify-content: center;
     }
 
     .OuterCoastline {

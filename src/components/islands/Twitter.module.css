@@ -36,9 +36,7 @@
 @media screen and (max-width: 500px) {
     .Twitter {
         grid-column: 7 / 13;
-        grid-row: 6 / 12;
-        align-items: flex-start;
-        justify-content: flex-end;
+        grid-row: 6 / 9;
     }
 
     .OuterCoastline {
