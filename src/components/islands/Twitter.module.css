@@ -1,0 +1,62 @@
+.Twitter {
+    grid-column: 11 / 13;
+    grid-row: 6 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OuterCoastline {
+    background: var(--outer-coastline);
+    border-radius: 50%;
+    box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow);
+    margin-top: 1vw;
+    padding: 0.4vw;
+}
+
+.InnerCoastline {
+    background: var(--inner-coastline);
+    border: 0.1vw dashed var(--continent-border);
+    border-radius: inherit;
+    padding: 0.5vw;
+}
+
+.Island {
+    background: var(--continent);
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    height: 5vw;
+    width: 5vw;
+}
+
+
+@media screen and (max-width: 500px) {
+    .Twitter {
+        grid-column: 7 / 13;
+        grid-row: 6 / 12;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+    .OuterCoastline {
+        background: var(--outer-coastline);
+        border-radius: 50%;
+        box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow);
+        padding: 0.8vw;
+    }
+    
+    .InnerCoastline {
+        background: var(--inner-coastline);
+        border: 0.1vw dashed var(--continent-border);
+        border-radius: inherit;
+        padding: 1vw;
+    }
+
+    .Island {
+        height: 15vw;
+        width: fit-content;
+    }
+}

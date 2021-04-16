@@ -1,9 +1,8 @@
 .Projects {
     grid-column: 1 / 5;
     grid-Row: 2 / 5;
-
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -12,6 +11,7 @@
     border-radius: 84vw 75vw 51vw 38vw;
     box-shadow: 0vw 0vw 2vw 2vw var(--coastline-shadow);
     padding: var(--outer-coastline-padding);
+    margin-top: 1vw;
 }
 
 .InnerCoastline {
@@ -49,6 +49,7 @@
     .Projects {
         grid-column: 1 / 9;
         grid-Row: 6 / 10;
+        align-items: center;
     }
     
     .Continent {
