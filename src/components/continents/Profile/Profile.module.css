@@ -1,12 +1,9 @@
 .Profile {
     grid-column: 5 / 9;
     grid-Row: 3 / 6;
-
     display: flex;
     align-items: flex-start;
     justify-content: center;
-
-    border: 1px dashed pink;
 }
 
 .OuterCoastline {
