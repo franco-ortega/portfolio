@@ -36,7 +36,7 @@
 @media screen and (max-width: 500px) {
     .Email {
         grid-column: 5 / 11;
-        grid-row: 4 / 8;
+        grid-row: 5 / 9;
         align-items: center;
     }
 

@@ -36,7 +36,7 @@
 @media screen and (max-width: 500px) {
     .LinkedIn {
         grid-column: 1 / 6;
-        grid-row: 2 / 6;
+        grid-row: 3 / 7;
         justify-content: center;
     }
 

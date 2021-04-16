@@ -35,7 +35,7 @@
 @media screen and (max-width: 500px) {
     .GitHub {
         grid-column: 5 / 11;
-        grid-row: 1 / 4;
+        grid-row: 2 / 5;
         justify-content: center;
     }
 
