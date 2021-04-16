@@ -4,6 +4,38 @@
 
     grid-column: 10 / 13;
     grid-row: 5 / 8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CompassCircle {
+    background: silver;
+    border: solid 0.4vw black;
+    border-radius: 50%;
+    height: 8vw;
+    width: 8vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CompassCenter {
+    background: none;
+    border: solid 0.25vw black;
+    border-radius: 50%;
+    height: 3vw;
+    width: 3vw;
 }
 
 
+
+@media screen and (max-width: 500px) {
+    .Compass {
+        grid-column: 10 / 13;
+        grid-row: 21 / 24;
+        }
+    
+}
