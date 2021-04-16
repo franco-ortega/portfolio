@@ -1,9 +1,9 @@
 .GitHub {
-    grid-column: 8 / 10;
-    grid-row: 3 / 6;
+    grid-column: 7 / 9;
+    grid-row: 2 / 5;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .OuterCoastline {
@@ -36,7 +36,6 @@
     .GitHub {
         grid-column: 5 / 11;
         grid-row: 1 / 4;
-        align-items: flex-start;
         justify-content: center;
     }
 
@@ -45,6 +44,7 @@
         border-radius: 50%;
         box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow);
         padding: 0.8vw;
+        margin: 0 5vw 0 0;
     }
     
     .InnerCoastline {
