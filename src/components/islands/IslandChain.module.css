@@ -8,6 +8,11 @@
     height: 100%;
 }
 
-.IslandGridBlock {
-    border: 1px yellow dashed;
+@media screen and (max-width: 500px) {
+    .IslandChain {
+        grid-column: 1 / 8;
+        grid-row: 15 / 24;
+    
+        border: 1px dashed pink;
+    }
 }
