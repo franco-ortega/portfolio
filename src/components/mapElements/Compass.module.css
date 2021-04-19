@@ -1,7 +1,7 @@
 .Compass {
     height: 100%;
     grid-column: 10 / 13;
-    grid-row: 5 / 8;
+    grid-row: 6 / 9;
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -192,6 +192,6 @@
 @media screen and (max-width: 500px) {
     .Compass {
         grid-column: 10 / 13;
-        grid-row: 21 / 24;
+        grid-row: 22 / 25;
         }
 }

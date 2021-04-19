@@ -1,16 +1,16 @@
 .LinkedIn {
-    grid-column: 5 / 8;
-    grid-row: 4 / 7;
+    grid-column: 6 / 8;
+    grid-row: 4 / 8;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .OuterCoastline {
     background: var(--outer-coastline);
     border-radius: 50%;
     box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow);
-    margin-top: 3vw;
+    height: fit-content;
     padding: 0.4vw;
 }
 
@@ -32,12 +32,10 @@
     width: 5vw;
 }
 
-
 @media screen and (max-width: 500px) {
     .LinkedIn {
-        grid-column: 1 / 6;
+        grid-column: 1 / 5;
         grid-row: 3 / 7;
-        justify-content: center;
     }
 
     .OuterCoastline {
@@ -55,7 +53,8 @@
     }
 
     .Island {
-        height: 15vw;
+        height: fit-content;
         width: fit-content;
+        padding: 4vw 1vw;
     }
 }
