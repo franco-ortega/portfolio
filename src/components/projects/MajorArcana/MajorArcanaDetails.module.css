@@ -3,7 +3,7 @@
     color: #e4a77b;
 
     border-radius: 1vw;
-    padding: 2vw 2vw;
+    padding: 2vw;
 
     position: absolute;
     top: 23%;
@@ -76,20 +76,23 @@
 
 @media screen and (max-width: 900px) {
     .MajorArcanaDetails {
-        border: 1.5vw solid var(--bordercolor);
+        
     }
 }
 
 @media screen and (max-width: 500px) {
     .MajorArcanaDetails {
+        border: 1.5vw solid var(--bordercolor);
         top: 0%;
         left: 0%;
         height: 100vh;
         width: 100vw;
-        padding: 10vw;
+        padding: 10vw 5vw;
+        justify-content: flex-start;
     }
 
     .ProjectTech {
+        margin: 5vw;
         width: 75%;
         font-size: 5vw;
         font-weight: bold;
@@ -102,7 +105,8 @@
     }
 
     .ProjectLinks {
-        font-size: 4vw;
+        margin: 5vw;
+        font-size: 4.5vw;
         font-weight: 600;
     }
 
