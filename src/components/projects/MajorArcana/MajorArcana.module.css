@@ -1,0 +1,57 @@
+.MajorArcana {
+    background: black;
+    border-radius: 1vw;
+    color: #e4a77b;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    padding: 1vw;
+    height: 100%;
+    width: 100%;
+    
+    font-size: var(--project-summary-title);
+    text-align: justify;
+    
+    overflow: auto;
+}
+
+.Summary {
+    margin: 1.5vw;
+    font-size: var(--project-summary-text);
+}
+
+.DetailsButton {
+    background: lightcyan;
+    border-radius: 1vw;
+    padding: .25vw;
+    width: max-content;
+    font-size: var(--project-details-button);
+}
+
+
+@media screen and (max-width: 900px) {
+    .MajorArcana {
+        font-size: var(--project-summary-title-tablet);
+    }
+
+    .Summary {
+        font-size: var(--project-summary-text-tablet);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .MajorArcana {
+        font-size: var(--project-summary-title-mobile);
+    }
+
+    .Summary {
+        font-size: var(--project-summary-text-mobile);
+    }
+
+    .DetailsButton {
+        font-size: var(--project-details-button-mobile);
+    }
+}
