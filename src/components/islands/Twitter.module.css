@@ -34,8 +34,8 @@
 
 @media screen and (max-width: 500px) {
     .Twitter {
-        grid-column: 5 / 9;
-        grid-row: 5 / 8;
+        grid-column: 6 / 10;
+        grid-row: 4 / 8;
     }
 
     .OuterCoastline {
