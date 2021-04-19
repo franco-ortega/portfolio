@@ -1,5 +1,6 @@
 .MajorArcana {
     background: rgb(17, 17, 17);
+    border: solid white 0.2vw;
     border-radius: 1vw;
     color: #e4a77b;
     
@@ -26,7 +27,7 @@
     background: lightcyan;
     border-radius: 1vw;
     padding: 0.25vw 0.5vw;
-    width: max-content;
+    width: fit-content;
     font-size: var(--project-details-button);
 }
 
