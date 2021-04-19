@@ -10,11 +10,6 @@ const Compass = () => {
       <section className={styles.BottomTriangle}></section>
       <section className={styles.LeftTriangle}></section>
       <section className={styles.RightTriangle}></section>
-        
-      {/* <div className={styles.GridItem}></div>
-        <div className={styles.GridItem}></div>
-        <div className={styles.GridItem}></div>
-        <div className={styles.GridItem}></div> */}
 
       {/* <section className={styles.InnerTriangle}></section> */}
 
@@ -27,36 +22,11 @@ const Compass = () => {
       </section>
 
 
-
+      {/* <div className={styles.GridItem}></div>
       <div className={styles.GridItem}></div>
       <div className={styles.GridItem}></div>
       <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
-      <div className={styles.GridItem}></div>
+      <div className={styles.GridItem}></div> */}
     </main>
   );
 };
