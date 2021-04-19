@@ -1,20 +1,18 @@
 .Resume {
     grid-column: 7 / 11;
-    grid-row: 5 / 8;
-    margin-top: 2vw;
+    grid-row: 6 / 9;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    border: solid 1px pink;
 }
   
 .OuterCoastline {
     background: var(--outer-coastline);
-    box-shadow: 0vw 0vw 2vw 2vw var(--coastline-shadow);
+    box-shadow: 0vw 0vw 2vw 1.5vw var(--coastline-shadow);
     border-radius: 520vw 270vw 495vw 90vw;
     padding: var(--outer-coastline-padding);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
   
 .InnerCoastline {
@@ -54,7 +52,7 @@
   .Resume {
     grid-column: 7 / 13;
     grid-row: 16 / 20;
-    margin-top: 2vw;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +61,6 @@
   .Continent {
     height: 10vh;
     width: 30vw;
-
     font-size: 6vw;
   }
 }
