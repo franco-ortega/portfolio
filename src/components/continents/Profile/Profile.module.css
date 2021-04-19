@@ -47,12 +47,12 @@
 @media screen and (max-width: 500px) {
     .Profile {
         grid-column: 1 / 11;
-        grid-row: 10 / 15;
+        grid-row: 10 / 14;
     }
     
     .Continent {
-        height: 25vw;
-        width: 25vh;
-        font-size: 10vw;
+        height: 22vw;
+        width: 22vh;
+        font-size: 9vw;
     }
 }
