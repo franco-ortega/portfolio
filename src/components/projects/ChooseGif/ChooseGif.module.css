@@ -24,9 +24,9 @@
 
 .DetailsButton {
     background: lightcyan;
-    margin: 1vw;
+    border-radius: 1vw;
     padding: 0.25vw 0.5vw;
-    width: max-content;
+    width: fit-content;
     font-size: var(--project-details-button);
 }
 
