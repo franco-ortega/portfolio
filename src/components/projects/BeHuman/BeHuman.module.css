@@ -1,7 +1,5 @@
 .BeHuman {
     background: #9cc4d7;
-
-    border: .25vw solid darkblue;
     border-radius: 1vw;
 
     display: flex;
@@ -14,20 +12,19 @@
     width: 100%;
 
     font-size: var(--project-summary-title);
-    text-align: justify;
-
     overflow: auto;
 }
 
 .Summary {
-    margin: 1.5vw;
+    margin: 1vw;
     font-size: var(--project-summary-text);
+    text-align: justify;
 }
 
 .DetailsButton {
     background: lightcyan;
     margin: 1vw;
-    padding: .25vw;
+    padding: 0.25vw 0.5vw;
     width: max-content;
     font-size: var(--project-details-button);
 }
@@ -53,6 +50,8 @@
     }
 
     .DetailsButton {
+        border-radius: 3vw;
+        padding: 0.5vw 1vw;
         font-size: var(--project-details-button-mobile);
     }
 }

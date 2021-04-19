@@ -139,6 +139,9 @@
 @media screen and (max-width: 500px) {
   .Ocean {
     border: 1.5vw solid var(--bordercolor);
+    height: 100%;
+    width: 100%;
+
   }
 
   .OceanGrid {

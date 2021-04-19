@@ -1,9 +1,7 @@
 .ChooseGif {
     background: black;
-    color: white;
-
-    border: .25vw solid rgb(121, 129, 133);
     border-radius: 1vw;
+    color: white;
 
     display: flex;
     flex-direction: column;
@@ -15,20 +13,19 @@
     width: 100%;
 
     font-size: var(--project-summary-title);
-    text-align: justify;
-
     overflow: auto;
 }
 
 .Summary {
-    margin: 1.5vw;
+    margin: 1vw;
     font-size: var(--project-summary-text);
+    text-align: justify;
 }
 
 .DetailsButton {
     background: lightcyan;
     margin: 1vw;
-    padding: .25vw;
+    padding: 0.25vw 0.5vw;
     width: max-content;
     font-size: var(--project-details-button);
 }
@@ -54,6 +51,8 @@
     }
 
     .DetailsButton {
+        border-radius: 3vw;
+        padding: 0.5vw 1vw;
         font-size: var(--project-details-button-mobile);
     }
 }
