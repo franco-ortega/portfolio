@@ -47,10 +47,11 @@
 
 .Intro {
     font-size: var(--continent-details-intro);
-    margin: 0.25vw 2vw 0.75vw;
+    margin: 1vw;
 }
 
 .ProjectsDisplayCase {
+    border: solid 1px brown;
     height: 65%;
     width: 75%;
     
@@ -137,8 +138,9 @@
     }
     
     .Intro {
+        margin: 1.5vw;
         width: 75%;
-        font-size: 4vw;
+        font-size: 4.25vw;
     }
 
     .ProjectsDisplayCase {
@@ -147,10 +149,7 @@
 
     .Project {
         margin: 1vw auto;
-        height: 45%;
+        height: 50%;
         width: 95%;
     }
-    
-
-
 }
