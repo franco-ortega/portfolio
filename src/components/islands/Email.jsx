@@ -1,27 +1,16 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import Island from './Island';
 import styles from './Email.module.css';
 
 const Email = () => {
   return (
     <main className={styles.Email}>
-      <section className={styles.OuterCoastline}>
-        <section className={styles.InnerCoastline}>
-          <section className={styles.Island}>
-            <a
-              href="mailto:francopdx@gmail.com"
-              rel="noreferrer"
-              target="_blank"
-            >Email</a>
-          </section>
-        </section>
-      </section>
+      <Island
+        title={'Email'}
+        url={'mailto:francopdx@gmail.com'}
+      />
     </main>
   );
-};
-
-Email.propTypes = {
-
 };
 
 export default Email;
