@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProjectsDetails from '../../continents/Projects/ProjectsDetails';
-import MajorArcanaIcon from '../../../assets/MajorArcana6.png';
+import MajorArcanaIcon from '../../../assets/MajorArcana.png';
 import styles from './MajorArcanaDetails.module.css';
 
 const MajorArcanaDetails = () => {
