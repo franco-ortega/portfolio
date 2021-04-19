@@ -4,8 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    border: solid 1px pink;
 }
 
 .OuterCoastline {
@@ -13,6 +11,7 @@
     border-radius: 120vw 70vw 95vw 90vw;
     box-shadow: 0vw 0vw 2vw 1.5vw var(--coastline-shadow);
     padding: var(--outer-coastline-padding);
+    width: fit-content;
     margin-right: 2vw;
 }
 
@@ -47,9 +46,8 @@
 
 @media screen and (max-width: 500px) {
     .Profile {
-        grid-column: 2 / 11;
-        grid-Row: 11 / 16;
-        align-items: center;
+        grid-column: 1 / 11;
+        grid-row: 10 / 15;
     }
     
     .Continent {

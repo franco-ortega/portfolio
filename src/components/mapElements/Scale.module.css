@@ -64,9 +64,12 @@
 @media screen and (max-width: 500px) {
     .ScaleContainer {
         grid-column: 1 / 10;
-        grid-row: 23 / 25;
-        padding: 4vw 0vw 2vw 6vw;
+        grid-row: 24 / 25;
+        padding: 0vw 0vw 0vw 6vw;
+        
         justify-content: center;
+
+        
     }
 
     .ScaleNumber {

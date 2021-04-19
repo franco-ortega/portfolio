@@ -1,8 +1,8 @@
 .Email {
-    grid-column: 8 / 11;
-    grid-row: 5 / 8;
+    grid-column: 10 / 12;
+    grid-row: 6 / 9;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 
@@ -10,8 +10,7 @@
     background: var(--outer-coastline);
     border-radius: 50%;
     box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow);
-    margin-top: 2vw;
-    margin-left: 2vw;
+    height: fit-content;
     padding: 0.4vw;
 }
 
@@ -35,9 +34,8 @@
 
 @media screen and (max-width: 500px) {
     .Email {
-        grid-column: 5 / 11;
+        grid-column: 9 / 13;
         grid-row: 5 / 9;
-        align-items: center;
     }
 
     .OuterCoastline {
@@ -56,7 +54,8 @@
     }
 
     .Island {
-        height: 10vw;
+        height: fit-content;
         width: fit-content;
+        padding: 4vw 1vw;
     }
 }

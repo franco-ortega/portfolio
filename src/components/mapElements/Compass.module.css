@@ -192,6 +192,6 @@
 @media screen and (max-width: 500px) {
     .Compass {
         grid-column: 10 / 13;
-        grid-row: 21 / 24;
+        grid-row: 22 / 25;
         }
 }

@@ -1,16 +1,16 @@
 .Twitter {
-    grid-column: 10 / 13;
+    grid-column: 8 / 10;
     grid-row: 5 / 9;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .OuterCoastline {
     background: var(--outer-coastline);
     border-radius: 50%;
     box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow);
-    
+    height: fit-content;
     padding: 0.4vw;
 }
 
@@ -32,11 +32,10 @@
     width: 5vw;
 }
 
-
 @media screen and (max-width: 500px) {
     .Twitter {
-        grid-column: 7 / 13;
-        grid-row: 6 / 9;
+        grid-column: 5 / 9;
+        grid-row: 5 / 8;
     }
 
     .OuterCoastline {
@@ -54,7 +53,8 @@
     }
 
     .Island {
-        height: 15vw;
+        height: fit-content;
         width: fit-content;
+        padding: 4vw 1vw;
     }
 }

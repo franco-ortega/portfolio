@@ -4,8 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    border: solid 1px pink;
 }
 
 .OuterCoastline {
@@ -13,6 +11,7 @@
     border-radius: 84vw 75vw 51vw 38vw;
     box-shadow: 0vw 0vw 2vw 1.5vw var(--coastline-shadow);
     padding: var(--outer-coastline-padding);
+    width: fit-content;
 }
 
 .InnerCoastline {
@@ -46,9 +45,9 @@
 
 @media screen and (max-width: 500px) {
     .Projects {
-        grid-column: 1 / 9;
-        grid-Row: 6 / 10;
-        align-items: center;
+        grid-column: 1 / 8;
+        grid-Row: 5 / 10;
+        justify-content: flex-end;
     }
     
     .Continent {
