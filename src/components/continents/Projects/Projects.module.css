@@ -46,15 +46,14 @@
 @media screen and (max-width: 500px) {
     .Projects {
         grid-column: 1 / 8;
-        grid-Row: 5 / 10;
-        justify-content: flex-end;
+        grid-row: 5 / 10;
     }
     
     .Continent {
-        height: 25vw;
-        width: 22vh;
+        height: 22vw;
+        width: 18vh;
         padding: 2vw;
-        font-size: 8vw;
+        font-size: 7vw;
         text-align: center;
     }
 }
