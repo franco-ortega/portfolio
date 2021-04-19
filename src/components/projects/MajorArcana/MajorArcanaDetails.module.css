@@ -3,7 +3,7 @@
     color: #e4a77b;
 
     border-radius: 1vw;
-    padding: 1vw 2vw;
+    padding: 2vw 2vw;
 
     position: absolute;
     top: 23%;
@@ -54,14 +54,23 @@
     width: 20vw;
 }
 
+.ButtonContainer {
+    margin: 0.5vw;
+    padding: 0.5vw;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
 .CloseButton {
     background: #e4a77b;
     border-radius: 50%;
-    margin: 1vw;
+    
     padding: .25vw 0.5vw;
     width: max-content;
     font-size: 1.25vw;
-
 
 }
 
