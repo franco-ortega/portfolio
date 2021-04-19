@@ -52,8 +52,7 @@
 
 .ProjectIcon {
     border-radius: 1vw;
-    
-    margin: 2vw 2vw 0  2vw;
+    margin: 2vw 2vw 0 2vw;
     width: 20vw;
 }
 
@@ -79,21 +78,24 @@
 
 @media screen and (max-width: 500px) {
     .MajorArcanaDetails {
-        top: 30%;
-        left: 4%;
-        height: 55vh;
-        width: 92vw;
+        border-radius: 0;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+        width: 100vw;
+        padding: 10vw;
+        justify-content: space-evenly;
     }
 
     .ProjectTech {
         width: 75%;
-        font-size: 3.5vw;
+        font-size: 5vw;
         font-weight: bold;
     }
     
     .ProjectInfo {
         margin: 2vw;
-        font-size: 3.5vw;
+        font-size: 4vw;
         text-align: justify;
     }
 
@@ -102,6 +104,13 @@
         font-size: 4vw;
         font-weight: 600;
     }
+
+    .ProjectIcon {
+        border-radius: 1vw;
+        margin: 1vw;
+        width: 40vw;
+    }
+    
 
     .CloseButton {
         margin: 2vw;
