@@ -9,9 +9,11 @@ const MajorArcanaDetails = () => {
     <>
       <ProjectsDetails />
       <main className={styles.MajorArcanaDetails}>
-        <Link to="/projects">
-          <button className={styles.CloseButton} aria-label="Close">X</button>
-        </Link>
+        <section className={styles.ButtonContainer}>
+          <Link to="/projects">
+            <button className={styles.CloseButton} aria-label="Close">X</button>
+          </Link>
+        </section>
         <h1>Major Arcana Divinator</h1>
         <h2 className={styles.ProjectTech}>HTML | CSS | JavaScript</h2>
         <section className={styles.ProjectInfo}>
