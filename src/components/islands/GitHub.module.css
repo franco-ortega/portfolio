@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 500px) {
     .GitHub {
-        grid-column: 3 / 10;
+        grid-column: 3 / 8;
         grid-row: 1 / 5;
     }
 
@@ -43,7 +43,6 @@
         border-radius: 50%;
         box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow);
         padding: 0.8vw;
-        margin: 0 5vw 0 0;
     }
     
     .InnerCoastline {

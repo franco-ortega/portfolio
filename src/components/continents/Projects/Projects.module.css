@@ -50,10 +50,10 @@
     }
     
     .Continent {
-        height: 22vw;
-        width: 18vh;
+        height: 21vw;
+        width: 19vh;
         padding: 2vw;
-        font-size: 7vw;
+        font-size: 6.5vw;
         text-align: center;
     }
 }

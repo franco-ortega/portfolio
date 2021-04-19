@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 500px) {
     .IslandChain {
-        grid-column: 1 / 11;
-        grid-row: 15 / 23;
+        grid-column: 1 / 13;
+        grid-row: 14 / 23;
     }
 }
