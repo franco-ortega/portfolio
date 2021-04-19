@@ -30,7 +30,6 @@ const ProjectsDetails = () => {
               <section className={styles.Project}>
                 <MajorArcana />
               </section>
-
             </section>
             <Link to="/">
               <button className={styles.Button} title="Close" name="Close" aria-label="Close">X</button>
