@@ -4,19 +4,16 @@ import styles from './Island.module.css';
 
 const Island = ({ title, url }) => {
   return (
-    <main>
-      <section className={styles.OuterCoastline}>
-        <section className={styles.InnerCoastline}>
-          <section className={styles.Island}>
-            <a
-              href={url}
-              rel="noreferrer"
-              target="_blank"
-            >{title}</a>
-          </section>
+    <main className={styles.OuterCoastline}>
+      <section className={styles.InnerCoastline}>
+        <section className={styles.Island}>
+          <a
+            href={url}
+            rel="noreferrer"
+            target="_blank"
+          >{title}</a>
         </section>
       </section>
-            
     </main>
   );
 };

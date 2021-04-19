@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './BorderCorner.module.css';
 
-const BorderCorner = ({grid, shape }) => {
+const BorderCorner = ({ grid, shape }) => {
   return (
     <main
       className={styles.BorderCorner}
