@@ -55,9 +55,11 @@
 
     .Legend {
         border: solid 1vw rgb(10, 10, 10);
-        height: 38vw;
+        height: 42vw;
         width: 35vw;
         padding: 1vw;
+
+        overflow: auto;
     }
 
     .Title {
@@ -65,7 +67,7 @@
     }
 
     .Tech {
-        font-size: 2.25vw;
+        font-size: 2.5vw;
         justify-content: space-between;
     }
 }
