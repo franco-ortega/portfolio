@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     text-align: center;
 
@@ -71,7 +71,6 @@
     padding: .25vw 0.5vw;
     width: max-content;
     font-size: 1.25vw;
-
 }
 
 
@@ -83,13 +82,11 @@
 
 @media screen and (max-width: 500px) {
     .MajorArcanaDetails {
-        border-radius: 0;
         top: 0%;
         left: 0%;
         height: 100vh;
         width: 100vw;
         padding: 10vw;
-        justify-content: space-evenly;
     }
 
     .ProjectTech {
@@ -100,7 +97,7 @@
     
     .ProjectInfo {
         margin: 2vw;
-        font-size: 4vw;
+        font-size: 5vw;
         text-align: justify;
     }
 
@@ -115,12 +112,11 @@
         width: 40vw;
     }
     
-
     .CloseButton {
         height: fit-content;
         width: min-content;
         margin: 3vw;
         padding: 0.5vw 1vw;
-        font-size: 3.25vw;
+        font-size: 4vw;
     }
 }
