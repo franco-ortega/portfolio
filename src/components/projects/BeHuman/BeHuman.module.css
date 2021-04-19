@@ -1,5 +1,6 @@
 .BeHuman {
     background: #9cc4d7;
+    border: solid black 0.2vw;
     border-radius: 1vw;
 
     display: flex;
