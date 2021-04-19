@@ -125,10 +125,10 @@
 
 @media screen and (max-width: 500px) {
     .ProjectsDetails {
-        top: 12%;
-        left: 4%;
-        height: 80vh;
-        width: 92vw;
+        top: 1%;
+        left: 2.5%;
+        height: 95vh;
+        width: 95vw;
     }
 
     .Title {
@@ -149,7 +149,7 @@
 
     .Project {
         margin: 1vw auto;
-        height: 50%;
+        height: fit-content;
         width: 95%;
     }
 }
