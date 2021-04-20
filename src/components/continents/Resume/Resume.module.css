@@ -41,6 +41,11 @@
 
 
 @media screen and (max-width: 900px) {
+  .Resume {
+    grid-column: 8 / 13;
+    grid-row: 7 / 10;
+}
+
   .Continent {
     height: 10vh;
     width: 25vw;

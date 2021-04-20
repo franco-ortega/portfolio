@@ -37,16 +37,15 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 900px) and (orientation: portrait) {
+@media screen and (max-width: 900px) {
   .OuterCoastline, .InnerCoastline, .Continent {
-
       height: 20vw;
       width: 30vh;
   }
 
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 500px) {
   .Ocean {
     border: 1.5vw solid var(--bordercolor);
   }

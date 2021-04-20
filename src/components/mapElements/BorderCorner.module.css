@@ -13,16 +13,14 @@
     margin: -0.2vw;
 }
 
+@media screen and (max-width: 900px) {
+    .BorderCorner {
+        grid-row-end: 13;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .BorderCorner {
         grid-row-end: 25;
     }
-
-    .CornerShape {
-        background: var(--bordercolor);
-        height: 3vw;
-        width: 3vw;
-        margin: -0.2vw;
-    }
-    
 }

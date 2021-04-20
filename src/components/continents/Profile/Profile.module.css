@@ -38,6 +38,11 @@
 }
 
 @media screen and (max-width: 900px) {
+    .Profile {
+        grid-column: 5 / 9;
+        grid-Row: 5 / 8;
+    }
+
     .Continent {
         height: 20vw;
         width: 25vh;

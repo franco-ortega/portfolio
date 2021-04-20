@@ -43,6 +43,15 @@
         padding: 10vw 0vw 0vw 5vw;
     }
 
+    .ScaleContainer {
+        grid-column: 1 / 6;
+        grid-row: 12 / 13;
+        display: flex;
+        padding: 2vw 0vw 0vw 4vw;
+        color: white;
+    }
+    
+
     .ScaleNumber {
         left: -1vw;
     }
