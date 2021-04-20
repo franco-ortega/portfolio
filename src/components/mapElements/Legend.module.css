@@ -38,12 +38,37 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
 
     .LegendContainer {
         grid-column: 9 / 13;
-        grid-row: 1 / 6;
-        
+        grid-row: 2 / 6;
+        align-items: flex-start;
+        margin: 1vw;
+    }
+
+    .Legend {
+        border: solid 0.75vw rgb(10, 10, 10);
+        height: 30vh;
+        width: 35vw;
+        padding: 1vw;
+
+        overflow: auto;
+    }
+
+    .Title {
+        font-size: 4vw;
+    }
+
+    .Tech {
+        font-size: 2.25vw;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .LegendContainer {
         grid-column: 8 / 13;
         grid-row: 5 / 11;
 

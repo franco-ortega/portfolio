@@ -37,6 +37,11 @@
 }
 
 @media screen and (max-width: 900px) {
+    .Projects {
+        grid-column: 1 / 7;
+        grid-Row: 2 / 6;
+    }
+
     .Continent {
         height: 20vw;
         width: 25vh;

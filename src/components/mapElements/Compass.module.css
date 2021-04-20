@@ -187,7 +187,11 @@
     border-left: 9vw solid rgb(245, 245, 120);
 }
 
-
+@media screen and (max-width: 900px) {
+    .Compass {
+        grid-row: 11 / 13;
+        }
+}
 
 @media screen and (max-width: 500px) {
     .Compass {
