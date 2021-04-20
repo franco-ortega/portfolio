@@ -1,6 +1,6 @@
 .WeatherBeatsDetails {
     background-image: url(../../../assets/WeatherBeats_full.jpg);
-    background-position: 5% 55%;
+    background-position: 5% 40%;
     background-repeat: no-repeat;
     background-size: 155%;
 
@@ -72,7 +72,57 @@
 
 @media screen and (max-width: 900px) {
     .WeatherBeatsDetails {
-        
+        background-position: 40% 20%;
+        background-size: 275%;
+
+        padding: 2vw 5vw;
+        justify-content: flex-start;
+
+        height: 60%;
+        width: 65%;
+
+        top: 23%;
+        left: 18%;
+
+        font-size: 3vw;
+    }
+
+    .ProjectTech {
+        margin: 1vw;
+        width: 90%;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+
+    .ButtonContainer {
+        margin: 0.5vw;
+        padding: 0.5vw;
+        width: 100%;
+        text-align: left;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+
+    .ProjectInfo {
+        margin: 2vw;
+        font-size: 3vw;
+        text-align: justify;
+    }
+
+    .ProjectLinks {
+        margin: 2vw;
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+
+    .CloseButton {
+        height: fit-content;
+        width: min-content;
+        margin: 1vw;
+        padding: 0.5vw 0.75vw;
+        font-size: 1.5vw;
     }
 }
 
