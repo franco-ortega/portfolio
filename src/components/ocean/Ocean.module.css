@@ -76,12 +76,13 @@
   grid-column: 5 / 9;
   grid-row: 2 / 3;
   justify-content: center;
+  padding-top: 2vw;
 }
 
 .Message {
   font-size: 1.5vw;
   font-weight: bold;
-  color: orangered;
+  color: rgb(193, 207, 207);
 }
 
 @media screen and (max-width: 900px) {
