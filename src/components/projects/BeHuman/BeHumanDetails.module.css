@@ -5,7 +5,6 @@
     border-radius: 1vw;
     padding: 2vw;
 
-
     position: absolute;
     top: 23%;
     left: 23%;
@@ -51,15 +50,14 @@
 }
 
 .ButtonContainer {
+    position: absolute;
+    top: 0%;
+    left: 0%;
     margin: 0.5vw;
     padding: 0.5vw;
     width: 100%;
     text-align: left;
-    position: absolute;
-    top: 0%;
-    left: 0%;
 }
-
 
 .CloseButton {
     background: lightcyan;
