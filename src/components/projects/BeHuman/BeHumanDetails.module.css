@@ -83,7 +83,7 @@
         left: 0%;
         height: 100vh;
         width: 100vw;
-        padding: 10vw 5vw;
+        padding: 8vw 5vw;
         justify-content: flex-start;
     }
 
@@ -113,11 +113,10 @@
         width: 30vw;
     }
 
-
     .CloseButton {
         height: fit-content;
         width: min-content;
-        margin: 3vw;
+        margin: 2vw;
         padding: 0.5vw 1vw;
         font-size: 4vw;
     }
