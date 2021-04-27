@@ -77,7 +77,7 @@
 
 @media screen and (max-width: 500px) {
     .BeHumanDetails {
-        
+        border: var(--bordercolor) solid 1.5vw;
         border-radius: 0vw;
         top: 0%;
         left: 0%;
@@ -109,7 +109,7 @@
     .ProjectIcon {
         border: solid 0.75vw black;
         margin: 10vw 5vw;
-        width: 35vw;
+        width: 30vw;
     }
 
 
