@@ -77,7 +77,7 @@
         background-position: 40% 20%;
         background-size: 275%;
 
-        padding: 2vw 5vw;
+        padding: 3vw;
         justify-content: flex-start;
 
         height: 60%;
@@ -86,30 +86,19 @@
         top: 23%;
         left: 18%;
 
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     .ProjectTech {
-        margin: 1vw;
+        margin: 2vw;
         width: 90%;
         font-size: 3vw;
         font-weight: bold;
     }
 
-    .ButtonContainer {
-        margin: 0.5vw;
-        padding: 0.5vw;
-        width: 100%;
-        text-align: left;
-        position: absolute;
-        top: 0%;
-        left: 0%;
-    }
-
     .ProjectInfo {
         margin: 2vw;
         font-size: 3vw;
-        text-align: justify;
     }
 
     .ProjectLinks {
@@ -152,20 +141,15 @@
     .ProjectInfo {
         margin: 2vw;
         font-size: 5vw;
-        text-align: justify;
     }
 
     .ProjectLinks {
         margin: 5vw;
         color: black;
         font-size: 4.5vw;
-        font-weight: 600;
     }
 
-
     .CloseButton {
-        height: fit-content;
-        width: min-content;
         margin: 2vw;
         padding: 0.5vw 1vw;
         font-size: 4vw;
