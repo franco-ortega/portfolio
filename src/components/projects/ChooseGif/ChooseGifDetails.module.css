@@ -37,6 +37,7 @@
 .ProjectLinks {
     display: flex;
     align-items: center;
+    height: fit-content;
     font-size: 1.5vw;
 }
 
@@ -50,7 +51,7 @@
 
 .ProjectIcon {
     margin: 1vw;
-    width: 20vw;
+    width: 12vw;
 }
 
 .ButtonContainer {

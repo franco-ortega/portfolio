@@ -102,6 +102,7 @@
 
     .ProjectLinks {
         margin: 5vw;
+        height: fit-content;
         font-size: 4.5vw;
         font-weight: 600;
     }
