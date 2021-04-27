@@ -9,6 +9,11 @@ const ChooseGifDetails = () => {
     <>
       <ProjectsDetails />
       <main className={styles.ChooseGifDetails}>
+        <section className={styles.ButtonContainer}>
+          <Link to="/projects">
+            <button className={styles.CloseButton} aria-label="Close">X</button>
+          </Link>
+        </section>
         <h1>Choose GIF</h1>
         <section className={styles.ProjectTech}>
             React | CSS | Node | Express | Jest | Giphy API | Heroku | Netlify
@@ -25,9 +30,6 @@ const ChooseGifDetails = () => {
           />
           <a href="https://github.com/Choose-Gif" rel="noreferrer" target="_blank" className={styles.LinkText}>GitHub</a>
         </section>
-        <Link to="/projects">
-          <button className={styles.CloseButton} aria-label="Close">X</button>
-        </Link>
       </main>
     </>
   );

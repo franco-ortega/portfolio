@@ -9,6 +9,11 @@ const BeHumanDetails = () => {
     <>
       <ProjectsDetails />
       <main className={styles.BeHumanDetails}>
+        <section className={styles.ButtonContainer}>
+          <Link to="/projects">
+            <button className={styles.CloseButton} aria-label="Close">X</button>
+          </Link>
+        </section>
         <h1>beHuman</h1>
         <section className={styles.ProjectTech}>
             HTML | CSS | JavaScript | SQL | Node | Express | Supertest | Heroku
@@ -25,9 +30,6 @@ const BeHumanDetails = () => {
           />
           <a href="https://github.com/alchemy-be-human" rel="noreferrer" target="_blank">GitHub</a>
         </section>
-        <Link to="/projects">
-          <button className={styles.CloseButton} aria-label="Close">X</button>
-        </Link>
       </main>
     </>
   );
