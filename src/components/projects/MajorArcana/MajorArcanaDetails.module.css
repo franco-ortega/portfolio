@@ -81,7 +81,7 @@
 
 @media screen and (max-width: 500px) {
     .MajorArcanaDetails {
-        
+        border: var(--bordercolor) solid;
         border-radius: 0vw;
         top: 0%;
         left: 0%;

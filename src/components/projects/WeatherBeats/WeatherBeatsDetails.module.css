@@ -128,6 +128,7 @@
 
 @media screen and (max-width: 500px) {
     .WeatherBeatsDetails {
+        border: var(--bordercolor) solid 1.5vw;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: 400%;
