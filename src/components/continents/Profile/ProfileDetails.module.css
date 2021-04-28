@@ -65,7 +65,7 @@
 }
 
 .Bio {
-    margin: 2vw 5vw 1vw 6vw;
+    margin: 2vw 4vw 1vw 6vw;
     height: 75%;
     font-size: var(--continent-details-body);
     overflow: auto;
@@ -85,9 +85,10 @@
 .Button {
     background: black;
     border-radius: 50%;
-    margin: 1vw;
-    padding: 0.5vw 1vw;
+    margin: 0.5vw;
+    padding: 0.25vw 0.5vw;
     color: white;
+    font-size: 1.25vw;
 }
 
 @media screen and (max-width: 900px) {
@@ -160,4 +161,8 @@
     .BioParagraph {
         margin-bottom: 2vw;
     }
+
+    .Button {
+        padding: 0.5vw 1vw;
+    }    
 }
