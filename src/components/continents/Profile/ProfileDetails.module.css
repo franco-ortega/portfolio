@@ -36,6 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     text-align: justify;
 
     overflow: auto;
@@ -84,7 +85,8 @@
 .Button {
     background: black;
     border-radius: 50%;
-    padding: .5vw;
+    margin: 1vw;
+    padding: 0.5vw 1vw;
     color: white;
 }
 
@@ -140,7 +142,7 @@
     }
 
     .Contact {
-        margin: 1vw;
+        margin: 0.5vw;
         font-size: 3vw;
     }
 
@@ -149,7 +151,7 @@
     }
 
     .Bio {
-        margin: 2vw 4vw 2vw 4vw;
+        margin: 2vw 2vw 2vw 4vw;
         padding: 1vw 5vw;
         height: 65%;
         font-size: 3.75vw;
