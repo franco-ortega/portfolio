@@ -90,41 +90,43 @@
 
 @media screen and (max-width: 900px) {
     .ProfileDetails {
-        border-radius: 400vw 320vw 215vw 210vw;
+        border-radius: 35vw 20vw 20vw 30vw;
+        top: 10%;
         left: 5%;
-        height: 50vh;
+        height: 80vh;
         width: 90vw;
     }
 
     .Header {
-        margin: 5vw 2vw 0vw 2vw;
+        margin: 8vw 2vw 0vw 2vw;
     }
 
     .Name {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .Contact {
-        font-size: 1.25vw;
+        font-size: 1.5vw;
     }
 
     .Bio {
         padding: 0vw 5vw;
-        font-size: 1.75vw;
+        font-size: 2.25vw;
     }
 }
 
 @media screen and (max-width: 500px) {
     .ProfileDetails {
-        top: 25%;
+        border-radius: 35vw 20vw 20vw 30vw;
+        top: 15%;
         left: 4%;
-        height: 60vh;
+        height: 75vh;
         width: 92vw;
     }
 
     .Header {
         flex-direction: column;
-        margin-top: 5vw;
+        margin: 0vw;
         width: 85%;
     }
 
@@ -147,9 +149,10 @@
     }
 
     .Bio {
-        margin: 2vw 5vw 2vw 6vw;
+        margin: 2vw 4vw 2vw 4vw;
         padding: 1vw 5vw;
-        font-size: 4vw;
+        height: 65%;
+        font-size: 3.75vw;
     }
 
     .BioParagraph {

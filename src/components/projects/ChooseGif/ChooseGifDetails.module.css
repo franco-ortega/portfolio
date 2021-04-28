@@ -153,8 +153,6 @@
     }
 
     .CloseButton {
-        height: fit-content;
-        width: min-content;
         margin: 2vw;
         padding: 0.5vw 1vw;
         font-size: 4vw;
