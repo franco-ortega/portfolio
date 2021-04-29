@@ -36,11 +36,10 @@
     .OuterCoastline {
         box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow);
         padding: 0.8vw;
-        
     }
     
     .InnerCoastline {
-        border: 0.3vw dashed var(--continent-border);
+        border: 0.2vw dashed var(--continent-border);
         padding: 1vw;
     }
 
@@ -49,7 +48,6 @@
         font-size: 3vw;
     }
 }
-
 
 @media screen and (max-width: 500px) {
     .OuterCoastline {

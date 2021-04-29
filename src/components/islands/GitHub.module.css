@@ -6,6 +6,13 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+    .GitHub {
+        grid-column: 6 / 11;
+        grid-row: 2 / 5;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .GitHub {
         grid-column: 3 / 8;
