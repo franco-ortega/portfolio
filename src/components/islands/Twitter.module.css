@@ -6,6 +6,13 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+    .Twitter {
+        grid-column: 8 / 12;
+        grid-row: 6 / 9;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .Twitter {
         grid-column: 6 / 10;

@@ -6,6 +6,13 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+    .Email {
+        grid-column: 10 / 13;
+        grid-row: 3 / 7;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .Email {
         grid-column: 10 / 13;

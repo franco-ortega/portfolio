@@ -19,13 +19,16 @@
   --continent: tan;
   --continent-border: brown;
 
-  --outer-coastline: rgb(87, 171, 223);
-  --inner-coastline: rgb(111, 186, 233);
   --coastline-shadow: darkblue;
-
+  
+  --outer-coastline: rgb(87, 171, 223);
   --outer-coastline-padding: 0.75vw;
-  --inner-coastline-padding: 1vw;
   --outer-coastline-details-padding: 1.25vw;
+  
+  --inner-coastline: rgb(111, 186, 233);
+  --inner-coastline-width: 0.15vw;
+  --inner-coastline-padding: 1vw;
+
   --inner-coastline-details-padding: 1.5vw;
 
   --continent-details-title: 4vw;
@@ -71,6 +74,11 @@ button {
 
 @media screen and (max-width: 900px) {
   :root {
+    --outer-coastline-padding: 1vw;
+
+    --inner-coastline-padding: 1.25vw;
+    --inner-coastline-width: 0.3vw;
+
     --profile-continent-height: 15vh;
     --profile-continent-width: 33vw;
     --profile-continent-margin: 5vw 5vw 0 0;
@@ -92,6 +100,10 @@ button {
 
 @media screen and (max-width: 500px) {
   :root {
+    --outer-coastline-padding: 1.25vw;
+
+    --inner-coastline-width: 0.5vw;
+
     --profile-continent-height: 10vh;
     --profile-continent-width: 38vw;
     --profile-continent-margin: 0 2vw 0 0;

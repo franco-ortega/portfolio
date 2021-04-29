@@ -17,7 +17,7 @@
 
 .InnerCoastline {
     background: var(--inner-coastline);
-    border: 0.15vw dashed var(--continent-border);
+    border: var(--inner-coastline-width) dashed var(--continent-border);
     border-radius: inherit;
     padding: var(--inner-coastline-padding);
     height: fit-content;
@@ -42,7 +42,7 @@
     .Profile {
         grid-column: 5 / 9;
         grid-Row: 5 / 8;
-    }
+    }    
 }
 
 @media screen and (max-width: 500px) {

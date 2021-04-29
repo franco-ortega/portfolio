@@ -6,6 +6,13 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+    .LinkedIn {
+        grid-column: 5 / 9;
+        grid-row: 4 / 8;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .LinkedIn {
         grid-column: 1 / 5;
