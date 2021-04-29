@@ -4,6 +4,16 @@
     box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow);
     height: fit-content;
     padding: 0.4vw;
+
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+}
+
+.OuterCoastline:hover {
+    transform: scale(1.1);
 }
 
 .InnerCoastline {

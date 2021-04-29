@@ -36,7 +36,6 @@
     font-weight: bold;
 }
 
-
 @media screen and (max-width: 900px) {
   .Resume {
     grid-column: 8 / 13;
