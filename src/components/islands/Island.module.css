@@ -26,32 +26,43 @@
 .Island {
     background: var(--continent);
     border-radius: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 1.5vw 1vw;
     height: fit-content;
     width: fit-content;
 }
 
+
+@media screen and (max-width: 900px) {
+    .OuterCoastline {
+        box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow);
+        padding: 0.8vw;
+        
+    }
+    
+    .InnerCoastline {
+        border: 0.3vw dashed var(--continent-border);
+        padding: 1vw;
+    }
+
+    .Island {
+        padding: 3vw 2vw;
+        font-size: 3vw;
+    }
+}
+
+
 @media screen and (max-width: 500px) {
     .OuterCoastline {
-        background: var(--outer-coastline);
-        border-radius: 50%;
         box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow);
         padding: 0.8vw;
     }
     
     .InnerCoastline {
-        background: var(--inner-coastline);
-        border: 0.1vw dashed var(--continent-border);
-        border-radius: inherit;
+        border: 0.5vw dashed var(--continent-border);
         padding: 1vw;
     }
 
     .Island {
-        height: fit-content;
-        width: fit-content;
         padding: 5vw 2vw;
         font-size: 4vw;
     }
