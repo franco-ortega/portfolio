@@ -8,11 +8,11 @@
 
 .OuterCoastline {
     background: var(--outer-coastline);
-    border-radius: 120vw 70vw 95vw 90vw;
-    box-shadow: 0vw 0vw 2vw 1.5vw var(--coastline-shadow);
+    border-radius: var(--profile-continent-shape);
+    box-shadow: var(--continent-box-shadow) var(--coastline-shadow);
     padding: var(--outer-coastline-padding);
     width: fit-content;
-    margin-right: 2vw;
+    margin: var(--profile-continent-margin);
 }
 
 .InnerCoastline {
@@ -28,12 +28,13 @@
     background: var(--continent);
     border: .25vw solid var(--continent-border);
     border-radius: inherit;
-    height: 25vh;
-    width: 25vw;
+    height: var(--profile-continent-height);
+    width: var(--profile-continent-width);
+    padding: var(--continent-padding);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3vw;
+    font-size: var(--profile-continent-font);
     font-weight: bold;
 }
 
@@ -42,22 +43,11 @@
         grid-column: 5 / 9;
         grid-Row: 5 / 8;
     }
-
-    .Continent {
-        height: 20vw;
-        width: 25vh;
-    }
 }
 
 @media screen and (max-width: 500px) {
     .Profile {
         grid-column: 1 / 11;
         grid-row: 10 / 14;
-    }
-    
-    .Continent {
-        height: 21vw;
-        width: 22vh;
-        font-size: 9vw;
     }
 }

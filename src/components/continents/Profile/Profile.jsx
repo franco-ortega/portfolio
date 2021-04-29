@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
 
 const Profile = () => {
@@ -15,13 +14,8 @@ const Profile = () => {
           </section>
         </section>
       </Link>
-        
     </main>
   );
-};
-
-Profile.propTypes = {
-
 };
 
 export default Profile;

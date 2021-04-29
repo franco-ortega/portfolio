@@ -8,8 +8,8 @@
 
 .OuterCoastline {
     background: var(--outer-coastline);
-    border-radius: 84vw 75vw 51vw 38vw;
-    box-shadow: 0vw 0vw 2vw 1.5vw var(--coastline-shadow);
+    border-radius: var(--project-continent-shape);
+    box-shadow: var(--continent-box-shadow) var(--coastline-shadow);
     padding: var(--outer-coastline-padding);
     width: fit-content;
 }
@@ -27,13 +27,15 @@
     background: var(--continent);
     border: .25vw solid var(--continent-border);
     border-radius: inherit;
-    height: 22vh;
-    width: 22vw;
+    height: var(--project-continent-height);
+    width: var(--project-continent-width);
+    padding: var(--continent-padding);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3vw;
+    font-size: var(--project-continent-font);
     font-weight: bold;
+    text-align: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -41,24 +43,11 @@
         grid-column: 1 / 7;
         grid-Row: 2 / 6;
     }
-
-    .Continent {
-        height: 20vw;
-        width: 25vh;
-    }
 }
 
 @media screen and (max-width: 500px) {
     .Projects {
         grid-column: 1 / 8;
         grid-row: 5 / 10;
-    }
-    
-    .Continent {
-        height: 21vw;
-        width: 19vh;
-        padding: 2vw;
-        font-size: 6.5vw;
-        text-align: center;
     }
 }

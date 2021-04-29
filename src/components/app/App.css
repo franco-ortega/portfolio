@@ -32,6 +32,29 @@
   --continent-details-intro: 1.4vw;
   --continent-details-body: 1.25vw;
 
+  --continent-box-shadow: 0vw 0vw 2vw 1.5vw;
+
+  --continent-padding: 1vw;
+
+  --profile-continent-shape: 120vw 70vw 95vw 90vw;
+  --profile-continent-height: 25vh;
+  --profile-continent-width: 25vw;
+  --profile-continent-margin: 0 2vw 0 0;
+  --profile-continent-font: 4.25vw;
+
+  --project-continent-shape: 84vw 75vw 51vw 38vw;
+  --project-continent-height: 22vh;
+  --project-continent-width: 22vw;
+  --project-continent-font: 3.5vw;
+
+
+
+
+
+
+
+
+
   --project-summary-title: 1.75vw;
   --project-summary-text: 1.3vw;
   --project-details-button: 1.25vw;
@@ -45,13 +68,41 @@
 }
 
 a {
-  color: darkblue;
+  color: var(--darkestblue);
 }
 
 a:hover {
-  color: darkblue;
+  color: var(--middleblue);
 }
 
 button {
   outline: none;
+}
+
+
+@media screen and (max-width: 900px) {
+  :root {
+    --profile-continent-height: 15vh;
+    --profile-continent-width: 33vw;
+    --profile-continent-margin: 5vw 5vw 0 0;
+    --profile-continent-font: 6.5vw;
+
+    --project-continent-height: 15vh;
+    --project-continent-width: 34vw;
+    --project-continent-font: 5.5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --profile-continent-height: 10vh;
+    --profile-continent-width: 40vw;
+    --profile-continent-margin: 0 0 0 0;
+    --profile-continent-font: 8vw;
+
+    --project-continent-height: 11vh;
+    --project-continent-width: 41vw;
+    --project-continent-padding: 2vw;
+    --project-continent-font: 6.5vw;
+  }
 }
