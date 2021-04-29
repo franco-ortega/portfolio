@@ -1,6 +1,6 @@
 .WeatherBeats {
     background-image: url(../../../assets/WeatherBeats_mobile.jpg);
-    background-position: 50% 55%;
+    background-position: 50% 65%;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     padding: 1vw;
     height: 100%;
@@ -37,26 +37,23 @@
 
 @media screen and (max-width: 900px) and (orientation: portrait) {
     .WeatherBeats {
-        font-size: var(--project-summary-title-tablet);
+        background-position: 50% 10%;
     }
 
-    .Summary {
-        font-size: var(--project-summary-text-tablet);
+    .DetailsButton {
+        border-radius: 1.5vw;
+        padding: 0.3vw 0.75vw;
     }
 }
 
 @media screen and (max-width: 500px) {
     .WeatherBeats {
-        font-size: var(--project-summary-title-mobile);
-    }
-
-    .Summary {
-        font-size: var(--project-summary-text-mobile);
+        background-position: 50% 53%;
+        padding: 2vw;
     }
 
     .DetailsButton {
         border-radius: 3vw;
         padding: 0.5vw 1vw;
-        font-size: var(--project-details-button-mobile);
     }
 }

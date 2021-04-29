@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import PropTypes from 'prop-types';
 import styles from './Projects.module.css';
 
 const Projects = () => {
@@ -17,10 +16,6 @@ const Projects = () => {
       </Link>
     </main>
   );
-};
-
-Projects.propTypes = {
-
 };
 
 export default Projects;
