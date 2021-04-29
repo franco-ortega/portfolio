@@ -47,6 +47,11 @@
   --project-continent-width: 22vw;
   --project-continent-font: 3.5vw;
 
+  --resume-continent-shape: 520vw 270vw 495vw 190vw;
+  --resume-continent-height: 15vh;
+  --resume-continent-width: 20vw;
+  --resume-continent-font: 3vw;
+
   --project-summary-title: 1.75vw;
   --project-summary-text: 1.3vw;
   --project-details-button: 1.25vw;
@@ -64,17 +69,20 @@ button {
   outline: none;
 }
 
-
 @media screen and (max-width: 900px) {
   :root {
     --profile-continent-height: 15vh;
     --profile-continent-width: 33vw;
     --profile-continent-margin: 5vw 5vw 0 0;
-    --profile-continent-font: 6.5vw;
+    --profile-continent-font: 7vw;
 
     --project-continent-height: 15vh;
     --project-continent-width: 34vw;
     --project-continent-font: 5.5vw;
+
+    --resume-continent-height: 10vh;
+    --resume-continent-width: 25vw;
+    --resume-continent-font: 5vw;
 
     --project-summary-title: 2.5vw;
     --project-summary-text: 2vw;
@@ -85,14 +93,18 @@ button {
 @media screen and (max-width: 500px) {
   :root {
     --profile-continent-height: 10vh;
-    --profile-continent-width: 40vw;
-    --profile-continent-margin: 0 0 0 0;
+    --profile-continent-width: 38vw;
+    --profile-continent-margin: 0 2vw 0 0;
     --profile-continent-font: 8vw;
 
     --project-continent-height: 11vh;
-    --project-continent-width: 41vw;
+    --project-continent-width: 39vw;
     --project-continent-padding: 2vw;
     --project-continent-font: 6.5vw;
+
+    --resume-continent-height: 8vh;
+    --resume-continent-width: 30vw;
+    --resume-continent-font: 6vw;
 
     --project-summary-title: 4.5vw;
     --project-summary-text: 4.5vw;
