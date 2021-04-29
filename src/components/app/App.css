@@ -47,24 +47,9 @@
   --project-continent-width: 22vw;
   --project-continent-font: 3.5vw;
 
-
-
-
-
-
-
-
-
   --project-summary-title: 1.75vw;
   --project-summary-text: 1.3vw;
   --project-details-button: 1.25vw;
-
-  --project-summary-title-tablet: 2.25vw;
-  --project-summary-text-tablet: 1.75vw;
-  
-  --project-summary-title-mobile: 4.5vw;
-  --project-summary-text-mobile: 4.5vw;
-  --project-details-button-mobile: 3vw;
 }
 
 a {
@@ -90,6 +75,10 @@ button {
     --project-continent-height: 15vh;
     --project-continent-width: 34vw;
     --project-continent-font: 5.5vw;
+
+    --project-summary-title: 2.5vw;
+    --project-summary-text: 2vw;
+    --project-details-button: 1.75vw;
   }
 }
 
@@ -104,5 +93,9 @@ button {
     --project-continent-width: 41vw;
     --project-continent-padding: 2vw;
     --project-continent-font: 6.5vw;
+
+    --project-summary-title: 4.5vw;
+    --project-summary-text: 4.5vw;
+    --project-details-button: 3.25vw;
   }
 }
