@@ -56,7 +56,7 @@
     }
     
     .InnerCoastline {
-        border: 0.5vw dashed var(--continent-border);
+        border: 0.3vw dashed var(--continent-border);
         padding: 1vw;
     }
 
