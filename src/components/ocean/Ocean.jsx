@@ -39,9 +39,9 @@ const Ocean = () => {
           <h1 className={styles.Name}>Franco Ortega</h1>
           <h2 className={styles.Title}>Full Stack Software Engineer</h2>
         </div>
-        <div className={styles.OceanGridMessage}>
+        {/* <div className={styles.OceanGridMessage}>
           <p className={styles.Message}>&lowast; &lowast; &lowast; portfolio in progress &lowast; &lowast; &lowast;</p>
-        </div>
+        </div> */}
 
         {/* Continents */}
         <Projects />
