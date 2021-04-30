@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 500px) {
     .Email {
-        grid-column: 10 / 13;
-        grid-row: 4 / 7;
+        grid-column: 6 / 10;
+        grid-row: 4 / 8;
     }
 }
