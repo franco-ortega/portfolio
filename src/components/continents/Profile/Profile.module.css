@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 500px) {
     .Profile {
-        grid-column: 1 / 11;
+        grid-column: 1 / 10;
         grid-row: 10 / 14;
     }
 }

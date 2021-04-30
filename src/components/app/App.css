@@ -103,15 +103,15 @@ button {
   :root {
     --outer-coastline-padding: 1.25vw;
 
-    --inner-coastline-width: 0.5vw;
+    --inner-coastline-width: 0.3vw;
 
     --profile-continent-height: 10vh;
-    --profile-continent-width: 38vw;
+    --profile-continent-width: 36vw;
     --profile-continent-margin: 0 2vw 0 0;
     --profile-continent-font: 8vw;
 
     --project-continent-height: 11vh;
-    --project-continent-width: 39vw;
+    --project-continent-width: 37vw;
     --project-continent-padding: 2vw;
     --project-continent-font: 6.5vw;
 
