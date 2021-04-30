@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 500px) {
     .Twitter {
-        grid-column: 6 / 10;
-        grid-row: 4 / 8;
+        grid-column: 10 / 13;
+        grid-row: 4 / 7;
     }
 }
