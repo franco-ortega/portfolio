@@ -10,15 +10,15 @@
     background: var(--outer-coastline);
     border-radius: 60% 40% 60% 35%;
     box-shadow: var(--continent-box-shadow) var(--coastline-shadow);
-    padding: var(--outer-coastline-padding);
+    padding: .6vw;
     width: fit-content;
 }
 
 .InnerCoastline {
     background: var(--inner-coastline);
-    border: var(--inner-coastline-width) dashed var(--continent-border);
+    border: 0.13vw dashed var(--continent-border);
     border-radius: inherit;
-    padding: var(--inner-coastline-padding);
+    padding: .75vw;
     height: fit-content;
     width: fit-content;
 }
