@@ -1,18 +1,18 @@
-.Profile {
-    grid-column: 5 / 9;
-    grid-row: 3 / 6;
+.Cartography {
+    grid-column: 1 / 4;
+    grid-row: 5 / 8;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .OuterCoastline {
     background: var(--outer-coastline);
-    border-radius: var(--profile-continent-shape);
+    border-radius: 60% 40% 60% 35%;
     box-shadow: var(--continent-box-shadow) var(--coastline-shadow);
     padding: var(--outer-coastline-padding);
     width: fit-content;
-    margin: var(--profile-continent-margin);
+    
 }
 
 .InnerCoastline {
@@ -26,28 +26,15 @@
 
 .Continent {
     background: var(--continent);
-    border: .25vw solid var(--continent-border);
+    border: 0.25vw solid var(--continent-border);
     border-radius: inherit;
-    height: var(--profile-continent-height);
-    width: var(--profile-continent-width);
+    height: 15vh;
+    width: 15vw;
     padding: var(--continent-padding);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--profile-continent-font);
+    font-size: 2vw;
     font-weight: bold;
-}
-
-@media screen and (max-width: 900px) {
-    .Profile {
-        grid-column: 5 / 9;
-        grid-Row: 5 / 8;
-    }    
-}
-
-@media screen and (max-width: 500px) {
-    .Profile {
-        grid-column: 1 / 11;
-        grid-row: 10 / 14;
-    }
+    
 }

@@ -9,6 +9,7 @@ import styles from './Ocean.module.css';
 import Legend from '../mapElements/Legend';
 import IslandChain from '../islands/IslandChain';
 import Compass from '../mapElements/Compass';
+import Cartography from '../continents/Cartography/Cartography';
 
 const Ocean = () => {
   return (
@@ -46,6 +47,7 @@ const Ocean = () => {
         <Projects />
         <Profile />
         <Resume />
+        <Cartography />
 
         {/* Islands */}
         <IslandChain />
