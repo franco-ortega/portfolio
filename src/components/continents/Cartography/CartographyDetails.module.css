@@ -208,7 +208,7 @@
     .Content {
         grid-column: 3 / 10;
         grid-row: 6 / 20;
-        font-size: 4.5vw;
+        font-size: 4.25vw;
         border: 1px dashed black;
     }
 
