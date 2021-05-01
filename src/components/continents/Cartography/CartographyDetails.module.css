@@ -195,40 +195,26 @@
     .Continent {
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(30, 1fr);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10vw;
-        padding-bottom: 10vw;
     }
     
     .Title {
         grid-column: 4 / 10;
         grid-row: 3 / 5;
-        margin-top: 10vw;
-        margin-left: 10vw;
-        font-size: 7vw;
-        display: flex;
+        font-size: 8vw;
         align-items: center;
-        justify-content: center;
+        padding-right: 4vw;
     }
     
     .Content {
         grid-column: 3 / 10;
-        grid-row: 5 / 14;
-        height: 35vw;
-        margin-left: 5vw;
-        font-size: 4vw;
+        grid-row: 6 / 20;
+        font-size: 5vw;
     }
 
     .MapHarland {
         grid-column: 2 / 9;
-        grid-row: 19 / 26;
-        display: flex;
-        justify-content: center;
-        margin-right: 5vw;
-        height: 35vw;
+        grid-row: 21 / 27;
+        height: 100%;
     }
 
     .Harland {
@@ -254,16 +240,15 @@
     }
 
     .ButtonContainer {
-        grid-column: 5 / 6;
-        grid-row: 29 / 31;
+        grid-column: 4 / 6;
+        grid-row: 28 / 31;
         display: flex;
         justify-content: center;
-        margin-right: 15vw;
     }
 
     .Button {
         margin-top: 5vw;
         padding: 0.5vw 1.25vw;
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
 }
