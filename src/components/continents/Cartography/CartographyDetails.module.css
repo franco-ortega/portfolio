@@ -208,16 +208,14 @@
     
     .Content {
         grid-column: 3 / 10;
-        grid-row: 6 / 20;
+        grid-row: 6 / 21;
         font-size: 4.25vw;
-        border: 1px dashed black;
     }
 
     .MapHarland {
         grid-column: 2 / 9;
         grid-row: 22 / 28;
         height: 100%;
-        border: 1px dashed black;
     }
 
     .Harland {
