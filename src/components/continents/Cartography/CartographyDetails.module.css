@@ -217,7 +217,7 @@
         grid-column: 3 / 10;
         grid-row: 5 / 14;
         margin-left: 5vw;
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
 
     .MapHarland {
@@ -226,7 +226,7 @@
         display: flex;
         justify-content: center;
         margin-right: 5vw;
-        height: 25%;
+        height: 45vw;
     }
 
     .Harland {
