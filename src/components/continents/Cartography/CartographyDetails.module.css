@@ -195,13 +195,14 @@
     .Continent {
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(30, 1fr);
+
+        align-items: flex-start;
     }
     
     .Title {
         grid-column: 4 / 10;
         grid-row: 3 / 5;
         font-size: 8vw;
-        align-items: center;
         padding-right: 4vw;
     }
     
