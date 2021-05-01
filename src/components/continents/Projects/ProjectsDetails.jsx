@@ -4,7 +4,6 @@ import BeHuman from '../../projects/BeHuman/BeHuman';
 import ChooseGif from '../../projects/ChooseGif/ChooseGif';
 import MajorArcana from '../../projects/MajorArcana/MajorArcana';
 import WeatherBeats from '../../projects/WeatherBeats/WeatherBeats';
-// import PropTypes from 'prop-types';
 import styles from './ProjectsDetails.module.css';
 
 const ProjectsDetails = () => {
@@ -39,10 +38,6 @@ const ProjectsDetails = () => {
       </section>
     </main>
   );
-};
-
-ProjectsDetails.propTypes = {
-
 };
 
 export default ProjectsDetails;

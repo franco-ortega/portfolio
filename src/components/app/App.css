@@ -26,7 +26,7 @@
   --outer-coastline-details-padding: 1.25vw;
   
   --inner-coastline: rgb(111, 186, 233);
-  --inner-coastline-width: 0.15vw;
+  --inner-coastline-border-width: 0.15vw;
   --inner-coastline-padding: 1vw;
 
   --inner-coastline-details-padding: 1.5vw;
@@ -78,7 +78,7 @@ button {
     --outer-coastline-padding: 1vw;
 
     --inner-coastline-padding: 1.25vw;
-    --inner-coastline-width: 0.3vw;
+    --inner-coastline-border-width: 0.3vw;
 
     --profile-continent-height: 15vh;
     --profile-continent-width: 33vw;
@@ -103,7 +103,7 @@ button {
   :root {
     --outer-coastline-padding: 1.25vw;
 
-    --inner-coastline-width: 0.3vw;
+    --inner-coastline-border-width: 0.3vw;
 
     --profile-continent-height: 10vh;
     --profile-continent-width: 36vw;
