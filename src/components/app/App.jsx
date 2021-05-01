@@ -7,6 +7,7 @@ import {
 import Ocean from '../ocean/Ocean';
 import ProfileDetails from '../continents/Profile/ProfileDetails';
 import ProjectsDetails from '../continents/Projects/ProjectsDetails';
+import CartographyDetails from '../continents/Cartography/CartographyDetails';
 import WeatherBeatsDetails from '../projects/WeatherBeats/WeatherBeatsDetails';
 import BeHumanDetails from '../projects/BeHuman/BeHumanDetails';
 import ChooseGifDetails from '../projects/ChooseGif/ChooseGifDetails';
@@ -21,6 +22,7 @@ const App = () => {
         <Switch>
           <Route exact path="/projects" component={ProjectsDetails} />
           <Route exact path="/profile" component={ProfileDetails} />
+          <Route exact path="/cartography" component={CartographyDetails} />
           <Route exact path="/weatherbeats" component={WeatherBeatsDetails} />
           <Route exact path="/behuman" component={BeHumanDetails} />
           <Route exact path="/choosegif" component={ChooseGifDetails} />

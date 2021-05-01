@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Cartography.module.css';
 
 const Cartography = () => {
   return (
     <main className={styles.Cartography}>
-      <a href="https://www.instagram.com/reefwoodcartography/" target="_blank" rel="noreferrer">
+      <Link to="/cartography">
         <section className={styles.OuterCoastline}>
           <section className={styles.InnerCoastline}>
             <section className={styles.Continent}>
@@ -12,7 +13,7 @@ const Cartography = () => {
             </section>
           </section>
         </section>
-      </a>
+      </Link>
     </main>
   );
 };
