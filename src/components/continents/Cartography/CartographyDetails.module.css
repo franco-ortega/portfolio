@@ -193,11 +193,13 @@
         width: 90%;
         display: flex;
         justify-content: center;
+        background: gray;
     }
 
     .Harland {
         border-radius: 3vw;
         width: 75%;
+        height: 100%;
     }
     
     .MapApril, .MapStrigi, .MapGruenne {
