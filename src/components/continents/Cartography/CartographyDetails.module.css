@@ -140,8 +140,6 @@
     }
     
     .MapGruenne {
-        grid-column: 2 / 7;
-        grid-row: 21 / 25;
         display: none;
     }
 
@@ -164,13 +162,10 @@
     }
 }
 
-
 @media screen and (max-width: 500px) {
     .Continent {
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(30, 1fr);
-
-        align-items: flex-start;
     }
     
     .Title {
@@ -189,31 +184,18 @@
     .MapHarland {
         grid-column: 2 / 9;
         grid-row: 22 / 28;
-        height: 100%;
+        width: 90%;
+        text-align: center;
     }
 
     .Harland {
-        border-radius: 5vw;
+        border-radius: 3vw;
     }
     
-    .MapApril {
-        grid-column: 3 / 9;
-        grid-row: 14 / 20;
+    .MapApril, .MapStrigi, .MapGruenne {
         display: none;
     }
-    
-    .MapStrigi {
-        grid-column: 5 / 10;
-        grid-row: 11 / 15;
-        display: none;
-    }
-    
-    .MapGruenne {
-        grid-column: 2 / 7;
-        grid-row: 21 / 25;
-        display: none;
-    }
-
+ 
     .ButtonContainer {
         grid-column: 4 / 6;
         grid-row: 28 / 31;
