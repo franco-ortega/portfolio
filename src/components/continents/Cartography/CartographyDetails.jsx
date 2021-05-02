@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './CartographyDetails.module.css';
-// import Ganderlund from '../../../assets/maps/Ganderlund.jpeg';
-import April from '../../../assets/maps/April.jpeg';
-import Harland from '../../../assets/maps/Harland.jpg';
-// import MarneOsso from '../../../assets/maps/MarneOsso.jpg';
-import Strigi from '../../../assets/maps/Strigi.jpg';
-import Gruenne from '../../../assets/maps/Gruenne.jpg';
+// import Ganderlund from '../../../assets/maps/Ganderlund.png';
+import April from '../../../assets/maps/April.png';
+import Harland from '../../../assets/maps/Harland.png';
+// import MarneOsso from '../../../assets/maps/MarneOsso.png';
+import Strigi from '../../../assets/maps/Strigi.png';
+import Gruenne from '../../../assets/maps/Gruenne.png';
 
 const CartographyDetails = () => {
   return (

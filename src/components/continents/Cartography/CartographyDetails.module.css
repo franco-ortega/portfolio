@@ -166,30 +166,38 @@
     .Continent {
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(30, 1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        border: 3px dashed pink;
     }
     
     .Title {
         grid-column: 4 / 10;
         grid-row: 3 / 5;
         font-size: 8vw;
-        padding-right: 4vw;
+        padding: 10vw 0vw 0 10vw;
     }
     
     .Content {
         grid-column: 3 / 10;
         grid-row: 6 / 21;
         font-size: 4.25vw;
+        padding: 0vw 5vw 0 15vw;
     }
 
     .MapHarland {
         grid-column: 2 / 9;
         grid-row: 22 / 28;
         width: 90%;
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
     .Harland {
         border-radius: 3vw;
+        width: 75%;
     }
     
     .MapApril, .MapStrigi, .MapGruenne {
