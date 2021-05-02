@@ -5,7 +5,6 @@
     position: absolute;
     top: 2.5%;;
     left: 2.5%;
-    
 }
 
 .OuterCoastline {
@@ -34,7 +33,6 @@
     display: grid;
     grid-template-columns: repeat(30, 1fr);
     grid-template-rows: repeat(20, 1fr);
-    
 }
 
 .Title {
@@ -42,7 +40,6 @@
     grid-row: 2 / 5;
     font-size: var(--continent-details-title);
 }
-
 
 .Content {
     grid-column: 9 / 23;
@@ -53,42 +50,23 @@
 }
 
 .MapHarland {
-    grid-column: 2 / 9;
+    grid-column: 3 / 9;
     grid-row: 9 / 16;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
 }
 
 .MapApril {
     grid-column: 10 / 16;
     grid-row: 13 / 20;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
 }
 
 .MapStrigi {
     grid-column: 18 / 22;
-    grid-row: 12 / 19;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    grid-row: 11 / 19;
 }
 
 .MapGruenne {
-    grid-column: 23 / 30;
-    grid-row: 7 / 14;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    grid-column: 23 / 29;
+    grid-row: 6 / 13;
 }
 
 .MapMarneOsso {
@@ -96,10 +74,9 @@
     grid-row: 5 / 15;
 }
 
-
 .Gruenne, .April, .MarneOsso, .Harland, .Strigi {
     border-radius: 0.5vw;
-    width: 90%;
+    width: 100%;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -108,8 +85,7 @@
 }
 
 .Harland:hover, .April:hover, .MarneOsso:hover, .Gruenne:hover, .Strigi:hover {
-    transform: scale(1.5);
-    border: 1px dashed brown;
+    transform: scale(2);
 }
 
 .ButtonContainer {
