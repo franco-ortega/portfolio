@@ -103,25 +103,6 @@
     font-size: 1.25vw;
 }
 
-@media screen and (max-width: 900) {
-    .CartographyDetails {
-        height: 50vh;
-        width: 50vw;
-    }
-
-    .Continent {
-        grid-template-columns: repeat(20, 1fr);
-        grid-template-rows: repeat(30, 1fr);
-        border: dashed lightblue;
-        color: white;
-    }
-
-    .Gruenne, .April, .Harland, .MarneOsso, .Strigi {
-        border-radius: 0.5vw;
-        height: 1%;
-    }    
-}
-
 @media screen and (max-width: 900px) {
     .Continent {
         grid-template-columns: repeat(10, 1fr);
@@ -144,27 +125,29 @@
     }
 
     .MapHarland {
-        grid-column: 2 / 7;
-        grid-row: 22 / 29;
-        justify-content: center;
+        grid-column: 2 / 6;
+        grid-row: 14 / 21;
     }
     
     .MapApril {
-        grid-column: 1 / 6;
-        grid-row: 14 / 21;
-        display: flex;
-        justify-content: center;
+        grid-column: 3 / 7;
+        grid-row: 22 / 29;
     }
     
     .MapStrigi {
         grid-column: 7 / 10;
-        grid-row: 14 / 23;
+        grid-row: 13 / 22;
     }
     
     .MapGruenne {
         grid-column: 2 / 7;
         grid-row: 21 / 25;
         display: none;
+    }
+
+    .Gruenne, .April, .MarneOsso, .Harland, .Strigi {
+        border-radius: 0.75vw;
+        width: 95%;
     }
 
     .ButtonContainer {
