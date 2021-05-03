@@ -37,6 +37,10 @@
     font-weight: bold;
 }
 
+.Title {
+    transform: rotate(-7.5deg);
+}
+
 @media screen and (max-width: 900px) {
     .Cartography {
         grid-column: 1 / 5;

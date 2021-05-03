@@ -9,7 +9,7 @@ const Cartography = () => {
         <section className={styles.OuterCoastline}>
           <section className={styles.InnerCoastline}>
             <section className={styles.Continent}>
-              Cartography
+              <p className={styles.Title}>Cartography</p>
             </section>
           </section>
         </section>
