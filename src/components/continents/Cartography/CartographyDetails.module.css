@@ -216,8 +216,7 @@
         grid-row: 28 / 31;
         display: flex;
         justify-content: center;
-        width: 85%;
-        
+        width: 80%;
     }
 
     .Button {
