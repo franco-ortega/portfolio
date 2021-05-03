@@ -186,7 +186,7 @@
         grid-column: 3 / 10;
         grid-row: 6 / 21;
         font-size: 4.25vw;
-        padding: 0vw 5vw 0 15vw;
+        padding: 0vw 7vw 0 17vw;
     }
 
     .MapHarland {
@@ -216,6 +216,8 @@
         grid-row: 28 / 31;
         display: flex;
         justify-content: center;
+        width: 85%;
+        
     }
 
     .Button {
