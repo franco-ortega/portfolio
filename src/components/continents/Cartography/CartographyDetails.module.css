@@ -195,7 +195,6 @@
         width: 90%;
         display: flex;
         justify-content: center;
-        background: gray;
     }
 
     .Harland {
@@ -209,7 +208,7 @@
     }
 
     .Harland:hover, .April:hover, .MarneOsso:hover, .Gruenne:hover, .Strigi:hover {
-        transform: scale(1.25);
+        transform: scale(1.5);
     }
  
     .ButtonContainer {
