@@ -56,21 +56,29 @@
 .MapHarland {
     grid-column: 2 / 8;
     grid-row: 9 / 16;
+    display: flex;
+    align-items: center;
 }
 
 .MapApril {
     grid-column: 10 / 16;
     grid-row: 12 / 19;
+    display: flex;
+    align-items: center;
 }
 
 .MapStrigi {
     grid-column: 18 / 22;
     grid-row: 11 / 19;
+    display: flex;
+    align-items: flex-end;
 }
 
 .MapGruenne {
     grid-column: 24 / 30;
     grid-row: 6 / 13;
+    display: flex;
+    align-items: center;
 }
 
 .MapMarneOsso {
@@ -90,7 +98,6 @@
 
 .Harland:hover, .April:hover, .MarneOsso:hover, .Gruenne:hover, .Strigi:hover {
     transform: scale(1.6);
-    
 }
 
 .ButtonContainer {
