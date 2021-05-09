@@ -3,39 +3,39 @@ import styles from './Scale.module.css';
 
 const Scale = () => {
   return (
-    <main className={styles.ScaleContainer} title="scale">
-      <section>
-        <section className={`${styles.ScaleNumber} ${styles.ScaleNumberFirst}`}>0</section>
-        <section className={`${styles.ScaleBlockBlack} ${styles.ScaleBlockFirst}`}></section>
-      </section>
-      <section>
-        <section className={styles.ScaleNumber}>10</section>
-        <section className={styles.ScaleBlockWhite}></section>
-      </section>
-      <section>
-        <section className={styles.ScaleNumber}>20</section>
-        <section className={styles.ScaleBlockBlack}></section>
-      </section>
-      <section>
-        <section className={styles.ScaleNumber}>30</section>
-        <section className={styles.ScaleBlockWhite}></section>
-      </section>
-      <section>
-        <section className={styles.ScaleNumber}>40</section>
-        <section className={styles.ScaleBlockBlack}></section>
-      </section>
-      <section>
-        <section className={styles.ScaleNumber}>50</section>
-        <section className={styles.ScaleBlockWhite}></section>
-      </section>
-      <section>
-        <section className={styles.ScaleNumber}>60</section>
-        <section className={`${styles.ScaleBlockBlack} ${styles.ScaleBlockLast}`}></section>
-      </section>
-      <section>
-        <section className={styles.ScaleNumber}>70</section>
-      </section>
-    </main>
+    <div className={styles.ScaleContainer} title="scale">
+      <div>
+        <div className={`${styles.ScaleNumber} ${styles.ScaleNumberFirst}`}>0</div>
+        <div className={`${styles.ScaleBlockBlack} ${styles.ScaleBlockFirst}`}></div>
+      </div>
+      <div>
+        <div className={styles.ScaleNumber}>10</div>
+        <div className={styles.ScaleBlockWhite}></div>
+      </div>
+      <div>
+        <div className={styles.ScaleNumber}>20</div>
+        <div className={styles.ScaleBlockBlack}></div>
+      </div>
+      <div>
+        <div className={styles.ScaleNumber}>30</div>
+        <div className={styles.ScaleBlockWhite}></div>
+      </div>
+      <div>
+        <div className={styles.ScaleNumber}>40</div>
+        <div className={styles.ScaleBlockBlack}></div>
+      </div>
+      <div>
+        <div className={styles.ScaleNumber}>50</div>
+        <div className={styles.ScaleBlockWhite}></div>
+      </div>
+      <div>
+        <div className={styles.ScaleNumber}>60</div>
+        <div className={`${styles.ScaleBlockBlack} ${styles.ScaleBlockLast}`}></div>
+      </div>
+      <div>
+        <div className={styles.ScaleNumber}>70</div>
+      </div>
+    </div>
   );
 };
 
