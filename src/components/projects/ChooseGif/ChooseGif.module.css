@@ -7,9 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
 
-    padding: 1vw;
     height: 100%;
     width: 100%;
 
@@ -17,10 +15,22 @@
     overflow: auto;
 }
 
+.Title {
+    height: 30%;
+    padding: 1.5vw 0;
+}
+
 .Summary {
-    margin: 1vw;
+    height: 50%;
+    padding: 1vw 2vw;
+    display: flex;
+    align-items: flex-start;
     font-size: var(--project-summary-text);
     text-align: justify;
+}
+
+.ButtonContainer {
+    height: 20%;
 }
 
 .DetailsButton {
@@ -31,8 +41,21 @@
     font-size: var(--project-details-button);
 }
 
-
 @media screen and (max-width: 900px) and (orientation: portrait) {
+    .Title {
+        height: 20%;
+    }
+
+    .Summary {
+        height: 60%;
+    }
+
+    .ButtonContainer {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1vw;
+    }
+    
     .DetailsButton {
         border-radius: 1.5vw;
         padding: 0.3vw 0.75vw;
@@ -40,8 +63,14 @@
 }
 
 @media screen and (max-width: 500px) and (orientation: portrait) {
-    .ChooseGif {
-        padding: 2vw;
+    .Summary {
+        height: 65%;
+    }
+
+    .ButtonContainer {
+        height: 15%;
+        padding-bottom: 0;
+        align-items: flex-start;
     }
 
     .DetailsButton {
