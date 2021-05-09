@@ -3,23 +3,23 @@ import styles from './Compass.module.css';
 
 const Compass = () => {
   return (
-    <main className={styles.Compass}>
+    <div className={styles.Compass}>
       
 
-      <section className={styles.TopTriangle}></section>
-      <section className={styles.BottomTriangle}></section>
-      <section className={styles.LeftTriangle}></section>
-      <section className={styles.RightTriangle}></section>
+      <div className={styles.TopTriangle}></div>
+      <div className={styles.BottomTriangle}></div>
+      <div className={styles.LeftTriangle}></div>
+      <div className={styles.RightTriangle}></div>
 
-      {/* <section className={styles.InnerTriangle}></section> */}
+      {/* <div className={styles.InnerTriangle}></div> */}
 
-      <section className={styles.CompassCircle}>
-        <section className={styles.CompassCenter}></section>
-      </section>
+      <div className={styles.CompassCircle}>
+        <div className={styles.CompassCenter}></div>
+      </div>
 
-      <section className={styles.OuterCircle}>
-        <section className={styles.MysteryCircle}></section>
-      </section>
+      <div className={styles.OuterCircle}>
+        <div className={styles.MysteryCircle}></div>
+      </div>
 
 
       {/* <div className={styles.GridItem}></div>
@@ -27,7 +27,7 @@ const Compass = () => {
       <div className={styles.GridItem}></div>
       <div className={styles.GridItem}></div>
       <div className={styles.GridItem}></div> */}
-    </main>
+    </div>
   );
 };
 

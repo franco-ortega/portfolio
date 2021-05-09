@@ -7,13 +7,12 @@ import styles from './IslandChain.module.css';
 
 const IslandChain = () => {
   return (
-    <main className={styles.IslandChain}>
+    <div className={styles.IslandChain}>
       <GitHub />
       <LinkedIn />
       <Email />
       <Twitter />
-      {/* <div className={styles.IslandGridBlock}></div> */}
-    </main>
+    </div>
   );
 };
 

@@ -3,7 +3,7 @@ import styles from './Legend.module.css';
 
 const Legend = () => {
   return (
-    <main className={styles.LegendContainer}>
+    <section className={styles.LegendContainer}>
       <section className={styles.Legend}>
         <h1 className={styles.Title}>Legend</h1>
         <section className={styles.Tech}>
@@ -27,7 +27,7 @@ const Legend = () => {
           </p>
         </section>
       </section>
-    </main>
+    </section>
   );
 };
 
