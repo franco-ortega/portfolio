@@ -70,7 +70,7 @@
 
     .ButtonContainer {
         height: 15%;
-        padding-bottom: 0;
+        padding: 3vw;
         align-items: flex-start;
     }
 
