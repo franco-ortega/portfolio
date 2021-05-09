@@ -31,7 +31,6 @@
     border-radius: inherit;
     height: inherit;
     width: inherit;
-    padding: 1vw;
 
     display: flex;
     flex-direction: column;
@@ -96,7 +95,7 @@
         border-radius: 35vw 20vw 20vw 30vw;
         top: 10%;
         left: 5%;
-        height: 80vh;
+        height: 85vh;
         width: 90vw;
     }
 
@@ -109,7 +108,7 @@
     }
 
     .Contact {
-        font-size: 1.5vw;
+        font-size: 1.75vw;
     }
 
     .Bio {
@@ -126,10 +125,10 @@
 @media screen and (max-width: 500px) {
     .ProfileDetails {
         border-radius: 35vw 20vw 20vw 30vw;
-        top: 15%;
-        left: 4%;
-        height: 75vh;
-        width: 92vw;
+        top: 2.5%;
+        left: 2.5%;
+        height: 95vh;
+        width: 95vw;
     }
 
     .Header {
@@ -149,11 +148,7 @@
 
     .Contact {
         margin: 0.5vw;
-        font-size: 3vw;
-    }
-
-    .ContactLink {
-        
+        font-size: 3.5vw;
     }
 
     .Bio {
@@ -161,6 +156,12 @@
         padding: 1vw 5vw;
         height: 65%;
         font-size: 3.75vw;
+    }
+
+    .Photo {
+        border-radius: 50%;
+        margin: 0vw 0vw 3vw 3vw;
+        height: 25vw;
     }
 
     .BioParagraph {
