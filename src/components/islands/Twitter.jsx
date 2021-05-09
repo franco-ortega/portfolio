@@ -4,12 +4,12 @@ import styles from './Twitter.module.css';
 
 const Twitter = () => {
   return (
-    <main className={styles.Twitter}>
+    <section className={styles.Twitter}>
       <Island
         title={'Twitter'}
         url={'https://twitter.com/FrancoOrtegaDev'}
       />
-    </main>
+    </section>
   );
 };
 
