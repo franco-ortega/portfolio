@@ -65,6 +65,7 @@
 
     .ButtonContainer {
         height: 15%;
+        padding: 3vw;
         align-items: flex-start;
     }
 

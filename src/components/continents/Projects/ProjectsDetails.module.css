@@ -152,8 +152,9 @@
     }
 
     .Project {
-        margin: 1vw auto;
-        height: 40%;
+        margin: 2vw auto;
+        
+        height: fit-content;
         width: 100%;
     }
 
