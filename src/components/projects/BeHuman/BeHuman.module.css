@@ -61,6 +61,7 @@
 @media screen and (max-width: 500px) {
     .Summary {
         height: 60%;
+        padding: 1vw 5vw;
     }
 
     .ButtonContainer {
