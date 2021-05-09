@@ -1,11 +1,11 @@
 .ProjectsDetails {
     background: var(--continent);
     border-radius: 84vw 75vw 51vw 38vw;
-    height: 90vh;
-    width: 85vw;
+    height: 95vh;
+    width: 90vw;
     position: absolute;
-    top: 5%;
-    left: 7.5%;
+    top: 2.5%;
+    left: 5%;
     z-index: 1;
 }
 
@@ -72,7 +72,7 @@
 
     margin: 0.5vw auto;
 
-    height: 80%;
+    height: 85%;
     width: 45%;
     text-align: center;
 }
@@ -117,7 +117,7 @@
 
     .Project {
         margin: 1vw auto;
-        height: 45%;
+        height: 50%;
         width: 45%;
     }
 
@@ -153,8 +153,8 @@
 
     .Project {
         margin: 1vw auto;
-        height: fit-content;
-        width: 95%;
+        height: 40%;
+        width: 100%;
     }
 
     .Button {
