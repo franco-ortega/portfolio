@@ -39,6 +39,8 @@
     text-align: justify;
 
     overflow: auto;
+
+    padding: 1.75vw 1.5vw 0 1.5vw;
 }
 
 .Header {
