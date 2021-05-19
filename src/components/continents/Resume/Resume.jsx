@@ -4,19 +4,19 @@ import styles from './Resume.module.css';
 
 const Resume = () => {
   return (
-    <main className={styles.Resume}>
+    <section className={styles.Resume}>
       <a href={resume}
         rel="noreferrer"
         target="_blank">
-        <section className={styles.OuterCoastline}>
-          <section className={styles.InnerCoastline}>
-            <section className={styles.Continent}>
+        <div className={styles.OuterCoastline}>
+          <div className={styles.InnerCoastline}>
+            <div className={styles.Continent}>
               Resume
-            </section>
-          </section>
-        </section>
+            </div>
+          </div>
+        </div>
       </a>
-    </main>
+    </section>
   );
 };
 

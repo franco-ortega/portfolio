@@ -8,10 +8,10 @@ import styles from './ProjectsDetails.module.css';
 
 const ProjectsDetails = () => {
   return (
-    <main className={styles.ProjectsDetails}>
-      <section className={styles.OuterCoastline}>
-        <section className={styles.InnerCoastline}>
-          <section className={styles.Continent}>
+    <section className={styles.ProjectsDetails}>
+      <div className={styles.OuterCoastline}>
+        <div className={styles.InnerCoastline}>
+          <div className={styles.Continent}>
             <header className={styles.Title}>Team Projects</header>
             <p className={styles.Intro}>
                 These projects were completed remotely with 3-5 member teams over 5-10 day sprints.
@@ -33,10 +33,10 @@ const ProjectsDetails = () => {
             <Link to="/">
               <button className={styles.Button} title="Close" name="Close" aria-label="Close">X</button>
             </Link>
-          </section>
-        </section>
-      </section>
-    </main>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

@@ -6,17 +6,17 @@ import styles from './Continent.module.css';
 const Continent = ({ grid, link, shape, size, title }) => {
   console.log(shape);
   return (
-    <main className={styles.ContinentContainer} style={grid}>
+    <section className={styles.ContinentContainer} style={grid}>
       <Link to={link}>
-        <section className={`${styles.OuterCoastline}`} style={shape}>
-          <section className={styles.InnerCoastline}>
-            <section className={`${styles.Continent} ${styles.Mobile}`} style={size}>
+        <div className={`${styles.OuterCoastline}`} style={shape}>
+          <div className={styles.InnerCoastline}>
+            <div className={`${styles.Continent} ${styles.Mobile}`} style={size}>
               {title}
-            </section>
-          </section>
-        </section>
+            </div>
+          </div>
+        </div>
       </Link>
-    </main>
+    </section>
   );
 };
 

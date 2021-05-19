@@ -13,8 +13,8 @@ import Cartography from '../continents/Cartography/Cartography';
 
 const Ocean = () => {
   return (
-    <main className={styles.Ocean}>
-      <section className={styles.OceanGrid}>
+    <div className={styles.Ocean}>
+      <div className={styles.OceanGrid}>
 
         {/* Border Corners */}
         <BorderCorner
@@ -54,8 +54,8 @@ const Ocean = () => {
         <Resume />
         <Cartography />
 
-      </section>
-    </main>
+      </div>
+    </div>
   );
 };
 
