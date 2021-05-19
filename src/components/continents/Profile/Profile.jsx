@@ -4,17 +4,17 @@ import styles from './Profile.module.css';
 
 const Profile = () => {
   return (
-    <main className={styles.Profile}>
+    <section className={styles.Profile}>
       <Link to="/profile">
-        <section className={styles.OuterCoastline}>
-          <section className={styles.InnerCoastline}>
-            <section className={styles.Continent}>
+        <div className={styles.OuterCoastline}>
+          <div className={styles.InnerCoastline}>
+            <div className={styles.Continent}>
               Profile
-            </section>
-          </section>
-        </section>
+            </div>
+          </div>
+        </div>
       </Link>
-    </main>
+    </section>
   );
 };
 

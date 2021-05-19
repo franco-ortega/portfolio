@@ -4,17 +4,17 @@ import styles from './Cartography.module.css';
 
 const Cartography = () => {
   return (
-    <main className={styles.Cartography}>
+    <section className={styles.Cartography}>
       <Link to="/cartography">
-        <section className={styles.OuterCoastline}>
-          <section className={styles.InnerCoastline}>
-            <section className={styles.Continent}>
+        <div className={styles.OuterCoastline}>
+          <div className={styles.InnerCoastline}>
+            <div className={styles.Continent}>
               <p className={styles.Title}>Cartography</p>
-            </section>
-          </section>
-        </section>
+            </div>
+          </div>
+        </div>
       </Link>
-    </main>
+    </section>
   );
 };
 

@@ -4,17 +4,17 @@ import styles from './Projects.module.css';
 
 const Projects = () => {
   return (
-    <main className={styles.Projects}>
+    <section className={styles.Projects}>
       <Link to="/projects">
-        <section className={styles.OuterCoastline}>
-          <section className={styles.InnerCoastline}>
-            <section className={styles.Continent}>
+        <div className={styles.OuterCoastline}>
+          <div className={styles.InnerCoastline}>
+            <div className={styles.Continent}>
               Team Projects
-            </section>
-          </section>
-        </section>
+            </div>
+          </div>
+        </div>
       </Link>
-    </main>
+    </section>
   );
 };
 
