@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../../../assets/FrancoOrtega_Resume.pdf';
+import resume from '../../../assets/Franco_Ortega_Resume.pdf';
 import styles from './Resume.module.css';
 
 const Resume = () => {
