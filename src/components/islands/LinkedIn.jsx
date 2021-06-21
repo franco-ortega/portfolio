@@ -7,7 +7,7 @@ const LinkedIn = () => {
     <section className={styles.LinkedIn}>
       <Island
         title={'LinkedIn'}
-        url={'https://www.linkedin.com/in/franco-ortega/'}
+        url={'https://www.linkedin.com/in/francoortega/'}
       />
     </section>
   );
