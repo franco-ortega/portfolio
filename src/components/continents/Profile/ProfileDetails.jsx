@@ -15,7 +15,7 @@ const Profile = () => {
                 <a href="mailto:francopdx@gmail.com" rel="noreferrer" target="_blank" className={styles.ContactLink}>francopdx@gmail.com</a>
                 <a href="tel:503-998-7444" className={styles.ContactLink}>503-998-7444</a>
                 <section>
-                  <a href="https://github.com/franco-ortega" rel="noreferrer" target="_blank" className={styles.ContactLink}>GitHub</a> &lowast; <a href="https://www.linkedin.com/in/franco-ortega/" rel="noreferrer" target="_blank" className={styles.ContactLink}>LinkedIn</a>
+                  <a href="https://github.com/franco-ortega" rel="noreferrer" target="_blank" className={styles.ContactLink}>GitHub</a> &lowast; <a href="https://www.linkedin.com/in/francoortega/" rel="noreferrer" target="_blank" className={styles.ContactLink}>LinkedIn</a>
                 </section>
               </p>
             </section>
