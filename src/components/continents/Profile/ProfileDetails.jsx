@@ -6,24 +6,17 @@ import styles from './ProfileDetails.module.css';
 const Profile = () => {
   return (
     <main className={styles.ProfileDetails}>
-      {/* <section className={styles.OuterCoastline}> */}
-      {/* <section className={styles.InnerCoastline}> */}
-      {/* <section className={styles.Continent}> */}
       <Link to="/">
         <button className={styles.Button}>X</button>
       </Link>
-      <section className={styles.Header}>
-        <header className={styles.Name}>Franco Ortega</header>
-        <p className={styles.Contact}>
-          <a href="mailto:francopdx@gmail.com" rel="noreferrer" target="_blank" className={styles.ContactLink}>francopdx@gmail.com</a>
-          <a href="tel:503-998-7444" className={styles.ContactLink}>503-998-7444</a>
-          <section>
-            <a href="https://github.com/franco-ortega" rel="noreferrer" target="_blank" className={styles.ContactLink}>GitHub</a> &lowast; <a href="https://www.linkedin.com/in/francoortega/" rel="noreferrer" target="_blank" className={styles.ContactLink}>LinkedIn</a>
-          </section>
-        </p>
-      </section>
-      <section className={styles.Bio}>
+      <header className={styles.Header}>
         <img src={photo} alt="profile photo" className={styles.Photo} />
+        <p className={styles.Name}>Franco Ortega</p>
+        <p className={styles.Contact}>
+          <a href="mailto:francopdx@gmail.com" rel="noreferrer" target="_blank" className={styles.ContactLink}>francopdx@gmail.com</a> &lowast; <a href="tel:503-998-7444" className={styles.ContactLink}>503-998-7444</a> &lowast; <a href="https://github.com/franco-ortega" rel="noreferrer" target="_blank" className={styles.ContactLink}>GitHub</a> &lowast; <a href="https://www.linkedin.com/in/francoortega/" rel="noreferrer" target="_blank" className={styles.ContactLink}>LinkedIn</a>
+        </p>
+      </header>
+      <section className={styles.Bio}>
         <p className={styles.BioParagraph}>
                 Compassion, communication, creativity, collaboration, and curiosity are qualities that I value dearly and strive to continuously improve. Optimism guides my efforts while realistic practicality ensures that my goals are brought to fruition. Doing work that improves the lives of others brings me great joy.
         </p>
@@ -37,10 +30,6 @@ const Profile = () => {
                 Yes to social justice, climate justice, and economic justice. 
         </p>
       </section>
-      
-      {/* </section> */}
-      {/* </section> */}
-      {/* </section> */}
     </main>
   );
 };

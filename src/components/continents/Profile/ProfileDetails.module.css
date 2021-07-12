@@ -1,14 +1,15 @@
 .ProfileDetails {
-    background: orange;
-    border: black solid 1vw;
+    background: var(--continent);
+    border: black solid .5vw;
     border-radius: 50px;
-    /* border-radius: 120vw 70vw 95vw 90vw; */
-    height: 95vh;
+    height: 96vh;
     width: 60vw;
     position: absolute;
-    top: 2.5%;
+    top: 2%;
     left: 20vw;
-    z-index: auto;
+    /* z-index: 1; */
+
+    overflow: scroll;
 }
 
 /* .OuterCoastline {
@@ -47,58 +48,6 @@
     border: dashed 1px white;
 } */
 
-.Header {
-    display: flex;
-    justify-content: space-evenly;
-    width: 75%;
-
-    border: dashed 1px blue;
-}
-
-.Name {
-    font-size: var(--continent-details-title);
-
-    border: dashed 1px darkblue;
-}
-
-.Contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.25vw;
-
-    border: dashed 1px green;
-}
-
-.ContactLink {
-    margin-bottom: 0.5vw;
-
-    border: dashed 1px black;
-}
-
-.Bio {
-    margin: 2vw 4vw 1vw 6vw;
-    height: 75%;
-    font-size: var(--continent-details-body);
-    /* overflow: auto; */
-
-    border: dashed 1px white;
-}
-
-.BioParagraph {
-    margin-bottom: 1vw;
-    border: dashed 1px pink;
-}
-
-.Photo {
-    float: right;
-    border-radius: 50%;
-    margin: 0vw 0vw 1vw 1vw;
-    height: 15vw;
-    border: dashed 1px red;
-}
-
 .Button {
     background: black;
     border-radius: 50%;
@@ -108,8 +57,56 @@
     font-size: 1.25vw;
 
     position: absolute;
-    left: 80vw;
+    left: 54.5vw;
 }
+
+.Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: dashed 1px blue; */
+}
+
+.Photo {
+    border-radius: 50%;
+    width: 12vw;
+    margin-top: 1vw;
+    /* border: dashed 1px red; */
+}
+
+.Name {
+    font-size: var(--continent-details-title);
+    /* border: dashed 1px darkblue; */
+}
+
+.Contact {
+    margin-top: .5vw;
+    font-size: 1.25vw;
+    /* border: dashed 1px green; */
+}
+
+.ContactLink {
+    /* color: darkblue; */
+    margin: .5vw;
+    /* border: dashed 1px black; */
+}
+
+.Bio {
+    height: fit-content;
+    margin: .75vw 2vw;
+    font-size: var(--continent-details-body);
+    text-align: justify;
+    /* overflow: auto; */
+
+    /* border: dashed 1px white; */
+}
+
+.BioParagraph {
+    margin-bottom: 1vw;
+    /* border: dashed 1px pink; */
+}
+
+
 
 @media screen and (max-width: 900px) {
     .ProfileDetails {

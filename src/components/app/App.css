@@ -31,7 +31,7 @@
 
   --inner-coastline-details-padding: 1.5vw;
 
-  --continent-details-title: 4.75vw;
+  --continent-details-title: 3vw;
   --continent-details-intro: 1.4vw;
   --continent-details-body: 1.25vw;
 
@@ -61,7 +61,7 @@
 }
 
 a {
-  color: rgba(15, 24, 6, 0.7);
+  color: rgba(15, 24, 6, 0.8);
   text-decoration: none;
 }
 
