@@ -106,11 +106,14 @@
     padding: 0.25vw 0.5vw;
     color: white;
     font-size: 1.25vw;
+
+    position: absolute;
+    left: 80vw;
 }
 
 @media screen and (max-width: 900px) {
     .ProfileDetails {
-        border-radius: 35vw 20vw 20vw 30vw;
+        /* border-radius: 35vw 20vw 20vw 30vw; */
         top: 10%;
         left: 5%;
         height: 85vh;
@@ -142,7 +145,7 @@
 
 @media screen and (max-width: 500px) {
     .ProfileDetails {
-        border-radius: 35vw 20vw 20vw 30vw;
+        /* border-radius: 35vw 20vw 20vw 30vw; */
         top: 2.5%;
         left: 2.5%;
         height: 95vh;
