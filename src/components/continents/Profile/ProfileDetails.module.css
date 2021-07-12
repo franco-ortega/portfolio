@@ -1,6 +1,8 @@
 .ProfileDetails {
-    background: var(--continent);
-    border-radius: 120vw 70vw 95vw 90vw;
+    background: orange;
+    border: black solid 1vw;
+    border-radius: 50px;
+    /* border-radius: 120vw 70vw 95vw 90vw; */
     height: 95vh;
     width: 90vw;
     position: absolute;
@@ -9,24 +11,24 @@
     z-index: 1;
 }
 
-.OuterCoastline {
+/* .OuterCoastline {
     background: var(--outer-coastline);
     border-radius: inherit;
     height: 100%;
     width: 100%;
     padding: var(--outer-coastline-details-padding);
-}
+} */
 
-.InnerCoastline {
+/* .InnerCoastline {
     background: var(--inner-coastline);
     border: 0.35vw dashed var(--continent-border);
     border-radius: inherit;
     height: inherit;
     width: inherit;
     padding: var(--inner-coastline-details-padding);
-}
+} */
 
-.Continent {
+/* .Continent {
     background: var(--continent);
     border-radius: inherit;
     height: inherit;
@@ -41,16 +43,22 @@
     overflow: auto;
 
     padding: 1.75vw 1.5vw 0 1.5vw;
-}
+
+    border: dashed 1px white;
+} */
 
 .Header {
     display: flex;
     justify-content: space-evenly;
     width: 75%;
+
+    border: dashed 1px blue;
 }
 
 .Name {
     font-size: var(--continent-details-title);
+
+    border: dashed 1px darkblue;
 }
 
 .Contact {
@@ -59,10 +67,14 @@
     align-items: center;
     justify-content: center;
     font-size: 1.25vw;
+
+    border: dashed 1px green;
 }
 
 .ContactLink {
     margin-bottom: 0.5vw;
+
+    border: dashed 1px black;
 }
 
 .Bio {
@@ -70,10 +82,13 @@
     height: 75%;
     font-size: var(--continent-details-body);
     overflow: auto;
+
+    border: dashed 1px white;
 }
 
 .BioParagraph {
     margin-bottom: 1vw;
+    border: dashed 1px pink;
 }
 
 .Photo {
@@ -81,6 +96,7 @@
     border-radius: 50%;
     margin: 0vw 0vw 1vw 1vw;
     height: 15vw;
+    border: dashed 1px red;
 }
 
 .Button {
