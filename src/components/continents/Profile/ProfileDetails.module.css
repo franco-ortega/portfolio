@@ -114,54 +114,33 @@
 }
 
 @media screen and (max-width: 500px) {
-    .ProfileDetails {
-        /* border-radius: 35vw 20vw 20vw 30vw; */
-        top: 2.5%;
-        left: 2.5%;
-        height: 95vh;
-        width: 95vw;
-    }
-
-    
-    .Header {
-        flex-direction: column;
-        margin: 0vw;
-        width: 85%;
-    }
-
-    .Name {
-        width: 75%;
-        margin-left: 10vw;
-        margin-bottom: 2vw;
-        padding-top: 5vw;
-        font-size: 8vw;
-        font-weight: 600;
-    }
-
-    .Contact {
-        margin: 0.5vw;
-        font-size: 3.5vw;
-    }
-
-    .Bio {
-        margin: 2vw 2vw 2vw 4vw;
-        padding: 1vw 5vw;
-        height: 65%;
-        font-size: 3.75vw;
+    .Button {
+        padding: 0.75vw 1.5vw;
+        font-size: 4vw;
+        top: 1.5vw;
+        left: 89vw;
     }
 
     .Photo {
-        border-radius: 50%;
-        margin: 0vw 0vw 3vw 3vw;
-        height: 25vw;
-    }
-
-    .BioParagraph {
+        width: 30vw;
+        margin-top: 4vw;
         margin-bottom: 2vw;
     }
+    
+    .Contact {
+        margin-top: 1.5vw;
+        font-size: 3.4vw;
+    }
 
-    .Button {
-        padding: 0.5vw 1.25vw;
-        font-size: 3.5vw;
+    .Bio {
+        /* margin: 2vw 2vw 2vw 4vw; */
+        /* padding: 1vw 5vw; */
+        /* height: 65%; */
+        /* font-size: 3.75vw; */
+    }
+
+    
+    .BioParagraph {
+        margin-bottom: 2vw;
     }
 }

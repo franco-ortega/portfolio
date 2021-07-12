@@ -134,5 +134,9 @@ button {
     --project-summary-title: 4.5vw;
     --project-summary-text: 4.5vw;
     --project-details-button: 3.25vw;
+
+    --continent-details-title: 8vw;
+    --continent-details-intro: 1.4vw;
+    --continent-details-body: 3.75vw;
   }
 }
