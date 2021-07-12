@@ -31,7 +31,7 @@
 
   --inner-coastline-details-padding: 1.5vw;
 
-  --continent-details-title: 3vw;
+  --continent-details-title: 3.25vw;
   --continent-details-intro: 1.4vw;
   --continent-details-body: 1.25vw;
 
@@ -71,6 +71,14 @@ a:hover {
 
 button {
   outline: none;
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --continent-details-title: 3.5vw;
+    --continent-details-intro: 1.4vw;
+    --continent-details-body: 1.5vw;
+  }
 }
 
 @media screen and (max-width: 900px) {
