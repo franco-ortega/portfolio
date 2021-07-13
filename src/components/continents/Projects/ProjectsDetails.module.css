@@ -66,7 +66,7 @@
     height: 60%;
     width: 48%;
     display: flex;
-    text-align: center;
+    /* text-align: center; */
 }
 
 @media screen and (max-width: 900px) {

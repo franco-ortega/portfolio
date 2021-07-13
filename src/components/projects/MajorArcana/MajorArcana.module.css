@@ -12,6 +12,7 @@
     width: 100%;
     
     font-size: var(--project-summary-title);
+    text-align: center;
     overflow: auto;
 }
 
