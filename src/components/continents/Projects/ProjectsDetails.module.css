@@ -1,90 +1,73 @@
 .ProjectsDetails {
     background: var(--continent);
-    border-radius: 84vw 75vw 51vw 38vw;
-    height: 95vh;
-    width: 90vw;
+    border: black solid thick;
+    border-radius: 2vw;
+    height: 96vh;
+    width: 60vw;
     position: absolute;
-    top: 2.5%;
-    left: 5%;
+    top: 2%;
+    left: 20vw;
     z-index: 1;
-}
-
-.OuterCoastline {
-    background: var(--outer-coastline);
-    border-radius: inherit;
-    height: 100%;
-    width: 100%;
-    padding: var(--outer-coastline-details-padding);
-}
-
-.InnerCoastline {
-    background: var(--inner-coastline);
-    border: 0.3vw dashed var(--continent-border);
-    border-radius: inherit;
-    height: inherit;
-    width: inherit;
-    padding: var(--inner-coastline-details-padding);
-}
-
-.Continent {
-    background: var(--continent);
-    border-radius: inherit;
-    height: inherit;
-    width: inherit;
+    overflow: auto;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    text-align: justify;
-
-    overflow: auto;
-}
-
-.Title {
-    font-size: var(--continent-details-title);
-}
-
-.Intro {
-    font-size: var(--continent-details-intro);
-    margin: 1vw;
-}
-
-.ProjectsDisplayCase {
-    height: 65%;
-    width: 75%;
-    
-    border-radius: 1vw;
-    padding: 0.75vw;
-    
-    display: flex;
-    flex-wrap: wrap;
-
-    overflow: auto;
-}
-
-.Project {
-    border-radius: 1vw;
-
-    display: flex;
-
-    margin: 0.5vw auto;
-
-    height: 85%;
-    width: 45%;
-    text-align: center;
 }
 
 .Button {
     background: black;
     border-radius: 50%;
-    margin: 0.5vw;
     padding: 0.25vw 0.5vw;
     color: white;
     font-size: 1.25vw;
+
+    position: absolute;
+    top: 1vw;
+    left: 56vw;
+}
+
+.Header {
+    margin-top: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: dashed black 1px; */
 }
 
 
+.Title {
+    font-size: var(--continent-details-title);
+    /* border: dashed black 1px; */
+}
+
+.Intro {
+    margin-top: .5vw;
+    font-size: 1.5vw;
+    /* border: dashed black 1px; */
+}
+
+.ProjectsDisplayCase {
+    margin: .75vw;
+    height: 80%;
+    width: 90%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    
+    overflow: auto;
+    /* border: dashed black 1px; */
+}
+
+.Project {
+    border-radius: 1vw;
+    margin: .5vw;    
+    height: 60%;
+    width: 48%;
+    display: flex;
+    text-align: center;
+}
 
 @media screen and (max-width: 900px) {
     .ProjectsDetails {

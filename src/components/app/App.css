@@ -32,7 +32,7 @@
   --inner-coastline-details-padding: 1.5vw;
 
   --continent-details-title: 3.25vw;
-  --continent-details-intro: 1.4vw;
+  
   --continent-details-body: 1.25vw;
 
   --continent-box-shadow: 0vw 0vw 2vw 1.5vw;
@@ -76,7 +76,7 @@ button {
 @media screen and (max-width: 1200px) {
   :root {
     --continent-details-title: 3.5vw;
-    --continent-details-intro: 1.4vw;
+    
     --continent-details-body: 1.5vw;
   }
 }
@@ -106,7 +106,7 @@ button {
     --project-details-button: 1.75vw;
 
     --continent-details-title: 6vw;
-    --continent-details-intro: 1.4vw;
+    
     --continent-details-body: 2.75vw;
   }
 }
@@ -136,7 +136,7 @@ button {
     --project-details-button: 3.25vw;
 
     --continent-details-title: 8vw;
-    --continent-details-intro: 1.4vw;
+    
     --continent-details-body: 3.75vw;
   }
 }
