@@ -36,12 +36,12 @@
 }
 
 .Name {
-    font-size: var(--continent-details-title);
+    font-size: var(--popup-title);
 }
 
 .Contact {
     margin-top: .5vw;
-    font-size: 1.5vw;
+    font-size: var(--popup-header-text);
 }
 
 .ContactLink {
@@ -51,7 +51,7 @@
 .Bio {
     height: fit-content;
     margin: .75vw 2vw;
-    font-size: var(--continent-details-body);
+    font-size: var(--popup-text);
     text-align: justify;
 }
 
@@ -63,10 +63,6 @@
     .ProfileDetails {
         top: 1.5%;
         height: 97vh;
-    }
-
-    .Contact {
-        font-size: 1.75vw;
     }
 
     .Bio {
@@ -97,7 +93,6 @@
 
     .Contact {
         margin-top: 1vw;
-        font-size: 3vw;
     }
 
     .Bio {
@@ -121,7 +116,6 @@
     
     .Contact {
         margin-top: 1.5vw;
-        font-size: 3.4vw;
     }
     
     .BioParagraph {
