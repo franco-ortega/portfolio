@@ -73,6 +73,7 @@
         margin: .75vw 2vw;
     }
 }
+
 @media screen and (max-width: 900px) {
     .ProfileDetails {
         border-radius: 0;

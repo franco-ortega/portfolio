@@ -50,7 +50,7 @@
 .ProjectsDisplayCase {
     margin: .75vw;
     height: 80%;
-    width: 90%;
+    width: 95%;
     
     display: flex;
     flex-wrap: wrap;
@@ -61,13 +61,38 @@
 }
 
 .Project {
-    border-radius: 1vw;
     margin: .5vw;    
     height: 60%;
-    width: 48%;
+    width: 48.2%;
     display: flex;
-    /* text-align: center; */
+    /* border: dashed black 1px; */
 }
+
+@media screen and (max-width: 1200px) {
+    .ProjectsDetails {
+        top: 1.5%;
+        height: 97vh;
+    }
+
+    .Intro {
+        font-size: 1.75vw;
+    }
+
+    .ProjectsDisplayCase {
+        margin: 1vw;
+        height: 82%;
+        width: 97%;
+        /* justify-content: center; */
+    }
+
+    .Project {
+        height: 40%;
+        width: 48.25%;
+    }
+    
+    
+}
+
 
 @media screen and (max-width: 900px) {
     .ProjectsDetails {
