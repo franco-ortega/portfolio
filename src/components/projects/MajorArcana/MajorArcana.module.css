@@ -43,6 +43,10 @@
 }
 
 @media screen and (max-width: 900px) {
+    .MajorArcana {
+        border-radius: 1.5vw;
+    }
+
     .Title {
         height: 30%;
     }
@@ -64,14 +68,24 @@
 }
 
 @media screen and (max-width: 500px) {
+    .MajorArcana {
+        border-radius: 2vw;
+    }
+
+    .Title {
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .Summary {
-        height: 60%;
+        height: 55%;
         padding: 1vw 5vw;
     }
 
     .ButtonContainer {
         height: 15%;
-        padding: 3vw;
         align-items: flex-start;
     }
 

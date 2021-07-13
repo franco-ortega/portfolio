@@ -113,8 +113,8 @@ button {
     --popup-header-text: 3vw;
     --popup-text: 2.75vw;
 
-    --project-summary-title: 2.5vw;
-    --project-summary-text: 2vw;
+    --project-summary-title: 3.25vw;
+    --project-summary-text: 3vw;
     --project-details-button: 1.75vw;
   }
 }
@@ -143,8 +143,8 @@ button {
     --popup-header-text: 3.4vw;
     --popup-text: 3.75vw;
   
-    --project-summary-title: 4.5vw;
-    --project-summary-text: 4.5vw;
-    --project-details-button: 3.25vw;
+    --project-summary-title: 5.25vw;
+    --project-summary-text: 5vw;
+    --project-details-button: 4vw;
   }
 }

@@ -44,7 +44,7 @@
 
 @media screen and (max-width: 900px) and (orientation: portrait) {
     .WeatherBeats {
-        background-position: 50% 10%;
+        background-position: 50% 50%;
     }
 
     .Title {
@@ -68,18 +68,25 @@
 
 @media screen and (max-width: 500px) {
     .WeatherBeats {
-        background-position: 50% 53%;
+        background-position: 50% 65%;
+        border-radius: 2vw;
+    }
+
+    .Title {
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .Summary {
-        height: 60%;
+        height: 55%;
         padding: 1vw 5vw;
     }
 
     .ButtonContainer {
         height: 15%;
-        padding: 3vw;
-        align-items: flex-start;
+        /* align-items: flex-start; */
     }
 
     .DetailsButton {
