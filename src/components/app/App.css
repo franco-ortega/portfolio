@@ -84,7 +84,6 @@ button {
   :root {
     --popup-title: 3.5vw;
     --popup-header-text: 1.75vw;
-    
     --popup-text: 1.5vw;
   }
 }
@@ -110,16 +109,13 @@ button {
     --resume-continent-font: 5vw;
 
 
-
     --popup-title: 6vw;
     --popup-header-text: 3vw;
-    
+    --popup-text: 2.75vw;
 
     --project-summary-title: 2.5vw;
     --project-summary-text: 2vw;
     --project-details-button: 1.75vw;
-
-    --popup-text: 2.75vw;
   }
 }
 
@@ -143,12 +139,12 @@ button {
     --resume-continent-width: 30vw;
     --resume-continent-font: 6vw;
 
-    --project-summary-title: 4.5vw;
-    --project-summary-text: 4.5vw;
-    --project-details-button: 3.25vw;
-
     --popup-title: 8vw;
     --popup-header-text: 3.4vw;
     --popup-text: 3.75vw;
+  
+    --project-summary-title: 4.5vw;
+    --project-summary-text: 4.5vw;
+    --project-details-button: 3.25vw;
   }
 }
