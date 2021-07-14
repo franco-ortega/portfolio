@@ -12,33 +12,44 @@
     width: 100%;
     
     font-size: var(--project-summary-title);
-    text-align: center;
     overflow: auto;
 }
 
 .Title {
-    height: 35%;
-    padding: 1.5vw 0;
+    height: 25%;
+    /* padding-top: .25vw; */
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    justify-content: center;
+    /* border: dashed white 1px; */
 }
 
 .Summary {
-    height: 45%;
+    /* height: 55%;
     padding: 0vw 2vw;
     display: flex;
     align-items: center;
     font-size: var(--project-summary-text);
+    text-align: justify; */
+    height: 55%;
+    padding: .25vw 1.25vw;
+    display: flex;
+    /* align-items: center; */
+    font-size: var(--project-summary-text);
     text-align: justify;
+    /* border: dashed white 1px; */
 }
 
-.ButtonContainer {
+/* .ButtonContainer {
     height: 20%;
-}
+    border: dashed white 1px;
+} */
 
 .DetailsButton {
     background: lightcyan;
     border-radius: 1vw;
     padding: 0.25vw 0.5vw;
-    width: fit-content;
     font-size: var(--project-details-button);
 }
 

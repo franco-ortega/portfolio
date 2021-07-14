@@ -32,7 +32,7 @@ const ProjectsDetails = () => {
           <ChooseGif />
         </section>
         <section className={styles.Project}>
-          <MajorArcana />
+          <ChooseGif />
         </section>
         <section className={styles.Project}>
           <MajorArcana />

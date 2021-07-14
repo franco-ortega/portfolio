@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .Button {
@@ -35,7 +36,6 @@
     /* border: dashed black 1px; */
 }
 
-
 .Title {
     font-size: var(--popup-title);
     /* font-weight: 600; */
@@ -51,7 +51,7 @@
 .ProjectsDisplayCase {
     margin: .75vw;
     height: 80%;
-    width: 95%;
+    width: 96%;
     
     display: flex;
     flex-wrap: wrap;
@@ -62,10 +62,10 @@
 }
 
 .Project {
-    margin: .5vw;    
-    height: 60%;
-    width: 48.2%;
-    display: flex;
+    margin: .35vw;
+    height: 50%;
+    width: 32.1%;
+    /* display: flex; */
     /* border: dashed black 1px; */
 }
 

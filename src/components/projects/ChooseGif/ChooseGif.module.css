@@ -16,17 +16,30 @@
 }
 
 .Title {
-    height: 30%;
-    padding: 1.5vw 0;
+    height: 25%;
+    /* padding: 1.5vw 0; */
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    justify-content: center;
+    /* border: dashed white 1px; */
 }
 
 .Summary {
-    height: 50%;
-    padding: 1vw 2vw;
+    /* height: 55%;
+    padding: 0vw 2vw;
     display: flex;
     align-items: flex-start;
     font-size: var(--project-summary-text);
+    text-align: justify; */
+
+    height: 55%;
+    padding: .5vw 1.25vw;
+    /* display: flex; */
+    /* align-items: center; */
+    font-size: var(--project-summary-text);
     text-align: justify;
+    /* border: dashed white 1px; */
 }
 
 .ButtonContainer {
