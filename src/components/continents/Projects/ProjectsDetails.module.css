@@ -38,7 +38,6 @@
 
 .Title {
     font-size: var(--popup-title);
-    /* font-weight: 600; */
     /* border: dashed black 1px; */
 }
 
@@ -55,18 +54,14 @@
     
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
     
     overflow: auto;
-    /* border: dashed black 1px; */
 }
 
 .Project {
     margin: .35vw;
     height: 50%;
     width: 32.1%;
-    /* display: flex; */
-    /* border: dashed black 1px; */
 }
 
 @media screen and (max-width: 1200px) {
@@ -78,12 +73,14 @@
     .ProjectsDisplayCase {
         margin: 1vw;
         height: 82%;
-        width: 97%;
+        width: 95%;
+        /* justify-content: center; */
     }
 
     .Project {
+        margin: .5vw;
         height: 47%;
-        width: 48.25%;
+        width: 48.22%;
     }
 }
 
@@ -110,7 +107,6 @@
         margin: 2vw;
         height: 90%;
         width: 95%;
-        /* justify-content: center; */
     }
 
     .Project {
@@ -128,7 +124,6 @@
         left: 89vw;
     }
 
-    
     .Intro {
         margin: 1.5vw;
     }

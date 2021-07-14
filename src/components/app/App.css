@@ -23,19 +23,19 @@
   
   --outer-coastline: rgb(87, 171, 223);
   --outer-coastline-padding: 0.75vw;
-  /* --outer-coastline-details-padding: 1.25vw; */
   
   --inner-coastline: rgb(111, 186, 233);
   --inner-coastline-border-width: 0.15vw;
   --inner-coastline-padding: 1vw;
-
-  /* --inner-coastline-details-padding: 1.5vw; */
-
+  
+  
   --continent-box-shadow: 0vw 0vw 2vw 1.5vw;
   --continent-padding: 1vw;
-
-
-
+  
+  
+  
+  /* --outer-coastline-details-padding: 1.25vw; */
+  /* --inner-coastline-details-padding: 1.5vw; */
 
 
 
@@ -64,7 +64,7 @@
 
   --project-summary-title: 1.25vw;
   --project-summary-text: 1.25vw;
-  --project-details-button: 1.25vw;
+  --project-button-text: 1.15vw;
 }
 
 a {
@@ -76,15 +76,15 @@ a:hover {
   color: var(--darkestblue);
 }
 
-button {
-  /* outline: none; */
-}
-
 @media screen and (max-width: 1200px) {
   :root {
     --popup-title: 3.5vw;
     --popup-header-text: 1.75vw;
     --popup-text: 1.5vw;
+
+    --project-summary-title: 1.5vw;
+    --project-summary-text: 1.5vw;
+    --project-button-text: 1.25vw;
   }
 }
 
@@ -115,7 +115,7 @@ button {
 
     --project-summary-title: 3.25vw;
     --project-summary-text: 3vw;
-    --project-details-button: 1.75vw;
+    --project-button-text: 1.75vw;
   }
 }
 
@@ -145,6 +145,6 @@ button {
   
     --project-summary-title: 5.25vw;
     --project-summary-text: 5vw;
-    --project-details-button: 4vw;
+    --project-button-text: 4vw;
   }
 }

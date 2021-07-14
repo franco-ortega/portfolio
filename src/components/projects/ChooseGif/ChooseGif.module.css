@@ -42,16 +42,21 @@
     /* border: dashed white 1px; */
 }
 
-.ButtonContainer {
-    height: 20%;
-}
-
 .DetailsButton {
     background: lightcyan;
     border-radius: 1vw;
     padding: 0.25vw 0.5vw;
-    width: fit-content;
-    font-size: var(--project-details-button);
+    font-size: var(--project-button-text);
+}
+
+@media screen and (max-width: 1200px) {
+    .ChooseGif {
+        border-radius: 1.25vw;
+    }
+
+    .Summary {
+        padding: .5vw 1.5vw;
+    }    
 }
 
 @media screen and (max-width: 900px) and (orientation: portrait) {

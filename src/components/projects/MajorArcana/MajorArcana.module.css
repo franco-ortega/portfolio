@@ -17,40 +17,33 @@
 
 .Title {
     height: 25%;
-    /* padding-top: .25vw; */
     display: flex;
     flex-direction: column;
-    /* align-content: center; */
     justify-content: center;
-    /* border: dashed white 1px; */
 }
 
 .Summary {
-    /* height: 55%;
-    padding: 0vw 2vw;
-    display: flex;
-    align-items: center;
-    font-size: var(--project-summary-text);
-    text-align: justify; */
     height: 55%;
     padding: .25vw 1.25vw;
-    display: flex;
-    /* align-items: center; */
     font-size: var(--project-summary-text);
     text-align: justify;
-    /* border: dashed white 1px; */
 }
-
-/* .ButtonContainer {
-    height: 20%;
-    border: dashed white 1px;
-} */
 
 .DetailsButton {
     background: lightcyan;
     border-radius: 1vw;
     padding: 0.25vw 0.5vw;
-    font-size: var(--project-details-button);
+    font-size: var(--project-button-text);
+}
+
+@media screen and (max-width: 1200px) {
+    .MajorArcana {
+        border-radius: 1.25vw;
+    }
+
+    .Summary {
+        padding: .5vw 1.5vw;
+    }    
 }
 
 @media screen and (max-width: 900px) {
