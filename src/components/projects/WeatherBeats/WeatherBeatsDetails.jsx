@@ -1,17 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router';
 import ProjectsDetails from '../../continents/Projects/ProjectsDetails';
 import styles from './WeatherBeatsDetails.module.css';
 
 const WeatherBeatsDetails = () => {
+  let history = useHistory();
+
+  const onProjectsClick = () => {
+    history.push('/projects');
+  };
+
   return (
     <>
       <ProjectsDetails />
       <main className={styles.WeatherBeatsDetails}>
         <section className={styles.ButtonContainer}>
-          <Link to="/projects">
-            <button className={styles.CloseButton} aria-label="Close">X</button>
-          </Link>
+          <button
+            onClick={onProjectsClick}
+            className={styles.CloseButton} 
+            aria-label="Close"
+          >X</button>
         </section>
         <h1>WeatherBeats</h1>
         <section className={styles.ProjectTech}>
