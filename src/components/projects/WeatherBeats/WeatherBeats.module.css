@@ -45,10 +45,6 @@
         border-radius: 1.25vw;
     }
 
-    .Title, .Summary {
-        /* border: black dashed 1px; */
-    }
-
     .Summary {
         padding: .5vw 1.5vw;
     }    
@@ -57,6 +53,7 @@
 @media screen and (max-width: 900px) {
     .WeatherBeats {
         background-position: 50% 50%;
+        border-radius: 1.5vw;
     }
 
     .Title {
@@ -76,7 +73,7 @@
 @media screen and (max-width: 500px) {
     .WeatherBeats {
         background-position: 50% 65%;
-        border-radius: 2vw;
+        border-radius: 3vw;
     }
 
     .Title {
@@ -93,6 +90,6 @@
 
     .DetailsButton {
         border-radius: 3vw;
-        padding: 0.5vw 1vw;
+        padding: 0.5vw 1.5vw;
     }
 }

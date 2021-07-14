@@ -95,7 +95,7 @@
 
     .Button {
         padding: 0.5vw 1vw;
-        font-size: 3vw;
+        font-size: 2.5vw;
         left: 93vw;
     }
 
@@ -105,12 +105,13 @@
 
     .ProjectsDisplayCase {
         margin: 2vw;
-        height: 90%;
+        height: 87%;
         width: 95%;
+        /* justify-content: center; */
     }
 
     .Project {
-        height: 37%;
+        height: 35%;
         width: 48.25%;
         margin: .82vw;
     }

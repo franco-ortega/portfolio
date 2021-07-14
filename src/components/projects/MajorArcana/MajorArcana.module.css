@@ -58,12 +58,6 @@
     .Summary {
         height: 50%;
     }
-
-    .ButtonContainer {
-        display: flex;
-        align-items: center;
-        padding-bottom: 1vw;
-    }
     
     .DetailsButton {
         border-radius: 1.5vw;
@@ -73,7 +67,7 @@
 
 @media screen and (max-width: 500px) {
     .MajorArcana {
-        border-radius: 2vw;
+        border-radius: 3vw;
     }
 
     .Title {
@@ -88,13 +82,8 @@
         padding: 1vw 5vw;
     }
 
-    .ButtonContainer {
-        height: 15%;
-        align-items: flex-start;
-    }
-
     .DetailsButton {
         border-radius: 3vw;
-        padding: 0.5vw 1vw;
+        padding: 0.5vw 1.5vw;
     }
 }
