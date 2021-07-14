@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from './MajorArcana.module.css';
-
 import { useHistory } from 'react-router';
+import styles from './MajorArcana.module.css';
 
 const MajorArcana = () => {
   let history = useHistory();
