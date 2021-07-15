@@ -9,7 +9,7 @@
 .OuterCoastline {
     background: var(--outer-coastline);
     border-radius: 60% 40% 60% 35%;
-    box-shadow: var(--continent-box-shadow) var(--coastline-shadow);
+    box-shadow: var(--coastline-box-shadow) var(--coastline-shadow);
     padding: .6vw;
     width: fit-content;
 }
