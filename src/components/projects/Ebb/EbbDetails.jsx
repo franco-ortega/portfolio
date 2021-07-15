@@ -1,7 +1,6 @@
 import React from 'react';
 import ClosePopup from '../../buttons/ClosePopup';
 import ProjectsDetails from '../../continents/Projects/ProjectsDetails';
-// import EbbIcon from '../../../assets/ebbLogoLarge.png';
 import EbbIcon from '../../../assets/ebbLogo.svg';
 import styles from './EbbDetails.module.css';
 
