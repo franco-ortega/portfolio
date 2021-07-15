@@ -9,7 +9,11 @@ const MajorArcanaDetails = () => {
     <>
       <ProjectsDetails />
       <main className={styles.MajorArcanaDetails}>
-        <ClosePopup path={'projects'} />
+        <ClosePopup
+          path={'projects'}
+          background={'#e4a77b'}
+          color={'black'}
+        />
         <h1 className={styles.ProjectTitle}>Major Arcana Divinator</h1>
         <h2 className={styles.ProjectTech}>HTML | CSS | JavaScript</h2>
         <section className={styles.ProjectInfo}>

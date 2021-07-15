@@ -9,7 +9,11 @@ const ChooseGifDetails = () => {
     <>
       <ProjectsDetails />
       <main className={styles.ChooseGifDetails}>
-        <ClosePopup path={'projects'} />
+        <ClosePopup
+          path={'projects'}
+          background={'white'}
+          color={'black'}
+        />
         <h1 className={styles.ProjectTitle}>Choose GIF</h1>
         <section className={styles.ProjectTech}>
             React | CSS | Node | Express | Jest | Giphy API | Heroku | Netlify

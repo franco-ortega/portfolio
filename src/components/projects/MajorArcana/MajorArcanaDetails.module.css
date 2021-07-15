@@ -70,12 +70,6 @@
     color: lightgray;
 }
 
-
-/* .CloseButton {
-    background: #e4a77b;
-    border: black solid 0.15vw;
-} */
-
 @media screen and (max-width: 1200px) {
     .MajorArcanaDetails {
         height: 97vh;

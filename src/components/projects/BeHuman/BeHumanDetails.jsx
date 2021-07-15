@@ -9,7 +9,11 @@ const BeHumanDetails = () => {
     <>
       <ProjectsDetails />
       <main className={styles.BeHumanDetails}>
-        <ClosePopup path={'projects'} />
+        <ClosePopup
+          path={'projects'}
+          background={'white'}
+          color={'black'}
+        />
         <h1 className={styles.ProjectTitle}>beHuman</h1>
         <section className={styles.ProjectTech}>
             HTML | CSS | JavaScript | SQL | Node | Express | Supertest | Heroku

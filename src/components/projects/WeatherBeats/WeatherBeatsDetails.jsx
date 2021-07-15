@@ -8,7 +8,11 @@ const WeatherBeatsDetails = () => {
     <>
       <ProjectsDetails />
       <main className={styles.WeatherBeatsDetails}>
-        <ClosePopup path={'projects'} />
+        <ClosePopup
+          path={'projects'}
+          background={'yellow'}
+          color={'black'}
+        />
         <h1 className={styles.ProjectTitle}>WeatherBeats</h1>
         <section className={styles.ProjectTech}>
         React | CSS | Node | Express | WeatherBit API | Spotify API | Heroku | Netlify
