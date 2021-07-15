@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import ClosePopup from '../../buttons/ClosePopup';
 import ProjectsDetails from '../../continents/Projects/ProjectsDetails';
 import beHumanIcon from '../../../assets/beHuman_halfSize.png';
@@ -11,11 +10,6 @@ const BeHumanDetails = () => {
       <ProjectsDetails />
       <main className={styles.BeHumanDetails}>
         <ClosePopup path={'projects'} />
-        {/* <section className={styles.ButtonContainer}> */}
-        {/* <Link to="/projects">
-            <button className={styles.CloseButton} aria-label="Close">X</button>
-          </Link> */}
-        {/* </section> */}
         <h1 className={styles.ProjectTitle}>beHuman</h1>
         <section className={styles.ProjectTech}>
             HTML | CSS | JavaScript | SQL | Node | Express | Supertest | Heroku
