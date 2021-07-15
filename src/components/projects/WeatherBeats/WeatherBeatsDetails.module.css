@@ -1,157 +1,103 @@
 .WeatherBeatsDetails {
     background-color: yellow;
     background-image: url(../../../assets/WeatherBeats_full.jpg);
-    background-position: 5% 30%;
+    background-position: 5% 10%;
     background-repeat: no-repeat;
-    background-size: 155%;
+    background-size: 175%;
 
-    border: solid 0.25vw black;
-    border-radius: 1vw;
+    border: medium solid black;
+    border-radius: 2vw;
+    height: 96vh;
+    width: 60vw;
     padding: 2vw;
 
     position: absolute;
-    top: 23%;
-    left: 23%;
+    top: 2%;
+    left: 20%;
     z-index: 1;
-
-    height: 65%;
-    width: 54%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 
     text-align: center;
 
     overflow: auto;
 }
 
+.ProjectTitle {
+    margin: 2vw;
+    font-size: var(--project-details-title);
+}
+
 .ProjectTech {
-    font-size: 1.5vw;
+    margin: 2vw;
+    font-size: var(--project-details-tech);
     font-weight: bold;
-    margin: 1vw;
 }
 
 .ProjectInfo {
-    font-size: 1.5vw;
+    margin: 2vw;
+    font-size: var(--project-details-text);
     text-align: justify;
 }
 
 .ProjectLinks {
-    color: yellow;
-    font-size: 1.5vw;
-    font-weight: 600
+    margin: 2vw;
+    font-size: var(--project-details-links);
+    font-weight: 600;
 }
 
 .LinkText {
-    color: yellow;
     padding: 0vw 1vw;
 }
 
-.LinkText:hover {
-    color: whitesmoke;
-}
-
-.ButtonContainer {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    margin: 0.5vw;
-    padding: 0.5vw;
-    width: 100%;
-    text-align: left;
-}
-
-.CloseButton {
-    background: yellow;
-    border: black solid 0.15vw;
-    border-radius: 50%;
-    padding: .25vw 0.5vw;
-    width: fit-content;
-    font-size: 1.25vw;
+@media screen and (max-width: 1200px) {
+    .WeatherBeatsDetails {
+        background-position: 25% 20%;
+        background-size: 235%;
+        height: 97vh;
+        padding: 3vw;
+        top: 1.5%;
+        justify-content: flex-start;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .WeatherBeatsDetails {
-        background-position: 40% 20%;
-        background-size: 275%;
+        background-position: 40% 0%;
+        background-size: 250%;
+        border-radius: 0;
+        height: 100vh;
+        width: 100vw;
+        padding: 4vw;
+        top: 0%;
+        left: 0%;
+    }
 
-        padding: 3vw;
-        justify-content: flex-start;
-
-        height: 60%;
-        width: 65%;
-
-        top: 23%;
-        left: 18%;
-
-        font-size: 2.5vw;
+    .ProjectTitle,
+    .ProjectTech,
+    .ProjectInfo,
+    .ProjectLinks {
+        margin: 4vw;
     }
 
     .ProjectTech {
-        margin: 2vw;
         width: 90%;
-        font-size: 3vw;
-        font-weight: bold;
-    }
-
-    .ProjectInfo {
-        margin: 2vw;
-        font-size: 3vw;
-    }
-
-    .ProjectLinks {
-        margin: 2vw;
-        font-size: 2.5vw;
-        font-weight: 600;
-    }
-
-    .CloseButton {
-        height: fit-content;
-        width: min-content;
-        margin: 1vw;
-        padding: 0.5vw 0.75vw;
-        font-size: 1.5vw;
     }
 }
 
 @media screen and (max-width: 500px) {
     .WeatherBeatsDetails {
-        border: var(--bordercolor) solid 1.5vw;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: 400%;
-        top: 0%;
-        left: 0%;
-        height: 100vh;
-        width: 100vw;
+        background-position: 50% 20%;
+        background-size: 450%;
         padding: 5vw;
-        justify-content: space-around;
-        font-size: 4.25vw;
     }
 
-    .ProjectTech {
-        margin: 1vw;
-        width: 75%;
-        font-size: 5vw;
-        font-weight: bold;
-    }
-    
-    .ProjectInfo {
-        margin: 2vw;
-        font-size: 5vw;
-    }
-
+    .ProjectTitle,
+    .ProjectTech,
+    .ProjectInfo,
     .ProjectLinks {
         margin: 5vw;
-        color: black;
-        font-size: 4.5vw;
-    }
-
-    .CloseButton {
-        margin: 2vw;
-        padding: 0.5vw 1vw;
-        font-size: 4vw;
     }
 }

@@ -65,6 +65,11 @@
   --project-summary-title: 1.25vw;
   --project-summary-text: 1.25vw;
   --project-button-text: 1.15vw;
+
+  --project-details-title: 3vw;
+  --project-details-tech: 1.5vw;
+  --project-details-text: 1.45vw;
+  --project-details-links: 1.5vw;
 }
 
 a {
@@ -85,6 +90,11 @@ a:hover {
     --project-summary-title: 1.5vw;
     --project-summary-text: 1.5vw;
     --project-button-text: 1.25vw;
+
+    --project-details-title: 3.5vw;
+    --project-details-tech: 1.75vw;
+    --project-details-text: 1.7vw;
+    --project-details-links: 1.75vw;
   }
 }
 
@@ -116,6 +126,11 @@ a:hover {
     --project-summary-title: 3.25vw;
     --project-summary-text: 2.75vw;
     --project-button-text: 2.25vw;
+
+    --project-details-title: 8vw;
+    --project-details-tech: 3.75vw;
+    --project-details-text: 3.5vw;
+    --project-details-links: 3.75vw;
   }
 }
 
@@ -146,5 +161,10 @@ a:hover {
     --project-summary-title: 5.25vw;
     --project-summary-text: 5vw;
     --project-button-text: 4vw;
+
+    --project-details-title: 10vw;
+    --project-details-tech: 5vw;
+    --project-details-text: 5vw;
+    --project-details-links: 5vw;
   }
 }
