@@ -11,7 +11,7 @@ const MajorArcanaDetails = () => {
       <main className={styles.MajorArcanaDetails}>
         <ClosePopup
           path={'projects'}
-          background={'#e4a77b'}
+          background={'#E4A77B'}
           color={'black'}
         />
         <h1 className={styles.ProjectTitle}>Major Arcana Divinator</h1>

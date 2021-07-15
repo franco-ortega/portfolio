@@ -1,6 +1,6 @@
 .ProfileDetails {
     background: var(--continent);
-    border: black solid thick;
+    border: medium solid black;
     border-radius: 2vw;
     height: 96vh;
     width: 60vw;

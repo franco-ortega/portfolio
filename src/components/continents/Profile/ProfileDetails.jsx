@@ -1,14 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import ClosePopup from '../../buttons/ClosePopup';
 import photo from '../../../assets/FrancoOrtega.jpg';
 import styles from './ProfileDetails.module.css';
 
 const Profile = () => {
   return (
     <main className={styles.ProfileDetails}>
-      <Link to="/">
-        <button className={styles.Button}>X</button>
-      </Link>
+      <ClosePopup path={''}/>
       <header className={styles.Header}>
         <img src={photo} alt="profile photo" className={styles.Photo} />
         <p className={styles.Name}>Franco Ortega</p>
