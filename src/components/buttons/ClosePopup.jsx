@@ -5,9 +5,10 @@ import styles from './ClosePopup.module.css';
 
 const ClosePopup = path => {
   let history = useHistory();
+  console.log(path.path);
 
   const onCloseClick = () => {
-    history.push(`/${path}`);
+    history.push(`/${path.path}`);
   };
 
   return (
