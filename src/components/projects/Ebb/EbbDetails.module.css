@@ -58,6 +58,10 @@
 }
 
 .Demo {
+    text-align: center;
+}
+
+.GitHub {
     text-align: left;
 }
 
@@ -101,7 +105,7 @@
     }
 
     .ProjectIcon {
-        width: 40vw;
+        width: 30vw;
     }
 
     .LinkText {
@@ -123,10 +127,18 @@
     }
 
     .ProjectIcon {
-        width: 60vw;
+        width: 45vw;
+    }
+
+    .Extension {
+        padding-right: 1.5vw;
+    }
+
+    .GitHub {
+        padding-left: 1.5vw;
     }
 
     .LinkText {
-        padding: 0vw 3vw;
+        padding: 0vw 1vw;
     }
 }
