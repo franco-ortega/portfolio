@@ -99,4 +99,8 @@
     .ProjectLinks {
         margin: 5vw;
     }
+
+    .LinkText {
+        padding: 0vw 3vw;
+    }
 }

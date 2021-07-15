@@ -123,4 +123,8 @@
         border-width: thin;
         width: 30vw;
     }
+
+    .LinkText {
+        padding: 0vw 3vw;
+    }
 }

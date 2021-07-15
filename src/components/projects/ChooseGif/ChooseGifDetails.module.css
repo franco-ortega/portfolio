@@ -126,4 +126,8 @@
     .ProjectIcon {
         width: 36vw;
     }
+
+    .LinkText {
+        padding: 0vw 3vw;
+    }
 }
