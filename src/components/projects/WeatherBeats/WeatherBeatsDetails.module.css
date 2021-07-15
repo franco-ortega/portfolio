@@ -46,6 +46,17 @@
     margin: 2vw;
     font-size: var(--project-details-links);
     font-weight: 600;
+    display: grid;
+    grid-template-columns: 7fr 1fr 7fr;
+    grid-template-rows: 1;
+}
+
+.Extension {
+    text-align: right;
+}
+
+.GitHub {
+    text-align: left;
 }
 
 .LinkText {
@@ -83,6 +94,10 @@
 
     .ProjectTech {
         width: 90%;
+    }
+
+    .LinkText {
+        padding: 0vw 2vw;
     }
 }
 

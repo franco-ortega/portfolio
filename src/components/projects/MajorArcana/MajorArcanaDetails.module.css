@@ -91,8 +91,8 @@
     .ProjectTitle,
     .ProjectTech,
     .ProjectInfo,
-    .ProjectLinks,
-    .ProjectIcon {
+    .ProjectIcon,
+    .ProjectLinks {
         margin: 4vw;
     }
 
@@ -117,8 +117,8 @@
     .ProjectTitle,
     .ProjectTech,
     .ProjectInfo,
-    .ProjectLinks,
-    .ProjectIcon {
+    .ProjectIcon,
+    .ProjectLinks {
         margin: 5vw;
     }
 
