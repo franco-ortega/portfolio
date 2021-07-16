@@ -16,44 +16,47 @@
 }
 
 .Title {
-    height: 35%;
-    padding: 1.5vw 0;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .Summary {
-    height: 45%;
-    padding: 0vw 2vw;
-    display: flex;
-    align-items: center;
+    height: 55%;
+    padding: .25vw 1.25vw;
     font-size: var(--project-summary-text);
     text-align: justify;
-}
-
-.ButtonContainer {
-    height: 20%;
 }
 
 .DetailsButton {
     background: lightcyan;
     border-radius: 1vw;
     padding: 0.25vw 0.5vw;
-    width: fit-content;
-    font-size: var(--project-details-button);
+    font-size: var(--project-summary-button-text);
+}
+
+@media screen and (max-width: 1200px) {
+    .MajorArcana {
+        border-radius: 1.25vw;
+    }
+
+    .Summary {
+        padding: .5vw 1.5vw;
+    }    
 }
 
 @media screen and (max-width: 900px) {
+    .MajorArcana {
+        border-radius: 1.5vw;
+    }
+
     .Title {
         height: 30%;
     }
 
     .Summary {
         height: 50%;
-    }
-
-    .ButtonContainer {
-        display: flex;
-        align-items: center;
-        padding-bottom: 1vw;
     }
     
     .DetailsButton {
@@ -63,19 +66,24 @@
 }
 
 @media screen and (max-width: 500px) {
-    .Summary {
-        height: 60%;
-        padding: 1vw 5vw;
+    .MajorArcana {
+        border-radius: 3vw;
     }
 
-    .ButtonContainer {
-        height: 15%;
-        padding: 3vw;
-        align-items: flex-start;
+    .Title {
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Summary {
+        height: 55%;
+        padding: 1vw 5vw;
     }
 
     .DetailsButton {
         border-radius: 3vw;
-        padding: 0.5vw 1vw;
+        padding: 0.5vw 1.5vw;
     }
 }

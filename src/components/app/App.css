@@ -6,62 +6,43 @@
 }
 
 :root {
+  --bordercolor: goldenrod;
+
   --darkestblue: rgb(41, 17, 129);
   --darkerblue: rgb(36, 17, 146);
   --middleblue: rgb(46, 29, 204);
   --lighterblue: rgb(29, 46, 201);
   --lightestblue: rgb(21, 103, 209);
 
-  --bordercolor: goldenrod;
-
-  --name-and-title: gold;
-
-  --continent: tan;
-  --continent-border: brown;
-
+  --coastline-box-shadow: 0vw 0vw 2vw 1.5vw;
   --coastline-shadow: darkblue;
-  
   --outer-coastline: rgb(87, 171, 223);
   --outer-coastline-padding: 0.75vw;
-  --outer-coastline-details-padding: 1.25vw;
-  
-  --inner-coastline: rgb(111, 186, 233);
   --inner-coastline-border-width: 0.15vw;
+  --inner-coastline: rgb(111, 186, 233);
   --inner-coastline-padding: 1vw;
-
-  --inner-coastline-details-padding: 1.5vw;
-
-  --continent-details-title: 4.75vw;
-  --continent-details-intro: 1.4vw;
-  --continent-details-body: 1.25vw;
-
-  --continent-box-shadow: 0vw 0vw 2vw 1.5vw;
-
+  --continent-border: brown;
+  --continent: tan;
   --continent-padding: 1vw;
 
-  --profile-continent-shape: 120vw 70vw 95vw 90vw;
-  --profile-continent-height: 25vh;
-  --profile-continent-width: 25vw;
-  --profile-continent-margin: 0 2vw 0 0;
-  --profile-continent-font: 4.25vw;
+  --popup-title: 3.25vw;
+  --popup-header-text: 1.5vw;
+  --popup-text: 1.25vw;
 
-  --project-continent-shape: 84vw 75vw 51vw 38vw;
-  --project-continent-height: 22vh;
-  --project-continent-width: 22vw;
-  --project-continent-font: 3.5vw;
+  --project-summary-title: 1.25vw;
+  --project-summary-text: 1.25vw;
+  --project-summary-button-text: 1.15vw;
 
-  --resume-continent-shape: 520vw 270vw 495vw 190vw;
-  --resume-continent-height: 15vh;
-  --resume-continent-width: 20vw;
-  --resume-continent-font: 3vw;
+  --project-details-title: 3vw;
+  --project-details-tech: 1.5vw;
+  --project-details-text: 1.45vw;
+  --project-details-links: 1.5vw;
 
-  --project-summary-title: 1.75vw;
-  --project-summary-text: 1.3vw;
-  --project-details-button: 1.25vw;
+  --map-title: 3vw;
 }
 
 a {
-  color: rgba(15, 24, 6, 0.7);
+  color: rgba(15, 24, 6, 0.8);
   text-decoration: none;
 }
 
@@ -69,58 +50,66 @@ a:hover {
   color: var(--darkestblue);
 }
 
-button {
-  outline: none;
+@media screen and (max-width: 1200px) {
+  :root {
+    --popup-title: 3.5vw;
+    --popup-header-text: 1.75vw;
+    --popup-text: 1.5vw;
+
+    --project-summary-title: 1.5vw;
+    --project-summary-text: 1.5vw;
+    --project-summary-button-text: 1.25vw;
+
+    --project-details-title: 3.5vw;
+    --project-details-tech: 1.75vw;
+    --project-details-text: 1.7vw;
+    --project-details-links: 1.75vw;
+
+    --map-title: 3.5vw;
+  }
 }
 
 @media screen and (max-width: 900px) {
   :root {
     --outer-coastline-padding: 1vw;
-
-    --inner-coastline-padding: 1.25vw;
     --inner-coastline-border-width: 0.3vw;
+    --inner-coastline-padding: 1.25vw;
 
-    --profile-continent-height: 15vh;
-    --profile-continent-width: 33vw;
-    --profile-continent-margin: 5vw 5vw 0 0;
-    --profile-continent-font: 7vw;
+    --popup-title: 6vw;
+    --popup-header-text: 3vw;
+    --popup-text: 2.75vw;
 
-    --project-continent-height: 15vh;
-    --project-continent-width: 34vw;
-    --project-continent-font: 5.5vw;
+    --project-summary-title: 3.25vw;
+    --project-summary-text: 2.75vw;
+    --project-summary-button-text: 2.25vw;
 
-    --resume-continent-height: 10vh;
-    --resume-continent-width: 25vw;
-    --resume-continent-font: 5vw;
+    --project-details-title: 8vw;
+    --project-details-tech: 3.75vw;
+    --project-details-text: 3.5vw;
+    --project-details-links: 3.75vw;
 
-    --project-summary-title: 2.5vw;
-    --project-summary-text: 2vw;
-    --project-details-button: 1.75vw;
+    --map-title: 7vw;
   }
 }
 
 @media screen and (max-width: 500px) {
   :root {
     --outer-coastline-padding: 1.25vw;
-
     --inner-coastline-border-width: 0.3vw;
 
-    --profile-continent-height: 10vh;
-    --profile-continent-width: 36vw;
-    --profile-continent-margin: 0 2vw 0 0;
-    --profile-continent-font: 8vw;
+    --popup-title: 8vw;
+    --popup-header-text: 3.4vw;
+    --popup-text: 3.75vw;
+  
+    --project-summary-title: 5.25vw;
+    --project-summary-text: 5vw;
+    --project-summary-button-text: 4vw;
 
-    --project-continent-height: 11vh;
-    --project-continent-width: 37vw;
-    --project-continent-padding: 2vw;
-    --project-continent-font: 6.5vw;
+    --project-details-title: 10vw;
+    --project-details-tech: 5vw;
+    --project-details-text: 5vw;
+    --project-details-links: 5vw;
 
-    --resume-continent-height: 8vh;
-    --resume-continent-width: 30vw;
-    --resume-continent-font: 6vw;
-
-    --project-summary-title: 4.5vw;
-    --project-summary-text: 4.5vw;
-    --project-details-button: 3.25vw;
+    --map-title: 9vw;
   }
 }

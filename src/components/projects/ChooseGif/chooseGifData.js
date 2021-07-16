@@ -8,7 +8,6 @@ const gifs = [
 
 const gifSelector = (gifs) => {
   const index = Math.floor(Math.random() * gifs.length);
-  console.log(index);
   return gifs[index];
 };
 

@@ -1,177 +1,99 @@
 .ProfileDetails {
     background: var(--continent);
-    border-radius: 120vw 70vw 95vw 90vw;
-    height: 95vh;
-    width: 90vw;
+    border: medium solid black;
+    border-radius: 2vw;
+    height: 96vh;
+    width: 60vw;
     position: absolute;
-    top: 2.5%;
-    left: 5%;
+    top: 2%;
+    left: 20vw;
     z-index: 1;
-}
-
-.OuterCoastline {
-    background: var(--outer-coastline);
-    border-radius: inherit;
-    height: 100%;
-    width: 100%;
-    padding: var(--outer-coastline-details-padding);
-}
-
-.InnerCoastline {
-    background: var(--inner-coastline);
-    border: 0.35vw dashed var(--continent-border);
-    border-radius: inherit;
-    height: inherit;
-    width: inherit;
-    padding: var(--inner-coastline-details-padding);
-}
-
-.Continent {
-    background: var(--continent);
-    border-radius: inherit;
-    height: inherit;
-    width: inherit;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: justify;
-
     overflow: auto;
-
-    padding: 1.75vw 1.5vw 0 1.5vw;
 }
 
 .Header {
-    display: flex;
-    justify-content: space-evenly;
-    width: 75%;
-}
-
-.Name {
-    font-size: var(--continent-details-title);
-}
-
-.Contact {
+    margin-top: 1.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 1.25vw;
+}
+
+.Photo {
+    border-radius: 50%;
+    width: 12vw;
+}
+
+.Name {
+    font-size: var(--popup-title);
+}
+
+.Contact {
+    margin-top: .5vw;
+    font-size: var(--popup-header-text);
 }
 
 .ContactLink {
-    margin-bottom: 0.5vw;
+    margin: .5vw;
 }
 
 .Bio {
-    margin: 2vw 4vw 1vw 6vw;
-    height: 75%;
-    font-size: var(--continent-details-body);
-    overflow: auto;
+    height: fit-content;
+    margin: .75vw 2vw;
+    font-size: var(--popup-text);
+    text-align: justify;
 }
 
 .BioParagraph {
     margin-bottom: 1vw;
 }
 
-.Photo {
-    float: right;
-    border-radius: 50%;
-    margin: 0vw 0vw 1vw 1vw;
-    height: 15vw;
-}
+@media screen and (max-width: 1200px) {
+    .ProfileDetails {
+        top: 1.5%;
+        height: 97vh;
+    }
 
-.Button {
-    background: black;
-    border-radius: 50%;
-    margin: 0.5vw;
-    padding: 0.25vw 0.5vw;
-    color: white;
-    font-size: 1.25vw;
+    .Bio {
+        margin: .75vw 2vw;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .ProfileDetails {
-        border-radius: 35vw 20vw 20vw 30vw;
-        top: 10%;
-        left: 5%;
-        height: 85vh;
-        width: 90vw;
+        border-radius: 0;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+        width: 100vw;
     }
 
-    .Header {
-        margin: 8vw 2vw 0vw 2vw;
-    }
-
-    .Name {
-        font-size: 6vw;
+    .Photo {
+        width: 20vw;
+        margin-top: 2vw;
+        margin-bottom: 1vw;
     }
 
     .Contact {
-        font-size: 1.75vw;
+        margin-top: 1vw;
     }
 
     .Bio {
-        padding: 0vw 5vw;
-        font-size: 2.25vw;
-    }
-
-    .Button {
-        padding: 0.5vw 1vw;
-        font-size: 2.5vw;
+        margin: 2vw 4vw;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .ProfileDetails {
-        border-radius: 35vw 20vw 20vw 30vw;
-        top: 2.5%;
-        left: 2.5%;
-        height: 95vh;
-        width: 95vw;
-    }
-
-    .Header {
-        flex-direction: column;
-        margin: 0vw;
-        width: 85%;
-    }
-
-    .Name {
-        width: 75%;
-        margin-left: 10vw;
-        margin-bottom: 2vw;
-        padding-top: 5vw;
-        font-size: 8vw;
-        font-weight: 600;
-    }
-
-    .Contact {
-        margin: 0.5vw;
-        font-size: 3.5vw;
-    }
-
-    .Bio {
-        margin: 2vw 2vw 2vw 4vw;
-        padding: 1vw 5vw;
-        height: 65%;
-        font-size: 3.75vw;
-    }
-
     .Photo {
-        border-radius: 50%;
-        margin: 0vw 0vw 3vw 3vw;
-        height: 25vw;
+        width: 30vw;
+        margin-top: 4vw;
+        margin-bottom: 2vw;
     }
-
+    
+    .Contact {
+        margin-top: 1.5vw;
+    }
+    
     .BioParagraph {
         margin-bottom: 2vw;
-    }
-
-    .Button {
-        padding: 0.5vw 1.25vw;
-        font-size: 3.5vw;
     }
 }

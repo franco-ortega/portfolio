@@ -7,11 +7,11 @@
 }
 
 .OuterCoastline {
-    border-radius: var(--profile-continent-shape);
-    box-shadow: var(--continent-box-shadow) var(--coastline-shadow);
+    border-radius: 120vw 70vw 95vw 90vw;
+    box-shadow: var(--coastline-box-shadow) var(--coastline-shadow);
     padding: var(--outer-coastline-padding);
     width: fit-content;
-    margin: var(--profile-continent-margin);
+    margin: 0 2vw 0 0;
 
     background: linear-gradient(90deg, var(--outer-coastline), rgb(77, 152, 199), rgb(106, 178, 223), rgb(74, 146, 190));
     background-blend-mode: soft-light;
@@ -51,34 +51,47 @@
     border: var(--inner-coastline-border-width) dashed var(--continent-border);
     border-radius: inherit;
     padding: var(--inner-coastline-padding);
-    height: fit-content;
-    width: fit-content;
 }
 
 .Continent {
-    background: var(--continent);
+    background: linear-gradient(
+        30deg,
+        rgb(206, 165, 112),
+        rgb(206, 165, 112),
+        var(--continent),
+        rgb(206, 165, 112),
+        var(--continent),
+        rgb(187, 168, 142)
+    );
+    background-blend-mode: soft-light;
+    background-size: 110% 15%;
     border: .25vw solid var(--continent-border);
     border-radius: inherit;
-    height: var(--profile-continent-height);
-    width: var(--profile-continent-width);
+    height: 25vh;
+    width: 25vw;
     padding: var(--continent-padding);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--profile-continent-font);
+    font-size: 4.25vw;
     font-weight: bold;
-
-    background: linear-gradient(130deg, var(--continent), rgb(206, 165, 112), rgb(187, 168, 142), rgb(150, 134, 114));
-    background-blend-mode: soft-light;
-    background-size: 115% 115%;
-    
 }
 
 @media screen and (max-width: 900px) {
     .Profile {
         grid-column: 5 / 9;
         grid-Row: 5 / 8;
-    }    
+    }
+
+    .OuterCoastline {
+        margin: 5vw 5vw 0 0;
+    }
+
+    .Continent {
+        height: 15vh;
+        width: 33vw;
+        font-size: 7vw;
+      }
 }
 
 @media screen and (max-width: 500px) {
@@ -86,4 +99,10 @@
         grid-column: 1 / 10;
         grid-row: 10 / 14;
     }
+
+    .Continent {
+        height: 10vh;
+        width: 37vw;
+        font-size: 8.75vw;
+      }
 }

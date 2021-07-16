@@ -10,8 +10,8 @@ const IslandChain = () => {
     <div className={styles.IslandChain}>
       <GitHub />
       <LinkedIn />
-      <Email />
       <Twitter />
+      <Email />
     </div>
   );
 };

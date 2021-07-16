@@ -45,14 +45,14 @@ const Ocean = () => {
         <Scale />
         <Compass />
 
-        {/* Islands */}
-        <IslandChain />
-
         {/* Continents */}
         <Projects />
         <Profile />
         <Resume />
         <Cartography />
+
+        {/* Islands */}
+        <IslandChain />
 
       </div>
     </div>

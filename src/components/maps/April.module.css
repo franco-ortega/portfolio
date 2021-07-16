@@ -1,0 +1,63 @@
+.April {
+    background: var(--continent);
+    border: medium solid black;
+    border-radius: 2vw;
+    height: 96vh;
+    width: 60vw;
+    padding: 2vw;
+    position: absolute;
+    top: 2%;
+    left: 20%;
+    z-index: 1;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+
+    font-size: var(--map-title);
+    text-align: center;
+}
+
+.Map {
+    border-radius: 1vw;
+    width: 90%;
+}
+
+@media screen and (max-width: 1200px) {
+    .April {
+        padding: 3vw;
+        top: 1.5%;
+        height: 97vh;
+    }
+
+    .Map {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .April {
+        border-radius: 0;
+        padding: 4vw;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+        width: 100vw;
+        gap: 10vw;
+    }
+
+    .Map {
+        border-radius: 2vw;
+        width: 95%;
+        position: absolute;
+        top: 25%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .April {
+        padding-top: 15vw;
+    }
+}

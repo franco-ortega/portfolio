@@ -1,19 +1,16 @@
-.WeatherBeats {
-    background-image: url(../../../assets/WeatherBeats_mobile.jpg);
-    background-position: 50% 55%;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    border: solid black 0.2vw;
+.Ebb {
+    background: linear-gradient(0deg, rgba(55, 87, 149, 0.2), rgba(55, 87, 149, 0.2)), linear-gradient(0deg, #121212, #121212);
+    border: solid white 0.2vw;
     border-radius: 1vw;
-
+    color: #F3F3F3;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
 
     height: 100%;
     width: 100%;
-
+    
     font-size: var(--project-summary-title);
     overflow: auto;
 }
@@ -40,8 +37,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .WeatherBeats {
-        background-position: 50% 65%;
+    .Ebb {
         border-radius: 1.25vw;
     }
 
@@ -51,19 +47,18 @@
 }
 
 @media screen and (max-width: 900px) {
-    .WeatherBeats {
-        background-position: 50% 50%;
+    .Ebb {
         border-radius: 1.5vw;
     }
 
     .Title {
-        height: 25%;
+        height: 30%;
     }
 
     .Summary {
-        height: 55%;
+        height: 50%;
     }
-
+    
     .DetailsButton {
         border-radius: 1.5vw;
         padding: 0.3vw 0.75vw;
@@ -71,8 +66,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .WeatherBeats {
-        background-position: 50% 65%;
+    .Ebb {
         border-radius: 3vw;
     }
 

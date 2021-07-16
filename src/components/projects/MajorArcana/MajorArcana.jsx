@@ -1,19 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router';
 import styles from './MajorArcana.module.css';
 
 const MajorArcana = () => {
+  let history = useHistory();
+
+  const onDetailsClick = () => {
+    history.push('/majorarcanadivinator');
+  };
+
   return (
     <section className={styles.MajorArcana}>
       <h2 className={styles.Title}>Major Arcana Divinator</h2>
       <div className={styles.Summary}>
         Browser-based app that allows the user to select a one-card or three-card tarot reading. Readings are stored and can be viewed later as well.
       </div>
-      <div className={styles.ButtonContainer}>
-        <Link to="/majorarcanadivinator">
-          <button className={styles.DetailsButton} aria-label="Project Details">Click for project details.</button>
-        </Link>
-      </div>
+      <button onClick={onDetailsClick} className={styles.DetailsButton} >Click for project details.</button>
     </section>
   );
 };

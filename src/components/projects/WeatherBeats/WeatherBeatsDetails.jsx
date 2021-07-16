@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import ClosePopup from '../../buttons/ClosePopup';
 import ProjectsDetails from '../../continents/Projects/ProjectsDetails';
 import styles from './WeatherBeatsDetails.module.css';
 
@@ -8,12 +8,12 @@ const WeatherBeatsDetails = () => {
     <>
       <ProjectsDetails />
       <main className={styles.WeatherBeatsDetails}>
-        <section className={styles.ButtonContainer}>
-          <Link to="/projects">
-            <button className={styles.CloseButton} aria-label="Close">X</button>
-          </Link>
-        </section>
-        <h1>WeatherBeats</h1>
+        <ClosePopup
+          path={'projects'}
+          background={'yellow'}
+          color={'black'}
+        />
+        <h1 className={styles.ProjectTitle}>WeatherBeats</h1>
         <section className={styles.ProjectTech}>
         React | CSS | Node | Express | WeatherBit API | Spotify API | Heroku | Netlify
         </section>
@@ -21,8 +21,13 @@ const WeatherBeatsDetails = () => {
             WeatherBeats provides a music playlist based on the weather. Users may customize their experience by selecting a preferred location, weather, or genre. Completed in a 10-day remote sprint with a 5-member team. My contributions included the acquisition of location data and associated fetch requests; creating a responsive design and consistent layout; building data files incorporated with props to enhance modularity and scalability; refactoring repetitive code.
         </section>
         <section className={styles.ProjectLinks}>
-          <a href="https://weatherbeats.netlify.app/" rel="noreferrer" target="_blank" className={styles.LinkText}>Website</a> |
-          | <a href="https://github.com/WeatherBeats" rel="noreferrer" target="_blank" className={styles.LinkText}>GitHub</a>
+          <span className={styles.Extension}>
+            <a href="https://weatherbeats.netlify.app/" rel="noreferrer" target="_blank" className={styles.LinkText}>Website</a>
+          </span>
+          <span>| |</span>
+          <span className={styles.GitHub}>
+            <a href="https://github.com/WeatherBeats" rel="noreferrer" target="_blank" className={styles.LinkText}>GitHub</a>
+          </span>
         </section>
       </main>
     </>

@@ -1,236 +1,191 @@
 .CartographyDetails {
-    border-radius: 60% 40% 60% 35%;
-    height: 95vh;
-    width: 95vw;
-    position: absolute;
-    top: 2.5%;;
-    left: 2.5%;
-    z-index: 1;
-}
-
-.OuterCoastline {
-    background: var(--outer-coastline);
-    border-radius: inherit;
-    height: 100%;
-    width: 100%;
-    padding: var(--outer-coastline-details-padding);
-}
-
-.InnerCoastline {
-    background: var(--inner-coastline);
-    border: 0.35vw dashed var(--continent-border);
-    border-radius: inherit;
-    height: inherit;
-    width: inherit;
-    padding: var(--inner-coastline-details-padding);
-}
-
-.Continent {
     background: var(--continent);
-    border-radius: inherit;
-    height: inherit;
-    width: inherit;
+    border: medium solid black;
+    border-radius: 2vw;
+    height: 96vh;
+    width: 60vw;
+    position: absolute;
+    top: 2%;
+    left: 20vw;
+    z-index: 1;
 
-    display: grid;
-    grid-template-columns: repeat(30, 1fr);
-    grid-template-rows: repeat(20, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Header {
+    margin-top: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Title {
-    grid-column: 12 / 20;
-    grid-row: 2 / 5;
-    font-size: var(--continent-details-title);
+    font-size: var(--popup-title);
 }
 
 .Content {
-    grid-column: 9 / 23;
-    grid-row: 5 / 11;
-    padding: 1vw;
-    font-size: 1.4vw;
+    width: 80%;
+    margin: 2vw;
+    font-size: var(--popup-text);
     text-align: justify;
 }
 
-.MapGruenne, .MapApril, .MapMarneOsso, .MapHarland, .MapStrigi {
-    z-index: 1;
+.DisplayCaseText {
+    margin-bottom: 1vw;
+    font-size: var(--popup-text);
 }
 
-.MapHarland {
-    grid-column: 2 / 8;
-    grid-row: 9 / 16;
+.MapsDisplayCase {
+    margin-top: 2vw;
+    width: 85%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-}
-
-.MapApril {
-    grid-column: 10 / 16;
-    grid-row: 12 / 19;
-    display: flex;
-    align-items: center;
-}
-
-.MapStrigi {
-    grid-column: 18 / 22;
-    grid-row: 11 / 19;
-    display: flex;
-    align-items: flex-end;
-}
-
-.MapGruenne {
-    grid-column: 24 / 30;
-    grid-row: 6 / 13;
-    display: flex;
-    align-items: center;
-}
-
-.MapMarneOsso {
-    grid-column: 23 / 29;
-    grid-row: 5 / 15;
-}
-
-.Gruenne, .April, .MarneOsso, .Harland, .Strigi {
-    border-radius: 0.5vw;
-    width: 100%;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-}
-
-.Harland:hover, .April:hover, .MarneOsso:hover, .Gruenne:hover, .Strigi:hover {
-    transform: scale(1.6);
-}
-
-.ButtonContainer {
-    grid-column: 16 / 18;
-    grid-row: 19 / 20;
-    display: flex;
     justify-content: center;
+    gap: 2vw;
+    overflow: scroll;
+    /* border: 1px dashed blue; */
 }
 
-.Button {
-    background: black;
-    border-radius: 50%;
-    padding: 0.25vw 0.5vw;
-    color: white;
-    font-size: 1.25vw;
+.April,
+.Ganderlund,
+.Gruenne,
+.Harland,
+.MarneOsso,
+.Strigi {
+    border: thin solid black;
+    border-radius: .5vw;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 15vw;
+}
+
+.April {
+    background-image: url('../../../assets/maps/April.png');
+    background-size: 195%;
+    background-position: 10% 10%;
+}
+
+.Ganderlund {
+    background-image: url('../../../assets/maps/Ganderlund.png');
+    background-size: 250%;
+    background-position: 95% 25%;
+}
+
+.Gruenne {
+    background-image: url('../../../assets/maps/Gruenne.png');
+    background-size: 350%;
+    background-position: 2% 2%;
+}
+
+.Harland {
+    background-image: url('../../../assets/maps/Harland.png');
+    background-size: 275%;
+    background-position: 10% 95%;
+}
+
+.MarneOsso {
+    background-image: url('../../../assets/maps/MarneOsso.png');
+    background-size: 250%;
+    background-position: 95% 5%;
+}
+
+.Strigi {
+    background-image: url('../../../assets/maps/Strigi.png');
+    background-size: 200%;
+    background-position: 25% 10%;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .CartographyDetails {
+        top: 1.5%;
+        height: 97vh;
+    }
+
+    .Header {
+        margin-top: 4vw;
+    }
+
+    .Content {
+        margin-bottom: 1.5vw;
+    }
+
+    .MapsDisplayCase {
+        width: 90%;
+    }
+
+    .April,
+    .Ganderlund,
+    .Gruenne,
+    .Harland,
+    .MarneOsso,
+    .Strigi {
+        border-radius: .75vw;
+        height: 20vh;
+        width: 15vw;
+    }
 }
 
 @media screen and (max-width: 900px) {
-    .Continent {
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(30, 1fr);
+    .CartographyDetails {
+        border-radius: 0;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+        width: 100vw;
     }
-    
-    .Title {
-        grid-column: 4 / 10;
-        grid-row: 3 / 5;
-        font-size: 7vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+    .Header {
+        margin-top: 8vw;
     }
     
     .Content {
-        grid-column: 3 / 10;
-        grid-row: 5 / 14;
-        font-size: 3vw;
+        margin: 4vw;
     }
 
-    .MapHarland {
-        grid-column: 2 / 6;
-        grid-row: 14 / 21;
-    }
-    
-    .MapApril {
-        grid-column: 3 / 7;
-        grid-row: 22 / 29;
-    }
-    
-    .MapStrigi {
-        grid-column: 7 / 10;
-        grid-row: 13 / 22;
-    }
-    
-    .MapGruenne {
-        display: none;
+    .MapsDisplayCase {
+        width: 80%;
+        margin-top: 5vw;
+        gap: 4vw;
+        /* border: 1px dashed black; */
     }
 
-    .Gruenne, .April, .MarneOsso, .Harland, .Strigi {
-        border-radius: 0.75vw;
-        width: 95%;
-    }
-
-    .ButtonContainer {
-        grid-column: 5 / 6;
-        grid-row: 29 / 31;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .Button {
-        padding: 0.5vw 1vw;
-        font-size: 2.5vw;
+    .April,
+    .Ganderlund,
+    .Gruenne,
+    .Harland,
+    .MarneOsso,
+    .Strigi {
+        height: 17vh;
+        width: 30vw;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .Continent {
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(30, 1fr);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    
-    .Title {
-        grid-column: 4 / 10;
-        grid-row: 3 / 5;
-        font-size: 8vw;
-        padding: 10vw 0vw 0 10vw;
+    .Header {
+        margin-top: 12vw;
     }
     
     .Content {
-        grid-column: 3 / 10;
-        grid-row: 6 / 21;
-        font-size: 4.25vw;
-        padding: 0vw 7vw 0 17vw;
+        margin: 8vw;
     }
 
-    .MapHarland {
-        grid-column: 2 / 9;
-        grid-row: 22 / 28;
-        width: 90%;
-        display: flex;
-        justify-content: center;
+    .DisplayCaseText {
+        margin-bottom: 4vw;
     }
 
-    .Harland {
-        border-radius: 3vw;
-        width: 60%;
-        height: 100%;
-    }
-    
-    .MapApril, .MapStrigi, .MapGruenne {
-        display: none;
-    }
-
-    .Harland:hover, .April:hover, .MarneOsso:hover, .Gruenne:hover, .Strigi:hover {
-        transform: scale(1.5);
-    }
- 
-    .ButtonContainer {
-        grid-column: 4 / 6;
-        grid-row: 28 / 31;
-        display: flex;
-        justify-content: center;
-        width: 80%;
-    }
-
-    .Button {
-        margin-top: 5vw;
-        padding: 0.5vw 1.25vw;
-        font-size: 4vw;
+    .April,
+    .Ganderlund,
+    .Gruenne,
+    .Harland,
+    .MarneOsso,
+    .Strigi {
+        height: 12vh;
+        width: 35vw;
     }
 }

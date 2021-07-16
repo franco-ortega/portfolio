@@ -1,12 +1,9 @@
-.WeatherBeatsDetails {
-    background-color: yellow;
-    background-image: url(../../../assets/WeatherBeats_full.jpg);
-    background-position: 5% 10%;
-    background-repeat: no-repeat;
-    background-size: 175%;
+.EbbDetails {
+    background: linear-gradient(0deg, rgba(55, 87, 149, 0.2), rgba(55, 87, 149, 0.2)), linear-gradient(0deg, #121212, #121212);
+    color: #F3F3F3;
 
-    border: medium solid black;
-    border-radius: 2vw;
+    border: medium solid white;
+    border-radius: 1vw;
     height: 96vh;
     width: 60vw;
     padding: 2vw;
@@ -42,17 +39,26 @@
     text-align: justify;
 }
 
+.ProjectIcon {
+    margin: 2vw;
+    width: 15vw;
+}
+
 .ProjectLinks {
     margin: 2vw;
     font-size: var(--project-details-links);
     font-weight: 600;
     display: grid;
-    grid-template-columns: 7fr 1fr 7fr;
+    grid-template-columns: 7fr 1fr 6fr 1fr 7fr;
     grid-template-rows: 1;
 }
 
 .Extension {
     text-align: right;
+}
+
+.Demo {
+    text-align: center;
 }
 
 .GitHub {
@@ -61,12 +67,15 @@
 
 .LinkText {
     padding: 0vw 1vw;
+    color: white;
+}
+
+.LinkText:hover {
+    color: #C4C1C1;
 }
 
 @media screen and (max-width: 1200px) {
-    .WeatherBeatsDetails {
-        background-position: 25% 20%;
-        background-size: 235%;
+    .EbbDetails {
         height: 97vh;
         padding: 3vw;
         top: 1.5%;
@@ -74,9 +83,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .WeatherBeatsDetails {
-        background-position: 40% 0%;
-        background-size: 250%;
+    .EbbDetails {
         border-radius: 0;
         height: 100vh;
         width: 100vw;
@@ -88,12 +95,17 @@
     .ProjectTitle,
     .ProjectTech,
     .ProjectInfo,
-    .ProjectLinks {
+    .ProjectLinks,
+    .ProjectIcon {
         margin: 4vw;
     }
 
     .ProjectTech {
         width: 90%;
+    }
+
+    .ProjectIcon {
+        width: 30vw;
     }
 
     .LinkText {
@@ -102,20 +114,31 @@
 }
 
 @media screen and (max-width: 500px) {
-    .WeatherBeatsDetails {
-        background-position: 50% 20%;
-        background-size: 450%;
+    .EbbDetails {
         padding: 5vw;
     }
 
     .ProjectTitle,
     .ProjectTech,
     .ProjectInfo,
-    .ProjectLinks {
+    .ProjectLinks,
+    .ProjectIcon {
         margin: 5vw;
     }
 
+    .ProjectIcon {
+        width: 45vw;
+    }
+
+    .Extension {
+        padding-right: 1.5vw;
+    }
+
+    .GitHub {
+        padding-left: 1.5vw;
+    }
+
     .LinkText {
-        padding: 0vw 3vw;
+        padding: 0vw 1vw;
     }
 }
