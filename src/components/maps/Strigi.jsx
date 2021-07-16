@@ -1,10 +1,10 @@
 import React from 'react';
-import MapDetails from './MapDetails';
+import MapTallDetails from './MapTallDetails';
 import StrigiMap from '../../assets/maps/Strigi.png';
 
 const Strigi = () => {
   return (
-    <MapDetails
+    <MapTallDetails
       mapTitle={'Strigi'}
       map={StrigiMap}
     />

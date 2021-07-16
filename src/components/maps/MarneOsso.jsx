@@ -1,10 +1,10 @@
 import React from 'react';
-import MapDetails from './MapDetails';
+import MapTallDetails from './MapTallDetails';
 import MarneOssoMap from '../../assets/maps/MarneOsso.png';
 
 const MarneOsso = () => {
   return (
-    <MapDetails
+    <MapTallDetails
       mapTitle={'Marne Osso'}
       map={MarneOssoMap}
     />

@@ -1,16 +1,16 @@
 import React from 'react';
 import ClosePopup from '../buttons/ClosePopup';
 import PropTypes from 'prop-types';
-import styles from './MapDetails.module.css';
+import styles from './MapTallDetails.module.css';
 
-const MapDetails = ({ mapTitle, map}) => {
+const MapTallDetails = ({ mapTitle, map}) => {
   return (
-    <div className={styles.MapDetails}>
+    <div className={styles.MapTallDetails}>
       <ClosePopup path={'cartography'} />
       <p>{mapTitle}</p>
       <img
         alt={mapTitle}
-        className={styles.Map}
+        className={styles.MapTall}
         src={map}
       />
             
@@ -18,10 +18,10 @@ const MapDetails = ({ mapTitle, map}) => {
   );
 };
 
-MapDetails.propTypes = {
+MapTallDetails.propTypes = {
   mapTitle: PropTypes.string.isRequired,
   map: PropTypes.string.isRequired
 
 };
 
-export default MapDetails;
+export default MapTallDetails;
