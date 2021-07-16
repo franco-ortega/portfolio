@@ -16,35 +16,20 @@
     text-align: center;
 }
 
-.Button {
-    background: black;
-    border-radius: 50%;
-    padding: .25vw .5vw;
-    color: white;
-    font-size: 1.25vw;
-
-    position: absolute;
-    top: 1vw;
-    left: 56vw;
-}
-
 .Header {
     margin-top: 1.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: dashed black 1px; */
 }
 
 .Title {
     font-size: var(--popup-title);
-    /* border: dashed black 1px; */
 }
 
 .Intro {
     margin-top: .5vw;
     font-size: var(--popup-header-text);
-    /* border: dashed black 1px; */
 }
 
 .ProjectsDisplayCase {
@@ -74,7 +59,6 @@
         margin: 1vw;
         height: 82%;
         width: 95%;
-        /* justify-content: center; */
     }
 
     .Project {
@@ -93,13 +77,6 @@
         width: 100vw;
     }
 
-    .Button {
-        padding: 0.5vw 1vw;
-        top: 2vw;
-        left: 93vw;
-        font-size: 2.5vw;
-    }
-
     .Intro {
         margin-top: 1vw;
     }
@@ -108,7 +85,6 @@
         margin: 2vw;
         height: 87%;
         width: 95%;
-        /* justify-content: center; */
     }
 
     .Project {
@@ -119,12 +95,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    .Button {
-        padding: 0.75vw 1.5vw;
-        left: 89vw;
-        font-size: 4vw;
-    }
-
     .Intro {
         margin: 1.5vw;
     }

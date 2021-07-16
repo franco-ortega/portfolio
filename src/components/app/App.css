@@ -37,6 +37,8 @@
   --project-details-tech: 1.5vw;
   --project-details-text: 1.45vw;
   --project-details-links: 1.5vw;
+
+  --map-title: 3vw;
 }
 
 a {
@@ -62,6 +64,8 @@ a:hover {
     --project-details-tech: 1.75vw;
     --project-details-text: 1.7vw;
     --project-details-links: 1.75vw;
+
+    --map-title: 3.5vw;
   }
 }
 
@@ -83,6 +87,8 @@ a:hover {
     --project-details-tech: 3.75vw;
     --project-details-text: 3.5vw;
     --project-details-links: 3.75vw;
+
+    --map-title: 7vw;
   }
 }
 
@@ -103,5 +109,7 @@ a:hover {
     --project-details-tech: 5vw;
     --project-details-text: 5vw;
     --project-details-links: 5vw;
+
+    --map-title: 9vw;
   }
 }

@@ -51,12 +51,20 @@
     border: var(--inner-coastline-border-width) dashed var(--continent-border);
     border-radius: inherit;
     padding: var(--inner-coastline-padding);
-    height: fit-content;
-    width: fit-content;
 }
 
 .Continent {
-    background: var(--continent);
+    background: linear-gradient(
+        30deg,
+        rgb(206, 165, 112),
+        rgb(206, 165, 112),
+        var(--continent),
+        rgb(206, 165, 112),
+        var(--continent),
+        rgb(187, 168, 142)
+    );
+    background-blend-mode: soft-light;
+    background-size: 110% 15%;
     border: .25vw solid var(--continent-border);
     border-radius: inherit;
     height: 25vh;
@@ -67,11 +75,6 @@
     justify-content: center;
     font-size: 4.25vw;
     font-weight: bold;
-
-    background: linear-gradient(130deg, var(--continent), rgb(206, 165, 112), rgb(187, 168, 142), rgb(150, 134, 114));
-    background-blend-mode: soft-light;
-    background-size: 115% 115%;
-    
 }
 
 @media screen and (max-width: 900px) {

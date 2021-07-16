@@ -11,7 +11,7 @@ const Resume = () => {
         <div className={styles.OuterCoastline}>
           <div className={styles.InnerCoastline}>
             <div className={styles.Continent}>
-              Resume
+              <span className={styles.Text1}>Resume</span>
             </div>
           </div>
         </div>

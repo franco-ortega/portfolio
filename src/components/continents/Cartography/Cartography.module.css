@@ -7,24 +7,62 @@
 }
 
 .OuterCoastline {
-    background: var(--outer-coastline);
     border-radius: 60% 40% 60% 35%;
     box-shadow: var(--coastline-box-shadow) var(--coastline-shadow);
-    padding: .6vw;
-    width: fit-content;
+    padding: var(--outer-coastline-padding);
+
+    background: linear-gradient(90deg, var(--outer-coastline), rgb(77, 152, 199), rgb(106, 178, 223), rgb(74, 146, 190));
+    background-blend-mode: soft-light;
+    background-size: 15% 15%;
+
+    animation: gradient 20s ease infinite both;
+    -moz-animation: gradient 20s ease infinite both;
+    -webkit-animation: gradient 20s ease infinite both;
+    -o-animation: gradient 20s ease infinite both;
+    -ms-animation: gradient 20s ease infinite both;
 }
+
+@keyframes gradient {
+    0% { background-position: 0 50%; }
+    25% { background-position: 50% 0; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 75%; }
+    100% { background-position: 0 50%; }
+  }
+
+  @-moz-keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 75%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @-webkit-keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 75%; }
+    100% { background-position: 0% 50%; }
+  }
 
 .InnerCoastline {
     background: var(--inner-coastline);
-    border: 0.13vw dashed var(--continent-border);
+    border: 0.14vw dashed var(--continent-border);
     border-radius: inherit;
     padding: .75vw;
-    height: fit-content;
-    width: fit-content;
 }
 
 .Continent {
-    background: var(--continent);
+    background: linear-gradient(
+        130deg,
+        rgb(150, 134, 114),
+        rgb(206, 165, 112),
+        var(--continent),
+        rgb(206, 165, 112),
+        var(--continent),
+        rgb(150, 134, 114)
+    );
+    background-blend-mode: soft-light;
+    background-size: 3% 100%;
     border: 0.25vw solid var(--continent-border);
     border-radius: inherit;
     height: 15vh;
