@@ -41,6 +41,16 @@
   --map-title: 3vw;
 }
 
+@font-face {
+  font-family: 'Odstemplik';
+  src: url(../../fonts/odstemplik/odstemplik.otf);
+}
+
+@font-face {
+  font-family: 'OdstemplikBold';
+  src: url(../../fonts/odstemplik/odstemplikBold.otf);
+}
+
 a {
   color: rgba(15, 24, 6, 0.8);
   text-decoration: none;
