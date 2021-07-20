@@ -114,3 +114,19 @@
         width: 100%;
     }
 }
+
+@media screen and (max-height: 700px) {
+    .Intro {
+        margin: 1.5vw;
+    }
+
+    .ProjectsDisplayCase {
+        width: 90%;
+    }
+
+    .Project {
+        margin: 2vw auto;
+        height: 50%;
+        width: 100%;
+    }
+}
