@@ -10,8 +10,6 @@ const Projects = () => {
           <div className={styles.InnerCoastline}>
             <div className={styles.Continent}>
               Team Projects
-              {/* <span className={styles.Text1}>Team Projects</span> */}
-              {/* <span className={styles.Text2}>Projects</span> */}
             </div>
           </div>
         </div>

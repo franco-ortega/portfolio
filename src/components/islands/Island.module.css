@@ -1,7 +1,7 @@
 .OuterCoastline {
     background: var(--outer-coastline);
     border-radius: 50%;
-    box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow);
+    box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow-color);
     height: fit-content;
     padding: 0.4vw;
 
@@ -26,23 +26,20 @@
 .Island {
     background: var(--continent);
     border-radius: inherit;
-    padding: 1.25vw 1.25vw;
+    padding: 1.25vw 0.75vw;
     height: fit-content;
     width: fit-content;
-    font-family: var(--continent-font);
-    /* font-weight: bold; */
+    font-size: 1.25vw;
 }
-
-.Title {
-    /* font-family: var(--continent-font-bold); */
-    /* font-size: 2vw; */
-}
-
 
 @media screen and (max-width: 900px) {
     .OuterCoastline {
-        box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow);
+        box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow-color);
         padding: 0.8vw;
+    }
+
+    .OuterCoastline:hover {
+        transform: scale(1);
     }
     
     .InnerCoastline {
@@ -58,7 +55,7 @@
 
 @media screen and (max-width: 500px) {
     .OuterCoastline {
-        box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow);
+        box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow-color);
         padding: 0.8vw;
     }
     
@@ -68,7 +65,6 @@
 
     .Island {
         padding: 4vw 2.5vw;
-        font-size: 3.5vw;
-        font-weight: bold;
+        font-size: 3.75vw;
     }
 }

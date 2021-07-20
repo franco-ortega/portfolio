@@ -8,7 +8,6 @@ const Island = ({ title, url }) => {
       <div className={styles.InnerCoastline}>
         <div className={styles.Island}>
           <a
-            className={styles.Title}
             href={url}
             rel="noreferrer"
             target="_blank"

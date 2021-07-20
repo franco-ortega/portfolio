@@ -25,7 +25,7 @@
   --lightestblue: rgb(21, 103, 209);
 
   --coastline-box-shadow: 0vw 0vw 2vw 1.5vw;
-  --coastline-shadow: darkblue;
+  --coastline-shadow-color: darkblue;
   --outer-coastline: rgb(87, 171, 223);
   --outer-coastline-padding: 0.75vw;
   --inner-coastline-border-width: 0.15vw;

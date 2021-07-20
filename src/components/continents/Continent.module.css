@@ -10,7 +10,7 @@
 
 .OuterCoastline {
     background: var(--outer-coastline);
-    box-shadow: 0vw 0vw 2vw 2vw var(--coastline-shadow);
+    box-shadow: 0vw 0vw 2vw 2vw var(--coastline-shadow-color);
     padding: 0.75vw;
 }
 

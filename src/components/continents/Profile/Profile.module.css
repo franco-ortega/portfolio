@@ -8,12 +8,17 @@
 
 .OuterCoastline {
     border-radius: 120vw 70vw 95vw 90vw;
-    box-shadow: var(--coastline-box-shadow) var(--coastline-shadow);
+    box-shadow: var(--coastline-box-shadow) var(--coastline-shadow-color);
     padding: var(--outer-coastline-padding);
     width: fit-content;
     margin: 0 2vw 0 0;
 
-    background: linear-gradient(90deg, var(--outer-coastline), rgb(77, 152, 199), rgb(106, 178, 223), rgb(74, 146, 190));
+    background: linear-gradient(
+        90deg,
+        var(--outer-coastline),
+        rgb(77, 152, 199),
+        rgb(106, 178, 223),
+        rgb(74, 146, 190));
     background-blend-mode: soft-light;
     background-size: 15% 15%;
 
@@ -75,7 +80,7 @@
     justify-content: center;
     padding-right: 2.25vw;
     font-family: var(--continent-font-bold);
-    font-size: 9vw;
+    font-size: 8vw;
 }
 
 @media screen and (max-width: 900px) {
@@ -91,7 +96,7 @@
     .Continent {
         height: 15vh;
         width: 33vw;
-        font-size: 7vw;
+        font-size: 11vw;
       }
 }
 
@@ -104,6 +109,6 @@
     .Continent {
         height: 10vh;
         width: 37vw;
-        font-size: 8.75vw;
+        font-size: 13vw;
       }
 }
