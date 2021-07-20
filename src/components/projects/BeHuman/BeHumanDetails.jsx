@@ -30,7 +30,7 @@ const BeHumanDetails = () => {
           <span className={styles.Extension}>
             <a href="https://marketplace.visualstudio.com/items?itemName=not-bot.be-human" rel="noreferrer" target="_blank" className={styles.LinkText}>Extension</a>
           </span>
-          <span>| |</span>
+          <span>|</span>
           <span className={styles.GitHub}>
             <a href="https://github.com/alchemy-be-human" rel="noreferrer" target="_blank" className={styles.LinkText}>GitHub</a>
           </span>

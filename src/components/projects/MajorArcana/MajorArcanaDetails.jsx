@@ -28,7 +28,7 @@ const MajorArcanaDetails = () => {
           <span className={styles.Extension}>
             <a href="https://mystechal-divinators.github.io/project-week-tarot-divinators/" rel="noreferrer" target="_blank" className={styles.LinkText}>Website</a>
           </span>
-          <span>| |</span>
+          <span>|</span>
           <span className={styles.GitHub}>
             <a href="https://github.com/Mystechal-Divinators/project-week-tarot-divinators" rel="noreferrer" target="_blank" className={styles.LinkText}>GitHub</a>
           </span>
