@@ -22,18 +22,26 @@
 }
 
 .Title {
-    font-size: var(--popup-title);
+    font-family: var(--continent-font-bold);
+    font-size: 5vw;
 }
 
 .Content {
     width: 80%;
     margin: 2vw;
+    font-family: var(--main-font);
     font-size: var(--popup-text);
     text-align: justify;
 }
 
+.FantasyLand {
+    font-family: var(--continent-font-bold);
+    font-size: 2vw;
+}
+
 .DisplayCaseText {
     margin-bottom: 1vw;
+    font-family: var(--main-font);
     font-size: var(--popup-text);
 }
 
@@ -99,8 +107,6 @@
     background-position: 25% 10%;
 }
 
-
-
 @media screen and (max-width: 1200px) {
     .CartographyDetails {
         top: 1.5%;
@@ -148,6 +154,10 @@
         margin: 4vw;
     }
 
+    .FantasyLand {
+        font-size: 3vw;
+    }
+
     .MapsDisplayCase {
         width: 80%;
         margin-top: 5vw;
@@ -173,6 +183,10 @@
     
     .Content {
         margin: 8vw;
+    }
+
+    .FantasyLand {
+        font-size: 4.5vw;
     }
 
     .DisplayCaseText {
