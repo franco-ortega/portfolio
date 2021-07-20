@@ -43,7 +43,7 @@ export const continentData = {
     },
     outerCoastline: {
       background: 'var(--outer-coastline)',
-      boxShadow: '0vw 0vw 2vw 2vw var(--coastline-shadow)',
+      boxShadow: '0vw 0vw 2vw 2vw var(--coastline-shadow-color)',
       borderRadius: '520vw 270vw 495vw 90vw',
       padding: '0.75vw',
       display: 'flex',

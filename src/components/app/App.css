@@ -5,6 +5,16 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+@font-face {
+  font-family: 'Tangerine';
+  src: url(../../fonts/tangerine/Tangerine_Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Tangerine Bold';
+  src: url(../../fonts/tangerine/Tangerine_Bold.ttf);
+}
+
 :root {
   --bordercolor: goldenrod;
 
@@ -15,7 +25,7 @@
   --lightestblue: rgb(21, 103, 209);
 
   --coastline-box-shadow: 0vw 0vw 2vw 1.5vw;
-  --coastline-shadow: darkblue;
+  --coastline-shadow-color: darkblue;
   --outer-coastline: rgb(87, 171, 223);
   --outer-coastline-padding: 0.75vw;
   --inner-coastline-border-width: 0.15vw;
@@ -24,6 +34,8 @@
   --continent-border: brown;
   --continent: tan;
   --continent-padding: 1vw;
+  --continent-font: 'Tangerine';
+  --continent-font-bold: 'Tangerine Bold';
 
   --popup-title: 3.25vw;
   --popup-header-text: 1.5vw;

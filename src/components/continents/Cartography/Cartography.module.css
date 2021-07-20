@@ -8,10 +8,15 @@
 
 .OuterCoastline {
     border-radius: 60% 40% 60% 35%;
-    box-shadow: var(--coastline-box-shadow) var(--coastline-shadow);
+    box-shadow: var(--coastline-box-shadow) var(--coastline-shadow-color);
     padding: var(--outer-coastline-padding);
 
-    background: linear-gradient(90deg, var(--outer-coastline), rgb(77, 152, 199), rgb(106, 178, 223), rgb(74, 146, 190));
+    background: linear-gradient(
+        90deg,
+        var(--outer-coastline), 
+        rgb(77, 152, 199), 
+        rgb(106, 178, 223), 
+        rgb(74, 146, 190));
     background-blend-mode: soft-light;
     background-size: 15% 15%;
 
@@ -71,11 +76,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2vw;
-    font-weight: bold;
+    font-family: var(--continent-font);
 }
 
 .Title {
+    font-family: var(--continent-font-bold);
+    font-size: 3.5vw;
     transform: rotate(-7.5deg);
 }
 
@@ -88,7 +94,10 @@
     .Continent {
         height: 10vh;
         width: 25vw;
-        font-size: 3.5vw;
+    }
+
+    .Title {
+        font-size: 6vw;
     }
 }
 
@@ -101,6 +110,9 @@
     .Continent {
         height: 8vh;
         width: 32vw;
-        font-size: 4.5vw;
+    }
+
+    .Title {
+        font-size: 7.5vw;
     }
 }

@@ -8,7 +8,7 @@
 
 .OuterCoastline {
     border-radius: 84vw 75vw 51vw 38vw;
-    box-shadow: var(--coastline-box-shadow) var(--coastline-shadow);
+    box-shadow: var(--coastline-box-shadow) var(--coastline-shadow-color);
     padding: var(--outer-coastline-padding);
 
     background: linear-gradient(90deg, var(--outer-coastline), rgb(77, 152, 199), rgb(106, 178, 223), rgb(74, 146, 190));
@@ -62,7 +62,7 @@
         rgb(206, 165, 112)
     );
     background-blend-mode: soft-light;
-    background-size: 10% 10%;
+    background-size: 115% 115%;
     border: .25vw solid var(--continent-border);
     border-radius: inherit;
     height: 22vh;
@@ -72,29 +72,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 3.5vw;
-    font-weight: bold;
+    font-family: var(--continent-font-bold);
+    font-size: 6vw;
     text-align: center;
-}
-
-.Text1,
-.Text2 {
-    background: linear-gradient(
-        60deg,
-        var(--continent),
-        var(--continent),
-        rgb(206, 165, 112)
-    );
-    background-blend-mode: soft-light;
-    background-size: 115% 115%;
-    padding: 0 .25vw;
-}
-
-.Text1 {
-    border-radius: 1vw 1vw 0 0;
-}
-.Text2 {
-    border-radius: 1vw;
+    line-height: 75%;
+    box-shadow: 0px 0px 1.5vw .5vw rgb(143, 70, 70) inset;
 }
 
 @media screen and (max-width: 900px) {
@@ -106,7 +88,7 @@
     .Continent {
         height: 15vh;
         width: 34vw;
-        font-size: 5.5vw;
+        font-size: 9vw;
       }
 }
 
@@ -119,6 +101,6 @@
     .Continent {
         height: 11vh;
         width: 37vw;
-        font-size: 6.5vw;
+        font-size: 10vw;
       }
 }

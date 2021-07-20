@@ -8,10 +8,15 @@
   
 .OuterCoastline {
     border-radius: 520vw 270vw 495vw 190vw;
-    box-shadow: var(--coastline-box-shadow) var(--coastline-shadow);
+    box-shadow: var(--coastline-box-shadow) var(--coastline-shadow-color);
     padding: var(--outer-coastline-padding);
 
-    background: linear-gradient(90deg, var(--outer-coastline), rgb(77, 152, 199), rgb(106, 178, 223), rgb(74, 146, 190));
+    background: linear-gradient(
+      90deg,
+      var(--outer-coastline),
+      rgb(77, 152, 199),
+      rgb(106, 178, 223),
+      rgb(74, 146, 190));
     background-blend-mode: soft-light;
     background-size: 15% 15%;
 
@@ -53,14 +58,15 @@
   
 .Continent {
   background: linear-gradient(
-        20deg,
-        var(--continent),
+        160deg,
         rgb(206, 165, 112),
-        rgb(187, 168, 142),
-        rgb(150, 134, 114)
+        rgb(210, 180, 140, 75%),
+        var(--continent),
+        rgb(206, 165, 112, 75%),
+        rgb(206, 165, 112, 75%)
     );
     background-blend-mode: soft-light;
-    background-size: 3% 3%;
+    background-size: 115% 115%;
     border: .25vw solid var(--continent-border);
     border-radius: inherit;
     height: 15vh;
@@ -68,22 +74,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3vw;
-    font-weight: bold;
-}
-
-.Text1 {
-    background: linear-gradient(
-        160deg,
-        rgb(210, 180, 140, 75%),
-        rgb(206, 165, 112, 75%),
-        rgb(187, 168, 142, 75%),
-        rgb(206, 165, 112, 75%)
-    );
-    background-blend-mode: soft-light;
-    background-size: 115% 115%;
-    border-radius: 1vw;
-    padding: 0 .25vw;
+    font-family: var(--continent-font-bold);
+    font-size: 6.5vw;
 }
 
 @media screen and (max-width: 900px) {
@@ -95,7 +87,7 @@
   .Continent {
     height: 10vh;
     width: 25vw;
-    font-size: 5vw;
+    font-size: 8.5vw;
   }
 }
 
@@ -108,6 +100,6 @@
   .Continent {
     height: 8vh;
     width: 30vw;
-    font-size: 6vw;
+    font-size: 10vw;
   }
 }
