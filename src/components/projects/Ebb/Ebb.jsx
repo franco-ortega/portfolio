@@ -7,7 +7,7 @@ const Ebb = () => {
     <section className={styles.Ebb}>
       <h2 className={styles.Title}>Ebb</h2>
       <div className={styles.Summary}>
-      Chrome extension that reduces on-screen movement to increase website accessibility for users with sensory conditions.
+        Chrome extension that reduces on-screen movement to increase website accessibility for users with sensory conditions.
       </div>
       <OpenDetails path={'ebb'} />
     </section>

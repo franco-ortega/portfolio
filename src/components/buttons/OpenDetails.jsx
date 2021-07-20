@@ -11,11 +11,13 @@ const OpenDetails = ({ path }) => {
   };
 
   return (
-    <button
-      aria-label="Open project details"
-      className={styles.OpenDetails}
-      onClick={onOpenClick}
-    >Click for project details.</button>
+    <div className={styles.OpenDetails}>
+      <button
+        aria-label="Open project details"
+        className={styles.OpenDetailsButton}
+        onClick={onOpenClick}
+      >Click for project details.</button>
+    </div>
   );
 };
 
