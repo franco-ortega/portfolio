@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 @font-face {
@@ -37,13 +36,15 @@
   --continent-font: 'Tangerine';
   --continent-font-bold: 'Tangerine Bold';
 
+  --main-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
   --popup-title: 3.25vw;
   --popup-header-text: 1.5vw;
   --popup-text: 1.25vw;
 
   --project-summary-title: 1.25vw;
   --project-summary-text: 1.25vw;
-  --project-summary-button-text: 1.15vw;
+  --project-summary-button-text: 1vw;
 
   --project-details-title: 3vw;
   --project-details-tech: 1.5vw;

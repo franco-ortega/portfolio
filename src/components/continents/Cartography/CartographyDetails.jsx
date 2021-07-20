@@ -13,7 +13,7 @@ const CartographyDetails = () => {
         </p>
       </header>
       <section className={styles.Content}>
-              The inspiration for this site came from my longtime love of fantasy cartography. From Middle Earth to Westeros to the Grishaverse, I&apos;ve always loved flipping to the maps in fantasy novels whenever a new location is mentioned, and in recent years, I&apos;ve started creating my own worlds with pen and paper. More maps can be viewed at <a href="https://www.instagram.com/reefwoodcartography/" target="_blank" rel="noreferrer">@ReefwoodCartography on Instagram</a>.
+              The inspiration for this site came from my longtime love of fantasy cartography. From <span className={styles.FantasyLand}>Middle Earth</span> to <span className={styles.FantasyLand}>Westeros</span> to the <span className={styles.FantasyLand}>Grishaverse</span>, I&apos;ve always loved flipping to the maps in fantasy novels whenever a new location is mentioned, and in recent years, I&apos;ve started creating my own worlds with pen and paper. More maps can be viewed at <a href="https://www.instagram.com/reefwoodcartography/" target="_blank" rel="noreferrer">@ReefwoodCartography on Instagram</a>.
       </section>
       <section className={styles.DisplayCaseText}>Click image to view full map.</section>
       <section className={styles.MapsDisplayCase}>

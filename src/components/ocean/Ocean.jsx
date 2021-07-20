@@ -2,14 +2,14 @@ import React from 'react';
 import Projects from '../continents/Projects/Projects';
 import Profile from '../continents/Profile/Profile';
 import Resume from '../continents/Resume/Resume';
-import Scale from '../mapElements/Scale';
+import Cartography from '../continents/Cartography/Cartography';
+import IslandChain from '../islands/IslandChain';
 import BorderCorner from '../mapElements/BorderCorner';
 import { borderCornerData } from '../mapElements/borderCornerData';
-import styles from './Ocean.module.css';
 import Legend from '../mapElements/Legend';
-import IslandChain from '../islands/IslandChain';
+import Scale from '../mapElements/Scale';
 import Compass from '../mapElements/Compass';
-import Cartography from '../continents/Cartography/Cartography';
+import styles from './Ocean.module.css';
 
 const Ocean = () => {
   return (

@@ -5,11 +5,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: serif;
 }
 
 .Legend {
     background: rgb(245, 245, 101);
-    background: linear-gradient(125deg, rgb(245, 245, 80), rgb(245, 245, 148), rgb(245, 245, 120), rgb(248, 248, 93), rgb(245, 245, 148));
+    background: linear-gradient(
+        125deg,
+        rgb(245, 245, 80),
+        rgb(245, 245, 148),
+        rgb(245, 245, 120),
+        rgb(248, 248, 93),
+        rgb(245, 245, 148));
     background-size: 100% 100%;
 
     border: solid 0.5vw rgb(10, 10, 10);
@@ -39,7 +46,6 @@
 }
 
 @media screen and (max-width: 900px) {
-
     .LegendContainer {
         grid-column: 9 / 13;
         grid-row: 2 / 6;
@@ -67,7 +73,6 @@
 }
 
 @media screen and (max-width: 500px) {
-
     .LegendContainer {
         grid-column: 8 / 13;
         grid-row: 5 / 11;
