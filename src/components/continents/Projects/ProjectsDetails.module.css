@@ -4,6 +4,7 @@
     border-radius: 2vw;
     height: 96vh;
     width: 60vw;
+    padding-top: 1.5vw;
     position: absolute;
     top: 2%;
     left: 20vw;
@@ -14,9 +15,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-
-    /* font-family: var(--main-font); */
-    /* font-family: sans-serif; */
 }
 
 .Header {
@@ -78,6 +76,10 @@
         left: 0%;
         height: 100vh;
         width: 100vw;
+    }
+
+    .Header {
+        /* margin-top: 5vw; */
     }
 
     .Intro {

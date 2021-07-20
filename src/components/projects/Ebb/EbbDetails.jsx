@@ -27,11 +27,11 @@ const EbbDetails = () => {
           <span className={styles.Extension}>
             <a href="https://chrome.google.com/webstore/detail/ebb/madmcmnfddadihndjcofieeeenbndlil" rel="noreferrer" target="_blank" className={styles.LinkText}>Extension</a>
           </span>
-          <span>| |</span>
+          <span>|</span>
           <span className={styles.Demo}>
             <a href="https://www.joincolab.io/projects/ebb" rel="noreferrer" target="_blank" className={styles.LinkText}>Demo</a>
           </span>
-          <span>| |</span>
+          <span>|</span>
           <span className={styles.GitHub}>
             <a href="https://github.com/Co-Lab-You-Belong-in-Tech/ebb-extension" rel="noreferrer" target="_blank" className={styles.LinkText}>GitHub</a>
           </span>
