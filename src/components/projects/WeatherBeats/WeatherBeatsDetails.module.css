@@ -73,6 +73,12 @@
     }
 }
 
+@media screen and (max-width: 1100px) and (max-height: 1400px) {
+    .WeatherBeatsDetails {
+        background-size: cover;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .WeatherBeatsDetails {
         background-position: 40% 0%;
