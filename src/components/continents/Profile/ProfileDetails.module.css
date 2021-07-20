@@ -9,6 +9,7 @@
     left: 20vw;
     z-index: 1;
     overflow: auto;
+    font-family: var(--main-font);
 }
 
 .Header {
@@ -79,6 +80,10 @@
 
     .Bio {
         margin: 2vw 4vw;
+    }
+
+    .BioParagraph {
+        padding-bottom: 1.5vw;
     }
 }
 
