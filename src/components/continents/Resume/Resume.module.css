@@ -53,14 +53,15 @@
   
 .Continent {
   background: linear-gradient(
-        20deg,
-        var(--continent),
+        160deg,
         rgb(206, 165, 112),
-        rgb(187, 168, 142),
-        rgb(150, 134, 114)
+        rgb(210, 180, 140, 75%),
+        var(--continent),
+        rgb(206, 165, 112, 75%),
+        rgb(206, 165, 112, 75%)
     );
     background-blend-mode: soft-light;
-    background-size: 3% 3%;
+    background-size: 115% 115%;
     border: .25vw solid var(--continent-border);
     border-radius: inherit;
     height: 15vh;
@@ -68,22 +69,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3vw;
-    font-weight: bold;
-}
-
-.Text1 {
-    background: linear-gradient(
-        160deg,
-        rgb(210, 180, 140, 75%),
-        rgb(206, 165, 112, 75%),
-        rgb(187, 168, 142, 75%),
-        rgb(206, 165, 112, 75%)
-    );
-    background-blend-mode: soft-light;
-    background-size: 115% 115%;
-    border-radius: 1vw;
-    padding: 0 .25vw;
+    font-family: var(--continent-font-bold);
+    font-size: 6.75vw;
 }
 
 @media screen and (max-width: 900px) {

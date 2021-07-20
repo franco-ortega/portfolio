@@ -13,7 +13,7 @@
 }
 
 .OuterCoastline:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .InnerCoastline {
@@ -26,10 +26,16 @@
 .Island {
     background: var(--continent);
     border-radius: inherit;
-    padding: 1.25vw 0.75vw;
+    padding: 1.25vw 1.25vw;
     height: fit-content;
     width: fit-content;
-    font-weight: bold;
+    font-family: var(--continent-font);
+    /* font-weight: bold; */
+}
+
+.Title {
+    /* font-family: var(--continent-font-bold); */
+    /* font-size: 2vw; */
 }
 
 
