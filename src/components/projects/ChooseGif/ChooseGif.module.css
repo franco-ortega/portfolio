@@ -16,37 +16,17 @@
 }
 
 .Title {
-    height: 25%;
-    /* padding: 1.5vw 0; */
+    height: 30%;
     display: flex;
     flex-direction: column;
-    /* align-content: center; */
     justify-content: center;
-    /* border: dashed white 1px; */
 }
 
 .Summary {
-    /* height: 55%;
-    padding: 0vw 2vw;
-    display: flex;
-    align-items: flex-start;
-    font-size: var(--project-summary-text);
-    text-align: justify; */
-
-    height: 55%;
+    height: 50%;
     padding: .5vw 1.25vw;
-    /* display: flex; */
-    /* align-items: center; */
     font-size: var(--project-summary-text);
     text-align: justify;
-    /* border: dashed white 1px; */
-}
-
-.DetailsButton {
-    background: lightcyan;
-    border-radius: 1vw;
-    padding: 0.25vw 0.5vw;
-    font-size: var(--project-summary-button-text);
 }
 
 @media screen and (max-width: 1200px) {
@@ -59,7 +39,7 @@
     }    
 }
 
-@media screen and (max-width: 900px) and (orientation: portrait) {
+@media screen and (max-width: 900px) {
     .ChooseGif {
         border-radius: 1.5vw;
     }
@@ -71,14 +51,9 @@
     .Summary {
         height: 55%;
     }
-
-    .DetailsButton {
-        border-radius: 1.5vw;
-        padding: 0.3vw 0.75vw;
-    }
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 500px) {
     .ChooseGif {
         border-radius: 3vw;
     }
@@ -93,10 +68,5 @@
     .Summary {
         height: 55%;
         padding: 1vw 5vw;
-    }
-
-    .DetailsButton {
-        border-radius: 3vw;
-        padding: 0.5vw 1.5vw;
     }
 }

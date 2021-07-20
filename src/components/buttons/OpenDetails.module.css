@@ -1,23 +1,18 @@
 .OpenDetails {
-    text-align: center;
-}
-
-.OpenDetailsButton {
     background: lightcyan;
     border-radius: 1vw;
-    margin: 2vw 0;
     padding: 0.25vw 0.75vw;
     font-size: var(--project-summary-button-text);
 }
 
 @media screen and (max-width: 1200px) {
-    .OpenDetailsButton {
+    .OpenDetails {
         border-radius: 2.5vw;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .OpenDetailsButton {
+    .OpenDetails {
         border-radius: 2.5vw;
         padding: 0.4vw 1.5vw;
     }
