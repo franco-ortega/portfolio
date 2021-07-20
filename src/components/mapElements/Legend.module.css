@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .Legend {
@@ -19,11 +19,12 @@
         rgb(245, 245, 148));
     background-size: 100% 100%;
 
-    border: solid 0.5vw rgb(10, 10, 10);
+    border: thick solid rgb(10, 10, 10);
+    box-shadow: 0 0 .5vw .15vw gold;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 25vw;
+    height: fit-content;
     width: 25vw;
     padding: 1vw;
 }
@@ -35,30 +36,44 @@
 .Tech {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    padding-top: .5vw;
     font-size: 1.25vw;
     overflow: auto;
+}
+
+.TechEntry {
+    margin: .35vw 0;
 }
 
 .Bold {
     font-weight: bold;
 }
 
+@media screen and (max-width: 1200px) {
+    .Title {
+        font-size: 2.4vw;
+    }
+    
+    .Tech {
+        font-size: 1.5vw;
+    }
+
+    .TechEntry {
+        margin: .45vw 0;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .LegendContainer {
-        grid-column: 9 / 13;
-        grid-row: 2 / 6;
+        grid-column: 8 / 13;
+        grid-row: 2 / 7;
         align-items: flex-start;
-        margin: 1vw;
+        padding-top: 4vw;
     }
 
     .Legend {
         border: solid 0.75vw rgb(10, 10, 10);
-        height: 30vh;
-        width: 35vw;
-        padding: 1vw;
-
+        width: 38vw;
         overflow: auto;
     }
 
@@ -75,29 +90,28 @@
 @media screen and (max-width: 500px) {
     .LegendContainer {
         grid-column: 8 / 13;
-        grid-row: 5 / 11;
+        grid-row: 4 / 14;
 
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-end;
         margin: 1vw;
+        display: flex;
     }
 
     .Legend {
         border: solid 1vw rgb(10, 10, 10);
-        height: 30vh;
+        height: 33vh;
         width: 36vw;
-        padding: 1vw;
-
         overflow: auto;
     }
 
     .Title {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .Tech {
         font-size: 3vw;
-        justify-content: space-between;
+    }
+
+    .TechEntry {
+        margin: .75vw 0;
     }
 }
