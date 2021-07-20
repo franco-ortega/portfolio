@@ -7,7 +7,7 @@ const WeatherBeats = () => {
     <section className={styles.WeatherBeats}>
       <h2 className={styles.Title}>WeatherBeats</h2>
       <div className={styles.Summary}>
-        WeatherBeats provides a music playlist based on the weather. Users may customize their experience by selecting a preferred location, weather, or genre.
+        Provides a music playlist based on the weather. Users may customize their experience by selecting a preferred location, weather, or genre.
       </div>
       <OpenDetails path={'weatherbeats'} />
     </section>

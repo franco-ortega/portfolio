@@ -7,7 +7,7 @@ const BeHuman = () => {
     <section className={styles.BeHuman}>
       <h2 className={styles.Title}>beHuman</h2>
       <div className={styles.Summary}>
-        beHuman is a VSCode extension that prompts users to take breaks with an hourly pop-up that provides wellness tips and movement videos.
+        VSCode extension that prompts users to take breaks with an hourly pop-up that provides wellness tips and movement videos.
       </div>
       <OpenDetails path={'behuman'} />
     </section>
