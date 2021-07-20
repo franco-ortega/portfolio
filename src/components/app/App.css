@@ -35,12 +35,11 @@
   --continent-padding: 1vw;
   --continent-font: 'Tangerine';
   --continent-font-bold: 'Tangerine Bold';
-
-  --main-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  --main-font: Arial, sans-serif;
 
   --popup-title: 3.25vw;
   --popup-header-text: 1.5vw;
-  --popup-text: 1.25vw;
+  --popup-text: 1.3vw;
 
   --project-summary-title: 1.25vw;
   --project-summary-text: 1.25vw;

@@ -17,6 +17,7 @@
     flex-direction: column;
     align-items: center;
 
+    font-family: var(--main-font);
     text-align: center;
 
     overflow: auto;

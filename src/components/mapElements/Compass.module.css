@@ -1,34 +1,29 @@
 .Compass {
-    height: 100%;
     grid-column: 10 / 13;
     grid-row: 6 / 9;
-
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
-
     align-items: center;
 }
 
-
-.GridItem {
-    height: 100%;
-}
-
-
-.OuterCircle {
+.OuterRing {
     grid-column: 3 / 8;
     grid-row: 2 / 8;
 
-    background: linear-gradient(25deg, silver, green, rgb(245, 245, 120), silver, green);
+    background: linear-gradient(
+        25deg,
+        silver,
+        green,
+        rgb(245, 245, 120),
+        silver,
+        green);
     background-size: 30% 30%;
-
     border: 0.3vw solid black;
     border-radius: 50%;
 
     height: 7.5vw;
     width: 7.5vw;
-
     margin-left: 2.35vw;
 
     display: flex;
@@ -36,17 +31,20 @@
     justify-content: center;
 }
 
-.MysteryCircle {
-
-    background: linear-gradient(135deg, var(--middleblue), var(--lightestblue), var(--lighterblue), var(--lightestblue));
+.OuterCircle {
+    background: linear-gradient(
+        135deg,
+        var(--middleblue),
+        var(--lightestblue),
+        var(--lighterblue),
+        var(--lightestblue));
     background-blend-mode: soft-light;
     background-size: 100% 100%;
 
     animation: gradient 10s ease infinite;
     -moz-animation: gradient 10s ease infinite;
     -webkit-animation: gradient 10s ease infinite;
-  
-  
+
     border: 0.3vw solid black;
     border-radius: 50%;
     height: 6.25vw;
@@ -59,54 +57,53 @@
     50% { background-position: 100% 50%; }
     75% { background-position: 50% 75%; }
     100% { background-position: 0 50%; }
-  }
+}
     
-  @-moz-keyframes gradient {
+@-moz-keyframes gradient {
     0% { background-position: 0 50%; }
     25% { background-position: 50% 0; }
     50% { background-position: 100% 50%; }
     75% { background-position: 50% 75%; }
     100% { background-position: 0 50%; }
-  }
+}
     
-  @-webkit-keyframes gradient {
+@-webkit-keyframes gradient {
     0% { background-position: 0 50%; }
     25% { background-position: 50% 0; }
     50% { background-position: 100% 50%; }
     75% { background-position: 50% 75%; }
     100% { background-position: 0 50%; }
-  }
-  
+}
 
-
-.CompassCircle {
+.InnerRing {
     grid-column: 4 / 7;
     grid-row: 3 / 7;
-    background: linear-gradient(125deg, silver, green, rgb(245, 245, 120), silver);
+    background: linear-gradient(
+        125deg,
+        silver,
+        green,
+        rgb(245, 245, 120),
+        silver);
     background-size: 50% 50%;
-    border: solid 0.4vw black;
+    border:  0.4vw solid black;
     border-radius: 50%;
     
     height: 4.5vw;
     width: 4.5vw;
-    align-self: center;
+    margin-left: 0.75vw;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    margin-left: 0.75vw;
-
-    z-index: 1;
 }
 
-.CompassCenter {
-    border: solid 0.35vw black;
-    border-radius: 50%;
-    height: 2vw;
-    width: 2vw;
-
-    background: linear-gradient(135deg, var(--middleblue), var(--lightestblue), var(--lighterblue), var(--lightestblue));
+.InnerCircle {
+    background: linear-gradient(
+        135deg,
+        var(--middleblue),
+        var(--lightestblue),
+        var(--lighterblue),
+        var(--lightestblue));
     background-blend-mode: soft-light;
     background-size: 100% 100%;
 
@@ -114,77 +111,69 @@
     -moz-animation: gradient 10s ease infinite;
     -webkit-animation: gradient 10s ease infinite;
 
-    
-
+    border: 0.35vw solid black;
+    border-radius: 50%;
+    height: 2vw;
+    width: 2vw;
 }
-
-
 
 .TopTriangle {
     grid-column: 4 / 6;
     grid-row: 2 / 5;
-
-    height: 100%;
-    width: 100%;
-    
     border-top: 2vw solid transparent;
     border-right: 3vw solid transparent;
-    border-bottom: 9vw solid rgb(245, 245, 120);
+    border-bottom: 8vw solid rgb(245, 245, 120);
     border-left: 3vw solid transparent;
-}
-
-.InnerTriangle {
-    grid-column: 4 / 6;
-    grid-row: 3 / 5;
-
     height: 100%;
     width: 100%;
-
-    border-top: 1vw solid transparent;
-    border-right: 3vw solid transparent;
-    border-bottom: 7vw solid silver;
-    border-left: 3vw solid transparent;
-
 }
-
 
 .BottomTriangle {
     grid-column: 4 / 6;
     grid-row: 5 / 8;
-
-    height: 100%;
-    width: 100%;
-    
-    border-top: 9vw solid rgb(245, 245, 120);
+    border-top: 8vw solid rgb(245, 245, 120);
     border-right: 3vw solid transparent;
     border-bottom: 2vw solid transparent;
     border-left: 3vw solid transparent;
+    height: 100%;
+    width: 100%;
 }
 
 .LeftTriangle {
     grid-column: 2 / 6;
     grid-row: 4 / 6;
-
-    height: 100%;
-    width: 100%;
-    
     border-top: 3vw solid transparent;
     border-right: 9vw solid rgb(245, 245, 120);
     border-bottom: 3vw solid transparent;
     border-left: 2vw solid transparent;
+    height: 100%;
+    width: 100%;
 }
 
 .RightTriangle {
     grid-column: 4 / 8;
     grid-row: 4 / 6;
-
-    height: 100%;
-    width: 100%;
-    
     border-top: 3vw solid transparent;
     border-right: 2vw solid transparent;
     border-bottom: 3vw solid transparent;
     border-left: 9vw solid rgb(245, 245, 120);
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .TopTriangle {
+        border-bottom: 7vw solid rgb(245, 245, 120);
+    }
+
+    .BottomTriangle {
+        border-top: 7vw solid rgb(245, 245, 120);
+    }
+
+    .LeftTriangle,
+    .RightTriangle {
+        height: 50%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -198,4 +187,12 @@
         grid-column: 10 / 13;
         grid-row: 22 / 25;
         }
+
+    .TopTriangle {
+        border-bottom: 6.5vw solid rgb(245, 245, 120);
+    }
+    
+    .BottomTriangle {
+        border-top: 6.5vw solid rgb(245, 245, 120);
+    }
 }

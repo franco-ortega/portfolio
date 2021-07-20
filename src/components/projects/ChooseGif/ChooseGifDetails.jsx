@@ -30,7 +30,7 @@ const ChooseGifDetails = () => {
           <span className={styles.Extension}>
             <a href="https://choose-gif-fe.netlify.app/" rel="noreferrer" target="_blank" className={styles.LinkText}>Website</a>
           </span>
-          <span>| |</span>
+          <span>|</span>
           <span className={styles.GitHub}>
             <a href="https://github.com/Choose-Gif" rel="noreferrer" target="_blank" className={styles.LinkText}>GitHub</a>
           </span>
