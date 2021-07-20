@@ -115,7 +115,7 @@
     }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-width: 400px) and (max-height: 700px) {
     .Intro {
         margin: 1.5vw;
     }
