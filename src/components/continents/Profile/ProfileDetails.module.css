@@ -7,7 +7,7 @@
     position: absolute;
     top: 2%;
     left: 20vw;
-    z-index: 1;
+    /* z-index: 1; */
     font-family: var(--main-font);
     overflow: auto;
 }
@@ -38,9 +38,9 @@
 }
 
 .Bio {
-    padding: 1vw;
     height: 55%;
     margin: .75vw 2vw;
+    padding: 1vw;
     font-size: var(--popup-text);
     text-align: justify;
     overflow: auto;

@@ -50,7 +50,7 @@
   --project-details-text: 1.45vw;
   --project-details-links: 1.5vw;
 
-  --map-title: 3vw;
+  --map-title: 5vw;
 }
 
 a {
@@ -77,7 +77,7 @@ a:hover {
     --project-details-text: 1.7vw;
     --project-details-links: 1.75vw;
 
-    --map-title: 3.5vw;
+    --map-title: 5.5vw;
   }
 }
 
@@ -100,7 +100,7 @@ a:hover {
     --project-details-text: 3.5vw;
     --project-details-links: 3.75vw;
 
-    --map-title: 7vw;
+    --map-title: 15vw;
   }
 }
 

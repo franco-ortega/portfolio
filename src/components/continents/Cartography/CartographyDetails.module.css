@@ -7,11 +7,12 @@
     position: absolute;
     top: 2%;
     left: 20vw;
-    z-index: 1;
+    /* z-index: 1; */
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: var(--main-font);
 }
 
 .Header {
@@ -27,34 +28,36 @@
 }
 
 .Content {
-    width: 80%;
-    margin: 2vw;
-    font-family: var(--main-font);
+    /* width: 80%; */
+    /* margin: 2vw; */
+    margin: .75vw 2vw;
+    padding: 1vw;
     font-size: var(--popup-text);
     text-align: justify;
 }
 
 .FantasyLand {
     font-family: var(--continent-font-bold);
-    font-size: 2vw;
+    font-size: 2.25vw;
 }
 
 .DisplayCaseText {
-    margin-bottom: 1vw;
-    font-family: var(--main-font);
+    margin-bottom: .25vw;
     font-size: var(--popup-text);
 }
 
 .MapsDisplayCase {
-    margin-top: 2vw;
-    width: 85%;
+    /* margin-top: 1vw; */
+    /* width: 85%; */
+    margin: 0vw 2vw;
+    padding: 2vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2vw;
-    overflow: scroll;
+    /* overflow: auto; */
 }
 
 .April,
@@ -112,10 +115,6 @@
         height: 97vh;
     }
 
-    .Header {
-        margin-top: 4vw;
-    }
-
     .Title {
         font-size: 5vw;
     }
@@ -124,8 +123,8 @@
         margin-bottom: 1.5vw;
     }
 
-    .MapsDisplayCase {
-        width: 90%;
+    .DisplayCaseText {
+        margin-bottom: 1vw;
     }
 
     .April,
@@ -150,7 +149,7 @@
     }
 
     .Header {
-        margin-top: 8vw;
+        margin-top: 2vw;
     }
 
     .Title {
@@ -158,17 +157,16 @@
     }
     
     .Content {
-        margin: 4vw;
+        margin: 0 4vw;
     }
 
     .FantasyLand {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .MapsDisplayCase {
-        width: 80%;
-        margin-top: 5vw;
-        gap: 4vw;
+        margin-top: 2vw;
+        gap: 6vw;
     }
 
     .April,
@@ -184,23 +182,28 @@
 
 @media screen and (max-width: 500px) {
     .Header {
-        margin-top: 12vw;
+        margin-top: 4vw;
     }
 
     .Title {
-        font-size: 11vw;
+        font-size: 13vw;
     } 
     
     .Content {
-        margin: 8vw;
+        margin: 4vw;
     }
 
     .FantasyLand {
-        font-size: 4.5vw;
+        font-size: 5.25vw;
     }
 
     .DisplayCaseText {
         margin-bottom: 4vw;
+    }
+
+    .MapsDisplayCase {
+        margin-top: 2vw;
+        gap: 4vw;
     }
 
     .April,
