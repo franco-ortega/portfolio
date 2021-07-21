@@ -38,10 +38,12 @@
 }
 
 .Bio {
-    height: fit-content;
+    padding: 1vw;
+    height: 55%;
     margin: .75vw 2vw;
     font-size: var(--popup-text);
     text-align: justify;
+    overflow: auto;
 }
 
 .BioParagraph {
@@ -55,6 +57,7 @@
     }
 
     .Bio {
+        height: 60%;
         margin: .75vw 2vw;
     }
 }
@@ -66,6 +69,10 @@
         left: 0%;
         height: 100vh;
         width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .Photo {
@@ -79,6 +86,8 @@
     }
 
     .Bio {
+        border: none;
+        height: 70%;
         margin: 2vw 4vw;
     }
 
@@ -97,7 +106,7 @@
     .Contact {
         margin-top: 1.5vw;
     }
-    
+
     .BioParagraph {
         margin-bottom: 2vw;
     }
