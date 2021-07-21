@@ -156,7 +156,8 @@
     }
 
     .ProjectIcon {
+        width: 50vw;
         margin-top: 9vw;
-        width: 60vw;
+        margin-bottom: 5vw;
     }
 }
