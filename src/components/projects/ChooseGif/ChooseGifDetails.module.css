@@ -33,7 +33,7 @@
 }
 
 .ProjectTech {
-    margin: 1vw;
+    margin: 1vw 2vw;
     font-size: var(--project-details-tech);
 }
 
@@ -85,7 +85,7 @@
     }
 
     .ProjectIcon {
-        width: 18vw;
+        width: 16vw;
         margin-top: 2.5vw;
     }
 }

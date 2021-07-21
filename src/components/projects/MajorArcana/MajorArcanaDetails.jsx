@@ -17,10 +17,10 @@ const MajorArcanaDetails = () => {
         <section className={styles.Project}>
           <h1 className={styles.ProjectTitle}>Major Arcana Divinator</h1>
           <p className={styles.ProjectTech}>HTML | CSS | JavaScript</p>
-          <section className={styles.ProjectInfo}>
+          <p className={styles.ProjectInfo}>
           Browser-based app that allows the user to select a one-card or three-card tarot reading. The cards of a reading and the corresponding timestamp are saved in local storage. The user may look back on their readings or delete them. My responsibilities focused on creating and displaying the time stamp as well as rendering the cards from local storage onto the browser.
-          </section>
-          <section className={styles.ProjectLinks}>
+          </p>
+          <p className={styles.ProjectLinks}>
             <span className={styles.Extension}>
               <a href="https://mystechal-divinators.github.io/project-week-tarot-divinators/" rel="noreferrer" target="_blank" className={styles.LinkText}>Website</a>
             </span>
@@ -28,14 +28,12 @@ const MajorArcanaDetails = () => {
             <span className={styles.GitHub}>
               <a href="https://github.com/Mystechal-Divinators/project-week-tarot-divinators" rel="noreferrer" target="_blank" className={styles.LinkText}>GitHub</a>
             </span>
-          </section>
-          <section>
-            <img
-              src={MajorArcanaIcon}
-              alt="Three tarot cards."
-              className={styles.ProjectIcon}
-            />
-          </section>
+          </p>
+          <img
+            src={MajorArcanaIcon}
+            alt="Three tarot cards."
+            className={styles.ProjectIcon}
+          />
         </section>
       </main>
     </>
