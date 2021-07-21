@@ -6,54 +6,46 @@
     border-radius: 1vw;
     height: 96vh;
     width: 60vw;
-    padding: 2vw;
 
     position: absolute;
     top: 2%;
     left: 20%;
     z-index: 1;
 
+    font-family: var(--main-font);
+    text-align: center;
+}
+
+.Project {
+    padding: 2vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: var(--main-font);
-    text-align: center;
-
     overflow: auto;
 }
 
 .ProjectTitle {
-    margin: 2vw;
+    margin: 2vw 0 1vw 0;
     font-size: var(--project-details-title);
 }
 
 .ProjectTech {
-    margin: 2vw;
+    margin: 1vw;
     font-size: var(--project-details-tech);
-    font-weight: bold;
-}
-
-.Test {
-    overflow: auto;
 }
 
 .ProjectInfo {
-    margin: 2vw;
+    margin: 1vw 2vw;
     font-size: var(--project-details-text);
     text-align: justify;
 }
 
-.ProjectIcon {
-    margin: 1vw;
-    width: 20vw;
-}
-
 .ProjectLinks {
-    margin: 2vw;
+    margin-top: 1vw;
     font-size: var(--project-details-links);
     font-weight: 600;
     display: grid;
-    grid-template-columns: 7fr 1fr 7fr;
+    grid-template-columns: 9fr 1fr 9fr;
     grid-template-rows: 1;
 }
 
@@ -74,11 +66,22 @@
     color: lightgray;
 }
 
+.ProjectIcon {
+    width: 35vw;
+}
+
 @media screen and (max-width: 1200px) {
     .MajorArcanaDetails {
         height: 97vh;
-        padding: 3vw;
         top: 1.5%;
+    }
+
+    .Project {
+        padding: 3vw;
+    }
+
+    .ProjectIcon {
+        width: 35vw;
     }
 }
 
@@ -87,50 +90,67 @@
         border-radius: 0;
         height: 100vh;
         width: 100vw;
-        padding: 4vw;
         top: 0%;
         left: 0%;
     }
 
-    .ProjectTitle,
-    .ProjectTech,
-    .ProjectInfo,
-    .ProjectIcon,
-    .ProjectLinks {
-        margin: 4vw;
+    .Project {
+        padding: 6vw 4vw;
+    }
+
+    .ProjectTitle {
+        margin: 3vw 0 1.5vw 0;
     }
 
     .ProjectTech {
-        width: 90%;
+        margin: 1.5vw;
     }
 
-    .ProjectIcon {
-        width: 40vw;
+    .ProjectInfo {
+        margin: 1.5vw 3vw;
+    }
+
+    .ProjectLinks {
+        margin: 1vw;
     }
 
     .LinkText {
         padding: 0vw 2vw;
     }
+
+    .ProjectIcon {
+        width: 70vw;
+        margin-bottom: 1.5vw;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    .MajorArcanaDetails {
-        padding: 5vw;
+    .Project {
+        padding: 8vw 5vw;
     }
 
-    .ProjectTitle,
-    .ProjectTech,
-    .ProjectInfo,
-    .ProjectIcon,
+    .ProjectTitle {
+        margin: 4vw 0 2vw 0;
+    }
+
+    .ProjectTech {
+        margin: 2vw;
+    }
+
+    .ProjectInfo {
+        margin: 2vw 4vw;
+    }
+
     .ProjectLinks {
-        margin: 5vw;
-    }
-
-    .ProjectIcon {
-        width: 60vw;
+        margin-top: 3.5vw;
     }
 
     .LinkText {
         padding: 0vw 3vw;
+    }
+
+    .ProjectIcon {
+        width: 90vw;
+        margin-bottom: 2vw;
     }
 }
