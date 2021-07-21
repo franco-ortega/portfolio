@@ -14,6 +14,9 @@
 
     font-family: var(--main-font);
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .Project {
@@ -126,7 +129,7 @@
 
 @media screen and (max-width: 500px) {
     .Project {
-        padding: 8vw 5vw;
+        padding: 8vw 5vw 0 5vw;
     }
 
     .ProjectTitle {
