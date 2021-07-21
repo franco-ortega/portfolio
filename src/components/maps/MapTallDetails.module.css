@@ -9,17 +9,18 @@
     top: 2%;
     left: 20%;
     z-index: 1;
-    overflow: auto;
+    /* overflow: auto; */
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: var(--continent-font-bold);
     font-size: var(--map-title);
 }
 
 .MapTall {
     border-radius: 1vw;
-    margin-top: 1vw;
+    margin-top: .5vw;
     height: 90%;
 }
 
@@ -38,7 +39,7 @@
 @media screen and (max-width: 900px) {
     .MapTallDetails {
         border-radius: 0;
-        padding: 10vw 4vw;
+        padding: 5vw 4vw;
         top: 0%;
         left: 0%;
         height: 100vh;
@@ -47,7 +48,8 @@
 
     .MapTall {
         border-radius: 1.75vw;
-        margin-top: 4vw;
+        height: 88%;
+        /* margin-top: 4vw; */
     }
 }
 
