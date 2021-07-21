@@ -33,6 +33,10 @@
     font-weight: bold;
 }
 
+.Test {
+    overflow: auto;
+}
+
 .ProjectInfo {
     margin: 2vw;
     font-size: var(--project-details-text);
