@@ -29,7 +29,8 @@
 @media screen and (max-width: 500px) {
     .ClosePopup {
         padding: 0.75vw 1.8vw;
-        left: 89vw;
+        top: 3vw;
+        left: 88vw;
         font-size: 4.5vw;
     }
 }

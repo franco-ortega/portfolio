@@ -126,7 +126,7 @@
 
 @media screen and (max-width: 500px) {
     .Project {
-        padding: 5vw;
+        padding: 8vw 5vw;
     }
 
     .ProjectTitle {
@@ -142,7 +142,7 @@
     }
 
     .ProjectLinks {
-        margin-top: 2vw;
+        margin-top: 3.5vw;
     }
 
     .LinkText {
