@@ -5,7 +5,7 @@
     
     position: absolute;
     top: 1vw;
-    left: 56vw;
+    left: 56.5vw;
 
     color: white;
     font-size: 1.25vw;
@@ -29,8 +29,8 @@
 @media screen and (max-width: 500px) {
     .ClosePopup {
         padding: 0.75vw 1.8vw;
-        top: 3vw;
-        left: 88vw;
+        top: 2vw;
+        left: 89vw;
         font-size: 4.5vw;
     }
 }

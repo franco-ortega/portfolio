@@ -3,7 +3,7 @@
     color: #E4A77B;
 
     border: medium solid white;
-    border-radius: 1vw;
+    border-radius: 2vw;
     height: 96vh;
     width: 60vw;
 
@@ -80,7 +80,7 @@
     }
 
     .Project {
-        padding: 3vw;
+        padding: 3vw 2vw 0 2vw;
     }
 
     .ProjectIcon {
