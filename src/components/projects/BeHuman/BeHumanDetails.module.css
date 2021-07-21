@@ -32,7 +32,7 @@
 }
 
 .ProjectTech {
-    margin: 1vw;
+    margin: 1vw 2vw;
     font-size: var(--project-details-tech);
 }
 
