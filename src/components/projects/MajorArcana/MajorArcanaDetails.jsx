@@ -14,7 +14,7 @@ const MajorArcanaDetails = () => {
           background={'#E4A77B'}
           color={'black'}
         />
-        <div className={styles.Test}>
+        <section className={styles.Project}>
           <h1 className={styles.ProjectTitle}>Major Arcana Divinator</h1>
           <h2 className={styles.ProjectTech}>HTML | CSS | JavaScript</h2>
           <section className={styles.ProjectInfo}>
@@ -34,7 +34,7 @@ const MajorArcanaDetails = () => {
               <a href="https://github.com/Mystechal-Divinators/project-week-tarot-divinators" rel="noreferrer" target="_blank" className={styles.LinkText}>GitHub</a>
             </span>
           </section>
-        </div>
+        </section>
       </main>
     </>
   );
