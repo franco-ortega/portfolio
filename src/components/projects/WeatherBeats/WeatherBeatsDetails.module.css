@@ -13,7 +13,6 @@
     position: absolute;
     top: 2%;
     left: 20%;
-    z-index: 1;
 
     font-family: var(--main-font);
     text-align: center;

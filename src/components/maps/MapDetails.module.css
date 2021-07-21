@@ -8,8 +8,6 @@
     position: absolute;
     top: 2%;
     left: 20%;
-    /* z-index: 1; */
-    /* overflow: auto; */
 
     display: flex;
     flex-direction: column;
@@ -53,7 +51,6 @@
 
     .Map {
         border-radius: 2vw;
-        /* width: 95%; */
     }
 }
 
