@@ -1,12 +1,15 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import beHumanIcon from '../../../assets/beHuman_halfSize.png';
 import styles from './BeHumanDetails.module.css';
 
 const BeHumanDetails = () => {
+  let history = useHistory();
+
   return (
-    <FocusOn>
+    <FocusOn onEscapeKey={() => history.push('/projects')}>
       <main className={styles.BeHumanDetails}>
         <ClosePopup
           path={'projects'}

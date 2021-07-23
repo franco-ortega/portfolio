@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import BeHuman from '../../projects/BeHuman/BeHuman';
@@ -9,8 +10,10 @@ import WeatherBeats from '../../projects/WeatherBeats/WeatherBeats';
 import styles from './ProjectsDetails.module.css';
 
 const ProjectsDetails = () => {
+  let history = useHistory();
+
   return (
-    <FocusOn>
+    <FocusOn onEscapeKey={() => history.push('/')}>
       <main className={styles.ProjectsDetails}>
         <ClosePopup path={''}/>
         <header className={styles.Header}>
