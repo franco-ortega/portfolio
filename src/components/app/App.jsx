@@ -42,6 +42,7 @@ const App = () => {
           <Route exact path="/marneosso" component={MarneOsso} />
           <Route exact path="/strigi" component={Strigi} />
         </Switch>
+
       </Router>
     </div>
   );
