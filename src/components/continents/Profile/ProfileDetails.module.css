@@ -9,6 +9,7 @@
     left: 20vw;
     font-family: var(--main-font);
     overflow: auto;
+    z-index: 1;
 }
 
 .Header {
