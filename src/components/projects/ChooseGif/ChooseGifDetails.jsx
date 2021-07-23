@@ -1,12 +1,15 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import Gif from './chooseGifData';
 import styles from './ChooseGifDetails.module.css';
 
 const ChooseGifDetails = () => {
+  let history = useHistory();
+
   return (
-    <FocusOn>
+    <FocusOn onEscapeKey={() => history.push('/projects')}>
       <main className={styles.ChooseGifDetails}>
         <ClosePopup
           path={'projects'}

@@ -1,12 +1,15 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import MajorArcanaIcon from '../../../assets/MajorArcana.png';
 import styles from './MajorArcanaDetails.module.css';
 
 const MajorArcanaDetails = () => {
+  let history = useHistory();
+
   return (
-    <FocusOn>
+    <FocusOn onEscapeKey={() => history.push('/projects')}>
       <main className={styles.MajorArcanaDetails}>
         <ClosePopup
           path={'projects'}

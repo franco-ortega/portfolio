@@ -1,12 +1,15 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import EbbIcon from '../../../assets/ebbLogo.svg';
 import styles from './EbbDetails.module.css';
 
 const EbbDetails = () => {
+  let history = useHistory();
+
   return (
-    <FocusOn>
+    <FocusOn onEscapeKey={() => history.push('/projects')}>
       <main className={styles.EbbDetails}>
         <ClosePopup
           path={'projects'}

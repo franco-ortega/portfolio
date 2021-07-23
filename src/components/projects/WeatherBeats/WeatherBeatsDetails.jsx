@@ -1,11 +1,14 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import styles from './WeatherBeatsDetails.module.css';
 
 const WeatherBeatsDetails = () => {
+  let history = useHistory();
+
   return (
-    <FocusOn>
+    <FocusOn onEscapeKey={() => history.push('/projects')}>
       <main className={styles.WeatherBeatsDetails}>
         <ClosePopup
           path={'projects'}

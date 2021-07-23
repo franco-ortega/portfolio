@@ -1,12 +1,15 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import photo from '../../../assets/FrancoOrtega.jpg';
 import styles from './ProfileDetails.module.css';
 
 const Profile = () => {
+  let history = useHistory();
+
   return (
-    <FocusOn>
+    <FocusOn onEscapeKey={() => history.push('/')}>
       <main className={styles.ProfileDetails}>
         <ClosePopup path={''}/>
         <header className={styles.Header}>

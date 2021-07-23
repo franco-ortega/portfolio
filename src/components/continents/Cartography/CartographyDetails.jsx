@@ -1,12 +1,15 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import { Link } from 'react-router-dom';
 import ClosePopup from '../../buttons/ClosePopup';
 import styles from './CartographyDetails.module.css';
 
 const CartographyDetails = () => {
+  let history = useHistory();
+
   return (
-    <FocusOn>
+    <FocusOn onEscapeKey={() => history.push('/')}>
       <main className={styles.CartographyDetails}>
         <ClosePopup path={''}/>
         <header className={styles.Header}>
