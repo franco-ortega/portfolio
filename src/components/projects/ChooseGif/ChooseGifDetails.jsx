@@ -1,13 +1,12 @@
 import React from 'react';
+import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
-import ProjectsDetails from '../../continents/Projects/ProjectsDetails';
 import Gif from './chooseGifData';
 import styles from './ChooseGifDetails.module.css';
 
 const ChooseGifDetails = () => {
   return (
-    <>
-      <ProjectsDetails />
+    <FocusOn>
       <main className={styles.ChooseGifDetails}>
         <ClosePopup
           path={'projects'}
@@ -38,7 +37,7 @@ const ChooseGifDetails = () => {
           />
         </section>
       </main>
-    </>
+    </FocusOn>
   );
 };
 

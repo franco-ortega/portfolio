@@ -1,13 +1,16 @@
 import React from 'react';
+import { FocusOn } from 'react-focus-on';
 import MapDetails from './MapDetails';
 import GruenneMap from '../../assets/maps/Gruenne.png';
 
 const Gruenne = () => {
   return (
-    <MapDetails
-      mapTitle={'Gruenne'}
-      map={GruenneMap}
-    />
+    <FocusOn>
+      <MapDetails
+        mapTitle={'Gruenne'}
+        map={GruenneMap}
+      />
+    </FocusOn>
   );
 };
 

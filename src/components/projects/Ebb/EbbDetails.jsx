@@ -1,13 +1,12 @@
 import React from 'react';
+import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
-import ProjectsDetails from '../../continents/Projects/ProjectsDetails';
 import EbbIcon from '../../../assets/ebbLogo.svg';
 import styles from './EbbDetails.module.css';
 
 const EbbDetails = () => {
   return (
-    <>
-      <ProjectsDetails />
+    <FocusOn>
       <main className={styles.EbbDetails}>
         <ClosePopup
           path={'projects'}
@@ -39,7 +38,7 @@ const EbbDetails = () => {
           </p>
         </section>
       </main>
-    </>
+    </FocusOn>
   );
 };
 

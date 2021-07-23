@@ -1,12 +1,11 @@
 import React from 'react';
+import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
-import ProjectsDetails from '../../continents/Projects/ProjectsDetails';
 import styles from './WeatherBeatsDetails.module.css';
 
 const WeatherBeatsDetails = () => {
   return (
-    <>
-      <ProjectsDetails />
+    <FocusOn>
       <main className={styles.WeatherBeatsDetails}>
         <ClosePopup
           path={'projects'}
@@ -32,7 +31,7 @@ const WeatherBeatsDetails = () => {
           </p>
         </section>
       </main>
-    </>
+    </FocusOn>
   );
 };
 

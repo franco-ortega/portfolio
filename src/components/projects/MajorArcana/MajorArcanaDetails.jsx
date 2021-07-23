@@ -1,13 +1,12 @@
 import React from 'react';
+import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
-import ProjectsDetails from '../../continents/Projects/ProjectsDetails';
 import MajorArcanaIcon from '../../../assets/MajorArcana.png';
 import styles from './MajorArcanaDetails.module.css';
 
 const MajorArcanaDetails = () => {
   return (
-    <>
-      <ProjectsDetails />
+    <FocusOn>
       <main className={styles.MajorArcanaDetails}>
         <ClosePopup
           path={'projects'}
@@ -36,7 +35,7 @@ const MajorArcanaDetails = () => {
           />
         </section>
       </main>
-    </>
+    </FocusOn>
   );
 };
 

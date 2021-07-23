@@ -1,13 +1,16 @@
 import React from 'react';
+import { FocusOn } from 'react-focus-on';
 import MapTallDetails from './MapTallDetails';
 import MarneOssoMap from '../../assets/maps/MarneOsso.png';
 
 const MarneOsso = () => {
   return (
-    <MapTallDetails
-      mapTitle={'Marne Osso'}
-      map={MarneOssoMap}
-    />
+    <FocusOn>
+      <MapTallDetails
+        mapTitle={'Marne Osso'}
+        map={MarneOssoMap}
+      />
+    </FocusOn>
   );
 };
 

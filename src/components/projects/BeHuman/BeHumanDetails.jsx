@@ -1,13 +1,12 @@
 import React from 'react';
+import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
-import ProjectsDetails from '../../continents/Projects/ProjectsDetails';
 import beHumanIcon from '../../../assets/beHuman_halfSize.png';
 import styles from './BeHumanDetails.module.css';
 
 const BeHumanDetails = () => {
   return (
-    <>
-      <ProjectsDetails />
+    <FocusOn>
       <main className={styles.BeHumanDetails}>
         <ClosePopup
           path={'projects'}
@@ -38,7 +37,7 @@ const BeHumanDetails = () => {
           />
         </section>
       </main>
-    </>
+    </FocusOn>
   );
 };
 
