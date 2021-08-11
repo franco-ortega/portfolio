@@ -1,5 +1,5 @@
 .ProfileDetails {
-    background: var(--continent);
+    /* background: var(--continent);
     border: medium solid black;
     border-radius: 2vw;
     height: 96vh;
@@ -9,8 +9,10 @@
     left: 20vw;
     z-index: 1;
 
-    font-family: var(--main-font);
+    font-family: var(--main-font); */
     /* overflow: auto; */
+
+    height: inherit;
 }
 
 .Header {

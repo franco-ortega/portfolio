@@ -4,13 +4,15 @@ import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import photo from '../../../assets/FrancoOrtega.jpg';
 import styles from './ProfileDetails.module.css';
+import ContinentDetails from '../ContinentDetails';
 
 const Profile = () => {
   let history = useHistory();
 
   return (
-    <FocusOn onEscapeKey={() => history.push('/')}>
-      <main className={styles.ProfileDetails}>
+    <ContinentDetails>
+      <FocusOn onEscapeKey={() => history.push('/')}
+        className={styles.ProfileDetails}>
         <ClosePopup path={''}/>
         <header className={styles.Header}>
           <img src={photo} alt="Franco Ortega photo" className={styles.Photo} />
@@ -33,8 +35,8 @@ const Profile = () => {
                 Yes to social justice, climate justice, and economic justice. 
           </p>
         </section>
-      </main>
-    </FocusOn>
+      </FocusOn>
+    </ContinentDetails>
   );
 };
 
