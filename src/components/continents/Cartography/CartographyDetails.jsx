@@ -11,8 +11,7 @@ const CartographyDetails = () => {
 
   return (
     <ContinentDetails>
-      <FocusOn onEscapeKey={() => history.push('/')}
-        className={styles.CartographyDetails}>
+      <FocusOn onEscapeKey={() => history.push('/')}>
         <ClosePopup path={''}/>
         <header className={styles.Header}>
           <p className={styles.Title}>

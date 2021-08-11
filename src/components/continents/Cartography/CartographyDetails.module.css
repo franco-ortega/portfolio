@@ -1,20 +1,3 @@
-.CartographyDetails {
-    /* background: var(--continent);
-    border: medium solid black;
-    border-radius: 2vw;
-    height: 96vh;
-    width: 60vw;
-    position: absolute;
-    top: 2%;
-    left: 20vw;
-    z-index: 1;
-
-    font-family: var(--main-font); */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-}
-
 .Header {
     margin-top: 1.5vw;
     display: flex;
@@ -106,11 +89,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-    /* .CartographyDetails {
-        top: 1.5%;
-        height: 97vh;
-    } */
-
     .Title {
         font-size: 5vw;
     }
@@ -136,14 +114,6 @@
 }
 
 @media screen and (max-width: 900px) {
-    /* .CartographyDetails {
-        border-radius: 0;
-        top: 0%;
-        left: 0%;
-        height: 100vh;
-        width: 100vw;
-    } */
-
     .Header {
         margin-top: 2vw;
     }
