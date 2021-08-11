@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 1200px) {
     .Bio {
-        height: 60%;
+        /* height: 60%; */
         margin: .75vw 2vw;
     }
 }
