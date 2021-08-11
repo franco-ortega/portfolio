@@ -7,9 +7,10 @@
     position: absolute;
     top: 2%;
     left: 20vw;
-    font-family: var(--main-font);
-    overflow: auto;
     z-index: 1;
+
+    font-family: var(--main-font);
+    /* overflow: auto; */
 }
 
 .Header {

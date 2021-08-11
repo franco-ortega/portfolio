@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
+import ContinentDetails from '../ContinentDetails';
 import ClosePopup from '../../buttons/ClosePopup';
 import BeHuman from '../../projects/BeHuman/BeHuman';
 import ChooseGif from '../../projects/ChooseGif/ChooseGif';
@@ -13,8 +14,11 @@ const ProjectsDetails = () => {
   let history = useHistory();
 
   return (
-    <FocusOn onEscapeKey={() => history.push('/')}>
-      <main className={styles.ProjectsDetails}>
+    <ContinentDetails>
+      <FocusOn onEscapeKey={() => history.push('/')}
+        className={styles.ProjectsDetails}
+      >
+        
         <ClosePopup path={''}/>
         <header className={styles.Header}>
           <p className={styles.Title}>
@@ -41,8 +45,9 @@ const ProjectsDetails = () => {
             <MajorArcana />
           </section>
         </section>
-      </main>
-    </FocusOn>
+        
+      </FocusOn>
+    </ContinentDetails>
   );
 };
 
