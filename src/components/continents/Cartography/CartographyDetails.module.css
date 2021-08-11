@@ -1,5 +1,5 @@
 .CartographyDetails {
-    background: var(--continent);
+    /* background: var(--continent);
     border: medium solid black;
     border-radius: 2vw;
     height: 96vh;
@@ -9,7 +9,7 @@
     left: 20vw;
     z-index: 1;
 
-    font-family: var(--main-font);
+    font-family: var(--main-font); */
     /* display: flex;
     flex-direction: column;
     align-items: center; */
@@ -42,6 +42,7 @@
 .DisplayCaseText {
     margin-bottom: .25vw;
     font-size: var(--popup-text);
+    text-align: center;
 }
 
 .MapsDisplayCase {
@@ -105,10 +106,10 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .CartographyDetails {
+    /* .CartographyDetails {
         top: 1.5%;
         height: 97vh;
-    }
+    } */
 
     .Title {
         font-size: 5vw;
@@ -135,13 +136,13 @@
 }
 
 @media screen and (max-width: 900px) {
-    .CartographyDetails {
+    /* .CartographyDetails {
         border-radius: 0;
         top: 0%;
         left: 0%;
         height: 100vh;
         width: 100vw;
-    }
+    } */
 
     .Header {
         margin-top: 2vw;

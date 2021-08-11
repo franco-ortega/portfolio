@@ -4,13 +4,15 @@ import { FocusOn } from 'react-focus-on';
 import { Link } from 'react-router-dom';
 import ClosePopup from '../../buttons/ClosePopup';
 import styles from './CartographyDetails.module.css';
+import ContinentDetails from '../ContinentDetails';
 
 const CartographyDetails = () => {
   let history = useHistory();
 
   return (
-    <FocusOn onEscapeKey={() => history.push('/')}>
-      <main className={styles.CartographyDetails}>
+    <ContinentDetails>
+      <FocusOn onEscapeKey={() => history.push('/')}
+        className={styles.CartographyDetails}>
         <ClosePopup path={''}/>
         <header className={styles.Header}>
           <p className={styles.Title}>
@@ -53,8 +55,8 @@ const CartographyDetails = () => {
             </p>
           </Link>
         </section>
-      </main>
-    </FocusOn>
+      </FocusOn>
+    </ContinentDetails>
   );
 };
 

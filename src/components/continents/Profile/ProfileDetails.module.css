@@ -54,10 +54,10 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .ProfileDetails {
+    /* .ProfileDetails {
         top: 1.5%;
         height: 97vh;
-    }
+    } */
 
     .Bio {
         height: 60%;
@@ -67,15 +67,11 @@
 
 @media screen and (max-width: 900px) {
     .ProfileDetails {
-        border-radius: 0;
+        /* border-radius: 0;
         top: 0%;
         left: 0%;
         height: 100vh;
-        width: 100vw;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        width: 100vw; */
     }
 
     .Photo {
@@ -100,6 +96,12 @@
 }
 
 @media screen and (max-width: 500px) {
+    .ProfileDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
     .Photo {
         width: 30vw;
         margin-top: 4vw;
