@@ -33,6 +33,12 @@
   font-size: 1.25vw;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .OuterCoastline:hover {
+    transform: none;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .OuterCoastline {
     box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow-color);
