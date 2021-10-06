@@ -1,0 +1,71 @@
+@use '../../../scss/' as *;
+
+.Profile {
+  grid-column: 5 / 9;
+  grid-row: 3 / 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.OuterCoastline {
+  @extend %moving-waves;
+  border-radius: 120vw 70vw 95vw 90vw;
+}
+
+.InnerCoastline {
+  @extend %inner-coastline;
+}
+
+.Continent {
+  @extend %continent-styles;
+  background: linear-gradient(
+    30deg,
+    rgb(206, 165, 112),
+    rgb(206, 165, 112),
+    var(--continent),
+    rgb(206, 165, 112),
+    var(--continent),
+    rgb(187, 168, 142)
+  );
+  height: 25vh;
+  width: 25vw;
+  padding-right: 2.25vw;
+  font-size: 8vw;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .OuterCoastline {
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Profile {
+    grid-column: 3 / 9;
+    grid-row: 5 / 8;
+  }
+
+  .OuterCoastline {
+    margin: 5vw 8vw 0 0;
+  }
+
+  .Continent {
+    height: 15vh;
+    width: 33vw;
+    font-size: 11vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Profile {
+    grid-column: 1 / 10;
+    grid-row: 10 / 14;
+  }
+
+  .Continent {
+    height: 10vh;
+    width: 37vw;
+    font-size: 13vw;
+  }
+}
