@@ -1,6 +1,6 @@
 import React from 'react';
 import resume from '../../../assets/Franco_Ortega_Resume.pdf';
-import styles from './Resume.module.css';
+import styles from './Resume.module.scss';
 
 const Resume = () => {
   return (
