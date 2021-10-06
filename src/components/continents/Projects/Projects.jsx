@@ -9,7 +9,8 @@ const Projects = () => {
         <div className={styles.OuterCoastline}>
           <div className={styles.InnerCoastline}>
             <div className={styles.Continent}>
-              Team Projects
+              <p>Team</p>
+              <p>Projects</p>
             </div>
           </div>
         </div>

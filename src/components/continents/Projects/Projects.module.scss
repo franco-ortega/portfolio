@@ -9,18 +9,16 @@
 }
 
 .OuterCoastline {
-  border-radius: 84vw 75vw 51vw 38vw;
   @extend %moving-waves;
+  border-radius: 84vw 75vw 51vw 38vw;
 }
 
 .InnerCoastline {
-  background: var(--inner-coastline);
-  border: var(--inner-coastline-border-width) dashed var(--continent-border);
-  border-radius: inherit;
-  padding: var(--inner-coastline-padding);
+  @extend %inner-coastline;
 }
 
 .Continent {
+  @extend %continent-styles;
   background: linear-gradient(
     210deg,
     rgb(150, 134, 114),
@@ -30,22 +28,12 @@
     rgb(187, 172, 152),
     rgb(206, 165, 112)
   );
-  background-blend-mode: soft-light;
-  background-size: 115% 115%;
-  border: 0.25vw solid var(--continent-border);
-  border-radius: inherit;
+  box-shadow: 0px 0px 1.5vw 0.5vw rgb(143, 70, 70) inset;
   height: 22vh;
   width: 22vw;
-  padding: var(--continent-padding);
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--continent-font-bold);
   font-size: 6vw;
-  text-align: center;
   line-height: 75%;
-  box-shadow: 0px 0px 1.5vw 0.5vw rgb(143, 70, 70) inset;
 }
 
 @media (prefers-reduced-motion: reduce) {
