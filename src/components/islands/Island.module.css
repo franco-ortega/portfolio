@@ -1,71 +1,71 @@
 .OuterCoastline {
-    background: var(--outer-coastline);
-    border-radius: 50%;
-    box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow-color);
-    height: fit-content;
-    padding: 0.4vw;
+  background: var(--outer-coastline);
+  border-radius: 50%;
+  box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow-color);
+  height: fit-content;
+  padding: 0.4vw;
 
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
 }
 
 .OuterCoastline:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .InnerCoastline {
-    background: var(--inner-coastline);
-    border: 0.1vw dashed var(--continent-border);
-    border-radius: inherit;
-    padding: 0.5vw;
+  background: var(--inner-coastline);
+  border: 0.1vw dashed var(--continent-border);
+  border-radius: inherit;
+  padding: 0.5vw;
 }
 
 .Island {
-    background: var(--continent);
-    border-radius: inherit;
-    padding: 1.25vw 0.75vw;
-    height: fit-content;
-    width: fit-content;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.25vw;
+  background: var(--continent);
+  border-radius: inherit;
+  padding: 1.25vw 0.75vw;
+  height: fit-content;
+  width: fit-content;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.25vw;
 }
 
 @media screen and (max-width: 900px) {
-    .OuterCoastline {
-        box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow-color);
-        padding: 0.8vw;
-    }
+  .OuterCoastline {
+    box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow-color);
+    padding: 0.8vw;
+  }
 
-    .OuterCoastline:hover {
-        transform: scale(1);
-    }
-    
-    .InnerCoastline {
-        border: 0.2vw dashed var(--continent-border);
-        padding: 1vw;
-    }
+  .OuterCoastline:hover {
+    transform: scale(1);
+  }
 
-    .Island {
-        padding: 2.5vw 1.5vw;
-        font-size: 2.75vw;
-    }
+  .InnerCoastline {
+    border: 0.2vw dashed var(--continent-border);
+    padding: 1vw;
+  }
+
+  .Island {
+    padding: 2.5vw 1.5vw;
+    font-size: 2.75vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .OuterCoastline {
-        box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow-color);
-        padding: 0.8vw;
-    }
-    
-    .InnerCoastline {
-        padding: 1vw;
-    }
+  .OuterCoastline {
+    box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow-color);
+    padding: 0.8vw;
+  }
 
-    .Island {
-        padding: 4vw 2.5vw;
-        font-size: 3.75vw;
-    }
+  .InnerCoastline {
+    padding: 1vw;
+  }
+
+  .Island {
+    padding: 4vw 2.5vw;
+    font-size: 3.75vw;
+  }
 }

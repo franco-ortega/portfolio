@@ -1,81 +1,114 @@
 .Resume {
-    grid-column: 7 / 11;
-    grid-row: 6 / 9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  grid-column: 7 / 11;
+  grid-row: 6 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-  
+
 .OuterCoastline {
-    border-radius: 520vw 270vw 495vw 190vw;
-    box-shadow: var(--coastline-box-shadow) var(--coastline-shadow-color);
-    padding: var(--outer-coastline-padding);
+  border-radius: 520vw 270vw 495vw 190vw;
+  box-shadow: var(--coastline-box-shadow) var(--coastline-shadow-color);
+  padding: var(--outer-coastline-padding);
 
-    background: linear-gradient(
-      90deg,
-      var(--outer-coastline),
-      rgb(77, 152, 199),
-      rgb(106, 178, 223),
-      rgb(74, 146, 190));
-    background-blend-mode: soft-light;
-    background-size: 15% 15%;
+  background: linear-gradient(
+    90deg,
+    var(--outer-coastline),
+    rgb(77, 152, 199),
+    rgb(106, 178, 223),
+    rgb(74, 146, 190)
+  );
+  background-blend-mode: soft-light;
+  background-size: 15% 15%;
 
-    animation: gradient 20s ease infinite both;
-    -moz-animation: gradient 20s ease infinite both;
-    -webkit-animation: gradient 20s ease infinite both;
-    -o-animation: gradient 20s ease infinite both;
-    -ms-animation: gradient 20s ease infinite both;
+  animation: gradient 20s ease infinite both;
+  -moz-animation: gradient 20s ease infinite both;
+  -webkit-animation: gradient 20s ease infinite both;
+  -o-animation: gradient 20s ease infinite both;
+  -ms-animation: gradient 20s ease infinite both;
 }
 
 @keyframes gradient {
-  0% { background-position: 0 50%; }
-  25% { background-position: 50% 0; }
-  50% { background-position: 100% 50%; }
-  75% { background-position: 50% 75%; }
-  100% { background-position: 0 50%; }
+  0% {
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 75%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 @-moz-keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  75% { background-position: 50% 75%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 75%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @-webkit-keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  75% { background-position: 50% 75%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 75%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-  
+
 .InnerCoastline {
-    background: var(--inner-coastline);
-    border: var(--inner-coastline-border-width) dashed var(--continent-border);
-    border-radius: inherit;
-    padding: var(--inner-coastline-padding);
+  background: var(--inner-coastline);
+  border: var(--inner-coastline-border-width) dashed var(--continent-border);
+  border-radius: inherit;
+  padding: var(--inner-coastline-padding);
 }
-  
+
 .Continent {
   background: linear-gradient(
-        160deg,
-        rgb(206, 165, 112),
-        rgb(210, 180, 140, 75%),
-        var(--continent),
-        rgb(206, 165, 112, 75%),
-        rgb(206, 165, 112, 75%)
-    );
-    background-blend-mode: soft-light;
-    background-size: 115% 115%;
-    border: .25vw solid var(--continent-border);
-    border-radius: inherit;
-    height: 15vh;
-    width: 20vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--continent-font-bold);
-    font-size: 6.5vw;
+    160deg,
+    rgb(206, 165, 112),
+    rgb(210, 180, 140, 75%),
+    var(--continent),
+    rgb(206, 165, 112, 75%),
+    rgb(206, 165, 112, 75%)
+  );
+  background-blend-mode: soft-light;
+  background-size: 115% 115%;
+  border: 0.25vw solid var(--continent-border);
+  border-radius: inherit;
+  height: 15vh;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--continent-font-bold);
+  font-size: 6.5vw;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .OuterCoastline {
+    animation: none;
+  }
 }
 
 @media screen and (max-width: 900px) {
