@@ -9,7 +9,7 @@
     left: 20vw;
     z-index: 1;
 
-    font-family: var(--main-font);    
+    font-family: var(--main-font);
 }
 
 @media screen and (max-width: 1200px) {

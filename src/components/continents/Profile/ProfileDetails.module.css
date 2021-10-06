@@ -1,91 +1,91 @@
 .ProfileDetails {
-    height: inherit;
+  height: inherit;
 }
 
 .Header {
-    margin-top: 1.5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Photo {
-    border-radius: 50%;
-    width: 12vw;
+  border-radius: 50%;
+  width: 12vw;
 }
 
 .Name {
-    font-size: var(--popup-title);
+  font-size: var(--popup-title);
 }
 
 .Contact {
-    margin-top: .5vw;
-    font-size: var(--popup-header-text);
+  margin-top: 0.5vw;
+  font-size: var(--popup-header-text);
 }
 
 .ContactLink {
-    margin: .5vw;
+  margin: 0.5vw;
 }
 
 .Bio {
-    height: 55%;
-    margin: .75vw 2vw;
-    padding: 1vw;
-    font-size: var(--popup-text);
-    text-align: justify;
-    overflow: auto;
+  height: 55%;
+  margin: 0.75vw 2vw;
+  padding: 1vw;
+  font-size: var(--popup-text);
+  text-align: justify;
+  overflow: auto;
 }
 
 .BioParagraph {
-    margin-bottom: 1vw;
+  margin-bottom: 1vw;
 }
 
 @media screen and (max-width: 1200px) {
-    .Bio {
-        height: 60%;
-        margin: .75vw 2vw;
-    }
+  .Bio {
+    /* height: 60%; */
+    margin: 0.75vw 2vw;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .Photo {
-        width: 20vw;
-        margin-top: 2vw;
-        margin-bottom: 1vw;
-    }
+  .Photo {
+    width: 20vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+  }
 
-    .Contact {
-        margin-top: 1vw;
-    }
+  .Contact {
+    margin-top: 1vw;
+  }
 
-    .Bio {
-        height: 70%;
-        margin: 2vw 4vw;
-    }
+  .Bio {
+    height: 70%;
+    margin: 2vw 4vw;
+  }
 
-    .BioParagraph {
-        padding-bottom: 1.5vw;
-    }
+  .BioParagraph {
+    padding-bottom: 1.5vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .ProfileDetails {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+  .ProfileDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 
-    .Photo {
-        width: 30vw;
-        margin-top: 4vw;
-        margin-bottom: 2vw;
-    }
-    
-    .Contact {
-        margin-top: 1.5vw;
-    }
+  .Photo {
+    width: 30vw;
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+  }
 
-    .BioParagraph {
-        margin-bottom: 2vw;
-    }
+  .Contact {
+    margin-top: 1.5vw;
+  }
+
+  .BioParagraph {
+    margin-bottom: 2vw;
+  }
 }
