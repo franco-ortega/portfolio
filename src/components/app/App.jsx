@@ -11,7 +11,6 @@ import CartographyDetails from '../continents/Cartography/CartographyDetails';
 import WeatherBeatsDetails from '../projects/WeatherBeats/WeatherBeatsDetails';
 import BeHumanDetails from '../projects/BeHuman/BeHumanDetails';
 import ChooseGifDetails from '../projects/ChooseGif/ChooseGifDetails';
-import './App.css';
 import MajorArcanaDetails from '../projects/MajorArcana/MajorArcanaDetails';
 import EbbDetails from '../projects/Ebb/EbbDetails';
 import April from '../maps/April';
@@ -20,6 +19,7 @@ import Harland from '../maps/Harland';
 import Gruenne from '../maps/Gruenne';
 import MarneOsso from '../maps/MarneOsso';
 import Strigi from '../maps/Strigi';
+import './App.css';
 
 const App = () => {
   return (
