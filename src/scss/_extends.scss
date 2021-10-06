@@ -66,3 +66,22 @@
     background-position: 0% 50%;
   }
 }
+
+%inner-coastline {
+  background: var(--inner-coastline);
+  border: var(--inner-coastline-border-width) dashed var(--continent-border);
+  border-radius: inherit;
+  padding: var(--inner-coastline-padding);
+}
+
+%continent-styles {
+  background-blend-mode: soft-light;
+  background-size: 115% 115%;
+  border: 0.25vw solid var(--continent-border);
+  border-radius: inherit;
+  // padding: var(--continent-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--continent-font-bold);
+}

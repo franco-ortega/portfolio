@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Profile.module.css';
+import styles from './Profile.module.scss';
 
 const Profile = () => {
   return (

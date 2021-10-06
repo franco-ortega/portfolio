@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Cartography.module.css';
+import styles from './Cartography.module.scss';
 
 const Cartography = () => {
   return (

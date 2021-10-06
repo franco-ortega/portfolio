@@ -1,0 +1,80 @@
+@use '../../../scss/' as *;
+
+.Cartography {
+  grid-column: 1 / 4;
+  grid-row: 5 / 8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.OuterCoastline {
+  @extend %moving-waves;
+  border-radius: 60% 40% 60% 35%;
+}
+
+.InnerCoastline {
+  @extend %inner-coastline;
+  border: 0.14vw dashed var(--continent-border);
+  padding: 0.75vw;
+}
+
+.Continent {
+  @extend %continent-styles;
+  background: linear-gradient(
+    130deg,
+    rgb(150, 134, 114),
+    rgb(206, 165, 112),
+    var(--continent),
+    rgb(206, 165, 112),
+    var(--continent),
+    rgb(150, 134, 114)
+  );
+  background-size: 3% 100%;
+  height: 15vh;
+  width: 15vw;
+}
+
+.Title {
+  font-family: var(--continent-font-bold);
+  font-size: 3.5vw;
+  transform: rotate(-7.5deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .OuterCoastline {
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Cartography {
+    grid-column: 1 / 5;
+    grid-row: 8 / 10;
+  }
+
+  .Continent {
+    height: 10vh;
+    width: 25vw;
+  }
+
+  .Title {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Cartography {
+    grid-column: 1 / 7;
+    grid-row: 20 / 24;
+  }
+
+  .Continent {
+    height: 9vh;
+    width: 32vw;
+  }
+
+  .Title {
+    font-size: 7.5vw;
+  }
+}

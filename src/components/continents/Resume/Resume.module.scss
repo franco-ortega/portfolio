@@ -1,0 +1,65 @@
+@use '../../../scss/' as *;
+
+.Resume {
+  grid-column: 7 / 11;
+  grid-row: 6 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.OuterCoastline {
+  @extend %moving-waves;
+  border-radius: 520vw 270vw 495vw 190vw;
+}
+
+.InnerCoastline {
+  @extend %inner-coastline;
+}
+
+.Continent {
+  @extend %continent-styles;
+  background: linear-gradient(
+    160deg,
+    rgb(206, 165, 112),
+    rgb(210, 180, 140, 75%),
+    var(--continent),
+    rgb(206, 165, 112, 75%),
+    rgb(206, 165, 112, 75%)
+  );
+  height: 15vh;
+  width: 20vw;
+  font-size: 6.5vw;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .OuterCoastline {
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Resume {
+    grid-column: 8 / 13;
+    grid-row: 7 / 10;
+  }
+
+  .Continent {
+    height: 10vh;
+    width: 25vw;
+    font-size: 8.5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Resume {
+    grid-column: 7 / 13;
+    grid-row: 14 / 17;
+  }
+
+  .Continent {
+    height: 8vh;
+    width: 30vw;
+    font-size: 10vw;
+  }
+}
