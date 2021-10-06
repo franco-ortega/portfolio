@@ -62,12 +62,6 @@ a:hover {
   color: var(--darkestblue);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   :root {
     --popup-title: 3.5vw;
