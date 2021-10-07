@@ -47,7 +47,14 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .Cartography {
+    grid-column: 1 / 4;
+    grid-row: 8 / 12;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-height: 500px) {
   .Cartography {
     grid-column: 1 / 5;
     grid-row: 8 / 10;
