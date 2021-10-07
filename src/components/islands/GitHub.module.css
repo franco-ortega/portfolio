@@ -1,21 +1,28 @@
 .GitHub {
-    grid-column: 7 / 10;
-    grid-row: 2 / 6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  grid-column: 7 / 10;
+  grid-row: 2 / 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media screen and (max-width: 900px) {
-    .GitHub {
-        grid-column: 6 / 11;
-        grid-row: 2 / 5;
-    }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .GitHub {
+    grid-column: 6 / 9;
+    grid-row: 3 / 8;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-height: 500px) {
+  .GitHub {
+    grid-column: 6 / 11;
+    grid-row: 2 / 5;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .GitHub {
-        grid-column: 3 / 8;
-        grid-row: 1 / 5;
-    }
+  .GitHub {
+    grid-column: 3 / 8;
+    grid-row: 1 / 5;
+  }
 }

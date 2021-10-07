@@ -1,21 +1,29 @@
 .Twitter {
-    grid-column: 8 / 10;
-    grid-row: 5 / 9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  grid-column: 8 / 10;
+  grid-row: 5 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media screen and (max-width: 900px) {
-    .Twitter {
-        grid-column: 8 / 12;
-        grid-row: 6 / 9;
-    }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .Twitter {
+    grid-column: 8 / 10;
+    grid-row: 5 / 9;
+    padding-bottom: 1vw;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-height: 500px) {
+  .Twitter {
+    grid-column: 8 / 12;
+    grid-row: 6 / 9;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .Twitter {
-        grid-column: 10 / 13;
-        grid-row: 4 / 7;
-    }
+  .Twitter {
+    grid-column: 10 / 13;
+    grid-row: 4 / 7;
+  }
 }

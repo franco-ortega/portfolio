@@ -1,21 +1,29 @@
 .Email {
-    grid-column: 10 / 12;
-    grid-row: 6 / 9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  grid-column: 10 / 12;
+  grid-row: 6 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media screen and (max-width: 900px) {
-    .Email {
-        grid-column: 10 / 13;
-        grid-row: 3 / 7;
-    }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .Email {
+    grid-column: 10 / 11;
+    grid-row: 5 / 9;
+    padding-top: 1vw;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-height: 500px) {
+  .Email {
+    grid-column: 10 / 13;
+    grid-row: 3 / 7;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .Email {
-        grid-column: 6 / 10;
-        grid-row: 4 / 8;
-    }
+  .Email {
+    grid-column: 6 / 10;
+    grid-row: 4 / 8;
+  }
 }
