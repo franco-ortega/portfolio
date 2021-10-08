@@ -11,7 +11,6 @@
   .IslandChain {
     grid-column: 7 / 11;
     grid-row: 4 / 13;
-    /* border: black solid thick; */
   }
 }
 

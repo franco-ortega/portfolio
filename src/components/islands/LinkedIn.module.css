@@ -10,7 +10,6 @@
   .LinkedIn {
     grid-column: 5 / 10;
     grid-row: 3 / 6;
-    /* border: solid black; */
   }
 }
 

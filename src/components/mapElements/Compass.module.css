@@ -213,7 +213,7 @@
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .Compass {
     grid-column: 8 / 11;
-    grid-row: 10 / 13;
+    grid-row: 9 / 13;
   }
 }
 
