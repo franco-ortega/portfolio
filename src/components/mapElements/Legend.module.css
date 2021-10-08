@@ -68,8 +68,6 @@
   .LegendContainer {
     grid-column: 10 / 13;
     grid-row: 1 / 13;
-    /* align-items: flex-start; */
-    border: solid black;
   }
 
   .Legend {

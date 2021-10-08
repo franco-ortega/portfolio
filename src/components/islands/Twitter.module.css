@@ -8,9 +8,10 @@
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .Twitter {
-    grid-column: 8 / 10;
-    grid-row: 5 / 9;
-    padding-bottom: 1vw;
+    grid-column: 2 / 8;
+    grid-row: 5 / 8;
+    padding-bottom: 2vw;
+    /* border: black solid; */
   }
 }
 

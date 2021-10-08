@@ -49,8 +49,18 @@
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .Cartography {
-    grid-column: 1 / 4;
-    grid-row: 8 / 12;
+    grid-column: 5 / 7;
+    grid-row: 9 / 13;
+    padding-bottom: 2vw;
+  }
+
+  .Continent {
+    height: 14vh;
+    width: 14vw;
+  }
+
+  .Title {
+    font-size: 3.25vw;
   }
 }
 

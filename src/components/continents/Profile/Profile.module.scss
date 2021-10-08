@@ -42,8 +42,9 @@
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .Profile {
-    grid-column: 4 / 8;
-    grid-row: 5 / 10;
+    grid-column: 4 / 9;
+    grid-row: 4 / 10;
+    padding-bottom: 1vw;
   }
 }
 
