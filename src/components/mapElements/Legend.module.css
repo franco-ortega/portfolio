@@ -71,6 +71,7 @@
   }
 
   .Legend {
+    border: solid 0.25vw rgb(10, 10, 10);
     width: 20vw;
   }
 }
@@ -109,7 +110,7 @@
   }
 
   .Legend {
-    border: solid 1vw rgb(10, 10, 10);
+    border: solid 0.5vw rgb(10, 10, 10);
     height: 33vh;
     width: 36vw;
     overflow: auto;
