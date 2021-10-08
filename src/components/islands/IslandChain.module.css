@@ -1,22 +1,29 @@
 .IslandChain {
-    grid-column: 1 / 8;
-    grid-row: 5 / 9;
+  grid-column: 1 / 8;
+  grid-row: 5 / 9;
 
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
 }
 
-@media screen and (max-width: 900px) {
-    .IslandChain {
-        grid-column: 1 / 11;
-        grid-row: 8 / 13;
-    }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .IslandChain {
+    grid-column: 7 / 11;
+    grid-row: 4 / 13;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-height: 500px) {
+  .IslandChain {
+    grid-column: 1 / 11;
+    grid-row: 8 / 13;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .IslandChain {
-        grid-column: 1 / 13;
-        grid-row: 14 / 23;
-    }
+  .IslandChain {
+    grid-column: 1 / 13;
+    grid-row: 14 / 23;
+  }
 }

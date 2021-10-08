@@ -1,117 +1,129 @@
 .LegendContainer {
-    grid-column: 9 / 13;
-    grid-row: 1 / 6;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  grid-column: 9 / 13;
+  grid-row: 1 / 6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .Legend {
-    background: rgb(245, 245, 101);
-    background: linear-gradient(
-        125deg,
-        rgb(245, 245, 80),
-        rgb(245, 245, 148),
-        rgb(245, 245, 120),
-        rgb(248, 248, 93),
-        rgb(245, 245, 148));
-    background-size: 100% 100%;
+  background: rgb(245, 245, 101);
+  background: linear-gradient(
+    125deg,
+    rgb(245, 245, 80),
+    rgb(245, 245, 148),
+    rgb(245, 245, 120),
+    rgb(248, 248, 93),
+    rgb(245, 245, 148)
+  );
+  background-size: 100% 100%;
 
-    border: thick solid rgb(10, 10, 10);
-    box-shadow: 0 0 .5vw .15vw gold;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    width: 25vw;
-    padding: 1vw;
+  border: thick solid rgb(10, 10, 10);
+  box-shadow: 0 0 0.5vw 0.15vw gold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: 25vw;
+  padding: 1vw;
 }
 
 .Title {
-    font-size: 2vw;
+  font-size: 2vw;
 }
 
 .Tech {
-    display: flex;
-    flex-direction: column;
-    padding-top: .5vw;
-    font-size: 1.25vw;
-    overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5vw;
+  font-size: 1.25vw;
+  overflow: auto;
 }
 
 .TechEntry {
-    margin: .35vw 0;
+  margin: 0.35vw 0;
 }
 
 .Bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1200px) {
-    .Title {
-        font-size: 2.4vw;
-    }
-    
-    .Tech {
-        font-size: 1.5vw;
-    }
+  .Title {
+    font-size: 2.4vw;
+  }
 
-    .TechEntry {
-        margin: .45vw 0;
-    }
+  .Tech {
+    font-size: 1.5vw;
+  }
+
+  .TechEntry {
+    margin: 0.45vw 0;
+  }
 }
 
-@media screen and (max-width: 900px) {
-    .LegendContainer {
-        grid-column: 8 / 13;
-        grid-row: 2 / 7;
-        align-items: flex-start;
-        padding-top: 4vw;
-    }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .LegendContainer {
+    grid-column: 10 / 13;
+    grid-row: 1 / 13;
+  }
 
-    .Legend {
-        border: solid 0.75vw rgb(10, 10, 10);
-        width: 38vw;
-        overflow: auto;
-    }
+  .Legend {
+    width: 20vw;
+  }
+}
 
-    .Title {
-        font-size: 4vw;
-    }
+@media screen and (max-width: 900px) and (min-height: 500px) {
+  .LegendContainer {
+    grid-column: 8 / 13;
+    grid-row: 2 / 7;
+    align-items: flex-start;
+    padding-top: 4vw;
+  }
 
-    .Tech {
-        font-size: 2.25vw;
-        justify-content: space-between;
-    }
+  .Legend {
+    border: solid 0.75vw rgb(10, 10, 10);
+    width: 38vw;
+    overflow: auto;
+  }
+
+  .Title {
+    font-size: 4vw;
+  }
+
+  .Tech {
+    font-size: 2.25vw;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .LegendContainer {
-        grid-column: 8 / 13;
-        grid-row: 4 / 14;
+  .LegendContainer {
+    grid-column: 8 / 13;
+    grid-row: 4 / 14;
 
-        margin: 1vw;
-        display: flex;
-    }
+    margin: 1vw;
+    display: flex;
+  }
 
-    .Legend {
-        border: solid 1vw rgb(10, 10, 10);
-        height: 33vh;
-        width: 36vw;
-        overflow: auto;
-    }
+  .Legend {
+    border: solid 1vw rgb(10, 10, 10);
+    height: 33vh;
+    width: 36vw;
+    overflow: auto;
+  }
 
-    .Title {
-        font-size: 4vw;
-    }
+  .Title {
+    font-size: 4vw;
+  }
 
-    .Tech {
-        font-size: 3vw;
-    }
+  .Tech {
+    font-size: 3vw;
+  }
 
-    .TechEntry {
-        margin: .75vw 0;
-    }
+  .TechEntry {
+    margin: 0.75vw 0;
+  }
 }

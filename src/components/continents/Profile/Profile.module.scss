@@ -40,7 +40,15 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .Profile {
+    grid-column: 4 / 9;
+    grid-row: 4 / 10;
+    padding-bottom: 1vw;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-height: 500px) {
   .Profile {
     grid-column: 3 / 9;
     grid-row: 5 / 8;
@@ -57,7 +65,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) and (orientation: portrait) {
   .Profile {
     grid-column: 1 / 10;
     grid-row: 10 / 14;

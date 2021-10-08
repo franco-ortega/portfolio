@@ -39,7 +39,13 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .Island {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-height: 500px) {
   .OuterCoastline {
     box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow-color);
     padding: 0.8vw;
