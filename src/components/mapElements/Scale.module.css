@@ -1,96 +1,92 @@
 .ScaleContainer {
-    grid-column: 1 / 5;
-    grid-row: 8 / 9;
-    display: flex;
-    padding: 2vw 0vw 0vw 4vw;
-    color: white;
+  grid-column: 1 / 5;
+  grid-row: 8 / 9;
+  display: flex;
+  padding: 2vw 0vw 0vw 4vw;
+  color: white;
 }
 
 .ScaleNumber {
-    position: relative;
-    left: -0.5vw;
+  position: relative;
+  left: -0.5vw;
 }
 
 .ScaleNumberFirst {
-    left: 0vw;
+  left: 0vw;
 }
 
 .ScaleBlockFirst {
-    border-left: .2vw gray solid;
+  border-left: 0.2vw gray solid;
 }
 
 .ScaleBlockLast {
-    border-right: .2vw gray solid;
+  border-right: 0.2vw gray solid;
 }
 
-.ScaleBlockBlack, .ScaleBlockWhite {
-    height: 1vw;
-    width: 4vw;
-    border-top: .2vw gray solid;
-    border-bottom: .2vw gray solid;
+.ScaleBlockBlack,
+.ScaleBlockWhite {
+  height: 1vw;
+  width: 4vw;
+  border-top: 0.2vw gray solid;
+  border-bottom: 0.2vw gray solid;
 }
 
 .ScaleBlockBlack {
-    background: black;
+  background: black;
 }
 
 .ScaleBlockWhite {
-    background: white;
+  background: white;
 }
 
 @media screen and (max-width: 900px) {
-    .ScaleContainer {
-        padding: 10vw 0vw 0vw 5vw;
-    }
+  .ScaleContainer {
+    padding: 10vw 0vw 0vw 5vw;
+  }
 
-    .ScaleContainer {
-        grid-column: 1 / 6;
-        grid-row: 12 / 13;
-        display: flex;
-        padding: 2vw 0vw 0vw 4vw;
-        color: white;
-    }
-    
+  .ScaleContainer {
+    grid-column: 1 / 6;
+    grid-row: 12 / 13;
+    display: flex;
+    padding: 2vw 0vw 0vw 4vw;
+    color: white;
+  }
 
-    .ScaleNumber {
-        left: -1vw;
-    }
+  .ScaleNumber {
+    left: -1vw;
+  }
 
-    .ScaleNumberFirst {
-        left: 0vw;
-    }
-    
-    .ScaleBlockBlack, .ScaleBlockWhite {
-        height: 1.5vw;
-        width: 5vw;
-    }
+  .ScaleNumberFirst {
+    left: 0vw;
+  }
+
+  .ScaleBlockBlack,
+  .ScaleBlockWhite {
+    height: 1.5vw;
+    width: 5vw;
+  }
 }
 
-
-
-
-
 @media screen and (max-width: 500px) {
-    .ScaleContainer {
-        grid-column: 1 / 10;
-        grid-row: 24 / 25;
-        padding: 0vw 0vw 0vw 6vw;
-        
-        justify-content: center;
+  .ScaleContainer {
+    grid-column: 1 / 10;
+    grid-row: 24 / 25;
+    padding: 0vw 0vw 2vw 6vw;
 
-        
-    }
+    justify-content: center;
+  }
 
-    .ScaleNumber {
-        left: -1.5vw;
-    }
+  .ScaleNumber {
+    left: -1.5vw;
+  }
 
-    .ScaleNumberFirst {
-        left: 0vw;
-    }
-    
-    .ScaleBlockBlack, .ScaleBlockWhite {
-        height: 2vw;
-        width: 9vw;
-    }
+  .ScaleNumberFirst {
+    left: 0vw;
+  }
+
+  .ScaleBlockBlack,
+  .ScaleBlockWhite {
+    height: 2vw;
+    width: 9vw;
+  }
 }
