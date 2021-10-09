@@ -1,6 +1,6 @@
 import React from 'react';
 import Island from './Island';
-import styles from './GitHub.module.css';
+import styles from './GitHub.module.scss';
 
 const GitHub = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import Island from './Island';
-import styles from './LinkedIn.module.css';
+import styles from './LinkedIn.module.scss';
 
 const LinkedIn = () => {
   return (

@@ -1,9 +1,9 @@
+@use '../../scss/' as *;
+
 .Twitter {
   grid-column: 8 / 10;
   grid-row: 5 / 9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %island-centering;
 }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {

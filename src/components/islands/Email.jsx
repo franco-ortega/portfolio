@@ -1,6 +1,6 @@
 import React from 'react';
 import Island from './Island';
-import styles from './Email.module.css';
+import styles from './Email.module.scss';
 
 const Email = () => {
   return (
