@@ -1,6 +1,6 @@
 import React from 'react';
 import Island from './Island';
-import styles from './Twitter.module.css';
+import styles from './Twitter.module.scss';
 
 const Twitter = () => {
   return (

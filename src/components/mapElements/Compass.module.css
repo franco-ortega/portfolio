@@ -1,6 +1,6 @@
 .Compass {
   grid-column: 10 / 13;
-  grid-row: 6 / 9;
+  grid-row: 7 / 9;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);

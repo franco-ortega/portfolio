@@ -1,9 +1,9 @@
+@use '../../scss/' as *;
+
 .GitHub {
   grid-column: 7 / 10;
   grid-row: 2 / 6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %island-centering;
 }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {

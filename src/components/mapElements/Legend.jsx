@@ -11,7 +11,7 @@ const Legend = () => {
             <span className={styles.Bold}>Languages:</span> JavaScript, SQL, HTML, CSS
           </p>
           <p className={styles.TechEntry}>
-            <span className={styles.Bold}>Front End:</span> React, Redux
+            <span className={styles.Bold}>Front End:</span> React, Redux, Sass
           </p>
           <p className={styles.TechEntry}>
             <span className={styles.Bold}>Back End:</span> Node, Express
