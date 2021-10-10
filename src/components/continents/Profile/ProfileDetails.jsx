@@ -18,7 +18,10 @@ const Profile = () => {
           <img src={photo} alt="Franco Ortega photo" className={styles.Photo} />
           <p className={styles.Name}>Franco Ortega</p>
           <p className={styles.Contact}>
-            <a href="mailto:francopdx@gmail.com" rel="noreferrer" target="_blank" className={styles.ContactLink}>francopdx@gmail.com</a> &lowast; <a href="tel:503-998-7444" className={styles.ContactLink}>503-998-7444</a> &lowast; <a href="https://github.com/franco-ortega" rel="noreferrer" target="_blank" className={styles.ContactLink}>GitHub</a> &lowast; <a href="https://www.linkedin.com/in/francoortega/" rel="noreferrer" target="_blank" className={styles.ContactLink}>LinkedIn</a>
+            <a href="mailto:francopdx@gmail.com" rel="noreferrer" target="_blank" className={styles.ContactLink}>francopdx@gmail.com</a>
+            <a href="tel:503-998-7444" className={styles.ContactLink}>503-998-7444</a>
+            <a href="https://github.com/franco-ortega" rel="noreferrer" target="_blank" className={styles.ContactLink}>GitHub</a>
+            <a href="https://www.linkedin.com/in/francoortega/" rel="noreferrer" target="_blank" className={styles.ContactLink}>LinkedIn</a>
           </p>
         </header>
         <section className={styles.Bio}>
