@@ -1,62 +1,78 @@
 .MapDetails {
-    background: var(--continent);
-    border: medium solid black;
-    border-radius: 2vw;
-    height: 96vh;
-    width: 60vw;
-    padding-top: 2vw;
-    position: absolute;
-    top: 2%;
-    left: 20%;
+  background: var(--continent);
+  border: medium solid black;
+  border-radius: 2vw;
+  height: 96vh;
+  width: 60vw;
+  padding-top: 2vw;
+  position: absolute;
+  top: 2%;
+  left: 20%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 
-    font-family: var(--continent-font-bold);
-    font-size: var(--map-title);
+  font-family: var(--continent-font-bold);
+  font-size: var(--map-title);
 }
 
 .Map {
-    border-radius: 1vw;
-    width: 90%;
-    margin: .5vw;
+  border-radius: 1vw;
+  width: 90%;
+  margin: 0.5vw;
 }
 
 @media screen and (max-width: 1200px) {
-    .MapDetails {
-        padding: 3vw 2vw;
-        top: 1.5%;
-        height: 97vh;
-        justify-content: space-evenly;
-    }
+  .MapDetails {
+    padding: 3vw 2vw;
+    top: 1.5%;
+    height: 97vh;
+    justify-content: space-evenly;
+  }
 
-    .Map {
-        width: 100%;
-    }
+  .Map {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 900px) {
-    .MapDetails {
-        border-radius: 0;
-        padding: 10vw 4vw;
-        top: 0%;
-        left: 0%;
-        height: 100vh;
-        width: 100vw;
-        gap: 5vw;
-        justify-content: flex-start;
-    }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .MapDetails {
+    border-radius: 0;
+    padding: 2vw;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    font-size: 7vw;
+  }
 
-    .Map {
-        border-radius: 2vw;
-    }
+  .Map {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-height: 500px) {
+  .MapDetails {
+    border-radius: 0;
+    padding: 10vw 4vw;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    gap: 5vw;
+    justify-content: flex-start;
+  }
+
+  .Map {
+    border-radius: 2vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .MapDetails {
-        padding-top: 15vw;
-        gap: 20vw;
-    }
+  .MapDetails {
+    padding-top: 15vw;
+    gap: 20vw;
+  }
 }
