@@ -8,7 +8,7 @@ import ChooseGif from '../../projects/ChooseGif/ChooseGif';
 import Ebb from '../../projects/Ebb/Ebb';
 import MajorArcana from '../../projects/MajorArcana/MajorArcana';
 import WeatherBeats from '../../projects/WeatherBeats/WeatherBeats';
-import styles from './ProjectsDetails.module.css';
+import styles from './ProjectsDetails.module.scss';
 
 const ProjectsDetails = () => {
   let history = useHistory();
