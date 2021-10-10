@@ -1,30 +1,30 @@
 .ContinentDetails {
-    background: var(--continent);
-    border: medium solid black;
-    border-radius: 2vw;
-    height: 96vh;
-    width: 60vw;
-    position: absolute;
-    top: 2%;
-    left: 20vw;
-    z-index: 1;
+  background: var(--continent);
+  border: medium solid black;
+  border-radius: 2vw;
+  height: 96vh;
+  width: 60vw;
+  position: absolute;
+  top: 2%;
+  left: 20vw;
+  z-index: 1;
 
-    font-family: var(--main-font);    
+  font-family: var(--main-font);
 }
 
 @media screen and (max-width: 1200px) {
-    .ContinentDetails {
-        top: 1.75%;
-        height: 96.5vh;
-    }
+  .ContinentDetails {
+    top: 1.75%;
+    height: 96.5vh;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .ContinentDetails {
-        border-radius: 0;
-        top: 0%;
-        left: 0%;
-        height: 100vh;
-        width: 100vw;
-    }
+  .ContinentDetails {
+    border-radius: 0;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+  }
 }
