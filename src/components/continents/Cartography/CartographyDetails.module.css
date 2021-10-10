@@ -1,42 +1,42 @@
 .Header {
-    margin-top: 1.5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Title {
-    font-family: var(--continent-font-bold);
-    font-size: 5vw;
+  font-family: var(--continent-font-bold);
+  font-size: 5vw;
 }
 
 .Content {
-    margin: .75vw 2vw;
-    padding: 1vw;
-    font-size: var(--popup-text);
-    text-align: justify;
+  margin: 0.75vw 2vw;
+  padding: 1vw;
+  font-size: var(--popup-text);
+  text-align: justify;
 }
 
 .FantasyLand {
-    font-family: var(--continent-font-bold);
-    font-size: 2.25vw;
+  font-family: var(--continent-font-bold);
+  font-size: 2.25vw;
 }
 
 .DisplayCaseText {
-    margin-bottom: .25vw;
-    font-size: var(--popup-text);
-    text-align: center;
+  margin-bottom: 0.25vw;
+  font-size: var(--popup-text);
+  text-align: center;
 }
 
 .MapsDisplayCase {
-    margin: 0vw 2vw;
-    padding: 2vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2vw;
+  margin: 0vw 2vw;
+  padding: 2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
 }
 
 .April,
@@ -45,140 +45,154 @@
 .Harland,
 .MarneOsso,
 .Strigi {
-    border: thin solid black;
-    border-radius: .5vw;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 15vw;
+  border: thin solid black;
+  border-radius: 0.5vw;
+  background-repeat: no-repeat;
+  height: 20vh;
+  width: 15vw;
 }
 
 .April {
-    background-image: url('../../../assets/maps/April.png');
-    background-size: 195%;
-    background-position: 10% 10%;
+  background-image: url('../../../assets/maps/April.png');
+  background-size: 195%;
+  background-position: 10% 10%;
 }
 
 .Ganderlund {
-    background-image: url('../../../assets/maps/Ganderlund.png');
-    background-size: 250%;
-    background-position: 95% 25%;
+  background-image: url('../../../assets/maps/Ganderlund.png');
+  background-size: 250%;
+  background-position: 95% 25%;
 }
 
 .Gruenne {
-    background-image: url('../../../assets/maps/Gruenne.png');
-    background-size: 350%;
-    background-position: 2% 2%;
+  background-image: url('../../../assets/maps/Gruenne.png');
+  background-size: 350%;
+  background-position: 2% 2%;
 }
 
 .Harland {
-    background-image: url('../../../assets/maps/Harland.png');
-    background-size: 275%;
-    background-position: 10% 95%;
+  background-image: url('../../../assets/maps/Harland.png');
+  background-size: 275%;
+  background-position: 10% 95%;
 }
 
 .MarneOsso {
-    background-image: url('../../../assets/maps/MarneOsso.png');
-    background-size: 250%;
-    background-position: 95% 5%;
+  background-image: url('../../../assets/maps/MarneOsso.png');
+  background-size: 250%;
+  background-position: 95% 5%;
 }
 
 .Strigi {
-    background-image: url('../../../assets/maps/Strigi.png');
-    background-size: 200%;
-    background-position: 25% 10%;
+  background-image: url('../../../assets/maps/Strigi.png');
+  background-size: 200%;
+  background-position: 25% 10%;
 }
 
 @media screen and (max-width: 1200px) {
-    .Title {
-        font-size: 5vw;
-    }
+  .Title {
+    font-size: 5vw;
+  }
 
-    .Content {
-        margin-bottom: 1.5vw;
-    }
+  .Content {
+    margin-bottom: 1.5vw;
+  }
 
-    .DisplayCaseText {
-        margin-bottom: 1vw;
-    }
+  .DisplayCaseText {
+    margin-bottom: 1vw;
+  }
 
-    .April,
-    .Ganderlund,
-    .Gruenne,
-    .Harland,
-    .MarneOsso,
-    .Strigi {
-        border-radius: .75vw;
-        height: 20vh;
-        width: 15vw;
-    }
+  .April,
+  .Ganderlund,
+  .Gruenne,
+  .Harland,
+  .MarneOsso,
+  .Strigi {
+    border-radius: 0.75vw;
+    height: 20vh;
+    width: 15vw;
+  }
 }
 
-@media screen and (max-width: 900px) {
-    .Header {
-        margin-top: 2vw;
-    }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .Content {
+    font-size: 2.5vw;
+  }
 
-    .Title {
-        font-size: 8vw;
-    }
-    
-    .Content {
-        margin: 0 4vw;
-    }
+  .DisplayCaseText {
+    font-size: 2.25vw;
+  }
 
-    .FantasyLand {
-        font-size: 4vw;
-    }
+  .Strigi {
+    display: none;
+  }
+}
 
-    .MapsDisplayCase {
-        margin-top: 2vw;
-        gap: 6vw;
-    }
+@media screen and (max-width: 900px) and (min-height: 500px) {
+  .Header {
+    margin-top: 2vw;
+  }
 
-    .April,
-    .Ganderlund,
-    .Gruenne,
-    .Harland,
-    .MarneOsso,
-    .Strigi {
-        height: 17vh;
-        width: 30vw;
-    }
+  .Title {
+    font-size: 8vw;
+  }
+
+  .Content {
+    margin: 0 4vw;
+  }
+
+  .FantasyLand {
+    font-size: 4vw;
+  }
+
+  .MapsDisplayCase {
+    margin-top: 2vw;
+    gap: 6vw;
+  }
+
+  .April,
+  .Ganderlund,
+  .Gruenne,
+  .Harland,
+  .MarneOsso,
+  .Strigi {
+    height: 17vh;
+    width: 30vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .Header {
-        margin-top: 4vw;
-    }
+  .Header {
+    margin-top: 4vw;
+  }
 
-    .Title {
-        font-size: 13vw;
-    } 
-    
-    .Content {
-        margin: 4vw;
-    }
+  .Title {
+    font-size: 13vw;
+  }
 
-    .FantasyLand {
-        font-size: 5.25vw;
-    }
+  .Content {
+    margin: 4vw;
+  }
 
-    .DisplayCaseText {
-        margin-bottom: 4vw;
-    }
+  .FantasyLand {
+    font-size: 5.25vw;
+  }
 
-    .MapsDisplayCase {
-        margin-top: 2vw;
-        gap: 4vw;
-    }
+  .DisplayCaseText {
+    margin-bottom: 4vw;
+  }
 
-    .April,
-    .Ganderlund,
-    .Gruenne,
-    .Harland,
-    .MarneOsso,
-    .Strigi {
-        height: 12vh;
-        width: 35vw;
-    }
+  .MapsDisplayCase {
+    margin-top: 2vw;
+    gap: 4vw;
+  }
+
+  .April,
+  .Ganderlund,
+  .Gruenne,
+  .Harland,
+  .MarneOsso,
+  .Strigi {
+    height: 12vh;
+    width: 35vw;
+  }
 }

@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@include media-query(mobile) {
   .Projects {
     grid-column: 1 / 8;
     grid-row: 5 / 10;

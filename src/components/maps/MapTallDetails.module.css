@@ -1,63 +1,74 @@
 .MapTallDetails {
-    background: var(--continent);
-    border: medium solid black;
-    border-radius: 2vw;
-    height: 96vh;
-    width: 60vw;
-    padding: 2vw;
-    position: absolute;
-    top: 2%;
-    left: 20%;
+  background: var(--continent);
+  border: medium solid black;
+  border-radius: 2vw;
+  height: 96vh;
+  width: 60vw;
+  padding: 2vw;
+  position: absolute;
+  top: 2%;
+  left: 20%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: var(--continent-font-bold);
-    font-size: var(--map-title);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--continent-font-bold);
+  font-size: var(--map-title);
 }
 
 .MapTall {
-    border-radius: 1vw;
-    margin-top: .5vw;
-    height: 90%;
+  border-radius: 1vw;
+  margin-top: 0.5vw;
+  height: 90%;
 }
 
 @media screen and (max-width: 1200px) {
-    .MapTallDetails {
-        border-radius: 2vw;
-        top: 1.5%;
-        height: 97vh;
-    }
+  .MapTallDetails {
+    border-radius: 2vw;
+    top: 1.5%;
+    height: 97vh;
+  }
 
-    .MapTall {
-        border-radius: 1.25vw;
-    }
+  .MapTall {
+    border-radius: 1.25vw;
+  }
 }
 
-@media screen and (max-width: 900px) {
-    .MapTallDetails {
-        border-radius: 0;
-        padding: 5vw 4vw;
-        top: 0%;
-        left: 0%;
-        height: 100vh;
-        width: 100vw;
-    }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .MapTallDetails {
+    border-radius: 0;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    font-size: 5vw;
+  }
+}
 
-    .MapTall {
-        border-radius: 1.75vw;
-        height: 88%;
-    }
+@media screen and (max-width: 900px) and (min-height: 500px) {
+  .MapTallDetails {
+    border-radius: 0;
+    padding: 5vw 4vw;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .MapTall {
+    border-radius: 1.75vw;
+    height: 88%;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .MapTallDetails {
-        padding-top: 15vw;
-    }
+  .MapTallDetails {
+    padding-top: 15vw;
+  }
 
-    .MapTall {
-        border-radius: 2vw;
-        margin-top: 10vw;
-        height: 65%;
-    }
+  .MapTall {
+    border-radius: 2vw;
+    margin-top: 10vw;
+    height: 65%;
+  }
 }

@@ -23,8 +23,9 @@
   font-size: var(--popup-header-text);
 }
 
-.ContactLink {
-  margin: 0.5vw;
+.ContactLink + .ContactLink::before {
+  content: ' ';
+  margin-left: 2vw;
 }
 
 .Bio {
@@ -42,12 +43,55 @@
 
 @media screen and (max-width: 1200px) {
   .Bio {
-    /* height: 60%; */
+    height: 60%;
     margin: 0.75vw 2vw;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .ProfileDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Header {
+    margin: 0;
+    width: 25vw;
+    gap: 1vw;
+  }
+
+  .Photo {
+    width: 20vw;
+  }
+
+  .Name {
+    font-size: 3vw;
+  }
+
+  .Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+  }
+
+  .ContactLink + .ContactLink {
+    margin-top: 1vw;
+  }
+
+  .Bio {
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+    height: 88vh;
+    width: 65vw;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-height: 500px) {
   .Photo {
     width: 20vw;
     margin-top: 2vw;
