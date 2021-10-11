@@ -103,16 +103,14 @@
 @media screen and (max-width: 500px) {
   .LegendContainer {
     grid-column: 8 / 13;
-    grid-row: 4 / 14;
-
-    margin: 1vw;
-    display: flex;
+    grid-row: 4 / 15;
+    align-items: center;
+    justify-content: center;
   }
 
   .Legend {
     border: solid 0.5vw rgb(10, 10, 10);
-    height: 33vh;
-    width: 36vw;
+    width: 38vw;
     overflow: auto;
   }
 
