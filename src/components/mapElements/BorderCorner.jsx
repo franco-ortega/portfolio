@@ -4,14 +4,8 @@ import styles from './BorderCorner.module.scss';
 
 const BorderCorner = ({ grid, shape }) => {
   return (
-    <div
-      className={styles.BorderCorner}
-      style={grid}
-    >
-      <div
-        className={styles.CornerShape}
-        style={shape}
-      ></div>
+    <div className={styles.BorderCorner} style={grid}>
+      <div style={shape}></div>
     </div>
   );
 };
