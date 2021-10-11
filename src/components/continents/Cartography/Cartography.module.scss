@@ -82,8 +82,9 @@
 
 @media screen and (max-width: 500px) {
   .Cartography {
-    grid-column: 1 / 7;
-    grid-row: 20 / 24;
+    grid-column: 7 / 12;
+    grid-row: 15 / 20;
+    justify-content: center;
   }
 
   .Continent {
