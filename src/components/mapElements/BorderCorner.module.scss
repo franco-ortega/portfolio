@@ -1,0 +1,26 @@
+.BorderCorner {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 9;
+  display: flex;
+
+  div {
+    background: var(--bordercolor);
+    height: 3vw;
+    width: 3vw;
+    margin: -0.2vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .BorderCorner {
+    grid-row-end: 13;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .BorderCorner {
+    grid-row-end: 25;
+  }
+}
