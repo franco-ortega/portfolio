@@ -128,12 +128,12 @@
   .Legend {
     grid-column: 7 / 13;
     grid-row: 5 / 15;
-    padding: 0 0 0 5vw;
+    padding: 1vw 0 0 5vw;
 
     div {
       border: solid 0.5vw rgb(10, 10, 10);
       height: 100%;
-      width: 38vw;
+      width: 40vw;
       overflow: auto;
     }
 
