@@ -3,8 +3,8 @@ import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import { Link } from 'react-router-dom';
 import ClosePopup from '../../buttons/ClosePopup';
-import styles from './CartographyDetails.module.css';
 import ContinentDetails from '../ContinentDetails';
+import styles from './CartographyDetails.module.scss';
 
 const CartographyDetails = () => {
   let history = useHistory();
@@ -14,45 +14,41 @@ const CartographyDetails = () => {
       <FocusOn onEscapeKey={() => history.push('/')}
         className={styles.CartographyDetails}>
         <ClosePopup path={''}/>
-        <header className={styles.Header}>
-          <p className={styles.Title}>
-          Cartography
-          </p>
-        </header>
+        <header>Cartography</header>
         <section className={styles.Content}>
-          The inspiration for this site came from my longtime love of fantasy cartography. From <span className={styles.FantasyLand}>Middle Earth</span> to <span className={styles.FantasyLand}>Westeros</span> to the <span className={styles.FantasyLand}>Grishaverse</span>, I&apos;ve always loved flipping to the maps in fantasy novels whenever a new location is mentioned, and in recent years, I&apos;ve started creating my own worlds with pen and paper. More maps can be viewed at <a href="https://www.instagram.com/reefwoodcartography/" target="_blank" rel="noreferrer">@ReefwoodCartography on Instagram</a>.
+          The inspiration for this site came from my longtime love of fantasy cartography. From <span>Middle Earth</span> to <span>Westeros</span> to the <span>Grishaverse</span>, I&apos;ve always loved flipping to the maps in fantasy novels whenever a new location is mentioned, and in recent years, I&apos;ve started creating my own worlds with pen and paper. More maps can be viewed at <a href="https://www.instagram.com/reefwoodcartography/" target="_blank" rel="noreferrer">@ReefwoodCartography on Instagram</a>.
         </section>
-        <section className={styles.DisplayCaseText}>Click image to view full map.</section>
         <section className={styles.MapsDisplayCase}>
+          <p className={styles.DisplayCaseText}>Click image to view full map.</p>
           <Link to='/april'>
-            <p className={styles.April}>
+            <div className={styles.April}>
               <span role="img" aria-label="April map"></span>
-            </p>
+            </div>
           </Link>
           <Link to='/ganderlund'>
-            <p className={styles.Ganderlund}>
+            <div className={styles.Ganderlund}>
               <span role="img" aria-label="Ganderlund map"></span>
-            </p>
+            </div>
           </Link>
           <Link to='/gruenne'>
-            <p className={styles.Gruenne}>
+            <div className={styles.Gruenne}>
               <span role="img" aria-label="Gruenne map"></span>
-            </p>
+            </div>
           </Link>
           <Link to='/harland'>
-            <p className={styles.Harland}>
+            <div className={styles.Harland}>
               <span role="img" aria-label="Harland map"></span>
-            </p>
+            </div>
           </Link>
           <Link to='/marneosso'>
-            <p className={styles.MarneOsso}>
+            <div className={styles.MarneOsso}>
               <span role="img" aria-label="Marne Osso map"></span>
-            </p>
+            </div>
           </Link>
           <Link to='/strigi'>
-            <p className={styles.Strigi}>
+            <div className={styles.Strigi}>
               <span role="img" aria-label="Strigi map"></span>
-            </p>
+            </div>
           </Link>
         </section>
       </FocusOn>
