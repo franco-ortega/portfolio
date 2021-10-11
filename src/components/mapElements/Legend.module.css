@@ -122,7 +122,7 @@
 @media screen and (max-width: 500px) and (max-height: 699px) {
   .LegendContainer {
     grid-column: 8 / 13;
-    grid-row: 5 / 13;
+    grid-row: 5 / 14;
     padding-top: 1vw;
   }
 
