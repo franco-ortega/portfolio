@@ -48,7 +48,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .LegendContainer h1 {
+  .LegendContainer h3 {
     font-size: 2.4vw;
   }
 
@@ -87,7 +87,7 @@
     overflow: auto;
   }
 
-  .LegendContainer h1 {
+  .LegendContainer h3 {
     font-size: 4vw;
   }
 
@@ -97,7 +97,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) and (min-height: 700px) {
   .LegendContainer {
     grid-column: 8 / 13;
     grid-row: 5 / 15;
@@ -110,7 +110,30 @@
     overflow: auto;
   }
 
-  .LegendContainer h1 {
+  .LegendContainer h3 {
+    font-size: 4vw;
+  }
+
+  .LegendContainer article {
+    font-size: 3.15vw;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-height: 699px) {
+  .LegendContainer {
+    grid-column: 8 / 13;
+    grid-row: 5 / 13;
+    padding-top: 1vw;
+  }
+
+  .LegendContainer div {
+    border: solid 0.5vw rgb(10, 10, 10);
+    height: 100%;
+    width: 38vw;
+    overflow: auto;
+  }
+
+  .LegendContainer h3 {
     font-size: 4vw;
   }
 
