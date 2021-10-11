@@ -61,8 +61,8 @@
 @media screen and (max-width: 500px) {
   .Resume {
     grid-column: 1 / 7;
-    grid-row: 14 / 18;
-    border: thin solid yellow;
+    grid-row: 14 / 19;
+    padding-right: 2vw;
   }
 
   .Continent {
