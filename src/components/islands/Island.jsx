@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Island.module.css';
 
 const Island = ({ title, url }) => {
+  console.log(url);
   return (
     <div className={styles.OuterCoastline}>
       <div className={styles.InnerCoastline}>
