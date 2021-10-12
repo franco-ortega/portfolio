@@ -133,7 +133,8 @@
 //   font-weight: 100;
 // }
 
-@media screen and (max-width: 900px) {
+// Tablet screen size
+@media screen and (max-width: 900px) and (min-height: 500px) {
   .Ocean {
     grid-template-rows: repeat(12, 1fr);
 
@@ -188,6 +189,26 @@
   }
 }
 
+// Mobile screen size with wide landscape orientation
+@media screen and (max-width: 900px) and (min-width: 700px) and (orientation: landscape) {
+  .Ocean {
+    grid-template-rows: repeat(12, 1fr);
+    header {
+      grid-column: 5 / 9;
+      grid-row: 1 / 5;
+    }
+
+    h1 {
+      font-size: 5vw;
+    }
+
+    h2 {
+      font-size: 2.5vw;
+    }
+  }
+}
+
+// Mobile screen size with portrait orientation
 @media screen and (max-width: 500px) {
   .Ocean {
     border: 1.5vw solid var(--bordercolor);
@@ -195,7 +216,7 @@
 
     header {
       grid-column: 1 / 13;
-      grid-row: 1 / 4;
+      grid-row: 1 / 5;
     }
 
     h1 {

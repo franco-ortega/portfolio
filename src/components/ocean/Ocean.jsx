@@ -14,12 +14,11 @@ import styles from './Ocean.module.scss';
 const Ocean = () => {
   return (
     <div className={styles.Ocean}>
-      
 
       {/* Name & Title */}
-      <header className={styles.OceanGridHeader}>
-        <h1 className={styles.Name}>Franco Ortega</h1>
-        <h2 className={styles.Title}>Full Stack Software Engineer</h2>
+      <header>
+        <h1>Franco Ortega</h1>
+        <h2>Full Stack Software Engineer</h2>
       </header>
 
       {/* Continents */}
