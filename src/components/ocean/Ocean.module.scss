@@ -20,6 +20,35 @@
   width: 100vw;
 
   border: 1vw solid var(--bordercolor);
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  // height: 100%;
+
+  header {
+    border: thin dashed pink;
+    grid-column: 4 / 10;
+    grid-row: 1 / 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: gold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  h1 {
+    border: thin dashed silver;
+    font-size: 5vw;
+  }
+
+  h2 {
+    border: thin dashed lightgreen;
+    font-size: 2.35vw;
+    font-weight: 100;
+  }
 }
 
 @keyframes ocean-wave {
@@ -76,46 +105,58 @@
   }
 }
 
-.OceanGrid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  height: 100%;
-}
+// .OceanGrid {
+//   display: grid;
+//   grid-template-columns: repeat(12, 1fr);
+//   grid-template-rows: repeat(8, 1fr);
+//   height: 100%;
+// }
 
-.OceanGridHeader {
-  grid-column: 4 / 10;
-  grid-row: 1 / 3;
+// .OceanGridHeader {
+//   grid-column: 4 / 10;
+//   grid-row: 1 / 3;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
 
-  color: gold;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+//   color: gold;
+//   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+// }
 
-.Name {
-  font-size: 5vw;
-}
+// .Name {
+//   font-size: 5vw;
+// }
 
-.Title {
-  font-size: 2.35vw;
-  font-weight: 100;
-}
+// .Title {
+//   font-size: 2.35vw;
+//   font-weight: 100;
+// }
 
 @media screen and (max-width: 900px) {
-  .OceanGrid {
+  .Ocean {
     grid-template-rows: repeat(12, 1fr);
+
+    header {
+      // grid-row: 1 / 3;
+    }
+
+    h1 {
+      font-size: 7vw;
+    }
+
+    h2 {
+      font-size: 3.25vw;
+    }
   }
 
-  .Name {
-    font-size: 7vw;
-  }
+  // .Name {
+  //   font-size: 7vw;
+  // }
 
-  .Title {
-    font-size: 3vw;
-  }
+  // .Title {
+  //   font-size: 3vw;
+  // }
 
   .CornerNW,
   .CornerNE,
@@ -150,25 +191,36 @@
 @media screen and (max-width: 500px) {
   .Ocean {
     border: 1.5vw solid var(--bordercolor);
-  }
-
-  .OceanGrid {
     grid-template-rows: repeat(24, 1fr);
+
+    header {
+      grid-column: 1 / 13;
+      grid-row: 1 / 4;
+    }
+
+    h1 {
+      font-size: 12vw;
+      margin: 1vw;
+    }
+
+    h2 {
+      font-size: 5.5vw;
+    }
   }
 
-  .OceanGridHeader {
-    grid-column: 1 / 13;
-    grid-row: 1 / 4;
-  }
+  // .OceanGridHeader {
+  //   grid-column: 1 / 13;
+  //   grid-row: 1 / 4;
+  // }
 
-  .Name {
-    font-size: 12vw;
-    margin: 1vw;
-  }
+  // .Name {
+  //   font-size: 12vw;
+  //   margin: 1vw;
+  // }
 
-  .Title {
-    font-size: 5.5vw;
-  }
+  // .Title {
+  //   font-size: 5.5vw;
+  // }
 
   .CornerNW,
   .CornerNE,
