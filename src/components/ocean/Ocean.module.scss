@@ -1,0 +1,219 @@
+.Ocean {
+  background: linear-gradient(
+    90deg,
+    var(--darkerblue),
+    var(--lighterblue),
+    var(--darkestblue),
+    var(--middleblue),
+    var(--lightestblue)
+  );
+  background-blend-mode: soft-light;
+  background-size: 400% 400%;
+
+  animation: ocean-wave 20s ease infinite;
+  -moz-animation: ocean-wave 20s ease infinite;
+  -webkit-animation: ocean-wave 20s ease infinite;
+  -o-animation: ocean-wave 20s ease infinite both;
+  -ms-animation: ocean-wave 20s ease infinite both;
+
+  height: 100vh;
+  width: 100vw;
+
+  border: 1vw solid var(--bordercolor);
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  // height: 100%;
+
+  header {
+    grid-column: 4 / 10;
+    grid-row: 1 / 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: gold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 2.35vw;
+    font-weight: 100;
+  }
+}
+
+@keyframes ocean-wave {
+  0% {
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 75%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@-moz-keyframes ocean-wave {
+  0% {
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 75%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@-webkit-keyframes ocean-wave {
+  0% {
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 75%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+// Tablet screen size
+@media screen and (max-width: 900px) and (min-height: 500px) {
+  .Ocean {
+    grid-template-rows: repeat(12, 1fr);
+
+    h1 {
+      font-size: 7vw;
+    }
+
+    h2 {
+      font-size: 3.25vw;
+    }
+  }
+
+  .CornerNW,
+  .CornerNE,
+  .CornerSW,
+  .CornerSE {
+    height: 4vw;
+    width: 4vw;
+    margin: -0.4vw;
+  }
+
+  .CornerNW {
+    top: -1%;
+    left: -0.8%;
+  }
+
+  .CornerNE {
+    top: -1%;
+    right: -0.8%;
+  }
+
+  .CornerSW {
+    bottom: -1%;
+    left: -0.8%;
+  }
+
+  .CornerSE {
+    bottom: -1%;
+    right: -0.8%;
+  }
+}
+
+// Mobile screen size with wide landscape orientation
+@media screen and (max-width: 900px) and (min-width: 700px) and (orientation: landscape) {
+  .Ocean {
+    grid-template-rows: repeat(12, 1fr);
+    header {
+      grid-column: 5 / 9;
+      grid-row: 1 / 5;
+    }
+
+    h1 {
+      font-size: 5vw;
+    }
+
+    h2 {
+      font-size: 2.5vw;
+    }
+  }
+}
+
+// Mobile screen size with narrow landscape orientation
+@media screen and (max-width: 700px) and (orientation: landscape) {
+  .Ocean {
+    grid-template-rows: repeat(12, 1fr);
+  }
+}
+
+// Mobile screen size with portrait orientation
+@media screen and (max-width: 500px) {
+  .Ocean {
+    border: 1.5vw solid var(--bordercolor);
+    grid-template-rows: repeat(24, 1fr);
+
+    header {
+      grid-column: 1 / 13;
+      grid-row: 1 / 5;
+    }
+
+    h1 {
+      font-size: 12vw;
+      margin: 1vw;
+    }
+
+    h2 {
+      font-size: 5.5vw;
+    }
+  }
+
+  .CornerNW,
+  .CornerNE,
+  .CornerSW,
+  .CornerSE {
+    height: 5vw;
+    width: 5vw;
+  }
+
+  .CornerNW {
+    top: -1.5%;
+  }
+
+  .CornerNE {
+    top: -1.5%;
+  }
+
+  .CornerSW {
+    bottom: -1.5%;
+  }
+
+  .CornerSE {
+    bottom: -1.5%;
+  }
+}

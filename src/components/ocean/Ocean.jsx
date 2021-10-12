@@ -9,52 +9,51 @@ import { borderCornerData } from '../mapElements/borderCornerData';
 import Legend from '../mapElements/Legend';
 import Scale from '../mapElements/Scale';
 import Compass from '../mapElements/Compass';
-import styles from './Ocean.module.css';
+import styles from './Ocean.module.scss';
 
 const Ocean = () => {
   return (
     <div className={styles.Ocean}>
-      <div className={styles.OceanGrid}>
 
-        {/* Border Corners */}
-        <BorderCorner
-          grid={borderCornerData.cornerNW.grid}
-          shape={borderCornerData.cornerNW.shape}
-        />
-        <BorderCorner
-          grid={borderCornerData.cornerNE.grid}
-          shape={borderCornerData.cornerNE.shape}
-        />
-        <BorderCorner
-          grid={borderCornerData.cornerSW.grid}
-          shape={borderCornerData.cornerSW.shape}
-        />
-        <BorderCorner
-          grid={borderCornerData.cornerSE.grid}
-          shape={borderCornerData.cornerSE.shape}
-        />
+      {/* Name & Title */}
+      <header>
+        <h1>Franco Ortega</h1>
+        <h2>Full Stack Software Engineer</h2>
+      </header>
 
-        {/* Name & Title */}
-        <div className={styles.OceanGridHeader}>
-          <h1 className={styles.Name}>Franco Ortega</h1>
-          <h2 className={styles.Title}>Full Stack Software Engineer</h2>
-        </div>
+      {/* Continents */}
+      <Projects />
+      <Profile />
+      <Resume />
+      <Cartography />
 
-        {/* Map Elements */}
-        <Legend />
-        <Scale />
-        <Compass />
+      {/* Islands */}
+      <IslandChain />
 
-        {/* Continents */}
-        <Projects />
-        <Profile />
-        <Resume />
-        <Cartography />
+      {/* Map Elements */}
+      <Legend />
+      <Scale />
+      <Compass />
 
-        {/* Islands */}
-        <IslandChain />
+      {/* Border Corners */}
+      <BorderCorner
+        grid={borderCornerData.cornerNW.grid}
+        shape={borderCornerData.cornerNW.shape}
+      />
+      <BorderCorner
+        grid={borderCornerData.cornerNE.grid}
+        shape={borderCornerData.cornerNE.shape}
+      />
+      <BorderCorner
+        grid={borderCornerData.cornerSW.grid}
+        shape={borderCornerData.cornerSW.shape}
+      />
+      <BorderCorner
+        grid={borderCornerData.cornerSE.grid}
+        shape={borderCornerData.cornerSE.shape}
+      />
 
-      </div>
+      
     </div>
   );
 };

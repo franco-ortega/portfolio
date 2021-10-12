@@ -15,11 +15,11 @@ const CartographyDetails = () => {
         className={styles.CartographyDetails}>
         <ClosePopup path={''}/>
         <header>Cartography</header>
-        <section className={styles.Content}>
+        <section>
           The inspiration for this site came from my longtime love of fantasy cartography. From <span>Middle Earth</span> to <span>Westeros</span> to the <span>Grishaverse</span>, I&apos;ve always loved flipping to the maps in fantasy novels whenever a new location is mentioned, and in recent years, I&apos;ve started creating my own worlds with pen and paper. More maps can be viewed at <a href="https://www.instagram.com/reefwoodcartography/" target="_blank" rel="noreferrer">@ReefwoodCartography on Instagram</a>.
         </section>
-        <section className={styles.MapsDisplayCase}>
-          <p className={styles.DisplayCaseText}>Click image to view full map.</p>
+        <section>
+          <p>Click image to view full map.</p>
           <Link to='/april'>
             <div className={styles.April}>
               <span role="img" aria-label="April map"></span>
