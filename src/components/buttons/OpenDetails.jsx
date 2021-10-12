@@ -15,7 +15,7 @@ const OpenDetails = ({ path }) => {
       aria-label="Open project details"
       className={styles.OpenDetails}
       onClick={onOpenClick}
-    >Click for project details.</button>
+    >Project Details</button>
   );
 };
 
