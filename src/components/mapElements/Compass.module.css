@@ -1,6 +1,6 @@
 .Compass {
   grid-column: 10 / 13;
-  grid-row: 7 / 9;
+  grid-row: 6 / 9;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
@@ -153,10 +153,10 @@
 
 .TopTriangle {
   grid-column: 4 / 6;
-  grid-row: 2 / 5;
+  grid-row: 3 / 5;
   border-top: 2vw solid transparent;
   border-right: 3vw solid transparent;
-  border-bottom: 8vw solid rgb(245, 245, 120);
+  border-bottom: 6vw solid rgb(245, 245, 120);
   border-left: 3vw solid transparent;
   height: 100%;
   width: 100%;
@@ -164,8 +164,8 @@
 
 .BottomTriangle {
   grid-column: 4 / 6;
-  grid-row: 5 / 8;
-  border-top: 8vw solid rgb(245, 245, 120);
+  grid-row: 5 / 7;
+  border-top: 6vw solid rgb(245, 245, 120);
   border-right: 3vw solid transparent;
   border-bottom: 2vw solid transparent;
   border-left: 3vw solid transparent;
@@ -180,7 +180,7 @@
   border-right: 9vw solid rgb(245, 245, 120);
   border-bottom: 3vw solid transparent;
   border-left: 2vw solid transparent;
-  height: 100%;
+  height: 50%;
   width: 100%;
 }
 
@@ -191,17 +191,17 @@
   border-right: 2vw solid transparent;
   border-bottom: 3vw solid transparent;
   border-left: 9vw solid rgb(245, 245, 120);
-  height: 100%;
+  height: 50%;
   width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
   .TopTriangle {
-    border-bottom: 7vw solid rgb(245, 245, 120);
+    border-bottom: 5vw solid rgb(245, 245, 120);
   }
 
   .BottomTriangle {
-    border-top: 7vw solid rgb(245, 245, 120);
+    border-top: 5vw solid rgb(245, 245, 120);
   }
 
   .LeftTriangle,
@@ -210,16 +210,24 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .Compass {
-    grid-column: 8 / 11;
-    grid-row: 9 / 13;
-  }
-}
-
 @media screen and (max-width: 900px) and (min-height: 500px) {
   .Compass {
     grid-row: 11 / 13;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) and (orientation: landscape) {
+  .Compass {
+    grid-column: 8 / 11;
+    grid-row: 9 / 13;
+    padding-top: 2vw;
+  }
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape) {
+  .Compass {
+    grid-column: 8 / 11;
+    grid-row: 10 / 13;
   }
 }
 

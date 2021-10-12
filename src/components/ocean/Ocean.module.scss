@@ -27,7 +27,6 @@
   // height: 100%;
 
   header {
-    border: thin dashed pink;
     grid-column: 4 / 10;
     grid-row: 1 / 3;
 
@@ -40,12 +39,10 @@
   }
 
   h1 {
-    border: thin dashed silver;
     font-size: 5vw;
   }
 
   h2 {
-    border: thin dashed lightgreen;
     font-size: 2.35vw;
     font-weight: 100;
   }
@@ -105,42 +102,10 @@
   }
 }
 
-// .OceanGrid {
-//   display: grid;
-//   grid-template-columns: repeat(12, 1fr);
-//   grid-template-rows: repeat(8, 1fr);
-//   height: 100%;
-// }
-
-// .OceanGridHeader {
-//   grid-column: 4 / 10;
-//   grid-row: 1 / 3;
-
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-
-//   color: gold;
-//   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-// }
-
-// .Name {
-//   font-size: 5vw;
-// }
-
-// .Title {
-//   font-size: 2.35vw;
-//   font-weight: 100;
-// }
-
 // Tablet screen size
 @media screen and (max-width: 900px) and (min-height: 500px) {
   .Ocean {
     grid-template-rows: repeat(12, 1fr);
-
-    header {
-      // grid-row: 1 / 3;
-    }
 
     h1 {
       font-size: 7vw;
@@ -150,14 +115,6 @@
       font-size: 3.25vw;
     }
   }
-
-  // .Name {
-  //   font-size: 7vw;
-  // }
-
-  // .Title {
-  //   font-size: 3vw;
-  // }
 
   .CornerNW,
   .CornerNE,
@@ -208,6 +165,13 @@
   }
 }
 
+// Mobile screen size with narrow landscape orientation
+@media screen and (max-width: 700px) and (orientation: landscape) {
+  .Ocean {
+    grid-template-rows: repeat(12, 1fr);
+  }
+}
+
 // Mobile screen size with portrait orientation
 @media screen and (max-width: 500px) {
   .Ocean {
@@ -228,20 +192,6 @@
       font-size: 5.5vw;
     }
   }
-
-  // .OceanGridHeader {
-  //   grid-column: 1 / 13;
-  //   grid-row: 1 / 4;
-  // }
-
-  // .Name {
-  //   font-size: 12vw;
-  //   margin: 1vw;
-  // }
-
-  // .Title {
-  //   font-size: 5.5vw;
-  // }
 
   .CornerNW,
   .CornerNE,
