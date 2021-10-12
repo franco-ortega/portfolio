@@ -12,14 +12,32 @@
   background-blend-mode: soft-light;
   background-size: 15% 15%;
 
-  animation: gradient 20s ease infinite both;
-  -moz-animation: gradient 20s ease infinite both;
-  -webkit-animation: gradient 20s ease infinite both;
-  -o-animation: gradient 20s ease infinite both;
-  -ms-animation: gradient 20s ease infinite both;
+  animation: coastal-wave 20s ease infinite both;
+  -moz-animation: coastal-wave 20s ease infinite both;
+  -webkit-animation: coastal-wave 20s ease infinite both;
+  -o-animation: coastal-wave 20s ease infinite both;
+  -ms-animation: coastal-wave 20s ease infinite both;
 }
 
-@keyframes gradient {
+@keyframes coastal-wave {
+  0% {
+    background-position: 0 100%;
+  }
+  25% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 75%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+@-moz-keyframes coastal-wave {
   0% {
     background-position: 0 50%;
   }
@@ -37,9 +55,12 @@
   }
 }
 
-@-moz-keyframes gradient {
+@-webkit-keyframes coastal-wave {
   0% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 50% 0;
   }
   50% {
     background-position: 100% 50%;
@@ -48,22 +69,7 @@
     background-position: 50% 75%;
   }
   100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  75% {
-    background-position: 50% 75%;
-  }
-  100% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
 }
 
