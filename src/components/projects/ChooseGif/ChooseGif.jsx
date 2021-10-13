@@ -1,6 +1,6 @@
 import React from 'react';
 import OpenDetails from '../../buttons/OpenDetails';
-import styles from './ChooseGif.module.css';
+import styles from './ChooseGif.module.scss';
 
 const ChooseGif = () => {
   return (

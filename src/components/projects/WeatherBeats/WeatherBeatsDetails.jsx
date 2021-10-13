@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
-import styles from './WeatherBeatsDetails.module.css';
+import styles from './WeatherBeatsDetails.module.scss';
 
 const WeatherBeatsDetails = () => {
   let history = useHistory();

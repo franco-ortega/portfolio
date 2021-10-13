@@ -6,18 +6,18 @@
   @extend %island-centering;
 }
 
+@media screen and (max-width: 900px) and (min-height: 500px) {
+  .Twitter {
+    grid-column: 8 / 12;
+    grid-row: 6 / 9;
+  }
+}
+
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .Twitter {
     grid-column: 2 / 8;
     grid-row: 5 / 8;
     padding-bottom: 2vw;
-  }
-}
-
-@media screen and (max-width: 900px) and (min-height: 500px) {
-  .Twitter {
-    grid-column: 8 / 12;
-    grid-row: 6 / 9;
   }
 }
 

@@ -37,22 +37,6 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .MapDetails {
-    border-radius: 0;
-    padding: 2vw;
-    top: 0%;
-    left: 0%;
-    height: 100vh;
-    width: 100vw;
-    font-size: 7vw;
-  }
-
-  .Map {
-    width: 50%;
-  }
-}
-
 @media screen and (max-width: 900px) and (min-height: 500px) {
   .MapDetails {
     border-radius: 0;
@@ -67,6 +51,22 @@
 
   .Map {
     border-radius: 2vw;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .MapDetails {
+    border-radius: 0;
+    padding: 2vw;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    font-size: 7vw;
+  }
+
+  .Map {
+    width: 50%;
   }
 }
 

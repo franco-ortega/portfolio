@@ -3,7 +3,7 @@ import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import Gif from './chooseGifData';
-import styles from './ChooseGifDetails.module.css';
+import styles from './ChooseGifDetails.module.scss';
 
 const ChooseGifDetails = () => {
   let history = useHistory();

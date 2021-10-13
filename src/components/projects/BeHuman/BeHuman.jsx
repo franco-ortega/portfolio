@@ -1,6 +1,6 @@
 import React from 'react';
 import OpenDetails from '../../buttons/OpenDetails';
-import styles from './BeHuman.module.css';
+import styles from './BeHuman.module.scss';
 
 const BeHuman = () => {
   return (

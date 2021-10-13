@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Island.module.css';
+import styles from './Island.module.scss';
 
 const Island = ({ title, url }) => {
   console.log(url);

@@ -3,7 +3,7 @@ import Email from './Email';
 import GitHub from './GitHub';
 import LinkedIn from './LinkedIn';
 import Twitter from './Twitter';
-import styles from './IslandChain.module.css';
+import styles from './IslandChain.module.scss';
 
 const IslandChain = () => {
   return (

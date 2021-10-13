@@ -50,6 +50,22 @@
   }
 }
 
+@media screen and (max-width: 900px) and (min-height: 500px) {
+  .Cartography {
+    grid-column: 1 / 5;
+    grid-row: 8 / 10;
+  }
+
+  .Continent {
+    height: 10vh;
+    width: 25vw;
+  }
+
+  .Title {
+    font-size: 6vw;
+  }
+}
+
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .Cartography {
     grid-column: 5 / 7;
@@ -64,22 +80,6 @@
 
   .Title {
     font-size: 3.25vw;
-  }
-}
-
-@media screen and (max-width: 900px) and (min-height: 500px) {
-  .Cartography {
-    grid-column: 1 / 5;
-    grid-row: 8 / 10;
-  }
-
-  .Continent {
-    height: 10vh;
-    width: 25vw;
-  }
-
-  .Title {
-    font-size: 6vw;
   }
 }
 

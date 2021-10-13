@@ -3,7 +3,7 @@ import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import MajorArcanaIcon from '../../../assets/MajorArcana.png';
-import styles from './MajorArcanaDetails.module.css';
+import styles from './MajorArcanaDetails.module.scss';
 
 const MajorArcanaDetails = () => {
   let history = useHistory();

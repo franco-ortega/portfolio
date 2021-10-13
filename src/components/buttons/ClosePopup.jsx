@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import styles from './ClosePopup.module.css';
+import styles from './ClosePopup.module.scss';
 
 const ClosePopup = ({ path, background, color }) => {
   let history = useHistory();

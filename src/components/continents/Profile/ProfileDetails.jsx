@@ -3,8 +3,8 @@ import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import photo from '../../../assets/FrancoOrtega.jpg';
-import styles from './ProfileDetails.module.css';
 import ContinentDetails from '../ContinentDetails';
+import styles from './ProfileDetails.module.scss';
 
 const Profile = () => {
   let history = useHistory();
