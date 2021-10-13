@@ -1,7 +1,7 @@
 import React from 'react';
 import ClosePopup from '../buttons/ClosePopup';
 import PropTypes from 'prop-types';
-import styles from './MapTallDetails.module.css';
+import styles from './MapTallDetails.module.scss';
 
 const MapTallDetails = ({ mapTitle, map}) => {
   return (

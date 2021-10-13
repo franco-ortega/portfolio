@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './ContinentDetails.module.css';
+import styles from './ContinentDetails.module.scss';
 
 const ContinentDetails = ({ children }) => {
   return (

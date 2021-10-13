@@ -1,6 +1,6 @@
 import React from 'react';
 import OpenDetails from '../../buttons/OpenDetails';
-import styles from './Ebb.module.css';
+import styles from './Ebb.module.scss';
 
 const Ebb = () => {
   return (

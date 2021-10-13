@@ -54,12 +54,6 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .Project {
-    height: 80vh;
-  }
-}
-
 @media screen and (max-width: 900px) and (min-height: 500px) {
   .Intro {
     margin-top: 1vw;
@@ -75,6 +69,12 @@
     height: 35%;
     width: 48.25%;
     margin: 0.82vw;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .Project {
+    height: 80vh;
   }
 }
 

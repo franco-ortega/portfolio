@@ -1,6 +1,6 @@
 import React from 'react';
 import OpenDetails from '../../buttons/OpenDetails';
-import styles from './WeatherBeats.module.css';
+import styles from './WeatherBeats.module.scss';
 
 const WeatherBeats = () => {
   return (

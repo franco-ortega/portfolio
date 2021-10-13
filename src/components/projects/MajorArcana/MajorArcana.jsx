@@ -1,6 +1,6 @@
 import React from 'react';
 import OpenDetails from '../../buttons/OpenDetails';
-import styles from './MajorArcana.module.css';
+import styles from './MajorArcana.module.scss';
 
 const MajorArcana = () => {
   return (

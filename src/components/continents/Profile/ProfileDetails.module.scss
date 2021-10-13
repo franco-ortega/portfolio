@@ -48,6 +48,27 @@
   }
 }
 
+@media screen and (max-width: 900px) and (min-height: 500px) {
+  .Photo {
+    width: 20vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+  }
+
+  .Contact {
+    margin-top: 1vw;
+  }
+
+  .Bio {
+    height: 70%;
+    margin: 2vw 4vw;
+  }
+
+  .BioParagraph {
+    padding-bottom: 1.5vw;
+  }
+}
+
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .ProfileDetails {
     display: flex;
@@ -88,27 +109,6 @@
     padding: 0;
     height: 88vh;
     width: 65vw;
-  }
-}
-
-@media screen and (max-width: 900px) and (min-height: 500px) {
-  .Photo {
-    width: 20vw;
-    margin-top: 2vw;
-    margin-bottom: 1vw;
-  }
-
-  .Contact {
-    margin-top: 1vw;
-  }
-
-  .Bio {
-    height: 70%;
-    margin: 2vw 4vw;
-  }
-
-  .BioParagraph {
-    padding-bottom: 1.5vw;
   }
 }
 

@@ -34,17 +34,6 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .MapTallDetails {
-    border-radius: 0;
-    top: 0%;
-    left: 0%;
-    height: 100vh;
-    width: 100vw;
-    font-size: 5vw;
-  }
-}
-
 @media screen and (max-width: 900px) and (min-height: 500px) {
   .MapTallDetails {
     border-radius: 0;
@@ -58,6 +47,17 @@
   .MapTall {
     border-radius: 1.75vw;
     height: 88%;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .MapTallDetails {
+    border-radius: 0;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    font-size: 5vw;
   }
 }
 

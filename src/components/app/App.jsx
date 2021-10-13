@@ -19,7 +19,7 @@ import Harland from '../maps/Harland';
 import Gruenne from '../maps/Gruenne';
 import MarneOsso from '../maps/MarneOsso';
 import Strigi from '../maps/Strigi';
-import './App.css';
+import './App.scss';
 
 const App = () => {
   return (

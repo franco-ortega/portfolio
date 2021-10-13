@@ -3,7 +3,7 @@ import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import beHumanIcon from '../../../assets/beHuman_halfSize.png';
-import styles from './BeHumanDetails.module.css';
+import styles from './BeHumanDetails.module.scss';
 
 const BeHumanDetails = () => {
   let history = useHistory();

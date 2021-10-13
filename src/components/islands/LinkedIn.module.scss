@@ -6,17 +6,17 @@
   @extend %island-centering;
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .LinkedIn {
-    grid-column: 5 / 10;
-    grid-row: 3 / 6;
-  }
-}
-
 @media screen and (max-width: 900px) and (min-height: 500px) {
   .LinkedIn {
     grid-column: 5 / 9;
     grid-row: 4 / 8;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .LinkedIn {
+    grid-column: 5 / 10;
+    grid-row: 3 / 6;
   }
 }
 

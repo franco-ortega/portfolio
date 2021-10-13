@@ -3,7 +3,7 @@ import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import EbbIcon from '../../../assets/ebbLogo.svg';
-import styles from './EbbDetails.module.css';
+import styles from './EbbDetails.module.scss';
 
 const EbbDetails = () => {
   let history = useHistory();

@@ -45,13 +45,6 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .Projects {
-    grid-column: 1 / 5;
-    grid-row: 2 / 8;
-  }
-}
-
 @media screen and (max-width: 900px) and (min-height: 500px) {
   .Projects {
     grid-column: 1 / 7;
@@ -62,6 +55,13 @@
     height: 15vh;
     width: 34vw;
     font-size: 9vw;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .Projects {
+    grid-column: 1 / 5;
+    grid-row: 2 / 8;
   }
 }
 
