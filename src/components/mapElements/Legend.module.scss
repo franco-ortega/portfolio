@@ -99,8 +99,6 @@
     grid-column: 10 / 13;
     grid-row: 1 / 13;
 
-    border: dashed thin white;
-
     div {
       border: solid 0.25vw rgb(10, 10, 10);
       width: 20vw;
@@ -115,7 +113,6 @@
     grid-row: 4 / 13;
     padding: 0;
     align-items: center;
-    border: medium dashed lightpink;
 
     div {
       border: solid 0.5vw rgb(10, 10, 10);
@@ -139,7 +136,6 @@
     grid-column: 7 / 13;
     grid-row: 5 / 15;
     padding: 1vw 0 0 5vw;
-    border: lightgreen dotted medium;
 
     div {
       border: solid 0.5vw rgb(10, 10, 10);

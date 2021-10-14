@@ -15,11 +15,6 @@ const Ocean = () => {
   return (
     <div className={styles.Ocean}>
 
-      <div className={styles.GridItem1}>Grid Item 1</div>
-      <div className={styles.GridItem2}>Grid Item 2</div>
-      <div className={styles.GridItem3}>Grid Item 3</div>
-      <div className={styles.GridItem4}>Grid Item 4</div>
-
       {/* Name & Title */}
       <header>
         <h1>Franco Ortega</h1>
