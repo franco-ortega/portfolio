@@ -47,6 +47,7 @@
   }
 }
 
+// Desktop screen with narrow width (i.e. laptops)
 @media screen and (max-width: 1200px) {
   .Legend {
     grid-row: 1 / 7;
@@ -65,16 +66,19 @@
   }
 }
 
-@media screen and (max-width: 900px) and (min-height: 500px) {
+// Tablet screen
+@media screen and (max-width: 900px) and (min-height: 1000px) {
   .Legend {
     grid-column: 8 / 13;
-    grid-row: 2 / 7;
+    grid-row: 2 / 9;
     align-items: flex-start;
     padding-top: 3vw;
-    padding-left: 4vw;
+    // padding-left: 4vw;
+
+    border: dotted thin pink;
 
     div {
-      width: 30vw;
+      width: 35vw;
       overflow: auto;
     }
 
@@ -89,10 +93,13 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+// Mobile screen for landscape orientation
+@media screen and (max-width: 900px) and (max-height: 500px) {
   .Legend {
     grid-column: 10 / 13;
     grid-row: 1 / 13;
+
+    border: dashed thin white;
 
     div {
       border: solid 0.25vw rgb(10, 10, 10);
@@ -101,12 +108,14 @@
   }
 }
 
-@media screen and (max-width: 500px) and (min-height: 700px) {
+// Mobile screen for portrait orientation
+@media screen and (max-width: 500px) {
   .Legend {
     grid-column: 8 / 13;
     grid-row: 4 / 13;
     padding: 0;
     align-items: center;
+    border: medium dashed lightpink;
 
     div {
       border: solid 0.5vw rgb(10, 10, 10);
@@ -124,11 +133,13 @@
   }
 }
 
-@media screen and (max-width: 500px) and (max-height: 699px) {
+// Mobile screen for portrait orientation with short height
+@media screen and (max-width: 500px) and (max-height: 700px) {
   .Legend {
     grid-column: 7 / 13;
     grid-row: 5 / 15;
     padding: 1vw 0 0 5vw;
+    border: lightgreen dotted medium;
 
     div {
       border: solid 0.5vw rgb(10, 10, 10);
