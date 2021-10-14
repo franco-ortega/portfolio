@@ -15,8 +15,9 @@
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .LinkedIn {
-    grid-column: 5 / 10;
+    grid-column: 5 / 11;
     grid-row: 3 / 6;
+    padding-left: 1vw;
   }
 }
 
