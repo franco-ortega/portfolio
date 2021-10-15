@@ -9,10 +9,18 @@
 
   position: relative;
   z-index: 1;
+
+  @extend %half-second-transition;
+}
+
+.Profile:focus-within,
+.OuterCoastline:hover {
+  transform: scale(1.05);
 }
 
 .OuterCoastline {
   @extend %moving-waves;
+  @extend %half-second-transition;
   border-radius: 120vw 70vw 95vw 90vw;
 }
 
