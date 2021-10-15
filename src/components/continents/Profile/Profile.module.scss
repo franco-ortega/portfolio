@@ -7,8 +7,8 @@
   align-items: center;
   justify-content: center;
 
-  position: absolute;
-  z-index: 2;
+  position: relative;
+  z-index: 1;
 }
 
 .OuterCoastline {
@@ -69,8 +69,12 @@
 
 @media screen and (max-width: 500px) and (orientation: portrait) {
   .Profile {
-    grid-column: 2 / 10;
+    grid-column: 1 / 8;
     grid-row: 10 / 14;
+  }
+
+  .OuterCoastline {
+    margin: 0;
   }
 
   .Continent {
