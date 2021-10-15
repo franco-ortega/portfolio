@@ -52,12 +52,14 @@
 
   --map-title: 5vw;
 
-  --reduced-motion-highlight: yellow;
+  --focus-hover-highlight: yellow;
 }
 
 a {
   color: rgba(15, 24, 6, 0.8);
   text-decoration: none;
+  outline: none;
+  border-radius: inherit;
 }
 
 a:hover {

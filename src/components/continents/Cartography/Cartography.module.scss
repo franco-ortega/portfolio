@@ -13,6 +13,12 @@
   @extend %half-second-transition;
 }
 
+.Cartography:focus-within {
+  .OuterCoastline {
+    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+  }
+}
+
 .Cartography:focus-within,
 .OuterCoastline:hover {
   transform: scale(1.075);
@@ -50,12 +56,6 @@
   font-family: var(--continent-font-bold);
   font-size: 3.5vw;
   transform: rotate(-7.5deg);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .OuterCoastline {
-    animation: none;
-  }
 }
 
 @media screen and (max-width: 900px) and (min-height: 500px) {
@@ -105,5 +105,20 @@
 
   .Title {
     font-size: 7.5vw;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .Cartography:focus-within,
+  .OuterCoastline:hover {
+    transform: none;
+  }
+
+  .OuterCoastline:hover {
+    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+  }
+
+  .OuterCoastline {
+    animation: none;
   }
 }

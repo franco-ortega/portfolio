@@ -13,6 +13,12 @@
   @extend %half-second-transition;
 }
 
+.Profile:focus-within {
+  .OuterCoastline {
+    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+  }
+}
+
 .Profile:focus-within,
 .OuterCoastline:hover {
   transform: scale(1.075);
@@ -43,12 +49,6 @@
   width: 25vw;
   padding-right: 2.25vw;
   font-size: 8vw;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .OuterCoastline {
-    animation: none;
-  }
 }
 
 @media screen and (max-width: 900px) and (min-height: 500px) {
@@ -96,12 +96,15 @@
 
 @media (prefers-reduced-motion: reduce) {
   .Profile:focus-within,
-  .Profile:hover,
   .OuterCoastline:hover {
     transform: none;
+  }
 
-    .OuterCoastline {
-      box-shadow: 0 0 1vw 1vw var(--reduced-motion-highlight);
-    }
+  .OuterCoastline:hover {
+    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+  }
+
+  .OuterCoastline {
+    animation: none;
   }
 }
