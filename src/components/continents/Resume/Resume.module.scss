@@ -9,10 +9,24 @@
 
   position: relative;
   z-index: 1;
+
+  @extend %half-second-transition;
+}
+
+.Resume:focus-within {
+  .OuterCoastline {
+    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+  }
+}
+
+.Resume:focus-within,
+.OuterCoastline:hover {
+  transform: scale(1.075);
 }
 
 .OuterCoastline {
   @extend %moving-waves;
+  @extend %half-second-transition;
   border-radius: 520vw 270vw 495vw 190vw;
 }
 
@@ -35,12 +49,6 @@
   font-size: 6.5vw;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .OuterCoastline {
-    animation: none;
-  }
-}
-
 @media screen and (max-width: 900px) and (min-height: 500px) {
   .Resume {
     grid-column: 8 / 13;
@@ -61,16 +69,17 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-  .Resume {
-    grid-column: 1 / 7;
-    grid-row: 14 / 19;
-    padding-right: 2vw;
+@media (prefers-reduced-motion: reduce) {
+  .Resume:focus-within,
+  .OuterCoastline:hover {
+    transform: none;
   }
 
-  .Continent {
-    height: 8vh;
-    width: 30vw;
-    font-size: 10vw;
+  .OuterCoastline:hover {
+    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+  }
+
+  .OuterCoastline {
+    animation: none;
   }
 }

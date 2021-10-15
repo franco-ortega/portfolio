@@ -51,11 +51,15 @@
   --project-details-links: 1.5vw;
 
   --map-title: 5vw;
+
+  --focus-hover-highlight: yellow;
 }
 
 a {
   color: rgba(15, 24, 6, 0.8);
   text-decoration: none;
+  outline: none;
+  border-radius: inherit;
 }
 
 a:hover {
