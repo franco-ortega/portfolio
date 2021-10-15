@@ -24,7 +24,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  // height: 100%;
+
   position: absolute;
   z-index: -1;
 
@@ -50,25 +50,25 @@
   }
 }
 
-.GridItem1 {
-  background-color: lightgreen;
-  grid-area: 1 / 1 / 2 / 2;
-}
+// .GridItem1 {
+//   background-color: lightgreen;
+//   grid-area: 1 / 1 / 2 / 2;
+// }
 
-.GridItem2 {
-  background-color: lightgreen;
-  grid-area: 1 / 12 / 2 / 13;
-}
+// .GridItem2 {
+//   background-color: lightgreen;
+//   grid-area: 1 / 12 / 2 / 13;
+// }
 
-.GridItem3 {
-  background-color: lightgreen;
-  grid-area: 8 / 1 / 9 / 2;
-}
+// .GridItem3 {
+//   background-color: lightgreen;
+//   grid-area: 8 / 1 / 9 / 2;
+// }
 
-.GridItem4 {
-  background-color: lightgreen;
-  grid-area: 8 / 12 / 9 / 13;
-}
+// .GridItem4 {
+//   background-color: lightgreen;
+//   grid-area: 8 / 12 / 9 / 13;
+// }
 
 @keyframes ocean-wave {
   0% {
@@ -133,7 +133,6 @@
 
 @media screen and (max-width: 900px) and (min-height: 500px) {
   .Ocean {
-    // grid-template-rows: repeat(12, 1fr);
     h1 {
       font-size: 7vw;
     }
@@ -176,7 +175,6 @@
 // Mobile screen size with wide landscape orientation
 @media screen and (max-width: 900px) and (min-width: 700px) and (orientation: landscape) {
   .Ocean {
-    // grid-template-rows: repeat(12, 1fr);
     header {
       grid-column: 5 / 9;
       grid-row: 1 / 5;
@@ -191,13 +189,6 @@
     }
   }
 }
-
-// Mobile screen size with narrow landscape orientation
-// @media screen and (max-width: 700px) and (orientation: landscape) {
-//   .Ocean {
-//     // grid-template-rows: repeat(12, 1fr);
-//   }
-// }
 
 // Mobile screen size with portrait orientation
 @media screen and (max-width: 500px) {
