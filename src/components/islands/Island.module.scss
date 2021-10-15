@@ -85,12 +85,14 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .OuterCoastline:focus-within,
+  .Island:focus {
+    .OuterCoastline {
+      transform: none;
+    }
+  }
+
   .OuterCoastline:hover {
     transform: none;
-
-    .OuterCoastline {
-      box-shadow: 0 0 1vw 1vw gold;
-    }
+    box-shadow: 0 0 1vw 1vw gold;
   }
 }
