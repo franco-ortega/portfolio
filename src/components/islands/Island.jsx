@@ -5,17 +5,19 @@ import styles from './Island.module.scss';
 const Island = ({ title, url }) => {
   console.log(url);
   return (
-    <div className={styles.OuterCoastline}>
-      <div className={styles.InnerCoastline}>
-        <div className={styles.Island}>
-          <a
-            href={url}
-            rel="noreferrer"
-            target="_blank"
-          >{title}</a>
+    <a className={styles.Island}
+      href={url}
+      rel="noreferrer"
+      target="_blank"
+    >
+      <div className={styles.OuterCoastline}>
+        <div className={styles.InnerCoastline}>
+          <div className={styles.Land}>
+            {title}
+          </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
