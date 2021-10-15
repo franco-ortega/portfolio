@@ -81,8 +81,12 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .OuterCoastline:hover,
-  .OuterCoastline:focus-within {
+  .OuterCoastline:focus-within,
+  .OuterCoastline:hover {
     transform: none;
+
+    .OuterCoastline {
+      box-shadow: 0 0 1vw 1vw gold;
+    }
   }
 }

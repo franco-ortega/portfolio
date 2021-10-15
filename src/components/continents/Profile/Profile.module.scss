@@ -93,3 +93,15 @@
     font-size: 13vw;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .Profile:focus-within,
+  .Profile:hover,
+  .OuterCoastline:hover {
+    transform: none;
+
+    .OuterCoastline {
+      box-shadow: 0 0 1vw 1vw var(--reduced-motion-highlight);
+    }
+  }
+}
