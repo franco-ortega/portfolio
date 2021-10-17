@@ -1,3 +1,5 @@
+@use '../../scss/' as *;
+
 .IslandChain {
   grid-column: 1 / 8;
   grid-row: 5 / 9;
@@ -21,7 +23,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@include media-query(mobile) {
   .IslandChain {
     grid-column: 1 / 13;
     grid-row: 17 / 25;

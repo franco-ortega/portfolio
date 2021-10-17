@@ -91,7 +91,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@include media-query(mobile) {
   .Cartography {
     grid-column: 7 / 12;
     grid-row: 15 / 20;

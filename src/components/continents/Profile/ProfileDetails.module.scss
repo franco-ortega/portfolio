@@ -1,3 +1,5 @@
+@use '../../../scss/' as *;
+
 .ProfileDetails {
   height: inherit;
 }
@@ -112,7 +114,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@include media-query(mobile) {
   .ProfileDetails {
     display: flex;
     flex-direction: column;
