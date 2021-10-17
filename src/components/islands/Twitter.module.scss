@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@include media-query(mobile) {
   .Twitter {
     grid-column: 5 / 10;
     grid-row: 4 / 8;
