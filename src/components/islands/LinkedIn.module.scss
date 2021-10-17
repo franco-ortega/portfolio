@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@include media-query(mobile) {
   .LinkedIn {
     grid-column: 1 / 5;
     grid-row: 4 / 8;
