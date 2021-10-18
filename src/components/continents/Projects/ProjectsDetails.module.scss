@@ -54,6 +54,7 @@
   }
 }
 
+// Desktop narrow screen size
 @media screen and (max-width: 900px) and (min-height: 500px) {
   .Intro {
     margin-top: 1vw;
@@ -66,13 +67,20 @@
   }
 
   .Project {
-    height: 35%;
+    height: 50%;
     width: 48.25%;
     margin: 0.82vw;
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+// Tablet screen size
+@media screen and (max-width: 900px) and (min-height: 1000px) {
+  .Project {
+    height: 35%;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
   .Project {
     height: 80vh;
   }
