@@ -68,6 +68,14 @@
   }
 }
 
+@media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+  .ScaleContainer {
+    grid-row: 11 / 13;
+    position: absolute;
+    bottom: 5%;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .ScaleContainer {
     grid-column: 1 / 10;

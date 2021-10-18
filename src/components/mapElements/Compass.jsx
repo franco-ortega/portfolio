@@ -10,8 +10,10 @@ const Compass = () => {
       <div className={styles.LeftTriangle}></div>
       <div className={styles.RightTriangle}></div>
 
-      <div className={styles.OuterRing}>
-        <div className={styles.OuterCircle}></div>
+      <div className={styles.OuterRingContainer}>
+        <div className={styles.OuterRing}>
+          <div className={styles.OuterCircle}></div>
+        </div>
       </div>
 
       <div className={styles.InnerRing}>
