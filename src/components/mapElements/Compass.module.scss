@@ -177,7 +177,7 @@
   grid-column: 2 / 6;
   grid-row: 4 / 6;
   border-top: 3vw solid transparent;
-  border-right: 9vw solid rgb(245, 245, 120);
+  border-right: 8vw solid rgb(245, 245, 120);
   border-bottom: 3vw solid transparent;
   border-left: 2vw solid transparent;
   height: 50%;
@@ -190,18 +190,18 @@
   border-top: 3vw solid transparent;
   border-right: 2vw solid transparent;
   border-bottom: 3vw solid transparent;
-  border-left: 9vw solid rgb(245, 245, 120);
+  border-left: 8vw solid rgb(245, 245, 120);
   height: 50%;
   width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
   .TopTriangle {
-    border-bottom: 7vw solid rgb(245, 245, 120);
+    border-bottom: 5vw solid rgb(245, 245, 120);
   }
 
   .BottomTriangle {
-    border-top: 7vw solid rgb(245, 245, 120);
+    border-top: 5vw solid rgb(245, 245, 120);
   }
 
   .LeftTriangle,
@@ -212,7 +212,7 @@
 
 @media screen and (max-width: 900px) and (min-height: 500px) {
   .Compass {
-    grid-row: 11 / 13;
+    grid-row: 10 / 13;
   }
 }
 
