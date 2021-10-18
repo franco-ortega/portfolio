@@ -216,7 +216,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (min-width: 700px) and (orientation: landscape) {
+@media screen and (max-width: 900px) and (min-width: 700px) and (max-height: 500px) and (orientation: landscape) {
   .Compass {
     grid-column: 8 / 11;
     grid-row: 9 / 13;
