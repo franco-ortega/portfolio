@@ -68,7 +68,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
   .Profile {
     grid-column: 5 / 9;
     grid-row: 4 / 10;
@@ -90,7 +90,7 @@
   .Continent {
     height: 10vh;
     width: 37vw;
-    font-size: 13vw;
+    font-size: 13.5vw;
   }
 }
 

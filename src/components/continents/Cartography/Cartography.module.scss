@@ -61,7 +61,7 @@
 @media screen and (max-width: 900px) and (min-height: 500px) {
   .Cartography {
     grid-column: 1 / 5;
-    grid-row: 8 / 10;
+    grid-row: 8 / 12;
   }
 
   .Continent {
@@ -70,11 +70,11 @@
   }
 
   .Title {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
   .Cartography {
     grid-column: 4 / 7;
     grid-row: 9 / 13;

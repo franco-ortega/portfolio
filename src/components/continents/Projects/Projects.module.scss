@@ -62,14 +62,18 @@
   .Continent {
     height: 15vh;
     width: 34vw;
-    font-size: 9vw;
+    font-size: 10vw;
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
   .Projects {
     grid-column: 1 / 5;
     grid-row: 2 / 8;
+  }
+
+  .Continent {
+    font-size: 7.5vw;
   }
 }
 
@@ -81,9 +85,9 @@
   }
 
   .Continent {
-    height: 12vh;
+    height: 10vh;
     width: 37vw;
-    font-size: 10vw;
+    font-size: 12vw;
   }
 }
 

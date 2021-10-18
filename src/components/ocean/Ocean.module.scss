@@ -130,11 +130,6 @@
 @media screen and (max-width: 900px) {
   .Ocean {
     grid-template-rows: repeat(12, 1fr);
-  }
-}
-
-@media screen and (max-width: 900px) and (min-height: 500px) {
-  .Ocean {
     h1 {
       font-size: 7vw;
     }
@@ -175,7 +170,7 @@
 }
 
 // Mobile screen size with wide landscape orientation
-@media screen and (max-width: 900px) and (min-width: 700px) and (orientation: landscape) {
+@media screen and (max-width: 900px) and (orientation: landscape) {
   .Ocean {
     header {
       grid-column: 5 / 9;
