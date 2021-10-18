@@ -197,11 +197,11 @@
 
 @media screen and (max-width: 1200px) {
   .TopTriangle {
-    border-bottom: 5vw solid rgb(245, 245, 120);
+    border-bottom: 7vw solid rgb(245, 245, 120);
   }
 
   .BottomTriangle {
-    border-top: 5vw solid rgb(245, 245, 120);
+    border-top: 7vw solid rgb(245, 245, 120);
   }
 
   .LeftTriangle,
@@ -221,6 +221,14 @@
     grid-column: 8 / 11;
     grid-row: 9 / 13;
     padding-top: 2vw;
+  }
+
+  .TopTriangle {
+    border-bottom: 7vw solid rgb(245, 245, 120);
+  }
+
+  .BottomTriangle {
+    border-top: 7vw solid rgb(245, 245, 120);
   }
 }
 
