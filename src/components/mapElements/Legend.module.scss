@@ -131,8 +131,14 @@
 // Mobile screen for portrait orientation with short height
 @media screen and (max-width: 500px) and (max-height: 700px) {
   .Legend {
+    // grid-column: 7 / 13;
+    // grid-row: 5 / 13;
+    // padding: 1vw 2vw 0 5vw;
+    border: thin solid white;
+
     div {
       border: solid 0.5vw rgb(10, 10, 10);
+      height: 100%;
       width: 40vw;
       overflow: auto;
     }
