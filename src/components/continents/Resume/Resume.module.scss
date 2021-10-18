@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
   .Resume {
     grid-column: 1 / 5;
     grid-row: 7 / 13;
