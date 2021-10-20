@@ -254,31 +254,6 @@
   .Compass {
     grid-column: 8 / 11;
     grid-row: 8 / 12;
-    // grid-template-columns: repeat(7, 1fr);
-    // grid-template-rows: repeat(7, 1fr);
-  }
-
-  .TopTriangle {
-    // border-bottom: 6vw solid rgb(245, 245, 120);
-    // transform: translate(-50%, -55%);
-  }
-
-  .BottomTriangle {
-    // border-top: 7vw solid rgb(245, 245, 120);
-    // border-right: 3vw solid transparent;
-    // border-bottom: 2vw solid transparent;
-    // border-left: 3vw solid transparent;
-    // transform: translate(-50%, -10%);
-  }
-
-  .LeftTriangle {
-    // border-right: 6.5vw solid rgb(245, 245, 120);
-    // transform: translate(-35%, -50%);
-  }
-
-  .RightTriangle {
-    // border-left: 6.5vw solid rgb(245, 245, 120);
-    // transform: translate(-15%, -50%);
   }
 }
 
