@@ -1,3 +1,5 @@
+@use '../../scss/' as *;
+
 .Compass {
   grid-column: 10 / 13;
   grid-row: 5 / 9;
@@ -257,7 +259,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@include media-query(mobile) {
   .Compass {
     grid-column: 10 / 13;
     grid-row: 22 / 25;

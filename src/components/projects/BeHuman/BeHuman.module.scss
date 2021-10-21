@@ -1,72 +1,74 @@
+@use '../../../scss/' as *;
+
 .BeHuman {
-    background: #9cc4d7;
-    border: solid black 0.2vw;
-    border-radius: 1vw;
+  background: #9cc4d7;
+  border: solid black 0.2vw;
+  border-radius: 1vw;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-    font-size: var(--project-summary-title);
-    overflow: auto;
+  font-size: var(--project-summary-title);
+  overflow: auto;
 }
 
 .Title {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Summary {
+  height: 55%;
+  padding: 0.5vw 1.25vw;
+  display: flex;
+  font-size: var(--project-summary-text);
+  text-align: justify;
+}
+
+@media screen and (max-width: 1200px) {
+  .BeHuman {
+    border-radius: 1.25vw;
+  }
+
+  .Summary {
+    padding: 0.5vw 1.5vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .BeHuman {
+    border-radius: 1.5vw;
+  }
+
+  .Title {
+    height: 25%;
+  }
+
+  .Summary {
+    height: 55%;
+  }
+}
+
+@include media-query(mobile) {
+  .BeHuman {
+    border-radius: 3vw;
+  }
+
+  .Title {
     height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+  }
 
-.Summary {
+  .Summary {
     height: 55%;
-    padding: .5vw 1.25vw;
-    display: flex;
-    font-size: var(--project-summary-text);
-    text-align: justify;
-}
-
-@media screen and (max-width: 1200px) {
-    .BeHuman {
-        border-radius: 1.25vw;
-    }
-
-    .Summary {
-        padding: .5vw 1.5vw;
-    }    
-}
-
-@media screen and (max-width: 900px) {
-    .BeHuman {
-        border-radius: 1.5vw;
-    }
-
-    .Title {
-        height: 25%;
-    }
-
-    .Summary {
-        height: 55%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .BeHuman {
-        border-radius: 3vw;
-    }
-
-    .Title {
-        height: 25%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .Summary {
-        height: 55%;
-        padding: 1vw 5vw;
-    }
+    padding: 1vw 5vw;
+  }
 }

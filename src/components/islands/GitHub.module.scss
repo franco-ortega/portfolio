@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@include media-query(mobile) {
   .GitHub {
     grid-column: 3 / 8;
     grid-row: 2 / 5;

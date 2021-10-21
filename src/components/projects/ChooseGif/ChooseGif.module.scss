@@ -1,72 +1,74 @@
+@use '../../../scss/' as *;
+
 .ChooseGif {
-    background: black;
-    border: solid white 0.2vw;
-    border-radius: 1vw;
-    color: white;
+  background: black;
+  border: solid white 0.2vw;
+  border-radius: 1vw;
+  color: white;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-    font-size: var(--project-summary-title);
-    overflow: auto;
+  font-size: var(--project-summary-title);
+  overflow: auto;
 }
 
 .Title {
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Summary {
-    height: 50%;
-    padding: .5vw 1.25vw;
-    font-size: var(--project-summary-text);
-    text-align: justify;
+  height: 50%;
+  padding: 0.5vw 1.25vw;
+  font-size: var(--project-summary-text);
+  text-align: justify;
 }
 
 @media screen and (max-width: 1200px) {
-    .ChooseGif {
-        border-radius: 1.25vw;
-    }
+  .ChooseGif {
+    border-radius: 1.25vw;
+  }
 
-    .Summary {
-        padding: .5vw 1.5vw;
-    }    
+  .Summary {
+    padding: 0.5vw 1.5vw;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .ChooseGif {
-        border-radius: 1.5vw;
-    }
+  .ChooseGif {
+    border-radius: 1.5vw;
+  }
 
-    .Title {
-        height: 25%;
-    }
+  .Title {
+    height: 25%;
+  }
 
-    .Summary {
-        height: 55%;
-    }
+  .Summary {
+    height: 55%;
+  }
 }
 
-@media screen and (max-width: 500px) {
-    .ChooseGif {
-        border-radius: 3vw;
-    }
+@include media-query(mobile) {
+  .ChooseGif {
+    border-radius: 3vw;
+  }
 
-    .Title {
-        height: 25%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  .Title {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .Summary {
-        height: 55%;
-        padding: 1vw 5vw;
-    }
+  .Summary {
+    height: 55%;
+    padding: 1vw 5vw;
+  }
 }

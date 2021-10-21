@@ -1,74 +1,76 @@
-.MajorArcana {
-    background: rgb(17, 17, 17);
-    border: solid white 0.2vw;
-    border-radius: 1vw;
-    color: #e4a77b;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@use '../../../scss/' as *;
 
-    height: 100%;
-    width: 100%;
-    
-    font-size: var(--project-summary-title);
-    overflow: auto;
+.MajorArcana {
+  background: rgb(17, 17, 17);
+  border: solid white 0.2vw;
+  border-radius: 1vw;
+  color: #e4a77b;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  font-size: var(--project-summary-title);
+  overflow: auto;
 }
 
 .Title {
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .Summary {
-    height: 50%;
-    padding: .25vw 1.25vw;
-    font-size: var(--project-summary-text);
-    text-align: justify;
+  height: 50%;
+  padding: 0.25vw 1.25vw;
+  font-size: var(--project-summary-text);
+  text-align: justify;
 }
 
 @media screen and (max-width: 1200px) {
-    .MajorArcana {
-        border-radius: 1.25vw;
-    }
+  .MajorArcana {
+    border-radius: 1.25vw;
+  }
 
-    .Summary {
-        padding: .5vw 1.5vw;
-    }    
+  .Summary {
+    padding: 0.5vw 1.5vw;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .MajorArcana {
-        border-radius: 1.5vw;
-    }
+  .MajorArcana {
+    border-radius: 1.5vw;
+  }
 
-    .Title {
-        height: 30%;
-    }
+  .Title {
+    height: 30%;
+  }
 
-    .Summary {
-        height: 50%;
-    }
+  .Summary {
+    height: 50%;
+  }
 }
 
-@media screen and (max-width: 500px) {
-    .MajorArcana {
-        border-radius: 3vw;
-    }
+@include media-query(mobile) {
+  .MajorArcana {
+    border-radius: 3vw;
+  }
 
-    .Title {
-        height: 30%;
-        padding: 5vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  .Title {
+    height: 30%;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .Summary {
-        height: 50%;
-        padding: 1vw 5vw;
-    }
+  .Summary {
+    height: 50%;
+    padding: 1vw 5vw;
+  }
 }

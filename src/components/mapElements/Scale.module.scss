@@ -1,3 +1,5 @@
+@use '../../scss/' as *;
+
 .ScaleContainer {
   grid-column: 1 / 5;
   grid-row: 8 / 9;
@@ -76,7 +78,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@include media-query(mobile) {
   .ScaleContainer {
     grid-column: 1 / 10;
     grid-row: 24 / 25;

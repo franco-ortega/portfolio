@@ -1,3 +1,5 @@
+@use '../../scss/' as *;
+
 .MapDetails {
   background: var(--continent);
   border: medium solid black;
@@ -70,7 +72,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@include media-query(mobile) {
   .MapDetails {
     padding-top: 15vw;
     gap: 20vw;
