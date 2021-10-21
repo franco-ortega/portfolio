@@ -1,3 +1,5 @@
+@use '../../scss/' as *;
+
 .Legend {
   grid-column: 9 / 13;
   grid-row: 1 / 6;
@@ -104,7 +106,7 @@
 }
 
 // Mobile screen for portrait orientation
-@media screen and (max-width: 500px) {
+@include media-query(mobile) {
   .Legend {
     grid-column: 7 / 13;
     grid-row: 5 / 15;

@@ -68,7 +68,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@include media-query(mobile) {
   .OuterCoastline {
     box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow-color);
     padding: 0.8vw;

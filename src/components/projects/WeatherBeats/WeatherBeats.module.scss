@@ -1,78 +1,80 @@
+@use '../../../scss/' as *;
+
 .WeatherBeats {
-    background-image: url(../../../assets/WeatherBeats_mobile.jpg);
-    background-position: 50% 55%;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../../../assets/WeatherBeats_mobile.jpg);
+  background-position: 50% 55%;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    border: solid black 0.2vw;
-    border-radius: 1vw;
+  border: solid black 0.2vw;
+  border-radius: 1vw;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-    font-size: var(--project-summary-title);
-    overflow: auto;
+  font-size: var(--project-summary-title);
+  overflow: auto;
 }
 
 .Title {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Summary {
+  height: 55%;
+  padding: 0.25vw 1.25vw;
+  font-size: var(--project-summary-text);
+  text-align: justify;
+}
+
+@media screen and (max-width: 1200px) {
+  .WeatherBeats {
+    background-position: 50% 65%;
+    border-radius: 1.25vw;
+  }
+
+  .Summary {
+    padding: 0.5vw 1.5vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .WeatherBeats {
+    background-position: 50% 50%;
+    border-radius: 1.5vw;
+  }
+
+  .Title {
+    height: 25%;
+  }
+
+  .Summary {
+    height: 55%;
+  }
+}
+
+@include media-query(mobile) {
+  .WeatherBeats {
+    background-position: 50% 65%;
+    border-radius: 3vw;
+  }
+
+  .Title {
     height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+  }
 
-.Summary {
+  .Summary {
     height: 55%;
-    padding: .25vw 1.25vw;
-    font-size: var(--project-summary-text);
-    text-align: justify;
-}
-
-@media screen and (max-width: 1200px) {
-    .WeatherBeats {
-        background-position: 50% 65%;
-        border-radius: 1.25vw;
-    }
-
-    .Summary {
-        padding: .5vw 1.5vw;
-    }    
-}
-
-@media screen and (max-width: 900px) {
-    .WeatherBeats {
-        background-position: 50% 50%;
-        border-radius: 1.5vw;
-    }
-
-    .Title {
-        height: 25%;
-    }
-
-    .Summary {
-        height: 55%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .WeatherBeats {
-        background-position: 50% 65%;
-        border-radius: 3vw;
-    }
-
-    .Title {
-        height: 25%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .Summary {
-        height: 55%;
-        padding: 1vw 5vw;
-    }
+    padding: 1vw 5vw;
+  }
 }

@@ -1,72 +1,79 @@
-.Ebb {
-    background: linear-gradient(0deg, rgba(55, 87, 149, 0.2), rgba(55, 87, 149, 0.2)), linear-gradient(0deg, #121212, #121212);
-    border: solid white 0.2vw;
-    border-radius: 1vw;
-    color: #F3F3F3;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@use '../../../scss/' as *;
 
-    height: 100%;
-    width: 100%;
-    
-    font-size: var(--project-summary-title);
-    overflow: auto;
+.Ebb {
+  background: linear-gradient(
+      0deg,
+      rgba(55, 87, 149, 0.2),
+      rgba(55, 87, 149, 0.2)
+    ),
+    linear-gradient(0deg, #121212, #121212);
+  border: solid white 0.2vw;
+  border-radius: 1vw;
+  color: #f3f3f3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  font-size: var(--project-summary-title);
+  overflow: auto;
 }
 
 .Title {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Summary {
+  height: 55%;
+  padding: 0.25vw 1.25vw;
+  font-size: var(--project-summary-text);
+  text-align: justify;
+}
+
+@media screen and (max-width: 1200px) {
+  .Ebb {
+    border-radius: 1.25vw;
+  }
+
+  .Summary {
+    padding: 0.5vw 1.5vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Ebb {
+    border-radius: 1.5vw;
+  }
+
+  .Title {
+    height: 30%;
+  }
+
+  .Summary {
+    height: 50%;
+  }
+}
+
+@include media-query(mobile) {
+  .Ebb {
+    border-radius: 3vw;
+  }
+
+  .Title {
     height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+  }
 
-.Summary {
+  .Summary {
     height: 55%;
-    padding: .25vw 1.25vw;
-    font-size: var(--project-summary-text);
-    text-align: justify;
-}
-
-@media screen and (max-width: 1200px) {
-    .Ebb {
-        border-radius: 1.25vw;
-    }
-
-    .Summary {
-        padding: .5vw 1.5vw;
-    }    
-}
-
-@media screen and (max-width: 900px) {
-    .Ebb {
-        border-radius: 1.5vw;
-    }
-
-    .Title {
-        height: 30%;
-    }
-
-    .Summary {
-        height: 50%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .Ebb {
-        border-radius: 3vw;
-    }
-
-    .Title {
-        height: 25%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .Summary {
-        height: 55%;
-        padding: 1vw 5vw;
-    }
+    padding: 1vw 5vw;
+  }
 }

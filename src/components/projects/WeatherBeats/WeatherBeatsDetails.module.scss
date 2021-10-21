@@ -1,159 +1,161 @@
+@use '../../../scss/' as *;
+
 .WeatherBeatsDetails {
-    background-color: yellow;
-    background-image: url(../../../assets/WeatherBeats_full.jpg);
-    background-position: 5% 10%;
-    background-repeat: no-repeat;
-    background-size: 175%;
+  background-color: yellow;
+  background-image: url(../../../assets/WeatherBeats_full.jpg);
+  background-position: 5% 10%;
+  background-repeat: no-repeat;
+  background-size: 175%;
 
-    border: medium solid black;
-    border-radius: 2vw;
-    height: 96vh;
-    width: 60vw;
+  border: medium solid black;
+  border-radius: 2vw;
+  height: 96vh;
+  width: 60vw;
 
-    position: absolute;
-    top: 2%;
-    left: 20%;
-    z-index: 1;
+  position: absolute;
+  top: 2%;
+  left: 20%;
+  z-index: 1;
 
-    font-family: var(--main-font);
-    text-align: center;
-    
-    display: flex;
-    flex-direction: column;
+  font-family: var(--main-font);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .Project {
-    padding: 2vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: auto;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
 }
 
 .ProjectTitle {
-    margin: 2vw 0 1vw 0;
-    font-size: var(--project-details-title);
+  margin: 2vw 0 1vw 0;
+  font-size: var(--project-details-title);
 }
 
 .ProjectTech {
-    margin: 1vw 2vw;
-    font-size: var(--project-details-tech);
+  margin: 1vw 2vw;
+  font-size: var(--project-details-tech);
 }
 
 .ProjectInfo {
-    margin: 1vw 2vw;
-    font-size: var(--project-details-text);
-    text-align: justify;
+  margin: 1vw 2vw;
+  font-size: var(--project-details-text);
+  text-align: justify;
 }
 
 .ProjectLinks {
-    margin-top: 1vw;
-    font-size: var(--project-details-links);
-    font-weight: 600;
-    display: grid;
-    grid-template-columns: 7fr 1fr 7fr;
-    grid-template-rows: 1;
+  margin-top: 1vw;
+  font-size: var(--project-details-links);
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: 7fr 1fr 7fr;
+  grid-template-rows: 1;
 }
 
 .Extension {
-    text-align: right;
+  text-align: right;
 }
 
 .GitHub {
-    text-align: left;
+  text-align: left;
 }
 
 .LinkText {
-    padding: 0vw 1vw;
-    color: black;
+  padding: 0vw 1vw;
+  color: black;
 }
 
 .LinkText:hover {
-    color: brown;
+  color: brown;
 }
 
 @media screen and (max-width: 1200px) {
-    .WeatherBeatsDetails {
-        background-position: 15% 20%;
-        background-size: 175%;
-        height: 97vh;
-        top: 1.5%;
-    }
+  .WeatherBeatsDetails {
+    background-position: 15% 20%;
+    background-size: 175%;
+    height: 97vh;
+    top: 1.5%;
+  }
 
-    .Project {
-        padding: 3vw 2vw 0 2vw;
-    }
+  .Project {
+    padding: 3vw 2vw 0 2vw;
+  }
 }
 
 @media screen and (max-width: 1100px) and (max-height: 1400px) {
-    .WeatherBeatsDetails {
-        background-size: cover;
-    }
+  .WeatherBeatsDetails {
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .WeatherBeatsDetails {
-        background-position: 40% 0%;
-        background-size: 250%;
-        border-radius: 0;
-        height: 100vh;
-        width: 100vw;
-        top: 0%;
-        left: 0%;
-    }
+  .WeatherBeatsDetails {
+    background-position: 40% 0%;
+    background-size: 250%;
+    border-radius: 0;
+    height: 100vh;
+    width: 100vw;
+    top: 0%;
+    left: 0%;
+  }
 
-    .Project {
-        padding: 6vw 4vw;
-    }
+  .Project {
+    padding: 6vw 4vw;
+  }
 
-    .ProjectTitle {
-        margin: 3vw 0 1.5vw 0;
-    }
+  .ProjectTitle {
+    margin: 3vw 0 1.5vw 0;
+  }
 
-    .ProjectTech {
-        margin: 1.5vw;
-    }
+  .ProjectTech {
+    margin: 1.5vw;
+  }
 
-    .ProjectInfo {
-        margin: 1.5vw 3vw;
-    }
+  .ProjectInfo {
+    margin: 1.5vw 3vw;
+  }
 
-    .ProjectLinks {
-        margin-top: 2.5vw;
-    }
+  .ProjectLinks {
+    margin-top: 2.5vw;
+  }
 
-    .LinkText {
-        padding: 0vw 2vw;
-    }
+  .LinkText {
+    padding: 0vw 2vw;
+  }
 }
 
-@media screen and (max-width: 500px) {
-    .WeatherBeatsDetails {
-        background-position: 50% 0%;
-        background-size: 425%;
-    }
+@include media-query(mobile) {
+  .WeatherBeatsDetails {
+    background-position: 50% 0%;
+    background-size: 425%;
+  }
 
-    .Project {
-        padding: 8vw 6vw 0 6vw;
-    }
+  .Project {
+    padding: 8vw 6vw 0 6vw;
+  }
 
-    .ProjectTitle {
-        margin: 4vw 0 2vw 0;
-    }
+  .ProjectTitle {
+    margin: 4vw 0 2vw 0;
+  }
 
-    .ProjectTech {
-        margin: 2vw;
-    }
+  .ProjectTech {
+    margin: 2vw;
+  }
 
-    .ProjectInfo {
-        margin: 2vw 4vw;
-    }
+  .ProjectInfo {
+    margin: 2vw 4vw;
+  }
 
-    .ProjectLinks {
-        margin-top: 3.5vw;
-    }
+  .ProjectLinks {
+    margin-top: 3.5vw;
+  }
 
-    .LinkText {
-        padding: 0vw 3vw;
-    }
+  .LinkText {
+    padding: 0vw 3vw;
+  }
 }
