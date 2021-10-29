@@ -9,6 +9,9 @@
   justify-content: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
 
+  position: relative;
+  z-index: 1;
+
   div {
     background: rgb(245, 245, 101);
     background: linear-gradient(

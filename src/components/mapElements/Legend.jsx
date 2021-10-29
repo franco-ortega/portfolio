@@ -13,6 +13,7 @@ const Legend = () => {
           <p><span>Databases:</span> PostgreSQL</p>
           <p><span>Testing:</span> Jest, QUnit, React Testing Library, Supertest</p>
           <p><span>Tools:</span> Git, GitHub, Heroku, Miro, Netlify, pgAdmin, Postman, Slack, VSCode, Whimsical, Zoom</p>
+          <p><span>Learning:</span> TypeScript, NextJS, GraphQL, Python</p>
         </article>
       </div>
     </section>

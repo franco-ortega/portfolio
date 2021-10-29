@@ -7,6 +7,9 @@
   flex-direction: row;
   padding: 2vw 0vw 0vw 4vw;
   color: white;
+
+  position: relative;
+  z-index: -1;
 }
 
 .ScaleNumber {
