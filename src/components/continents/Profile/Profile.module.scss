@@ -13,12 +13,6 @@
   @extend %half-second-transition;
 }
 
-.Profile:focus-within {
-  .OuterCoastline {
-    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
-  }
-}
-
 .Profile:focus-within,
 .OuterCoastline:hover {
   transform: scale(1.075);
@@ -95,12 +89,15 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .Profile:focus-within,
-  .OuterCoastline:hover {
+  .Profile:focus-within {
     transform: none;
+    .OuterCoastline {
+      box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+    }
   }
 
   .OuterCoastline:hover {
+    transform: none;
     box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
   }
 

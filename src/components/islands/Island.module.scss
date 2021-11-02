@@ -2,7 +2,6 @@
 
 .Island:focus {
   .OuterCoastline {
-    box-shadow: 0 0 0.75vw 0.5vw var(--focus-hover-highlight);
     transform: scale(1.15);
   }
 }
@@ -39,10 +38,6 @@
 
   position: relative;
   z-index: 1;
-
-  a {
-    outline: none;
-  }
 }
 
 @media screen and (max-width: 900px) and (min-height: 500px) {
@@ -85,14 +80,19 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .Island:focus {
+  .Island:focus-within {
+    transform: none;
     .OuterCoastline {
-      transform: none;
+      box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
     }
   }
 
   .OuterCoastline:hover {
     transform: none;
-    box-shadow: 0 0 1vw 1vw gold;
+    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+  }
+
+  .OuterCoastline {
+    animation: none;
   }
 }
