@@ -13,12 +13,6 @@
   @extend %half-second-transition;
 }
 
-.Cartography:focus-within {
-  .OuterCoastline {
-    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
-  }
-}
-
 .Cartography:focus-within,
 .OuterCoastline:hover {
   transform: scale(1.075);
@@ -109,12 +103,15 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .Cartography:focus-within,
-  .OuterCoastline:hover {
+  .Cartography:focus-within {
     transform: none;
+    .OuterCoastline {
+      box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+    }
   }
 
   .OuterCoastline:hover {
+    transform: none;
     box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
   }
 
