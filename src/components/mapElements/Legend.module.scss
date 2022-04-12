@@ -12,6 +12,8 @@
   position: relative;
   z-index: 1;
 
+  list-style-type: disc;
+
   div {
     background: rgb(245, 245, 101);
     background: linear-gradient(
@@ -32,6 +34,13 @@
     height: fit-content;
     width: 25vw;
     padding: 1vw;
+
+    p {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+    }
   }
 
   h3 {
@@ -59,6 +68,7 @@
 
     div {
       border: solid 0.25vw rgb(10, 10, 10);
+      max-height: 50vh;
     }
 
     h3 {
@@ -69,6 +79,21 @@
       font-size: 1.5vw;
     }
   }
+}
+
+@media screen and (max-width: 900px) {
+  .Legend {
+    div {
+      max-height: 30vh;
+      overflow: auto;
+      p {
+        flex-direction: column;
+        width: fit-content;
+        margin: .5rem;
+      }
+    }
+  }
+  
 }
 
 // Tablet screen
@@ -126,6 +151,12 @@
       max-height: 100%;
       width: 39vw;
       overflow: auto;
+
+      p {
+        flex-direction: column;
+        width: fit-content;
+        margin: .5rem;
+      }
     }
 
     h3 {
