@@ -8,10 +8,14 @@
   display: flex;
 
   div {
-    background: var(--bordercolor);
-    height: 3vw;
-    width: 3vw;
-    margin: -0.2vw;
+    background: linear-gradient(
+      130deg,
+      var(--bordercolor-one),
+      var(--bordercolor-two)
+    );
+    background-size: 9% 9%;
+    height: 2vw;
+    width: 2vw;
   }
 }
 

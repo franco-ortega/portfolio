@@ -13,47 +13,49 @@ import styles from './Ocean.module.scss';
 
 const Ocean = () => {
   return (
-    <div className={styles.Ocean}>
+    <div className={styles.OceanBorder}>
+      <div className={styles.Ocean}>
 
-      {/* Name & Title */}
-      <header>
-        <h1>Franco Ortega</h1>
-        <h2>Full Stack Software Engineer</h2>
-      </header>
+        {/* Name & Title */}
+        <header>
+          <h1>Franco Ortega</h1>
+          <h2>Full Stack Software Engineer</h2>
+        </header>
 
-      {/* Continents */}
-      <Projects />
-      <Profile />
-      <Resume />
-      <Cartography />
+        {/* Continents */}
+        <Projects />
+        <Profile />
+        <Resume />
+        <Cartography />
 
-      {/* Islands */}
-      <IslandChain />
+        {/* Islands */}
+        <IslandChain />
 
-      {/* Map Elements */}
-      <Legend />
-      <Scale />
-      <Compass />
+        {/* Map Elements */}
+        <Legend />
+        <Scale />
+        <Compass />
 
-      {/* Border Corners */}
-      <BorderCorner
-        grid={borderCornerData.cornerNW.grid}
-        shape={borderCornerData.cornerNW.shape}
-      />
-      <BorderCorner
-        grid={borderCornerData.cornerNE.grid}
-        shape={borderCornerData.cornerNE.shape}
-      />
-      <BorderCorner
-        grid={borderCornerData.cornerSW.grid}
-        shape={borderCornerData.cornerSW.shape}
-      />
-      <BorderCorner
-        grid={borderCornerData.cornerSE.grid}
-        shape={borderCornerData.cornerSE.shape}
-      />
+        {/* Border Corners */}
+        <BorderCorner
+          grid={borderCornerData.cornerNW.grid}
+          shape={borderCornerData.cornerNW.shape}
+        />
+        <BorderCorner
+          grid={borderCornerData.cornerNE.grid}
+          shape={borderCornerData.cornerNE.shape}
+        />
+        <BorderCorner
+          grid={borderCornerData.cornerSW.grid}
+          shape={borderCornerData.cornerSW.shape}
+        />
+        <BorderCorner
+          grid={borderCornerData.cornerSE.grid}
+          shape={borderCornerData.cornerSE.shape}
+        />
 
-      
+        
+      </div>
     </div>
   );
 };

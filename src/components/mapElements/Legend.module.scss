@@ -18,11 +18,11 @@
     background: rgb(245, 245, 101);
     background: linear-gradient(
       125deg,
-      rgb(245, 245, 80),
-      rgb(245, 245, 148),
-      rgb(245, 245, 120),
-      rgb(248, 248, 93),
-      rgb(245, 245, 148)
+      var(--yellow-one),
+      var(--yellow-two),
+      var(--yellow-three),
+      var(--yellow-four),
+      var(--yellow-five)
     );
     background-size: 100% 100%;
 
