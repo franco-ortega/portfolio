@@ -1,11 +1,10 @@
 @use '../../scss/' as *;
 
-
 .OceanBorder {
   background: linear-gradient(
     130deg,
-    var(--bordercolor),
-    yellow
+    var(--bordercolor-one),
+    var(--bordercolor-two)
   );
   background-size: .25% .25%;
   height: 100vh;
@@ -35,13 +34,8 @@
   -o-animation: ocean-wave 20s ease infinite both;
   -ms-animation: ocean-wave 20s ease infinite both;
 
-  // height: 100vh;
-  // width: 100vw;
-
   height: 99%;
   width: 99%;
-
-  // border: 1vw solid var(--bordercolor);
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);

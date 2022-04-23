@@ -8,16 +8,14 @@
   display: flex;
 
   div {
-    background: var(--bordercolor);
     background: linear-gradient(
       130deg,
-      var(--bordercolor),
-      yellow
+      var(--bordercolor-one),
+      var(--bordercolor-two)
     );
-    background-size: 8% 8%;
+    background-size: 9% 9%;
     height: 2vw;
     width: 2vw;
-    // margin: -0.2vw;
   }
 }
 
