@@ -34,12 +34,12 @@ const Legend = () => {
             <li>Postman</li>
             <li>VSCode</li>
             <li>Zapier</li>
-            <li>Asana</li>
             <li>Figma</li>
             <li>Miro</li>
+            <li>Storybook</li>
+            <li>Asana</li>
+            <li>Hive</li>
             <li>Jira</li>
-            <li>Slack</li>
-            <li>Zoom</li>
           </ul>
         </p>
       </div>
