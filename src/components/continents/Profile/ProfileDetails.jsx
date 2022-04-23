@@ -26,16 +26,16 @@ const Profile = () => {
         </header>
         <section className={styles.Bio}>
           <p className={styles.BioParagraph}>
-                Compassion, communication, creativity, collaboration, and curiosity are qualities that I value dearly and strive to continuously improve. Optimism guides my efforts while realistic practicality ensures that my goals are brought to fruition. Doing work that improves the lives of others brings me great joy.
+            I am a frontend-leaning engineer who loves to create intuitive interfaces supported by proper guidance. I appreciate well-documented and efficient processes that offer structure and flexibility. I value clear and kind communication, creativity, diversity, and supportive environments that nurture growth. Optimism guides my efforts while practicality ensures that my goals are brought to fruition. Helping others brings me great joy.
           </p>
           <p className={styles.BioParagraph}>
-                Adaptability, empathy, and patience are strengths that have served me well across multiple fields from publishing to education to transportation. I have applied these to brainstorming, problem solving, and maintaining forward momentum even as circumstances change unexpectedly. Furthermore, my professional experience has put me in constant contact with people of all ages and from many walks of life. This has given me tremendous opportunity to grow as a communicator, listener, and mediator. I look forward to using these strengths and experiences to enhance my contributions as a member of a software development team for a company that values the well-being of its workers and cares about its impact.
+            Adaptability, empathy, and patience are strengths that have served me well across multiple fields. I have applied these to brainstorming, problem solving, and maintaining forward momentum even as circumstances change unexpectedly. Furthermore, my professional experience has put me in contact with people of all ages and from many walks of life. This has given me tremendous opportunity to grow as a communicator, listener, and mediator. I use these strengths and learnings to enhance my contributions as a team member.
           </p>
           <p className={styles.BioParagraph}>
-                Of course, what would a profile page be without more personal details too? In addition to growing up as a math and science kid, I have learned to love and nurture my creative side through writing, cartography, and boardgame design. Other things that make me smile include bouldering, getting around on bike, attending art events, sharing food at potlucks, and visiting friends who have wound up in far-flung places. Also, roller hockey, punk rock, and zines were big parts of my past that I very much appreciated and occasionally still enjoy in smaller doses these days.
+            Of course, what would a profile page be without more personal details too? In addition to growing up as a math and science kid, I have learned to love and nurture my creative side through writing, cartography, and board game design. Other things that make me smile are bouldering, biking, art shows, and visiting friends who have landed in faraway places. Also, roller hockey, punk rock, and zines were big parts of my past that I very much appreciated and occasionally still enjoy in smaller doses these days.
           </p>
           <p className={styles.BioParagraph}>
-                Yes to social justice, climate justice, and economic justice. 
+            Yes to social justice, climate justice, and economic justice. 
           </p>
         </section>
       </FocusOn>
