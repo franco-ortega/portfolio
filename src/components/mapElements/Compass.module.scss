@@ -21,7 +21,7 @@
     25deg,
     silver,
     green,
-    rgb(245, 245, 120),
+    var(--yellow-three),
     silver,
     green
   );
@@ -31,7 +31,6 @@
 
   height: 100%;
   width: 100%;
-  // margin: auto;
 
   display: flex;
   align-items: center;

@@ -184,7 +184,6 @@
 // Mobile screen size with portrait orientation
 @include media-query(mobile) {
   .Ocean {
-    // border: 1.5vw solid var(--bordercolor);
     grid-template-rows: repeat(24, 1fr);
 
     header {
