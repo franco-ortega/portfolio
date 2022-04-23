@@ -1,5 +1,22 @@
 @use '../../scss/' as *;
 
+
+.OceanBorder {
+  background: linear-gradient(
+    130deg,
+    var(--bordercolor),
+    yellow
+  );
+  background-size: .25% .25%;
+  height: 100vh;
+  padding: .5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .Ocean {
   background: linear-gradient(
     90deg,
@@ -18,17 +35,20 @@
   -o-animation: ocean-wave 20s ease infinite both;
   -ms-animation: ocean-wave 20s ease infinite both;
 
-  height: 100vh;
-  width: 100vw;
+  // height: 100vh;
+  // width: 100vw;
 
-  border: 1vw solid var(--bordercolor);
+  height: 99%;
+  width: 99%;
+
+  // border: 1vw solid var(--bordercolor);
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(8, 1fr);
 
-  position: absolute;
-  z-index: -1;
+  position: relative;
+  z-index: 1;
 
   header {
     grid-column: 4 / 10;
@@ -170,7 +190,7 @@
 // Mobile screen size with portrait orientation
 @include media-query(mobile) {
   .Ocean {
-    border: 1.5vw solid var(--bordercolor);
+    // border: 1.5vw solid var(--bordercolor);
     grid-template-rows: repeat(24, 1fr);
 
     header {

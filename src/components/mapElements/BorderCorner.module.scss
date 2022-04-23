@@ -9,9 +9,15 @@
 
   div {
     background: var(--bordercolor);
-    height: 3vw;
-    width: 3vw;
-    margin: -0.2vw;
+    background: linear-gradient(
+      130deg,
+      var(--bordercolor),
+      yellow
+    );
+    background-size: 8% 8%;
+    height: 2vw;
+    width: 2vw;
+    // margin: -0.2vw;
   }
 }
 
