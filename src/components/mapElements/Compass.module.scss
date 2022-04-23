@@ -123,7 +123,7 @@
     125deg,
     silver,
     green,
-    rgb(245, 245, 120),
+    var(--yellow-three),
     silver
   );
   background-size: 50% 50%;
@@ -170,7 +170,7 @@
   grid-row: 2 / 5;
   border-top: 2vw solid transparent;
   border-right: 4vw solid transparent;
-  border-bottom: 9vw solid rgb(245, 245, 120);
+  border-bottom: 9vw solid var(--yellow-three);
   border-left: 4vw solid transparent;
   height: 50%;
   width: 50%;
@@ -184,7 +184,7 @@
 .BottomTriangle {
   grid-column: 3 / 5;
   grid-row: 2 / 5;
-  border-top: 9vw solid rgb(245, 245, 120);
+  border-top: 9vw solid var(--yellow-three);
   border-right: 4vw solid transparent;
   border-bottom: 2vw solid transparent;
   border-left: 4vw solid transparent;
@@ -201,7 +201,7 @@
   grid-column: 2 / 6;
   grid-row: 4 / 6;
   border-top: 3vw solid transparent;
-  border-right: 8vw solid rgb(245, 245, 120);
+  border-right: 8vw solid var(--yellow-three);
   border-bottom: 3vw solid transparent;
   border-left: 2vw solid transparent;
   height: 50%;
@@ -217,7 +217,7 @@
   border-top: 3vw solid transparent;
   border-right: 2vw solid transparent;
   border-bottom: 3vw solid transparent;
-  border-left: 8vw solid rgb(245, 245, 120);
+  border-left: 8vw solid var(--yellow-three);
   height: 50%;
   width: 100%;
 
