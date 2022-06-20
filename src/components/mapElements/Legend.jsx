@@ -9,7 +9,7 @@ const Legend = () => {
         <p>
           <ul>
             <li>JavaScript</li>
-            <li>HTML/CSS</li>
+            <li>HTML / CSS</li>
             <li>React</li>
             <li>Redux</li>
             <li>Sass</li>
@@ -23,6 +23,7 @@ const Legend = () => {
             <li>Jest</li>
             <li>QUnit</li>
             <li>Supertest</li>
+            <li>React Testing Library</li>
           </ul>
           <ul>
             <li>Compass</li>
@@ -32,8 +33,8 @@ const Legend = () => {
             <li>Heroku</li>
             <li>Netlify</li>
             <li>Postman</li>
-            <li>VSCode</li>
             <li>Zapier</li>
+            <li>VSCode</li>
             <li>Figma</li>
             <li>Miro</li>
             <li>Storybook</li>
