@@ -33,9 +33,9 @@
     align-items: center;
     height: fit-content;
     width: 20vw;
-    padding: 1vw;
+    padding: 0.75rem 0.5rem 0.5rem 1rem;
     flex-basis: 0;
-    flex-grow: .5;
+    flex-grow: .55;
     flex-shrink: 0;
 
     p {
@@ -45,6 +45,7 @@
       width: 100%;
       padding: .5rem;
     }
+
   }
 
   h3 {
@@ -73,8 +74,9 @@
     div {
       border: solid 0.25vw rgb(10, 10, 10);
       max-height: 50vh;
+      padding-bottom: 0.25rem;
       width: 25vw;
-      flex-grow: .7;
+      flex-grow: .75;
     }
 
     h3 {
@@ -89,13 +91,15 @@
 
 @media screen and (max-width: 900px) {
   .Legend {
+    align-items: flex-end;
     div {
-      max-height: 30vh;
+      max-height: 35vh;
       overflow: auto;
+      
       p {
         flex-direction: column;
         width: fit-content;
-        margin: .5rem;
+        
       }
     }
   }

@@ -9,7 +9,7 @@ const Legend = () => {
         <p>
           <ul>
             <li>JavaScript</li>
-            <li>HTML / CSS</li>
+            <li>HTML/CSS</li>
             <li>React</li>
             <li>Redux</li>
             <li>Sass</li>
