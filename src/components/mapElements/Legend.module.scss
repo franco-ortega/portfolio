@@ -34,13 +34,16 @@
     height: fit-content;
     width: 20vw;
     padding: 1vw;
+    flex-basis: 0;
+    flex-grow: .5;
+    flex-shrink: 0;
 
     p {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-evenly;
       width: 100%;
-      margin: 1rem;
+      padding: .5rem;
     }
   }
 
@@ -71,6 +74,7 @@
       border: solid 0.25vw rgb(10, 10, 10);
       max-height: 50vh;
       width: 25vw;
+      flex-grow: .7;
     }
 
     h3 {
