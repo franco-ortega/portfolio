@@ -56,6 +56,10 @@
         li {
           list-style-type: square;
         }
+
+        li + li {
+          margin-top: 0.1rem;
+        }
       }
     }
   }
@@ -132,6 +136,10 @@
       max-height: 100%;
       width: 20vw;
       overflow: auto;
+
+      p {
+        flex-direction: column;
+      }
     }
   }
 }
@@ -187,6 +195,23 @@
       border: solid 0.5vw rgb(10, 10, 10);
       width: 40vw;
       overflow: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Legend {
+    div {
+      h3 {
+        font-size: 5vw;
+      }
+      p {
+        ul {
+          li {
+            font-size: 4vw;
+          }
+        }
+      }
     }
   }
 }
