@@ -25,18 +25,27 @@ const Profile = () => {
           </p>
         </header>
         <section className={styles.Bio}>
-          <p className={styles.BioParagraph}>
-            I am a frontend-leaning engineer who loves to create intuitive interfaces supported by proper guidance. I appreciate well-documented and efficient processes that offer structure and flexibility. I value clear and kind communication, creativity, diversity, and supportive environments that nurture growth. Optimism guides my efforts while practicality ensures that my goals are brought to fruition. Helping others brings me great joy.
-          </p>
-          <p className={styles.BioParagraph}>
-            Adaptability, empathy, and patience are strengths that have served me well across multiple fields. I have applied these to brainstorming, problem solving, and maintaining forward momentum even as circumstances change unexpectedly. Furthermore, my professional experience has put me in contact with people of all ages and from many walks of life. This has given me tremendous opportunity to grow as a communicator, listener, and mediator. I use these strengths and learnings to enhance my contributions as a team member.
-          </p>
-          <p className={styles.BioParagraph}>
-            Of course, what would a profile page be without more personal details too? In addition to growing up as a math and science kid, I have learned to love and nurture my creative side through writing, cartography, and board game design. Other things that make me smile are bouldering, biking, art shows, and visiting friends who have landed in faraway places. Also, roller hockey, punk rock, and zines were big parts of my past that I very much appreciated and occasionally still enjoy in smaller doses these days.
-          </p>
-          <p className={styles.BioParagraph}>
-            Yes to social justice, climate justice, and economic justice. 
-          </p>
+          <span>
+            Helping others brings me great joy, and I am very grateful for being able to accomplish this as a software engineer. The puzzle and problem-solving aspects of code spark my curiosity and creative juices. Doing challenging work that is engaging and rewarding keeps me motivated and performing at my best.
+          </span>
+          <span>
+            I love building products that provide a positive impact. To me this includes keeping in mind the user perspective in order to create intuitive interfaces that are supported by proper guidance and robust architecture.
+          </span>
+          <span>
+            I appreciate agile development with well-documented and efficient processes that offer both structure and flexibility.
+          </span>
+          <span>
+            I value clear & kind communication, creativity, cross-functional collaboration, and supportive environments that foster diversity & nurture growth.
+          </span>
+          <span>
+            Optimism guides my efforts while practicality ensures that my goals are brought to fruition.
+          </span>
+          <span>
+            Also, I grew up very much a math and science kid, but I have learned to love and nurture my creative side through writing, cartography, and board game design. Other things that make me smile are bouldering, bike rides, art shows, and visiting friends who have landed in faraway places. Also, roller hockey, punk rock, and zines were big parts of my past that I very much appreciated and occasionally still enjoy in smaller doses these days.
+          </span>
+          <span>
+            Yes to racial justice, social justice, climate justice, and economic justice.
+          </span>
         </section>
       </FocusOn>
     </ContinentDetails>

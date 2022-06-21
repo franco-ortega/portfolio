@@ -21,32 +21,32 @@
 }
 
 .Contact {
-  margin-top: 0.5vw;
   font-size: var(--popup-header-text);
 }
 
-.ContactLink + .ContactLink::before {
-  content: ' ';
-  margin-left: 2vw;
+.ContactLink + .ContactLink {
+  margin-left: 1.5vw;
 }
 
 .Bio {
-  height: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
   margin: 0.75vw 2vw;
-  padding: 1vw;
+  padding: 0.75rem;
   font-size: var(--popup-text);
   text-align: justify;
   overflow: auto;
-}
-
-.BioParagraph {
-  margin-bottom: 1vw;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.25rem 0.01rem black;
 }
 
 @media screen and (max-width: 1200px) {
-  .Bio {
-    height: 60%;
-    margin: 0.75vw 2vw;
+  .ProfileDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -62,43 +62,33 @@
   }
 
   .Bio {
-    height: 70%;
     margin: 2vw 4vw;
-  }
-
-  .BioParagraph {
-    padding-bottom: 1.5vw;
   }
 }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .ProfileDetails {
-    display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    padding-right: 1.25rem;
+    padding-bottom: 0.25rem;
   }
 
   .Header {
     margin: 0;
-    width: 25vw;
-    gap: 1vw;
+    width: 35%;
+    gap: 1.5vw;
   }
 
   .Photo {
+    margin-top: 0;
     width: 20vw;
-  }
-
-  .Name {
-    font-size: 3vw;
   }
 
   .Contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2vw;
   }
 
   .ContactLink + .ContactLink {
@@ -106,32 +96,20 @@
   }
 
   .Bio {
-    font-size: 2.5vw;
+    height: 90%;
+    width: 65%;
     margin: 0;
-    padding: 0;
-    height: 88vh;
-    width: 65vw;
   }
 }
 
 @include media-query(mobile) {
   .ProfileDetails {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    padding-bottom: 0.5rem;
   }
 
   .Photo {
     width: 30vw;
     margin-top: 4vw;
-    margin-bottom: 2vw;
-  }
-
-  .Contact {
-    margin-top: 1.5vw;
-  }
-
-  .BioParagraph {
     margin-bottom: 2vw;
   }
 }
