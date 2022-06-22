@@ -16,26 +16,20 @@
 
 ---
 
-## App x 1: 3
+## App: 3
 1. @include media-query(desktop-small) {
 1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 
 
-## Buttons x 2
-### ClosePopUp: 4
-1. @include media-query(desktop-small) {
-1. @include media-query(tablet) {
-1. @include media-maxWidth-orientation(tablet, landscape) {
-1. @include media-query(mobile) {
-
-### OpenDetails: 3
+## Buttons x 1 set (2 components)
+### ClosePopUp / OpenDetails: 3
 1. @include media-query(desktop-small) {
 1. @include media-query(tablet) {
 1. @include media-query(mobile) {
 
 
-## Continents x 7 (3 / 5)
+## Continents x 6 sets (3 components / 1 / 1 / 1 / 1 / 1)
 ### Cartography / Projects / Resume: 4
 1. @include media-maxWidth-minHeight(tablet, mobile) {
 1. @include media-mobile-landscape() {
@@ -72,7 +66,7 @@
 1. @include media-query(tablet) {
 
 
-## Islands x 2 (1 / 5)
+## Islands x 2 sets (1 component / 5 components)
 ### Island: 4
 1. @include media-maxWidth-minHeight(tablet, mobile) {
 1. @include media-maxWidth-orientation(tablet, landscape) {
@@ -114,7 +108,7 @@
 1. @include media-query(mobile) {
 
 
-## Maps x 1 (1 / 1)
+## Maps x 1 set (2 components)
 ### MapDetails / MapTallDetails: 4
 1. @include media-query(desktop-small) {
 1. @include media-maxWidth-minHeight(tablet, mobile) {
@@ -122,13 +116,13 @@
 1. @include media-query(mobile) {
 
 
-## Ocean x 1: 3
+## Ocean: 3
 1. @include media-query(tablet) {
 1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 
 ---
-## Projects x 1 (10)
+## Projects x 1 set (10 components)
 
 ### BeHuman / BeHumanDetails / ChooseGif / ChooseGifDetails / Ebb / EbbDetails / MajorArcana / MajorArcanaDetails / WeatherBeats / WeatherBeatsDetails: 3
 1. @include media-query(desktop-small) {
