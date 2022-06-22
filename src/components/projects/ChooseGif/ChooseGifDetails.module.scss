@@ -92,7 +92,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .ChooseGifDetails {
     border-radius: 0;
     height: 100vh;

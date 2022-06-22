@@ -16,13 +16,13 @@
 ## Buttons x 2
 ### ClosePopUp: 4
 1. @include media-query(desktop-small) {
-1. @media screen and (max-width: 900px) {}
+1. @include media-query(tablet) {}
 1. @media screen and (max-width: 900px) and (orientation: landscape) {}
 1. @include media-query(mobile) {
 
 ### OpenDetails: 3
 1. @include media-query(desktop-small) {
-1. @media screen and (max-width: 900px) {}
+1. @include media-query(tablet) {}
 1. @include media-query(mobile) {
 
 
@@ -61,7 +61,7 @@
 
 ### ContinentDetails: 2
 1. @include media-query(desktop-small) {
-1. @media screen and (max-width: 900px) {
+1. @include media-query(tablet) {
 
 
 ## Islands x 2 (1 / 5)
@@ -79,12 +79,12 @@
 
 ## Map Elements x 4
 ### BorderCorner: 2
-1. @media screen and (max-width: 900px) {
+1. @include media-query(tablet) {
 1. @include media-query(mobile) {
 
 ### Compass: 6
 1. @include media-query(desktop-small) {
-1. @media screen and (max-width: 900px) {
+1. @include media-query(tablet) {
 1. @media screen and (max-width: 900px) and (min-height: 1000px) {
 1. @media screen and (max-width: 900px) and (min-width: 700px) and (max-height: 500px) and (orientation: landscape) {
 1. @media screen and (max-width: 700px) and (orientation: landscape) {
@@ -92,7 +92,7 @@
 
 ### Legend: 8
 1. @include media-query(desktop-small) {
-1. @media screen and (max-width: 900px) {
+1. @include media-query(tablet) {
 1. @media screen and (max-width: 900px) and (min-height: 1000px) {
 1. @media screen and (max-width: 900px) and (max-height: 500px) {
 1. @media screen and (max-width: 700px) {
@@ -101,7 +101,7 @@
 1. @media screen and (max-width: 400px) {
 
 ### Scale: 3
-1. @media screen and (max-width: 900px) {
+1. @include media-query(tablet) {
 1. @media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
 1. @include media-query(mobile) {
 
@@ -115,7 +115,7 @@
 
 
 ## Ocean x 1: 3
-1. @media screen and (max-width: 900px) {
+1. @include media-query(tablet) {
 1. @media screen and (max-width: 900px) and (orientation: landscape) {
 1. @include media-query(mobile) {
 
@@ -123,11 +123,11 @@
 ### Projects x 2 (9 / 1)
 ## BeHuman / BeHumanDetails / ChooseGif / ChooseGifDetails / Ebb / EbbDetails / MajorArcana / MajorArcanaDetails / WeatherBeats: 3
 1. @include media-query(desktop-small) {
-1. @media screen and (max-width: 900px) {
+1. @include media-query(tablet) {
 1. @include media-query(mobile) {
 
 ## WeatherBeatsDetails: 4
 1. @include media-query(desktop-small) {
 1. @media screen and (max-width: 1100px) and (max-height: 1400px) {
-1. @media screen and (max-width: 900px) {
+1. @include media-query(tablet) {
 1. @include media-query(mobile) {

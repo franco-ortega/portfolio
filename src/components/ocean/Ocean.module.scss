@@ -121,7 +121,7 @@
 }
 
 // Tablet screen size
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .Ocean {
     grid-template-rows: repeat(12, 1fr);
     h1 {

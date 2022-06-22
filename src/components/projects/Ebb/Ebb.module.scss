@@ -46,7 +46,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .Ebb {
     border-radius: 1.5vw;
   }

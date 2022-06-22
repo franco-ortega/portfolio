@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .ContinentDetails {
     border-radius: 0;
     top: 0%;

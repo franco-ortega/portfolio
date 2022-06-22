@@ -45,7 +45,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .WeatherBeats {
     background-position: 50% 50%;
     border-radius: 1.5vw;

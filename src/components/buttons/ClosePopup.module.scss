@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .ClosePopup {
     padding: 0.5vw 1.2vw;
     top: 2vw;

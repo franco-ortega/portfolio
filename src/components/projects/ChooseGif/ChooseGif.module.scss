@@ -41,7 +41,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .ChooseGif {
     border-radius: 1.5vw;
   }

@@ -93,7 +93,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .WeatherBeatsDetails {
     background-position: 40% 0%;
     background-size: 250%;

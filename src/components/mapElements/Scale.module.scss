@@ -45,7 +45,7 @@
   background: white;
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .ScaleContainer {
     padding: 10vw 0vw 0vw 5vw;
   }
