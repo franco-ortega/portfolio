@@ -57,13 +57,12 @@
 1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 
-### ProjectsDetails: 6
+### ProjectsDetails: 5
 1. @include media-query(desktop-small) {
 1. @include media-maxWidth-minHeight(tablet, mobile) {
 1. @include media-maxWidth-minHeight(tablet, senior) {
 1. @include media-mobile-landscape() {
 1. @include media-query(mobile) {
-1. @media screen and (max-width: 400px) and (max-height: 700px) {
 
 
 ### ContinentDetails: 2
