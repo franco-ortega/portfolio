@@ -28,7 +28,7 @@
   }
 }
 
-@include media-query-landscape(tablet) {
+@include media-maxWidth-orientation(tablet, landscape) {
   .ClosePopup {
     top: 0.25vw;
     left: 95vw;

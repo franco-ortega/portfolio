@@ -164,7 +164,7 @@
 }
 
 // Mobile screen size with wide landscape orientation
-@include media-query-landscape(tablet) {
+@include media-maxWidth-orientation(tablet, landscape) {
   .Ocean {
     header {
       grid-column: 5 / 9;

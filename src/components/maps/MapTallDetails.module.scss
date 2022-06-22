@@ -53,7 +53,7 @@
   }
 }
 
-@include media-query-landscape(tablet) {
+@include media-maxWidth-orientation(tablet, landscape) {
   .MapTallDetails {
     border-radius: 0;
     top: 0%;

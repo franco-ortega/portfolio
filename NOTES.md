@@ -4,12 +4,16 @@
 1. desktop-small: 1200px
 1. tablet: 900px
 1. mobile: 500px
----
 
+## Sass Media Query Mixins
+1. media-query
+1. media-query-landscape
+
+---
 
 ## App x 1: 3
 1. @include media-query(desktop-small) {
-1. @include media-query-landscape(tablet) {
+1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 
 
@@ -17,7 +21,7 @@
 ### ClosePopUp: 4
 1. @include media-query(desktop-small) {
 1. @include media-query(tablet) {
-1. @include media-query-landscape(tablet) {}
+1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 
 ### OpenDetails: 3
@@ -35,19 +39,19 @@
 
 ### CartographyDetails: 3
 1. @media screen and (max-width: 900px) and (min-height: 500px) {
-1. @include media-query-landscape(tablet) {
+1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 
 ### Profile: 4
 1. @media screen and (max-width: 900px) and (min-height: 500px) {
 1. @media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
-1. @media screen and (max-width: 500px) and (orientation: portrait) {
+1. @include media-maxWidth-orientation(mobile, portrait) {
 1. @media (prefers-reduced-motion: reduce) {
 
 ### ProfileDetails: 4
 1. @include media-query(desktop-small) {
 1. @media screen and (max-width: 900px) and (min-height: 500px) {
-1. @include media-query-landscape(tablet) {
+1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 
 ### ProjectsDetails: 6
@@ -67,7 +71,7 @@
 ## Islands x 2 (1 / 5)
 ### Island: 4
 1. @media screen and (max-width: 900px) and (min-height: 500px) {
-1. @include media-query-landscape(tablet) {
+1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 1. @media (prefers-reduced-motion: reduce) {
 
@@ -87,7 +91,7 @@
 1. @include media-query(tablet) {
 1. @media screen and (max-width: 900px) and (min-height: 1000px) {
 1. @media screen and (max-width: 900px) and (min-width: 700px) and (max-height: 500px) and (orientation: landscape) {
-1. @media screen and (max-width: 700px) and (orientation: landscape) {
+1. @include media-maxWidth-orientation(junior, landscape) {
 1. @include media-query(mobile) {
 
 ### Legend: 8
@@ -110,13 +114,13 @@
 ### MapDetails / MapTallDetails: 4
 1. @include media-query(desktop-small) {
 1. @media screen and (max-width: 900px) and (min-height: 500px) {
-1. @include media-query-landscape(tablet) {
+1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 
 
 ## Ocean x 1: 3
 1. @include media-query(tablet) {
-1. @include media-query-landscape(tablet) {
+1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 
 

@@ -117,12 +117,16 @@ a:hover {
   }
 }
 
-@include media-query-landscape(tablet) {
+@include media-maxWidth-orientation(tablet, landscape) {
   :root {
     --popup-title: 3.5vw;
     --popup-header-text: 2.25vw;
     --popup-text: 2vw;
   }
+  // body {
+  //   background-color: green;
+  //   padding: 2rem;
+  // }
 }
 
 @include media-query(mobile) {

@@ -3,7 +3,8 @@
 $breakpoints: (
   desktop-small: 1200px,
   tablet: 900px,
-  mobile: 500px,
+  junior: 700px,
+  mobile: 500px
 );
 
 @mixin media-query($key) {
@@ -18,6 +19,14 @@ $breakpoints: (
   $size: map.get($breakpoints, $key);
 
   @media (max-width: $size) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin media-maxWidth-orientation($key, $orientation) {
+  $size: map.get($breakpoints, $key);
+
+  @media (max-width: $size) and (orientation: $orientation) {
     @content;
   }
 }
