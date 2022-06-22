@@ -9,9 +9,9 @@
 1. mobile-narrow: 300px
 
 ## Sass Media Query Mixins
-1. media-query
-1. media-maxWidth-orientation
-1. media-maxWidth-minHeight
+1. media-query(key)
+1. media-maxWidth-orientation(key, orientation)
+1. media-maxWidth-minHeight(key1, key2)
 1. media-mobile-landscape()
 
 ---
@@ -127,15 +127,10 @@
 1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 
+---
+## Projects x 1 (10)
 
-### Projects x 2 (9 / 1)
-## BeHuman / BeHumanDetails / ChooseGif / ChooseGifDetails / Ebb / EbbDetails / MajorArcana / MajorArcanaDetails / WeatherBeats: 3
+### BeHuman / BeHumanDetails / ChooseGif / ChooseGifDetails / Ebb / EbbDetails / MajorArcana / MajorArcanaDetails / WeatherBeats / WeatherBeatsDetails: 3
 1. @include media-query(desktop-small) {
-1. @include media-query(tablet) {
-1. @include media-query(mobile) {
-
-## WeatherBeatsDetails: 4
-1. @include media-query(desktop-small) {
-1. @media screen and (max-width: 1100px) and (max-height: 1400px) {
 1. @include media-query(tablet) {
 1. @include media-query(mobile) {
