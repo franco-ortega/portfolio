@@ -13,7 +13,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+@include media-mobile-landscape() {
   .LinkedIn {
     grid-column: 5 / 11;
     grid-row: 3 / 6;

@@ -60,7 +60,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+@include media-mobile-landscape() {
   .Projects {
     grid-column: 1 / 5;
     grid-row: 2 / 8;

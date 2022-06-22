@@ -36,7 +36,7 @@
 ## Continents x 7 (3 / 5)
 ### Cartography / Projects / Resume: 4
 1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+1. @include media-mobile-landscape() {
 1. @include media-query(mobile) {
 1. @media (prefers-reduced-motion: reduce) {
 
@@ -47,7 +47,7 @@
 
 ### Profile: 4
 1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+1. @include media-mobile-landscape() {
 1. @include media-maxWidth-orientation(mobile, portrait) {
 1. @media (prefers-reduced-motion: reduce) {
 
@@ -61,7 +61,7 @@
 1. @include media-query(desktop-small) {
 1. @include media-maxWidth-minHeight(tablet, mobile) {
 1. @include media-maxWidth-minHeight(tablet, senior) {
-1. @media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+1. @include media-mobile-landscape() {
 1. @include media-query(mobile) {
 1. @media screen and (max-width: 400px) and (max-height: 700px) {
 
@@ -80,7 +80,7 @@
 
 ### IslandChain / Email / GitHub / LinkedIn / Twitter: 3
 1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+1. @include media-mobile-landscape() {
 1. @include media-query(mobile) {
 
 
@@ -109,7 +109,7 @@
 
 ### Scale: 3
 1. @include media-query(tablet) {
-1. @media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+1. @include media-mobile-landscape() {
 1. @include media-query(mobile) {
 
 

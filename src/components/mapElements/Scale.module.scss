@@ -73,7 +73,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+@include media-mobile-landscape() {
   .ScaleContainer {
     grid-row: 11 / 13;
     position: absolute;

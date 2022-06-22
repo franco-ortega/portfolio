@@ -68,7 +68,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+@include media-mobile-landscape() {
   .Cartography {
     grid-column: 4 / 7;
     grid-row: 9 / 13;
