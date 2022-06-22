@@ -3,11 +3,14 @@
 ## Sass Breakpoints
 1. desktop-small: 1200px
 1. tablet: 900px
+1. junior: 700px
 1. mobile: 500px
 
 ## Sass Media Query Mixins
 1. media-query
 1. media-query-landscape
+1. media-maxWidth-orientation
+1. media-maxWidth-minHeight
 
 ---
 
@@ -32,31 +35,31 @@
 
 ## Continents x 7 (3 / 5)
 ### Cartography / Projects / Resume: 4
-1. @media screen and (max-width: 900px) and (min-height: 500px) {
+1. @include media-maxWidth-minHeight(tablet, mobile) {
 1. @media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
 1. @include media-query(mobile) {
 1. @media (prefers-reduced-motion: reduce) {
 
 ### CartographyDetails: 3
-1. @media screen and (max-width: 900px) and (min-height: 500px) {
+1. @include media-maxWidth-minHeight(tablet, mobile) {
 1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 
 ### Profile: 4
-1. @media screen and (max-width: 900px) and (min-height: 500px) {
+1. @include media-maxWidth-minHeight(tablet, mobile) {
 1. @media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
 1. @include media-maxWidth-orientation(mobile, portrait) {
 1. @media (prefers-reduced-motion: reduce) {
 
 ### ProfileDetails: 4
 1. @include media-query(desktop-small) {
-1. @media screen and (max-width: 900px) and (min-height: 500px) {
+1. @include media-maxWidth-minHeight(tablet, mobile) {
 1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 
 ### ProjectsDetails: 6
 1. @include media-query(desktop-small) {
-1. @media screen and (max-width: 900px) and (min-height: 500px) {
+1. @include media-maxWidth-minHeight(tablet, mobile) {
 1. @media screen and (max-width: 900px) and (min-height: 1000px) {
 1. @media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
 1. @include media-query(mobile) {
@@ -70,13 +73,13 @@
 
 ## Islands x 2 (1 / 5)
 ### Island: 4
-1. @media screen and (max-width: 900px) and (min-height: 500px) {
+1. @include media-maxWidth-minHeight(tablet, mobile) {
 1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 1. @media (prefers-reduced-motion: reduce) {
 
 ### IslandChain / Email / GitHub / LinkedIn / Twitter: 3
-1. @media screen and (max-width: 900px) and (min-height: 500px) {
+1. @include media-maxWidth-minHeight(tablet, mobile) {
 1. @media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
 1. @include media-query(mobile) {
 
@@ -113,7 +116,7 @@
 ## Maps x 1 (1 / 1)
 ### MapDetails / MapTallDetails: 4
 1. @include media-query(desktop-small) {
-1. @media screen and (max-width: 900px) and (min-height: 500px) {
+1. @include media-maxWidth-minHeight(tablet, mobile) {
 1. @include media-maxWidth-orientation(tablet, landscape) {
 1. @include media-query(mobile) {
 

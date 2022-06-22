@@ -6,7 +6,7 @@
   @extend %island-centering;
 }
 
-@media screen and (max-width: 900px) and (min-height: 500px) {
+@include media-maxWidth-minHeight(tablet, mobile) {
   .Email {
     grid-column: 10 / 13;
     grid-row: 3 / 7;

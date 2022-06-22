@@ -45,7 +45,7 @@
   font-size: 8vw;
 }
 
-@media screen and (max-width: 900px) and (min-height: 500px) {
+@include media-maxWidth-minHeight(tablet, mobile) {
   .Profile {
     grid-column: 3 / 9;
     grid-row: 5 / 8;

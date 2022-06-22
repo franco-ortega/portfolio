@@ -43,7 +43,7 @@
   font-size: 6.5vw;
 }
 
-@media screen and (max-width: 900px) and (min-height: 500px) {
+@include media-maxWidth-minHeight(tablet, mobile) {
   .Resume {
     grid-column: 8 / 13;
     grid-row: 7 / 10;

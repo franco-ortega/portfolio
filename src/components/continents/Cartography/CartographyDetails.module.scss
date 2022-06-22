@@ -106,7 +106,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (min-height: 500px) {
+@include media-maxWidth-minHeight(tablet, mobile) {
   .CartographyDetails {
     header {
       margin-top: 2vw;

@@ -6,7 +6,7 @@
   @extend %island-centering;
 }
 
-@media screen and (max-width: 900px) and (min-height: 500px) {
+@include media-maxWidth-minHeight(tablet, mobile) {
   .Twitter {
     grid-column: 8 / 12;
     grid-row: 6 / 9;

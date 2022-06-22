@@ -30,3 +30,12 @@ $breakpoints: (
     @content;
   }
 }
+
+@mixin media-maxWidth-minHeight($key1, $key2) {
+  $width: map.get($breakpoints, $key1);
+  $height: map.get($breakpoints, $key2);
+
+  @media (max-width: $width) and (min-height: $height) {
+    @content;
+  }
+}

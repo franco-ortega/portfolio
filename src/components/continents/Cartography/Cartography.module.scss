@@ -52,7 +52,7 @@
   transform: rotate(-7.5deg);
 }
 
-@media screen and (max-width: 900px) and (min-height: 500px) {
+@include media-maxWidth-minHeight(tablet, mobile) {
   .Cartography {
     grid-column: 1 / 5;
     grid-row: 8 / 12;
