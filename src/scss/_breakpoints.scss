@@ -13,3 +13,11 @@ $breakpoints: (
     @content;
   }
 }
+
+@mixin media-query-landscape($key) {
+  $size: map.get($breakpoints, $key);
+
+  @media (max-width: $size) and (orientation: landscape) {
+    @content;
+  }
+}

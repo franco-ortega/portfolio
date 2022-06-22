@@ -117,7 +117,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@include media-query-landscape(tablet) {
   :root {
     --popup-title: 3.5vw;
     --popup-header-text: 2.25vw;

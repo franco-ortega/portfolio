@@ -140,7 +140,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@include media-query-landscape(tablet) {
   .CartographyDetails {
     section {
       font-size: 2.5vw;

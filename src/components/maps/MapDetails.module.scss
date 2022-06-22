@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@include media-query-landscape(tablet) {
   .MapDetails {
     border-radius: 0;
     padding: 2vw;

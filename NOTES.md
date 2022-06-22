@@ -9,20 +9,20 @@
 
 ## App x 1: 3
 1. @include media-query(desktop-small) {
-1. @media screen and (max-width: 900px) and (orientation: landscape) {
+1. @include media-query-landscape(tablet) {
 1. @include media-query(mobile) {
 
 
 ## Buttons x 2
 ### ClosePopUp: 4
 1. @include media-query(desktop-small) {
-1. @include media-query(tablet) {}
-1. @media screen and (max-width: 900px) and (orientation: landscape) {}
+1. @include media-query(tablet) {
+1. @include media-query-landscape(tablet) {}
 1. @include media-query(mobile) {
 
 ### OpenDetails: 3
 1. @include media-query(desktop-small) {
-1. @include media-query(tablet) {}
+1. @include media-query(tablet) {
 1. @include media-query(mobile) {
 
 
@@ -35,7 +35,7 @@
 
 ### CartographyDetails: 3
 1. @media screen and (max-width: 900px) and (min-height: 500px) {
-1. @media screen and (max-width: 900px) and (orientation: landscape) {
+1. @include media-query-landscape(tablet) {
 1. @include media-query(mobile) {
 
 ### Profile: 4
@@ -47,7 +47,7 @@
 ### ProfileDetails: 4
 1. @include media-query(desktop-small) {
 1. @media screen and (max-width: 900px) and (min-height: 500px) {
-1. @media screen and (max-width: 900px) and (orientation: landscape) {
+1. @include media-query-landscape(tablet) {
 1. @include media-query(mobile) {
 
 ### ProjectsDetails: 6
@@ -67,7 +67,7 @@
 ## Islands x 2 (1 / 5)
 ### Island: 4
 1. @media screen and (max-width: 900px) and (min-height: 500px) {
-1. @media screen and (max-width: 900px) and (orientation: landscape) {
+1. @include media-query-landscape(tablet) {
 1. @include media-query(mobile) {
 1. @media (prefers-reduced-motion: reduce) {
 
@@ -110,13 +110,13 @@
 ### MapDetails / MapTallDetails: 4
 1. @include media-query(desktop-small) {
 1. @media screen and (max-width: 900px) and (min-height: 500px) {
-1. @media screen and (max-width: 900px) and (orientation: landscape) {
+1. @include media-query-landscape(tablet) {
 1. @include media-query(mobile) {
 
 
 ## Ocean x 1: 3
 1. @include media-query(tablet) {
-1. @media screen and (max-width: 900px) and (orientation: landscape) {
+1. @include media-query-landscape(tablet) {
 1. @include media-query(mobile) {
 
 
