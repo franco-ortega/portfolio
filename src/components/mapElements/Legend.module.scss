@@ -199,7 +199,7 @@
   }
 }
 
-@media screen and (max-width: 300px) {
+@include media-query(mobile-narrow) {
   .LegendBox {
     .Legend {
       h3 {

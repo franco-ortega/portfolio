@@ -105,7 +105,7 @@
 1. @media screen and (max-width: 700px) {
 1. @include media-query(mobile) {
 1. @media screen and (max-width: 500px) and (max-height: 700px) {
-1. @media screen and (max-width: 400px) {
+1. @include media-query(mobile-narrow) {
 
 ### Scale: 3
 1. @include media-query(tablet) {

@@ -5,7 +5,8 @@ $breakpoints: (
   senior: 1000px,
   tablet: 900px,
   junior: 700px,
-  mobile: 500px
+  mobile: 500px,
+  mobile-narrow: 300px
 );
 
 @mixin media-query($key) {
