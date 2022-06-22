@@ -60,7 +60,7 @@
 ### ProjectsDetails: 6
 1. @include media-query(desktop-small) {
 1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @media screen and (max-width: 900px) and (min-height: 1000px) {
+1. @include media-maxWidth-minHeight(tablet, senior) {
 1. @media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
 1. @include media-query(mobile) {
 1. @media screen and (max-width: 400px) and (max-height: 700px) {
@@ -92,7 +92,7 @@
 ### Compass: 6
 1. @include media-query(desktop-small) {
 1. @include media-query(tablet) {
-1. @media screen and (max-width: 900px) and (min-height: 1000px) {
+1. @include media-maxWidth-minHeight(tablet, senior) {
 1. @media screen and (max-width: 900px) and (min-width: 700px) and (max-height: 500px) and (orientation: landscape) {
 1. @include media-maxWidth-orientation(junior, landscape) {
 1. @include media-query(mobile) {
@@ -100,7 +100,7 @@
 ### Legend: 8
 1. @include media-query(desktop-small) {
 1. @include media-query(tablet) {
-1. @media screen and (max-width: 900px) and (min-height: 1000px) {
+1. @include media-maxWidth-minHeight(tablet, senior) {
 1. @media screen and (max-width: 900px) and (max-height: 500px) {
 1. @media screen and (max-width: 700px) {
 1. @include media-query(mobile) {

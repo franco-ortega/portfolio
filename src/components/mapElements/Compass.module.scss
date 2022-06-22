@@ -238,7 +238,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (min-height: 1000px) {
+@include media-maxWidth-minHeight(tablet, senior) {
   .Compass {
     grid-row: 11 / 13;
   }
