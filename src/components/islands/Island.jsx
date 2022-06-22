@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styles from './Island.module.scss';
 
 const Island = ({ title, url }) => {
-  console.log(url);
   return (
     <a className={styles.Island}
       href={url}

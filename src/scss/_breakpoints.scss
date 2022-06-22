@@ -35,7 +35,6 @@ $breakpoints: (
 }
 
 @mixin media-mobile-landscape() {
-  // $size: map.get($breakpoints, $key);
   @media (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
     @content;
   }

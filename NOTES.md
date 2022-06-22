@@ -2,15 +2,17 @@
 
 ## Sass Breakpoints
 1. desktop-small: 1200px
+1. senior: 1000px
 1. tablet: 900px
 1. junior: 700px
 1. mobile: 500px
+1. mobile-narrow: 300px
 
 ## Sass Media Query Mixins
 1. media-query
-1. media-query-landscape
 1. media-maxWidth-orientation
 1. media-maxWidth-minHeight
+1. media-mobile-landscape()
 
 ---
 
