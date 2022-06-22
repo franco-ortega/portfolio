@@ -31,7 +31,7 @@
   text-align: justify;
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .ChooseGif {
     border-radius: 1.25vw;
   }
@@ -41,7 +41,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .ChooseGif {
     border-radius: 1.5vw;
   }

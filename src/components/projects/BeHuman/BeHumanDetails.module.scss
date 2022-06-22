@@ -77,7 +77,7 @@
   width: 15vw;
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .BeHumanDetails {
     height: 97vh;
     top: 1.5%;
@@ -92,7 +92,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .BeHumanDetails {
     border-radius: 0;
     height: 100vh;

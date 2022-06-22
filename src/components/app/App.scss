@@ -75,7 +75,7 @@ a:hover {
   color: var(--darkestblue);
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   :root {
     --popup-title: 3.5vw;
     --popup-header-text: 1.75vw;
@@ -94,7 +94,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   :root {
     --outer-coastline-padding: 1vw;
     --inner-coastline-border-width: 0.3vw;
@@ -117,7 +117,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@include media-maxWidth-orientation(tablet, landscape) {
   :root {
     --popup-title: 3.5vw;
     --popup-header-text: 2.25vw;

@@ -36,7 +36,7 @@
   text-align: justify;
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .Ebb {
     border-radius: 1.25vw;
   }
@@ -46,7 +46,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .Ebb {
     border-radius: 1.5vw;
   }

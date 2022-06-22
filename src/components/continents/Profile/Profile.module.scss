@@ -45,7 +45,7 @@
   font-size: 8vw;
 }
 
-@media screen and (max-width: 900px) and (min-height: 500px) {
+@include media-maxWidth-minHeight(tablet, mobile) {
   .Profile {
     grid-column: 3 / 9;
     grid-row: 5 / 8;
@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+@include media-mobile-landscape() {
   .Profile {
     grid-column: 5 / 9;
     grid-row: 4 / 10;
@@ -71,7 +71,7 @@
   }
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@include media-maxWidth-orientation(mobile, portrait) {
   .Profile {
     grid-column: 1 / 8;
     grid-row: 10 / 14;

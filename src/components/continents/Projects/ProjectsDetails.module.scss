@@ -40,7 +40,7 @@
   width: 32.1%;
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .ProjectsDisplayCase {
     margin: 1vw;
     height: 82%;
@@ -55,7 +55,7 @@
 }
 
 // Desktop narrow screen size
-@media screen and (max-width: 900px) and (min-height: 500px) {
+@include media-maxWidth-minHeight(tablet, mobile) {
   .Intro {
     margin-top: 1vw;
   }
@@ -74,13 +74,13 @@
 }
 
 // Tablet screen size
-@media screen and (max-width: 900px) and (min-height: 1000px) {
+@include media-maxWidth-minHeight(tablet, senior) {
   .Project {
     height: 35%;
   }
 }
 
-@media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+@include media-mobile-landscape() {
   .Project {
     height: 80vh;
   }
@@ -98,22 +98,6 @@
   .Project {
     margin: 2vw auto;
     height: 40%;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 400px) and (max-height: 700px) {
-  .Intro {
-    margin: 1.5vw;
-  }
-
-  .ProjectsDisplayCase {
-    width: 90%;
-  }
-
-  .Project {
-    margin: 2vw auto;
-    height: 50%;
     width: 100%;
   }
 }

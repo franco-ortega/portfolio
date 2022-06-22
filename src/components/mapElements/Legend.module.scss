@@ -85,7 +85,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .LegendBox {
     grid-column: 8 / 13;
     grid-row: 2 / 8;
@@ -106,7 +106,7 @@
 }
 
 // Tablet screen
-@media screen and (max-width: 900px) and (min-height: 1000px) {
+@include media-maxWidth-minHeight(tablet, senior) {
   .LegendBox {
     h3 {
       font-size: 4vw;
@@ -144,7 +144,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@include media-query(junior) {
   .LegendBox {
     .Legend{
       div {
@@ -199,7 +199,7 @@
   }
 }
 
-@media screen and (max-width: 300px) {
+@include media-query(mobile-narrow) {
   .LegendBox {
     .Legend {
       h3 {

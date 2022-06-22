@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .BorderCorner {
     grid-row-end: 13;
   }

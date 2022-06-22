@@ -225,20 +225,20 @@
   transform: translate(-20%, -50%);
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .Compass {
     grid-column: 10 / 13;
     grid-row: 6 / 9;
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .Compass {
     grid-row: 10 / 13;
   }
 }
 
-@media screen and (max-width: 900px) and (min-height: 1000px) {
+@include media-maxWidth-minHeight(tablet, senior) {
   .Compass {
     grid-row: 11 / 13;
   }
@@ -251,7 +251,7 @@
   }
 }
 
-@media screen and (max-width: 700px) and (orientation: landscape) {
+@include media-maxWidth-orientation(junior, landscape) {
   .Compass {
     grid-column: 8 / 11;
     grid-row: 8 / 12;
