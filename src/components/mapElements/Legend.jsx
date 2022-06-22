@@ -3,10 +3,10 @@ import styles from './Legend.module.scss';
 
 const Legend = () => {
   return (
-    <section className={styles.Legend}>
-      <div>
+    <section className={styles.LegendBox}>
+      <div className={styles.Legend}>
         <h3>Legend</h3>
-        <p>
+        <div>
           <ul>
             <li>JavaScript</li>
             <li>HTML/CSS</li>
@@ -42,7 +42,7 @@ const Legend = () => {
             <li>Hive</li>
             <li>Jira</li>
           </ul>
-        </p>
+        </div>
       </div>
     </section>
   );
