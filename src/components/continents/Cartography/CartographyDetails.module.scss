@@ -87,7 +87,7 @@
   background-position: 25% 10%;
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .CartographyDetails {
     header {
       font-size: 5vw;

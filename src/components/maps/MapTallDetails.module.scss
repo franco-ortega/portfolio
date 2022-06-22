@@ -25,7 +25,7 @@
   height: 90%;
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .MapTallDetails {
     border-radius: 2vw;
     top: 1.5%;

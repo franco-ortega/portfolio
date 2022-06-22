@@ -66,7 +66,7 @@
 }
 
 // Desktop screen with narrow width (i.e. laptops)
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .Legend {
     grid-row: 1 / 7;
     align-items: center;

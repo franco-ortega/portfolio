@@ -74,7 +74,7 @@
   color: brown;
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .WeatherBeatsDetails {
     background-position: 15% 20%;
     background-size: 200%;

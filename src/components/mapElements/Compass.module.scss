@@ -225,7 +225,7 @@
   transform: translate(-20%, -50%);
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .Compass {
     grid-column: 10 / 13;
     grid-row: 6 / 9;

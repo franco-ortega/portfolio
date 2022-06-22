@@ -75,7 +75,7 @@
   width: 35vw;
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .MajorArcanaDetails {
     height: 97vh;
     top: 1.5%;
