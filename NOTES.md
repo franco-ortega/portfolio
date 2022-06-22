@@ -14,6 +14,24 @@
 1. media-maxWidth-minHeight(key1, key2)
 1. media-mobile-landscape()
 
+
+## Media Queries
+1. @include media-query(desktop-small) {
+1. @include media-query(tablet) {
+1. @include media-maxWidth-orientation(tablet, landscape) {
+1. @include media-maxWidth-minHeight(tablet, senior) {
+1. @include media-maxWidth-minHeight(tablet, mobile) {
+1. @media screen and (max-width: 900px) and (max-height: 500px) {
+1. @media screen and (max-width: 900px) and (min-width: 700px) and (max-height: 500px) and (orientation: landscape) {
+1. @include media-query(junior) {
+1. @include media-maxWidth-orientation(junior, landscape) {
+1. @media screen and (max-width: 500px) and (max-height: 700px) {
+1. @include media-query(mobile) {
+1. @include media-mobile-landscape() {
+1. @include media-maxWidth-orientation(mobile, portrait) {
+1. @include media-query(mobile-narrow) {
+1. @media (prefers-reduced-motion: reduce) {
+
 ---
 
 ## App: 3
