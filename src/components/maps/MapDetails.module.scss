@@ -27,7 +27,7 @@
   margin: 0.5vw;
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .MapDetails {
     padding: 3vw 2vw;
     top: 1.5%;
@@ -40,7 +40,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (min-height: 500px) {
+@include media-maxWidth-minHeight(tablet, mobile) {
   .MapDetails {
     border-radius: 0;
     padding: 10vw 4vw;
@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@include media-maxWidth-orientation(tablet, landscape) {
   .MapDetails {
     border-radius: 0;
     padding: 2vw;

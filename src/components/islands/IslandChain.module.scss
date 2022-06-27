@@ -9,14 +9,14 @@
   grid-template-rows: repeat(8, 1fr);
 }
 
-@media screen and (max-width: 900px) and (min-height: 500px) {
+@include media-maxWidth-minHeight(tablet, mobile) {
   .IslandChain {
     grid-column: 1 / 11;
     grid-row: 8 / 13;
   }
 }
 
-@media screen and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+@include media-mobile-landscape() {
   .IslandChain {
     grid-column: 7 / 11;
     grid-row: 4 / 13;

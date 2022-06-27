@@ -2,14 +2,40 @@
 
 $breakpoints: (
   desktop-small: 1200px,
+  senior: 1000px,
   tablet: 900px,
+  junior: 700px,
   mobile: 500px,
+  mobile-narrow: 300px
 );
 
 @mixin media-query($key) {
   $size: map.get($breakpoints, $key);
 
   @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin media-maxWidth-orientation($key, $orientation) {
+  $size: map.get($breakpoints, $key);
+
+  @media (max-width: $size) and (orientation: $orientation) {
+    @content;
+  }
+}
+
+@mixin media-maxWidth-minHeight($key1, $key2) {
+  $width: map.get($breakpoints, $key1);
+  $height: map.get($breakpoints, $key2);
+
+  @media (max-width: $width) and (min-height: $height) {
+    @content;
+  }
+}
+
+@mixin media-mobile-landscape() {
+  @media (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
     @content;
   }
 }

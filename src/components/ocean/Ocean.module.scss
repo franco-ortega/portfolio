@@ -121,7 +121,7 @@
 }
 
 // Tablet screen size
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .Ocean {
     grid-template-rows: repeat(12, 1fr);
     h1 {
@@ -164,7 +164,7 @@
 }
 
 // Mobile screen size with wide landscape orientation
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@include media-maxWidth-orientation(tablet, landscape) {
   .Ocean {
     header {
       grid-column: 5 / 9;

@@ -25,7 +25,7 @@
   height: 90%;
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .MapTallDetails {
     border-radius: 2vw;
     top: 1.5%;
@@ -37,7 +37,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (min-height: 500px) {
+@include media-maxWidth-minHeight(tablet, mobile) {
   .MapTallDetails {
     border-radius: 0;
     padding: 5vw 4vw;
@@ -53,7 +53,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@include media-maxWidth-orientation(tablet, landscape) {
   .MapTallDetails {
     border-radius: 0;
     top: 0%;

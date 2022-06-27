@@ -40,7 +40,7 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 900px) and (min-height: 500px) {
+@include media-maxWidth-minHeight(tablet, mobile) {
   .OuterCoastline {
     box-shadow: 0vw 0vw 1vw 1.5vw var(--coastline-shadow-color);
     padding: 0.8vw;
@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@include media-maxWidth-orientation(tablet, landscape) {
   .Land {
     font-size: 2vw;
   }

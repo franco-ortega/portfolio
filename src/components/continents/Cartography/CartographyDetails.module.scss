@@ -87,7 +87,7 @@
   background-position: 25% 10%;
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .CartographyDetails {
     header {
       font-size: 5vw;
@@ -106,7 +106,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (min-height: 500px) {
+@include media-maxWidth-minHeight(tablet, mobile) {
   .CartographyDetails {
     header {
       margin-top: 2vw;
@@ -140,7 +140,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@include media-maxWidth-orientation(tablet, landscape) {
   .CartographyDetails {
     section {
       font-size: 2.5vw;

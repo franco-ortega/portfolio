@@ -7,13 +7,13 @@
   font-size: var(--project-summary-button-text);
 }
 
-@media screen and (max-width: 1200px) {
+@include media-query(desktop-small) {
   .OpenDetails {
     border-radius: 2.5vw;
   }
 }
 
-@media screen and (max-width: 900px) {
+@include media-query(tablet) {
   .OpenDetails {
     border-radius: 2.5vw;
     padding: 0.4vw 1.5vw;
