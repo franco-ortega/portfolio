@@ -9,7 +9,7 @@
     rgb(106, 178, 223),
     rgb(74, 146, 190)
   );
-  background-blend-mode: soft-light;
+  // background-blend-mode: soft-light;
   background-size: 15% 15%;
 
   animation: coastal-wave 20s ease infinite both;
@@ -81,7 +81,7 @@
 }
 
 %continent-styles {
-  background-blend-mode: soft-light;
+  // background-blend-mode: soft-light;
   background-size: 115% 115%;
   border: 0.25vw solid var(--continent-border);
   border-radius: inherit;
