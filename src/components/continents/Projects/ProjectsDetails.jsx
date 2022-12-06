@@ -4,7 +4,7 @@ import { FocusOn } from 'react-focus-on';
 import ContinentDetails from '../ContinentDetails';
 import ClosePopup from '../../buttons/ClosePopup';
 import BeHuman from '../../projects/BeHuman/BeHuman';
-import ChooseGif from '../../projects/ChooseGif/ChooseGif';
+// import ChooseGif from '../../projects/ChooseGif/ChooseGif';
 import Ebb from '../../projects/Ebb/Ebb';
 import MajorArcana from '../../projects/MajorArcana/MajorArcana';
 import WeatherBeats from '../../projects/WeatherBeats/WeatherBeats';
@@ -15,17 +15,15 @@ const ProjectsDetails = () => {
 
   return (
     <ContinentDetails>
-      <FocusOn onEscapeKey={() => history.push('/')}
+      <FocusOn
+        onEscapeKey={() => history.push('/')}
         className={styles.ProjectsDetails}
       >
-        
-        <ClosePopup path={''}/>
+        <ClosePopup path={''} />
         <header className={styles.Header}>
-          <p className={styles.Title}>
-          Team Projects
-          </p>
+          <p className={styles.Title}>Team Projects</p>
           <p className={styles.Intro}>
-          All projects were completed remotely with 3-5 member teams.
+            All projects were completed remotely with 3-5 member teams.
           </p>
         </header>
         <section className={styles.ProjectsDisplayCase}>
@@ -38,14 +36,13 @@ const ProjectsDetails = () => {
           <section className={styles.Project}>
             <BeHuman />
           </section>
-          <section className={styles.Project}>
+          {/* <section className={styles.Project}>
             <ChooseGif />
-          </section>
+          </section> */}
           <section className={styles.Project}>
             <MajorArcana />
           </section>
         </section>
-        
       </FocusOn>
     </ContinentDetails>
   );

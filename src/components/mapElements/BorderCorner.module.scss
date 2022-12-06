@@ -13,7 +13,7 @@
       var(--bordercolor-one),
       var(--bordercolor-two)
     );
-    background-size: 4% 5%;
+    // background-size: 4% 5%;
     height: 2vw;
     width: 2vw;
   }
@@ -28,6 +28,6 @@
 @include media-query(mobile) {
   .BorderCorner {
     grid-row-end: 25;
-    margin: -.1rem;
+    margin: -0.1rem;
   }
 }
