@@ -46,32 +46,6 @@
   text-align: justify;
 }
 
-.ProjectLinks {
-  margin-top: 1vw;
-  font-size: var(--project-details-links);
-  font-weight: 600;
-  display: grid;
-  grid-template-columns: 9fr 1fr 9fr;
-  grid-template-rows: 1;
-}
-
-.Website {
-  text-align: right;
-}
-
-.GitHub {
-  text-align: left;
-}
-
-.LinkText {
-  padding: 0vw 1vw;
-  color: hsl(0, 0%, 0%);
-}
-
-.LinkText:hover {
-  color: hsl(0, 0%, 25%);
-}
-
 .ProjectIcon {
   width: 20vw;
   margin: 1vw;

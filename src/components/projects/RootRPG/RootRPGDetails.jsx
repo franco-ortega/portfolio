@@ -3,6 +3,7 @@ import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import styles from './RootRPGDetails.module.scss';
+import ProjectLinks from '../../links/ProjectLinks';
 
 const RootRPGDetails = () => {
   let history = useHistory();
@@ -21,29 +22,10 @@ const RootRPGDetails = () => {
             reprehenderit, ipsam eligendi ipsum possimus molestias voluptatibus
             ullam cum fugiat dolorem. Aliquid, veniam. Ullam, ex.
           </p>
-          <p className={styles.ProjectLinks}>
-            <span className={styles.Website}>
-              <a
-                href='https://root-rpg.vercel.app/'
-                rel='noreferrer'
-                target='_blank'
-                className={styles.LinkText}
-              >
-                Website
-              </a>
-            </span>
-            <span>|</span>
-            <span className={styles.GitHub}>
-              <a
-                href='https://github.com/franco-ortega/root-rpg'
-                rel='noreferrer'
-                target='_blank'
-                className={styles.LinkText}
-              >
-                GitHub
-              </a>
-            </span>
-          </p>
+          <ProjectLinks
+            website={'https://root-rpg.vercel.app/'}
+            github={'https://github.com/franco-ortega/root-rpg'}
+          />
         </section>
       </main>
     </FocusOn>
