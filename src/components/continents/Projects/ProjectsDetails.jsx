@@ -22,10 +22,7 @@ const ProjectsDetails = () => {
       >
         <ClosePopup path={''} />
         <header className={styles.Header}>
-          <p className={styles.Title}>Team Projects</p>
-          <p className={styles.Intro}>
-            All projects were completed remotely with 3-5 member teams.
-          </p>
+          <p className={styles.Title}>Projects</p>
         </header>
         <section className={styles.ProjectsDisplayCase}>
           <section className={styles.Project}>
