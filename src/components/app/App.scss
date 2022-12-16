@@ -50,9 +50,9 @@
   --popup-header-text: 1.35rem;
   --popup-text: 1.1rem;
 
-  --project-summary-title: 1.25vw;
-  --project-summary-text: 1.25vw;
-  --project-summary-button-text: 1vw;
+  --project-summary-title: 1.25rem;
+  --project-summary-text: 1.1rem;
+  --project-summary-button-text: 1rem;
 
   --project-details-title: 2.5rem;
   --project-details-tech: 1.75rem;
@@ -81,10 +81,6 @@ a:hover {
     --popup-header-text: 1.75vw;
     --popup-text: 1.5vw;
 
-    --project-summary-title: 1.5vw;
-    --project-summary-text: 1.5vw;
-    --project-summary-button-text: 1.25vw;
-
     --map-title: 5.5vw;
   }
 }
@@ -98,10 +94,6 @@ a:hover {
     --popup-title: 6vw;
     --popup-header-text: 3vw;
     --popup-text: 2.75vw;
-
-    --project-summary-title: 3.25vw;
-    --project-summary-text: 2.5vw;
-    --project-summary-button-text: 2.25vw;
 
     --map-title: 15vw;
   }
@@ -124,9 +116,9 @@ a:hover {
     --popup-header-text: 3.4vw;
     --popup-text: 3.75vw;
 
-    --project-summary-title: 5.25vw;
-    --project-summary-text: 5vw;
-    --project-summary-button-text: 4vw;
+    // --project-summary-title: 5.25vw;
+    // --project-summary-text: 5vw;
+    // --project-summary-button-text: 4vw;
 
     // --project-details-title: 10vw;
     // --project-details-tech: 5vw;
