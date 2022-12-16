@@ -9,6 +9,7 @@ import Ebb from '../../projects/Ebb/Ebb';
 import MajorArcana from '../../projects/MajorArcana/MajorArcana';
 import WeatherBeats from '../../projects/WeatherBeats/WeatherBeats';
 import styles from './ProjectsDetails.module.scss';
+import RootRPG from '../../projects/RootRPG/RootRPG';
 
 const ProjectsDetails = () => {
   let history = useHistory();
@@ -27,6 +28,9 @@ const ProjectsDetails = () => {
           </p>
         </header>
         <section className={styles.ProjectsDisplayCase}>
+          <section className={styles.Project}>
+            <RootRPG />
+          </section>
           <section className={styles.Project}>
             <Ebb />
           </section>
