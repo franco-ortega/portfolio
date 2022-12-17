@@ -29,8 +29,7 @@
 
       &:focus,
       &:hover {
-        // opacity: 75%;
-        outline-color: black;
+        outline-color: inherit;
       }
     }
   }

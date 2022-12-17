@@ -11,6 +11,16 @@
   left: 20vw;
   z-index: 1;
   font-family: var(--main-font);
+
+  background: linear-gradient(
+      180deg,
+      hsl(45, 51%, 72%, 100%),
+      hsl(45, 51%, 72%, 80%),
+      hsl(45, 51%, 72%, 60%),
+      hsl(45, 51%, 72%, 40%),
+      hsl(45, 51%, 72%, 20%)
+    ),
+    hsl(45, 51%, 45%);
 }
 
 @include media-query(desktop-small) {

@@ -24,26 +24,13 @@ const ProjectsDetails = () => {
         <header className={styles.Header}>
           <p className={styles.Title}>Projects</p>
         </header>
-        <section className={styles.ProjectsDisplayCase}>
-          <section className={styles.Project}>
-            <RootRPG />
-          </section>
-          <section className={styles.Project}>
-            <Ebb />
-          </section>
-          <section className={styles.Project}>
-            <WeatherBeats />
-          </section>
-          <section className={styles.Project}>
-            <BeHuman />
-          </section>
-          {/* <section className={styles.Project}>
-            <ChooseGif />
-          </section> */}
-          <section className={styles.Project}>
-            <MajorArcana />
-          </section>
-        </section>
+        <ul className={styles.ProjectsDisplayCase}>
+          <RootRPG />
+          <Ebb />
+          <WeatherBeats />
+          <BeHuman />
+          <MajorArcana />
+        </ul>
       </FocusOn>
     </ContinentDetails>
   );

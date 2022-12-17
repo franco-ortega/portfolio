@@ -2,27 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './ProjectLinks.module.scss';
 
-const ProjectLinks = ({ website, github, linkColor }) => {
+const ProjectLinks = ({ website, github }) => {
   return (
     <p className={styles.ProjectLinks}>
       <span>
-        <a
-          href={website}
-          rel='noreferrer'
-          target='_blank'
-          style={{ color: linkColor }}
-        >
+        <a href={website} rel='noreferrer' target='_blank'>
           Website
         </a>
       </span>
       <span>|</span>
       <span>
-        <a
-          href={github}
-          rel='noreferrer'
-          target='_blank'
-          style={{ color: linkColor }}
-        >
+        <a href={github} rel='noreferrer' target='_blank'>
           GitHub
         </a>
       </span>
@@ -32,8 +22,7 @@ const ProjectLinks = ({ website, github, linkColor }) => {
 
 ProjectLinks.propTypes = {
   website: PropTypes.string.isRequired,
-  github: PropTypes.string.isRequired,
-  linkColor: PropTypes.string
+  github: PropTypes.string.isRequired
 };
 
 export default ProjectLinks;

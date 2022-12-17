@@ -1,32 +1,27 @@
 @use '../../../scss/' as *;
 
 .MajorArcana {
-  background: rgb(17, 17, 17);
-  border: solid white 0.2vw;
-  border-radius: 1vw;
-  color: #e4a77b;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  height: 100%;
-  width: 100%;
-
-  font-size: var(--project-summary-title);
-  overflow: auto;
+  @extend %project-summary;
+  border-color: hsl(0, 0%, 100%);
+  background: linear-gradient(
+      180deg,
+      hsl(0, 0%, 7%, 20%),
+      hsl(0, 0%, 7%, 40%),
+      hsl(0, 0%, 7%, 60%),
+      hsl(0, 0%, 7%, 80%),
+      hsl(0, 0%, 7%, 100%)
+    ),
+    hsl(0, 0%, 18%);
+  color: hsl(25, 66%, 69%);
 }
 
 .Title {
-  height: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  font-size: 1.25rem;
   text-align: center;
 }
 
 .Summary {
-  height: 50%;
+  // height: 50%;
   padding: 0.25vw 1.25vw;
   font-size: var(--project-summary-text);
   text-align: justify;
@@ -48,11 +43,11 @@
   }
 
   .Title {
-    height: 30%;
+    // height: 30%;
   }
 
   .Summary {
-    height: 50%;
+    // height: 50%;
   }
 }
 
@@ -62,7 +57,7 @@
   }
 
   .Title {
-    height: 30%;
+    // height: 30%;
     padding: 5vw;
     display: flex;
     flex-direction: column;
@@ -70,7 +65,7 @@
   }
 
   .Summary {
-    height: 50%;
+    // height: 50%;
     padding: 1vw 5vw;
   }
 }
