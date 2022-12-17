@@ -1,10 +1,41 @@
 @use '../../../scss/' as *;
 
 .ProjectsDetails {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: inherit;
+  ul {
+    width: 95%;
+    margin-inline: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    height: 80vh;
+    overflow: auto;
+  }
+
+  @include media-query(desktop-small) {
+    ul {
+      height: 85vh;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include media-query(tablet) {
+    margin-inline: auto;
+    ul {
+      height: 88vh;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include media-query(mobile) {
+    width: 90%;
+    margin-inline: auto;
+
+    ul {
+      height: 90vh;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 }
 
 .Header {
@@ -18,15 +49,8 @@
   font-size: var(--popup-title);
 }
 
-.Intro {
-  margin-top: 0.5vw;
-  font-size: var(--popup-text);
-}
-
 .ProjectsDisplayCase {
-  margin: 0.75vw;
   height: 80%;
-  width: 96%;
 
   display: flex;
   flex-wrap: wrap;
@@ -34,23 +58,11 @@
   overflow: auto;
 }
 
-.Project {
-  margin: 0.35vw;
-  height: 50%;
-  width: 32.1%;
-}
-
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .ProjectsDisplayCase {
     margin: 1vw;
-    height: 82%;
+    height: 85%;
     width: 95%;
-  }
-
-  .Project {
-    margin: 0.5vw;
-    height: 47%;
-    width: 48.22%;
   }
 }
 
@@ -65,25 +77,13 @@
     height: 87%;
     width: 95%;
   }
-
-  .Project {
-    height: 50%;
-    width: 48.25%;
-    margin: 0.82vw;
-  }
 }
 
 // Tablet screen size
-@include media-maxWidth-minHeight(tablet, senior) {
-  .Project {
-    height: 35%;
-  }
+@include media-maxWidth-minHeight(tablet, tablet-wide) {
 }
 
 @include media-mobile-landscape() {
-  .Project {
-    height: 80vh;
-  }
 }
 
 @include media-query(mobile) {
@@ -93,11 +93,5 @@
 
   .ProjectsDisplayCase {
     width: 90%;
-  }
-
-  .Project {
-    margin: 2vw auto;
-    height: 40%;
-    width: 100%;
   }
 }

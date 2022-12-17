@@ -25,7 +25,7 @@
   height: 90%;
 }
 
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .MapTallDetails {
     border-radius: 2vw;
     top: 1.5%;

@@ -50,14 +50,14 @@
   --popup-header-text: 1.35rem;
   --popup-text: 1.1rem;
 
-  --project-summary-title: 1.25vw;
-  --project-summary-text: 1.25vw;
-  --project-summary-button-text: 1vw;
+  --project-summary-title: 1.1rem;
+  --project-summary-text: 1.1rem;
+  --project-summary-button-text: 1rem;
 
-  --project-details-title: 3vw;
-  --project-details-tech: 1.75vw;
-  --project-details-text: 1.45vw;
-  --project-details-links: 1.5vw;
+  --project-details-title: 2.5rem;
+  --project-details-tech: 1.75rem;
+  --project-details-text: 1.25rem;
+  --project-details-links: 1.5rem;
 
   --map-title: 5vw;
 
@@ -75,20 +75,11 @@ a:hover {
   color: var(--darkestblue);
 }
 
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   :root {
     --popup-title: 3.5vw;
     --popup-header-text: 1.75vw;
     --popup-text: 1.5vw;
-
-    --project-summary-title: 1.5vw;
-    --project-summary-text: 1.5vw;
-    --project-summary-button-text: 1.25vw;
-
-    --project-details-title: 3.5vw;
-    --project-details-tech: 2vw;
-    --project-details-text: 1.7vw;
-    --project-details-links: 1.75vw;
 
     --map-title: 5.5vw;
   }
@@ -103,15 +94,6 @@ a:hover {
     --popup-title: 6vw;
     --popup-header-text: 3vw;
     --popup-text: 2.75vw;
-
-    --project-summary-title: 3.25vw;
-    --project-summary-text: 2.5vw;
-    --project-summary-button-text: 2.25vw;
-
-    --project-details-title: 7.75vw;
-    --project-details-tech: 4.35vw;
-    --project-details-text: 3.5vw;
-    --project-details-links: 3.75vw;
 
     --map-title: 15vw;
   }
@@ -133,15 +115,6 @@ a:hover {
     --popup-title: 8vw;
     --popup-header-text: 3.4vw;
     --popup-text: 3.75vw;
-
-    --project-summary-title: 5.25vw;
-    --project-summary-text: 5vw;
-    --project-summary-button-text: 4vw;
-
-    --project-details-title: 10vw;
-    --project-details-tech: 5vw;
-    --project-details-text: 5vw;
-    --project-details-links: 5vw;
 
     --map-title: 9vw;
   }
