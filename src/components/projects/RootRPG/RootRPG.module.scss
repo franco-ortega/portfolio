@@ -22,10 +22,6 @@
   .RootRPG {
     border-radius: 1.5vw;
   }
-
-  .Summary {
-    // height: 55%;
-  }
 }
 
 @include media-query(mobile) {
@@ -34,7 +30,6 @@
   }
 
   .Summary {
-    // height: 55%;
     padding: 1vw 5vw;
   }
 }

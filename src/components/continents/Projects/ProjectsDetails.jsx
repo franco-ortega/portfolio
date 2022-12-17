@@ -4,7 +4,6 @@ import { FocusOn } from 'react-focus-on';
 import ContinentDetails from '../ContinentDetails';
 import ClosePopup from '../../buttons/ClosePopup';
 import BeHuman from '../../projects/BeHuman/BeHuman';
-// import ChooseGif from '../../projects/ChooseGif/ChooseGif';
 import Ebb from '../../projects/Ebb/Ebb';
 import MajorArcana from '../../projects/MajorArcana/MajorArcana';
 import WeatherBeats from '../../projects/WeatherBeats/WeatherBeats';

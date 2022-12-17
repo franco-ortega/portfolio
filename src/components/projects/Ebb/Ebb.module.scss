@@ -16,14 +16,12 @@
 }
 
 .Title {
-  // height: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .Summary {
-  // height: 55%;
   padding: 0.25vw 1.25vw;
   font-size: var(--project-summary-text);
   text-align: justify;
@@ -45,11 +43,9 @@
   }
 
   .Title {
-    // height: 30%;
   }
 
   .Summary {
-    // height: 50%;
   }
 }
 
@@ -59,14 +55,12 @@
   }
 
   .Title {
-    // height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   .Summary {
-    // height: 55%;
     padding: 1vw 5vw;
   }
 }

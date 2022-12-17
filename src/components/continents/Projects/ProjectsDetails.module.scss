@@ -1,37 +1,29 @@
 @use '../../../scss/' as *;
 
 .ProjectsDetails {
-  // height: inherit;
-  // overflow: auto;
-
   ul {
     width: 95%;
     margin-inline: auto;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    // grid-template-rows: repeat(2, 1fr);
 
     height: 80vh;
     overflow: auto;
-
-    // background-color: aqua;
   }
 
   @include media-query(desktop-small) {
     ul {
-      grid-template-columns: repeat(2, 1fr);
-      // grid-template-rows: repeat(3, 1fr);
       height: 85vh;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @include media-query(tablet) {
-    // width: 90%;
     margin-inline: auto;
     ul {
+      height: 88vh;
       grid-template-columns: repeat(2, 1fr);
-      // background-color: pink;
     }
   }
 
@@ -41,8 +33,6 @@
     ul {
       height: 90vh;
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: auto;
-      // background-color: blue;
     }
   }
 }
@@ -59,9 +49,7 @@
 }
 
 .ProjectsDisplayCase {
-  // margin: 0.5rem;
   height: 80%;
-  // width: 96%;
 
   display: flex;
   flex-wrap: wrap;
