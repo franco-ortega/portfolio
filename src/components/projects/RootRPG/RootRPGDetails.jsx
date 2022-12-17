@@ -12,23 +12,23 @@ const RootRPGDetails = () => {
     <FocusOn onEscapeKey={() => history.push('/projects')}>
       <main className={styles.RootRPGDetails}>
         <ClosePopup path={'projects'} background={'black'} color={'white'} />
-        <section className={styles.Project}>
-          <h1 className={styles.ProjectTitle}>Root RPG</h1>
-          <p className={styles.ProjectTech}>NextJS | Sass</p>
-          <p className={styles.ProjectInfo}>
+        <div>
+          <h2>Root RPG</h2>
+          <h3>NextJS | Sass</h3>
+          <p>
             As an avid board game and roleplaying game fan, I was delighted to
             find out this summer that one of my favorite board games from over
             the past several years was being adapted into a roleplaying game. I
             built this app to help introduce the 200+ pages of rules in a
             digestable format to new players.
-            <br />
-            <br />
+          </p>
+          <p>
             The home page covers important terminology, and the other pages dive
             deeper into the rules that will be used most often. The Playbooks
             page also provides players with PDFs to download for all the
             character classes.
-            <br />
-            <br />
+          </p>
+          <p>
             As with many of my projects, I took a mobile-first approach and
             focused on providing an intuitive interface that was paired with
             proper guidance. Also, I selected colors and imagery to create a
@@ -40,7 +40,7 @@ const RootRPGDetails = () => {
             github={'https://github.com/franco-ortega/root-rpg'}
             linkColor={''}
           />
-        </section>
+        </div>
       </main>
     </FocusOn>
   );
