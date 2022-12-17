@@ -5,27 +5,53 @@
   border: medium solid black;
   border-radius: 2vw;
   height: 96vh;
-  width: 60vw;
+  width: 65%;
   position: absolute;
   top: 2%;
-  left: 20vw;
+  left: 20%;
   z-index: 1;
   font-family: var(--main-font);
-}
 
-@include media-query(desktop-small) {
-  .ContinentDetails {
+  transform: translateX(-5%);
+
+  background: linear-gradient(
+      180deg,
+      // hsl(209, 51%, 72%),
+      // hsl(209, 51%, 72%, 80%),
+      // hsl(209, 51%, 72%, 60%),
+      // hsl(209, 51%, 72%, 40%),
+      // hsl(209, 51%, 72%, 20%),
+      // hsl(0, 0%, 95%),
+      // hsl(0, 0%, 95%, 80%),
+      // hsl(0, 0%, 95%, 60%),
+      // hsl(0, 0%, 95%, 40%),
+      // hsl(0, 0%, 95%, 20%),
+      // hsl(0, 0%, 95%, 0%),
+      hsla(45, 34%, 82%),
+      hsla(45, 34%, 82%, 90%),
+      hsl(45, 51%, 72%, 80%),
+      hsl(45, 51%, 72%, 70%),
+      hsl(45, 51%, 72%, 60%)
+    ),
+    // hsl(0, 0%, 50%);
+    hsl(45, 0%, 42%);
+
+  @include media-query(desktop-medium) {
     top: 1.75%;
     height: 96.5vh;
-  }
-}
+    width: 75%;
+    left: 25%;
 
-@include media-query(tablet) {
-  .ContinentDetails {
+    transform: translateX(-15%);
+  }
+
+  @include media-query(tablet) {
     border-radius: 0;
     top: 0%;
     left: 0%;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+
+    transform: none;
   }
 }

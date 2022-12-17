@@ -2,46 +2,20 @@
 
 .WeatherBeats {
   background-image: url(../../../assets/WeatherBeats_mobile.jpg);
-  background-position: 50% 55%;
+  background-position: 50% 5%;
   background-repeat: no-repeat;
   background-size: cover;
 
-  border: solid black 0.2vw;
-  border-radius: 1vw;
+  border-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 0%);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  height: 100%;
-  width: 100%;
-
-  font-size: var(--project-summary-title);
-  overflow: auto;
+  @extend %project-summary;
 }
 
-.Title {
-  height: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.Summary {
-  height: 55%;
-  padding: 0.25vw 1.25vw;
-  font-size: var(--project-summary-text);
-  text-align: justify;
-}
-
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .WeatherBeats {
-    background-position: 50% 65%;
+    background-position: 50% 5%;
     border-radius: 1.25vw;
-  }
-
-  .Summary {
-    padding: 0.5vw 1.5vw;
   }
 }
 
@@ -50,31 +24,11 @@
     background-position: 50% 50%;
     border-radius: 1.5vw;
   }
-
-  .Title {
-    height: 25%;
-  }
-
-  .Summary {
-    height: 55%;
-  }
 }
 
 @include media-query(mobile) {
   .WeatherBeats {
-    background-position: 50% 65%;
+    background-position: 50% 55%;
     border-radius: 3vw;
-  }
-
-  .Title {
-    height: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .Summary {
-    height: 55%;
-    padding: 1vw 5vw;
   }
 }

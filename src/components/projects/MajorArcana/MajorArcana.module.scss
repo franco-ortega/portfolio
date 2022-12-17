@@ -1,76 +1,57 @@
 @use '../../../scss/' as *;
 
 .MajorArcana {
-  background: rgb(17, 17, 17);
-  border: solid white 0.2vw;
-  border-radius: 1vw;
-  color: #e4a77b;
+  @extend %project-summary;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border-color: hsl(0, 0%, 100%);
 
-  height: 100%;
-  width: 100%;
+  background: linear-gradient(
+      180deg,
+      hsl(0, 0%, 7%, 20%),
+      hsl(0, 0%, 7%, 40%),
+      hsl(0, 0%, 7%, 60%),
+      hsl(0, 0%, 7%, 80%),
+      hsl(0, 0%, 7%, 100%)
+    ),
+    hsl(0, 0%, 18%);
 
-  font-size: var(--project-summary-title);
-  overflow: auto;
-}
+  color: hsl(25, 66%, 69%);
 
-.Title {
-  height: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.Summary {
-  height: 50%;
-  padding: 0.25vw 1.25vw;
-  font-size: var(--project-summary-text);
-  text-align: justify;
-}
-
-@include media-query(desktop-small) {
-  .MajorArcana {
-    border-radius: 1.25vw;
-  }
-
-  .Summary {
-    padding: 0.5vw 1.5vw;
+  h2 {
+    font-size: 1.25rem;
+    text-align: center;
   }
 }
 
-@include media-query(tablet) {
-  .MajorArcana {
-    border-radius: 1.5vw;
-  }
+// @include media-query(desktop-medium) {
+//   .MajorArcana {
+//     border-radius: 1.25vw;
+//   }
 
-  .Title {
-    height: 30%;
-  }
+//   .Summary {
+//     padding: 0.5vw 1.5vw;
+//   }
+// }
 
-  .Summary {
-    height: 50%;
-  }
-}
+// @include media-query(tablet) {
+//   .MajorArcana {
+//     border-radius: 1.5vw;
+//   }
+// }
 
-@include media-query(mobile) {
-  .MajorArcana {
-    border-radius: 3vw;
-  }
+// @include media-query(mobile) {
+//   .MajorArcana {
+//     border-radius: 3vw;
+//   }
 
-  .Title {
-    height: 30%;
-    padding: 5vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+//   .Title {
+//     padding: 5vw;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//   }
 
-  .Summary {
-    height: 50%;
-    padding: 1vw 5vw;
-  }
-}
+//   .Summary {
+//     padding: 1vw 5vw;
+//   }
+// }

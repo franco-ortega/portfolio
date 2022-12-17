@@ -1,0 +1,36 @@
+@use '../../scss/' as *;
+
+.ProjectLinks {
+  font-size: var(--project-details-links);
+  font-weight: 600;
+
+  display: grid;
+  grid-template-columns: 9fr 1fr 9fr;
+  grid-template-rows: 1;
+  gap: 0.5rem;
+
+  span:first-child {
+    text-align: right;
+  }
+  span:last-child {
+    text-align: left;
+  }
+
+  span {
+    // padding-block: 0.5rem;
+    border-radius: 5rem;
+
+    a {
+      padding: 0.25rem 0.5rem;
+      outline-width: 0.15rem;
+      outline-style: solid;
+      outline-color: transparent;
+      transition: outline-color 500ms ease-in;
+
+      &:focus,
+      &:hover {
+        outline-color: inherit;
+      }
+    }
+  }
+}

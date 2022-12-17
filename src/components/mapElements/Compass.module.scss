@@ -225,7 +225,7 @@
   transform: translate(-20%, -50%);
 }
 
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .Compass {
     grid-column: 10 / 13;
     grid-row: 6 / 9;
@@ -238,7 +238,7 @@
   }
 }
 
-@include media-maxWidth-minHeight(tablet, senior) {
+@include media-maxWidth-minHeight(tablet, tablet-wide) {
   .Compass {
     grid-row: 11 / 13;
   }

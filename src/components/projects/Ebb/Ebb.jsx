@@ -1,16 +1,26 @@
 import React from 'react';
 import OpenDetails from '../../buttons/OpenDetails';
+import ProjectLinks from '../../links/ProjectLinks';
 import styles from './Ebb.module.scss';
 
 const Ebb = () => {
   return (
-    <section className={styles.Ebb}>
-      <h2 className={styles.Title}>Ebb</h2>
-      <div className={styles.Summary}>
-        Chrome extension that reduces on-screen movement to increase website accessibility for users with sensory conditions.
+    <li className={styles.Ebb}>
+      <h2>Ebb</h2>
+      <div>
+        <p>
+          Chrome extension that increases accessibility for users with sensory
+          conditions by reducing on-screen movement.
+        </p>
+        <ProjectLinks
+          website={
+            'https://chrome.google.com/webstore/detail/ebb/madmcmnfddadihndjcofieeeenbndlil'
+          }
+          github={'https://github.com/Co-Lab-You-Belong-in-Tech/ebb-extension'}
+        />
       </div>
       <OpenDetails path={'ebb'} />
-    </section>
+    </li>
   );
 };
 

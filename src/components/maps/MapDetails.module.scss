@@ -27,7 +27,7 @@
   margin: 0.5vw;
 }
 
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .MapDetails {
     padding: 3vw 2vw;
     top: 1.5%;

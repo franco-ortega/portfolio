@@ -1,0 +1,36 @@
+@use '../../../scss/' as *;
+
+.RootRPGDetails {
+  border-color: hsl(0, 0%, 0%);
+
+  background: linear-gradient(
+      180deg,
+      hsl(23, 63%, 55%, 100%),
+      hsl(23, 63%, 55%, 80%),
+      hsl(23, 63%, 55%, 60%),
+      hsl(23, 63%, 55%, 40%),
+      hsl(23, 63%, 55%, 20%)
+    ),
+    hsl(23, 63%, 38%);
+
+  color: hsl(0, 0%, 0%);
+
+  @extend %project-details;
+
+  div {
+    h3 {
+      position: relative;
+
+      &::before {
+        content: 'NextJS';
+        position: absolute;
+        left: -6.25rem;
+      }
+      &::after {
+        content: 'Sass';
+        position: absolute;
+        left: 1rem;
+      }
+    }
+  }
+}

@@ -1,37 +1,37 @@
 @use '../../../scss/' as *;
 
 .BeHuman {
-  background: #9cc4d7;
-  border: solid black 0.2vw;
-  border-radius: 1vw;
+  background: hsl(199, 42%, 73%);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  height: 100%;
-  width: 100%;
-
-  font-size: var(--project-summary-title);
-  overflow: auto;
+  @extend %project-summary;
+  border-color: hsl(0, 0%, 0%);
+  background: linear-gradient(
+      180deg,
+      hsl(199, 42%, 73%, 100%),
+      hsl(199, 42%, 73%, 80%),
+      hsl(199, 42%, 73%, 60%),
+      hsl(199, 42%, 73%, 40%),
+      hsl(199, 42%, 73%, 20%)
+    ),
+    hsl(199, 42%, 45%);
+  color: hsl(0, 0%, 0%);
 }
 
 .Title {
-  height: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .Summary {
-  height: 55%;
   padding: 0.5vw 1.25vw;
   display: flex;
+  flex-direction: column;
   font-size: var(--project-summary-text);
   text-align: justify;
 }
 
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .BeHuman {
     border-radius: 1.25vw;
   }
@@ -47,11 +47,9 @@
   }
 
   .Title {
-    height: 25%;
   }
 
   .Summary {
-    height: 55%;
   }
 }
 
@@ -61,14 +59,12 @@
   }
 
   .Title {
-    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   .Summary {
-    height: 55%;
     padding: 1vw 5vw;
   }
 }
