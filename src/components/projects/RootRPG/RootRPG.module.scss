@@ -2,6 +2,7 @@
 
 .RootRPG {
   @extend %project-summary;
+
   border-color: hsl(0, 0%, 0%);
   background: linear-gradient(
       180deg,
@@ -20,16 +21,12 @@
 
 @include media-query(tablet) {
   .RootRPG {
-    border-radius: 1.5vw;
+    // border-radius: 1.5vw;
   }
 }
 
 @include media-query(mobile) {
   .RootRPG {
-    border-radius: 3vw;
-  }
-
-  .Summary {
-    padding: 1vw 5vw;
+    // border-radius: 3vw;
   }
 }

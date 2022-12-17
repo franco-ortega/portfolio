@@ -30,6 +30,7 @@
   @include media-query(mobile) {
     width: 90%;
     margin-inline: auto;
+
     ul {
       height: 90vh;
       grid-template-columns: repeat(1, 1fr);
@@ -57,11 +58,11 @@
   overflow: auto;
 }
 
-.Project {
-  margin: 0.35vw;
-  height: 50%;
-  width: 32.1%;
-}
+// .Project {
+//   margin: 0.35vw;
+//   height: 50%;
+//   width: 32.1%;
+// }
 
 @include media-query(desktop-medium) {
   .ProjectsDisplayCase {
@@ -70,11 +71,11 @@
     width: 95%;
   }
 
-  .Project {
-    margin: 0.5vw;
-    height: 47%;
-    width: 48.22%;
-  }
+  // .Project {
+  //   margin: 0.5vw;
+  //   height: 47%;
+  //   width: 48.22%;
+  // }
 }
 
 // Desktop narrow screen size
@@ -89,24 +90,24 @@
     width: 95%;
   }
 
-  .Project {
-    height: 50%;
-    width: 48.25%;
-    margin: 0.82vw;
-  }
+  // .Project {
+  //   height: 50%;
+  //   width: 48.25%;
+  //   margin: 0.82vw;
+  // }
 }
 
 // Tablet screen size
 @include media-maxWidth-minHeight(tablet, tablet-wide) {
-  .Project {
-    height: 35%;
-  }
+  // .Project {
+  //   height: 35%;
+  // }
 }
 
 @include media-mobile-landscape() {
-  .Project {
-    height: 80vh;
-  }
+  // .Project {
+  //   height: 80vh;
+  // }
 }
 
 @include media-query(mobile) {
@@ -118,9 +119,9 @@
     width: 90%;
   }
 
-  .Project {
-    margin: 2vw auto;
-    height: 40%;
-    width: 100%;
-  }
+  // .Project {
+  //   margin: 2vw auto;
+  //   height: 40%;
+  //   width: 100%;
+  // }
 }

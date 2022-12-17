@@ -6,8 +6,8 @@ import styles from './Ebb.module.scss';
 const Ebb = () => {
   return (
     <li className={styles.Ebb}>
-      <h2 className={styles.Title}>Ebb</h2>
-      <div className={styles.Summary}>
+      <h2>Ebb</h2>
+      <div>
         <p>
           Chrome extension that increases accessibility for users with sensory
           conditions by reducing on-screen movement.

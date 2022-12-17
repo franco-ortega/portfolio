@@ -2,7 +2,9 @@
 
 .MajorArcana {
   @extend %project-summary;
+
   border-color: hsl(0, 0%, 100%);
+
   background: linear-gradient(
       180deg,
       hsl(0, 0%, 7%, 20%),
@@ -12,6 +14,7 @@
       hsl(0, 0%, 7%, 100%)
     ),
     hsl(0, 0%, 18%);
+
   color: hsl(25, 66%, 69%);
 
   h2 {
@@ -20,35 +23,35 @@
   }
 }
 
-@include media-query(desktop-medium) {
-  .MajorArcana {
-    border-radius: 1.25vw;
-  }
+// @include media-query(desktop-medium) {
+//   .MajorArcana {
+//     border-radius: 1.25vw;
+//   }
 
-  .Summary {
-    padding: 0.5vw 1.5vw;
-  }
-}
+//   .Summary {
+//     padding: 0.5vw 1.5vw;
+//   }
+// }
 
-@include media-query(tablet) {
-  .MajorArcana {
-    border-radius: 1.5vw;
-  }
-}
+// @include media-query(tablet) {
+//   .MajorArcana {
+//     border-radius: 1.5vw;
+//   }
+// }
 
-@include media-query(mobile) {
-  .MajorArcana {
-    border-radius: 3vw;
-  }
+// @include media-query(mobile) {
+//   .MajorArcana {
+//     border-radius: 3vw;
+//   }
 
-  .Title {
-    padding: 5vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+//   .Title {
+//     padding: 5vw;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//   }
 
-  .Summary {
-    padding: 1vw 5vw;
-  }
-}
+//   .Summary {
+//     padding: 1vw 5vw;
+//   }
+// }

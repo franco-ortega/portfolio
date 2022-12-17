@@ -7,7 +7,7 @@ const RootRPG = () => {
   return (
     <li className={styles.RootRPG}>
       <h2>Root RPG Guide</h2>
-      <div className={styles.Summary}>
+      <div>
         <p>
           App designed to help new players learn the rules of the Root
           Roleplaying Game in a digestable format. Includes downloadable PDFs

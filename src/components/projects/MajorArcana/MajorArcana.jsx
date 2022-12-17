@@ -7,7 +7,7 @@ const MajorArcana = () => {
   return (
     <li className={styles.MajorArcana}>
       <h2>Major Arcana Divinator</h2>
-      <div className={styles.Summary}>
+      <div>
         <p>
           Users may select a one-card or three-card tarot reading. Readings are
           stored with timestamps and can be viewed again later or erased.

@@ -141,11 +141,13 @@
   }
 
   @include media-query(desktop-small) {
+    height: 18rem;
     grid-template-rows: auto 10rem auto;
   }
 
   @include media-query(tablet) {
-    height: 18rem;
+    height: 16rem;
+    grid-template-rows: auto 8rem auto;
   }
 
   @include media-query(junior) {
