@@ -29,6 +29,7 @@
   font-family: var(--main-font);
 
   div {
+    text-align: center;
     margin: 0.75rem 0.5rem;
     padding: 0.75rem 2.75rem;
     display: flex;
@@ -45,6 +46,18 @@
     h3 {
       font-size: var(--project-details-tech);
       font-weight: 500;
+      position: relative;
+
+      &::before {
+        content: 'NextJS';
+        position: absolute;
+        left: -6.25rem;
+      }
+      &::after {
+        content: 'Sass';
+        position: absolute;
+        left: 1rem;
+      }
     }
 
     p:not(:last-child) {
@@ -64,47 +77,24 @@
   @include media-query(tablet) {
     width: 75%;
   }
-}
 
-@include media-query(tablet) {
-  .Project {
-    // padding: 6vw 4vw;
-  }
-
-  .ProjectTitle {
-    // margin: 3vw 0 1.5vw 0;
-  }
-
-  .ProjectTech {
-    // margin: 1.5vw;
-  }
-
-  .ProjectInfo {
-    // margin: 1.5vw 3vw;
-  }
-}
-
-@include media-query(junior) {
-  .RootRPGDetails {
-    height: 100vh;
-    width: 100vw;
+  @include media-query(junior) {
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
     overflow: auto;
-  }
-}
-@include media-query(mobile) {
-  .Project {
-    padding: 8vw 6vw 0 6vw;
+
+    div {
+      gap: 2rem;
+    }
   }
 
-  .ProjectTitle {
-    margin: 4vw 0 2vw 0;
-  }
+  @include media-query(mobile) {
+    border-radius: 0;
 
-  .ProjectTech {
-    margin: 2vw;
-  }
-
-  .ProjectInfo {
-    margin: 2vw 4vw;
+    div {
+      padding: 0.75rem 1.25rem;
+      gap: 0.75rem;
+    }
   }
 }

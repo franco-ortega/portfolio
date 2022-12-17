@@ -13,8 +13,8 @@ const RootRPGDetails = () => {
       <main className={styles.RootRPGDetails}>
         <ClosePopup path={'projects'} background={'black'} color={'white'} />
         <div>
-          <h2>Root RPG</h2>
-          <h3>NextJS | Sass</h3>
+          <h2>Root RPG Guide</h2>
+          <h3>|</h3>
           <p>
             As an avid board game and roleplaying game fan, I was delighted to
             find out this summer that one of my favorite board games from over
