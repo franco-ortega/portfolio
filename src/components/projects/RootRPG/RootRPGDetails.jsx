@@ -38,7 +38,6 @@ const RootRPGDetails = () => {
           <ProjectLinks
             website={'https://root-rpg.vercel.app/'}
             github={'https://github.com/franco-ortega/root-rpg'}
-            linkColor={''}
           />
         </div>
       </main>

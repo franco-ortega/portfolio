@@ -33,7 +33,6 @@ const EbbDetails = () => {
             github={
               'https://github.com/Co-Lab-You-Belong-in-Tech/ebb-extension'
             }
-            linkColor={''}
           />
           {/* <p className={styles.ProjectLinks}>
             <span className={styles.Demo}>
