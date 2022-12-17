@@ -1,12 +1,10 @@
 @use '../../../scss/' as *;
 
 .RootRPGDetails {
-  background: hsl(23, 63%, 55%);
   border: solid medium hsl(0, 0%, 0%);
-  border-radius: 1vw;
   color: hsl(0, 0%, 0%);
 
-  border-radius: 2vw;
+  border-radius: 1rem;
   height: 96vh;
   width: 60vw;
 
@@ -24,6 +22,18 @@
   a {
     color: hsl(0, 0%, 0%);
   }
+
+  border-color: hsl(0, 0%, 0%);
+  background: linear-gradient(
+      180deg,
+      hsl(23, 63%, 55%, 100%),
+      hsl(23, 63%, 55%, 80%),
+      hsl(23, 63%, 55%, 60%),
+      hsl(23, 63%, 55%, 40%),
+      hsl(23, 63%, 55%, 20%)
+    ),
+    hsl(23, 63%, 38%);
+  color: hsl(0, 0%, 0%);
 }
 
 .Project {
