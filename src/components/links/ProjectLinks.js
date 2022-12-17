@@ -7,7 +7,9 @@ const ProjectLinks = ({ website, github }) => {
     <p className={styles.ProjectLinks}>
       <span>
         <a href={website} rel='noreferrer' target='_blank'>
-          Website
+          {website.includes('chrome') || website.includes('marketplace')
+            ? 'Extension'
+            : 'Website'}
         </a>
       </span>
       <span>|</span>
