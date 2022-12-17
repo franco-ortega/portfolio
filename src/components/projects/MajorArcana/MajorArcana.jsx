@@ -6,10 +6,12 @@ import styles from './MajorArcana.module.scss';
 const MajorArcana = () => {
   return (
     <li className={styles.MajorArcana}>
-      <h2 className={styles.Title}>Major Arcana Divinator</h2>
+      <h2>Major Arcana Divinator</h2>
       <div className={styles.Summary}>
-        Users may select a one-card or three-card tarot reading. Readings are
-        stored with timestamps and can be viewed again later or erased.
+        <p>
+          Users may select a one-card or three-card tarot reading. Readings are
+          stored with timestamps and can be viewed again later or erased.
+        </p>
         <ProjectLinks
           website={
             'https://mystechal-divinators.github.io/project-week-tarot-divinators/'

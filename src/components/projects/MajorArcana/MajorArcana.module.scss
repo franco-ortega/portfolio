@@ -13,21 +13,14 @@
     ),
     hsl(0, 0%, 18%);
   color: hsl(25, 66%, 69%);
+
+  h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
 }
 
-.Title {
-  font-size: 1.25rem;
-  text-align: center;
-}
-
-.Summary {
-  // height: 50%;
-  padding: 0.25vw 1.25vw;
-  font-size: var(--project-summary-text);
-  text-align: justify;
-}
-
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .MajorArcana {
     border-radius: 1.25vw;
   }

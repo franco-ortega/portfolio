@@ -111,9 +111,6 @@
   border-radius: 0.75rem;
   border-style: solid;
   border-width: 0.15rem;
-  border-color: white;
-
-  // height: 20rem;
 
   margin: 0.25rem;
   padding: 1rem 0.5rem;
@@ -134,25 +131,44 @@
     justify-content: space-between;
   }
 
+  & > div {
+    padding: 0.5rem;
+    text-align: justify;
+  }
+
   @extend %project-summary-links;
 
+  @include media-query(desktop-medium) {
+  }
+
   @include media-query(desktop-small) {
-    grid-template-rows: auto 25rem auto;
+    grid-template-rows: auto 10rem auto;
+  }
+
+  @include media-query(tablet) {
+    height: 18rem;
+  }
+
+  @include media-query(junior) {
+    // height: 20rem;
+    grid-template-rows: auto 1fr auto;
+    opacity: 75%;
+  }
+
+  @include media-query(mobile) {
+    height: 15rem;
   }
 }
 
 %project-summary-links {
-  p {
+  p:nth-child(2) {
     font-size: 1.1rem;
 
-    // border-color: inherit;
-
     span {
-      // border-color: inherit;
+      padding-block: 0;
       a {
         color: inherit;
         opacity: 75%;
-        // border-color: inherit;
       }
     }
   }

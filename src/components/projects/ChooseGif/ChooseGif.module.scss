@@ -31,7 +31,7 @@
   text-align: justify;
 }
 
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .ChooseGif {
     border-radius: 1.25vw;
   }

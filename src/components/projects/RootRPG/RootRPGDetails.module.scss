@@ -59,7 +59,7 @@
   margin: 1vw;
 }
 
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .RootRPGDetails {
     height: 97vh;
     top: 1.5%;

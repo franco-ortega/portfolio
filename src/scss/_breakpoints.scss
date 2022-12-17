@@ -1,11 +1,13 @@
 @use 'sass:map';
 
 $breakpoints: (
-  desktop-small: 1200px,
-  senior: 1000px,
+  desktop-medium: 85rem,
+  desktop-small: 70rem,
+  tablet-wide: 1000px,
   tablet: 900px,
-  junior: 700px,
-  mobile: 500px,
+  junior: 45rem,
+  mobile: 35rem,
+  // 500px,
   mobile-narrow: 300px
 );
 

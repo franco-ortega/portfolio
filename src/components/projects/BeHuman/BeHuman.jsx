@@ -8,8 +8,10 @@ const BeHuman = () => {
     <li className={styles.BeHuman}>
       <h2 className={styles.Title}>beHuman</h2>
       <div className={styles.Summary}>
-        VSCode extension that tracks work time and reminds users to take breaks
-        via hourly popups with wellness tips and movement videos.
+        <p>
+          VSCode extension that tracks work time and reminds users to take
+          breaks via hourly popups with wellness tips and movement videos.
+        </p>
         <ProjectLinks
           website={
             'https://marketplace.visualstudio.com/items?itemName=not-bot.be-human'

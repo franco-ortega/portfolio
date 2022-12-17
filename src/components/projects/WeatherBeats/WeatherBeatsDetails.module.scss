@@ -74,7 +74,7 @@
   color: brown;
 }
 
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .WeatherBeatsDetails {
     background-position: 15% 20%;
     height: 97vh;

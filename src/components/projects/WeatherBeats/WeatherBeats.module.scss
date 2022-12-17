@@ -26,7 +26,7 @@
   text-align: justify;
 }
 
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .WeatherBeats {
     background-position: 50% 65%;
     border-radius: 1.25vw;

@@ -107,7 +107,7 @@
 }
 
 // Tablet screen
-@include media-maxWidth-minHeight(tablet, senior) {
+@include media-maxWidth-minHeight(tablet, tablet-wide) {
   .LegendBox {
     h3 {
       font-size: 4vw;

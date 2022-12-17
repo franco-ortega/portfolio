@@ -13,7 +13,7 @@
   font-size: 1.25vw;
 }
 
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .ClosePopup {
     padding: 0.2vw 0.5vw;
   }

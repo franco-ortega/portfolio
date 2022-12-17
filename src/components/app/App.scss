@@ -75,7 +75,7 @@ a:hover {
   color: var(--darkestblue);
 }
 
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   :root {
     --popup-title: 3.5vw;
     --popup-header-text: 1.75vw;

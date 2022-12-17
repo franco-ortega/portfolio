@@ -8,8 +8,10 @@ const Ebb = () => {
     <li className={styles.Ebb}>
       <h2 className={styles.Title}>Ebb</h2>
       <div className={styles.Summary}>
-        Chrome extension that increases accessibility for users with sensory
-        conditions by reducing on-screen movement.
+        <p>
+          Chrome extension that increases accessibility for users with sensory
+          conditions by reducing on-screen movement.
+        </p>
         <ProjectLinks
           website={
             'https://chrome.google.com/webstore/detail/ebb/madmcmnfddadihndjcofieeeenbndlil'

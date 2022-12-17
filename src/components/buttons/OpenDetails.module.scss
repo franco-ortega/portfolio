@@ -7,7 +7,7 @@
   font-size: var(--project-summary-button-text);
 }
 
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .OpenDetails {
     border-radius: 2.5vw;
   }

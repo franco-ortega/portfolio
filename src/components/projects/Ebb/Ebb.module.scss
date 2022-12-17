@@ -29,7 +29,7 @@
   text-align: justify;
 }
 
-@include media-query(desktop-small) {
+@include media-query(desktop-medium) {
   .Ebb {
     border-radius: 1.25vw;
   }
