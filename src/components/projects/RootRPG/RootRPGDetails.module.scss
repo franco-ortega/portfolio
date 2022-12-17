@@ -28,65 +28,59 @@
 
   font-family: var(--main-font);
 
-  a {
-    color: inherit;
-  }
-
-  h2 {
-    margin-block: 1.5rem 0.75rem;
-    font-size: var(--project-details-title);
-  }
-
-  h3 {
-    margin-block: 0.5rem;
-    font-size: var(--project-details-tech);
-    font-weight: 500;
-  }
-
-  & > div {
-    padding: 1rem 3rem;
+  div {
+    margin: 0.75rem 0.5rem;
+    padding: 0.75rem 2.75rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
     overflow: auto;
-    // background-color: yellow;
 
-    & > p:nth-child(3),
-    & > p:nth-child(4),
-    & > p:nth-child(5) {
-      margin-block: 0.5rem;
-      // background-color: green;
+    h2 {
+      font-size: var(--project-details-title);
+      line-height: var(--project-details-title);
+    }
+
+    h3 {
+      font-size: var(--project-details-tech);
+      font-weight: 500;
+    }
+
+    p:not(:last-child) {
       font-size: var(--project-details-text);
       text-align: justify;
     }
-  }
-}
 
-@include media-query(desktop-medium) {
-  .Project {
-    padding: 3vw 2vw 0 2vw;
+    a {
+      color: inherit;
+    }
+  }
+
+  @include media-query(desktop-medium) {
+    width: 65%;
+  }
+
+  @include media-query(tablet) {
+    width: 75%;
   }
 }
 
 @include media-query(tablet) {
-  .RootRPGDetails {
-    border-radius: 0;
-  }
-
   .Project {
-    padding: 6vw 4vw;
+    // padding: 6vw 4vw;
   }
 
   .ProjectTitle {
-    margin: 3vw 0 1.5vw 0;
+    // margin: 3vw 0 1.5vw 0;
   }
 
   .ProjectTech {
-    margin: 1.5vw;
+    // margin: 1.5vw;
   }
 
   .ProjectInfo {
-    margin: 1.5vw 3vw;
+    // margin: 1.5vw 3vw;
   }
 }
 

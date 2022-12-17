@@ -1,9 +1,9 @@
 @use '../../scss/' as *;
 
 .ProjectLinks {
-  margin-top: 1vw;
   font-size: var(--project-details-links);
   font-weight: 600;
+
   display: grid;
   grid-template-columns: 9fr 1fr 9fr;
   grid-template-rows: 1;
@@ -17,7 +17,7 @@
   }
 
   span {
-    padding: 0.5rem 0;
+    // padding-block: 0.5rem;
     border-radius: 5rem;
 
     a {
@@ -31,22 +31,6 @@
       &:hover {
         outline-color: inherit;
       }
-    }
-  }
-
-  @include media-query(tablet) {
-    margin-top: 2.5vw;
-
-    span > a {
-      padding: 0vw 2vw;
-    }
-  }
-
-  @include media-query(mobile) {
-    margin-top: 3.5vw;
-
-    span > a {
-      padding: 0vw 3vw;
     }
   }
 }
