@@ -6,11 +6,12 @@ import styles from './RootRPG.module.scss';
 const RootRPG = () => {
   return (
     <li className={styles.RootRPG}>
-      <h2>Root RPG</h2>
+      <h2>Root RPG Guide</h2>
       <div className={styles.Summary}>
         <p>
-          An app to help friends learn the rule to this rad game! An app to help
-          friends learn the rule to this rad game!
+          App designed to help new players learn the rules of the Root
+          Roleplaying Game in a digestable format. Includes downloadable PDFs
+          for all the character classes.
         </p>
         <ProjectLinks
           website={'https://root-rpg.vercel.app/'}

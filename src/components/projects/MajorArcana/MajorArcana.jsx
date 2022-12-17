@@ -8,8 +8,8 @@ const MajorArcana = () => {
     <li className={styles.MajorArcana}>
       <h2 className={styles.Title}>Major Arcana Divinator</h2>
       <div className={styles.Summary}>
-        Allows the user to select a one-card or three-card tarot reading.
-        Readings are stored and can be viewed later or deleted.
+        Users may select a one-card or three-card tarot reading. Readings are
+        stored with timestamps and can be viewed again later or erased.
         <ProjectLinks
           website={
             'https://mystechal-divinators.github.io/project-week-tarot-divinators/'
