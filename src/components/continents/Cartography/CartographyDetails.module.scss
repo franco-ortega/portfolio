@@ -6,7 +6,10 @@
   header {
     margin-top: 1.5vw;
     font-family: var(--continent-font-bold);
-    font-size: 5vw;
+    // font-size: 5vw;
+
+    font-family: var(--continent-font-bold);
+    font-size: var(--continent-popup-title);
   }
 
   section {
@@ -90,7 +93,7 @@
 @include media-query(desktop-medium) {
   .CartographyDetails {
     header {
-      font-size: 5vw;
+      // font-size: 5vw;
     }
   }
 
@@ -110,7 +113,7 @@
   .CartographyDetails {
     header {
       margin-top: 2vw;
-      font-size: 8vw;
+      // font-size: 8vw;
     }
 
     section {
@@ -168,7 +171,7 @@
   .CartographyDetails {
     header {
       margin-top: 4vw;
-      font-size: 13vw;
+      // font-size: 13vw;
     }
 
     header + section {
