@@ -46,7 +46,7 @@
   --continent-font-bold: 'Tangerine Bold';
   --main-font: Arial, sans-serif;
 
-  --popup-title: 3.25vw;
+  --continent-popup-title: 2.5rem;
   --popup-header-text: 1.35rem;
   --popup-text: 1.1rem;
 
@@ -77,7 +77,6 @@ a:hover {
 
 @include media-query(desktop-medium) {
   :root {
-    --popup-title: 3.5vw;
     --popup-header-text: 1.75vw;
     --popup-text: 1.5vw;
 
@@ -91,7 +90,6 @@ a:hover {
     --inner-coastline-border-width: 0.3vw;
     --inner-coastline-padding: 1.25vw;
 
-    --popup-title: 6vw;
     --popup-header-text: 3vw;
     --popup-text: 2.75vw;
 
@@ -101,7 +99,6 @@ a:hover {
 
 @include media-maxWidth-orientation(tablet, landscape) {
   :root {
-    --popup-title: 3.5vw;
     --popup-header-text: 2.25vw;
     --popup-text: 2vw;
   }
@@ -112,7 +109,6 @@ a:hover {
     --outer-coastline-padding: 1.25vw;
     --inner-coastline-border-width: 0.3vw;
 
-    --popup-title: 8vw;
     --popup-header-text: 3.4vw;
     --popup-text: 3.75vw;
 

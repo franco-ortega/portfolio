@@ -111,12 +111,13 @@
   border-style: solid;
   border-width: 0.15rem;
 
-  margin: 0.25rem;
   padding: 1rem 0.5rem;
+
+  height: 18rem;
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 12rem auto;
+  grid-template-rows: auto 4fr auto;
   justify-items: center;
   align-items: center;
 
@@ -141,21 +142,17 @@
   }
 
   @include media-query(desktop-small) {
-    height: 18rem;
-    grid-template-rows: auto 10rem auto;
+    // height: 16rem;
+    // grid-template-rows: auto 10rem auto;
   }
 
   @include media-query(tablet) {
-    height: 16rem;
-    grid-template-rows: auto 8rem auto;
-  }
-
-  @include media-query(junior) {
-    grid-template-rows: auto 1fr auto;
+    // height: 16rem;
+    // grid-template-rows: auto 8rem auto;
   }
 
   @include media-query(mobile) {
-    height: 18rem;
+    // height: 15rem;
   }
 }
 

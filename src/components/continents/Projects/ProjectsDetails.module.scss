@@ -1,20 +1,37 @@
 @use '../../../scss/' as *;
 
 .ProjectsDetails {
+  height: 98%;
+  background-color: pink;
+
+  header {
+    background-color: red;
+    margin-top: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: var(--continent-popup-title);
+  }
+
   ul {
+    background-color: blue;
+    overflow: auto;
     width: 95%;
     margin-inline: auto;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 
-    height: 80vh;
-    overflow: auto;
+    // height: 80vh;
+    // overflow: auto;
   }
 
   @include media-query(desktop-small) {
     ul {
-      height: 85vh;
+      height: 90%;
+
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -22,7 +39,7 @@
   @include media-query(tablet) {
     margin-inline: auto;
     ul {
-      height: 88vh;
+      height: 95%;
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -32,36 +49,29 @@
     margin-inline: auto;
 
     ul {
-      height: 90vh;
+      // height: 90vh;
       grid-template-columns: repeat(1, 1fr);
     }
   }
 }
 
-.Header {
-  margin-top: 1.5vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.Title {
-  font-size: var(--popup-title);
-}
+// .Title {
+//   font-size: var(--popup-title);
+// }
 
 .ProjectsDisplayCase {
-  height: 80%;
+  // height: 80%;
 
   display: flex;
   flex-wrap: wrap;
 
-  overflow: auto;
+  // overflow: auto;
 }
 
 @include media-query(desktop-medium) {
   .ProjectsDisplayCase {
     margin: 1vw;
-    height: 85%;
+    // height: 85%;
     width: 95%;
   }
 }
@@ -74,7 +84,7 @@
 
   .ProjectsDisplayCase {
     margin: 2vw;
-    height: 87%;
+    // height: 87%;
     width: 95%;
   }
 }
