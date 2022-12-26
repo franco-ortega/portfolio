@@ -20,11 +20,15 @@ const ProjectsPopUp = () => {
         className={styles.ProjectsPopUp}
       >
         <ClosePopup path={''} />
-        <header className={styles.Header}>
-          <p className={styles.Title}>Projects</p>
+        <header>
+          <p>Projects</p>
         </header>
-        <ul className={styles.ProjectsDisplayCase}>
+        <ul>
           <RootRPG />
+          <Ebb />
+          <Ebb />
+          <Ebb />
+          <Ebb />
           <Ebb />
           <WeatherBeats />
           <BeHuman />

@@ -1,108 +1,60 @@
 @use '../../../scss/' as *;
 
 .ProjectsPopUp {
-  height: 90%;
-  background-color: pink;
+  position: absolute;
+  height: 100%;
+  clip-path: inset(0 0 1rem 0);
+  border-radius: inherit;
 
   header {
-    background-color: red;
-    margin-top: 1.5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-block: 1rem;
 
     font-family: var(--continent-font-bold);
     font-size: var(--continent-popup-title);
+    text-align: center;
   }
 
   ul {
-    background-color: blue;
-    overflow: auto;
+    height: 90%;
     width: 95%;
+
     margin-inline: auto;
+    padding-bottom: 4rem;
+    overflow: auto;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-
-    // height: 80vh;
-    // overflow: auto;
   }
 
-  @include media-query(desktop-small) {
+  @include media-query(desktop-medium) {
     ul {
-      height: 90%;
-
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @include media-query(tablet) {
-    margin-inline: auto;
+    clip-path: inset(0 0 0 0);
+
     ul {
-      height: 95%;
-      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 3rem;
     }
   }
 
   @include media-query(mobile) {
-    width: 90%;
-    margin-inline: auto;
-
     ul {
-      // height: 90vh;
       grid-template-columns: repeat(1, 1fr);
     }
   }
 }
 
-// .Title {
-//   font-size: var(--popup-title);
-// }
+// USED:
+//   desktop-medium: 85rem,
+//   tablet: 56rem,
+//   mobile: 35rem,
 
-.ProjectsDisplayCase {
-  // height: 80%;
-
-  display: flex;
-  flex-wrap: wrap;
-
-  // overflow: auto;
-}
-
-@include media-query(desktop-medium) {
-  .ProjectsDisplayCase {
-    margin: 1vw;
-    // height: 85%;
-    width: 95%;
-  }
-}
-
-// Desktop narrow screen size
-@include media-maxWidth-minHeight(tablet, mobile) {
-  .Intro {
-    margin-top: 1vw;
-  }
-
-  .ProjectsDisplayCase {
-    margin: 2vw;
-    // height: 87%;
-    width: 95%;
-  }
-}
-
-// Tablet screen size
-@include media-maxWidth-minHeight(tablet, tablet-wide) {
-}
-
-@include media-mobile-landscape() {
-}
-
-@include media-query(mobile) {
-  .Intro {
-    margin: 1.5vw;
-  }
-
-  .ProjectsDisplayCase {
-    width: 90%;
-  }
-}
+// NONE:
+//   desktop-small: 70rem,
+//   tablet-wide: 1000px,
+//   junior: 45rem,
+//   mobile-narrow: 300px

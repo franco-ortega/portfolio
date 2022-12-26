@@ -248,3 +248,28 @@
     }
   }
 }
+
+%testing-colors {
+  background-color: white;
+  border-radius: inherit;
+
+  @include media-query(desktop-medium) {
+    background-color: yellow;
+    border-radius: inherit;
+  }
+
+  @include media-query(desktop-small) {
+    background-color: aliceblue;
+    border-radius: inherit;
+  }
+
+  @include media-query(tablet) {
+    background-color: purple;
+    border-radius: inherit;
+  }
+
+  @include media-query(mobile) {
+    background-color: darkslategray;
+    border-radius: inherit;
+  }
+}

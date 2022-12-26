@@ -4,8 +4,10 @@
   background: var(--continent);
   border: medium solid black;
   border-radius: 1.75rem;
+
   height: 95%;
-  width: 65%;
+  width: 70%;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,9 +26,24 @@
     ),
     hsl(45, 0%, 42%);
 
+  @include media-query(desktop-small) {
+    width: 75%;
+  }
+
   @include media-query(tablet) {
     border-radius: 0;
     height: 100%;
     width: 100%;
   }
 }
+
+// USED:
+//   desktop-small: 70rem,
+//   tablet: 56rem,
+
+// NONE:
+//   desktop-medium: 85rem,
+//   tablet-wide: 1000px,
+//   junior: 45rem,
+//   mobile: 35rem,
+//   mobile-narrow: 300px
