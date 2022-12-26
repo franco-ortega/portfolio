@@ -26,10 +26,6 @@ const ProjectsPopUp = () => {
         <ul>
           <RootRPG />
           <Ebb />
-          <Ebb />
-          <Ebb />
-          <Ebb />
-          <Ebb />
           <WeatherBeats />
           <BeHuman />
           <MajorArcana />
