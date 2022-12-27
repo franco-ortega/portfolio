@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Ocean from '../ocean/Ocean';
 import ProfileDetails from '../continents/Profile/ProfileDetails';
-import ProjectsDetails from '../continents/Projects/ProjectsDetails';
+import ProjectsPopUp from '../continents/Projects/ProjectsPopUp';
 import CartographyDetails from '../continents/Cartography/CartographyDetails';
 import WeatherBeatsDetails from '../projects/WeatherBeats/WeatherBeatsDetails';
 import BeHumanDetails from '../projects/BeHuman/BeHumanDetails';
@@ -24,7 +24,7 @@ const App = () => {
       <Router>
         <Ocean />
         <Switch>
-          <Route exact path='/projects' component={ProjectsDetails} />
+          <Route exact path='/projects' component={ProjectsPopUp} />
           <Route exact path='/profile' component={ProfileDetails} />
           <Route exact path='/root-rpg' component={RootRPGDetails} />
           <Route exact path='/ebb' component={EbbDetails} />

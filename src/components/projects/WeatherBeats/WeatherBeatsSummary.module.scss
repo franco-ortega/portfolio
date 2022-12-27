@@ -1,34 +1,24 @@
 @use '../../../scss/' as *;
 
-.WeatherBeats {
+.WeatherBeatsSummary {
+  border-color: hsl(0, 0%, 0%);
+
   background-image: url(../../../assets/WeatherBeats_mobile.jpg);
   background-position: 50% 5%;
   background-repeat: no-repeat;
   background-size: cover;
 
-  border-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 0%);
 
-  @extend %project-summary;
-}
-
-@include media-query(desktop-medium) {
-  .WeatherBeats {
+  @include media-query(desktop-medium) {
     background-position: 50% 5%;
-    border-radius: 1.25vw;
   }
-}
 
-@include media-query(tablet) {
-  .WeatherBeats {
+  @include media-query(tablet) {
     background-position: 50% 50%;
-    border-radius: 1.5vw;
   }
-}
 
-@include media-query(mobile) {
-  .WeatherBeats {
+  @include media-query(mobile) {
     background-position: 50% 55%;
-    border-radius: 3vw;
   }
 }

@@ -3,14 +3,14 @@ import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import photo from '../../../assets/FrancoOrtega.jpg';
-import ContinentDetails from '../ContinentDetails';
+import ContinentPopUp from '../ContinentPopUp';
 import styles from './ProfileDetails.module.scss';
 
 const Profile = () => {
   let history = useHistory();
 
   return (
-    <ContinentDetails>
+    <ContinentPopUp>
       <FocusOn
         onEscapeKey={() => history.push('/')}
         className={styles.ProfileDetails}
@@ -74,7 +74,7 @@ const Profile = () => {
           </span>
         </section>
       </FocusOn>
-    </ContinentDetails>
+    </ContinentPopUp>
   );
 };
 

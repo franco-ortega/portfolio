@@ -1,0 +1,22 @@
+@use '../../../scss/' as *;
+
+.MajorArcanaSummary {
+  border-color: hsl(0, 0%, 100%);
+
+  background: linear-gradient(
+      180deg,
+      hsl(0, 0%, 7%, 20%),
+      hsl(0, 0%, 7%, 40%),
+      hsl(0, 0%, 7%, 60%),
+      hsl(0, 0%, 7%, 80%),
+      hsl(0, 0%, 7%, 100%)
+    ),
+    hsl(0, 0%, 18%);
+
+  color: hsl(25, 66%, 69%);
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
