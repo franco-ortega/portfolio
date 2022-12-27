@@ -1,21 +1,7 @@
 @use '../../../scss/' as *;
 
 .ProjectsPopUp {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // bottom: 0;
-  height: 100%;
-  clip-path: inset(0 0 1rem 0);
   border-radius: inherit;
-
-  // @extend %testing-colors;
-
-  // display: grid;
-  // align-items: center;
-  // justify-content: center;
-  // width: 100%;
 
   header {
     margin-block: 1rem;
@@ -28,6 +14,7 @@
   ul {
     height: 90%;
     max-width: 95%;
+    padding-inline: 1rem;
 
     margin-inline: auto;
     padding-bottom: 4rem;
@@ -39,14 +26,15 @@
   }
 
   @include media-query(desktop-medium) {
+    height: 100%;
+    clip-path: inset(0 0 2rem 0);
+
     ul {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @include media-query(tablet) {
-    // clip-path: inset(0 0 2rem 0);
-
     ul {
       padding-bottom: 3rem;
     }
