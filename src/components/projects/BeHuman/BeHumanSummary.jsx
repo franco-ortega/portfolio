@@ -8,8 +8,8 @@ const BeHumanSummary = () => {
   return (
     <ProjectSummary>
       <div className={styles.BeHumanSummary}>
-        <h2 className={styles.Title}>beHuman</h2>
-        <div className={styles.Summary}>
+        <h2>beHuman</h2>
+        <div>
           <p>
             VSCode extension that tracks work time and reminds users to take
             breaks via hourly popups with wellness tips and movement videos.
