@@ -1,0 +1,61 @@
+@use '../../scss/' as *;
+
+.ProjectSummary {
+  border-radius: 0.75rem;
+
+  min-width: min(20rem, 100%);
+  max-width: 25rem;
+  margin-inline: auto;
+
+  font-size: var(--project-summary-title);
+
+  @extend %testing-colors;
+
+  h2 {
+    font-family: var(--continent-font-bold);
+    font-size: 2.5rem;
+  }
+
+  & > div {
+    border-radius: inherit;
+    border-style: solid;
+    border-width: 0.15rem;
+
+    padding: 1rem 0.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 4fr auto;
+    justify-items: center;
+    align-items: center;
+
+    height: 18rem;
+    overflow: auto;
+
+    & > div {
+      height: 100%;
+      padding: 0.5rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      text-align: justify;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+// USED:
+
+// NONE:
+//   desktop-medium: 85rem,
+//   desktop-small: 70rem,
+//   tablet-wide: 1000px,
+//   tablet: 56rem,
+//   junior: 45rem,
+//   mobile: 35rem,
+//   mobile-narrow: 300px

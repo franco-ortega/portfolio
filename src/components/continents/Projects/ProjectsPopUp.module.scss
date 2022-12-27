@@ -1,0 +1,59 @@
+@use '../../../scss/' as *;
+
+.ProjectsPopUp {
+  border-radius: inherit;
+
+  header {
+    margin-block: 1rem;
+
+    font-family: var(--continent-font-bold);
+    font-size: var(--continent-popup-title);
+    text-align: center;
+  }
+
+  ul {
+    height: 90%;
+    max-width: 95%;
+    padding-inline: 1rem;
+
+    margin-inline: auto;
+    padding-bottom: 4rem;
+    overflow: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  @include media-query(desktop-medium) {
+    height: 100%;
+    clip-path: inset(0 0 2rem 0);
+
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include media-query(tablet) {
+    ul {
+      padding-bottom: 3rem;
+    }
+  }
+
+  @include media-query(mobile) {
+    ul {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+// USED:
+//   desktop-medium: 85rem,
+//   tablet: 56rem,
+//   mobile: 35rem,
+
+// NONE:
+//   desktop-small: 70rem,
+//   tablet-wide: 1000px,
+//   junior: 45rem,
+//   mobile-narrow: 300px
