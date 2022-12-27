@@ -1,21 +1,12 @@
 import React from 'react';
-import { useHistory } from 'react-router';
-import { FocusOn } from 'react-focus-on';
-import ClosePopup from '../../buttons/ClosePopup';
 import photo from '../../../assets/FrancoOrtega.jpg';
 import ContinentPopUp from '../ContinentPopUp';
-import styles from './ProfileDetails.module.scss';
+import styles from './ProfilePopUp.module.scss';
 
-const Profile = () => {
-  let history = useHistory();
-
+const ProfilePopUp = () => {
   return (
     <ContinentPopUp>
-      <FocusOn
-        onEscapeKey={() => history.push('/')}
-        className={styles.ProfileDetails}
-      >
-        <ClosePopup path={''} />
+      <div className={styles.ProfilePopUp}>
         <header className={styles.Header}>
           <img src={photo} alt='Franco Ortega photo' className={styles.Photo} />
           <p className={styles.Name}>Franco Ortega</p>
@@ -31,33 +22,37 @@ const Profile = () => {
             <a href='tel:503-998-7444' className={styles.ContactLink}>
               503-998-7444
             </a>
-            <a
-              href='https://github.com/franco-ortega'
-              rel='noreferrer'
-              target='_blank'
-              className={styles.ContactLink}
-            >
-              GitHub
-            </a>
-            <a
-              href='https://www.linkedin.com/in/francoortega/'
-              rel='noreferrer'
-              target='_blank'
-              className={styles.ContactLink}
-            >
-              LinkedIn
-            </a>
+            <div>
+              <a
+                href='https://github.com/franco-ortega'
+                rel='noreferrer'
+                target='_blank'
+                className={styles.ContactLink}
+              >
+                GitHub
+              </a>
+              <span> - </span>
+              <a
+                href='https://www.linkedin.com/in/francoortega/'
+                rel='noreferrer'
+                target='_blank'
+                className={styles.ContactLink}
+              >
+                LinkedIn
+              </a>
+            </div>
           </p>
         </header>
-        <section className={styles.Bio}>
+        <div className={styles.Bio}>
           <span>
-            I&apos;m a software engineer who loves to create intuitive
-            interfaces and build out features across the stack. I appreciate
-            well-documented and efficient processes that offer structure and
-            flexibility. I value clear and kind communication, cross-functional
-            collaboration, and supportive environments that foster diversity and
-            nurture growth. Optimism guides my efforts while practicality
-            ensures that my goals are brought to fruition.
+            Diligent and empathetic software engineer with excellent
+            communication skills who thrives in collaborative, agile
+            environments and loves to create user-focused, high-quality
+            products. Experienced in building internal tools, improving existing
+            systems, developing new features, writing documentation, and
+            debugging issues across the stack in business applications. Guided
+            by optimism to dream big and balanced with practicality to ensure
+            goals are brought to fruition.
           </span>
           <span>
             Additionally, I grew up very much a math and science kid, but I have
@@ -72,10 +67,10 @@ const Profile = () => {
             Yes to racial justice, social justice, climate justice, and economic
             justice.
           </span>
-        </section>
-      </FocusOn>
+        </div>
+      </div>
     </ContinentPopUp>
   );
 };
 
-export default Profile;
+export default ProfilePopUp;

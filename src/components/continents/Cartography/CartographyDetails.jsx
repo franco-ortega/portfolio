@@ -22,19 +22,19 @@ const CartographyDetails = () => {
           cartography. From <span>Middle Earth</span> to <span>Westeros</span>{' '}
           to the <span>Grishaverse</span>, I&apos;ve always loved flipping to
           the maps in fantasy novels whenever a new location is mentioned, and
-          in recent years, I&apos;ve started creating my own worlds with pen and
-          paper. More maps can be viewed at{' '}
+          in recent years, have started creating my own worlds with pen and
+          paper. View more at{' '}
           <a
             href='https://www.instagram.com/reefwoodcartography/'
             target='_blank'
             rel='noreferrer'
           >
-            @ReefwoodCartography on Instagram
+            @ReefwoodCartography
           </a>
           .
         </section>
         <section>
-          <p>Click image to view full map.</p>
+          <p>Click images to see full maps.</p>
           <Link to='/april'>
             <div className={styles.April}>
               <span role='img' aria-label='April map'></span>

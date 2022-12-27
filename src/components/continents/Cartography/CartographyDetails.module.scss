@@ -2,38 +2,38 @@
 
 .CartographyDetails {
   text-align: center;
+  padding-block: 1rem;
+  padding-inline: 3rem;
 
   header {
-    margin-top: 1.5vw;
-    font-family: var(--continent-font-bold);
-    // font-size: 5vw;
-
     font-family: var(--continent-font-bold);
     font-size: var(--continent-popup-title);
   }
 
   section {
-    margin: 1vw 2vw;
-    padding: 0 1vw;
     font-size: var(--popup-text);
+    font-size: var(--continent-popup-text);
   }
 
   header + section {
     text-align: justify;
+    margin-top: 0.5rem;
 
     span {
       font-family: var(--continent-font-bold);
-      font-size: 2.25vw;
+      font-size: 1.75rem;
     }
   }
 
   section + section {
+    margin-top: 1rem;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 1.5vw;
+    gap: 2rem;
 
     p {
       width: 100%;
@@ -48,10 +48,10 @@
 .MarneOsso,
 .Strigi {
   border: thin solid black;
-  border-radius: 0.5vw;
+  border-radius: 0.25rem;
   background-repeat: no-repeat;
-  height: 20vh;
-  width: 15vw;
+  height: 10rem;
+  width: 15rem;
 }
 
 .April {
@@ -91,10 +91,31 @@
 }
 
 @include media-query(desktop-medium) {
+  .April,
+  .Ganderlund,
+  .Gruenne,
+  .Harland,
+  .MarneOsso,
+  .Strigi {
+    width: 12rem;
+  }
+}
+
+@include media-query(desktop-small) {
+  .April,
+  .Ganderlund,
+  .Gruenne,
+  .Harland,
+  .MarneOsso,
+  .Strigi {
+    width: 10rem;
+  }
+}
+
+@include media-query(tablet) {
   .CartographyDetails {
-    header {
-      // font-size: 5vw;
-    }
+    height: 100%;
+    overflow: auto;
   }
 
   .April,
@@ -103,88 +124,13 @@
   .Harland,
   .MarneOsso,
   .Strigi {
-    border-radius: 0.75vw;
-    height: 20vh;
-    width: 15vw;
-  }
-}
-
-@include media-maxWidth-minHeight(tablet, mobile) {
-  .CartographyDetails {
-    header {
-      margin-top: 2vw;
-      // font-size: 8vw;
-    }
-
-    section {
-      margin: 0 4vw;
-    }
-
-    header + section {
-      span {
-        font-size: 3.3vw;
-      }
-    }
-
-    section + section {
-      margin-top: 2vw;
-      gap: 6vw;
-    }
-  }
-
-  .April,
-  .Ganderlund,
-  .Gruenne,
-  .Harland,
-  .MarneOsso,
-  .Strigi {
-    height: 17vh;
-    width: 30vw;
-  }
-}
-
-@include media-maxWidth-orientation(tablet, landscape) {
-  .CartographyDetails {
-    section {
-      font-size: 2.5vw;
-    }
-
-    header + section {
-      span {
-        font-size: 2.75vw;
-      }
-    }
-
-    section + section {
-      p {
-        font-size: 2.5vw;
-      }
-    }
-  }
-
-  .Strigi {
-    display: none;
+    width: 13rem;
   }
 }
 
 @include media-query(mobile) {
   .CartographyDetails {
-    header {
-      margin-top: 4vw;
-      // font-size: 13vw;
-    }
-
-    header + section {
-      margin-top: 2vw;
-      margin-bottom: 0;
-      span {
-        font-size: 5.25vw;
-      }
-    }
-
-    section + section {
-      margin: 1vw;
-    }
+    padding-inline: 2rem;
   }
 
   .April,
@@ -193,7 +139,17 @@
   .Harland,
   .MarneOsso,
   .Strigi {
-    height: 12vh;
-    width: 35vw;
+    width: 15rem;
   }
 }
+
+// USED:
+//   desktop-medium: 85rem,
+//   desktop-small: 70rem,
+//   tablet: 56rem,
+//   mobile: 35rem,
+
+// NONE:
+//   tablet-wide: 1000px,
+//   junior: 45rem,
+//   mobile-narrow: 300px

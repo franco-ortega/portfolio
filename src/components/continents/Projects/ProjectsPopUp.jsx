@@ -1,6 +1,5 @@
 import React from 'react';
 import ContinentPopUp from '../ContinentPopUp';
-import ClosePopup from '../../buttons/ClosePopup';
 import RootRPGSummary from '../../projects/RootRPG/RootRPGSummary';
 import EbbSummary from '../../projects/Ebb/EbbSummary';
 import styles from './ProjectsPopUp.module.scss';
@@ -12,7 +11,6 @@ const ProjectsPopUp = () => {
   return (
     <ContinentPopUp>
       <div className={styles.ProjectsPopUp}>
-        <ClosePopup path={''} />
         <header>
           <p>Projects</p>
         </header>
