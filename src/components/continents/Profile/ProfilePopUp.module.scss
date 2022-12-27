@@ -24,7 +24,7 @@
 
     // contact info
     & p:nth-child(3) {
-      font-size: 1.25rem;
+      font-size: var(--continent-popup-header);
 
       div {
         margin-top: 0.25rem;
@@ -44,8 +44,7 @@
     margin-block: 1rem;
     padding: 1rem;
 
-    // font-size: var(--popup-text);
-    font-size: 1.2rem;
+    font-size: var(--continent-popup-text);
 
     text-align: justify;
     overflow: auto;
