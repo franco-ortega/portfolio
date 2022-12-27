@@ -1,36 +1,29 @@
 import React from 'react';
-import { useHistory } from 'react-router';
-import { FocusOn } from 'react-focus-on';
 import ContinentPopUp from '../ContinentPopUp';
 import ClosePopup from '../../buttons/ClosePopup';
-import BeHuman from '../../projects/BeHuman/BeHuman';
-import Ebb from '../../projects/Ebb/Ebb';
-import MajorArcana from '../../projects/MajorArcana/MajorArcana';
-import WeatherBeats from '../../projects/WeatherBeats/WeatherBeats';
+import RootRPGSummary from '../../projects/RootRPG/RootRPGSummary';
+import EbbSummary from '../../projects/Ebb/EbbSummary';
 import styles from './ProjectsPopUp.module.scss';
-import RootRPG from '../../projects/RootRPG/RootRPG';
+import WeatherBeatsSummary from '../../projects/WeatherBeats/WeatherBeatsSummary';
+import BeHumanSummary from '../../projects/BeHuman/BeHumanSummary';
+import MajorArcanaSummary from '../../projects/MajorArcana/MajorArcanaSummary';
 
 const ProjectsPopUp = () => {
-  let history = useHistory();
-
   return (
     <ContinentPopUp>
-      <FocusOn
-        onEscapeKey={() => history.push('/')}
-        className={styles.ProjectsPopUp}
-      >
+      <div className={styles.ProjectsPopUp}>
         <ClosePopup path={''} />
         <header>
           <p>Projects</p>
         </header>
         <ul>
-          <RootRPG />
-          <Ebb />
-          <WeatherBeats />
-          <BeHuman />
-          <MajorArcana />
+          <RootRPGSummary />
+          <EbbSummary />
+          <WeatherBeatsSummary />
+          <BeHumanSummary />
+          <MajorArcanaSummary />
         </ul>
-      </FocusOn>
+      </div>
     </ContinentPopUp>
   );
 };

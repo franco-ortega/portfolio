@@ -1,7 +1,6 @@
 @use '../../scss/' as *;
 
 .ContinentPopUp {
-  background: var(--continent);
   border: medium solid black;
   border-radius: 1.75rem;
 
@@ -25,6 +24,9 @@
       hsl(45, 51%, 72%, 60%)
     ),
     hsl(45, 0%, 42%);
+
+  display: flex;
+  justify-content: center;
 
   @include media-query(desktop-small) {
     width: 75%;

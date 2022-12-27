@@ -1,0 +1,78 @@
+@use '../../scss/' as *;
+
+.ProjectSummary {
+  @extend %testing-colors;
+
+  border-radius: 0.75rem;
+
+  min-width: min(20rem, 100%);
+  max-width: 25rem;
+  margin-inline: auto;
+
+  // padding: 1rem 0.5rem;
+
+  // height: 18rem;
+
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // grid-template-rows: auto 4fr auto;
+  // justify-items: center;
+  // align-items: center;
+
+  font-size: var(--project-summary-title);
+  // overflow: auto;
+
+  h2 {
+    font-family: var(--continent-font-bold);
+    font-size: 2.5rem;
+  }
+
+  & > div {
+    border-radius: inherit;
+    border-style: solid;
+    border-width: 0.15rem;
+
+    padding: 1rem 0.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 4fr auto;
+    justify-items: center;
+    align-items: center;
+
+    height: 100%;
+    height: 18rem;
+    overflow: auto;
+    // background-color: blue;
+
+    & > div {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      // background-color: yellow;
+      padding: 0.5rem;
+      text-align: justify;
+    }
+  }
+
+  @extend %project-summary-links;
+
+  @include media-query(desktop-medium) {
+  }
+
+  @include media-query(desktop-small) {
+    // height: 16rem;
+    // grid-template-rows: auto 10rem auto;
+  }
+
+  @include media-query(tablet) {
+    // height: 16rem;
+    // grid-template-rows: auto 8rem auto;
+  }
+
+  @include media-query(mobile) {
+    // height: 15rem;
+  }
+}

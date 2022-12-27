@@ -1,0 +1,69 @@
+@use '../../../scss/' as *;
+
+.BeHumanSummary {
+  border-color: hsl(0, 0%, 0%);
+
+  background: linear-gradient(
+      180deg,
+      hsl(199, 42%, 73%, 100%),
+      hsl(199, 42%, 73%, 80%),
+      hsl(199, 42%, 73%, 60%),
+      hsl(199, 42%, 73%, 40%),
+      hsl(199, 42%, 73%, 20%)
+    ),
+    hsl(199, 42%, 45%);
+
+  color: hsl(0, 0%, 0%);
+}
+
+.Title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Summary {
+  padding: 0.5vw 1.25vw;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--project-summary-text);
+  text-align: justify;
+}
+
+@include media-query(desktop-medium) {
+  .BeHumanSummary {
+    border-radius: 1.25vw;
+  }
+
+  .Summary {
+    padding: 0.5vw 1.5vw;
+  }
+}
+
+@include media-query(tablet) {
+  .BeHumanSummary {
+    border-radius: 1.5vw;
+  }
+
+  .Title {
+  }
+
+  .Summary {
+  }
+}
+
+@include media-query(mobile) {
+  .BeHumanSummary {
+    border-radius: 3vw;
+  }
+
+  .Title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Summary {
+    padding: 1vw 5vw;
+  }
+}
