@@ -7,7 +7,7 @@ const ProfilePopUp = () => {
   return (
     <ContinentPopUp>
       <div className={styles.ProfilePopUp}>
-        <header className={styles.Header}>
+        <header>
           <img src={photo} alt='Franco Ortega photo' className={styles.Photo} />
           <p className={styles.Name}>Franco Ortega</p>
           <p className={styles.Contact}>
@@ -43,7 +43,7 @@ const ProfilePopUp = () => {
             </div>
           </p>
         </header>
-        <div className={styles.Bio}>
+        <div>
           <span>
             Diligent and empathetic software engineer with excellent
             communication skills who thrives in collaborative, agile
