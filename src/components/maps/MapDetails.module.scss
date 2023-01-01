@@ -9,9 +9,7 @@
   font-family: var(--continent-font-bold);
   font-size: var(--map-title);
 
-  @media (max-height: 500px) {
-    height: 100%;
-    overflow: auto;
+  @include media-landscape(mobile) {
   }
 }
 
