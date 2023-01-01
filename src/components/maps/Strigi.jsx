@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
-import MapTallDetails from './MapTallDetails';
+import MapDetails from './MapDetails';
 import StrigiMap from '../../assets/maps/Strigi.png';
 
 const Strigi = () => {
@@ -9,10 +9,7 @@ const Strigi = () => {
 
   return (
     <FocusOn onEscapeKey={() => history.push('/cartography')}>
-      <MapTallDetails
-        mapTitle={'Strigi'}
-        map={StrigiMap}
-      />
+      <MapDetails mapTitle={'Strigi'} map={StrigiMap} />
     </FocusOn>
   );
 };

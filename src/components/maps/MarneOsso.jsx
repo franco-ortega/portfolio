@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 import { FocusOn } from 'react-focus-on';
-import MapTallDetails from './MapTallDetails';
+import MapDetails from './MapDetails';
 import MarneOssoMap from '../../assets/maps/MarneOsso.png';
 
 const MarneOsso = () => {
@@ -9,10 +9,7 @@ const MarneOsso = () => {
 
   return (
     <FocusOn onEscapeKey={() => history.push('/cartography')}>
-      <MapTallDetails
-        mapTitle={'Marne Osso'}
-        map={MarneOssoMap}
-      />
+      <MapDetails mapTitle={'Marne Osso'} map={MarneOssoMap} />
     </FocusOn>
   );
 };
