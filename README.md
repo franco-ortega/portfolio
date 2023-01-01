@@ -7,3 +7,8 @@ The inspiration for this site came from my love of fantasy cartography. From the
 Thank you for visiting my little world.
 
 (Created with React and Sass)
+
+### Commands to run app:
+
+1. `nvm use 16.13.0`
+1. `npm run start`

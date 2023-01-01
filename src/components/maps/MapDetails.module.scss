@@ -1,81 +1,24 @@
 @use '../../scss/' as *;
 
 .MapDetails {
-  background: var(--continent);
-  border: medium solid black;
-  border-radius: 2vw;
-  height: 96vh;
-  width: 60vw;
-  padding-top: 2vw;
-  position: absolute;
-  top: 2%;
-  left: 20%;
-  z-index: 2;
+  height: 100%;
+  overflow: auto;
+  padding-block: 1rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
 
   font-family: var(--continent-font-bold);
   font-size: var(--map-title);
-}
 
-.Map {
-  border-radius: 1vw;
-  width: 90%;
-  margin: 0.5vw;
-}
-
-@include media-query(desktop-medium) {
-  .MapDetails {
-    padding: 3vw 2vw;
-    top: 1.5%;
-    height: 97vh;
-    justify-content: space-evenly;
+  p {
+    margin-bottom: 1rem;
   }
 
-  .Map {
-    width: 100%;
-  }
-}
-
-@include media-maxWidth-minHeight(tablet, mobile) {
-  .MapDetails {
-    border-radius: 0;
-    padding: 10vw 4vw;
-    top: 0%;
-    left: 0%;
-    height: 100vh;
-    width: 100vw;
-    gap: 5vw;
-    justify-content: flex-start;
-  }
-
-  .Map {
-    border-radius: 2vw;
-  }
-}
-
-@include media-maxWidth-orientation(tablet, landscape) {
-  .MapDetails {
-    border-radius: 0;
-    padding: 2vw;
-    top: 0%;
-    left: 0%;
-    height: 100vh;
-    width: 100vw;
-    font-size: 7vw;
-  }
-
-  .Map {
-    width: 50%;
-  }
-}
-
-@include media-query(mobile) {
-  .MapDetails {
-    padding-top: 15vw;
-    gap: 20vw;
+  img {
+    border-radius: 1.75rem;
+    max-width: 90%;
+    max-height: 90%;
   }
 }
