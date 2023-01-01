@@ -10,7 +10,7 @@ const MapDetails = ({ mapTitle, map }) => {
       <div className={styles.MapDetails}>
         <ClosePopup path={'cartography'} />
         <p>{mapTitle}</p>
-        <img alt={mapTitle} className={styles.Map} src={map} />
+        <img alt={mapTitle} src={map} />
       </div>
     </ContinentPopUp>
   );
