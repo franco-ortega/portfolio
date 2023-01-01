@@ -1,21 +1,10 @@
 @use '../../scss/' as *;
 
 .MapDetails {
-  background: var(--continent);
-  border: medium solid black;
-  border-radius: 2vw;
-  height: 96vh;
-  width: 60vw;
-  padding-top: 2vw;
-  position: absolute;
-  top: 2%;
-  left: 20%;
-  z-index: 2;
-
+  padding-block: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
 
   font-family: var(--continent-font-bold);
   font-size: var(--map-title);
@@ -25,19 +14,6 @@
   border-radius: 1vw;
   width: 90%;
   margin: 0.5vw;
-}
-
-@include media-query(desktop-medium) {
-  .MapDetails {
-    padding: 3vw 2vw;
-    top: 1.5%;
-    height: 97vh;
-    justify-content: space-evenly;
-  }
-
-  .Map {
-    width: 100%;
-  }
 }
 
 @include media-maxWidth-minHeight(tablet, mobile) {
@@ -70,12 +46,5 @@
 
   .Map {
     width: 50%;
-  }
-}
-
-@include media-query(mobile) {
-  .MapDetails {
-    padding-top: 15vw;
-    gap: 20vw;
   }
 }
