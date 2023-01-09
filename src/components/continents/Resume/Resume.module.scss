@@ -10,7 +10,26 @@
   position: relative;
   z-index: 1;
 
+  padding-bottom: 2rem;
+
   @extend %half-second-transition;
+
+  @include media-query(tablet) {
+    grid-column: 8 / 13;
+    grid-row: 7 / 10;
+    padding-bottom: 0;
+  }
+
+  @include media-mobile-landscape() {
+    grid-column: 1 / 5;
+    grid-row: 7 / 13;
+    padding-bottom: 1.25rem;
+  }
+
+  @include media-query(mobile) {
+    grid-column: 1 / 7;
+    grid-row: 14 / 19;
+  }
 }
 
 .Resume:focus-within,
@@ -69,28 +88,6 @@
   @include media-query(mobile) {
     padding: 0.5rem 1rem;
     font-size: 2.25rem;
-  }
-}
-
-@include media-maxWidth-minHeight(tablet, mobile) {
-  .Resume {
-    grid-column: 8 / 13;
-    grid-row: 7 / 10;
-  }
-}
-
-@include media-mobile-landscape() {
-  .Resume {
-    grid-column: 1 / 5;
-    grid-row: 7 / 13;
-  }
-}
-
-@include media-query(mobile) {
-  .Resume {
-    grid-column: 1 / 7;
-    grid-row: 14 / 19;
-    padding-right: 2vw;
   }
 }
 
