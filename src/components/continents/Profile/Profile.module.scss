@@ -86,6 +86,10 @@
     font-size: 6rem;
   }
 
+  @include media-query(junior) {
+    font-size: 4.5rem;
+  }
+
   @include media-mobile-landscape() {
     padding: 0.75rem 1.5rem;
     font-size: 3rem;
