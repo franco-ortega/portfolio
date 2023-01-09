@@ -33,23 +33,49 @@
 .Continent {
   @extend %continent-styles;
   background: linear-gradient(
-    130deg,
-    rgb(150, 134, 114),
+    30deg,
+    rgb(206, 165, 112),
     rgb(206, 165, 112),
     var(--continent),
     rgb(206, 165, 112),
     var(--continent),
-    rgb(150, 134, 114)
+    rgb(187, 168, 142)
   );
-  background-size: 3% 100%;
+
+  background-size: 3% 5%;
   height: 15vh;
   width: 15vw;
 }
 
 .Title {
-  font-family: var(--continent-font-bold);
   font-size: 3.5vw;
   transform: rotate(-7.5deg);
+
+  @include media-query(desktop-medium) {
+    font-size: 3rem;
+  }
+
+  @include media-query(desktop-small) {
+    font-size: 2.5rem;
+  }
+
+  @include media-query(tablet) {
+    font-size: 2.75rem;
+  }
+
+  @include media-query(junior) {
+    font-size: 2.5rem;
+  }
+
+  @include media-mobile-landscape() {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  @include media-query(mobile) {
+    padding: 1rem 1.5rem;
+    font-size: 1.75rem;
+  }
 }
 
 @include media-maxWidth-minHeight(tablet, mobile) {
@@ -61,10 +87,6 @@
   .Continent {
     height: 10vh;
     width: 25vw;
-  }
-
-  .Title {
-    font-size: 5vw;
   }
 }
 
@@ -79,10 +101,6 @@
     height: 14vh;
     width: 14vw;
   }
-
-  .Title {
-    font-size: 3.25vw;
-  }
 }
 
 @include media-query(mobile) {
@@ -95,10 +113,6 @@
   .Continent {
     height: 9vh;
     width: 32vw;
-  }
-
-  .Title {
-    font-size: 7.5vw;
   }
 }
 
