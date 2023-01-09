@@ -31,12 +31,13 @@
 .Continent {
   @extend %continent-styles;
   background: linear-gradient(
-    160deg,
+    30deg,
     rgb(206, 165, 112),
-    rgb(210, 180, 140, 75%),
+    rgb(206, 165, 112),
     var(--continent),
-    rgb(206, 165, 112, 75%),
-    rgb(206, 165, 112, 75%)
+    rgb(206, 165, 112),
+    var(--continent),
+    rgb(187, 168, 142)
   );
   height: 15vh;
   width: 20vw;
