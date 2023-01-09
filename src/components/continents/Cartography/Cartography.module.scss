@@ -41,10 +41,25 @@
     var(--continent),
     rgb(187, 168, 142)
   );
-
   background-size: 3% 5%;
-  height: 15vh;
-  width: 15vw;
+
+  padding: 2rem 1.5rem;
+
+  @include media-query(desktop-medium) {
+    padding: 1.75rem 1.25rem;
+  }
+
+  @include media-query(tablet) {
+    padding: 1.5rem 1rem;
+  }
+
+  @include media-mobile-landscape() {
+    padding: 0.75rem 0.75rem;
+  }
+
+  @include media-query(mobile) {
+    padding: 1rem 1.5rem;
+  }
 }
 
 .Title {
@@ -68,12 +83,10 @@
   }
 
   @include media-mobile-landscape() {
-    padding: 0.75rem 1.5rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   @include media-query(mobile) {
-    padding: 1rem 1.5rem;
     font-size: 1.75rem;
   }
 }
@@ -83,23 +96,13 @@
     grid-column: 1 / 5;
     grid-row: 8 / 12;
   }
-
-  .Continent {
-    height: 10vh;
-    width: 25vw;
-  }
 }
 
 @include media-mobile-landscape() {
   .Cartography {
     grid-column: 4 / 7;
     grid-row: 9 / 13;
-    padding-bottom: 5vw;
-  }
-
-  .Continent {
-    height: 14vh;
-    width: 14vw;
+    // padding-bottom: 5vw;
   }
 }
 
@@ -108,11 +111,6 @@
     grid-column: 7 / 12;
     grid-row: 15 / 20;
     justify-content: center;
-  }
-
-  .Continent {
-    height: 9vh;
-    width: 32vw;
   }
 }
 
