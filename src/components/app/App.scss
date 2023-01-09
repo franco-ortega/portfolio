@@ -36,16 +36,17 @@
   --coastline-box-shadow: 0vw 0vw 2vw 1.5vw;
   --coastline-shadow-color: darkblue;
   --outer-coastline: rgb(87, 171, 223);
-  --outer-coastline-padding: 0.75vw;
-  --inner-coastline-border-width: 0.15vw;
+  --outer-coastline-padding: 1rem;
+  --inner-coastline-border-width: 0.15rem;
   --inner-coastline: rgb(111, 186, 233);
-  --inner-coastline-padding: 1vw;
+  --inner-coastline-padding: 0.75rem;
   --continent-border: brown;
   --continent: rgb(220, 202, 148);
-  --continent-padding: 1vw;
   --continent-font: 'Tangerine';
   --continent-font-bold: 'Tangerine Bold';
   --main-font: Arial, sans-serif;
+
+  --continent-title: 5rem;
 
   --continent-popup-title: 5rem;
   --continent-popup-header: 1.25rem;
@@ -82,16 +83,14 @@ a:hover {
   :root {
     --popup-header-text: 1.75vw;
     --popup-text: 1.5vw;
-
-    // --map-title: 5.5vw;
   }
 }
 
 @include media-query(tablet) {
   :root {
-    --outer-coastline-padding: 1vw;
-    --inner-coastline-border-width: 0.3vw;
-    --inner-coastline-padding: 1.25vw;
+    --outer-coastline-padding: 0.5rem;
+    --inner-coastline-border-width: 0.1rem;
+    --inner-coastline-padding: 0.5rem;
 
     --popup-header-text: 3vw;
     --popup-text: 2.75vw;
@@ -107,8 +106,7 @@ a:hover {
 
 @include media-query(mobile) {
   :root {
-    --outer-coastline-padding: 1.25vw;
-    --inner-coastline-border-width: 0.3vw;
+    --outer-coastline-padding: 0.4rem;
 
     --continent-popup-title: 4rem;
     --popup-header-text: 3.4vw;

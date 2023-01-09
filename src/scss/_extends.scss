@@ -111,7 +111,9 @@
   border-width: 0.25rem;
   border-radius: 1rem;
 
-  width: 60%;
+  height: 95%;
+  width: 70%;
+  max-width: 80rem;
 
   position: absolute;
   top: 50%;
@@ -139,6 +141,11 @@
     h3 {
       font-size: var(--project-details-tech);
       font-weight: 500;
+    }
+
+    h3,
+    p {
+      max-width: 45rem;
     }
 
     p:not(:last-child) {

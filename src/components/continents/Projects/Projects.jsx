@@ -5,12 +5,10 @@ import styles from './Projects.module.scss';
 const Projects = () => {
   return (
     <section className={styles.Projects}>
-      <Link to="/projects">
+      <Link to='/projects'>
         <div className={styles.OuterCoastline}>
           <div className={styles.InnerCoastline}>
-            <div className={styles.Continent}>
-              Projects
-            </div>
+            <div className={styles.Continent}>Projects</div>
           </div>
         </div>
       </Link>

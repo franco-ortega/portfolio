@@ -39,10 +39,10 @@
     var(--continent),
     rgb(187, 168, 142)
   );
-  height: 25vh;
-  width: 25vw;
-  padding-right: 2.25vw;
-  font-size: 8vw;
+
+  padding: 1.75rem 3rem;
+
+  font-size: 6rem;
 }
 
 @include media-maxWidth-minHeight(tablet, mobile) {
@@ -56,9 +56,8 @@
   }
 
   .Continent {
-    height: 15vh;
-    width: 33vw;
-    font-size: 11vw;
+    padding: 1rem 2rem;
+    font-size: 5.5rem;
   }
 }
 
@@ -82,9 +81,10 @@
   }
 
   .Continent {
-    height: 10vh;
-    width: 37vw;
+    // height: 10vh;
+    // width: 37vw;
     font-size: 13.5vw;
+    font-size: 3.5rem;
   }
 }
 
