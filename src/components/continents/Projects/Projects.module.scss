@@ -9,8 +9,28 @@
 
   position: relative;
   z-index: 1;
+  z-index: 2;
 
   @extend %half-second-transition;
+
+  @include media-query(tablet) {
+    grid-column: 1 / 7;
+    grid-row: 2 / 6;
+  }
+
+  @include media-mobile-landscape() {
+    grid-column: 1 / 5;
+    grid-row: 2 / 8;
+    padding-top: 1.5rem;
+  }
+
+  @include media-query(mobile) {
+    grid-column: 1 / 8;
+    grid-row: 5 / 10;
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .Projects:focus-within,
@@ -42,44 +62,28 @@
   );
 
   padding: 1rem 2rem;
-  font-size: 5rem;
-}
+  font-size: 7.5rem;
 
-@include media-maxWidth-minHeight(tablet, mobile) {
-  .Projects {
-    grid-column: 1 / 7;
-    grid-row: 2 / 6;
+  @include media-query(desktop-medium) {
+    font-size: 5.5rem;
   }
 
-  .Continent {
-    height: 15vh;
-    width: 34vw;
-    font-size: 5rem;
-  }
-}
-
-@include media-mobile-landscape() {
-  .Projects {
-    grid-column: 1 / 5;
-    grid-row: 2 / 8;
+  @include media-query(desktop-small) {
+    font-size: 4.5rem;
   }
 
-  .Continent {
-    font-size: 3rem;
-  }
-}
-
-@include media-query(mobile) {
-  .Projects {
-    grid-column: 1 / 8;
-    grid-row: 5 / 10;
-    padding-right: 3vw;
+  @include media-query(tablet) {
+    font-size: 5.5rem;
   }
 
-  .Continent {
-    height: 10vh;
-    width: 37vw;
-    font-size: 3.5rem;
+  @include media-mobile-landscape() {
+    padding: 0.5rem 1.25rem;
+    font-size: 2.75rem;
+  }
+
+  @include media-query(mobile) {
+    padding: 0.5rem 1rem;
+    font-size: 2.75rem;
   }
 }
 
