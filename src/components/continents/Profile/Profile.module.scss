@@ -11,6 +11,23 @@
   z-index: 1;
 
   @extend %half-second-transition;
+
+  @include media-query(tablet) {
+    grid-column: 3 / 9;
+    grid-row: 5 / 8;
+  }
+
+  @include media-mobile-landscape() {
+    grid-column: 5 / 9;
+    grid-row: 4 / 10;
+    padding-bottom: 1.25rem;
+  }
+
+  @include media-query(mobile) {
+    grid-column: 1 / 8;
+    grid-row: 10 / 14;
+    padding-bottom: 0;
+  }
 }
 
 .Profile:focus-within,
@@ -22,6 +39,20 @@
   @extend %moving-waves;
   @extend %half-second-transition;
   border-radius: 120vw 70vw 95vw 90vw;
+
+  @include media-query(tablet) {
+    margin-top: 5rem;
+    margin-right: 8rem;
+  }
+
+  @include media-mobile-landscape() {
+    margin-top: 0;
+    margin-right: 2rem;
+  }
+
+  @include media-query(mobile) {
+    margin: 0;
+  }
 }
 
 .InnerCoastline {
@@ -41,50 +72,28 @@
   );
 
   padding: 1.75rem 3rem;
+  font-size: 8rem;
 
-  font-size: 6rem;
-}
-
-@include media-maxWidth-minHeight(tablet, mobile) {
-  .Profile {
-    grid-column: 3 / 9;
-    grid-row: 5 / 8;
+  @include media-query(desktop-medium) {
+    font-size: 6rem;
   }
 
-  .OuterCoastline {
-    margin: 5vw 8vw 0 0;
+  @include media-query(desktop-small) {
+    font-size: 5rem;
   }
 
-  .Continent {
+  @include media-query(tablet) {
+    font-size: 6rem;
+  }
+
+  @include media-mobile-landscape() {
     padding: 1rem 2rem;
-    font-size: 5.5rem;
-  }
-}
-
-@include media-mobile-landscape() {
-  .Profile {
-    grid-column: 5 / 9;
-    grid-row: 4 / 10;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-}
-
-@include media-maxWidth-orientation(mobile, portrait) {
-  .Profile {
-    grid-column: 1 / 8;
-    grid-row: 10 / 14;
+    font-size: 3rem;
   }
 
-  .OuterCoastline {
-    margin: 0;
-  }
-
-  .Continent {
-    // height: 10vh;
-    // width: 37vw;
-    font-size: 13.5vw;
-    font-size: 3.5rem;
+  @include media-query(mobile) {
+    padding: 1rem 1.5rem;
+    font-size: 3rem;
   }
 }
 
