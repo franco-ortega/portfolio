@@ -11,6 +11,24 @@
   z-index: 1;
 
   @extend %half-second-transition;
+
+  @include media-query(tablet) {
+    grid-column: 1 / 5;
+    grid-row: 8 / 12;
+  }
+
+  @include media-mobile-landscape() {
+    grid-column: 4 / 7;
+    grid-row: 9 / 13;
+    padding-bottom: 2.5rem;
+    justify-content: center;
+  }
+
+  @include media-query(mobile) {
+    grid-column: 7 / 12;
+    grid-row: 15 / 20;
+    justify-content: center;
+  }
 }
 
 .Cartography:focus-within,
@@ -93,24 +111,24 @@
 
 @include media-maxWidth-minHeight(tablet, mobile) {
   .Cartography {
-    grid-column: 1 / 5;
-    grid-row: 8 / 12;
+    // grid-column: 1 / 5;
+    // grid-row: 8 / 12;
   }
 }
 
 @include media-mobile-landscape() {
   .Cartography {
-    grid-column: 4 / 7;
-    grid-row: 9 / 13;
+    // grid-column: 4 / 7;
+    // grid-row: 9 / 13;
     // padding-bottom: 5vw;
   }
 }
 
 @include media-query(mobile) {
   .Cartography {
-    grid-column: 7 / 12;
-    grid-row: 15 / 20;
-    justify-content: center;
+    // grid-column: 7 / 12;
+    // grid-row: 15 / 20;
+    // justify-content: center;
   }
 }
 
