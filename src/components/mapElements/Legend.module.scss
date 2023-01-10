@@ -7,19 +7,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 
   position: relative;
   z-index: 1;
 
-  h3 {
-    font-size: 1.25rem;
-  }
+  border: 0.25rem dashed white;
 
   .Legend {
     background: rgb(245, 245, 101);
     background: linear-gradient(
-      125deg,
+      180deg,
       var(--yellow-one),
       var(--yellow-two),
       var(--yellow-three),
@@ -44,22 +41,58 @@
     max-height: max(5rem, 90%);
     overflow: auto;
 
+    h3 {
+      font-size: 4rem;
+      font-family: var(--continent-font-bold);
+      margin-right: 2rem;
+      // background-color: red;
+    }
+
     div {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-evenly;
-      width: 100%;
+      align-items: flex-start;
+      gap: 0.75rem;
+
       margin-top: 0.5rem;
       margin-bottom: 0.25rem;
       padding: 0 0.5rem;
 
       ul {
-        li {
-          list-style-type: none;
-        }
+        display: flex;
+        flex-wrap: wrap;
 
-        li + li {
-          margin-top: 0.1rem;
+        li + li::before {
+          content: '⚫️';
+          font-size: 0.25rem;
+          position: relative;
+          bottom: 25%;
+          margin-inline: 0.25rem;
+        }
+      }
+    }
+
+    @include media-query(tablet) {
+      h3 {
+        font-size: 3rem;
+      }
+    }
+
+    @include media-query(mobile) {
+      h3 {
+        font-size: 2rem;
+      }
+
+      ul {
+        font-size: 0.85rem;
+
+        li::before {
+          content: '⚫️';
+          font-size: 0.25rem;
+          position: relative;
+          bottom: 25%;
+          margin-inline: 0.25rem;
         }
       }
     }
@@ -170,23 +203,6 @@
       border: solid 0.5vw rgb(10, 10, 10);
       width: 40vw;
       overflow: auto;
-    }
-  }
-}
-
-@include media-query(mobile-narrow) {
-  .LegendBox {
-    .Legend {
-      h3 {
-        font-size: 1rem;
-      }
-      div {
-        ul {
-          li {
-            font-size: 4vw;
-          }
-        }
-      }
     }
   }
 }
