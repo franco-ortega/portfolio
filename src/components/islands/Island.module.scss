@@ -28,16 +28,37 @@
 }
 
 .Land {
-  background: var(--continent);
   border-radius: inherit;
-  padding: 1.25vw 0.75vw;
-  height: fit-content;
-  width: fit-content;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.25vw;
+  background: linear-gradient(
+    30deg,
+    rgb(206, 165, 112),
+    rgb(206, 165, 112),
+    var(--continent),
+    rgb(206, 165, 112),
+    var(--continent),
+    rgb(187, 168, 142)
+  );
+  background-size: 3% 5%;
 
   position: relative;
   z-index: 1;
+
+  padding: 1.25rem 0.75rem;
+  font-size: 1.25rem;
+
+  @include media-query(desktop-medium) {
+    font-size: 1.1rem;
+  }
+
+  @include media-mobile-landscape() {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  @include media-query(mobile) {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
 }
 
 @include media-maxWidth-minHeight(tablet, mobile) {
@@ -50,17 +71,6 @@
     border: 0.2vw dashed var(--continent-border);
     padding: 1vw;
   }
-
-  .Land {
-    padding: 2.5vw 1.5vw;
-    font-size: 2.75vw;
-  }
-}
-
-@include media-maxWidth-orientation(tablet, landscape) {
-  .Land {
-    font-size: 2vw;
-  }
 }
 
 @include media-query(mobile) {
@@ -70,12 +80,7 @@
   }
 
   .InnerCoastline {
-    padding: 1vw;
-  }
-
-  .Land {
-    padding: 4vw 2.5vw;
-    font-size: 4vw;
+    // padding: 1vw;
   }
 }
 
