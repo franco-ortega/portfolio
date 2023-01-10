@@ -10,7 +10,26 @@
   position: relative;
   z-index: 1;
 
+  padding-bottom: 2rem;
+
   @extend %half-second-transition;
+
+  @include media-query(tablet) {
+    grid-column: 8 / 13;
+    grid-row: 7 / 10;
+    padding-bottom: 0;
+  }
+
+  @include media-mobile-landscape() {
+    grid-column: 1 / 5;
+    grid-row: 7 / 13;
+    padding-bottom: 1.25rem;
+  }
+
+  @include media-query(mobile) {
+    grid-column: 1 / 7;
+    grid-row: 14 / 19;
+  }
 }
 
 .Resume:focus-within,
@@ -31,48 +50,44 @@
 .Continent {
   @extend %continent-styles;
   background: linear-gradient(
-    160deg,
+    30deg,
     rgb(206, 165, 112),
-    rgb(210, 180, 140, 75%),
+    rgb(206, 165, 112),
     var(--continent),
-    rgb(206, 165, 112, 75%),
-    rgb(206, 165, 112, 75%)
+    rgb(206, 165, 112),
+    var(--continent),
+    rgb(187, 168, 142)
   );
-  height: 15vh;
-  width: 20vw;
-  font-size: 6.5vw;
-}
 
-@include media-maxWidth-minHeight(tablet, mobile) {
-  .Resume {
-    grid-column: 8 / 13;
-    grid-row: 7 / 10;
+  padding: 1.25rem 2rem;
+  font-size: 7rem;
+
+  @include media-query(desktop-medium) {
+    padding: 1rem 1.75rem;
+    font-size: 5rem;
   }
 
-  .Continent {
-    height: 10vh;
-    width: 25vw;
-    font-size: 8.5vw;
+  @include media-query(desktop-small) {
+    font-size: 4rem;
   }
-}
 
-@include media-mobile-landscape() {
-  .Resume {
-    grid-column: 1 / 5;
-    grid-row: 7 / 13;
+  @include media-query(tablet) {
+    padding: 0.75rem 1.5rem;
+    font-size: 5rem;
   }
-}
 
-@include media-query(mobile) {
-  .Resume {
-    grid-column: 1 / 7;
-    grid-row: 14 / 19;
-    padding-right: 2vw;
+  @include media-query(junior) {
+    font-size: 3.5rem;
   }
-  .Continent {
-    height: 8vh;
-    width: 30vw;
-    font-size: 10vw;
+
+  @include media-mobile-landscape() {
+    padding: 0.5rem 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  @include media-query(mobile) {
+    padding: 0.5rem 1rem;
+    font-size: 2.25rem;
   }
 }
 
