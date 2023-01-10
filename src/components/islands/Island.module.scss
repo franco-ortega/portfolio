@@ -22,7 +22,7 @@
 
   @include media-mobile-landscape() {
     box-shadow: 0vw 0vw 0.75rem 0.5rem var(--coastline-shadow-color);
-    padding: 0.35rem;
+    padding: 0.25rem;
   }
 
   @include media-query(mobile) {
@@ -43,6 +43,10 @@
 
   @include media-query(tablet) {
     border: 0.1rem dashed var(--continent-border);
+    padding: 0.25rem;
+  }
+
+  @include media-mobile-landscape() {
     padding: 0.25rem;
   }
 }
@@ -71,8 +75,8 @@
   }
 
   @include media-mobile-landscape() {
-    padding: 0.5rem;
-    font-size: 0.75rem;
+    padding: 0.3rem;
+    font-size: 0.6rem;
   }
 
   @include media-query(mobile) {

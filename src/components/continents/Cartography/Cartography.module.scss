@@ -75,7 +75,7 @@
   }
 
   @include media-query(mobile) {
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.25rem;
   }
 }
 
@@ -100,7 +100,7 @@
   }
 
   @include media-mobile-landscape() {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   @include media-query(mobile) {
