@@ -11,10 +11,32 @@
   position: relative;
   z-index: 1;
 
-  border: 0.25rem dashed white;
+  @include media-query(desktop-medium) {
+    grid-row: 2 / 6;
+  }
+
+  @include media-query(desktop-small) {
+    grid-row: 2 / 6;
+  }
+
+  @include media-query(tablet) {
+    grid-column: 8 / 13;
+    grid-row: 2 / 8;
+  }
+
+  @include media-mobile-landscape() {
+    grid-column: 10 / 13;
+    grid-row: 3 / 12;
+  }
+
+  @include media-query(mobile) {
+    grid-column: 7 / 13;
+    grid-row: 5 / 15;
+    padding-right: 3vw;
+    justify-content: flex-end;
+  }
 
   .Legend {
-    background: rgb(245, 245, 101);
     background: linear-gradient(
       180deg,
       var(--yellow-one),
@@ -25,27 +47,21 @@
     );
     background-size: 100% 100%;
 
-    border: thick solid rgb(10, 10, 10);
+    border: medium solid rgb(10, 10, 10);
     border-radius: 0.5rem;
-    box-shadow: 0 0 0.5vw 0.15vw gold;
+    box-shadow: 0 0 0.5rem 0.15rem gold;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: fit-content;
-    width: 20vw;
-    padding: 0.75rem 0.5rem 0.5rem 1rem;
-    flex-basis: 0;
-    flex-grow: 0.55;
-    flex-shrink: 0;
 
-    max-height: max(5rem, 90%);
-    overflow: auto;
+    width: 70%;
+    padding: 0.75rem 0.5rem 0.5rem 1rem;
 
     h3 {
       font-size: 4rem;
       font-family: var(--continent-font-bold);
       margin-right: 2rem;
-      // background-color: red;
     }
 
     div {
@@ -55,9 +71,8 @@
       align-items: flex-start;
       gap: 0.75rem;
 
-      margin-top: 0.5rem;
       margin-bottom: 0.25rem;
-      padding: 0 0.5rem;
+      padding-inline: 0.5rem;
 
       ul {
         display: flex;
@@ -73,136 +88,103 @@
       }
     }
 
-    @include media-query(tablet) {
+    @include media-query(desktop-medium) {
+      width: 85%;
+
       h3 {
-        font-size: 3rem;
+        font-size: 3.5rem;
+      }
+
+      div {
+        gap: 0.6rem;
       }
     }
 
-    @include media-query(mobile) {
+    @include media-query(desktop-small) {
+      width: 90%;
+
+      h3 {
+        font-size: 3rem;
+      }
+
+      div {
+        gap: 0.5rem;
+      }
+    }
+
+    @include media-query(tablet) {
+      padding-bottom: 0.25rem;
+
+      h3 {
+        margin-right: 1rem;
+        line-height: 2.5rem;
+      }
+
+      div {
+        gap: 0.35rem;
+        font-size: 0.95rem;
+      }
+    }
+
+    @include media-mobile-landscape() {
+      border: medium solid rgb(10, 10, 10);
+      width: 75%;
+      height: 100%;
+      overflow: auto;
+
+      margin-left: 1rem;
+      padding-top: 0.25rem;
+
       h3 {
         font-size: 2rem;
       }
 
-      ul {
-        font-size: 0.85rem;
+      div {
+        gap: 0.5rem;
 
-        li::before {
-          content: '⚫️';
-          font-size: 0.25rem;
-          position: relative;
-          bottom: 25%;
-          margin-inline: 0.25rem;
+        ul {
+          flex-direction: column;
+          font-size: 0.85rem;
+
+          li {
+            list-style-type: disc;
+          }
+
+          li + li::before {
+            display: none;
+          }
         }
       }
     }
-  }
-}
 
-// Desktop screen with narrow width (i.e. laptops)
-@media screen and (max-width: 1200px) {
-  .LegendBox {
-    grid-row: 1 / 7;
-    align-items: center;
-
-    .Legend {
-      border: solid 0.25vw rgb(10, 10, 10);
-      padding-bottom: 0.25rem;
-      width: 25vw;
-      flex-grow: 0.75;
+    @include media-query(mobile) {
+      border: 0.15rem solid rgb(10, 10, 10);
+      width: 75%;
+      height: 100%;
       overflow: auto;
-    }
-  }
-}
 
-@include media-query(tablet) {
-  .LegendBox {
-    grid-column: 8 / 13;
-    grid-row: 2 / 8;
+      padding-top: 0.25rem;
 
-    .Legend {
-      max-height: 35vh;
-      overflow: auto;
+      h3 {
+        font-size: 2rem;
+      }
 
       div {
-        width: fit-content;
+        gap: 0.4rem;
+
+        ul {
+          flex-direction: column;
+          font-size: 0.85rem;
+
+          li {
+            list-style-type: disc;
+          }
+
+          li + li::before {
+            display: none;
+          }
+        }
       }
-    }
-  }
-}
-
-// Tablet screen
-@include media-maxWidth-minHeight(tablet, tablet-wide) {
-  .LegendBox {
-    .Legend {
-      width: 35vw;
-      overflow: auto;
-    }
-  }
-}
-
-// Mobile screen for landscape orientation
-@media screen and (max-width: 900px) and (max-height: 500px) {
-  .LegendBox {
-    grid-column: 10 / 13;
-    grid-row: 2 / 12;
-
-    .Legend {
-      border: solid 0.25vw rgb(10, 10, 10);
-      height: fit-content;
-      max-height: 100%;
-      width: 20vw;
-      overflow: auto;
-
-      div {
-        flex-direction: column;
-      }
-    }
-  }
-}
-
-@include media-query(junior) {
-  .LegendBox {
-    .Legend {
-      div {
-        flex-direction: column;
-      }
-    }
-  }
-}
-
-// Mobile screen for portrait orientation
-@include media-query(mobile) {
-  .LegendBox {
-    grid-column: 7 / 13;
-    grid-row: 5 / 15;
-    padding-right: 3vw;
-    align-items: flex-start;
-    justify-content: flex-end;
-
-    .Legend {
-      border: solid 0.5vw rgb(10, 10, 10);
-      height: fit-content;
-      max-height: 100%;
-      width: 39vw;
-      overflow: auto;
-
-      div {
-        flex-direction: column;
-        width: fit-content;
-        margin: 0.5rem;
-      }
-    }
-  }
-}
-
-// Mobile screen for portrait orientation with short height
-@media screen and (max-width: 500px) and (max-height: 700px) {
-  .LegendBox {
-    .Legend {
-      border: solid 0.5vw rgb(10, 10, 10);
-      width: 40vw;
-      overflow: auto;
     }
   }
 }
