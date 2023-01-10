@@ -30,8 +30,6 @@
     padding-top: 0;
     padding-right: 1rem;
     padding-bottom: 1rem;
-
-    border: dashed 0.1rem white;
   }
 }
 
@@ -84,7 +82,7 @@
 
   @include media-mobile-landscape() {
     padding: 0.5rem 1.25rem;
-    font-size: 2.75rem;
+    font-size: 2.25rem;
   }
 
   @include media-query(mobile) {
