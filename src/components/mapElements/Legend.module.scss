@@ -11,6 +11,8 @@
   position: relative;
   z-index: 1;
 
+  @extend %testing-colors;
+
   @include media-query(desktop-medium) {
     grid-row: 2 / 6;
   }
@@ -21,7 +23,7 @@
 
   @include media-query(tablet) {
     grid-column: 8 / 13;
-    grid-row: 2 / 8;
+    grid-row: 3 / 7;
   }
 
   @include media-mobile-landscape() {
@@ -104,6 +106,8 @@
 
     @include media-query(desktop-small) {
       width: 90%;
+      height: 90%;
+      overflow: auto;
 
       h3 {
         font-size: 3rem;
