@@ -4,9 +4,9 @@
   grid-column: 10 / 13;
   grid-row: 5 / 9;
   display: grid;
-  height: 25vw;
+  height: 20vw;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 
   position: absolute;
 }
