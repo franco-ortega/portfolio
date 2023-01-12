@@ -107,8 +107,6 @@
 
     @include media-query(desktop-small) {
       width: 90%;
-      height: 90%;
-      overflow: auto;
 
       h3 {
         font-size: 3rem;
