@@ -24,17 +24,12 @@
   // padding-bottom: 1rem;
 
   @include media-query-new(tablet-new) {
-    // grid-column: 1 / 8;
-    // grid-row: 9 / 15;
     grid-row: 4 / 9;
   }
 
   @include media-query-new(desktop-small-new) {
-    // grid-column: 4 / 8;
-    // grid-row: 9 / 19;
-
     grid-column: 1 / 5;
-    grid-row: 4 / 12;
+    grid-row: 4 / 11;
   }
 }
 

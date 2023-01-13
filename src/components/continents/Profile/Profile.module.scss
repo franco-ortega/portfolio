@@ -28,24 +28,7 @@
 
   @include media-query-new(desktop-small-new) {
     grid-column: 5 / 9;
-    grid-row: 7 / 15;
-  }
-
-  @include media-query(tablet) {
-    // grid-column: 3 / 9;
-    // grid-row: 5 / 8;
-  }
-
-  @include media-mobile-landscape() {
-    // grid-column: 5 / 9;
-    // grid-row: 4 / 10;
-    // padding-bottom: 1.25rem;
-  }
-
-  @include media-query(mobile) {
-    // grid-column: 1 / 8;
-    // grid-row: 10 / 14;
-    // padding-bottom: 0;
+    grid-row: 7 / 14;
   }
 }
 
