@@ -62,7 +62,7 @@
     left: -0.5rem;
   }
 
-  // @include media-query-new(desktop-new) {
+  // @include media-query-new(desktop-small-new) {
   //   // left: -0.5vw;
   // }
 
@@ -104,14 +104,33 @@
   border-top: 0.2vw gray solid;
   border-bottom: 0.2vw gray solid;
 
+  // new
+  // height: 2vw;
+  height: 0.5rem;
+  // width: 9vw;
+  width: 2.11rem;
+
+  @include media-query-new(tablet-new) {
+    height: 0.75rem;
+    width: 2.5rem;
+  }
+
+  @include media-query-new(desktop-large-new) {
+    // height: 1vw;
+    // width: 4vw;
+
+    height: 1rem;
+    width: 4.25rem;
+  }
+
   @include media-query(tablet) {
-    height: 1.5vw;
-    width: 5vw;
+    // height: 1.5vw;
+    // width: 5vw;
   }
 
   @include media-query(mobile) {
-    height: 2vw;
-    width: 9vw;
+    // height: 2vw;
+    // width: 9vw;
   }
 }
 
