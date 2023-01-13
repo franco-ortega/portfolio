@@ -30,30 +30,11 @@
   }
 
   @include media-query-new(desktop-small-new) {
-    grid-column: 4 / 8;
-    grid-row: 9 / 19;
+    // grid-column: 4 / 8;
+    // grid-row: 9 / 19;
 
     grid-column: 1 / 5;
-    grid-row: 5 / 14;
-  }
-
-  @include media-query(tablet) {
-    // grid-column: 1 / 7;
-    // grid-row: 2 / 6;
-  }
-
-  @include media-mobile-landscape() {
-    // grid-column: 1 / 5;
-    // grid-row: 2 / 8;
-    // padding-top: 1.5rem;
-  }
-
-  @include media-query(mobile) {
-    // grid-column: 1 / 8;
-    // grid-row: 5 / 10;
-    // padding-top: 0;
-    // padding-right: 1rem;
-    // padding-bottom: 1rem;
+    grid-row: 4 / 12;
   }
 }
 
