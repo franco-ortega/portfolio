@@ -10,8 +10,9 @@ $breakpoints: (
   tablet: 56rem,
   // 900px
   junior: 45rem,
+  // 720px
   mobile: 35rem,
-  // 500px,
+  // 560px,
   mobile-narrow: 18.75rem // 300px // desktop-medium: 85rem,
   // desktop-small: 70rem,
   // tablet-wide: 1000px,
@@ -27,6 +28,14 @@ $breakpoints: (
   $size: map.get($breakpoints, $key);
 
   @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin media-query-new($key) {
+  $size: map.get($breakpoints, $key);
+
+  @media (min-width: $size) {
     @content;
   }
 }
