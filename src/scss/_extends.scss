@@ -217,8 +217,8 @@
   // outline: 1px dotted lightcoral;
 
   @include media-query-new(tablet-new) {
-    background-color: yellow;
-    outline: 1px dotted red;
+    // background-color: yellow;
+    outline: 2px dotted red;
   }
 
   @include media-query-new(desktop-small-new) {
