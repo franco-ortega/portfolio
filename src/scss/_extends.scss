@@ -214,7 +214,7 @@
 %testing-colors-new {
   // background-color: white;
   color: red;
-  outline: 1px dotted lightcoral;
+  // outline: 1px dotted lightcoral;
 
   @include media-query-new(tablet-new) {
     // background-color: yellow;
