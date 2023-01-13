@@ -1,16 +1,13 @@
 @use '../../scss/' as *;
 
 .Email {
-  grid-column: 9 / 13;
-  grid-row: 19 / 21;
-  justify-self: center;
-  // @extend %island-centering;
+  padding-top: 0.5rem;
+  grid-column: 10 / 12;
+  grid-row: 18 / 21;
 
   @extend %testing-colors-new;
 
   z-index: 3;
-
-  padding: 0.25rem;
 
   @include media-query-new(tablet-new) {
     // grid-row: 19 / 22;

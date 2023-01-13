@@ -27,6 +27,10 @@
     }
   }
 
+  @include media-query-new(tablet-new) {
+    grid-column: 1 / 7;
+  }
+
   @include media-query(tablet) {
     // padding: 10vw 0vw 0vw 5vw;
     // grid-column: 1 / 6;

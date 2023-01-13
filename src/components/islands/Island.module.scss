@@ -1,5 +1,9 @@
 @use '../../scss/' as *;
 
+.IslandBox {
+  @extend %island-centering;
+}
+
 .IslandBox:focus {
   .OuterCoastline {
     transform: scale(1.15);

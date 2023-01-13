@@ -8,14 +8,14 @@
   @extend %testing-colors-new;
 
   // new
-  grid-column: 1 / 5;
+  grid-column: 5 / 8;
   grid-row: 19 / 21;
-  justify-self: center;
 
   z-index: 3;
 
   @include media-query-new(tablet-new) {
-    // grid-row: 19 / 22;
+    grid-column: 2 / 9;
+    grid-row: 21 / 23;
   }
 }
 

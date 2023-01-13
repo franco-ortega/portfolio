@@ -15,14 +15,8 @@
   @extend %testing-colors-new;
 
   // new
-  // grid-column: 1 / 8;
-  // grid-row: 10 / 14;
-
-  grid-column: 1 / 6;
-  grid-row: 15 / 20;
-
   grid-column: 7 / 13;
-  grid-row: 14 / 19;
+  grid-row: 14 / 18;
 
   @include media-query-new(tablet-new) {
     grid-column: 8 / 13;

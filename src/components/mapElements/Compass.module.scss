@@ -20,6 +20,10 @@
   bottom: 5%;
   z-index: 5;
 
+  @include media-query-new(tablet-new) {
+    bottom: 0;
+  }
+
   @include media-query(desktop-medium) {
     // grid-column: 10 / 13;
     // grid-row: 6 / 9;
