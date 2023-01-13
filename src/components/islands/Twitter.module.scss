@@ -3,27 +3,39 @@
 .Twitter {
   grid-column: 8 / 10;
   grid-row: 5 / 9;
+
   @extend %island-centering;
+
+  // new
+  grid-column: 7 / 10;
+  grid-row: 19 / 23;
+
+  outline: 3px dotted silver;
+  z-index: 3;
+
+  @include media-query-new(tablet-new) {
+    grid-row: 19 / 22;
+  }
 }
 
 @include media-maxWidth-minHeight(tablet, mobile) {
   .Twitter {
-    grid-column: 8 / 12;
-    grid-row: 6 / 9;
+    // grid-column: 8 / 12;
+    // grid-row: 6 / 9;
   }
 }
 
 @include media-mobile-landscape() {
   .Twitter {
-    grid-column: 2 / 8;
-    grid-row: 5 / 8;
-    padding-bottom: 2vw;
+    // grid-column: 2 / 8;
+    // grid-row: 5 / 8;
+    // padding-bottom: 2vw;
   }
 }
 
 @include media-query(mobile) {
   .Twitter {
-    grid-column: 5 / 10;
-    grid-row: 4 / 8;
+    // grid-column: 5 / 10;
+    // grid-row: 4 / 8;
   }
 }
