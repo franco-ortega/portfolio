@@ -29,7 +29,6 @@
 
   @include media-query-new(desktop-small-new) {
     grid-row: 5 / 15;
-    background-color: red;
   }
 
   @include media-query-new(desktop-large-new) {
