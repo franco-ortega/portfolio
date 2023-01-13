@@ -210,3 +210,23 @@
     border-radius: inherit;
   }
 }
+
+%testing-colors-new {
+  background-color: white;
+
+  @include media-query-new(tablet-new) {
+    background-color: yellow;
+  }
+
+  @include media-query-new(desktop-small-new) {
+    background-color: aqua;
+  }
+
+  @include media-query-new(desktop-medium-new) {
+    background-color: purple;
+  }
+
+  @include media-query-new(desktop-large-new) {
+    background-color: lightgreen;
+  }
+}

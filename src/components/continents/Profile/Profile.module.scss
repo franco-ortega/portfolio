@@ -12,6 +12,9 @@
 
   @extend %half-second-transition;
 
+  outline: dotted 3px aqua;
+  @extend %testing-colors-new;
+
   // new
   padding-left: 1rem;
   // padding-bottom: 0;
@@ -19,15 +22,13 @@
   grid-column: 1 / 8;
   grid-row: 10 / 14;
 
-  outline: dotted 3px aqua;
-
   @include media-query-new(tablet-new) {
     grid-column: 1 / 8;
     grid-row: 9 / 15;
   }
 
   @include media-query-new(desktop-small-new) {
-    grid-column: 4 / 8;
+    grid-column: 5 / 9;
     grid-row: 9 / 19;
   }
 
@@ -97,7 +98,7 @@
   // font-size: 8rem;
 
   // new
-  padding: 0.5rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   font-size: 2.5rem;
 
   @include media-query-new(tablet-new) {
@@ -110,10 +111,14 @@
     color: red;
   }
 
-  @include media-query-new(desktop-large-new) {
-    color: green;
+  @include media-query-new(desktop-medium-new) {
     padding: 1.5rem 2.25rem;
-    font-size: 7.5rem;
+    font-size: 6rem;
+  }
+
+  @include media-query-new(desktop-large-new) {
+    padding: 1.5rem 2.25rem;
+    font-size: 7rem;
   }
 
   @include media-query(desktop-medium) {
@@ -146,6 +151,7 @@
 @media (prefers-reduced-motion: reduce) {
   .Profile:focus-within {
     transform: none;
+
     .OuterCoastline {
       box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
     }
