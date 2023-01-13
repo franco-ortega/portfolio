@@ -4,8 +4,6 @@
   // grid-column: 8 / 10;
   // grid-row: 5 / 9;
 
-  @extend %island-centering;
-
   @extend %testing-colors-new;
 
   // new
@@ -15,8 +13,11 @@
   z-index: 3;
 
   @include media-query-new(tablet-new) {
-    grid-column: 7 / 11;
-    grid-row: 20 / 22;
+    grid-column: 8 / 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

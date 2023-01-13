@@ -217,21 +217,21 @@
 
   @include media-query-new(tablet-new) {
     // background-color: yellow;
-    outline: 2px dotted red;
+    // outline: 2px dotted red;
   }
 
   @include media-query-new(desktop-small-new) {
-    background-color: aqua;
+    // background-color: aqua;
     outline: 1px dotted black;
   }
 
   @include media-query-new(desktop-medium-new) {
-    background-color: purple;
+    // background-color: purple;
     outline: 1px dotted white;
   }
 
   @include media-query-new(desktop-large-new) {
-    background-color: lightgreen;
+    // background-color: lightgreen;
     outline: 1px dotted yellow;
   }
 }

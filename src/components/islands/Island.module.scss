@@ -21,7 +21,11 @@
   @extend %half-second-transition;
 
   // new
-  padding: 0.15rem;
+  padding: 0.2rem;
+
+  @include media-query-new(tablet-new) {
+    padding: 0.3rem;
+  }
 
   @include media-query(tablet) {
     // box-shadow: 0vw 0vw 1rem 1rem var(--coastline-shadow-color);
@@ -52,6 +56,10 @@
 
   // new
   padding: 0.25rem;
+
+  @include media-query-new(tablet-new) {
+    // padding: 0.3rem;
+  }
 
   @include media-query(tablet) {
     // border: 0.1rem dashed var(--continent-border);
@@ -86,6 +94,10 @@
   padding: 0.75rem 0.5rem;
   font-size: 0.75rem;
   text-align: center;
+
+  @include media-query-new(tablet-new) {
+    font-size: 1rem;
+  }
 
   @include media-query(desktop-medium) {
     // font-size: 1.1rem;

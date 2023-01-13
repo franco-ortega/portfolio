@@ -99,12 +99,10 @@
   @include media-query-new(tablet-new) {
     padding: 0.8rem 1.2rem;
     font-size: 4.75rem;
-
-    color: pink;
   }
 
   @include media-query-new(desktop-small-new) {
-    color: red;
+    // color: red;
   }
 
   @include media-query-new(desktop-medium-new) {

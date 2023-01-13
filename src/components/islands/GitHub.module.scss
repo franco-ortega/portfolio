@@ -14,8 +14,7 @@
   z-index: 3;
 
   @include media-query-new(tablet-new) {
-    grid-column: 2 / 9;
-    grid-row: 21 / 23;
+    grid-column: 6 / 9;
   }
 }
 

@@ -14,10 +14,10 @@
   z-index: 3;
 
   @include media-query-new(tablet-new) {
-    grid-column: 4 / 11;
+    grid-column: 5 / 7;
     grid-row: 21 / 23;
 
-    align-self: flex-end;
+    // align-self: flex-end;
   }
 }
 
