@@ -19,26 +19,13 @@
     align-items: center;
     justify-content: center;
   }
-}
 
-@include media-maxWidth-minHeight(tablet, mobile) {
-  .Twitter {
-    // grid-column: 8 / 12;
-    // grid-row: 6 / 9;
-  }
-}
+  @include media-query-new(desktop-small-new) {
+    grid-column: 6 / 9;
+    grid-row: 21 / 25;
 
-@include media-mobile-landscape() {
-  .Twitter {
-    // grid-column: 2 / 8;
-    // grid-row: 5 / 8;
-    // padding-bottom: 2vw;
-  }
-}
-
-@include media-query(mobile) {
-  .Twitter {
-    // grid-column: 5 / 10;
-    // grid-row: 4 / 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

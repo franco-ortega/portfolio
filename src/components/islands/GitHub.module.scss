@@ -1,41 +1,21 @@
 @use '../../scss/' as *;
 
 .GitHub {
-  // grid-column: 7 / 10;
-  // grid-row: 2 / 6;
+  grid-column: 5 / 8;
+  grid-row: 19 / 21;
+
   // @extend %island-centering;
 
   @extend %testing-colors-new;
-
-  // new
-  grid-column: 5 / 8;
-  grid-row: 19 / 21;
 
   z-index: 3;
 
   @include media-query-new(tablet-new) {
     grid-column: 6 / 9;
   }
-}
 
-@include media-maxWidth-minHeight(tablet, mobile) {
-  .GitHub {
-    // grid-column: 6 / 11;
-    // grid-row: 2 / 5;
-  }
-}
-
-@include media-mobile-landscape() {
-  .GitHub {
-    // grid-column: 6 / 11;
-    // grid-row: 1 / 4;
-    // padding-left: 1vw;
-  }
-}
-
-@include media-query(mobile) {
-  .GitHub {
-    // grid-column: 3 / 8;
-    // grid-row: 2 / 5;
+  @include media-query-new(desktop-small-new) {
+    grid-column: 9 / 11;
+    grid-row: 17 / 20;
   }
 }
