@@ -14,13 +14,14 @@
   @extend %half-second-transition;
 
   // new
+  padding-right: 1rem;
   grid-column: 1 / 8;
   grid-row: 4 / 8;
   // padding-top: 0;
   // padding-right: 1rem;
   // padding-bottom: 1rem;
 
-  outline: 1px dotted yellow;
+  outline: 3px dotted yellow;
 
   @include media-query(tablet) {
     // grid-column: 1 / 7;
