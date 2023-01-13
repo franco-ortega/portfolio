@@ -1,8 +1,11 @@
 @use '../../../scss/' as *;
 
 .Profile {
-  // grid-column: 5 / 9;
-  // grid-row: 3 / 6;
+  grid-column: 1 / 8;
+  grid-row: 9 / 14;
+
+  padding-left: 1rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,13 +17,6 @@
 
   @extend %testing-colors-new;
 
-  // new
-  padding-left: 1rem;
-  // padding-bottom: 0;
-
-  grid-column: 1 / 8;
-  grid-row: 9 / 14;
-
   @include media-query-new(tablet-new) {
     grid-column: 1 / 8;
     grid-row: 9 / 15;
@@ -29,6 +25,8 @@
   @include media-query-new(desktop-small-new) {
     grid-column: 5 / 9;
     grid-row: 7 / 13;
+
+    padding-left: 0;
   }
 }
 
@@ -41,23 +39,6 @@
   @extend %moving-waves;
   @extend %half-second-transition;
   border-radius: 120vw 70vw 95vw 90vw;
-
-  // new
-  // margin: 0;
-
-  @include media-query(tablet) {
-    // margin-top: 5rem;
-    // margin-right: 8rem;
-  }
-
-  @include media-mobile-landscape() {
-    // margin-top: 0;
-    // margin-right: 2rem;
-  }
-
-  @include media-query(mobile) {
-    // margin: 0;
-  }
 }
 
 .InnerCoastline {
@@ -76,55 +57,26 @@
     rgb(187, 168, 142)
   );
 
-  // padding: 1.75rem 3rem;
-  // font-size: 8rem;
-
-  // new
   padding: 0.75rem 1.25rem;
   font-size: 2.75rem;
 
   @include media-query-new(tablet-new) {
-    padding: 1rem 1.5rem;
+    padding-block: 1rem;
+    padding-inline: 1.5rem 1.75rem;
     font-size: 5rem;
   }
 
   @include media-query-new(desktop-small-new) {
+    padding-block: 1.5rem;
+    padding-inline: 2.25rem 2.75rem;
   }
 
   @include media-query-new(desktop-medium-new) {
-    padding: 1.5rem 2.25rem;
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
 
   @include media-query-new(desktop-large-new) {
-    padding: 1.5rem 2.25rem;
-    font-size: 7rem;
-  }
-
-  @include media-query(desktop-medium) {
-    // font-size: 6rem;
-  }
-
-  @include media-query(desktop-small) {
-    // font-size: 5rem;
-  }
-
-  @include media-query(tablet) {
-    // font-size: 6rem;
-  }
-
-  @include media-query(junior) {
-    // font-size: 4.5rem;
-  }
-
-  @include media-mobile-landscape() {
-    // padding: 0.5rem 1.25rem;
-    // font-size: 2.5rem;
-  }
-
-  @include media-query(mobile) {
-    // padding: 0.5rem 1.25rem;
-    // font-size: 2.5rem;
+    font-size: 6rem;
   }
 }
 
