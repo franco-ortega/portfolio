@@ -3,10 +3,14 @@ import styles from './Scale.module.scss';
 
 const Scale = () => {
   return (
-    <div className={styles.ScaleContainer} title="scale">
+    <div className={styles.ScaleContainer} title='scale'>
       <div>
-        <div className={`${styles.ScaleNumber} ${styles.ScaleNumberFirst}`}>0</div>
-        <div className={`${styles.ScaleBlockBlack} ${styles.ScaleBlockFirst}`}></div>
+        <div className={`${styles.ScaleNumber} ${styles.ScaleNumberFirst}`}>
+          0
+        </div>
+        <div
+          className={`${styles.ScaleBlockBlack} ${styles.ScaleBlockFirst}`}
+        ></div>
       </div>
       <div>
         <div className={styles.ScaleNumber}>10</div>
@@ -30,10 +34,13 @@ const Scale = () => {
       </div>
       <div>
         <div className={styles.ScaleNumber}>60</div>
-        <div className={`${styles.ScaleBlockBlack} ${styles.ScaleBlockLast}`}></div>
+        <div
+          className={`${styles.ScaleBlockBlack} ${styles.ScaleBlockLast}`}
+        ></div>
       </div>
       <div>
         <div className={styles.ScaleNumber}>70</div>
+        <div className={`${styles.ScaleBlockBlack} `}></div>
       </div>
     </div>
   );
