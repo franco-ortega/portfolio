@@ -16,27 +16,7 @@
   @include media-query-new(desktop-small-new) {
     grid-column: 11 / 13;
     grid-row: 16 / 19;
-  }
-}
 
-@include media-maxWidth-minHeight(tablet, mobile) {
-  .Email {
-    // grid-column: 10 / 13;
-    // grid-row: 3 / 7;
-  }
-}
-
-@include media-mobile-landscape() {
-  .Email {
-    // grid-column: 1 / 5;
-    // grid-row: 7 / 9;
-    // padding-bottom: 1vw;
-  }
-}
-
-@include media-query(mobile) {
-  .Email {
-    // grid-column: 9 / 13;
-    // grid-row: 3 / 6;
+    align-self: center;
   }
 }

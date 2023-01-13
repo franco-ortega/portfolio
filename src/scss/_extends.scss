@@ -222,16 +222,16 @@
 
   @include media-query-new(desktop-small-new) {
     // background-color: aqua;
-    outline: 3px dotted black;
+    // outline: 3px dotted black;
   }
 
   @include media-query-new(desktop-medium-new) {
     // background-color: purple;
-    outline: 3px dotted white;
+    // outline: 2px dotted white;
   }
 
   @include media-query-new(desktop-large-new) {
     // background-color: lightgreen;
-    outline: 3px dotted yellow;
+    // outline: 3px dotted yellow;
   }
 }

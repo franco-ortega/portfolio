@@ -22,8 +22,10 @@
   }
 
   @include media-query-new(desktop-small-new) {
-    grid-column: 2 / 6;
-    grid-row: 14 / 21;
+    grid-column: 1 / 5;
+    grid-row: 13 / 19;
+
+    justify-content: flex-end;
   }
 }
 
