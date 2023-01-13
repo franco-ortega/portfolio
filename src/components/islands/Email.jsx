@@ -5,10 +5,7 @@ import styles from './Email.module.scss';
 const Email = () => {
   return (
     <section className={styles.Email}>
-      <Island
-        title={'Email'}
-        url={'mailto:francopdx@gmail.com'}
-      />
+      <Island title={'Email'} url={'mailto:francopdx@gmail.com'} />
     </section>
   );
 };
