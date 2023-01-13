@@ -214,25 +214,25 @@
 %testing-colors-new {
   // background-color: white;
   color: red;
-  // outline: 3px dotted lightcoral;
+  // outline: 1px dotted lightcoral;
 
   @include media-query-new(tablet-new) {
     background-color: yellow;
-    outline: 3px dotted red;
+    outline: 1px dotted red;
   }
 
   @include media-query-new(desktop-small-new) {
     background-color: aqua;
-    outline: 3px dotted black;
+    outline: 1px dotted black;
   }
 
   @include media-query-new(desktop-medium-new) {
     background-color: purple;
-    outline: 3px dotted white;
+    outline: 1px dotted white;
   }
 
   @include media-query-new(desktop-large-new) {
     background-color: lightgreen;
-    outline: 3px dotted yellow;
+    outline: 1px dotted yellow;
   }
 }
