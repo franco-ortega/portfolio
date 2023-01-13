@@ -7,6 +7,10 @@
 
   outline: 3px dotted silver;
   z-index: 3;
+
+  @include media-query-new(tablet-new) {
+    grid-row: 19 / 22;
+  }
 }
 
 @include media-maxWidth-minHeight(tablet, mobile) {
