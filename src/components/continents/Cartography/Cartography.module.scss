@@ -1,32 +1,58 @@
 @use '../../../scss/' as *;
 
 .Cartography {
-  grid-column: 1 / 4;
-  grid-row: 5 / 8;
+  // grid-column: 1 / 4;
+  // grid-row: 5 / 8;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 
   position: relative;
   z-index: 1;
 
   @extend %half-second-transition;
 
-  @include media-query(tablet) {
+  outline: 3px dotted lightblue;
+  @extend %testing-colors-new;
+
+  // new
+  // grid-column: 1 / 8;
+  // grid-row: 10 / 14;
+
+  grid-column: 1 / 6;
+  grid-row: 15 / 20;
+
+  grid-column: 7 / 13;
+  grid-row: 14 / 19;
+
+  @include media-query-new(tablet-new) {
+    grid-column: 8 / 13;
+    grid-row: 14 / 20;
+  }
+
+  @include media-query-new(desktop-small-new) {
+    // grid-column: 5 / 9;
+    // grid-row: 9 / 19;
+
     grid-column: 1 / 5;
-    grid-row: 8 / 12;
+    grid-row: 14 / 23;
+  }
+
+  @include media-query(tablet) {
+    // grid-column: 1 / 5;
+    // grid-row: 8 / 12;
   }
 
   @include media-mobile-landscape() {
-    grid-column: 4 / 7;
-    grid-row: 9 / 13;
-    padding-bottom: 2.5rem;
+    // grid-column: 4 / 7;
+    // grid-row: 9 / 13;
+    // padding-bottom: 2.5rem;
   }
 
   @include media-query(mobile) {
-    grid-column: 7 / 12;
-    grid-row: 15 / 20;
-    justify-content: center;
+    // grid-column: 7 / 12;
+    // grid-row: 15 / 20;
+    // justify-content: center;
   }
 }
 
@@ -39,6 +65,8 @@
   @extend %moving-waves;
   @extend %half-second-transition;
   border-radius: 60% 40% 60% 35%;
+
+  transform: rotate(-20deg);
 }
 
 .InnerCoastline {
@@ -60,22 +88,22 @@
   );
   background-size: 3% 5%;
 
-  padding: 2rem 1.5rem;
+  // padding: 2rem 1.5rem;
 
   @include media-query(desktop-medium) {
-    padding: 1.75rem 1.25rem;
+    // padding: 1.75rem 1.25rem;
   }
 
   @include media-query(tablet) {
-    padding: 1.5rem 1rem;
+    // padding: 1.5rem 1rem;
   }
 
   @include media-mobile-landscape() {
-    padding: 0.75rem 0.75rem;
+    // padding: 0.75rem 0.75rem;
   }
 
   @include media-query(mobile) {
-    padding: 0.75rem 1.25rem;
+    // padding: 0.75rem 1.25rem;
   }
 }
 
@@ -83,28 +111,50 @@
   font-size: 3.5vw;
   transform: rotate(-7.5deg);
 
-  @include media-query(desktop-medium) {
+  // new
+  padding: 1rem;
+  font-size: 1.75rem;
+
+  @include media-query-new(tablet-new) {
+    padding: 1.5rem 1.75rem;
+    font-size: 2.5rem;
+  }
+
+  @include media-query-new(desktop-small-new) {
+  }
+
+  @include media-query-new(desktop-medium-new) {
+    padding: 1.5rem 2.25rem;
     font-size: 3rem;
   }
 
+  @include media-query-new(desktop-large-new) {
+    padding: 1.5rem 2.25rem;
+    font-size: 3.5rem;
+  }
+
+  @include media-query(desktop-medium) {
+    // font-size: 3rem;
+  }
+
   @include media-query(desktop-small) {
-    font-size: 2.5rem;
+    // font-size: 2.5rem;
   }
 
   @include media-query(tablet) {
-    font-size: 2.75rem;
+    // font-size: 2.75rem;
   }
 
   @include media-query(junior) {
-    font-size: 2.5rem;
+    // font-size: 2.5rem;
   }
 
   @include media-mobile-landscape() {
-    font-size: 1rem;
+    // font-size: 1rem;
   }
 
   @include media-query(mobile) {
-    font-size: 1.75rem;
+    // font-size: 1.75rem;
   }
 }
 
