@@ -1,16 +1,18 @@
 @use '../../scss/' as *;
 
 .Twitter {
-  grid-column: 8 / 10;
-  grid-row: 5 / 9;
+  // grid-column: 8 / 10;
+  // grid-row: 5 / 9;
 
-  @extend %island-centering;
+  // @extend %island-centering;
+
+  @extend %testing-colors-new;
 
   // new
   grid-column: 7 / 10;
-  grid-row: 19 / 23;
+  grid-row: 20 / 22;
+  justify-self: center;
 
-  outline: 3px dotted silver;
   z-index: 3;
 
   @include media-query-new(tablet-new) {

@@ -21,7 +21,7 @@
 
   padding-block: 0.5rem;
 
-  outline: 1px dotted white;
+  @extend %testing-colors-new;
 
   @include media-query-new(tablet-new) {
     grid-row: 4 / 14;

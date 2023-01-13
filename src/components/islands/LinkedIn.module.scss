@@ -1,29 +1,42 @@
 @use '../../scss/' as *;
 
 .LinkedIn {
-  grid-column: 6 / 8;
-  grid-row: 4 / 8;
-  @extend %island-centering;
+  // grid-column: 6 / 8;
+  // grid-row: 4 / 8;
+  // @extend %island-centering;
+
+  @extend %testing-colors-new;
+
+  // new
+  grid-column: 4 / 7;
+  grid-row: 21 / 23;
+  justify-self: center;
+
+  z-index: 3;
+
+  @include media-query-new(tablet-new) {
+    // grid-row: 19 / 22;
+  }
 }
 
 @include media-maxWidth-minHeight(tablet, mobile) {
   .LinkedIn {
-    grid-column: 5 / 9;
-    grid-row: 4 / 8;
+    // grid-column: 5 / 9;
+    // grid-row: 4 / 8;
   }
 }
 
 @include media-mobile-landscape() {
   .LinkedIn {
-    grid-column: 5 / 11;
-    grid-row: 3 / 6;
-    padding-left: 1vw;
+    // grid-column: 5 / 11;
+    // grid-row: 3 / 6;
+    // padding-left: 1vw;
   }
 }
 
 @include media-query(mobile) {
   .LinkedIn {
-    grid-column: 1 / 5;
-    grid-row: 4 / 8;
+    // grid-column: 1 / 5;
+    // grid-row: 4 / 8;
   }
 }
