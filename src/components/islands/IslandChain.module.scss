@@ -1,8 +1,9 @@
 @use '../../scss/' as *;
 
 .IslandChain {
-  grid-column: 1 / 8;
-  grid-row: 5 / 9;
+  // old
+  // grid-column: 1 / 8;
+  // grid-row: 5 / 9;
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -11,6 +12,9 @@
   // new
   grid-column: 1 / 13;
   grid-row: 17 / 25;
+
+  @include media-query-new(tablet-new) {
+  }
 }
 
 @include media-maxWidth-minHeight(tablet, mobile) {
