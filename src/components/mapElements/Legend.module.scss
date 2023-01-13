@@ -25,7 +25,6 @@
   }
 
   @include media-query-new(desktop-medium-new) {
-    grid-column: 10 / 13;
     grid-row: 3 / 16;
   }
 
@@ -93,7 +92,6 @@
     }
 
     @include media-query-new(tablet-new) {
-      width: 80%;
       padding-inline: 1rem;
 
       h3 {
