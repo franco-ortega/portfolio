@@ -4,12 +4,14 @@
   // new
   @extend %testing-colors-new;
 
-  // grid-column: 10 / 13;
-  // grid-row: 20 / 28;
-
   // old
   // grid-column: 10 / 13;
   // grid-row: 5 / 9;
+
+  // new
+  // grid-column: 10 / 13;
+  // grid-row: 20 / 28;
+
   display: grid;
   height: 20vw;
   grid-template-columns: repeat(6, 1fr);
