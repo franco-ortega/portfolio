@@ -1,8 +1,10 @@
 @use '../../../scss/' as *;
 
 .Resume {
-  // grid-column: 7 / 11;
-  // grid-row: 6 / 9;
+  // new
+  grid-column: 1 / 7;
+  grid-row: 14 / 18;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,15 +12,9 @@
   position: relative;
   z-index: 1;
 
-  // padding-bottom: 2rem;
-
   @extend %half-second-transition;
 
   @extend %testing-colors-new;
-
-  // new
-  grid-column: 1 / 7;
-  grid-row: 14 / 19;
 
   @include media-query-new(tablet-new) {
     grid-column: 1 / 7;
@@ -28,23 +24,6 @@
   @include media-query-new(desktop-small-new) {
     grid-column: 9 / 13;
     grid-row: 15 / 25;
-  }
-
-  @include media-query(tablet) {
-    // grid-column: 8 / 13;
-    // grid-row: 7 / 10;
-    // padding-bottom: 0;
-  }
-
-  @include media-mobile-landscape() {
-    // grid-column: 1 / 5;
-    // grid-row: 7 / 13;
-    // padding-bottom: 1.25rem;
-  }
-
-  @include media-query(mobile) {
-    // grid-column: 1 / 7;
-    // grid-row: 14 / 19;
   }
 }
 
@@ -75,15 +54,8 @@
     rgb(187, 168, 142)
   );
 
-  padding: 1.25rem 2rem;
-  font-size: 7rem;
-
   // new
-  padding: 0.5rem 1rem;
-  font-size: 2rem;
-
-  // new
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1rem;
   font-size: 2.5rem;
 
   // padding: 0.6rem 1rem;
@@ -103,34 +75,6 @@
   @include media-query-new(desktop-medium-new) {
     padding: 1.25rem 2rem;
     font-size: 5rem;
-  }
-
-  @include media-query(desktop-medium) {
-    // padding: 1rem 1.75rem;
-    // font-size: 5rem;
-  }
-
-  @include media-query(desktop-small) {
-    // font-size: 4rem;
-  }
-
-  @include media-query(tablet) {
-    // padding: 0.75rem 1.5rem;
-    // font-size: 5rem;
-  }
-
-  @include media-query(junior) {
-    // font-size: 3.5rem;
-  }
-
-  @include media-mobile-landscape() {
-    // padding: 0.5rem 1.5rem;
-    // font-size: 2rem;
-  }
-
-  @include media-query(mobile) {
-    // padding: 0.5rem 1rem;
-    // font-size: 2rem;
   }
 }
 
