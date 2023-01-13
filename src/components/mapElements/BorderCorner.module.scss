@@ -1,10 +1,13 @@
 @use '../../scss/' as *;
 
 .BorderCorner {
+  margin: -0.025rem;
+
   grid-column-start: 1;
   grid-column-end: 13;
   grid-row-start: 1;
-  grid-row-end: 9;
+  grid-row-end: 25;
+
   display: flex;
 
   div {
@@ -13,21 +16,35 @@
       var(--bordercolor-one),
       var(--bordercolor-two)
     );
+
     // background-size: 4% 5%;
-    height: 2vw;
-    width: 2vw;
-  }
-}
+    // height: 2vw;
+    // width: 2vw;
 
-@include media-query(tablet) {
-  .BorderCorner {
-    grid-row-end: 13;
+    height: 1rem;
+    width: 1rem;
   }
-}
 
-@include media-query(mobile) {
-  .BorderCorner {
-    grid-row-end: 25;
-    margin: -0.1rem;
+  @include media-query-new(tablet-new) {
+    margin: 0;
+
+    div {
+      height: 1.25rem;
+      width: 1.25rem;
+    }
+  }
+
+  @include media-query-new(desktop-small-new) {
+    div {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+
+  @include media-query-new(desktop-large-new) {
+    div {
+      height: 1.75rem;
+      width: 1.75rem;
+    }
   }
 }
