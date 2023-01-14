@@ -1,7 +1,6 @@
 @use '../../scss/' as *;
 
 .Compass {
-  outline: 2px dashed pink;
   @extend %testing-colors-new;
 
   // new
@@ -471,6 +470,19 @@
     top: 41%;
     right: 60%;
   }
+
+  @include media-query-new(desktop-large-new) {
+    grid-column: 13 / 18;
+    grid-row: 2 / 10;
+
+    border-top: 2vw solid transparent;
+    border-right: 5vw solid var(--yellow-three);
+    border-bottom: 2vw solid transparent;
+    border-left: 1vw solid transparent;
+
+    top: 35%;
+    right: 65%;
+  }
 }
 
 .RightTriangle {
@@ -529,6 +541,19 @@
 
     top: 41%;
     left: 66%;
+  }
+
+  @include media-query-new(desktop-large-new) {
+    grid-column: 6 / 20;
+    grid-row: 2 / 10;
+
+    border-top: 2vw solid transparent;
+    border-right: 1vw solid transparent;
+    border-bottom: 2vw solid transparent;
+    border-left: 5vw solid var(--yellow-three);
+
+    top: 36%;
+    left: 67%;
   }
 }
 

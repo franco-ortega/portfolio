@@ -19,4 +19,9 @@
 
     align-self: center;
   }
+
+  @include media-query-new(desktop-large-new) {
+    grid-column: 10 / 13;
+    grid-row: 16 / 19;
+  }
 }
