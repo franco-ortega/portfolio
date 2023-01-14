@@ -35,6 +35,13 @@
     grid-template-rows: repeat(12, 1fr);
   }
 
+  @include media-query-new(desktop-large-new) {
+    grid-row: 18 / 24;
+
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+
   @media (max-height: 650px) {
     display: none;
   }
