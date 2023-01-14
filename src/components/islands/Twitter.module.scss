@@ -1,13 +1,10 @@
 @use '../../scss/' as *;
 
 .Twitter {
-  // grid-column: 8 / 10;
-  // grid-row: 5 / 9;
-
   @extend %testing-colors-new;
 
   // new
-  grid-column: 7 / 11;
+  grid-column: 7 / 10;
   grid-row: 21 / 23;
 
   z-index: 3;
