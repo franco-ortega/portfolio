@@ -8,15 +8,16 @@ const Compass = () => {
       <div className={styles.BottomTriangle}></div>
       <div className={styles.LeftTriangle}></div>
       <div className={styles.RightTriangle}></div>
+      {/* <div className={styles.CornerPointers}></div> */}
 
       <div className={styles.OuterRingContainer}>
         <div className={styles.OuterRing}>
-          <div className={styles.OuterCircle}></div>
+          <div className={styles.OuterCircle}>
+            <div className={styles.InnerRing}>
+              <div className={styles.InnerCircle}></div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.InnerRing}>
-        <div className={styles.InnerCircle}></div>
       </div>
     </div>
   );
