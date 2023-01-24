@@ -77,13 +77,19 @@
 
         font-size: 0.85rem;
 
+        li {
+          // list-style: circle;
+          // padding-left: 0;
+          // margin: 0;
+        }
+
         li + li::before {
           // display: none;
         }
 
         li:before {
-          content: '⚫️';
-          font-size: 0.2rem;
+          content: '.';
+          // font-size: 0.2rem;
           position: relative;
           bottom: 22%;
           margin-inline: 0.25rem;
