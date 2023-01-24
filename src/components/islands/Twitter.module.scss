@@ -21,4 +21,8 @@
     grid-column: 8 / 10;
     grid-row: 21 / 24;
   }
+
+  @include media-query-new(desktop-large-new) {
+    grid-column: 7 / 10;
+  }
 }

@@ -4,8 +4,6 @@
   grid-column: 5 / 8;
   grid-row: 19 / 21;
 
-  // @extend %island-centering;
-
   @extend %testing-colors-new;
 
   z-index: 3;
@@ -19,5 +17,9 @@
     grid-row: 15 / 18;
 
     align-self: center;
+  }
+
+  @include media-query-new(desktop-large-new) {
+    grid-column: 8 / 10;
   }
 }
