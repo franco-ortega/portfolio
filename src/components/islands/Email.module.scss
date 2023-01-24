@@ -1,29 +1,26 @@
 @use '../../scss/' as *;
 
 .Email {
+  padding-top: 0.5rem;
   grid-column: 10 / 12;
-  grid-row: 6 / 9;
-  @extend %island-centering;
-}
+  grid-row: 18 / 21;
 
-@include media-maxWidth-minHeight(tablet, mobile) {
-  .Email {
-    grid-column: 10 / 13;
-    grid-row: 3 / 7;
+  @extend %testing-colors-new;
+
+  z-index: 3;
+
+  @include media-query-new(tablet-new) {
+    grid-row: 19 / 21;
   }
-}
 
-@include media-mobile-landscape() {
-  .Email {
-    grid-column: 1 / 5;
-    grid-row: 7 / 9;
-    padding-bottom: 1vw;
+  @include media-query-new(desktop-small-new) {
+    grid-column: 11 / 13;
+    grid-row: 16 / 19;
+
+    align-self: center;
   }
-}
 
-@include media-query(mobile) {
-  .Email {
-    grid-column: 9 / 13;
-    grid-row: 3 / 6;
+  @include media-query-new(desktop-large-new) {
+    grid-column: 9 / 11;
   }
 }

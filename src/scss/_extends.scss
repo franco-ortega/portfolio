@@ -83,7 +83,7 @@
 
 %continent-styles {
   background-size: 115% 115%;
-  border: 0.25vw solid var(--continent-border);
+  border: 0.2vw solid var(--continent-border);
   border-radius: inherit;
   display: flex;
   align-items: center;
@@ -208,5 +208,30 @@
   @include media-query(mobile) {
     background-color: darkslategray;
     border-radius: inherit;
+  }
+}
+
+%testing-colors-new {
+  // background-color: white;
+  // outline: 2px dotted lightcoral;
+
+  @include media-query-new(tablet-new) {
+    // background-color: yellow;
+    // outline: 3px dotted red;
+  }
+
+  @include media-query-new(desktop-small-new) {
+    // background-color: aqua;
+    // outline: 3px dotted black;
+  }
+
+  @include media-query-new(desktop-medium-new) {
+    // background-color: purple;
+    // outline: 2px dotted white;
+  }
+
+  @include media-query-new(desktop-large-new) {
+    // background-color: lightgreen;
+    // outline: 3px dotted yellow;
   }
 }
