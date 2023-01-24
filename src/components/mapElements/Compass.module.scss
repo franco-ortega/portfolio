@@ -2,7 +2,7 @@
 
 .Compass {
   grid-column: 10 / 13;
-  grid-row: 17 / 23;
+  grid-row: 21 / 25;
 
   display: grid;
   height: 20vw;
@@ -11,6 +11,24 @@
 
   position: absolute;
   z-index: 2;
+
+  @extend %testing-colors;
+
+  @include media-query-new(tablet-new) {
+    grid-row: 20 / 25;
+  }
+
+  @include media-query-new(desktop-small-new) {
+    grid-row: 18 / 24;
+  }
+
+  @include media-query-new(desktop-medium-new) {
+    grid-row: 17 / 23;
+  }
+
+  @include media-query-new(desktop-large-new) {
+    grid-row: 16 / 22;
+  }
 }
 
 .OuterRingContainer {
@@ -229,18 +247,18 @@
 
 @include media-query(desktop-medium) {
   .Compass {
-    grid-row: 18 / 23;
+    // grid-row: 18 / 23;
   }
 }
 
 @include media-query(tablet) {
   .Compass {
-    grid-row: 20 / 25;
+    // grid-row: 20 / 25;
   }
 }
 
 @include media-query(mobile) {
   .Compass {
-    grid-row: 21 / 25;
+    // grid-row: 21 / 25;
   }
 }
