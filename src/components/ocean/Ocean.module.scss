@@ -71,6 +71,15 @@
       // new
       font-size: clamp(1.5rem, 3vw, 3rem);
       font-weight: 100;
+      display: none;
+    }
+  }
+
+  @media (min-height: 700px) {
+    header {
+      h2 {
+        display: block;
+      }
     }
   }
 }
