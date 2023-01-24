@@ -1,29 +1,28 @@
 @use '../../scss/' as *;
 
 .Twitter {
-  grid-column: 8 / 10;
-  grid-row: 5 / 9;
-  @extend %island-centering;
-}
+  @extend %testing-colors-new;
 
-@include media-maxWidth-minHeight(tablet, mobile) {
-  .Twitter {
-    grid-column: 8 / 12;
-    grid-row: 6 / 9;
+  // new
+  grid-column: 7 / 10;
+  grid-row: 21 / 23;
+
+  z-index: 3;
+
+  @include media-query-new(tablet-new) {
+    grid-column: 8 / 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-}
 
-@include media-mobile-landscape() {
-  .Twitter {
-    grid-column: 2 / 8;
-    grid-row: 5 / 8;
-    padding-bottom: 2vw;
+  @include media-query-new(desktop-small-new) {
+    grid-column: 8 / 10;
+    grid-row: 21 / 24;
   }
-}
 
-@include media-query(mobile) {
-  .Twitter {
-    grid-column: 5 / 10;
-    grid-row: 4 / 8;
+  @include media-query-new(desktop-large-new) {
+    grid-column: 7 / 10;
   }
 }

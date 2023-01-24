@@ -1,6 +1,10 @@
 @use '../../scss/' as *;
 
-.Island:focus {
+.IslandBox {
+  @extend %island-centering;
+}
+
+.IslandBox:focus {
   .OuterCoastline {
     transform: scale(1.15);
   }
@@ -10,24 +14,32 @@
   background: var(--outer-coastline);
   border-radius: 50%;
   box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow-color);
-  height: fit-content;
-  padding: 0.4vw;
+  // height: fit-content;
+
+  // padding: 0.4vw;
 
   @extend %half-second-transition;
 
+  // new
+  padding: 0.2rem;
+
+  @include media-query-new(tablet-new) {
+    padding: 0.3rem;
+  }
+
   @include media-query(tablet) {
-    box-shadow: 0vw 0vw 1rem 1rem var(--coastline-shadow-color);
-    padding: 0.45rem;
+    // box-shadow: 0vw 0vw 1rem 1rem var(--coastline-shadow-color);
+    // padding: 0.45rem;
   }
 
   @include media-mobile-landscape() {
-    box-shadow: 0vw 0vw 0.75rem 0.5rem var(--coastline-shadow-color);
-    padding: 0.25rem;
+    // box-shadow: 0vw 0vw 0.75rem 0.5rem var(--coastline-shadow-color);
+    // padding: 0.25rem;
   }
 
   @include media-query(mobile) {
-    box-shadow: 0vw 0vw 0.75rem 0.5rem var(--coastline-shadow-color);
-    padding: 0.35rem;
+    // box-shadow: 0vw 0vw 0.75rem 0.5rem var(--coastline-shadow-color);
+    // padding: 0.35rem;
   }
 }
 
@@ -39,19 +51,27 @@
   background: var(--inner-coastline);
   border: 0.1vw dashed var(--continent-border);
   border-radius: inherit;
-  padding: 0.5vw;
+
+  // padding: 0.5vw;
+
+  // new
+  padding: 0.25rem;
+
+  @include media-query-new(tablet-new) {
+    // padding: 0.3rem;
+  }
 
   @include media-query(tablet) {
-    border: 0.1rem dashed var(--continent-border);
-    padding: 0.25rem;
+    // border: 0.1rem dashed var(--continent-border);
+    // padding: 0.25rem;
   }
 
   @include media-mobile-landscape() {
-    padding: 0.25rem;
+    // padding: 0.25rem;
   }
 }
 
-.Land {
+.Island {
   border-radius: inherit;
   background: linear-gradient(
     30deg,
@@ -62,32 +82,42 @@
     var(--continent),
     rgb(187, 168, 142)
   );
-  background-size: 3% 5%;
+  background-size: 5% 5%;
 
   position: relative;
   z-index: 1;
 
-  padding: 1.25rem 0.75rem;
-  font-size: 1.25rem;
+  // padding: 1.25rem 0.75rem;
+  // font-size: 1.25rem;
+
+  // new
+  padding: 0.75rem 0.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+
+  @include media-query-new(tablet-new) {
+    font-size: 1rem;
+  }
 
   @include media-query(desktop-medium) {
-    font-size: 1.1rem;
+    // font-size: 1.1rem;
   }
 
   @include media-mobile-landscape() {
-    padding: 0.3rem;
-    font-size: 0.6rem;
+    // padding: 0.3rem;
+    // font-size: 0.6rem;
   }
 
   @include media-query(mobile) {
-    padding: 0.5rem 0.25rem;
-    font-size: 0.65rem;
+    // padding: 0.5rem 0.25rem;
+    // font-size: 0.65rem;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .Island:focus-within {
+  .IslandBox:focus-within {
     transform: none;
+
     .OuterCoastline {
       box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
     }

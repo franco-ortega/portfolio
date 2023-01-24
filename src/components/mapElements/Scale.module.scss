@@ -1,24 +1,52 @@
 @use '../../scss/' as *;
 
 .ScaleContainer {
-  grid-column: 1 / 5;
-  grid-row: 8 / 9;
+  grid-column: 1 / 13;
+  grid-row: 23 / 25;
+
+  padding: 0vw 0vw 2vw 6vw;
+  padding-block: 0 2vw;
+  padding-inline: 6vw 0;
+
   display: flex;
   flex-direction: row;
-  padding: 2vw 0vw 0vw 4vw;
-  color: white;
+  align-items: center;
 
   position: relative;
   z-index: -1;
+
+  color: hsl(0, 0%, 100%);
+
+  @extend %testing-colors-new;
+
+  & > div:last-child {
+    div + div {
+      visibility: hidden;
+    }
+  }
+
+  @include media-query-new(tablet-new) {
+    grid-column: 1 / 7;
+  }
+
+  @include media-query-new(desktop-large-new) {
+    grid-column: 1 / 5;
+
+    padding-inline: 3vw 0;
+  }
 }
 
 .ScaleNumber {
   position: relative;
-  left: -0.5vw;
+  left: -0.5rem;
+
+  @include media-query-new(tablet-new) {
+    left: -0.5rem;
+  }
 }
 
 .ScaleNumberFirst {
-  left: 0vw;
+  left: -0.25rem;
 }
 
 .ScaleBlockFirst {
@@ -35,6 +63,19 @@
   width: 4vw;
   border-top: 0.2vw gray solid;
   border-bottom: 0.2vw gray solid;
+
+  height: 0.5rem;
+  width: 2.11rem;
+
+  @include media-query-new(tablet-new) {
+    height: 0.75rem;
+    width: 2.5rem;
+  }
+
+  @include media-query-new(desktop-medium-new) {
+    height: 1rem;
+    width: 4.25rem;
+  }
 }
 
 .ScaleBlockBlack {
@@ -43,64 +84,4 @@
 
 .ScaleBlockWhite {
   background: white;
-}
-
-@include media-query(tablet) {
-  .ScaleContainer {
-    padding: 10vw 0vw 0vw 5vw;
-  }
-
-  .ScaleContainer {
-    grid-column: 1 / 6;
-    grid-row: 12 / 13;
-    display: flex;
-    padding: 2vw 0vw 0vw 4vw;
-    color: white;
-  }
-
-  .ScaleNumber {
-    left: -1vw;
-  }
-
-  .ScaleNumberFirst {
-    left: 0vw;
-  }
-
-  .ScaleBlockBlack,
-  .ScaleBlockWhite {
-    height: 1.5vw;
-    width: 5vw;
-  }
-}
-
-@include media-mobile-landscape() {
-  .ScaleContainer {
-    grid-row: 11 / 13;
-    position: absolute;
-    bottom: 5%;
-  }
-}
-
-@include media-query(mobile) {
-  .ScaleContainer {
-    grid-column: 1 / 10;
-    grid-row: 24 / 25;
-    padding: 0vw 0vw 2vw 6vw;
-
-    justify-content: center;
-  }
-
-  .ScaleNumber {
-    left: -1.5vw;
-  }
-
-  .ScaleNumberFirst {
-    left: 0vw;
-  }
-
-  .ScaleBlockBlack,
-  .ScaleBlockWhite {
-    height: 2vw;
-    width: 9vw;
-  }
 }

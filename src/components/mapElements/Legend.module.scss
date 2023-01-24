@@ -1,8 +1,10 @@
 @use '../../scss/' as *;
 
 .LegendBox {
-  grid-column: 9 / 13;
-  grid-row: 1 / 6;
+  grid-column: 8 / 13;
+  grid-row: 5 / 14;
+
+  padding-block: 0.5rem;
 
   display: flex;
   align-items: center;
@@ -11,31 +13,24 @@
   position: relative;
   z-index: 1;
 
-  @include media-query(desktop-medium) {
-    grid-row: 2 / 6;
+  @extend %testing-colors-new;
+
+  @include media-query-new(tablet-new) {
+    grid-row: 4 / 14;
   }
 
-  @include media-query(desktop-small) {
-    grid-row: 2 / 6;
+  @include media-query-new(desktop-small-new) {
+    grid-column: 9 / 13;
+    grid-row: 2 / 16;
   }
 
-  @include media-query(tablet) {
-    grid-column: 8 / 13;
-    grid-row: 3 / 7;
+  @include media-query-new(desktop-medium-new) {
+    grid-row: 3 / 16;
   }
 
-  @include media-mobile-landscape() {
+  @include media-query-new(desktop-large-new) {
     grid-column: 10 / 13;
-    grid-row: 3 / 12;
-  }
-
-  @include media-query(mobile) {
-    grid-column: 7 / 13;
-    grid-row: 5 / 15;
-    padding-right: 3vw;
-    justify-content: flex-end;
-
-    padding-block: 0.5rem;
+    grid-row: 3 / 16;
   }
 
   .Legend {
@@ -47,147 +42,104 @@
       var(--yellow-four),
       var(--yellow-five)
     );
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
 
-    border: medium solid rgb(10, 10, 10);
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     box-shadow: 0 0 0.5rem 0.15rem gold;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    width: 70%;
-    padding: 0.75rem 0.5rem 0.5rem 1rem;
-
-    height: 90%;
+    // new
+    border: 0.15rem solid rgb(10, 10, 10);
+    width: 85%;
+    height: 100%;
     overflow: auto;
 
     h3 {
-      font-size: 4rem;
+      margin-block: 0.5rem;
+
       font-family: var(--continent-font-bold);
-      margin-right: 2rem;
+      font-size: 1.75rem;
     }
 
     div {
+      margin-bottom: 0.25rem;
+
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
-      align-items: flex-start;
-      gap: 0.75rem;
-
-      margin-bottom: 0.25rem;
-      padding-inline: 0.5rem;
+      gap: 0.5rem;
 
       ul {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+
+        font-size: 0.85rem;
 
         li + li::before {
+          // display: none;
+        }
+
+        li:before {
           content: '⚫️';
-          font-size: 0.25rem;
+          font-size: 0.2rem;
           position: relative;
-          bottom: 25%;
+          bottom: 22%;
           margin-inline: 0.25rem;
         }
       }
     }
 
-    @include media-query(desktop-medium) {
-      width: 85%;
+    @include media-query-new(tablet-new) {
+      padding-inline: 1rem;
 
       h3 {
-        font-size: 3.5rem;
-      }
-
-      div {
-        gap: 0.6rem;
-      }
-    }
-
-    @include media-query(desktop-small) {
-      width: 90%;
-
-      h3 {
-        font-size: 3rem;
-      }
-
-      div {
-        gap: 0.5rem;
-      }
-    }
-
-    @include media-query(tablet) {
-      padding-bottom: 0.25rem;
-
-      h3 {
+        margin-top: 0.5rem;
         margin-right: 1rem;
-        line-height: 2.5rem;
+        margin-left: 1rem;
       }
 
       div {
-        gap: 0.35rem;
-        font-size: 0.95rem;
-      }
-    }
-
-    @include media-mobile-landscape() {
-      border: medium solid rgb(10, 10, 10);
-      width: 75%;
-      height: 100%;
-      overflow: auto;
-
-      margin-left: 1rem;
-      padding-top: 0.25rem;
-
-      h3 {
-        font-size: 2rem;
-      }
-
-      div {
-        gap: 0.5rem;
-
         ul {
-          flex-direction: column;
-          font-size: 0.85rem;
-
-          li {
-            list-style-type: disc;
-          }
-
-          li + li::before {
-            display: none;
-          }
+          flex-direction: row;
+          flex-wrap: wrap;
         }
       }
     }
 
-    @include media-query(mobile) {
-      border: 0.15rem solid rgb(10, 10, 10);
-      width: 75%;
-      height: 100%;
-      overflow: auto;
-
-      padding-top: 0.25rem;
+    @include media-query-new(desktop-small-new) {
+      padding-block: 0.25rem;
+      height: auto;
 
       h3 {
+        margin-bottom: 0rem;
         font-size: 2rem;
       }
 
+      // div {
+      //   ul + li > li::before {
+      //     display: none;
+      //   }
+      // }
+    }
+
+    @include media-query-new(desktop-medium-new) {
+      h3 {
+        margin-left: 0rem;
+        font-size: 2.5rem;
+      }
+    }
+
+    @include media-query-new(desktop-large-new) {
+      h3 {
+        margin-left: 0rem;
+        font-size: 3rem;
+      }
+
       div {
-        gap: 0.4rem;
-
         ul {
-          flex-direction: column;
-          font-size: 0.85rem;
-
-          li {
-            list-style-type: disc;
-          }
-
-          li + li::before {
-            display: none;
-          }
+          font-size: 0.9rem;
         }
       }
     }

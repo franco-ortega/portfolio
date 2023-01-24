@@ -36,10 +36,18 @@
   --coastline-box-shadow: 0vw 0vw 2vw 1.5vw;
   --coastline-shadow-color: darkblue;
   --outer-coastline: rgb(87, 171, 223);
-  --outer-coastline-padding: 1rem;
-  --inner-coastline-border-width: 0.15rem;
+
+  // --outer-coastline-padding: 1rem;
+  --outer-coastline-padding: 0.4rem;
+
+  // --inner-coastline-padding: 0.75rem;
+  --inner-coastline-padding: 0.4rem;
+
+  // --inner-coastline-border-width: 0.15rem;
+  --inner-coastline-border-width: 0.1rem;
+
   --inner-coastline: rgb(111, 186, 233);
-  --inner-coastline-padding: 0.75rem;
+
   --continent-border: brown;
   --continent: rgb(220, 202, 148);
   --continent-font: 'Tangerine';
@@ -66,6 +74,20 @@
   --map-title: 3rem;
 
   --focus-hover-highlight: yellow;
+
+  @include media-query-new(tablet-new) {
+    --outer-coastline-padding: 0.55rem;
+
+    --inner-coastline-padding: 0.5rem;
+  }
+
+  @include media-query-new(desktop-small-new) {
+    --outer-coastline-padding: 0.7rem;
+
+    --inner-coastline-padding: 0.65rem;
+
+    // --inner-coastline-border-width: 0.1rem;
+  }
 }
 
 a {
@@ -88,9 +110,10 @@ a:hover {
 
 @include media-query(tablet) {
   :root {
-    --outer-coastline-padding: 0.5rem;
-    --inner-coastline-border-width: 0.1rem;
-    --inner-coastline-padding: 0.5rem;
+    // --outer-coastline-padding: 0.5rem;
+    // --inner-coastline-padding: 0.5rem;
+
+    // --inner-coastline-border-width: 0.1rem;
 
     --popup-header-text: 3vw;
     --popup-text: 2.75vw;
@@ -106,7 +129,7 @@ a:hover {
 
 @include media-query(mobile) {
   :root {
-    --outer-coastline-padding: 0.4rem;
+    // --outer-coastline-padding: 0.4rem;
 
     --continent-popup-title: 4rem;
     --popup-header-text: 3.4vw;
