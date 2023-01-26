@@ -20,6 +20,6 @@
   }
 
   @include media-query-new(desktop-large-new) {
-    grid-column: 8 / 10;
+    // grid-column: 8 / 10;
   }
 }

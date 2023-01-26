@@ -21,6 +21,6 @@
   }
 
   @include media-query-new(desktop-large-new) {
-    grid-column: 9 / 11;
+    // grid-column: 9 / 11;
   }
 }

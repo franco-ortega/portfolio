@@ -226,12 +226,12 @@
   }
 
   @include media-query-new(desktop-medium-new) {
-    background-color: purple;
-    outline: 2px dotted white;
+    // background-color: purple;
+    // outline: 2px dotted white;
   }
 
   @include media-query-new(desktop-large-new) {
-    background-color: lightgreen;
-    outline: 3px dotted yellow;
+    // background-color: lightgreen;
+    // outline: 3px dotted yellow;
   }
 }
