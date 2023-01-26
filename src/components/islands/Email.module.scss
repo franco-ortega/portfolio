@@ -3,9 +3,6 @@
 .Email {
   grid-column: 7 / 10;
   grid-row: 20 / 23;
-
-  @extend %testing-colors-new;
-
   z-index: 3;
 
   @include media-query-new(tablet-new) {
