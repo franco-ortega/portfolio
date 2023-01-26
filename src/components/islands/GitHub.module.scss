@@ -4,11 +4,11 @@
   grid-column: 5 / 8;
   grid-row: 18 / 21;
 
+  z-index: 2;
+
   @extend %island-centering;
 
   @extend %testing-colors-new;
-
-  z-index: 2;
 
   @include media-query-new(tablet-new) {
     grid-column: 6 / 9;
