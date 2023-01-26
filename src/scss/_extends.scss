@@ -212,26 +212,26 @@
 }
 
 %testing-colors-new {
-  // background-color: white;
-  // outline: 2px dotted lightcoral;
+  background-color: white;
+  outline: 2px dotted lightcoral;
 
   @include media-query-new(tablet-new) {
-    // background-color: yellow;
-    // outline: 3px dotted red;
+    background-color: yellow;
+    outline: 3px dotted red;
   }
 
   @include media-query-new(desktop-small-new) {
-    // background-color: aqua;
-    // outline: 3px dotted black;
+    background-color: aqua;
+    outline: 3px dotted black;
   }
 
   @include media-query-new(desktop-medium-new) {
-    // background-color: purple;
-    // outline: 2px dotted white;
+    background-color: purple;
+    outline: 2px dotted white;
   }
 
   @include media-query-new(desktop-large-new) {
-    // background-color: lightgreen;
-    // outline: 3px dotted yellow;
+    background-color: lightgreen;
+    outline: 3px dotted yellow;
   }
 }

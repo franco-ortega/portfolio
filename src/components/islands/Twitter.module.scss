@@ -2,10 +2,13 @@
 
 .Twitter {
   padding-top: 1rem;
+
   grid-column: 9 / 12;
   grid-row: 18 / 22;
 
   z-index: 3;
+
+  @extend %testing-colors-new;
 
   @include media-query-new(tablet-new) {
     grid-column: 8 / 10;

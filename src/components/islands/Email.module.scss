@@ -1,9 +1,14 @@
 @use '../../scss/' as *;
 
 .Email {
+  padding-top: 1rem;
+
   grid-column: 7 / 10;
   grid-row: 20 / 23;
+
   z-index: 3;
+
+  @extend %testing-colors-new;
 
   @include media-query-new(tablet-new) {
     grid-row: 19 / 21;
