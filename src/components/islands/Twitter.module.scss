@@ -1,21 +1,20 @@
 @use '../../scss/' as *;
 
 .Twitter {
-  padding-top: 1rem;
+  // padding-top: 1rem;
 
-  grid-column: 9 / 12;
+  grid-column: 9 / 13;
   grid-row: 18 / 22;
 
-  z-index: 3;
+  z-index: 2;
+
+  @extend %island-centering;
 
   @extend %testing-colors-new;
 
   @include media-query-new(tablet-new) {
-    grid-column: 8 / 10;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    grid-column: 7 / 10;
+    grid-row: 22 / 24;
   }
 
   @include media-query-new(desktop-small-new) {

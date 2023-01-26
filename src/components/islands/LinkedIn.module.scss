@@ -6,6 +6,8 @@
 
   z-index: 3;
 
+  @extend %testing-colors-new;
+
   @include media-query-new(tablet-new) {
     grid-column: 5 / 7;
     grid-row: 21 / 23;
