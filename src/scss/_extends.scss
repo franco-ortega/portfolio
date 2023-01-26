@@ -221,8 +221,8 @@
   }
 
   @include media-query-new(desktop-small-new) {
-    background-color: aqua;
-    outline: 3px dotted black;
+    // background-color: aqua;
+    // outline: 3px dotted black;
   }
 
   @include media-query-new(desktop-medium-new) {
