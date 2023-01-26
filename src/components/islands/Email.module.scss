@@ -1,9 +1,8 @@
 @use '../../scss/' as *;
 
 .Email {
-  padding-top: 0.5rem;
-  grid-column: 10 / 12;
-  grid-row: 18 / 21;
+  grid-column: 7 / 10;
+  grid-row: 20 / 23;
 
   @extend %testing-colors-new;
 
