@@ -212,12 +212,12 @@
 }
 
 %testing-colors-new {
-  background-color: white;
-  outline: 2px dotted lightcoral;
+  // background-color: white;
+  // outline: 2px dotted lightcoral;
 
   @include media-query-new(tablet-new) {
-    background-color: yellow;
-    outline: 3px dotted red;
+    // background-color: yellow;
+    // outline: 3px dotted red;
   }
 
   @include media-query-new(desktop-small-new) {

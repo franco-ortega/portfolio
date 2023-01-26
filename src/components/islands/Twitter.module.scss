@@ -11,7 +11,7 @@
   @extend %testing-colors-new;
 
   @include media-query-new(tablet-new) {
-    grid-column: 7 / 10;
+    grid-column: 7 / 9;
     grid-row: 22 / 24;
   }
 
