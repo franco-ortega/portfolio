@@ -15,8 +15,6 @@
 
   @extend %half-second-transition;
 
-  @extend %testing-colors-new;
-
   @include media-query-new(tablet-new) {
     grid-column: 1 / 8;
     grid-row: 9 / 15;

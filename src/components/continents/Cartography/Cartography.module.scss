@@ -13,8 +13,6 @@
 
   @extend %half-second-transition;
 
-  @extend %testing-colors-new;
-
   @include media-query-new(tablet-new) {
     grid-column: 8 / 13;
     grid-row: 14 / 19;
