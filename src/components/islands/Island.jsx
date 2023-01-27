@@ -4,13 +4,13 @@ import styles from './Island.module.scss';
 
 const Island = ({ title, url }) => {
   return (
-    <a className={styles.IslandBox} href={url} rel='noreferrer' target='_blank'>
-      <div className={styles.OuterCoastline}>
+    <div className={styles.OuterCoastline}>
+      <a href={url} rel='noreferrer' target='_blank'>
         <div className={styles.InnerCoastline}>
           <div className={styles.Island}>{title}</div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   );
 };
 

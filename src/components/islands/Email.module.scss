@@ -1,26 +1,24 @@
 @use '../../scss/' as *;
 
 .Email {
-  padding-top: 0.5rem;
-  grid-column: 10 / 12;
-  grid-row: 18 / 21;
+  grid-column: 7 / 10;
+  grid-row: 20 / 23;
 
-  @extend %testing-colors-new;
+  z-index: 2;
 
-  z-index: 3;
+  @extend %island-centering;
 
   @include media-query-new(tablet-new) {
-    grid-row: 19 / 21;
+    grid-column: 8 / 10;
+    grid-row: 19 / 22;
   }
 
   @include media-query-new(desktop-small-new) {
-    grid-column: 11 / 13;
-    grid-row: 16 / 19;
-
-    align-self: center;
-  }
-
-  @include media-query-new(desktop-large-new) {
-    grid-column: 9 / 11;
+    grid-column: 8 / 11;
+    grid-row: 18 / 21;
   }
 }
+
+// media queries used
+// @include media-query-new(tablet-new) {
+// @include media-query-new(desktop-small-new) {
