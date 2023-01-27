@@ -58,12 +58,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .IslandBox:focus-within {
+  .OuterCoastline:focus-within {
     transform: none;
 
-    .OuterCoastline {
-      box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
-    }
+    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
   }
 
   .OuterCoastline:hover {
