@@ -84,6 +84,8 @@
 @media (prefers-reduced-motion: reduce) {
   .Cartography:focus-within {
     transform: none;
+    rotate: 0deg;
+
     .OuterCoastline {
       box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
     }
