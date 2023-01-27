@@ -1,27 +1,20 @@
 @use '../../../scss/' as *;
 
 .Projects {
-  // grid-column: 1 / 5;
-  // grid-row: 2 / 5;
+  padding-right: 1rem;
+  grid-column: 1 / 8;
+  grid-row: 4 / 9;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
   position: relative;
-  z-index: 1;
   z-index: 2;
 
   @extend %half-second-transition;
 
   @extend %testing-colors-new;
-
-  // new
-  padding-right: 1rem;
-  grid-column: 1 / 8;
-  grid-row: 4 / 9;
-  // padding-top: 0;
-  // padding-right: 1rem;
-  // padding-bottom: 1rem;
 
   @include media-query-new(tablet-new) {
     grid-row: 4 / 9;
@@ -35,7 +28,6 @@
 
 .Projects:focus-within,
 .OuterCoastline:hover {
-  // desktop for hover
   transform: scale(1.075);
 }
 
@@ -62,58 +54,16 @@
     rgb(206, 165, 112)
   );
 
-  // padding: 1rem 2rem;
-  // font-size: 7.5rem;
-
-  // new
-  // padding: 0.6rem 1rem;
-  // font-size: 2rem;
-
   padding: 0.75rem 1.25rem;
-  font-size: 2.5rem;
+
+  font-size: var(--continent-title);
 
   @include media-query-new(tablet-new) {
     padding: 0.8rem 1.2rem;
-    font-size: 4.75rem;
-  }
-
-  @include media-query-new(desktop-small-new) {
-    // color: red;
   }
 
   @include media-query-new(desktop-medium-new) {
     padding: 1.25rem 2rem;
-    font-size: 5rem;
-  }
-
-  @include media-query-new(desktop-large-new) {
-    font-size: 6rem;
-  }
-
-  @include media-query(desktop-medium) {
-    // font-size: 5.5rem;
-  }
-
-  @include media-query(desktop-small) {
-    // font-size: 4.5rem;
-  }
-
-  @include media-query(tablet) {
-    // font-size: 5.5rem;
-  }
-
-  @include media-query(junior) {
-    // font-size: 4rem;
-  }
-
-  @include media-mobile-landscape() {
-    // padding: 0.5rem 1.25rem;
-    // font-size: 2.25rem;
-  }
-
-  @include media-query(mobile) {
-    // padding: 0.5rem 1rem;
-    // font-size: 2.25rem;
   }
 }
 
@@ -135,3 +85,9 @@
     animation: none;
   }
 }
+
+// media queries:
+// @include media-query-new(tablet-new) {
+// @include media-query-new(desktop-small-new) {
+// @include media-query-new(desktop-medium-new) {
+// @media (prefers-reduced-motion: reduce) {

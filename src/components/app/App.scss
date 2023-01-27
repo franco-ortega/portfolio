@@ -54,7 +54,7 @@
   --continent-font-bold: 'Tangerine Bold';
   --main-font: Arial, sans-serif;
 
-  --continent-title: 5rem;
+  --continent-title: clamp(2.25rem, 6vw, 7rem);
 
   --continent-popup-title: 5rem;
   --continent-popup-header: 1.25rem;

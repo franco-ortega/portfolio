@@ -8,8 +8,6 @@
 
   @extend %island-centering;
 
-  @extend %testing-colors-new;
-
   @include media-query-new(tablet-new) {
     grid-column: 6 / 8;
   }
