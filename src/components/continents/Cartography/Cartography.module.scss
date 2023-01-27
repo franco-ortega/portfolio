@@ -13,8 +13,6 @@
 
   @extend %half-second-transition;
 
-  @extend %testing-colors-new;
-
   @include media-query-new(tablet-new) {
     grid-column: 8 / 13;
     grid-row: 14 / 19;
@@ -61,29 +59,16 @@
 }
 
 .Title {
-  padding: 1rem;
-  font-size: 1.75rem;
   transform: rotate(-7.5deg);
-
-  @include media-query-new(tablet-new) {
-    padding: 1.5rem 1.75rem;
-    font-size: 2.5rem;
-  }
-
-  @include media-query-new(desktop-medium-new) {
-    padding: 1.5rem 2.25rem;
-    font-size: 3rem;
-  }
-
-  @include media-query-new(desktop-large-new) {
-    padding: 1.5rem 2.25rem;
-    font-size: 3.5rem;
-  }
+  padding: clamp(1rem, 4vw, 1.75rem);
+  font-size: clamp(1.75rem, 4vw, 3.75rem);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .Cartography:focus-within {
     transform: none;
+    rotate: 0deg;
+
     .OuterCoastline {
       box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
     }
@@ -98,3 +83,8 @@
     animation: none;
   }
 }
+
+// media queries:
+// @include media-query-new(tablet-new) {
+// @include media-query-new(desktop-small-new) {
+// @media (prefers-reduced-motion: reduce) {

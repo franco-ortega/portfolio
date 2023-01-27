@@ -34,9 +34,9 @@ const Ocean = () => {
         {/* Islands */}
         {/* <IslandChain /> */}
         <GitHub />
+        <Email />
         <LinkedIn />
         <Twitter />
-        <Email />
 
         {/* Map Elements */}
         <Legend />
