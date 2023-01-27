@@ -1,46 +1,17 @@
 @use '../../scss/' as *;
 
-.IslandBox {
-  @extend %island-centering;
-}
-
-.IslandBox:focus {
-  .OuterCoastline {
-    transform: scale(1.15);
-  }
+.OuterCoastline:focus-within {
+  transform: scale(1.15);
 }
 
 .OuterCoastline {
   background: var(--outer-coastline);
   border-radius: 50%;
   box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow-color);
-  // height: fit-content;
 
-  // padding: 0.4vw;
-
-  @extend %half-second-transition;
-
-  // new
   padding: 0.2rem;
 
-  @include media-query-new(tablet-new) {
-    padding: 0.3rem;
-  }
-
-  @include media-query(tablet) {
-    // box-shadow: 0vw 0vw 1rem 1rem var(--coastline-shadow-color);
-    // padding: 0.45rem;
-  }
-
-  @include media-mobile-landscape() {
-    // box-shadow: 0vw 0vw 0.75rem 0.5rem var(--coastline-shadow-color);
-    // padding: 0.25rem;
-  }
-
-  @include media-query(mobile) {
-    // box-shadow: 0vw 0vw 0.75rem 0.5rem var(--coastline-shadow-color);
-    // padding: 0.35rem;
-  }
+  @extend %half-second-transition;
 }
 
 .OuterCoastline:hover {
@@ -52,23 +23,7 @@
   border: 0.1vw dashed var(--continent-border);
   border-radius: inherit;
 
-  // padding: 0.5vw;
-
-  // new
   padding: 0.25rem;
-
-  @include media-query-new(tablet-new) {
-    // padding: 0.3rem;
-  }
-
-  @include media-query(tablet) {
-    // border: 0.1rem dashed var(--continent-border);
-    // padding: 0.25rem;
-  }
-
-  @include media-mobile-landscape() {
-    // padding: 0.25rem;
-  }
 }
 
 .Island {
@@ -87,30 +42,18 @@
   position: relative;
   z-index: 1;
 
-  // padding: 1.25rem 0.75rem;
-  // font-size: 1.25rem;
-
-  // new
   padding: 0.75rem 0.5rem;
   font-size: 0.75rem;
   text-align: center;
 
-  @include media-query-new(tablet-new) {
+  @include media-query-new(desktop-small-new) {
+    padding: 0.8rem 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  @include media-query-new(desktop-large-new) {
+    padding: 0.9rem 0.75rem;
     font-size: 1rem;
-  }
-
-  @include media-query(desktop-medium) {
-    // font-size: 1.1rem;
-  }
-
-  @include media-mobile-landscape() {
-    // padding: 0.3rem;
-    // font-size: 0.6rem;
-  }
-
-  @include media-query(mobile) {
-    // padding: 0.5rem 0.25rem;
-    // font-size: 0.65rem;
   }
 }
 
@@ -132,3 +75,8 @@
     animation: none;
   }
 }
+
+// media queries used
+// @include media-query-new(desktop-small-new) {
+// @include media-query-new(desktop-large-new) {
+// @media (prefers-reduced-motion: reduce) {
