@@ -20,28 +20,16 @@
     grid-row: 18 / 24;
   }
 
-  @include media-query-new(desktop-medium-new) {
-    grid-column: 10 / 12;
-    grid-row: 17 / 23;
-  }
-
   @include media-query-new(desktop-large-new) {
-    height: 15vw;
+    scale: 50%;
+    top: -10%;
+    right: -10%;
   }
 }
 
 .OuterRingContainer {
   grid-column: 3 / 5;
   grid-row: 3 / 5;
-
-  @include media-query-new(desktop-large-new) {
-    grid-column: 4 / 6;
-    grid-row: 3 / 5;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 .OuterRing {
@@ -170,11 +158,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  @include media-query-new(desktop-large-new) {
-    grid-column: 4 / 6;
-    grid-row: 3 / 5;
-  }
 }
 
 .InnerCircle {
@@ -212,11 +195,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  @include media-query-new(desktop-large-new) {
-    top: 45%;
-    left: 95%;
-  }
 }
 
 .BottomTriangle {
@@ -233,10 +211,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -10%);
-
-  @include media-query-new(desktop-large-new) {
-    left: 95%;
-  }
 }
 
 .LeftTriangle {
@@ -251,10 +225,6 @@
 
   position: relative;
   transform: translate(-35%, -50%);
-
-  @include media-query-new(desktop-large-new) {
-    left: 24%;
-  }
 }
 
 .RightTriangle {
@@ -269,8 +239,9 @@
 
   position: relative;
   transform: translate(-20%, -50%);
-
-  @include media-query-new(desktop-large-new) {
-    left: 33%;
-  }
 }
+
+// media queries:
+// @include media-query-new(tablet-new) {
+// @include media-query-new(desktop-small-new) {
+// @include media-query-new(desktop-large-new) {
