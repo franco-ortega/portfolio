@@ -43,7 +43,6 @@
       var(--yellow-four),
       var(--yellow-five)
     );
-    // background-size: 100% 100%;
 
     // new
     border: 0.15rem solid rgb(10, 10, 10);
@@ -115,12 +114,6 @@
         margin-bottom: 0rem;
         font-size: 2rem;
       }
-
-      // div {
-      //   ul + li > li::before {
-      //     display: none;
-      //   }
-      // }
     }
 
     @include media-query-new(desktop-medium-new) {
