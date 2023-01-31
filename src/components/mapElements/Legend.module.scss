@@ -14,24 +14,25 @@
   z-index: 1;
 
   @include media-query-new(tablet-new) {
+    grid-column: 8 / 12;
     grid-row: 4 / 14;
 
     padding-block: 0.75rem;
-    padding-inline: 0.75rem;
+    padding-inline: 0rem;
   }
 
   @include media-query-new(desktop-small-new) {
     grid-column: 9 / 13;
-    grid-row: 2 / 16;
+    grid-row: 4 / 15;
+    padding-inline: 1.5rem;
   }
 
   @include media-query-new(desktop-medium-new) {
-    grid-row: 3 / 16;
+    padding-inline: 3rem;
   }
 
   @include media-query-new(desktop-large-new) {
-    grid-column: 10 / 13;
-    grid-row: 3 / 16;
+    padding-inline: 5rem;
   }
 
   .Legend {
@@ -117,16 +118,18 @@
     }
 
     @include media-query-new(desktop-medium-new) {
+      padding-inline: 0.75rem;
+
       h3 {
         margin-left: 0rem;
-        font-size: 2.5rem;
       }
     }
 
     @include media-query-new(desktop-large-new) {
+      padding-inline: 1rem;
+
       h3 {
         margin-left: 0rem;
-        font-size: 3rem;
       }
 
       div {
