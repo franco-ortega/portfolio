@@ -27,6 +27,9 @@
 .Cartography:focus-within,
 .OuterCoastline:hover {
   transform: scale(1.075);
+}
+
+.OuterCoastline:hover {
   rotate: -15deg;
 }
 
