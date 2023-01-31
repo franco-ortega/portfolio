@@ -42,6 +42,10 @@
   @extend %inner-coastline;
   border: 0.14vw dashed var(--continent-border);
   padding: 0.75vw;
+
+  @include media-query-landscape-mobile {
+    padding: 0.1rem;
+  }
 }
 
 .Continent {
@@ -62,6 +66,11 @@
   transform: rotate(-7.5deg);
   padding: clamp(1rem, 4vw, 1.75rem);
   font-size: clamp(1.75rem, 4vw, 3.75rem);
+
+  @include media-query-landscape-mobile {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -88,3 +97,4 @@
 // @include media-query-new(tablet-new) {
 // @include media-query-new(desktop-small-new) {
 // @media (prefers-reduced-motion: reduce) {
+// @include media-query-landscape-mobile {

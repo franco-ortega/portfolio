@@ -81,3 +81,9 @@ $breakpoints: (
     @content;
   }
 }
+
+@mixin media-query-landscape-mobile {
+  @media (max-height: 400px) {
+    @content;
+  }
+}
