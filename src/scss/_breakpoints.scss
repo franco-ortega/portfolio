@@ -83,7 +83,7 @@ $breakpoints: (
 }
 
 @mixin media-query-landscape-mobile {
-  @media (max-height: 400px) {
+  @media (max-height: 450px) {
     @content;
   }
 }

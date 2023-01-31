@@ -35,6 +35,11 @@
     padding-inline: 5rem;
   }
 
+  @include media-query-landscape-mobile {
+    grid-column: 9 / 13;
+    padding-inline: 1rem;
+  }
+
   .Legend {
     background: linear-gradient(
       180deg,
@@ -135,6 +140,15 @@
       div {
         ul {
           font-size: 0.9rem;
+        }
+      }
+    }
+
+    @include media-query-landscape-mobile {
+      div {
+        gap: 0.25rem;
+        ul {
+          font-size: 0.75rem;
         }
       }
     }

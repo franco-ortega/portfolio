@@ -17,8 +17,6 @@
 
   color: hsl(0, 0%, 100%);
 
-  @extend %testing-colors-new;
-
   & > div:last-child {
     div + div {
       visibility: hidden;
@@ -33,6 +31,10 @@
     grid-column: 1 / 5;
 
     padding-inline: 3vw 0;
+  }
+
+  @include media-query-landscape-mobile {
+    scale: 60%;
   }
 }
 
