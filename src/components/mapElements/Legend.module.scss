@@ -13,10 +13,11 @@
   position: relative;
   z-index: 1;
 
-  @extend %testing-colors-new;
-
   @include media-query-new(tablet-new) {
     grid-row: 4 / 14;
+
+    padding-block: 0.75rem;
+    padding-inline: 0.75rem;
   }
 
   @include media-query-new(desktop-small-new) {
@@ -46,8 +47,8 @@
 
     // new
     border: 0.15rem solid rgb(10, 10, 10);
-    width: 85%;
-    height: 100%;
+    padding-inline: 0.5rem;
+    max-height: 100%;
     overflow: auto;
 
     border-radius: 0.25rem;
@@ -81,19 +82,21 @@
           content: '.';
           font-size: 1rem;
           position: relative;
-          bottom: 22%;
+          bottom: 0.25rem;
           margin-inline: 0.25rem;
         }
       }
     }
 
     @include media-query-new(tablet-new) {
-      padding-inline: 1rem;
+      padding-block: 0.5rem;
+      padding-inline: 0.5rem;
 
       h3 {
         margin-top: 0.5rem;
         margin-right: 1rem;
         margin-left: 1rem;
+        font-size: 1.75rem;
       }
 
       div {
