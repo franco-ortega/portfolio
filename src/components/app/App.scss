@@ -35,17 +35,12 @@
 
   --coastline-box-shadow: 0vw 0vw 2vw 1.5vw;
   --coastline-shadow-color: darkblue;
-  --outer-coastline: rgb(87, 171, 223);
 
-  // --outer-coastline-padding: 1rem;
+  --outer-coastline: rgb(87, 171, 223);
   --outer-coastline-padding: 0.4rem;
 
-  // --inner-coastline-padding: 0.75rem;
   --inner-coastline-padding: 0.4rem;
-
-  // --inner-coastline-border-width: 0.15rem;
   --inner-coastline-border-width: 0.1rem;
-
   --inner-coastline: rgb(111, 186, 233);
 
   --continent-border: brown;
@@ -54,7 +49,7 @@
   --continent-font-bold: 'Tangerine Bold';
   --main-font: Arial, sans-serif;
 
-  --continent-title: clamp(2.25rem, 6vw, 7rem);
+  --continent-title: clamp(2.25rem, 8vw, 7rem);
 
   --continent-popup-title: 5rem;
   --continent-popup-header: 1.25rem;
@@ -87,6 +82,13 @@
     --inner-coastline-padding: 0.65rem;
 
     // --inner-coastline-border-width: 0.1rem;
+  }
+
+  @include media-query-landscape-mobile {
+    --continent-title: 1.5rem;
+
+    --outer-coastline-padding: 0.2rem;
+    --inner-coastline-padding: 0.1rem;
   }
 }
 

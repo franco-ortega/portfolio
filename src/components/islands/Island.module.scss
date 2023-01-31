@@ -24,6 +24,10 @@
   border-radius: inherit;
 
   padding: 0.25rem;
+
+  @include media-query-landscape-mobile {
+    padding: 0.1rem;
+  }
 }
 
 .Island {
@@ -55,6 +59,11 @@
     padding: 0.9rem 0.75rem;
     font-size: 1rem;
   }
+
+  @include media-query-landscape-mobile {
+    font-size: 0.5rem;
+    padding: 0.25rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -78,3 +87,4 @@
 // @include media-query-new(desktop-small-new) {
 // @include media-query-new(desktop-large-new) {
 // @media (prefers-reduced-motion: reduce) {
+// @include media-query-landscape-mobile {

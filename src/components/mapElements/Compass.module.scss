@@ -25,6 +25,11 @@
     top: -10%;
     right: -10%;
   }
+
+  @include media-query-landscape-mobile {
+    transform: translateY(-4rem);
+    scale: 50%;
+  }
 }
 
 .OuterRingContainer {
