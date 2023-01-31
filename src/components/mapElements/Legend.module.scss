@@ -2,7 +2,7 @@
 
 .LegendBox {
   grid-column: 8 / 13;
-  grid-row: 5 / 14;
+  grid-row: 5 / 13;
 
   padding-block: 0.5rem;
 
@@ -13,24 +13,26 @@
   position: relative;
   z-index: 1;
 
-  @extend %testing-colors-new;
-
   @include media-query-new(tablet-new) {
+    grid-column: 8 / 12;
     grid-row: 4 / 14;
+
+    padding-block: 0.75rem;
+    padding-inline: 0rem;
   }
 
   @include media-query-new(desktop-small-new) {
     grid-column: 9 / 13;
-    grid-row: 2 / 16;
+    grid-row: 4 / 15;
+    padding-inline: 1.5rem;
   }
 
   @include media-query-new(desktop-medium-new) {
-    grid-row: 3 / 16;
+    padding-inline: 3rem;
   }
 
   @include media-query-new(desktop-large-new) {
-    grid-column: 10 / 13;
-    grid-row: 3 / 16;
+    padding-inline: 5rem;
   }
 
   .Legend {
@@ -42,7 +44,12 @@
       var(--yellow-four),
       var(--yellow-five)
     );
-    // background-size: 100% 100%;
+
+    // new
+    border: 0.15rem solid rgb(10, 10, 10);
+    padding-inline: 0.5rem;
+    max-height: 100%;
+    overflow: auto;
 
     border-radius: 0.25rem;
     box-shadow: 0 0 0.5rem 0.15rem gold;
@@ -51,17 +58,11 @@
     flex-direction: column;
     align-items: center;
 
-    // new
-    border: 0.15rem solid rgb(10, 10, 10);
-    width: 85%;
-    height: 100%;
-    overflow: auto;
-
     h3 {
       margin-block: 0.5rem;
 
       font-family: var(--continent-font-bold);
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
 
     div {
@@ -77,33 +78,25 @@
 
         font-size: 0.85rem;
 
-        li {
-          // list-style: circle;
-          // padding-left: 0;
-          // margin: 0;
-        }
-
-        li + li::before {
-          // display: none;
-        }
-
         li:before {
           content: '.';
-          // font-size: 0.2rem;
+          font-size: 1rem;
           position: relative;
-          bottom: 22%;
+          bottom: 0.25rem;
           margin-inline: 0.25rem;
         }
       }
     }
 
     @include media-query-new(tablet-new) {
-      padding-inline: 1rem;
+      padding-block: 0.5rem;
+      padding-inline: 0.5rem;
 
       h3 {
         margin-top: 0.5rem;
         margin-right: 1rem;
         margin-left: 1rem;
+        font-size: 1.75rem;
       }
 
       div {
@@ -122,25 +115,21 @@
         margin-bottom: 0rem;
         font-size: 2rem;
       }
-
-      // div {
-      //   ul + li > li::before {
-      //     display: none;
-      //   }
-      // }
     }
 
     @include media-query-new(desktop-medium-new) {
+      padding-inline: 0.75rem;
+
       h3 {
         margin-left: 0rem;
-        font-size: 2.5rem;
       }
     }
 
     @include media-query-new(desktop-large-new) {
+      padding-inline: 1rem;
+
       h3 {
         margin-left: 0rem;
-        font-size: 3rem;
       }
 
       div {
