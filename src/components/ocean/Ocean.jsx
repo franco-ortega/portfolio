@@ -30,7 +30,6 @@ const Ocean = () => {
         <Cartography />
 
         {/* Islands */}
-        {/* <IslandChain /> */}
         <GitHub />
         <Email />
         <LinkedIn />
