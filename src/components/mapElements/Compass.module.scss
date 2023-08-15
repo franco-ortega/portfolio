@@ -3,7 +3,6 @@
 .Compass {
   grid-column: 9 / 13;
   grid-row: 20 / 25;
-  // border: solid white 1px;
 
   display: grid;
   height: 20vw;
@@ -17,6 +16,7 @@
 
   @include media-query-new(tablet-new) {
     grid-row: 20 / 25;
+    // border: solid white 1px;
   }
 
   @include media-query-new(desktop-small-new) {
