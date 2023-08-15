@@ -1,8 +1,9 @@
 @use '../../scss/' as *;
 
 .Compass {
-  grid-column: 10 / 13;
-  grid-row: 21 / 25;
+  grid-column: 9 / 13;
+  grid-row: 20 / 25;
+  // border: solid white 1px;
 
   display: grid;
   height: 20vw;
@@ -11,6 +12,8 @@
 
   position: absolute;
   z-index: 2;
+
+  scale: 150%;
 
   @include media-query-new(tablet-new) {
     grid-row: 20 / 25;
