@@ -15,7 +15,9 @@
   scale: 150%;
 
   @include media-query-new(tablet-new) {
-    grid-row: 20 / 25;
+    grid-row: 19 / 25;
+
+    scale: 125%;
     // border: solid white 1px;
   }
 
