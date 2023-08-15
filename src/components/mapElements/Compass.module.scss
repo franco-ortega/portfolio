@@ -22,10 +22,12 @@
   
   @include media-query-new(desktop-small-new) {
     grid-column: 10 / 13;
-    grid-row: 17 / 21;
+    grid-row: 16 / 21;
+
+    scale: 100%;
     // border: solid white 1px;
   }
-
+  
   @include media-query-new(desktop-large-new) {
     scale: 50%;
     top: -10%;
