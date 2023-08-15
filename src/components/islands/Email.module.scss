@@ -1,8 +1,9 @@
 @use '../../scss/' as *;
 
 .Email {
-  grid-column: 7 / 10;
-  grid-row: 20 / 23;
+  grid-column: 5 / 9;
+  grid-row: 18 / 22;
+  // border: solid white 1px;
 
   z-index: 2;
 
