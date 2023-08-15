@@ -30,7 +30,6 @@
   @include media-query-new(desktop-large-new) {
     grid-row: 15 / 23;
     scale: 90%;
-    // border: solid white 1px;
   }
 
   @include media-query-landscape-mobile {
