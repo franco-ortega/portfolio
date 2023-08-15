@@ -1,8 +1,8 @@
 @use '../../scss/' as *;
 
 .Compass {
-  grid-column: 10 / 13;
-  grid-row: 21 / 25;
+  grid-column: 9 / 13;
+  grid-row: 20 / 25;
 
   display: grid;
   height: 20vw;
@@ -12,18 +12,24 @@
   position: absolute;
   z-index: 2;
 
+  scale: 150%;
+
   @include media-query-new(tablet-new) {
-    grid-row: 20 / 25;
-  }
+    grid-row: 19 / 24;
 
+    scale: 125%;
+  }
+  
   @include media-query-new(desktop-small-new) {
-    grid-row: 18 / 24;
-  }
+    grid-column: 10 / 13;
+    grid-row: 16 / 21;
 
+    scale: 100%;
+  }
+  
   @include media-query-new(desktop-large-new) {
-    scale: 50%;
-    top: -10%;
-    right: -10%;
+    grid-row: 15 / 23;
+    scale: 90%;
   }
 
   @include media-query-landscape-mobile {
