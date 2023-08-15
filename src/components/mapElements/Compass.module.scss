@@ -15,14 +15,15 @@
   scale: 150%;
 
   @include media-query-new(tablet-new) {
-    grid-row: 19 / 25;
+    grid-row: 19 / 24;
 
     scale: 125%;
-    // border: solid white 1px;
   }
-
+  
   @include media-query-new(desktop-small-new) {
-    grid-row: 18 / 24;
+    grid-column: 10 / 13;
+    grid-row: 17 / 21;
+    // border: solid white 1px;
   }
 
   @include media-query-new(desktop-large-new) {
