@@ -10,12 +10,12 @@
 
   @include media-query-new(tablet-new) {
     grid-column: 6 / 9;
-    // border: solid white 1px;
   }
-
+  
   @include media-query-new(desktop-small-new) {
-    grid-column: 9 / 12;
-    grid-row: 15 / 18;
+    grid-column: 5 / 8;
+    grid-row: 15 / 19;
+    // border: solid white 1px;
   }
 }
 
