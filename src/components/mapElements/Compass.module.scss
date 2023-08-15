@@ -25,13 +25,12 @@
     grid-row: 16 / 21;
 
     scale: 100%;
-    // border: solid white 1px;
   }
   
   @include media-query-new(desktop-large-new) {
-    scale: 50%;
-    top: -10%;
-    right: -10%;
+    grid-row: 15 / 23;
+    scale: 90%;
+    // border: solid white 1px;
   }
 
   @include media-query-landscape-mobile {
