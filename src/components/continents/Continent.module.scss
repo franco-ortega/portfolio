@@ -19,13 +19,7 @@
   }
   padding: var(--outer-coastline-padding);
 
-  background: linear-gradient(
-    90deg,
-    var(--outer-coastline),
-    rgb(77, 152, 199),
-    rgb(106, 178, 223),
-    rgb(74, 146, 190)
-  );
+  background: var(--outer-coastline-bkgd);
   background-size: 15% 15%;
 
   animation: coastal-wave 20s ease infinite both;
@@ -49,7 +43,7 @@
   div {
     // INNER COASTLINE
     // @extend %inner-coastline;
-    background: var(--inner-coastline);
+    background: var(--inner-coastline-bkgd);
     border: var(--inner-coastline-border-width) dashed var(--continent-border);
     border-radius: inherit;
     padding: var(--inner-coastline-padding);

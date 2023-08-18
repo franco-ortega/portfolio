@@ -37,11 +37,19 @@
   --coastline-shadow-color: darkblue;
 
   --outer-coastline: rgb(87, 171, 223);
+  --outer-coastline-bkgd: linear-gradient(
+    90deg,
+    rgb(87, 171, 223),
+    rgb(77, 152, 199),
+    rgb(106, 178, 223),
+    rgb(74, 146, 190)
+  );
   --outer-coastline-padding: 0.4rem;
 
-  --inner-coastline-padding: 0.4rem;
-  --inner-coastline-border-width: 0.1rem;
   --inner-coastline: rgb(111, 186, 233);
+  --inner-coastline-bkgd: rgb(111, 186, 233);
+  --inner-coastline-border-width: 0.1rem;
+  --inner-coastline-padding: 0.4rem;
 
   --continent-border: brown;
   --continent: rgb(220, 202, 148);
