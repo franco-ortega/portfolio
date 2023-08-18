@@ -15,7 +15,7 @@
 
   // @extend %moving-waves;
   &:has(div){
-    box-shadow: var(--coastline-box-shadow) var(--coastline-shadow-color);
+    box-shadow: var(--coastline-shadow);
   }
   padding: var(--outer-coastline-padding);
 
