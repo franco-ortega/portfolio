@@ -9,7 +9,7 @@ const ProjectsContinent = () => {
       <Continent
         borderShape={{ borderRadius: '84vw 75vw 51vw 38vw' }}
         path='/projects'
-        title={'TestCon'}
+        title={'Projects'}
       />
     </section>
   );

@@ -51,6 +51,16 @@
 
   --continent-title: clamp(2.25rem, 8vw, 7rem);
 
+  --continent-bkgd: linear-gradient(
+        210deg,
+        rgb(150, 134, 114),
+        rgb(210, 180, 140),
+        rgb(210, 180, 140),
+        rgb(206, 165, 112),
+        rgb(187, 172, 152),
+        rgb(206, 165, 112)
+      );
+
   --continent-popup-title: 5rem;
   --continent-popup-header: 1.25rem;
   --continent-popup-text: 1.2rem;

@@ -60,27 +60,27 @@
       // justify-content: center;
       font-family: var(--continent-font-bold);
 
+      background: var(--continent-bkgd);
 
-      background: linear-gradient(
-        210deg,
-        rgb(150, 134, 114),
-        rgb(210, 180, 140),
-        rgb(210, 180, 140),
-        rgb(206, 165, 112),
-        rgb(187, 172, 152),
-        rgb(206, 165, 112)
-      );
+      // padding: 0.75rem 1.25rem;
 
-      padding: 0.75rem 1.25rem;
+      // CONTINENT FONT SIZE FOR TITLE
+      --continent-title: clamp(2.25rem, 8vw, 5rem);
+      // --continent-title: 2.25rem;
+      // --continent-title: calc(2.25rem + 1vw);
+      // --continent-title: max(2.25rem, 7rem);
 
+      @include media-query-landscape-mobile {
+        // --continent-title: 1.5rem;
+      }
       font-size: var(--continent-title);
 
       @include media-query-new(tablet-new) {
-        padding: 0.8rem 1.2rem;
+        // padding: 0.8rem 1.2rem;
       }
 
       @include media-query-new(desktop-medium-new) {
-        padding: 1.25rem 2rem;
+        // padding: 1.25rem 2rem;
       }
     }
   }

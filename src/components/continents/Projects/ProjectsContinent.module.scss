@@ -17,12 +17,12 @@
   // border-radius: 84vw 75vw 51vw 38vw;
 
   @include media-query-new(tablet-new) {
-    grid-row: 4 / 9;
+    // grid-row: 4 / 9;
   }
 
   @include media-query-new(desktop-small-new) {
-    grid-column: 1 / 5;
-    grid-row: 5 / 11;
+    // grid-column: 1 / 5;
+    // grid-row: 5 / 11;
   }
 }
 
