@@ -13,20 +13,11 @@
     }
   }
 
-  // @extend %moving-waves;
-  &:has(div){
-    box-shadow: var(--coastline-shadow);
-  }
-  padding: var(--outer-coastline-padding);
-
-  background: var(--outer-coastline-bkgd);
-  background-size: 15% 15%;
-
-  animation: coastal-wave 20s ease infinite both;
-  -moz-animation: coastal-wave 20s ease infinite both;
-  -webkit-animation: coastal-wave 20s ease infinite both;
-  -o-animation: coastal-wave 20s ease infinite both;
-  -ms-animation: coastal-wave 20s ease infinite both;
+  @extend %coastal-shadow-and-waves;
+  // &:has(div){
+  //   box-shadow: var(--coastline-shadow);
+  // }
+  
 
   // @extend %half-second-transition;
   transition: all 0.5s ease;

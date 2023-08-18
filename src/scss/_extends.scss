@@ -1,18 +1,12 @@
 @use './breakpoints' as *;
 
-%moving-waves {
+%coastal-shadow-and-waves {
   box-shadow: var(--coastline-shadow);
+
   padding: var(--outer-coastline-padding);
 
-  background: linear-gradient(
-    90deg,
-    var(--outer-coastline),
-    rgb(77, 152, 199),
-    rgb(106, 178, 223),
-    rgb(74, 146, 190)
-  );
-  background-size: 15% 15%;
-
+  background: var(--outer-coastline-bkgd);
+  background-size: var(--outer-coastline-bkgd-size);
   animation: coastal-wave 20s ease infinite both;
   -moz-animation: coastal-wave 20s ease infinite both;
   -webkit-animation: coastal-wave 20s ease infinite both;

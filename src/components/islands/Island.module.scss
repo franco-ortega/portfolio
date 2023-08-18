@@ -5,7 +5,14 @@
 }
 
 .OuterCoastline {
-  background: var(--outer-coastline);
+  background: var(--outer-coastline-bkgd);
+  background-size: 15% 15%;
+  animation: coastal-wave 20s ease infinite both;
+  -moz-animation: coastal-wave 20s ease infinite both;
+  -webkit-animation: coastal-wave 20s ease infinite both;
+  -o-animation: coastal-wave 20s ease infinite both;
+  -ms-animation: coastal-wave 20s ease infinite both;
+
   border-radius: 50%;
   box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow-color);
 
@@ -88,3 +95,58 @@
 // @include media-query-new(desktop-large-new) {
 // @media (prefers-reduced-motion: reduce) {
 // @include media-query-landscape-mobile {
+
+
+  @keyframes coastal-wave {
+    0% {
+      background-position: 0 100%;
+    }
+    25% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 75%;
+    }
+    100% {
+      background-position: 0 100%;
+    }
+  }
+  
+  @-moz-keyframes coastal-wave {
+    0% {
+      background-position: 0 50%;
+    }
+    25% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 75%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  
+  @-webkit-keyframes coastal-wave {
+    0% {
+      background-position: 0 50%;
+    }
+    25% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 75%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }

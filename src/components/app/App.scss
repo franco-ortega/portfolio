@@ -35,7 +35,6 @@
 
   --coastline-shadow: 0vw 0vw 2vw 1.5vw darkblue;
 
-  --outer-coastline: rgb(87, 171, 223);
   --outer-coastline-bkgd: linear-gradient(
     90deg,
     rgb(87, 171, 223),
@@ -43,6 +42,7 @@
     rgb(106, 178, 223),
     rgb(74, 146, 190)
   );
+  --outer-coastline-bkgd-size: 15% 15%;
   --outer-coastline-padding: 0.4rem;
 
   --inner-coastline: rgb(111, 186, 233);

@@ -32,7 +32,7 @@
 }
 
 .OuterCoastline {
-  @extend %moving-waves;
+  @extend %coastal-shadow-and-waves;
   @extend %half-second-transition;
   border-radius: 520vw 270vw 495vw 190vw;
 }
