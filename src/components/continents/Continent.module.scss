@@ -1,0 +1,215 @@
+@use '../../scss/' as *;
+
+.Continent {
+  // OUTER COASTLINE
+  &:focus-within,
+  &:hover:has(div) {
+    transform: scale(1.075);
+  }
+
+  // @extend %moving-waves;
+  &:has(div){
+    box-shadow: var(--coastline-box-shadow) var(--coastline-shadow-color);
+  }
+  padding: var(--outer-coastline-padding);
+
+  background: linear-gradient(
+    90deg,
+    var(--outer-coastline),
+    rgb(77, 152, 199),
+    rgb(106, 178, 223),
+    rgb(74, 146, 190)
+  );
+  background-size: 15% 15%;
+
+  animation: coastal-wave 20s ease infinite both;
+  -moz-animation: coastal-wave 20s ease infinite both;
+  -webkit-animation: coastal-wave 20s ease infinite both;
+  -o-animation: coastal-wave 20s ease infinite both;
+  -ms-animation: coastal-wave 20s ease infinite both;
+
+  // @extend %half-second-transition;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+
+
+  // border-radius: 84vw 75vw 51vw 38vw;
+  // border-radius: inherit;
+  max-width: 100%;
+  
+  div {
+    // INNER COASTLINE
+    // @extend %inner-coastline;
+    background: var(--inner-coastline);
+    border: var(--inner-coastline-border-width) dashed var(--continent-border);
+    border-radius: inherit;
+    padding: var(--inner-coastline-padding);
+    
+
+    div {
+      // LAND
+      // @extend %continent-styles;
+      // background-size: 115% 115%;
+      border: 0.2vw solid var(--continent-border);
+      border-radius: inherit;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      font-family: var(--continent-font-bold);
+
+
+      background: linear-gradient(
+        210deg,
+        rgb(150, 134, 114),
+        rgb(210, 180, 140),
+        rgb(210, 180, 140),
+        rgb(206, 165, 112),
+        rgb(187, 172, 152),
+        rgb(206, 165, 112)
+      );
+
+      padding: 0.75rem 1.25rem;
+
+      font-size: var(--continent-title);
+
+      @include media-query-new(tablet-new) {
+        padding: 0.8rem 1.2rem;
+      }
+
+      @include media-query-new(desktop-medium-new) {
+        padding: 1.25rem 2rem;
+      }
+    }
+  }
+  
+  
+}
+
+.Continent:focus-within,
+.OuterCoastline:hover {
+  // transform: scale(1.075);
+}
+
+.OuterCoastline {
+  // @extend %moving-waves;
+  // @extend %half-second-transition;
+  // border-radius: 84vw 75vw 51vw 38vw;
+  // max-width: 100%;
+}
+
+.InnerCoastline {
+  // @extend %inner-coastline;
+}
+
+.Continent {
+  // @extend %continent-styles;
+  // background: linear-gradient(
+  //   210deg,
+  //   rgb(150, 134, 114),
+  //   rgb(210, 180, 140),
+  //   rgb(210, 180, 140),
+  //   rgb(206, 165, 112),
+  //   rgb(187, 172, 152),
+  //   rgb(206, 165, 112)
+  // );
+
+  // padding: 0.75rem 1.25rem;
+
+  // font-size: var(--continent-title);
+
+  // @include media-query-new(tablet-new) {
+  //   padding: 0.8rem 1.2rem;
+  // }
+
+  // @include media-query-new(desktop-medium-new) {
+  //   padding: 1.25rem 2rem;
+  // }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .Continent:focus-within {
+    transform: none;
+
+    .OuterCoastline {
+      box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+    }
+  }
+
+  .OuterCoastline:hover {
+    transform: none;
+    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+  }
+
+  .OuterCoastline {
+    animation: none;
+  }
+}
+
+// media queries:
+// @include media-query-new(tablet-new) {
+// @include media-query-new(desktop-small-new) {
+// @include media-query-new(desktop-medium-new) {
+// @media (prefers-reduced-motion: reduce) {
+
+
+  @keyframes coastal-wave {
+    0% {
+      background-position: 0 100%;
+    }
+    25% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 75%;
+    }
+    100% {
+      background-position: 0 100%;
+    }
+  }
+  
+  @-moz-keyframes coastal-wave {
+    0% {
+      background-position: 0 50%;
+    }
+    25% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 75%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  
+  @-webkit-keyframes coastal-wave {
+    0% {
+      background-position: 0 50%;
+    }
+    25% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 75%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+
+  // .Continent div:has(div div){
+  //   box-shadow: var(--coastline-box-shadow) var(--coastline-shadow-color);
+  // }
