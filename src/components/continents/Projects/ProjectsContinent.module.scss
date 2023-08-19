@@ -1,7 +1,6 @@
 @use '../../../scss/' as *;
 
 .ProjectsContinent {
-  // padding-right: 1rem;
   grid-column: 1 / 8;
   grid-row: 4 / 9;
 
@@ -12,9 +11,8 @@
   position: relative;
   z-index: 2;
 
-  background-color: aliceblue;
-
   // border-radius: 84vw 75vw 51vw 38vw;
+  outline: solid white 1px;
 
   @include media-query-new(tablet-new) {
     grid-row: 4 / 9;

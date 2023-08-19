@@ -2,6 +2,11 @@
 
 .Continent {
   // OUTER COASTLINE
+  @extend %coastal-shadow-and-waves;
+  
+  // TRANSFORMS ON FOCUS AND HOVER
+  @extend %half-second-transition;
+
   &:focus-within {
     transform: scale(1.075);
   }
@@ -13,23 +18,9 @@
     }
   }
 
-  @extend %coastal-shadow-and-waves;
-  // &:has(div){
-  //   box-shadow: var(--coastline-shadow);
-  // }
-  
-
-  // @extend %half-second-transition;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-
-
   // border-radius: 84vw 75vw 51vw 38vw;
   // border-radius: inherit;
-  max-width: 100%;
+  // max-width: 100%;
   
   div {
     // INNER COASTLINE

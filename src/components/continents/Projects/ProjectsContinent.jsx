@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import styles from './ProjectsContinent.module.scss';
 import Continent from '../Continent';
 

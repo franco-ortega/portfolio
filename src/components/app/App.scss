@@ -50,6 +50,9 @@
   --inner-coastline-border-width: 0.1rem;
   --inner-coastline-padding: 0.4rem;
 
+  --inner-coastline-border: var(--inner-coastline-border-width) dashed var(--continent-border);
+  // border: var(--inner-coastline-border-width) dashed var(--continent-border);
+
   --continent-border: brown;
   --continent: rgb(220, 202, 148);
   --continent-font: 'Tangerine';
