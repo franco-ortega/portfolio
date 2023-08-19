@@ -38,16 +38,9 @@
 
 .Island {
   border-radius: inherit;
-  background: linear-gradient(
-    30deg,
-    rgb(206, 165, 112),
-    rgb(206, 165, 112),
-    var(--continent),
-    rgb(206, 165, 112),
-    var(--continent),
-    rgb(187, 168, 142)
-  );
-  background-size: 5% 5%;
+  background: var(--continent-bkgd);
+  background-size: 150% 150%;
+  
 
   position: relative;
   z-index: 1;

@@ -49,23 +49,23 @@
   --inner-coastline-bkgd: rgb(111, 186, 233);
   --inner-coastline-padding: 0.4rem;
 
-  --continent-border: brown;
+  --continent-border-color: brown;
+  --continent-border: 0.2vw solid var(--continent-border-color);
   --continent: rgb(220, 202, 148);
   --continent-font: 'Tangerine';
   --continent-font-bold: 'Tangerine Bold';
   --main-font: Arial, sans-serif;
 
-  --continent-title: clamp(2.25rem, 8vw, 7rem);
-
+  --continent-title: clamp(2.25rem, 8vw, 5rem);
   --continent-bkgd: linear-gradient(
-        210deg,
-        rgb(150, 134, 114),
-        rgb(210, 180, 140),
-        rgb(210, 180, 140),
-        rgb(206, 165, 112),
-        rgb(187, 172, 152),
-        rgb(206, 165, 112)
-      );
+    30deg,
+    rgb(206, 165, 112),
+    rgb(206, 165, 112),
+    rgb(220, 202, 148),
+    rgb(206, 165, 112),
+    rgb(220, 202, 148),
+    rgb(187, 168, 142)
+  );
 
   --continent-popup-title: 5rem;
   --continent-popup-header: 1.25rem;

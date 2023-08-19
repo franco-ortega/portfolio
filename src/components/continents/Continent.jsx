@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './Continent.module.scss';
 
-const Continent = ({ borderShape, path, title }) => {
+const Continent = ({ path, title }) => {
   return (
     <Link to={path}>
-      <div className={styles.Continent} style={borderShape}>
+      <div className={styles.Continent}>
         <div>
           <div>{title}</div>
         </div>
@@ -16,7 +16,6 @@ const Continent = ({ borderShape, path, title }) => {
 };
 
 Continent.propTypes = {
-  borderShape: PropTypes.object.isRequired,
   path: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };

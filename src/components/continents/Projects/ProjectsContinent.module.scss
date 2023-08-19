@@ -11,8 +11,9 @@
   position: relative;
   z-index: 2;
 
-  // border-radius: 84vw 75vw 51vw 38vw;
-  outline: solid white 1px;
+  & div{
+    border-radius: 84vw 75vw 51vw 38vw;
+  }
 
   @include media-query-new(tablet-new) {
     grid-row: 4 / 9;

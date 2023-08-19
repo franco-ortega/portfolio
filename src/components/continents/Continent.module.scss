@@ -17,41 +17,23 @@
       transform: scale(1.075);
     }
   }
-
-  // border-radius: 84vw 75vw 51vw 38vw;
-  // border-radius: inherit;
-  // max-width: 100%;
   
   div {
     // INNER COASTLINE
-    // @extend %inner-coastline;
-    background: var(--inner-coastline-bkgd);
-    border-radius: inherit;
-    padding: var(--inner-coastline-padding);
-    
+    @extend %inner-coastline;
 
     div {
       // LAND
-      // @extend %continent-styles;
-      // background-size: 115% 115%;
-      border: 0.2vw solid var(--continent-border);
-      border-radius: inherit;
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
-      font-family: var(--continent-font-bold);
-
-      background: var(--continent-bkgd);
-
+      @extend %continent;
       padding: 0.5rem 1rem;
 
       // CONTINENT FONT SIZE FOR TITLE
       --continent-title: clamp(2.25rem, 8vw, 5rem);
+      font-size: var(--continent-title);
       
       @include media-query-landscape-mobile {
         // --continent-title: 1.5rem;
       }
-      font-size: var(--continent-title);
 
       @include media-query-new(tablet-new) {
         // padding: 0.8rem 1.2rem;
@@ -89,58 +71,3 @@
 // @include media-query-new(desktop-small-new) {
 // @include media-query-new(desktop-medium-new) {
 // @media (prefers-reduced-motion: reduce) {
-
-
-  @keyframes coastal-wave {
-    0% {
-      background-position: 0 100%;
-    }
-    25% {
-      background-position: 50% 0;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    75% {
-      background-position: 50% 75%;
-    }
-    100% {
-      background-position: 0 100%;
-    }
-  }
-  
-  @-moz-keyframes coastal-wave {
-    0% {
-      background-position: 0 50%;
-    }
-    25% {
-      background-position: 50% 0;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    75% {
-      background-position: 50% 75%;
-    }
-    100% {
-      background-position: 0 50%;
-    }
-  }
-  
-  @-webkit-keyframes coastal-wave {
-    0% {
-      background-position: 0 50%;
-    }
-    25% {
-      background-position: 50% 0;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    75% {
-      background-position: 50% 75%;
-    }
-    100% {
-      background-position: 0 50%;
-    }
-  }

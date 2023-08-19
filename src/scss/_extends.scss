@@ -69,18 +69,18 @@
 }
 
 %inner-coastline {
-  background: var(--inner-coastline);
-  border-radius: inherit;
   padding: var(--inner-coastline-padding);
+  border-radius: inherit;
+  background: var(--inner-coastline);
 }
 
-%continent-styles {
-  background-size: 115% 115%;
-  border: 0.2vw solid var(--continent-border);
+%continent {
+  border: var(--continent-border);
   border-radius: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
+  background: var(--continent-bkgd);
+  background-size: 115% 115%;
+  
   font-family: var(--continent-font-bold);
 }
 

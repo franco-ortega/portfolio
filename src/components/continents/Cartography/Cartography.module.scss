@@ -51,17 +51,7 @@
 }
 
 .Continent {
-  @extend %continent-styles;
-  background: linear-gradient(
-    30deg,
-    rgb(206, 165, 112),
-    rgb(206, 165, 112),
-    var(--continent),
-    rgb(206, 165, 112),
-    var(--continent),
-    rgb(187, 168, 142)
-  );
-  background-size: 3% 5%;
+  @extend %continent;
 }
 
 .Title {
