@@ -43,7 +43,6 @@
 
 .InnerCoastline {
   @extend %inner-coastline;
-  border: 0.14vw dashed var(--continent-border);
   padding: 0.75vw;
 
   @include media-query-landscape-mobile {
