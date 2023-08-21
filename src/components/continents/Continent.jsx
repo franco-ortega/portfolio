@@ -5,13 +5,13 @@ import styles from './Continent.module.scss';
 
 const Continent = ({ path, title }) => {
   return (
-    <Link to={path}>
-      <div className={styles.Continent}>
+    <div className={styles.Continent}>
+      <Link to={path}>
         <div>
           <div>{title}</div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 
