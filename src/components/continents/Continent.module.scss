@@ -28,7 +28,6 @@
       padding: 0.5rem 1rem;
 
       // CONTINENT FONT SIZE FOR TITLE
-      --continent-title: clamp(2.75rem, 8vw, 5rem);
       font-size: var(--continent-title);
       
       @include media-query-landscape-mobile {
