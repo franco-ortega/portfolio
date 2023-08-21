@@ -1,4 +1,4 @@
-@use '../../scss/' as *;
+@use '../scss/' as *;
 
 * {
   box-sizing: border-box;
@@ -9,12 +9,12 @@
 
 @font-face {
   font-family: 'Tangerine';
-  src: url(../../fonts/tangerine/Tangerine_Regular.ttf);
+  src: url(../fonts/tangerine/Tangerine_Regular.ttf);
 }
 
 @font-face {
   font-family: 'Tangerine Bold';
-  src: url(../../fonts/tangerine/Tangerine_Bold.ttf);
+  src: url(../fonts/tangerine/Tangerine_Bold.ttf);
 }
 
 :root {
