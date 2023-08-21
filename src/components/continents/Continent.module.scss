@@ -32,15 +32,11 @@
       font-size: var(--continent-title);
       
       @include media-query-landscape-mobile {
-        // --continent-title: 1.5rem;
+        --continent-title: 1.5rem;
       }
 
       @include media-query-new(tablet-new) {
-        // padding: 0.8rem 1.2rem;
-      }
-
-      @include media-query-new(desktop-medium-new) {
-        // padding: 1.25rem 2rem;
+        padding: 0.8rem 1.2rem;
       }
     }
   }  
@@ -68,6 +64,6 @@
 
 // media queries:
 // @include media-query-new(tablet-new) {
-// @include media-query-new(desktop-small-new) {
+// @include media-query-new(desktop-small-new) -- REMOVED
 // @include media-query-new(desktop-medium-new) {
 // @media (prefers-reduced-motion: reduce) {
