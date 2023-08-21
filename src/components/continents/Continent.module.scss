@@ -13,7 +13,7 @@
   
   // RESTRICT TRANSFORM TO DEVICES THAT HOVER
   @media (hover: hover) and (pointer: fine) {
-    &:hover:has(div) {
+    &:hover {
       transform: scale(1.075);
     }
   }
