@@ -1,14 +1,11 @@
 import React from 'react';
-import Island from './Island';
+import Island from '../islands/Island';
 import styles from './Twitter.module.scss';
 
 const Twitter = () => {
   return (
     <section className={styles.Twitter}>
-      <Island
-        title={'Twitter'}
-        url={'https://twitter.com/FrancoOrtegaDev'}
-      />
+      <Island title={'Twitter'} url={'https://twitter.com/FrancoOrtegaDev'} />
     </section>
   );
 };

@@ -1,0 +1,62 @@
+@use '../../scss/' as *;
+
+.Continent {
+  // OUTER COASTLINE
+  @extend %coastal-shadow-and-waves;
+  
+  // TRANSFORMS ON FOCUS AND HOVER
+  @extend %half-second-transition;
+
+  &:focus-within {
+    transform: scale(1.075);
+  }
+  
+  // RESTRICT TRANSFORM TO DEVICES THAT HOVER
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transform: scale(1.075);
+    }
+  }
+  
+  div {
+    // INNER COASTLINE
+    @extend %inner-coastline;
+
+    div {
+      // LAND
+      @extend %continent;
+      padding: 0.5rem 1rem;
+
+      // CONTINENT FONT SIZE FOR TITLE
+      font-size: var(--continent-title);
+      
+      @include media-query-landscape-mobile {
+        --continent-title: 1.5rem;
+      }
+
+      @include media-query-new(tablet-new) {
+        padding: 0.8rem 1.2rem;
+      }
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  
+    &:focus-within {
+      transform: none;
+      box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+    }
+  
+    &:hover {
+      transform: none;
+      box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+    }
+  }
+}
+
+
+// media queries:
+// @include media-query-new(tablet-new)
+// @include media-query-new(desktop-medium-new)
+// @media (prefers-reduced-motion: reduce)

@@ -1,18 +1,12 @@
 @use './breakpoints' as *;
 
-%moving-waves {
-  box-shadow: var(--coastline-box-shadow) var(--coastline-shadow-color);
+%coastal-shadow-and-waves {
+  box-shadow: var(--coastline-shadow);
+
   padding: var(--outer-coastline-padding);
 
-  background: linear-gradient(
-    90deg,
-    var(--outer-coastline),
-    rgb(77, 152, 199),
-    rgb(106, 178, 223),
-    rgb(74, 146, 190)
-  );
-  background-size: 15% 15%;
-
+  background: var(--outer-coastline-bkgd);
+  background-size: var(--outer-coastline-bkgd-size);
   animation: coastal-wave 20s ease infinite both;
   -moz-animation: coastal-wave 20s ease infinite both;
   -webkit-animation: coastal-wave 20s ease infinite both;
@@ -75,19 +69,18 @@
 }
 
 %inner-coastline {
-  background: var(--inner-coastline);
-  border: var(--inner-coastline-border-width) dashed var(--continent-border);
-  border-radius: inherit;
   padding: var(--inner-coastline-padding);
+  border-radius: inherit;
+  background: var(--inner-coastline);
 }
 
-%continent-styles {
-  background-size: 115% 115%;
-  border: 0.2vw solid var(--continent-border);
+%continent {
+  border: var(--continent-border);
   border-radius: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
+  background: var(--continent-bkgd);
+  background-size: 115% 115%;
+  
   font-family: var(--continent-font-bold);
 }
 

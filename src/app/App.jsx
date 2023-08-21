@@ -1,20 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Ocean from '../ocean/Ocean';
-import ProjectsPopUp from '../continents/Projects/ProjectsPopUp';
-import ProfilePopUp from '../continents/Profile/ProfilePopUp';
-import CartographyDetails from '../continents/Cartography/CartographyDetails';
-import RootRPGDetails from '../projects/RootRPG/RootRPGDetails';
-import EbbDetails from '../projects/Ebb/EbbDetails';
-import WeatherBeatsDetails from '../projects/WeatherBeats/WeatherBeatsDetails';
-import BeHumanDetails from '../projects/BeHuman/BeHumanDetails';
-import MajorArcanaDetails from '../projects/MajorArcana/MajorArcanaDetails';
-import April from '../maps/April';
-import Ganderlund from '../maps/Ganderlund';
-import Harland from '../maps/Harland';
-import Gruenne from '../maps/Gruenne';
-import MarneOsso from '../maps/MarneOsso';
-import Strigi from '../maps/Strigi';
+import Ocean from '../components/ocean/Ocean';
+import ProjectsPopUp from '../components/continents/Projects/ProjectsPopUp';
+import ProfilePopUp from '../components/continents/Profile/ProfilePopUp';
+import CartographyDetails from '../components/continents/Cartography/CartographyDetails';
+import RootRPGDetails from '../components/projects/RootRPG/RootRPGDetails';
+import EbbDetails from '../components/projects/Ebb/EbbDetails';
+import WeatherBeatsDetails from '../components/projects/WeatherBeats/WeatherBeatsDetails';
+import BeHumanDetails from '../components/projects/BeHuman/BeHumanDetails';
+import MajorArcanaDetails from '../components/projects/MajorArcana/MajorArcanaDetails';
+import April from '../components/maps/April';
+import Ganderlund from '../components/maps/Ganderlund';
+import Harland from '../components/maps/Harland';
+import Gruenne from '../components/maps/Gruenne';
+import MarneOsso from '../components/maps/MarneOsso';
+import Strigi from '../components/maps/Strigi';
 import './App.scss';
 
 const App = () => {
