@@ -30,7 +30,7 @@
 }
 
 .OuterCoastline {
-  @extend %moving-waves;
+  @extend %coastal-shadow-and-waves;
   @extend %half-second-transition;
   border-radius: 84vw 75vw 51vw 38vw;
   max-width: 100%;
@@ -41,7 +41,7 @@
 }
 
 .Continent {
-  @extend %continent-styles;
+  @extend %continent;
   background: linear-gradient(
     210deg,
     rgb(150, 134, 114),

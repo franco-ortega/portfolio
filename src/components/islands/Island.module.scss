@@ -5,7 +5,14 @@
 }
 
 .OuterCoastline {
-  background: var(--outer-coastline);
+  background: var(--outer-coastline-bkgd);
+  background-size: 15% 15%;
+  animation: coastal-wave 20s ease infinite both;
+  -moz-animation: coastal-wave 20s ease infinite both;
+  -webkit-animation: coastal-wave 20s ease infinite both;
+  -o-animation: coastal-wave 20s ease infinite both;
+  -ms-animation: coastal-wave 20s ease infinite both;
+
   border-radius: 50%;
   box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow-color);
 
@@ -20,7 +27,6 @@
 
 .InnerCoastline {
   background: var(--inner-coastline);
-  border: 0.1vw dashed var(--continent-border);
   border-radius: inherit;
 
   padding: 0.25rem;
@@ -32,16 +38,9 @@
 
 .Island {
   border-radius: inherit;
-  background: linear-gradient(
-    30deg,
-    rgb(206, 165, 112),
-    rgb(206, 165, 112),
-    var(--continent),
-    rgb(206, 165, 112),
-    var(--continent),
-    rgb(187, 168, 142)
-  );
-  background-size: 5% 5%;
+  background: var(--continent-bkgd);
+  background-size: 150% 150%;
+  
 
   position: relative;
   z-index: 1;
@@ -88,3 +87,58 @@
 // @include media-query-new(desktop-large-new) {
 // @media (prefers-reduced-motion: reduce) {
 // @include media-query-landscape-mobile {
+
+
+  @keyframes coastal-wave {
+    0% {
+      background-position: 0 100%;
+    }
+    25% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 75%;
+    }
+    100% {
+      background-position: 0 100%;
+    }
+  }
+  
+  @-moz-keyframes coastal-wave {
+    0% {
+      background-position: 0 50%;
+    }
+    25% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 75%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  
+  @-webkit-keyframes coastal-wave {
+    0% {
+      background-position: 0 50%;
+    }
+    25% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 75%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }

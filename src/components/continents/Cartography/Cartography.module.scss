@@ -34,7 +34,7 @@
 }
 
 .OuterCoastline {
-  @extend %moving-waves;
+  @extend %coastal-shadow-and-waves;
   @extend %half-second-transition;
   border-radius: 60% 40% 60% 35%;
 
@@ -43,7 +43,6 @@
 
 .InnerCoastline {
   @extend %inner-coastline;
-  border: 0.14vw dashed var(--continent-border);
   padding: 0.75vw;
 
   @include media-query-landscape-mobile {
@@ -52,17 +51,7 @@
 }
 
 .Continent {
-  @extend %continent-styles;
-  background: linear-gradient(
-    30deg,
-    rgb(206, 165, 112),
-    rgb(206, 165, 112),
-    var(--continent),
-    rgb(206, 165, 112),
-    var(--continent),
-    rgb(187, 168, 142)
-  );
-  background-size: 3% 5%;
+  @extend %continent;
 }
 
 .Title {

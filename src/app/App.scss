@@ -1,4 +1,4 @@
-@use '../../scss/' as *;
+@use '../scss/' as *;
 
 * {
   box-sizing: border-box;
@@ -9,18 +9,18 @@
 
 @font-face {
   font-family: 'Tangerine';
-  src: url(../../fonts/tangerine/Tangerine_Regular.ttf);
+  src: url(../fonts/tangerine/Tangerine_Regular.ttf);
 }
 
 @font-face {
   font-family: 'Tangerine Bold';
-  src: url(../../fonts/tangerine/Tangerine_Bold.ttf);
+  src: url(../fonts/tangerine/Tangerine_Bold.ttf);
 }
 
 :root {
   --bordercolor-one: rgb(126, 96, 18);
   --bordercolor-two: rgb(200, 200, 1);
-
+  
   --lightestblue: rgb(21, 103, 209);
   --lighterblue: rgb(29, 46, 201);
   --middleblue: rgb(46, 29, 204);
@@ -33,23 +33,38 @@
   --yellow-four: rgb(248, 248, 93);
   --yellow-five: rgb(245, 245, 148);
 
-  --coastline-box-shadow: 0vw 0vw 2vw 1.5vw;
-  --coastline-shadow-color: darkblue;
+  --coastline-shadow: 0vw 0vw 2vw 1.5vw darkblue;
 
-  --outer-coastline: rgb(87, 171, 223);
+  --outer-coastline-bkgd: linear-gradient(
+    90deg,
+    rgb(87, 171, 223),
+    rgb(77, 152, 199),
+    rgb(106, 178, 223),
+    rgb(74, 146, 190)
+  );
+  --outer-coastline-bkgd-size: 15% 15%;
   --outer-coastline-padding: 0.4rem;
 
-  --inner-coastline-padding: 0.4rem;
-  --inner-coastline-border-width: 0.1rem;
   --inner-coastline: rgb(111, 186, 233);
+  --inner-coastline-bkgd: rgb(111, 186, 233);
+  --inner-coastline-padding: 0.4rem;
 
-  --continent-border: brown;
-  --continent: rgb(220, 202, 148);
+  --continent-border-color: brown;
+  --continent-border: 0.2vw solid var(--continent-border-color);
+  --continent-bkgd: linear-gradient(
+    30deg,
+    rgb(206, 165, 112),
+    rgb(206, 165, 112),
+    rgb(220, 202, 148),
+    rgb(206, 165, 112),
+    rgb(220, 202, 148),
+    rgb(187, 168, 142)
+  );
+
   --continent-font: 'Tangerine';
   --continent-font-bold: 'Tangerine Bold';
   --main-font: Arial, sans-serif;
-
-  --continent-title: clamp(2.25rem, 8vw, 7rem);
+  --continent-title: clamp(2.25rem, 8vw, 5rem);
 
   --continent-popup-title: 5rem;
   --continent-popup-header: 1.25rem;
@@ -78,17 +93,13 @@
 
   @include media-query-new(desktop-small-new) {
     --outer-coastline-padding: 0.7rem;
-
     --inner-coastline-padding: 0.65rem;
-
-    // --inner-coastline-border-width: 0.1rem;
   }
 
   @include media-query-landscape-mobile {
-    --continent-title: 1.5rem;
-
     --outer-coastline-padding: 0.2rem;
     --inner-coastline-padding: 0.1rem;
+    --continent-title: 1.5rem;
   }
 }
 
@@ -112,11 +123,6 @@ a:hover {
 
 @include media-query(tablet) {
   :root {
-    // --outer-coastline-padding: 0.5rem;
-    // --inner-coastline-padding: 0.5rem;
-
-    // --inner-coastline-border-width: 0.1rem;
-
     --popup-header-text: 3vw;
     --popup-text: 2.75vw;
   }
@@ -131,8 +137,6 @@ a:hover {
 
 @include media-query(mobile) {
   :root {
-    // --outer-coastline-padding: 0.4rem;
-
     --continent-popup-title: 4rem;
     --popup-header-text: 3.4vw;
     --popup-text: 3.75vw;
