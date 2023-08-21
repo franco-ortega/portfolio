@@ -38,28 +38,23 @@
         padding: 0.8rem 1.2rem;
       }
     }
-  }  
-}
+  }
 
-
-@media (prefers-reduced-motion: reduce) {
-  .Continent:focus-within {
-    transform: none;
-
-    .OuterCoastline {
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  
+    &:focus-within {
+      transform: none;
+      box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+    }
+  
+    &:hover {
+      transform: none;
       box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
     }
   }
-
-  .OuterCoastline:hover {
-    transform: none;
-    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
-  }
-
-  .OuterCoastline {
-    animation: none;
-  }
 }
+
 
 // media queries:
 // @include media-query-new(tablet-new) {
