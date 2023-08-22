@@ -3,8 +3,8 @@ import styles from './Legend.module.scss';
 
 const Legend = () => {
   return (
-    <section className={styles.LegendBox}>
-      <div className={styles.Legend}>
+    <section className={styles.Legend}>
+      <div>
         <h3>Legend</h3>
         <div>
           <ul>
@@ -17,37 +17,36 @@ const Legend = () => {
           <ul>
             <li>JavaScript</li>
             <li>React</li>
-            <li>Redux</li>
             <li>NextJS</li>
           </ul>
           <ul>
             <li>Node</li>
             <li>Express</li>
             <li>GraphQL</li>
-            <li>Postman</li>
           </ul>
           <ul>
             <li>Airtable</li>
             <li>Mongo</li>
             <li>PostgreSQL</li>
+            <li>Prisma</li>
+          </ul>
+          <ul>
             <li>Compass</li>
             <li>pgAdmin</li>
+            <li>Postman</li>
           </ul>
           <ul>
             <li>Jest</li>
             <li>QUnit</li>
             <li>Supertest</li>
-            <li>React TL</li>
+            <li>React Testing Libray</li>
           </ul>
           <ul>
             <li>Git</li>
             <li>GitHub</li>
             <li>Heroku</li>
             <li>Netlify</li>
-          </ul>
-          <ul>
-            <li>Zapier</li>
-            <li>VSCode</li>
+            <li>Vercel</li>
           </ul>
           <ul>
             <li>Figma</li>

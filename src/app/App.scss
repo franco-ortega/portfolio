@@ -90,20 +90,16 @@ body {
   --focus-hover-highlight: yellow;
 
   @include media-query-new(tablet-new) {
-    // --outer-coastline-padding: 0.55rem;
-    // --inner-coastline-padding: 0.5rem;
+    --continent-title-size: clamp(2.25rem, 6vw, 5rem);
   }
 
   @include media-query-new(desktop-small-new) {
-    // --outer-coastline-padding: 0.7rem;
-    // --inner-coastline-padding: 0.65rem;
     --outer-coastline-padding: 0.5rem;
     --inner-coastline-padding: 0.6rem;
   }
 
   @include media-query-landscape-mobile {
-    // --outer-coastline-padding: 0.2rem;
-    // --inner-coastline-padding: 0.1rem;
+    --continent-title-size: clamp(2.25rem, 5vw, 6rem);
   }
 }
 
