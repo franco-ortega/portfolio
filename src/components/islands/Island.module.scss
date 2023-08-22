@@ -49,7 +49,7 @@
   font-size: 0.75rem;
   text-align: center;
 
-  @include media-query-new(desktop-small-new) {
+  @include media-query-new(tablet-new) {
     padding: 0.8rem 0.6rem;
     font-size: 0.9rem;
   }
