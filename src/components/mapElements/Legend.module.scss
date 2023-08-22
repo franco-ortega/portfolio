@@ -1,20 +1,22 @@
 @use '../../scss/' as *;
 
 .Legend {
-  grid-column: 7 / 14;
+  grid-column: 8 / 14;
   grid-row: 5 / 13;
-  outline: red solid 1px;
+  // outline: red solid 1px;
 
   padding-block: 0.5rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   position: relative;
-  z-index: 1;
-
+  z-index: 2;
+  
   & > div {
+    width: 80%;
+    
     background: linear-gradient(
       180deg,
       var(--yellow-one),
@@ -67,9 +69,9 @@
       }
     }
 
+    // media queries for container contents
     @include media-query-new(tablet-new) {
       padding-block: 0.5rem;
-      padding-inline: 0.5rem;
 
       h3 {
         margin-top: 0.5rem;
@@ -128,12 +130,10 @@
     }
   }
 
+  // media queries for grid container
   @include media-query-new(tablet-new) {
-    grid-column: 8 / 12;
+    grid-column: 8 / 14;
     grid-row: 4 / 14;
-
-    padding-block: 0.75rem;
-    padding-inline: 0rem;
   }
 
   @include media-query-new(desktop-small-new) {
