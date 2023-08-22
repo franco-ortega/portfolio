@@ -2,11 +2,15 @@
 
 .LinkedIn {
   grid-column: 7 / 12;
-  grid-row: 16 / 20;
+  grid-row: 18 / 21;
 
   z-index: 2;
 
   @extend %island-centering;
+
+  @include media-query-new(tablet-new) {
+    grid-row: 18 / 20;
+  }
 
   @include media-query-new(desktop-small-new) {
     grid-column: 5 / 8;

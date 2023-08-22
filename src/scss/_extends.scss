@@ -228,3 +228,24 @@
     // outline: 3px dotted yellow;
   }
 }
+
+%outline {
+  outline: 1px solid white;
+
+  @include media-query-new(tablet-new) {
+    outline: 1px solid red;
+  }
+
+  @include media-query-new(desktop-small-new) {
+    outline: 1px solid yellow;
+  }
+
+  @include media-query-new(desktop-medium-new) {
+    outline: 1px solid green;
+  }
+
+  @include media-query-new(desktop-large-new) {
+    outline: 1px solid lightblue;
+  }
+}
+
