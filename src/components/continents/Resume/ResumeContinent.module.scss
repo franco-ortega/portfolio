@@ -1,27 +1,28 @@
 @use '../../../scss/' as *;
 
-.ProjectsContinent {
-  grid-column: 1 / 8;
-  grid-row: 4 / 9;
+.ResumeContinent {
+  grid-column: 1 / 7;
+  grid-row: 14 / 18;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   position: relative;
-  z-index: 2;
+  z-index: 1;
 
   & div{
-    border-radius: 84vw 75vw 51vw 38vw;
+    border-radius: 520vw 270vw 495vw 190vw;
   }
 
   @include media-query-new(tablet-new) {
-    grid-column: 1 / 5;
-    grid-row: 4 / 9;
+    grid-column: 2 / 6;
+    grid-row: 15 / 21;
   }
 
   @include media-query-new(desktop-small-new) {
-    grid-row: 5 / 11;
+    grid-column: 2 / 6;
+    grid-row: 13 / 19;
   }
 }
 

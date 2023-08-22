@@ -7,6 +7,10 @@
   list-style-type: none;
 }
 
+body {
+  min-width: 350px;
+}
+
 @font-face {
   font-family: 'Tangerine';
   src: url(../fonts/tangerine/Tangerine_Regular.ttf);
@@ -43,11 +47,11 @@
     rgb(74, 146, 190)
   );
   --outer-coastline-bkgd-size: 15% 15%;
-  --outer-coastline-padding: 0.4rem;
+  --outer-coastline-padding: 0.3rem;
 
   --inner-coastline: rgb(111, 186, 233);
   --inner-coastline-bkgd: rgb(111, 186, 233);
-  --inner-coastline-padding: 0.4rem;
+  --inner-coastline-padding: 0.3rem;
 
   --continent-border-color: brown;
   --continent-border: 0.2vw solid var(--continent-border-color);
@@ -64,7 +68,7 @@
   --continent-font: 'Tangerine';
   --continent-font-bold: 'Tangerine Bold';
   --main-font: Arial, sans-serif;
-  --continent-title: clamp(2.25rem, 8vw, 5rem);
+  --continent-title-size: clamp(2.25rem, 5vw, 6rem);
 
   --continent-popup-title: 5rem;
   --continent-popup-header: 1.25rem;
@@ -86,20 +90,20 @@
   --focus-hover-highlight: yellow;
 
   @include media-query-new(tablet-new) {
-    --outer-coastline-padding: 0.55rem;
-
-    --inner-coastline-padding: 0.5rem;
+    // --outer-coastline-padding: 0.55rem;
+    // --inner-coastline-padding: 0.5rem;
   }
 
   @include media-query-new(desktop-small-new) {
-    --outer-coastline-padding: 0.7rem;
-    --inner-coastline-padding: 0.65rem;
+    // --outer-coastline-padding: 0.7rem;
+    // --inner-coastline-padding: 0.65rem;
+    --outer-coastline-padding: 0.5rem;
+    --inner-coastline-padding: 0.6rem;
   }
 
   @include media-query-landscape-mobile {
-    --outer-coastline-padding: 0.2rem;
-    --inner-coastline-padding: 0.1rem;
-    --continent-title: 1.5rem;
+    // --outer-coastline-padding: 0.2rem;
+    // --inner-coastline-padding: 0.1rem;
   }
 }
 
