@@ -48,7 +48,7 @@
 
   padding: 0.75rem 1.25rem;
 
-  font-size: var(--continent-title);
+  font-size: var(--continent-title-size);
 
   @include media-query-new(tablet-new) {
     padding-block: 1rem;
