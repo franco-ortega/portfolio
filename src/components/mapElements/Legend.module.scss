@@ -1,46 +1,21 @@
 @use '../../scss/' as *;
 
-.LegendBox {
-  grid-column: 8 / 13;
-  grid-row: 5 / 13;
+.Legend {
+  grid-column: 8 / 14;
+  grid-row: 5 / 14;
 
   padding-block: 0.5rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   position: relative;
-  z-index: 1;
-
-  @include media-query-new(tablet-new) {
-    grid-column: 8 / 12;
-    grid-row: 4 / 14;
-
-    padding-block: 0.75rem;
-    padding-inline: 0rem;
-  }
-
-  @include media-query-new(desktop-small-new) {
-    grid-column: 9 / 13;
-    grid-row: 4 / 15;
-    padding-inline: 1.5rem;
-  }
-
-  @include media-query-new(desktop-medium-new) {
-    padding-inline: 3rem;
-  }
-
-  @include media-query-new(desktop-large-new) {
-    padding-inline: 5rem;
-  }
-
-  @include media-query-landscape-mobile {
-    grid-column: 9 / 13;
-    padding-inline: 1rem;
-  }
-
-  .Legend {
+  z-index: 2;
+  
+  & > div {
+    width: 80%;
+    
     background: linear-gradient(
       180deg,
       var(--yellow-one),
@@ -93,9 +68,9 @@
       }
     }
 
+    // media queries for container contents
     @include media-query-new(tablet-new) {
       padding-block: 0.5rem;
-      padding-inline: 0.5rem;
 
       h3 {
         margin-top: 0.5rem;
@@ -152,5 +127,30 @@
         }
       }
     }
+  }
+
+  // media queries for grid container
+  @include media-query-new(tablet-new) {
+    grid-column: 8 / 14;
+    grid-row: 4 / 14;
+  }
+
+  @include media-query-new(desktop-small-new) {
+    grid-column: 9 / 13;
+    grid-row: 4 / 15;
+    padding-inline: 1.5rem;
+  }
+
+  @include media-query-new(desktop-medium-new) {
+    padding-inline: 3rem;
+  }
+
+  @include media-query-new(desktop-large-new) {
+    padding-inline: 5rem;
+  }
+
+  @include media-query-landscape-mobile {
+    grid-column: 9 / 13;
+    padding-inline: 1rem;
   }
 }
