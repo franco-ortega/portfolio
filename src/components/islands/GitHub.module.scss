@@ -2,16 +2,11 @@
 
 .GitHub {
   grid-column: 6 / 10;
-  grid-row: 13 / 17;
+  grid-row: 14 / 18;
 
   z-index: 2;
 
   @extend %island-centering;
-
-  @include media-query-new(tablet-new) {
-    grid-column: 6 / 9;
-    grid-row: 14 / 17;
-  }
   
   @include media-query-new(desktop-small-new) {
     grid-column: 5 / 7;
@@ -20,5 +15,4 @@
 }
 
 // media queries used
-// @include media-query-new(tablet-new) {
 // @include media-query-new(desktop-small-new) {

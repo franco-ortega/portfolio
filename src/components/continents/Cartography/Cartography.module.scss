@@ -1,9 +1,9 @@
 @use '../../../scss/' as *;
 
 .Cartography {
-  grid-column: 1 / 8;
-  grid-row: 18 / 22;
-
+  grid-column: 2 / 8;
+  grid-row: 18 / 23;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,8 +59,12 @@
 
 .Title {
   transform: rotate(-7.5deg);
-  padding: 1.25rem;
-  font-size: calc(var(--continent-title-size) * .5);
+  padding: 1rem;
+  font-size: calc(var(--continent-title-size) * .75);
+
+  @include media-query-new(desktop-small-new) {
+    font-size: calc(var(--continent-title-size) * .5);
+  }
 
   @include media-query-landscape-mobile {
     font-size: 1rem;
