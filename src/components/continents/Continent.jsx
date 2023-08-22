@@ -6,11 +6,19 @@ import styles from './Continent.module.scss';
 const Continent = ({ path, title }) => {
   return (
     <div className={styles.Continent}>
-      <Link to={path}>
-        <div>
-          <div>{title}</div>
-        </div>
-      </Link>
+      {path.includes('Resume_Franco_Ortega') ? (
+        <a href={path} rel='noreferrer' target='_blank'>
+          <div>
+            <div>{title}</div>
+          </div>
+        </a>
+      ) : (
+        <Link to={path}>
+          <div>
+            <div>{title}</div>
+          </div>
+        </Link>
+      )}
     </div>
   );
 };

@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from './ResumeContinent.module.scss';
+import resume from '../../../assets/Resume_Franco_Ortega.pdf';
 import Continent from '../Continent';
+import styles from './ResumeContinent.module.scss';
 
 const ResumeContinent = () => {
   return (
     <section className={styles.ResumeContinent}>
-      <Continent path='/resume' title={'Resume'} />
+      <Continent path={resume} title={'Resume'} />
     </section>
   );
 };
