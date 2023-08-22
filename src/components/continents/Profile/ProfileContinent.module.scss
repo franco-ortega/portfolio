@@ -16,6 +16,7 @@
   }
 
   @include media-query-new(tablet-new) {
+    grid-column: 3 / 7;
     grid-row: 9 / 15;
   }
 
