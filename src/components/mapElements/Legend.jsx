@@ -3,8 +3,8 @@ import styles from './Legend.module.scss';
 
 const Legend = () => {
   return (
-    <section className={styles.LegendBox}>
-      <div className={styles.Legend}>
+    <section className={styles.Legend}>
+      <div>
         <h3>Legend</h3>
         <div>
           <ul>

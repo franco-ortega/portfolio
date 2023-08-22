@@ -92,7 +92,7 @@ body {
   @include media-query-new(tablet-new) {
     // --outer-coastline-padding: 0.55rem;
     // --inner-coastline-padding: 0.5rem;
-    --continent-title-size: clamp(2.25rem, 8vw, 6rem);
+    --continent-title-size: clamp(2.25rem, 6vw, 6rem);
   }
 
   @include media-query-new(desktop-small-new) {

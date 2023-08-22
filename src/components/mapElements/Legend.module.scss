@@ -1,8 +1,9 @@
 @use '../../scss/' as *;
 
-.LegendBox {
-  grid-column: 8 / 13;
+.Legend {
+  grid-column: 7 / 14;
   grid-row: 5 / 13;
+  outline: red solid 1px;
 
   padding-block: 0.5rem;
 
@@ -13,34 +14,7 @@
   position: relative;
   z-index: 1;
 
-  @include media-query-new(tablet-new) {
-    grid-column: 8 / 12;
-    grid-row: 4 / 14;
-
-    padding-block: 0.75rem;
-    padding-inline: 0rem;
-  }
-
-  @include media-query-new(desktop-small-new) {
-    grid-column: 9 / 13;
-    grid-row: 4 / 15;
-    padding-inline: 1.5rem;
-  }
-
-  @include media-query-new(desktop-medium-new) {
-    padding-inline: 3rem;
-  }
-
-  @include media-query-new(desktop-large-new) {
-    padding-inline: 5rem;
-  }
-
-  @include media-query-landscape-mobile {
-    grid-column: 9 / 13;
-    padding-inline: 1rem;
-  }
-
-  .Legend {
+  & > div {
     background: linear-gradient(
       180deg,
       var(--yellow-one),
@@ -152,5 +126,32 @@
         }
       }
     }
+  }
+
+  @include media-query-new(tablet-new) {
+    grid-column: 8 / 12;
+    grid-row: 4 / 14;
+
+    padding-block: 0.75rem;
+    padding-inline: 0rem;
+  }
+
+  @include media-query-new(desktop-small-new) {
+    grid-column: 9 / 13;
+    grid-row: 4 / 15;
+    padding-inline: 1.5rem;
+  }
+
+  @include media-query-new(desktop-medium-new) {
+    padding-inline: 3rem;
+  }
+
+  @include media-query-new(desktop-large-new) {
+    padding-inline: 5rem;
+  }
+
+  @include media-query-landscape-mobile {
+    grid-column: 9 / 13;
+    padding-inline: 1rem;
   }
 }
