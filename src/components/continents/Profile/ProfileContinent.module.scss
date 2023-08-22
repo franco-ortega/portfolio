@@ -1,8 +1,9 @@
 @use '../../../scss/' as *;
 
 .ProfileContinent {
-  grid-column: 2 / 8;
+  grid-column: 2 / 9;
   grid-row: 9 / 14;
+  outline: white solid 1px;
 
   display: flex;
   align-items: center;
@@ -16,13 +17,17 @@
   }
 
   @include media-query-new(tablet-new) {
-    grid-column: 3 / 7;
+    grid-column: 2 / 8;
     grid-row: 9 / 15;
   }
 
   @include media-query-new(desktop-small-new) {
     grid-column: 5 / 9;
     grid-row: 7 / 13;
+  }
+
+  @include media-query-landscape-mobile {
+    grid-column: 5 / 9;
   }
 }
 
