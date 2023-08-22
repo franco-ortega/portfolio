@@ -34,7 +34,7 @@
         --continent-title: 1.5rem;
       }
 
-      @include media-query-new(tablet-new) {
+      @include media-query-new(desktop-small-new) {
         padding: 0.8rem 1.2rem;
       }
     }
