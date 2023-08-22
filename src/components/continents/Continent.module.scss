@@ -1,6 +1,10 @@
 @use '../../scss/' as *;
 
 .Continent {
+  width: 55%;
+  min-width: fit-content;
+  text-align: center;
+  
   // OUTER COASTLINE
   @extend %coastal-shadow-and-waves;
   
@@ -17,24 +21,30 @@
       transform: scale(1.075);
     }
   }
-  
+
+  @include media-query-new(desktop-small-new) {
+    width: 50%;
+  }
+
   div {
     // INNER COASTLINE
     @extend %inner-coastline;
 
     div {
       // LAND
+      min-width: fit-content;
+
       @extend %continent;
       padding: 0.5rem 1rem;
 
       // CONTINENT FONT SIZE FOR TITLE
-      font-size: var(--continent-title);
+      font-size: var(--continent-title-size);
       
       @include media-query-landscape-mobile {
-        --continent-title: 1.5rem;
+        // --continent-title-size: 1.5rem;
       }
 
-      @include media-query-new(tablet-new) {
+      @include media-query-new(desktop-small-new) {
         padding: 0.8rem 1.2rem;
       }
     }
