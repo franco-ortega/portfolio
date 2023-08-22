@@ -1,8 +1,10 @@
 @use '../../../scss/' as *;
 
 .Cartography {
-  grid-column: 7 / 13;
-  grid-row: 14 / 18;
+  grid-column: 1 / 8;
+  grid-row: 18 / 22;
+
+  outline: 1px solid white;
 
   display: flex;
   align-items: center;
@@ -14,8 +16,9 @@
   @extend %half-second-transition;
 
   @include media-query-new(tablet-new) {
-    grid-column: 8 / 13;
-    grid-row: 14 / 19;
+    grid-column: 4 / 9;
+    grid-row: 19 / 23;
+
   }
 
   @include media-query-new(desktop-small-new) {
