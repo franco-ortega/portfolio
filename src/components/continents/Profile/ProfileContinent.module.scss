@@ -1,0 +1,30 @@
+@use '../../../scss/' as *;
+
+.ProfileContinent {
+  grid-column: 2 / 8;
+  grid-row: 9 / 14;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  z-index: 1;
+
+  & div{
+    border-radius: 120vw 70vw 95vw 90vw;
+  }
+
+  @include media-query-new(tablet-new) {
+    grid-row: 9 / 15;
+  }
+
+  @include media-query-new(desktop-small-new) {
+    grid-column: 5 / 9;
+    grid-row: 7 / 13;
+  }
+}
+
+// media queries:
+// @include media-query-new(tablet-new)
+// @include media-query-new(desktop-small-new)
