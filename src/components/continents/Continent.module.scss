@@ -31,7 +31,7 @@
       font-size: var(--continent-title);
       
       @include media-query-landscape-mobile {
-        --continent-title: 1.5rem;
+        // --continent-title: 1.5rem;
       }
 
       @include media-query-new(desktop-small-new) {

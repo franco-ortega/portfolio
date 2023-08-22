@@ -68,7 +68,7 @@ body {
   --continent-font: 'Tangerine';
   --continent-font-bold: 'Tangerine Bold';
   --main-font: Arial, sans-serif;
-  --continent-title: clamp(2.25rem, 8vw, 5rem);
+  --continent-title: clamp(2.25rem, 5vw, 6rem);
 
   --continent-popup-title: 5rem;
   --continent-popup-header: 1.25rem;
@@ -103,7 +103,7 @@ body {
   @include media-query-landscape-mobile {
     --outer-coastline-padding: 0.2rem;
     --inner-coastline-padding: 0.1rem;
-    --continent-title: 1.5rem;
+    outline: 1px solid white;
   }
 }
 
