@@ -18,7 +18,6 @@
   @include media-query-new(tablet-new) {
     grid-column: 4 / 9;
     grid-row: 19 / 23;
-
   }
 
   @include media-query-new(desktop-small-new) {
@@ -39,14 +38,17 @@
 .OuterCoastline {
   @extend %coastal-shadow-and-waves;
   @extend %half-second-transition;
+  
   border-radius: 60% 40% 60% 35%;
+  padding: var(--outer-coastline-padding);
 
   transform: rotate(-15deg);
 }
 
 .InnerCoastline {
   @extend %inner-coastline;
-  padding: 0.75vw;
+  
+  padding: var(--inner-coastline-padding);
 
   @include media-query-landscape-mobile {
     padding: 0.1rem;
@@ -59,8 +61,8 @@
 
 .Title {
   transform: rotate(-7.5deg);
-  padding: clamp(1rem, 4vw, 1.75rem);
-  font-size: clamp(1.75rem, 4vw, 3.75rem);
+  padding: 1.25rem;
+  font-size: calc(var(--continent-title-size) * .5);
 
   @include media-query-landscape-mobile {
     font-size: 1rem;
