@@ -7,6 +7,10 @@
   list-style-type: none;
 }
 
+body {
+  min-width: 350px;
+}
+
 @font-face {
   font-family: 'Tangerine';
   src: url(../fonts/tangerine/Tangerine_Regular.ttf);
