@@ -16,6 +16,7 @@
   z-index: -1;
 
   color: hsl(0, 0%, 100%);
+  // font-size: .75rem;
 
   & > div:last-child {
     div + div {
@@ -28,13 +29,17 @@
   }
 
   @include media-query-new(desktop-large-new) {
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
 
     padding-inline: 3vw 0;
+
+    align-items: flex-start;
   }
 
   @include media-query-landscape-mobile {
-    scale: 60%;
+    scale: 80%;
+    grid-column: 1 / 7;
+    padding: 0;
   }
 }
 
