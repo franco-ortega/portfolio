@@ -6,7 +6,7 @@ import Scale from '../mapElements/Scale';
 import Compass from '../mapElements/Compass';
 // import Projects from '../continents/Projects/Projects';
 // import Profile from '../continents/Profile/Profile';
-import Resume from '../continents/Resume/Resume';
+// import Resume from '../continents/Resume/Resume';
 import Cartography from '../continents/Cartography/Cartography';
 import GitHub from '../islands/GitHub';
 import LinkedIn from '../islands/LinkedIn';
@@ -14,6 +14,7 @@ import Email from '../islands/Email';
 import styles from './Ocean.module.scss';
 import ProjectsContinent from '../continents/Projects/ProjectsContinent';
 import ProfileContinent from '../continents/Profile/ProfileContinent';
+import ResumeContinent from '../continents/Resume/ResumeContinent';
 
 const Ocean = () => {
   return (
@@ -30,7 +31,8 @@ const Ocean = () => {
         <ProjectsContinent />
         {/* <Profile /> */}
         <ProfileContinent />
-        <Resume />
+        {/* <Resume /> */}
+        <ResumeContinent />
         <Cartography />
 
         {/* Islands */}
