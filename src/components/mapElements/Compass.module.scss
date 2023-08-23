@@ -12,6 +12,8 @@
   position: absolute;
   z-index: 2;
 
+  @extend %outline;
+
   @include media-query-new(tablet-new) {
     grid-row: 21 / 24;
   }
@@ -27,7 +29,8 @@
   }
 
   @include media-query-landscape-mobile {
-    transform: translateY(-4rem);
+    grid-column: 11 / 13;
+    grid-row: 14 / 20;
     scale: 50%;
   }
 }
