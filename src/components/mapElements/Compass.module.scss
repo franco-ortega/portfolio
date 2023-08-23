@@ -14,12 +14,9 @@
   position: absolute;
   z-index: 2;
 
-  // scale: 150%;
 
   @include media-query-new(tablet-new) {
-    grid-row: 19 / 24;
-
-    scale: 125%;
+    grid-row: 21 / 24;
   }
   
   @include media-query-new(desktop-small-new) {
