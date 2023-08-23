@@ -12,8 +12,6 @@
   position: absolute;
   z-index: 2;
 
-  @extend %outline;
-
   @include media-query-new(tablet-new) {
     grid-row: 21 / 24;
   }
