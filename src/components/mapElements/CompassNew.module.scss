@@ -1,8 +1,6 @@
 @use '../../scss/' as *;
 
 .Compass {
-  @extend %testing-colors-new;
-
   // new
   grid-column: 10 / 13;
   grid-row: 21 / 24;
