@@ -14,23 +14,15 @@ $breakpoints: (
   mobile: 35rem,
   // 560px,
   mobile-narrow: 18.75rem,
+  // 300px
   tablet-new: 35rem,
   // 560px
   desktop-small-new: 56.25rem,
   // 900px
   desktop-medium-new: 70rem,
-  // 900px
-  desktop-large-new: 85rem,
   // 1120px
-  filler: 10rem // 300px // desktop-medium: 85rem,
-  // desktop-small: 70rem,
-  // tablet-wide: 1000px,
-  // tablet: 56rem,
-  // // 900px
-  // junior: 45rem,
-  // mobile: 35rem,
-  // // 500px,
-  // mobile-narrow: 300px
+  desktop-large-new: 85rem,
+  // 1360px
 );
 
 @mixin media-query($key) {
