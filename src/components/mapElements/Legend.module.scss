@@ -94,9 +94,6 @@
     }
 
 
-    @include media-query-new(desktop-medium-new) {
-      // padding-inline: 0.75rem;
-    }
 
     @include media-query-new(desktop-large-new) {
       // padding-inline: 1rem;
@@ -130,10 +127,6 @@
     // padding-inline: 1.5rem;
   }
 
-  @include media-query-new(desktop-medium-new) {
-    // padding-inline: 3rem;
-  }
-
   @include media-query-new(desktop-large-new) {
     // padding-inline: 5rem;
   }
@@ -149,7 +142,6 @@
 media queries used:
 @include media-query-new(tablet-new)
 @include media-query-new(desktop-small-new)
-@include media-query-new(desktop-medium-new
 @include media-query-new(desktop-large-new)
 @include media-query-landscape-mobile
 */
