@@ -15,7 +15,7 @@
   position: relative;
   z-index: 2;
 
-  // border: 1px dashed white;
+  border: 1px dashed white;
   
   // Legend
   & > div {
@@ -36,11 +36,6 @@
     padding-inline: 1.25rem 0.5rem;
     max-height: 100%;
     overflow: auto;
-
-
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
 
     section + section {
       margin-top: 1rem;
@@ -93,14 +88,13 @@
       }
     }
 
-
-
     @include media-query-new(desktop-large-new) {
-      // padding-inline: 1rem;
+      padding-inline: 1.5rem 1rem;
 
-      div {
-        ul {
-          // font-size: 0.9rem;
+      section {
+        ul ul {
+          gap: .9rem;
+          font-size: 0.9rem;
         }
       }
     }
