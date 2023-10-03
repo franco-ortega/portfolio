@@ -14,6 +14,8 @@
   
   position: relative;
   z-index: 2;
+
+  // border: 1px dashed white;
   
   // Legend
   & > div {
@@ -76,20 +78,17 @@
       }
     }
 
-    // media queries for container contents
+    // media queries for Legend contents
     @include media-query-new(tablet-new) {
-      // padding-block: 0.5rem;
+      section {
+        h3 {
+          font-size: 2rem;
+        }
 
-      h3 {
-        // margin-top: 0.5rem;
-        // font-size: 1.75rem;
-      }
-
-      div {
-        ul {
-          // flex-direction: row;
-          // flex-wrap: wrap;
-          // gap: .75rem;
+        ul ul {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: .75rem;
         }
       }
     }
@@ -130,7 +129,7 @@
 
   // media queries for grid container
   @include media-query-new(tablet-new) {
-    grid-column: 8 / 14;
+    grid-column: 7 / 14;
     grid-row: 4 / 14;
   }
 
