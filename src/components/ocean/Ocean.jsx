@@ -3,7 +3,7 @@ import { borderCornerData } from '../mapElements/borderCornerData';
 import BorderCorner from '../mapElements/BorderCorner';
 import Legend from '../mapElements/Legend';
 import Scale from '../mapElements/Scale';
-// import Compass from '../mapElements/Compass';
+import Compass from '../mapElements/Compass';
 import ProjectsContinent from '../continents/Projects/ProjectsContinent';
 import ProfileContinent from '../continents/Profile/ProfileContinent';
 import ResumeContinent from '../continents/Resume/ResumeContinent';
@@ -37,7 +37,7 @@ const Ocean = () => {
         {/* Map Elements */}
         <Legend />
         <Scale />
-        {/* <Compass /> */}
+        <Compass />
 
         {/* Border Corners */}
         <BorderCorner
