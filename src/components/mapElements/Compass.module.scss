@@ -27,13 +27,13 @@
   
   @include media-query-new(desktop-large-new) {
     // grid-row: 15 / 23;
-    scale: 90%;
+    // scale: 90%;
   }
 
   @include media-query-landscape-mobile {
     // grid-column: 10 / 14;
     // grid-row: 16 / 20;
-    scale: 50%;
+    scale: 75%;
   }
 }
 
