@@ -1,39 +1,22 @@
 @use '../../scss/' as *;
 
 .Compass {
-  // grid-column: 10 / 13;
-  // grid-row: 21 / 25;
-
   display: grid;
   height: 20vw;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
 
-  // position: relative;
   position: absolute;
   right: 0;
   bottom: 5%;
   z-index: 2;
-
-  @include media-query-new(tablet-new) {
-    // grid-row: 20 / 25;
-  }
   
   @include media-query-new(desktop-small-new) {
-    // grid-column: 10 / 13;
-    // grid-row: 18 / 21;
     scale: 75%;
     transform: translate(25%, 25%);
   }
-  
-  @include media-query-new(desktop-large-new) {
-    // grid-row: 15 / 23;
-    // scale: 90%;
-  }
 
   @include media-query-landscape-mobile {
-    // grid-column: 10 / 14;
-    // grid-row: 16 / 20;
     scale: 50%;
     transform: translate(50%, 50%);
   }
@@ -167,9 +150,6 @@
   justify-content: center;
 
   position: relative;
-  // top: 25%;
-  // left: 25%;
-  // transform: translate(-50%, -50%);
 }
 
 .InnerCircle {
@@ -253,7 +233,8 @@
   transform: translate(-20%, -50%);
 }
 
-// media queries:
-// @include media-query-new(tablet-new) {
-// @include media-query-new(desktop-small-new) {
-// @include media-query-new(desktop-large-new) {
+/*
+media queries:
+@include media-query-new(desktop-small-new)
+@include media-query-new(landscape-mobile)
+  */
