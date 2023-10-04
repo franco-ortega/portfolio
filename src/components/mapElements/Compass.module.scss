@@ -13,7 +13,7 @@
   
   @include media-query-new(desktop-small-new) {
     scale: 75%;
-    transform: translate(25%, 25%);
+    transform: translate(20%, 20%);
   }
 
   @include media-query-landscape-mobile {
@@ -236,5 +236,5 @@
 /*
 media queries:
 @include media-query-new(desktop-small-new)
-@include media-query-new(landscape-mobile)
+@include media-query-landscape-mobile
   */
