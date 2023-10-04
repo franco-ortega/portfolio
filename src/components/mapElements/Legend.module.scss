@@ -14,6 +14,8 @@
   
   position: relative;
   z-index: 2;
+
+  border: white solid 1px;
   
   // Legend
   & > div {
@@ -111,13 +113,12 @@
 
   // media queries for grid container
   @include media-query-new(tablet-new) {
-    grid-column: 7 / 14;
     grid-row: 4 / 14;
   }
 
   @include media-query-new(desktop-small-new) {
     grid-column: 9 / 13;
-    grid-row: 4 / 15;
+    grid-row: 4 / 16;
   }
 
   @include media-query-new(desktop-large-new) {
