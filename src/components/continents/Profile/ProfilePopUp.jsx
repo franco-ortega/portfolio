@@ -12,12 +12,12 @@ const ProfilePopUp = () => {
           <p className={styles.Name}>Franco Ortega</p>
           <p className={styles.Contact}>
             <a
-              href='mailto:francopdx@gmail.com'
+              href='mailto:francoortegadev@gmail.com'
               rel='noreferrer'
               target='_blank'
               className={styles.ContactLink}
             >
-              francopdx@gmail.com
+              francoortegadev@gmail.com
             </a>
             <a href='tel:503-998-7444' className={styles.ContactLink}>
               503-998-7444
