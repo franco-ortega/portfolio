@@ -18,7 +18,7 @@ const GlowingColorsSummary = () => {
             github={'https://github.com/franco-ortega/glowing-colors'}
           />
         </div>
-        <OpenDetails path={'ebb'} />
+        <OpenDetails path={'glowing-colors'} />
       </div>
     </ProjectSummary>
   );
