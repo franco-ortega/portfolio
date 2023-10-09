@@ -6,6 +6,7 @@ import styles from './ProjectsPopUp.module.scss';
 import WeatherBeatsSummary from '../../projects/WeatherBeats/WeatherBeatsSummary';
 import BeHumanSummary from '../../projects/BeHuman/BeHumanSummary';
 import MajorArcanaSummary from '../../projects/MajorArcana/MajorArcanaSummary';
+import GlowingColorsSummary from '../../projects/GlowingColors/GlowingColorsSummary';
 
 const ProjectsPopUp = () => {
   return (
@@ -16,6 +17,7 @@ const ProjectsPopUp = () => {
         </header>
         <ul>
           <RootRPGSummary />
+          <GlowingColorsSummary />
           <EbbSummary />
           <WeatherBeatsSummary />
           <BeHumanSummary />
