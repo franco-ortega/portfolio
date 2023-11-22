@@ -17,6 +17,7 @@ const Legend = () => {
               <li>JavaScript</li>
               <li>React</li>
               <li>NextJS</li>
+              <li>TypeScript</li>
             </ul>
             <ul>
               <li>Node</li>
