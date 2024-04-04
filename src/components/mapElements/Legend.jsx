@@ -25,10 +25,10 @@ const Legend = () => {
               <li>GraphQL</li>
             </ul>
             <ul>
-              <li>Airtable</li>
-              <li>Mongo</li>
               <li>PostgreSQL</li>
+              <li>Mongo</li>
               <li>Prisma</li>
+              <li>Airtable</li>
             </ul>
             <ul>
               <li>Jest</li>
@@ -65,9 +65,9 @@ const Legend = () => {
               <li>Storybook</li>
             </ul>
             <ul>
+              <li>JIRA</li>
               <li>Asana</li>
               <li>Hive</li>
-              <li>Jira</li>
             </ul>
           </ul>
         </section>
