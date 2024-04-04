@@ -7,9 +7,8 @@ const Compass = () => {
       <div className={styles.TopTriangle}></div>
       <div className={styles.BottomTriangle}></div>
       <div className={styles.LeftTriangle}></div>
-      <div className={styles.RightTriangle}></div>
-      {/* <div className={styles.CornerPointers}></div> */}
-
+      <div className={styles.RightTriangle}></div>*{' '}
+      <div className={styles.CornerPointers}></div> */}
       <div className={styles.OuterRingContainer}>
         <div className={styles.OuterRing}>
           <div className={styles.OuterCircle}>
