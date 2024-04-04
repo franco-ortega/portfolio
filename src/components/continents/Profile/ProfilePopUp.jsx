@@ -45,23 +45,23 @@ const ProfilePopUp = () => {
         </header>
         <div>
           <span>
-            Detail-oriented software engineer who is passionate about creating
-            user-focused products, and excels in collaborative and agile
-            environments. Experienced in developing new features, enhancing
-            existing systems, building internal tools, writing comprehensive
-            documentation, and effectively debugging issues within business
-            applications. Approaches work with optimism and strives to think big
-            while remaining grounded in practicality, ensuring that goals are
-            successfully achieved.
+            Detail-oriented software engineer with a passion for creating
+            user-focused products. Thrives in collaborative, cross-functional,
+            agile environments. Adept at developing innovative features,
+            improving existing systems, creating efficient internal tools, and
+            debugging issues within business applications. Approaches work
+            optimistically to think big while balancing practicality to
+            consistently achieve goals.
           </span>
           <span>
-            Additionally, I grew up very much a math and science kid but have
-            learned to love and nurture my creative side through writing,
-            cartography, and board game design. Other things that bring me joy
-            are bouldering, bike rides, art shows, and visiting friends who have
+            Additionally, despite growing up very much a math and science kid,
+            has learned to love and nurture creativity through writing,
+            cartography, and board game design. Other sources of joy are
+            bouldering, bike rides, art shows, and visiting friends who have
             landed in faraway places. Finally, roller hockey, punk rock, and
-            zines were big parts of my past that taught me a lot about teamwork,
-            expressiveness, and how the world could be a more equitable place.
+            zines were big influences in the past that provided a lot of
+            learnings around team work, expressiveness, and how the world could
+            be a more equitable place.
           </span>
           <span>
             Yes to racial justice, social justice, climate justice, and economic
