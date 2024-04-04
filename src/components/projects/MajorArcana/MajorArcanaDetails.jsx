@@ -32,29 +32,6 @@ const MajorArcanaDetails = () => {
               'https://github.com/Mystechal-Divinators/project-week-tarot-divinators'
             }
           />
-          {/* <p className={styles.ProjectLinks}>
-            <span className={styles.Extension}>
-              <a
-                href='https://mystechal-divinators.github.io/project-week-tarot-divinators/'
-                rel='noreferrer'
-                target='_blank'
-                className={styles.LinkText}
-              >
-                Website
-              </a>
-            </span>
-            <span>|</span>
-            <span className={styles.GitHub}>
-              <a
-                href='https://github.com/Mystechal-Divinators/project-week-tarot-divinators'
-                rel='noreferrer'
-                target='_blank'
-                className={styles.LinkText}
-              >
-                GitHub
-              </a>
-            </span>
-          </p> */}
           <img
             src={MajorArcanaIcon}
             alt='Three tarot cards.'
