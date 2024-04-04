@@ -32,29 +32,6 @@ const BeHumanDetails = () => {
             }
             github={'https://github.com/alchemy-be-human'}
           />
-          {/* <p className={styles.ProjectLinks}>
-            <span className={styles.Extension}>
-              <a
-                href='https://marketplace.visualstudio.com/items?itemName=not-bot.be-human'
-                rel='noreferrer'
-                target='_blank'
-                className={styles.LinkText}
-              >
-                Extension
-              </a>
-            </span>
-            <span>|</span>
-            <span className={styles.GitHub}>
-              <a
-                href='https://github.com/alchemy-be-human'
-                rel='noreferrer'
-                target='_blank'
-                className={styles.LinkText}
-              >
-                GitHub
-              </a>
-            </span>
-          </p> */}
           <img
             src={beHumanIcon}
             alt='beHuman icon of a seated human with an open laptop for a head'

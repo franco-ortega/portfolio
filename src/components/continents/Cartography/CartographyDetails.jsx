@@ -23,15 +23,7 @@ const CartographyDetails = () => {
           to the <span>Grishaverse</span>, I&apos;ve always loved flipping to
           the maps in fantasy novels whenever a new location is mentioned, and
           in recent years, have started creating my own worlds with pen and
-          paper. View more at{' '}
-          <a
-            href='https://www.instagram.com/reefwoodcartography/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            @ReefwoodCartography
-          </a>
-          .
+          paper.
         </section>
         <section>
           <p>Click images to see full maps.</p>
