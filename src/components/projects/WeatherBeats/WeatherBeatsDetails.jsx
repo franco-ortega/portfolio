@@ -35,29 +35,6 @@ const WeatherBeatsDetails = () => {
             github={'https://github.com/WeatherBeats'}
             linkColor={''}
           />
-          {/* <p className={styles.ProjectLinks}>
-            <span className={styles.Extension}>
-              <a
-                href='https://weatherbeats.netlify.app/'
-                rel='noreferrer'
-                target='_blank'
-                className={styles.LinkText}
-              >
-                Website
-              </a>
-            </span>
-            <span>|</span>
-            <span className={styles.GitHub}>
-              <a
-                href='https://github.com/WeatherBeats'
-                rel='noreferrer'
-                target='_blank'
-                className={styles.LinkText}
-              >
-                GitHub
-              </a>
-            </span>
-          </p> */}
         </div>
       </main>
     </FocusOn>
