@@ -83,6 +83,7 @@
       h2 {
         font-size: clamp(2rem, 4vw, 5rem);
         font-weight: 100;
+        display: none;
 
         span {
           display: none;
@@ -93,6 +94,7 @@
     @media (min-height: 700px) {
       header {
         h2 {
+          display: inline;
           span {
             display: inline;
           }
