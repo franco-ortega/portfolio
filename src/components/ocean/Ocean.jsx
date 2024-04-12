@@ -26,6 +26,7 @@ const Ocean = () => {
             </h2>
           </header>
         </div>
+
         {/* Continents */}
         <ProjectsContinent />
         <ProfileContinent />

@@ -205,27 +205,27 @@
 }
 
 %testing-colors-new {
-  // background-color: white;
+  background-color: hsl(0, 0%, 100%, 0.5);
   outline: 2px dotted lightcoral;
 
   @include media-query-new(tablet-new) {
-    // background-color: yellow;
-    // outline: 3px dotted red;
+    background-color: hsl(60, 100%, 50%, 0.5);
+    outline: 2px dotted red;
   }
 
   @include media-query-new(desktop-small-new) {
-    // background-color: aqua;
-    // outline: 3px dotted black;
+    background-color: hsl(180, 100%, 50%, 0.5);
+    outline: 2px dotted black;
   }
 
   @include media-query-new(desktop-medium-new) {
-    // background-color: purple;
-    // outline: 2px dotted white;
+    background-color: hsla(300, 59%, 55%, 0.5);
+    outline: 2px dotted white;
   }
 
   @include media-query-new(desktop-large-new) {
-    // background-color: lightgreen;
-    // outline: 3px dotted yellow;
+    background-color: hsl(120, 73%, 75%, 0.5);
+    outline: 2px dotted yellow;
   }
 }
 
