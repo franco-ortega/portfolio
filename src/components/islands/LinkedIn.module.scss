@@ -16,7 +16,13 @@
     grid-column: 5 / 8;
     grid-row: 19 / 23;
   }
+
+  @include media-query-landscape-mobile {
+    grid-row: 19 / 23;
+  }
 }
 
 // media queries used
-// @include media-query-new(desktop-small-new) {
+// @include media-query-new(tablet-new)
+// @include media-query-new(desktop-small-new)
+// @include media-query-landscape-mobile
