@@ -18,11 +18,14 @@ const Ocean = () => {
     <div className={styles.OceanBorder}>
       <div className={styles.Ocean}>
         {/* Name & Title */}
-        <header>
-          <h1>Franco Ortega</h1>
-          <h2>Full Stack Software Engineer</h2>
-        </header>
-
+        <div>
+          <header>
+            <h1>Franco Ortega</h1>
+            <h2>
+              <span>Full Stack </span>Software Engineer
+            </h2>
+          </header>
+        </div>
         {/* Continents */}
         <ProjectsContinent />
         <ProfileContinent />
