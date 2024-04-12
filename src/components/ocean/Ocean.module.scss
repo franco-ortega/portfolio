@@ -17,6 +17,7 @@
 }
 
 .Ocean {
+  //old
   background: linear-gradient(
     90deg,
     var(--darkerblue),
@@ -25,6 +26,8 @@
     var(--middleblue),
     var(--lightestblue)
   );
+  
+  // new
   background: linear-gradient(
     90deg,
     hsl(240, 100%, 27%),
@@ -33,6 +36,9 @@
     hsl(258, 100%, 14%),
     hsl(240, 100%, 27%),
   );
+
+
+  // same
   background-blend-mode: soft-light;
   background-size: 400% 400%;
 
@@ -68,18 +74,18 @@
     color: gold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--continent-font-bold);
     text-align: center;
 
     h1 {
       // new
       margin-bottom: 0.2rem;
-      font-size: clamp(2.5rem, 4vw, 4rem);
-      font-weight: 500;
+      font-size: clamp(4rem, 7vw, 8rem);
     }
 
     h2 {
       // new
-      font-size: clamp(1.5rem, 3vw, 3rem);
+      font-size: clamp(2rem, 4vw, 5rem);
       font-weight: 100;
       display: none;
     }
