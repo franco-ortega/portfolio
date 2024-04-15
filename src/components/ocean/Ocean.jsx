@@ -26,14 +26,17 @@ const Ocean = () => {
         <ProfileContinent />
         <ResumeContinent />
         <Cartography />
+
         {/* Islands */}
         <GitHub />
         <Email />
         <LinkedIn />
+
         {/* Map Elements */}
         <Legend />
         <Scale />
         <Compass />
+
         {/* Border Corners */}
         <BorderCorner
           grid={borderCornerData.cornerNW.grid}
