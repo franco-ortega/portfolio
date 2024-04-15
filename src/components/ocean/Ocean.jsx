@@ -12,37 +12,28 @@ import GitHub from '../islands/GitHub';
 import LinkedIn from '../islands/LinkedIn';
 import Email from '../islands/Email';
 import styles from './Ocean.module.scss';
+import Title from '../mapElements/title/Title';
 
 const Ocean = () => {
   return (
     <div className={styles.OceanBorder}>
       <div className={styles.Ocean}>
         {/* Name & Title */}
-        <div>
-          <header>
-            <h1>Franco Ortega</h1>
-            <h2>
-              <span>Full Stack </span>Software Engineer
-            </h2>
-          </header>
-        </div>
+        <Title />
 
         {/* Continents */}
         <ProjectsContinent />
         <ProfileContinent />
         <ResumeContinent />
         <Cartography />
-
         {/* Islands */}
         <GitHub />
         <Email />
         <LinkedIn />
-
         {/* Map Elements */}
         <Legend />
         <Scale />
         <Compass />
-
         {/* Border Corners */}
         <BorderCorner
           grid={borderCornerData.cornerNW.grid}
