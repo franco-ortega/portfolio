@@ -1,0 +1,54 @@
+@use '../../../scss/' as *;
+
+.Title {
+  grid-column: 1 / 13;
+  grid-row: 1 / 5;
+  align-self: center;
+
+  header {
+    color: gold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--continent-font-bold);
+    text-align: center;
+
+    h1 {
+    font-size: clamp(4rem, 7vw, 8rem);
+    font-weight: 500;
+    line-height: 0.8;
+    }
+  
+    h2 {
+    font-size: clamp(2rem, 4vw, 5rem);
+    font-weight: 100;
+    display: none;
+
+    span {
+      display: none;
+    }
+    }
+  }
+
+  @media (min-height: 700px) {
+    header {
+    h2 {
+      display: inline;
+      span {
+      display: inline;
+      }
+    }
+    }
+  }
+
+  @include media-query-new(desktop-small-new) {
+    grid-row: 1 / 6;
+  }
+
+  @include media-query-new(desktop-medium-new) {
+    grid-row: 1 / 7;
+  }
+
+  @include media-query-landscape-mobile {
+    grid-row: 1 / 9;
+  }
+}

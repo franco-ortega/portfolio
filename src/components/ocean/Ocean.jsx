@@ -1,31 +1,26 @@
 import React from 'react';
-import { borderCornerData } from '../mapElements/borderCornerData';
-import BorderCorner from '../mapElements/BorderCorner';
+import Border from '../mapElements/border/Border';
+import Compass from '../mapElements/Compass';
 import Legend from '../mapElements/Legend';
 import Scale from '../mapElements/Scale';
-import Compass from '../mapElements/Compass';
+import Title from '../mapElements/title/Title';
 import ProjectsContinent from '../continents/Projects/ProjectsContinent';
 import ProfileContinent from '../continents/Profile/ProfileContinent';
 import ResumeContinent from '../continents/Resume/ResumeContinent';
 import Cartography from '../continents/Cartography/Cartography';
+import Email from '../islands/Email';
 import GitHub from '../islands/GitHub';
 import LinkedIn from '../islands/LinkedIn';
-import Email from '../islands/Email';
 import styles from './Ocean.module.scss';
+import { borderCornerData } from '../mapElements/border/borderCornerData';
+import BorderCorner from '../mapElements/border/BorderCorner';
 
 const Ocean = () => {
   return (
-    <div className={styles.OceanBorder}>
+    <Border>
       <div className={styles.Ocean}>
         {/* Name & Title */}
-        <div>
-          <header>
-            <h1>Franco Ortega</h1>
-            <h2>
-              <span>Full Stack </span>Software Engineer
-            </h2>
-          </header>
-        </div>
+        <Title />
 
         {/* Continents */}
         <ProjectsContinent />
@@ -61,7 +56,7 @@ const Ocean = () => {
           shape={borderCornerData.cornerSE.shape}
         />
       </div>
-    </div>
+    </Border>
   );
 };
 
