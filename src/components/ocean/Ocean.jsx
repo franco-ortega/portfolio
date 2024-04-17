@@ -1,8 +1,8 @@
 import React from 'react';
 import Border from '../mapElements/border/Border';
-import Compass from '../mapElements/Compass';
-import Legend from '../mapElements/Legend';
-import Scale from '../mapElements/Scale';
+import Compass from '../mapElements/compass/Compass';
+import Legend from '../mapElements/legend/Legend';
+import Scale from '../mapElements/scale/Scale';
 import Title from '../mapElements/title/Title';
 import ProjectsContinent from '../continents/Projects/ProjectsContinent';
 import ProfileContinent from '../continents/Profile/ProfileContinent';
@@ -12,8 +12,6 @@ import Email from '../islands/Email';
 import GitHub from '../islands/GitHub';
 import LinkedIn from '../islands/LinkedIn';
 import styles from './Ocean.module.scss';
-import { borderCornerData } from '../mapElements/border/borderCornerData';
-import BorderCorner from '../mapElements/border/BorderCorner';
 
 const Ocean = () => {
   return (
@@ -37,24 +35,6 @@ const Ocean = () => {
         <Legend />
         <Scale />
         <Compass />
-
-        {/* Border Corners */}
-        <BorderCorner
-          grid={borderCornerData.cornerNW.grid}
-          shape={borderCornerData.cornerNW.shape}
-        />
-        <BorderCorner
-          grid={borderCornerData.cornerNE.grid}
-          shape={borderCornerData.cornerNE.shape}
-        />
-        <BorderCorner
-          grid={borderCornerData.cornerSW.grid}
-          shape={borderCornerData.cornerSW.shape}
-        />
-        <BorderCorner
-          grid={borderCornerData.cornerSE.grid}
-          shape={borderCornerData.cornerSE.shape}
-        />
       </div>
     </Border>
   );

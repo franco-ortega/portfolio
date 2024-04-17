@@ -22,47 +22,51 @@ body {
 }
 
 :root {
-  --bordercolor-one: rgb(126, 96, 18);
-  --bordercolor-two: rgb(200, 200, 1);
   
-  --lightestblue: rgb(21, 103, 209);
-  --lighterblue: rgb(29, 46, 201);
-  --middleblue: rgb(46, 29, 204);
-  --darkerblue: rgb(36, 17, 146);
-  --darkestblue: rgb(41, 17, 129);
+  --lightestblue: hsl(214, 82%, 45%);
+  --lighterblue: hsl(234, 75%, 45%);
+  --middleblue: hsl(246, 75%, 46%);
+  --darkerblue: hsl(249, 79%, 32%);
+  --darkestblue: hsl(253, 77%, 29%);
 
-  --yellow-one: rgb(245, 245, 80);
-  --yellow-two: rgb(245, 245, 148);
-  --yellow-three: rgb(245, 245, 120);
-  --yellow-four: rgb(248, 248, 93);
-  --yellow-five: rgb(245, 245, 148);
+  --yellow-one: hsl(60, 89%, 64%);
+  --yellow-two: hsl(60, 83%, 77%);
+  --yellow-three: hsl(60, 86%, 72%);
+  --yellow-four: hsl(60, 92%, 67%);
+  --yellow-five: hsl(60, 83%, 77%);
+
+  --silver: hsl(0, 0%, 95%);
+  --dark-blue-one: hsl(240, 60%, 25%);
+
+  --bordercolor-one: var(--silver);
+  --bordercolor-two: var(--dark-blue-one);
 
   --coastline-shadow: 0vw 0vw 2vw 1.5vw darkblue;
 
   --outer-coastline-bkgd: linear-gradient(
     90deg,
-    rgb(87, 171, 223),
-    rgb(77, 152, 199),
-    rgb(106, 178, 223),
-    rgb(74, 146, 190)
+    hsl(203, 68%, 61%),
+    hsl(203, 52%, 54%),
+    hsl(203, 65%, 65%),
+    hsl(203, 47%, 52%)
   );
   --outer-coastline-bkgd-size: 15% 15%;
   --outer-coastline-padding: 0.3rem;
 
-  --inner-coastline: rgb(111, 186, 233);
-  --inner-coastline-bkgd: rgb(111, 186, 233);
+  --inner-coastline: hsl(203, 73%, 67%);
+  --inner-coastline-bkgd: hsl(203, 73%, 67%);
   --inner-coastline-padding: 0.3rem;
 
   --continent-border-color: brown;
   --continent-border: 0.2vw solid var(--continent-border-color);
   --continent-bkgd: linear-gradient(
     30deg,
-    rgb(206, 165, 112),
-    rgb(206, 165, 112),
-    rgb(220, 202, 148),
-    rgb(206, 165, 112),
-    rgb(220, 202, 148),
-    rgb(187, 168, 142)
+    hsl(34, 49%, 62%),
+    hsl(34, 49%, 62%),
+    hsl(45, 51%, 72%),
+    hsl(34, 49%, 62%),
+    hsl(45, 51%, 72%),
+    hsl(35, 25%, 65%)
   );
 
   --continent-font: 'Tangerine';
@@ -104,7 +108,7 @@ body {
 }
 
 a {
-  color: rgba(15, 24, 6, 0.8);
+  color: hsla(90, 60%, 6%, 0.8);
   text-decoration: none;
   outline: none;
   border-radius: inherit;
@@ -142,3 +146,12 @@ a:hover {
     --popup-text: 3.75vw;
   }
 }
+
+// media queries used
+// @include media-query-new(tablet-new) {
+// @include media-query-new(desktop-small-new) {
+// @include media-query-landscape-mobile {
+// @include media-query(desktop-medium) {
+// @include media-query(tablet) {
+// @include media-maxWidth-orientation(tablet, landscape) {
+// @include media-query(mobile) {

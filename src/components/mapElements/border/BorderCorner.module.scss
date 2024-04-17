@@ -1,46 +1,26 @@
 @use '../../../scss/' as *;
 
 .BorderCorner {
-  margin: -0.025rem;
+  grid-column: 1 / 13;
+  grid-row: 1 / 25;
 
-  grid-column-start: 1;
-  grid-column-end: 13;
-  grid-row-start: 1;
-  grid-row-end: 25;
+  width: 1rem;
+  aspect-ratio: 1 / 1;
 
-  display: flex;
-
-  div {
-    background: linear-gradient(
-      130deg,
-      var(--bordercolor-one),
-      var(--bordercolor-two)
-    );
-
-    height: 1rem;
-    width: 1rem;
-  }
+  position: relative;
+  z-index: 1;
 
   @include media-query-new(tablet-new) {
-    margin: 0;
-
-    div {
-      height: 1.25rem;
-      width: 1.25rem;
-    }
+    height: 1.25rem;
+    width: 1.25rem; 
   }
 
   @include media-query-new(desktop-small-new) {
-    div {
-      height: 1.5rem;
-      width: 1.5rem;
-    }
-  }
-
-  @include media-query-new(desktop-large-new) {
-    div {
-      height: 1.75rem;
-      width: 1.75rem;
-    }
+    height: 1.5rem;
+    width: 1.5rem;    
   }
 }
+
+// media queries used:
+// @include media-query-new(tablet-new) {
+// @include media-query-new(desktop-small-new) {
