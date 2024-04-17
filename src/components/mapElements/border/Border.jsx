@@ -7,7 +7,9 @@ const Border = ({ children }) => {
   return (
     <div className={styles.Border}>
       <BorderCornerNew />
-
+      <BorderCornerNew />
+      <BorderCornerNew />
+      <BorderCornerNew />
       <>{children}</>
     </div>
   );
