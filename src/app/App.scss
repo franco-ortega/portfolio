@@ -22,11 +22,6 @@ body {
 }
 
 :root {
-  --bordercolor-one: rgb(126, 96, 18);
-  --bordercolor-two: rgb(200, 200, 1);
-  
-  --bordercolor-one: hsl(0, 0%, 85%);
-  --bordercolor-two: rgb(82, 82, 177);
   
   --lightestblue: rgb(21, 103, 209);
   --lighterblue: rgb(29, 46, 201);
@@ -39,6 +34,12 @@ body {
   --yellow-three: rgb(245, 245, 120);
   --yellow-four: rgb(248, 248, 93);
   --yellow-five: rgb(245, 245, 148);
+
+  --silver: hsl(0, 0%, 95%);
+  --dark-blue-one: hsl(240, 60%, 25%);
+
+  --bordercolor-one: var(--silver);
+  --bordercolor-two: var(--dark-blue-one);
 
   --coastline-shadow: 0vw 0vw 2vw 1.5vw darkblue;
 
