@@ -1,18 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './BorderCorner.module.scss';
 
-const BorderCorner = ({ grid, shape }) => {
-  return (
-    <div className={styles.BorderCorner} style={grid}>
-      <div style={shape}></div>
-    </div>
-  );
-};
-
-BorderCorner.propTypes = {
-  grid: PropTypes.object.isRequired,
-  shape: PropTypes.object.isRequired
+const BorderCorner = () => {
+  return <div className={styles.BorderCorner}></div>;
 };
 
 export default BorderCorner;

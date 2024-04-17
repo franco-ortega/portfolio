@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import BorderCorner from './BorderCorner';
 import styles from './Border.module.scss';
-import BorderCornerNew from './BorderCornerNew';
 
 const Border = ({ children }) => {
   return (
     <div className={styles.Border}>
-      <BorderCornerNew />
-      <BorderCornerNew />
-      <BorderCornerNew />
-      <BorderCornerNew />
+      <BorderCorner />
+      <BorderCorner />
+      <BorderCorner />
+      <BorderCorner />
       <>{children}</>
     </div>
   );
