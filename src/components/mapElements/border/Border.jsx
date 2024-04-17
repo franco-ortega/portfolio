@@ -24,12 +24,15 @@ const Border = ({ children }) => {
         customStyles={{
           background: borderCornerGradient(direction.TOP_RIGHT),
           borderRadius: '0% 0% 90% 0%',
+          alignSelf: 'flex-start',
+          justifySelf: 'flex-start',
         }}
       />
       <BorderCorner
         customStyles={{
           background: borderCornerGradient(direction.TOP_LEFT),
           borderRadius: '0% 0% 0% 90%',
+          alignSelf: 'flex-start',
           justifySelf: 'flex-end',
         }}
       />
@@ -38,6 +41,7 @@ const Border = ({ children }) => {
           background: borderCornerGradient(direction.TOP_LEFT),
           borderRadius: '0% 90% 0% 0%',
           alignSelf: 'flex-end',
+          justifySelf: 'flex-start',
         }}
       />
       <BorderCorner
