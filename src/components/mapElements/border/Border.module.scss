@@ -1,9 +1,18 @@
+@use '../../../scss/' as *;
+
 .Border {
   background: linear-gradient(
     130deg,
     var(--bordercolor-one),
-    var(--bordercolor-two)
+    var(--bordercolor-two),
+    var(--bordercolor-one),
+    var(--bordercolor-two),
+    var(--bordercolor-one)
   );
+
+  background-blend-mode: soft-light;
+  background-size: 3% 2%;
+
 
   height: 100vh;
   padding: 0.5rem;
@@ -13,4 +22,16 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(24, 1fr);
+
+  @include media-query-new(tablet-new) {
+    background-size: 2% 1.5%;
+  }
+
+  @include media-query-new(desktop-small-new) {
+    background-size: 1.25% 1.5%;
+  }
+
+  @include media-query-new(desktop-medium-new) {
+    background-size: 1% 1.5%;
+  }
 }
