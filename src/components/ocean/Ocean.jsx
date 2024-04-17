@@ -12,8 +12,6 @@ import Email from '../islands/Email';
 import GitHub from '../islands/GitHub';
 import LinkedIn from '../islands/LinkedIn';
 import styles from './Ocean.module.scss';
-// import { borderCornerData } from '../mapElements/border/borderCornerData';
-// import BorderCorner from '../mapElements/border/BorderCorner';
 
 const Ocean = () => {
   return (
@@ -37,24 +35,6 @@ const Ocean = () => {
         <Legend />
         <Scale />
         <Compass />
-
-        {/* Border Corners */}
-        {/* <BorderCorner
-          grid={borderCornerData.cornerNW.grid}
-          shape={borderCornerData.cornerNW.shape}
-        />
-        <BorderCorner
-          grid={borderCornerData.cornerNE.grid}
-          shape={borderCornerData.cornerNE.shape}
-        />
-        <BorderCorner
-          grid={borderCornerData.cornerSW.grid}
-          shape={borderCornerData.cornerSW.shape}
-        />
-        <BorderCorner
-          grid={borderCornerData.cornerSE.grid}
-          shape={borderCornerData.cornerSE.shape}
-        /> */}
       </div>
     </Border>
   );
