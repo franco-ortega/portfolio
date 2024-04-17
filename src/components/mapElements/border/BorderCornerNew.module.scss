@@ -1,0 +1,30 @@
+.BorderCornerNew {
+  // background-color: yellow;
+  background: linear-gradient(
+      130deg,
+      var(--bordercolor-one),
+      var(--bordercolor-two)
+    );
+
+
+
+  border-radius: 100rem;
+  width: 3rem;
+  aspect-ratio: 1 / 1;
+
+  position: absolute;
+  z-index: 1;
+  
+  left: -2%;
+  top: -2%;
+
+  // left: -2%;
+  // bottom: -2%;
+  
+  // right: -2%;
+  // bottom: -2%;
+  
+  // right: -2%;
+  // top: -2%;
+  
+}
