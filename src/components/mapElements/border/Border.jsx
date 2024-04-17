@@ -6,10 +6,20 @@ import styles from './Border.module.scss';
 const Border = ({ children }) => {
   return (
     <div className={styles.Border}>
-      <BorderCorner />
-      <BorderCorner />
-      <BorderCorner />
-      <BorderCorner />
+      <BorderCorner gridAndShape={{ borderRadius: '0% 0% 90% 0%' }} />
+      <BorderCorner
+        gridAndShape={{ borderRadius: '0% 90% 0% 0%', alignSelf: 'flex-end' }}
+      />
+      <BorderCorner
+        gridAndShape={{ borderRadius: '0% 0% 0% 90%', justifySelf: 'flex-end' }}
+      />
+      <BorderCorner
+        gridAndShape={{
+          borderRadius: '90% 0% 0% 0%',
+          alignSelf: 'flex-end',
+          justifySelf: 'flex-end',
+        }}
+      />
       <>{children}</>
     </div>
   );
