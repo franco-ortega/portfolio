@@ -1,12 +1,6 @@
 @use '../../../scss/' as *;
 
 .BorderCorner {
-  background: linear-gradient(
-      130deg,
-      var(--bordercolor-one),
-      var(--bordercolor-two)
-    );
-
   grid-column: 1 / 13;
   grid-row: 1 / 25;
 
