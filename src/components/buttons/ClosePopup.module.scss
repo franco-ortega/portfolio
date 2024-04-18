@@ -1,7 +1,7 @@
 @use '../../scss/' as *;
 
 .ClosePopup {
-  background: black;
+  background: var(--popup-text);
   border-radius: 50%;
   padding: 0.15vw 0.45vw;
   padding: 0.25rem 0.5rem;
@@ -11,7 +11,8 @@
   left: 0.5rem;
   z-index: 2;
 
-  color: hsl(0, 0%, 100%, 75%);
+  // color: hsl(0, 0%, 100%, 75%);
+  color: var(--popup-bkgd);
   font-size: 1.25rem;
 
   @include media-query(mobile) {
