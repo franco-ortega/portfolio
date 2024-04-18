@@ -46,16 +46,21 @@ body {
   --outer-coastline-bkgd: linear-gradient(
     90deg,
     hsl(203, 68%, 61%),
-    hsl(203, 52%, 54%),
+    hsl(203, 56%, 43%),
     hsl(203, 65%, 65%),
     hsl(203, 47%, 52%)
-  );
-  --outer-coastline-bkgd-size: 15% 15%;
-  --outer-coastline-padding: 0.3rem;
-
-  --inner-coastline: hsl(203, 73%, 67%);
-  --inner-coastline-bkgd: hsl(203, 73%, 67%);
-  --inner-coastline-padding: 0.3rem;
+    );
+    --outer-coastline-bkgd-size: 15% 15%;
+    --outer-coastline-padding: 0.2rem;
+  
+    --inner-coastline: linear-gradient(
+      90deg,
+      hsl(203, 68%, 61%),
+      hsl(203, 59%, 52%),
+      hsl(203, 65%, 65%),
+      hsl(203, 52%, 60%)
+    );
+  --inner-coastline-padding: 0.2rem;
 
   --continent-border-color: brown;
   --continent-border: 0.2vw solid var(--continent-border-color);
@@ -98,8 +103,8 @@ body {
   }
 
   @include media-query-new(desktop-small-new) {
-    --outer-coastline-padding: 0.5rem;
-    --inner-coastline-padding: 0.6rem;
+    --outer-coastline-padding: 0.4rem;
+    --inner-coastline-padding: 0.5rem;
   }
 
   @include media-query-landscape-mobile {
