@@ -15,6 +15,9 @@
     img {
       border-radius: 50%;
       width: 12rem;
+      border-style: solid;
+      border-color: var(--popup-text);
+      border-width: 2px;
     }
 
     // name
