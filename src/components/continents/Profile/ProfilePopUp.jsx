@@ -22,7 +22,7 @@ const ProfilePopUp = () => {
             <a href='tel:503-998-7444' className={styles.ContactLink}>
               503-998-7444
             </a>
-            <div>
+            <span>
               <a
                 href='https://github.com/franco-ortega'
                 rel='noreferrer'
@@ -40,7 +40,7 @@ const ProfilePopUp = () => {
               >
                 LinkedIn
               </a>
-            </div>
+            </span>
           </p>
         </header>
         <div>
