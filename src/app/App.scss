@@ -46,42 +46,22 @@ body {
   --outer-coastline-bkgd: linear-gradient(
     90deg,
     hsl(203, 68%, 61%),
-    hsl(203, 52%, 54%),
+    hsl(203, 56%, 43%),
     hsl(203, 65%, 65%),
     hsl(203, 47%, 52%)
-  );
+    );
+    --outer-coastline-bkgd-size: 15% 15%;
+    --outer-coastline-padding: 0.2rem;
   
-  --outer-coastline-bkgd-size: 15% 15%;
-  --outer-coastline-padding: 0.2rem;
-
+    --inner-coastline: linear-gradient(
+      90deg,
+      hsl(203, 68%, 61%),
+      hsl(203, 56%, 43%),
+      hsl(203, 65%, 65%),
+      hsl(203, 47%, 52%)
+    );
   --inner-coastline: hsl(203, 73%, 67%);
-  
-  --inner-coastline-bkgd: hsl(203, 73%, 67%);
-
   --inner-coastline-padding: 0.2rem;
-
-  
-
-  --outer-coastline-bkgd: linear-gradient(
-    90deg,
-    hsl(203, 68%, 61%),
-    hsl(203, 56%, 43%),
-    hsl(203, 65%, 65%),
-    hsl(203, 47%, 52%)
-  );
-  
-  --inner-coastline: linear-gradient(
-    90deg,
-    hsl(203, 68%, 61%),
-    hsl(203, 56%, 43%),
-    hsl(203, 65%, 65%),
-    hsl(203, 47%, 52%)
-  );
-
-
-
-
-
 
   --continent-border-color: brown;
   --continent-border: 0.2vw solid var(--continent-border-color);
