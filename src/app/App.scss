@@ -40,6 +40,7 @@ body {
 
   --bordercolor-one: var(--silver);
   --bordercolor-two: var(--dark-blue-one);
+  --border-width: 0.5rem;
 
   --coastline-shadow: 0vw 0vw 2vw 1.5vw darkblue;
 
@@ -84,6 +85,11 @@ body {
   --continent-popup-text: 1.2rem;
   --popup-header-text: 1.35rem;
   --popup-text: 1.1rem;
+
+  --popup-bkgd: hsl(0, 0%, 5%);
+  --popup-text: hsl(0, 0%, 90%);
+  --popup-link-text: hsl(250, 90%, 80%);
+  --popup-link-text-hover: hsl(250, 90%, 90%);
 
   --project-summary-title: 1.1rem;
   --project-summary-text: 1.1rem;

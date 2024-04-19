@@ -15,6 +15,9 @@
     img {
       border-radius: 50%;
       width: 12rem;
+      border-style: solid;
+      border-color: var(--popup-text);
+      border-width: 2px;
     }
 
     // name
@@ -49,9 +52,11 @@
 
     text-align: justify;
     overflow: auto;
-    border: 1px solid black;
+    // border: 1px solid black;
+    border: 1px solid var(--popup-text);
     border-radius: 0.5rem;
-    box-shadow: 0 0 0.25rem 0.01rem black;
+    // box-shadow: 0 0 0.25rem 0.01rem black;
+    box-shadow: 0 0 0.25rem 0.01rem var(--popup-text);
   }
 
   @include media-query(mobile) {
