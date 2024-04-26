@@ -4,15 +4,16 @@
   border-radius: inherit;
 
   header {
-    margin-block: 1rem;
+    margin-block: var(--continent-header-margin-block);
 
     font-family: var(--continent-font-bold);
     font-size: var(--continent-popup-title);
     text-align: center;
+    line-height: 1.25;
   }
 
   ul {
-    height: 90%;
+    height: calc(100% - var(--continent-popup-title) - var(--continent-header-margin-block) - 0.25rem);
     max-width: 95%;
     padding-inline: 1rem;
 
