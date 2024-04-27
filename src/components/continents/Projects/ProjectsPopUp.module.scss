@@ -13,6 +13,7 @@
   }
 
   ul {
+    /* height includes 0.25 for line height of header*/
     height: calc(100% - var(--continent-popup-title) - var(--continent-header-margin-block) - 0.25rem);
     max-width: 95%;
     padding-inline: 1rem;
