@@ -19,7 +19,7 @@ const ContinentPopUp = ({ children }) => {
 };
 
 ContinentPopUp.propTypes = {
-  children: PropTypes.element.isRequired
+  children: PropTypes.element.isRequired,
 };
 
 export default ContinentPopUp;
