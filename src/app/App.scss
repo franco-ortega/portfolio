@@ -86,8 +86,10 @@ body {
   --continent-popup-text: 1.2rem;
   --popup-header-text: 1.35rem;
   --popup-text: 1.1rem;
+  
   /* new mobile-first styles */
   --continent-header-margin-block: 1rem;
+  --popup-header-margin-block: 1rem;
 
   --popup-bkgd: hsl(0, 0%, 5%);
   --popup-text: hsl(0, 0%, 90%);
@@ -119,6 +121,7 @@ body {
   @include media-query-landscape-mobile {
     --continent-title-size: clamp(2.25rem, 5vw, 6rem);
     --continent-popup-title: 4rem;
+    --popup-header-margin-block: 0.75rem;
   }
 }
 
