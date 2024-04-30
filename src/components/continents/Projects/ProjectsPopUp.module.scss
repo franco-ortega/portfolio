@@ -8,14 +8,14 @@
     margin-block: var(--popup-header-margin-block);
 
     font-family: var(--continent-font-bold);
-    font-size: var(--continent-popup-title);
+    font-size: var(--popup-title-size);
     text-align: center;
     line-height: 1.25;
   }
 
   ul {
     /* height includes 0.25 for line height of header*/
-    height: calc(100% - var(--continent-popup-title) - var(--continent-header-margin-block) - 0.25rem);
+    height: calc(100% - var(--popup-title-size) - var(--continent-header-margin-block) - 0.25rem);
     max-width: 95%;
     padding-inline: 1rem;
 
