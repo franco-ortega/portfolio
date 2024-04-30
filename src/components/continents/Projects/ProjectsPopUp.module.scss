@@ -4,7 +4,8 @@
   border-radius: inherit;
 
   header {
-    // margin-block: var(--continent-header-margin-block);
+    margin-block: var(--continent-header-margin-block);
+    margin-block: var(--popup-header-margin-block);
 
     font-family: var(--continent-font-bold);
     font-size: var(--continent-popup-title);
