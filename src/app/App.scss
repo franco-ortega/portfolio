@@ -118,6 +118,7 @@ body {
 
   @include media-query-landscape-mobile {
     --continent-title-size: clamp(2.25rem, 5vw, 6rem);
+    --continent-popup-title: 4rem;
   }
 }
 
