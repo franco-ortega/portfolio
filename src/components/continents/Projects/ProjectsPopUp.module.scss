@@ -4,7 +4,7 @@
   border-radius: inherit;
 
   header {
-    margin-block: var(--continent-header-margin-block);
+    // margin-block: var(--continent-header-margin-block);
 
     font-family: var(--continent-font-bold);
     font-size: var(--continent-popup-title);
@@ -19,7 +19,7 @@
     padding-inline: 1rem;
 
     margin-inline: auto;
-    padding-bottom: 4rem;
+    // padding-bottom: 4rem;
     overflow: auto;
 
     display: grid;
@@ -28,8 +28,8 @@
   }
 
   @include media-query(desktop-medium) {
-    height: 100%;
-    clip-path: inset(0 0 2rem 0);
+    height: 95%;
+    overflow: hidden;
 
     ul {
       grid-template-columns: repeat(2, 1fr);
