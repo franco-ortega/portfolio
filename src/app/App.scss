@@ -81,13 +81,15 @@ body {
   --main-font: Arial, sans-serif;
   --continent-title-size: clamp(2.25rem, 5vw, 6rem);
 
-  --continent-popup-title: 5rem;
+  --popup-title-size: 5rem;
   --continent-popup-header: 1.25rem;
   --continent-popup-text: 1.2rem;
   --popup-header-text: 1.35rem;
   --popup-text: 1.1rem;
+  
   /* new mobile-first styles */
   --continent-header-margin-block: 1rem;
+  --popup-header-margin-block: 1rem;
 
   --popup-bkgd: hsl(0, 0%, 5%);
   --popup-text: hsl(0, 0%, 90%);
@@ -118,6 +120,8 @@ body {
 
   @include media-query-landscape-mobile {
     --continent-title-size: clamp(2.25rem, 5vw, 6rem);
+    --popup-title-size: 4rem;
+    --popup-header-margin-block: 0.75rem;
   }
 }
 
@@ -155,7 +159,7 @@ a:hover {
 
 @include media-query(mobile) {
   :root {
-    --continent-popup-title: 4rem;
+    --popup-title-size: 4rem;
     --popup-header-text: 3.4vw;
     --popup-text: 3.75vw;
   }
