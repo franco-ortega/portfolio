@@ -3,7 +3,6 @@
 .CartographyPopUp {
   text-align: center;
   padding-block: 1rem;
-  padding-inline: 3rem;
   padding-inline: 2rem;
 
   height: calc(100dvh - var(--border-width) * 2);
@@ -100,8 +99,7 @@
 
 @include media-query-new(tablet-new) {
   .CartographyPopUp {
-    height: 100%;
-    overflow: auto;
+    padding-inline: 3rem;
   }
 
   .April,
