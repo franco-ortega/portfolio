@@ -1,25 +1,24 @@
 import React from 'react';
+import PopUp from '../PopUp';
 import photo from '../../../assets/FrancoOrtega.jpg';
-import ContinentPopUp from '../ContinentPopUp';
 import styles from './ProfilePopUp.module.scss';
 
 const ProfilePopUp = () => {
   return (
-    <ContinentPopUp>
+    <PopUp>
       <div className={styles.ProfilePopUp}>
         <header>
-          <img src={photo} alt='Franco Ortega photo' className={styles.Photo} />
-          <p className={styles.Name}>Franco Ortega</p>
-          <p className={styles.Contact}>
+          <img src={photo} alt='Franco Ortega photo'} />
+          <p>Franco Ortega</p>
+          <p>
             <a
               href='mailto:francoortegadev@gmail.com'
               rel='noreferrer'
               target='_blank'
-              className={styles.ContactLink}
             >
               francoortegadev@gmail.com
             </a>
-            <a href='tel:503-998-7444' className={styles.ContactLink}>
+            <a href='tel:503-998-7444'>
               503-998-7444
             </a>
             <span>
@@ -27,7 +26,6 @@ const ProfilePopUp = () => {
                 href='https://github.com/franco-ortega'
                 rel='noreferrer'
                 target='_blank'
-                className={styles.ContactLink}
               >
                 GitHub
               </a>
@@ -36,7 +34,6 @@ const ProfilePopUp = () => {
                 href='https://www.linkedin.com/in/francoortega/'
                 rel='noreferrer'
                 target='_blank'
-                className={styles.ContactLink}
               >
                 LinkedIn
               </a>
@@ -69,7 +66,7 @@ const ProfilePopUp = () => {
           </span>
         </div>
       </div>
-    </ContinentPopUp>
+    </PopUp>
   );
 };
 
