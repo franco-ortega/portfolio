@@ -8,9 +8,9 @@ const ProfilePopUp = () => {
     <PopUp>
       <div className={styles.ProfilePopUp}>
         <header>
-          <img src={photo} alt='Franco Ortega photo'} />
-          <p>Franco Ortega</p>
-          <p>
+          <img src={photo} alt='Franco Ortega photo' />
+          <h2>Franco Ortega</h2>
+          <div>
             <a
               href='mailto:francoortegadev@gmail.com'
               rel='noreferrer'
@@ -18,9 +18,7 @@ const ProfilePopUp = () => {
             >
               francoortegadev@gmail.com
             </a>
-            <a href='tel:503-998-7444'>
-              503-998-7444
-            </a>
+            <a href='tel:503-998-7444'>503-998-7444</a>
             <span>
               <a
                 href='https://github.com/franco-ortega'
@@ -38,7 +36,7 @@ const ProfilePopUp = () => {
                 LinkedIn
               </a>
             </span>
-          </p>
+          </div>
         </header>
         <div>
           <span>
