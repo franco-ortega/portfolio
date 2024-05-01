@@ -39,7 +39,7 @@ const ProfilePopUp = () => {
           </div>
         </header>
         <div>
-          <span>
+          <p>
             Detail-oriented software engineer with a passion for creating
             user-focused products. Thrives in collaborative, cross-functional,
             agile environments. Adept at developing innovative features,
@@ -47,8 +47,8 @@ const ProfilePopUp = () => {
             debugging issues within business applications. Approaches work
             optimistically to think big while balancing practicality to
             consistently achieve goals.
-          </span>
-          <span>
+          </p>
+          <p>
             Additionally, despite growing up very much a math and science kid,
             has learned to love and nurture creativity through writing,
             cartography, and board game design. Other sources of joy are
@@ -57,11 +57,11 @@ const ProfilePopUp = () => {
             zines were big influences in the past that provided a lot of
             learnings around team work, expressiveness, and how the world could
             be a more equitable place.
-          </span>
-          <span>
+          </p>
+          <p>
             Yes to racial justice, social justice, climate justice, and economic
             justice.
-          </span>
+          </p>
         </div>
       </div>
     </PopUp>
