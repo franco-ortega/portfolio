@@ -38,9 +38,9 @@ desktop-large-new: 85rem,
   }
   
   @include media-query-new(desktop-small-new) {
-    border-color: inherit;
+    // border-color: inherit;
     border-style: solid;
-    border-radius: 1.75rem;
+    border-radius: var(--popup-border-radius);
     border-width: medium;
 
     height: 95%;

@@ -32,7 +32,7 @@
 
   @include media-query(desktop-medium) {
     // height: 95%;
-    overflow: hidden;
+    // overflow: hidden;
 
     ul {
       grid-template-columns: repeat(2, 1fr);
