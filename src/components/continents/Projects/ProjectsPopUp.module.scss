@@ -3,6 +3,8 @@
 .ProjectsPopUp {
   border-radius: inherit;
 
+  height: 95vh;
+  
   header {
     margin-block: var(--continent-header-margin-block);
     margin-block: var(--popup-header-margin-block);
@@ -29,7 +31,7 @@
   }
 
   @include media-query(desktop-medium) {
-    height: 95%;
+    // height: 95%;
     overflow: hidden;
 
     ul {
