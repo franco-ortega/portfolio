@@ -30,6 +30,11 @@
       font-family: var(--continent-font-bold);
       font-size: 1.75rem;
     }
+
+    p + p {
+      margin-top: 2rem;
+      text-align: center;
+    }
   }
 
   section + section {
@@ -41,10 +46,14 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+  }
 
-    p {
-      width: 100%;
-    }
+  @include media-query-new(tablet-new) {
+    padding-inline: 3rem;
+  }
+
+  @include media-query-new(desktop-small-new) {
+    height: 100%;
   }
 }
 
@@ -54,11 +63,27 @@
 .Harland,
 .MarneOsso,
 .Strigi {
-  border: thin solid black;
+  border: 2px solid var(--bordercolor-one);
   border-radius: 0.25rem;
   background-repeat: no-repeat;
   height: 10rem;
   width: 15rem;
+
+  @include media-query-new(tablet-new) {
+    width: 13rem;
+  }
+  
+  @include media-query-new(desktop-small-new) {
+    width: 10rem;
+  }
+
+  @include media-query-new(desktop-medium-new) {
+    width: 12rem;
+  }
+
+  @include media-query-new(desktop-large-new) {
+    width: 15rem;
+  }
 }
 
 .April {
@@ -95,52 +120,4 @@
   background-image: url('../../../assets/maps/Strigi.png');
   background-size: 200%;
   background-position: 25% 10%;
-}
-
-@include media-query-new(tablet-new) {
-  .CartographyPopUp {
-    padding-inline: 3rem;
-  }
-
-  .April,
-  .Ganderlund,
-  .Gruenne,
-  .Harland,
-  .MarneOsso,
-  .Strigi {
-    width: 13rem;
-  }
-}
-
-@include media-query-new(desktop-small-new) {
-  .April,
-  .Ganderlund,
-  .Gruenne,
-  .Harland,
-  .MarneOsso,
-  .Strigi {
-    width: 10rem;
-  }
-}
-
-@include media-query-new(desktop-medium-new) {
-  .April,
-  .Ganderlund,
-  .Gruenne,
-  .Harland,
-  .MarneOsso,
-  .Strigi {
-    width: 12rem;
-  }
-}
-
-@include media-query-new(desktop-large-new) {
-  .April,
-  .Ganderlund,
-  .Gruenne,
-  .Harland,
-  .MarneOsso,
-  .Strigi {
-    width: 15rem;
-  }
 }
