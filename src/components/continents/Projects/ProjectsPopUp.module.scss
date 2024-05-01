@@ -24,8 +24,8 @@
     
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
     align-content: flex-start;
+    gap: 1rem;
 
     @include media-query-new(desktop-small-new) {
       height: calc(100% - var(--popup-title-size) - var(--popup-header-margin-block) - var(--border-width) * 4 - 5%);
