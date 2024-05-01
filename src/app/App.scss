@@ -92,7 +92,7 @@ body {
   --popup-header-margin-block: 1rem;
 
   --popup-bkgd: hsl(0, 0%, 5%);
-  --popup-text: hsl(0, 0%, 90%);
+  --popup-text-color: hsl(0, 0%, 90%);
   --popup-link-text: hsl(250, 90%, 80%);
   --popup-link-text-hover: hsl(250, 90%, 90%);
 
@@ -126,7 +126,7 @@ body {
 }
 
 a {
-  color: hsla(90, 60%, 6%, 0.8);
+  color: hsl(90, 60%, 6%, 0.8);
   text-decoration: none;
   outline: none;
   border-radius: inherit;
