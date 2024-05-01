@@ -4,10 +4,18 @@
   text-align: center;
   padding-block: 1rem;
   padding-inline: 3rem;
+  padding-inline: 2rem;
+
+  height: calc(100dvh - var(--border-width) * 2);
+  overflow: auto;
+
+  line-height: 1.25;
 
   header {
-    font-family: var(--continent-font-bold);
-    font-size: var(--popup-title-size);
+    h2 {
+      font-family: var(--continent-font-bold);
+      font-size: var(--popup-title-size);
+    }
   }
 
   section {
@@ -90,30 +98,8 @@
   background-position: 25% 10%;
 }
 
-@include media-query(desktop-medium) {
-  .April,
-  .Ganderlund,
-  .Gruenne,
-  .Harland,
-  .MarneOsso,
-  .Strigi {
-    width: 12rem;
-  }
-}
-
-@include media-query(desktop-small) {
-  .April,
-  .Ganderlund,
-  .Gruenne,
-  .Harland,
-  .MarneOsso,
-  .Strigi {
-    width: 10rem;
-  }
-}
-
-@include media-query(tablet) {
-  .CartographyDetails {
+@include media-query-new(tablet-new) {
+  .CartographyPopUp {
     height: 100%;
     overflow: auto;
   }
@@ -128,11 +114,29 @@
   }
 }
 
-@include media-query(mobile) {
-  .CartographyDetails {
-    padding-inline: 2rem;
+@include media-query-new(desktop-small-new) {
+  .April,
+  .Ganderlund,
+  .Gruenne,
+  .Harland,
+  .MarneOsso,
+  .Strigi {
+    width: 10rem;
   }
+}
 
+@include media-query-new(desktop-medium-new) {
+  .April,
+  .Ganderlund,
+  .Gruenne,
+  .Harland,
+  .MarneOsso,
+  .Strigi {
+    width: 12rem;
+  }
+}
+
+@include media-query-new(desktop-large-new) {
   .April,
   .Ganderlund,
   .Gruenne,
@@ -142,14 +146,3 @@
     width: 15rem;
   }
 }
-
-// USED:
-//   desktop-medium: 85rem,
-//   desktop-small: 70rem,
-//   tablet: 56rem,
-//   mobile: 35rem,
-
-// NONE:
-//   tablet-wide: 1000px,
-//   junior: 45rem,
-//   mobile-narrow: 300px

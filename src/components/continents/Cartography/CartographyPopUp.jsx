@@ -16,7 +16,9 @@ const CartographyPopUp = () => {
         className={styles.CartographyPopUp}
       >
         <ClosePopup path={''} />
-        <header>Cartography</header>
+        <header>
+          <h2>Cartography</h2>
+        </header>
         <section>
           The inspiration for this site came from my longtime love of fantasy
           cartography. From <span>Middle Earth</span> to <span>Westeros</span>{' '}
