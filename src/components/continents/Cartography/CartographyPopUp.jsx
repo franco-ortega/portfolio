@@ -20,15 +20,17 @@ const CartographyPopUp = () => {
           <h2>Cartography</h2>
         </header>
         <section>
-          The inspiration for this site came from my longtime love of fantasy
-          cartography. From <span>Middle Earth</span> to <span>Westeros</span>{' '}
-          to the <span>Grishaverse</span>, I&apos;ve always loved flipping to
-          the maps in fantasy novels whenever a new location is mentioned, and
-          in recent years, have started creating my own worlds with pen and
-          paper.
+          <p>
+            The inspiration for this site came from my longtime love of fantasy
+            cartography. From <span>Middle Earth</span> to <span>Westeros</span>{' '}
+            to the <span>Grishaverse</span>, I&apos;ve always loved flipping to
+            the maps in fantasy novels whenever a new location is mentioned, and
+            in recent years, have started creating my own worlds with pen and
+            paper.
+          </p>
+          <p>Click images to see full maps.</p>
         </section>
         <section>
-          <p>Click images to see full maps.</p>
           <Link to='/april'>
             <div className={styles.April}>
               <span role='img' aria-label='April map'></span>
