@@ -1,19 +1,5 @@
 @use '../../scss/' as *;
 
-
-/* 
-media-query-new($key)
-
-tablet-new: 35rem,
-  // 560px
-desktop-small-new: 56.25rem,
-  // 900px
-desktop-medium-new: 70rem,
-  // 1120px
-desktop-large-new: 85rem,
-  // 1360px
-*/
-
 .PopUp {
   background: var(--popup-bkgd);
 
@@ -32,33 +18,20 @@ desktop-large-new: 85rem,
   & p {
     line-height: 1.25;
   }
-
-  @include media-query-new(tablet-new) {
-
-  }
   
   @include media-query-new(desktop-small-new) {
-    // border-color: inherit;
-    border-style: solid;
+    border-color: inherit;
     border-radius: var(--popup-border-radius);
+    border-style: solid;
     border-width: medium;
 
     height: 95%;
-    width: 70%;
-    max-width: 80rem;
+    width: 75%;
+    max-width: 50rem;
   }
 
-  // @include media-query(desktop-small) {
-  //   width: 75%;
-  // }
-
-  // @include media-query(tablet) {
-  //   border-radius: 0;
-  //   border-color: transparent;
-  //   border: none;
-
-  //   height: calc(100% - var(--border-width) * 2);
-  //   width: calc(100% - var(--border-width) * 2);
-  // }
+  @include media-query-new(desktop-large-new) {
+    max-width: 70rem;
+  }
 }
 
