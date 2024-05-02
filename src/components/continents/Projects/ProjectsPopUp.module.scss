@@ -3,8 +3,9 @@
 .ProjectsPopUp {
   border-radius: inherit;
 
+  height: calc(100dvh - var(--border-width) * 4);
+  
   header {
-    margin-block: var(--continent-header-margin-block);
     margin-block: var(--popup-header-margin-block);
 
     font-family: var(--continent-font-bold);
@@ -14,49 +15,30 @@
   }
 
   ul {
-    /* height includes 0.25 for line height of header*/
-    height: calc(100% - var(--popup-title-size) - var(--continent-header-margin-block) - 0.25rem);
-    max-width: 95%;
-    padding-inline: 1rem;
-
     margin-inline: auto;
-    // padding-bottom: 4rem;
+    padding-inline: 1rem;
+    
+    max-width: 95%;
+    height: calc(100% - var(--popup-title-size) - var(--popup-header-margin-block) - var(--border-width) * 3);
     overflow: auto;
-
+    
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    align-content: flex-start;
     gap: 1rem;
-  }
 
-  @include media-query(desktop-medium) {
-    height: 95%;
-    overflow: hidden;
-
-    ul {
+    @include media-query-new(desktop-small-new) {
+      height: calc(100% - var(--popup-title-size) - var(--popup-header-margin-block) - var(--border-width) * 4 - 5%);
       grid-template-columns: repeat(2, 1fr);
     }
-  }
-
-  @include media-query(tablet) {
-    ul {
-      padding-bottom: 2rem;
-    }
-  }
-
-  @include media-query(mobile) {
-    ul {
-      grid-template-columns: repeat(1, 1fr);
-    }
+  
+    @include media-query-new(desktop-large-new) {
+      grid-template-columns: repeat(3, 1fr);
+    } 
   }
 }
 
-// USED:
-//   desktop-medium: 85rem,
-//   tablet: 56rem,
-//   mobile: 35rem,
-
-// NONE:
-//   desktop-small: 70rem,
-//   tablet-wide: 1000px,
-//   junior: 45rem,
-//   mobile-narrow: 300px
+/* MEDIA QUERIES USED:
+  @include media-query-new(desktop-small-new) {
+  @include media-query-new(desktop-large-new) {
+*/
