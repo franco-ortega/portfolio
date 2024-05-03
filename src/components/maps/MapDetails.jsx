@@ -1,7 +1,6 @@
 import React from 'react';
 import ClosePopup from '../buttons/ClosePopup';
 import PropTypes from 'prop-types';
-// import ContinentPopUp from '../continents/ContinentPopUp';
 import PopUp from '../continents/PopUp';
 import styles from './MapDetails.module.scss';
 
