@@ -58,6 +58,10 @@
     width: 75%;
     max-width: 50rem;
   }
+  
+  @include media-query-new(desktop-medium-new) {
+    width: 50%;
+  }
 
   @include media-query-new(desktop-large-new) {
     max-width: 70rem;
