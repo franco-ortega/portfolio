@@ -8,8 +8,6 @@
 
   display: grid;
   grid-template-rows: auto auto;
-  // align-items: flex-start;
-  // justify-content: flex-start;
 
   header {
     text-align: center;
@@ -67,12 +65,7 @@
     }
     
     @include media-query-new(tablet-new) {
-      // height: 45%;
       overflow: auto;
-    }
-  
-    @include media-query-new(desktop-medium-new) {
-      // height: auto;
     }
   }
 
