@@ -16,44 +16,47 @@
       font-size: var(--popup-title-size);
     }
   }
+  
+  div {
+    section {
+      font-size: var(--popup-text);
+      font-size: var(--continent-popup-text);
 
-  section {
-    font-size: var(--popup-text);
-    font-size: var(--continent-popup-text);
-  }
+      text-align: justify;
+      margin-top: 0.5rem;
 
-  header + section {
-    text-align: justify;
-    margin-top: 0.5rem;
-
-    span {
-      font-family: var(--continent-font-bold);
-      font-size: 1.75rem;
+      span {
+        font-family: var(--continent-font-bold);
+        font-size: 1.75rem;
+      }
+  
+      p + p {
+        margin-top: 2rem;
+        text-align: center;
+      }
     }
 
-    p + p {
-      margin-top: 2rem;
-      text-align: center;
+    section + section {
+      margin-top: 1rem;
+  
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      max-width: 35rem;
+      margin-inline: auto;
+
+      @include media-query-new(desktop-small-new) {
+        max-width: 40rem;
+      }
+      
+      @include media-query-new(desktop-medium-new) {
+        max-width: 50rem;
+      }
     }
-  }
-
-  section + section {
-    margin-top: 1rem;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-
-  @include media-query-new(tablet-new) {
-    padding-inline: 3rem;
-  }
-
-  @include media-query-new(desktop-small-new) {
-    height: 100%;
   }
 }
 
@@ -70,19 +73,18 @@
   width: 15rem;
 
   @include media-query-new(tablet-new) {
-    width: 13rem;
+    width: 9rem;
+    height: 6rem;
   }
   
   @include media-query-new(desktop-small-new) {
-    width: 10rem;
+    width: 12rem;
+    height: 8rem;
   }
 
   @include media-query-new(desktop-medium-new) {
-    width: 12rem;
-  }
-
-  @include media-query-new(desktop-large-new) {
     width: 15rem;
+    height: 10rem;
   }
 }
 
