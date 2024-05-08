@@ -34,6 +34,7 @@
     }
 
     h4 {
+      max-width: 40rem;
       font-size: var(--project-details-tech);
       font-weight: 500;
       text-align: center;
@@ -43,12 +44,8 @@
       padding-inline: 2rem;
     }
 
-    h4,
     p {
       max-width: 60ch;
-    }
-
-    p {
       font-size: var(--project-details-text);
       line-height: 1.25;
       text-align: justify;
@@ -60,7 +57,7 @@
   }
 
   @include media-query-new(tablet-new) {
-    // border-radius: 1rem;
+    border-radius: 1rem;
     width: 90%;
     height: 75%;
 

@@ -1,43 +1,19 @@
 @use '../../../scss/' as *;
 
 .WeatherBeatsDetails {
+  border-color: hsl(0, 0%, 100%);
+  border-width: medium;
+  border-style: solid;
+
   background-color: yellow;
   background-image: url(../../../assets/WeatherBeats_full.jpg);
   background-position: 5% 10%;
   background-repeat: no-repeat;
   background-size: cover;
 
-  border-color: hsl(0, 0%, 0%);
-
   color: hsl(0, 0%, 0%);
 
-  @extend %project-details;
-
-  height: calc(100% - var(--border-width) * 2);
-  width: calc(100% - var(--border-width) * 2);
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-
-  & p {
-    line-height: 1.25;
-  }
-  
-  @include media-query-new(desktop-small-new) {
-    border-color: inherit;
-    border-radius: var(--popup-border-radius);
-    border-style: solid;
-    border-width: medium;
-
-    height: 95%;
-    width: 50%;
-    max-width: 50rem;
-  }
-
-  @include media-query-new(desktop-large-new) {
-    max-width: 70rem;
+  @include media-query-new(tablet-new) {
+    border-radius: 1rem;
   }
 }
