@@ -27,14 +27,17 @@
     align-content: flex-start;
     gap: 1rem;
 
-    @include media-query-new(desktop-small-new) {
-      height: calc(100% - var(--popup-title-size) - var(--popup-header-margin-block) - var(--border-width) * 4 - 5%);
+    @include media-query-new(tablet-new) {
+      height: 75%;
+      overflow: auto;
+
       grid-template-columns: repeat(2, 1fr);
     }
   
     @include media-query-new(desktop-large-new) {
+      height: auto;
       grid-template-columns: repeat(3, 1fr);
-    } 
+    }
   }
 }
 
