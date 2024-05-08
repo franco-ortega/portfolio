@@ -4,6 +4,12 @@ import { FocusOn } from 'react-focus-on';
 import { Link } from 'react-router-dom';
 import ClosePopup from '../../buttons/ClosePopup';
 import PopUp from '../PopUp';
+import April from '../../../assets/maps/April.png';
+import Ganderlund from '../../../assets/maps/Ganderlund.png';
+import Gruenne from '../../../assets/maps/Gruenne.png';
+import Harland from '../../../assets/maps/Harland.png';
+import MarneOsso from '../../../assets/maps/MarneOsso.png';
+import Strigi from '../../../assets/maps/Strigi.png';
 import styles from './CartographyPopUp.module.scss';
 
 const CartographyPopUp = () => {
@@ -33,33 +39,51 @@ const CartographyPopUp = () => {
           </section>
           <section>
             <Link to='/april'>
-              <div className={styles.April}>
-                <span role='img' aria-label='April map'></span>
+              <div>
+                <img
+                  src={April}
+                  alt='April calendar with the numbers are made of small islands.'
+                />
               </div>
             </Link>
             <Link to='/ganderlund'>
-              <div className={styles.Ganderlund}>
-                <span role='img' aria-label='Ganderlund map'></span>
+              <div>
+                <img
+                  src={Ganderlund}
+                  alt='April calendar with the numbers are made of small islands.'
+                />
               </div>
             </Link>
             <Link to='/gruenne'>
-              <div className={styles.Gruenne}>
-                <span role='img' aria-label='Gruenne map'></span>
+              <div>
+                <img
+                  src={Gruenne}
+                  alt='April calendar with the numbers are made of small islands.'
+                />
               </div>
             </Link>
             <Link to='/harland'>
-              <div className={styles.Harland}>
-                <span role='img' aria-label='Harland map'></span>
+              <div>
+                <img
+                  src={Harland}
+                  alt='April calendar with the numbers are made of small islands.'
+                />
               </div>
             </Link>
             <Link to='/marneosso'>
-              <div className={styles.MarneOsso}>
-                <span role='img' aria-label='Marne Osso map'></span>
+              <div>
+                <img
+                  src={MarneOsso}
+                  alt='April calendar with the numbers are made of small islands.'
+                />
               </div>
             </Link>
             <Link to='/strigi'>
-              <div className={styles.Strigi}>
-                <span role='img' aria-label='Strigi map'></span>
+              <div>
+                <img
+                  src={Strigi}
+                  alt='April calendar with the numbers are made of small islands.'
+                />
               </div>
             </Link>
           </section>

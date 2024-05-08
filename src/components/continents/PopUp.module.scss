@@ -8,10 +8,8 @@
   max-width: 60rem;
 
   position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
+  inset: 0;
+  margin: auto;
   
   color: var(--popup-text-color);
   font-family: var(--main-font);

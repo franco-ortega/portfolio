@@ -10,14 +10,51 @@
 
   line-height: 1.25;
 
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  
+
   header {
     h2 {
       font-family: var(--continent-font-bold);
       font-size: var(--popup-title-size);
     }
   }
+
+  img {
+    border: 2px solid var(--bordercolor-one);
+    border-radius: 0.25rem;
+    background-repeat: no-repeat;
   
-  div {
+    width: 15rem;
+    height: 10rem;
+    object-fit: cover;
+
+    @include media-query-new(tablet-new) {
+      width: 9rem;
+      height: 6rem;
+    }
+    
+    @include media-query-new(desktop-small-new) {
+      width: 12rem;
+      height: 8rem;
+    }
+  
+    @include media-query-new(desktop-medium-new) {
+      width: 15rem;
+      height: 10rem;
+    }
+  
+    @media (max-height: 700px) {
+      width: 9rem;
+      height: 6rem;
+    }
+  }
+  
+  & > div {
+    height: 90%;
+    overflow: auto;
+    
     section {
       font-size: var(--popup-text);
       font-size: var(--continent-popup-text);
@@ -58,68 +95,4 @@
       }
     }
   }
-}
-
-.April,
-.Ganderlund,
-.Gruenne,
-.Harland,
-.MarneOsso,
-.Strigi {
-  border: 2px solid var(--bordercolor-one);
-  border-radius: 0.25rem;
-  background-repeat: no-repeat;
-  height: 10rem;
-  width: 15rem;
-
-  @include media-query-new(tablet-new) {
-    width: 9rem;
-    height: 6rem;
-  }
-  
-  @include media-query-new(desktop-small-new) {
-    width: 12rem;
-    height: 8rem;
-  }
-
-  @include media-query-new(desktop-medium-new) {
-    width: 15rem;
-    height: 10rem;
-  }
-}
-
-.April {
-  background-image: url('../../../assets/maps/April.png');
-  background-size: 195%;
-  background-position: 10% 10%;
-}
-
-.Ganderlund {
-  background-image: url('../../../assets/maps/Ganderlund.png');
-  background-size: 250%;
-  background-position: 95% 25%;
-}
-
-.Gruenne {
-  background-image: url('../../../assets/maps/Gruenne.png');
-  background-size: 350%;
-  background-position: 2% 2%;
-}
-
-.Harland {
-  background-image: url('../../../assets/maps/Harland.png');
-  background-size: 275%;
-  background-position: 10% 95%;
-}
-
-.MarneOsso {
-  background-image: url('../../../assets/maps/MarneOsso.png');
-  background-size: 250%;
-  background-position: 95% 5%;
-}
-
-.Strigi {
-  background-image: url('../../../assets/maps/Strigi.png');
-  background-size: 200%;
-  background-position: 25% 10%;
 }
