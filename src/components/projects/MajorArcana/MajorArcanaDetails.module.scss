@@ -1,7 +1,8 @@
 @use '../../../scss/' as *;
 
 .MajorArcanaDetails {
-  border-color: hsl(25, 66%, 69%);
+  color: hsl(25, 66%, 69%);
+  border-color: inherit;
   border-style: solid;
   border-width: medium;
 
@@ -14,8 +15,6 @@
       hsl(0, 0%, 7%, 100%)
     ),
     hsl(0, 0%, 18%);
-
-  color: hsl(25, 66%, 69%);
 
   img {
     width: 25rem;
