@@ -1,20 +1,17 @@
 import React from 'react';
-import { useHistory } from 'react-router';
-import { FocusOn } from 'react-focus-on';
 import ClosePopup from '../../buttons/ClosePopup';
 import styles from './RootRPGDetails.module.scss';
 import ProjectLinks from '../../links/ProjectLinks';
+import ProjectDetails from '../ProjectDetails';
 
 const RootRPGDetails = () => {
-  let history = useHistory();
-
   return (
-    <FocusOn onEscapeKey={() => history.push('/projects')}>
-      <main className={styles.RootRPGDetails}>
+    <ProjectDetails>
+      <div className={styles.RootRPGDetails}>
         <ClosePopup path={'projects'} background={'black'} color={'white'} />
         <div>
-          <h2>Root RPG Guide</h2>
-          <h3>|</h3>
+          <h3>Root RPG Guide</h3>
+          <h4>|</h4>
           <p>
             As an avid board game and roleplaying game fan, I was delighted to
             find out this summer that one of my favorite board games from over
@@ -40,8 +37,8 @@ const RootRPGDetails = () => {
             github={'https://github.com/franco-ortega/root-rpg'}
           />
         </div>
-      </main>
-    </FocusOn>
+      </div>
+    </ProjectDetails>
   );
 };
 
