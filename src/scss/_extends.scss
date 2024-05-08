@@ -98,154 +98,27 @@
   -ms-transition: all 0.5s ease;
 }
 
-%project-details {
-  border-style: solid;
-  border-width: 0.25rem;
-  border-radius: 1rem;
-
-  height: 95%;
-  width: 70%;
-  max-width: 80rem;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-
-  font-family: var(--main-font);
-
-  div {
-    text-align: center;
-    margin: 0.75rem 0.5rem;
-    padding: 0.75rem 2.75rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    overflow: auto;
-
-    h2 {
-      font-size: var(--project-details-title);
-      line-height: var(--project-details-title);
-    }
-
-    h3 {
-      font-size: var(--project-details-tech);
-      font-weight: 500;
-    }
-
-    h3,
-    p {
-      max-width: 45rem;
-    }
-
-    p:not(:last-child) {
-      font-size: var(--project-details-text);
-      text-align: justify;
-    }
-
-    a {
-      color: inherit;
-    }
-  }
-
-  @include media-query(desktop-medium) {
-    width: 65%;
-  }
-
-  @include media-query(tablet) {
-    width: 75%;
-  }
-
-  @include media-query(junior) {
-    border-radius: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-
-    div {
-      gap: 2rem;
-    }
-  }
-
-  @include media-query(mobile) {
-    border-radius: 0;
-
-    div {
-      padding: 0.75rem 1.25rem;
-      gap: 0.75rem;
-    }
-  }
-}
-
-%testing-colors {
-  background-color: white;
-  border-radius: inherit;
-
-  @include media-query(desktop-medium) {
-    background-color: yellow;
-    border-radius: inherit;
-  }
-
-  @include media-query(desktop-small) {
-    background-color: aliceblue;
-    border-radius: inherit;
-  }
-
-  @include media-query(tablet) {
-    background-color: purple;
-    border-radius: inherit;
-  }
-
-  @include media-query(mobile) {
-    background-color: darkslategray;
-    border-radius: inherit;
-  }
-}
-
-%testing-colors-new {
+%outline {
   background-color: hsl(0, 0%, 100%, 0.5);
-  outline: 2px dotted lightcoral;
+  outline: 3px dotted lightcoral;
 
   @include media-query-new(tablet-new) {
     background-color: hsl(60, 100%, 50%, 0.5);
-    outline: 2px dotted red;
+    outline: 3px dotted red;
   }
 
   @include media-query-new(desktop-small-new) {
     background-color: hsl(180, 100%, 50%, 0.5);
-    outline: 2px dotted black;
+    outline: 3px dotted lightgreen;
   }
 
   @include media-query-new(desktop-medium-new) {
     background-color: hsla(300, 59%, 55%, 0.5);
-    outline: 2px dotted white;
+    outline: 3px dotted white;
   }
 
   @include media-query-new(desktop-large-new) {
     background-color: hsl(120, 73%, 75%, 0.5);
-    outline: 2px dotted yellow;
+    outline: 3px dotted yellow;
   }
 }
-
-%outline {
-  outline: 1px solid white;
-
-  @include media-query-new(tablet-new) {
-    outline: 1px solid red;
-  }
-
-  @include media-query-new(desktop-small-new) {
-    outline: 1px solid yellow;
-  }
-
-  @include media-query-new(desktop-medium-new) {
-    outline: 1px solid green;
-  }
-
-  @include media-query-new(desktop-large-new) {
-    outline: 1px solid lightblue;
-  }
-}
-
