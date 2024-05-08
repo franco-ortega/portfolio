@@ -1,7 +1,8 @@
 @use '../../../scss/' as *;
 
 .EbbDetails {
-  border-color: white;
+  color: #f3f3f3;
+  border-color: inherit;
   border-width: medium;
   border-style: solid;
 
@@ -13,11 +14,9 @@
       rgba(55, 87, 149, 0.62),
       rgba(55, 87, 149, 0.82)
     ),
-    rgb(18, 18, 18);
-
-  color: #f3f3f3;
+    rgb(18, 18, 18);  
 
   @include media-query-new(tablet-new) {
-    border-radius: 1rem;
+    border-radius: var(--popup-border-radius);
   }
 }

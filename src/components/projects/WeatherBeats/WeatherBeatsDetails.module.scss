@@ -1,6 +1,7 @@
 @use '../../../scss/' as *;
 
 .WeatherBeatsDetails {
+  color: hsl(0, 0%, 0%);
   border-color: hsl(0, 0%, 100%);
   border-width: medium;
   border-style: solid;
@@ -11,9 +12,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  color: hsl(0, 0%, 0%);
-
   @include media-query-new(tablet-new) {
-    border-radius: 1rem;
+    border-radius: var(--popup-border-radius);
   }
 }
