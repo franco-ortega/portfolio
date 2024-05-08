@@ -2,7 +2,6 @@
 
 .EbbDetails {
   border-color: white;
-  border-radius: 1rem;
   border-width: medium;
   border-style: solid;
 
@@ -17,4 +16,8 @@
     rgb(18, 18, 18);
 
   color: #f3f3f3;
+
+  @include media-query-new(tablet-new) {
+    border-radius: 1rem;
+  }
 }
