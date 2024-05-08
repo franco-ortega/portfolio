@@ -4,7 +4,7 @@ import styles from './ProjectLinks.module.scss';
 
 const ProjectLinks = ({ website, github }) => {
   return (
-    <p className={styles.ProjectLinks}>
+    <div className={styles.ProjectLinks}>
       <span>
         <a href={website} rel='noreferrer' target='_blank'>
           {website.includes('chrome') || website.includes('marketplace')
@@ -18,13 +18,13 @@ const ProjectLinks = ({ website, github }) => {
           GitHub
         </a>
       </span>
-    </p>
+    </div>
   );
 };
 
 ProjectLinks.propTypes = {
   website: PropTypes.string.isRequired,
-  github: PropTypes.string.isRequired
+  github: PropTypes.string.isRequired,
 };
 
 export default ProjectLinks;
