@@ -57,10 +57,15 @@
     p + p {
       margin-top: 0.75rem;
     }
-
-    @include media-query-new(desktop-small-new) {
-      max-width: 60rem;
-      margin-inline: auto;
+    
+    @include media-query-new(tablet-new) {
+      height: 45%;
+      overflow: auto;
     }
-  }  
+  
+    @include media-query-new(desktop-medium-new) {
+      height: auto;
+    }
+  }
+
 }
