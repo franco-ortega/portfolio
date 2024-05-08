@@ -30,19 +30,11 @@
     grid-template-columns: repeat(1, 1fr);
     align-content: flex-start;
     gap: 1rem;
-
-  
-    
-    @media (max-height: 750px) {
-      // height: 60%;
-      
-    }
   }
-
 
   @include media-query-new(tablet-new) {
     ul {
-      height: 80%;
+      height: 90%;
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -57,7 +49,6 @@
     ul {
     }
   }
-
 }
 
 /* MEDIA QUERIES USED:
