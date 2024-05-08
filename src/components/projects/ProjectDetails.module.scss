@@ -31,6 +31,8 @@
     gap: 1rem;
     overflow: auto;
     
+    position: relative;
+    
     h3 {
       text-align: center;
       font-size: var(--project-details-title);
