@@ -1,9 +1,6 @@
 @use '../../../scss/' as *;
 
 .RootRPGDetails {
-  // opacity: 75%;
-
-
   border-color: hsl(0, 0%, 0%);
 
   background: linear-gradient(
@@ -18,10 +15,7 @@
 
   color: hsl(0, 0%, 0%);
 
-  // @extend %project-details;
-
-  
-    h4 {
+  & > h4 {
       position: relative;
 
       &::before {
@@ -35,11 +29,6 @@
         left: 1rem;
       }
     }
-  
-
-
-  // height: calc(100% - var(--border-width) * 2);
-  // width: calc(100% - var(--border-width) * 2);
 
   & p {
     // line-height: 1.25;
