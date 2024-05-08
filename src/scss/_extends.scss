@@ -178,73 +178,27 @@
   }
 }
 
-%testing-colors {
-  background-color: white;
-  border-radius: inherit;
-
-  @include media-query(desktop-medium) {
-    background-color: yellow;
-    border-radius: inherit;
-  }
-
-  @include media-query(desktop-small) {
-    background-color: aliceblue;
-    border-radius: inherit;
-  }
-
-  @include media-query(tablet) {
-    background-color: purple;
-    border-radius: inherit;
-  }
-
-  @include media-query(mobile) {
-    background-color: darkslategray;
-    border-radius: inherit;
-  }
-}
-
-%testing-colors-new {
+%outline {
   background-color: hsl(0, 0%, 100%, 0.5);
-  outline: 2px dotted lightcoral;
+  outline: 3px dotted lightcoral;
 
   @include media-query-new(tablet-new) {
     background-color: hsl(60, 100%, 50%, 0.5);
-    outline: 2px dotted red;
+    outline: 3px dotted red;
   }
 
   @include media-query-new(desktop-small-new) {
     background-color: hsl(180, 100%, 50%, 0.5);
-    outline: 2px dotted black;
+    outline: 3px dotted lightgreen;
   }
 
   @include media-query-new(desktop-medium-new) {
     background-color: hsla(300, 59%, 55%, 0.5);
-    outline: 2px dotted white;
+    outline: 3px dotted white;
   }
 
   @include media-query-new(desktop-large-new) {
     background-color: hsl(120, 73%, 75%, 0.5);
-    outline: 2px dotted yellow;
+    outline: 3px dotted yellow;
   }
 }
-
-%outline {
-  outline: 1px solid white;
-
-  @include media-query-new(tablet-new) {
-    outline: 1px solid red;
-  }
-
-  @include media-query-new(desktop-small-new) {
-    outline: 1px solid yellow;
-  }
-
-  @include media-query-new(desktop-medium-new) {
-    outline: 1px solid green;
-  }
-
-  @include media-query-new(desktop-large-new) {
-    outline: 1px solid lightblue;
-  }
-}
-
