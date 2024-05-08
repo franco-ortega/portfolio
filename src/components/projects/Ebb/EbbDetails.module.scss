@@ -2,6 +2,9 @@
 
 .EbbDetails {
   border-color: white;
+  border-radius: 1rem;
+  border-width: medium;
+  border-style: solid;
 
   background: linear-gradient(
       0deg,
@@ -15,33 +18,7 @@
 
   color: #f3f3f3;
 
-  @extend %project-details;
-
-  height: calc(100% - var(--border-width) * 2);
-  width: calc(100% - var(--border-width) * 2);
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-
   & p {
     line-height: 1.25;
-  }
-  
-  @include media-query-new(desktop-small-new) {
-    border-color: inherit;
-    border-radius: var(--popup-border-radius);
-    border-style: solid;
-    border-width: medium;
-
-    height: 95%;
-    width: 50%;
-    max-width: 50rem;
-  }
-
-  @include media-query-new(desktop-large-new) {
-    max-width: 70rem;
   }
 }
