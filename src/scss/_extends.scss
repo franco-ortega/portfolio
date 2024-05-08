@@ -100,17 +100,16 @@
 
 %project-details {
   border-style: solid;
-  border-width: 0.25rem;
+  border-width: medium;
   border-radius: 1rem;
 
-  height: 95%;
-  width: 70%;
-  max-width: 80rem;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
 
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 0%;
   z-index: 1;
 
   font-family: var(--main-font);
@@ -151,17 +150,17 @@
   }
 
   @include media-query(desktop-medium) {
-    width: 65%;
+    // width: 65%;
   }
 
   @include media-query(tablet) {
-    width: 75%;
+    // width: 75%;
   }
 
   @include media-query(junior) {
     border-radius: 0;
-    height: 100%;
-    width: 100%;
+    // height: 100%;
+    // width: 100%;
     overflow: auto;
 
     div {
