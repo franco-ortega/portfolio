@@ -1,15 +1,18 @@
 @use '../../../scss/' as *;
 
 .WeatherBeatsDetails {
+  color: hsl(0, 0%, 0%);
+  border-color: hsl(0, 0%, 100%);
+  border-width: medium;
+  border-style: solid;
+
   background-color: yellow;
   background-image: url(../../../assets/WeatherBeats_full.jpg);
   background-position: 5% 10%;
   background-repeat: no-repeat;
   background-size: cover;
 
-  border-color: hsl(0, 0%, 0%);
-
-  color: hsl(0, 0%, 0%);
-
-  @extend %project-details;
+  @include media-query-new(tablet-new) {
+    border-radius: var(--popup-border-radius);
+  }
 }

@@ -1,7 +1,10 @@
 @use '../../../scss/' as *;
 
 .EbbDetails {
-  border-color: white;
+  color: #f3f3f3;
+  border-color: inherit;
+  border-width: medium;
+  border-style: solid;
 
   background: linear-gradient(
       0deg,
@@ -11,9 +14,9 @@
       rgba(55, 87, 149, 0.62),
       rgba(55, 87, 149, 0.82)
     ),
-    rgb(18, 18, 18);
+    rgb(18, 18, 18);  
 
-  color: #f3f3f3;
-
-  @extend %project-details;
+  @include media-query-new(tablet-new) {
+    border-radius: var(--popup-border-radius);
+  }
 }

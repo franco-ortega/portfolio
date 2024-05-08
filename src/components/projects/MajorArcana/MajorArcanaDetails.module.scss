@@ -1,6 +1,11 @@
 @use '../../../scss/' as *;
 
 .MajorArcanaDetails {
+  color: hsl(25, 66%, 69%);
+  border-color: inherit;
+  border-style: solid;
+  border-width: medium;
+
   background: linear-gradient(
       180deg,
       hsl(0, 0%, 7%, 20%),
@@ -11,17 +16,11 @@
     ),
     hsl(0, 0%, 18%);
 
-  color: hsl(25, 66%, 69%);
-
-  @extend %project-details;
-
   img {
     width: 25rem;
   }
-
-  @include media-query(mobile) {
-    img {
-      width: 18rem;
-    }
+ 
+  @include media-query-new(tablet-new) {
+    border-radius: var(--popup-border-radius);
   }
 }

@@ -1,0 +1,31 @@
+@use '../../scss/' as *;
+
+.PopUp {
+  background: var(--popup-bkgd);
+
+  height: calc(100% - var(--border-width) * 2);
+  width: calc(100% - var(--border-width) * 2);
+  max-width: 60rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  
+  color: var(--popup-text-color);
+  font-family: var(--main-font);
+
+  & p {
+    line-height: 1.25;
+  }
+
+  @include media-query-new(tablet-new) {
+    border-radius: var(--popup-border-radius);
+    border-color: inherit;
+    border-style: solid;
+    border-width: medium;
+    width: 90%;
+    height: 90%;
+  }
+}

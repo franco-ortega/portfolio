@@ -1,7 +1,10 @@
 @use '../../../scss/' as *;
 
 .RootRPGDetails {
-  border-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 0%);
+  border-color: inherit;
+  border-width: medium;
+  border-style: solid;
 
   background: linear-gradient(
       180deg,
@@ -13,24 +16,22 @@
     ),
     hsl(23, 63%, 38%);
 
-  color: hsl(0, 0%, 0%);
+  & > h4 {
+    position: relative;
 
-  @extend %project-details;
-
-  div {
-    h3 {
-      position: relative;
-
-      &::before {
-        content: 'NextJS';
-        position: absolute;
-        left: -6.25rem;
-      }
-      &::after {
-        content: 'Sass';
-        position: absolute;
-        left: 1rem;
-      }
+    &::before {
+      content: 'NextJS';
+      position: absolute;
+      left: -6.25rem;
     }
+    &::after {
+      content: 'Sass';
+      position: absolute;
+      left: 1rem;
+    }
+  }
+
+  @include media-query-new(tablet-new) {
+    border-radius: var(--popup-border-radius);
   }
 }
