@@ -19,7 +19,7 @@
 
   font-family: var(--main-font);
 
-  div {
+  & > div {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     height: 100%;
@@ -43,16 +43,16 @@
       font-weight: 500;
     }
 
-    h4,
-    p {
-      max-width: 45rem;
-    }
-
     h3, p {
       padding-inline: 2rem;
     }
 
-    p:not(:last-child) {
+    h4,
+    p {
+      max-width: 60ch;
+    }
+
+    p {
       font-size: var(--project-details-text);
       text-align: justify;
     }
@@ -66,9 +66,17 @@
     border-radius: 1rem;
     width: 75%;
     height: 75%;
+
+    div {
+      padding-top: 1rem;
+    }
   }
 
   @include media-query-new(desktop-small-new) {
     height: 90%;
+
+    div {
+      padding-top: 1.5rem;
+    }
   }
 }
