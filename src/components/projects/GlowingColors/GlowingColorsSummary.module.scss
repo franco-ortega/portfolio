@@ -1,0 +1,13 @@
+@use '../../../scss/' as *;
+
+.GlowingColorsSummary {
+  background: linear-gradient(
+      180deg,
+      hsl(260, 80%, 30%),
+      hsl(260, 70%, 20%),
+      hsl(260, 70%, 15%),
+      hsl(260, 70%, 5%),
+    );
+
+  color: hsl(220, 90%, 90%);
+}
