@@ -11,7 +11,7 @@ const GlowingColorsSummary = () => {
         <h2>Glowing Colors</h2>
         <div>
           <p>
-            A colorful visual experience that allows the user to enjoy a
+            A colorful and dynamic visual experience that engages the user in a
             peaecful, shifting, and interactive universe.
           </p>
           <ProjectLinks
