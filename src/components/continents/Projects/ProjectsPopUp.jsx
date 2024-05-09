@@ -6,6 +6,7 @@ import WeatherBeatsSummary from '../../projects/WeatherBeats/WeatherBeatsSummary
 import BeHumanSummary from '../../projects/BeHuman/BeHumanSummary';
 import MajorArcanaSummary from '../../projects/MajorArcana/MajorArcanaSummary';
 import GlowingColorsSummary from '../../projects/GlowingColors/GlowingColorsSummary';
+
 import styles from './ProjectsPopUp.module.scss';
 
 const ProjectsPopUp = () => {
