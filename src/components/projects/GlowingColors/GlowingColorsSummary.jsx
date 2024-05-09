@@ -2,11 +2,12 @@ import React from 'react';
 import ProjectSummary from '../ProjectSummary';
 import ProjectLinks from '../../links/ProjectLinks';
 import OpenDetails from '../../buttons/OpenDetails';
+import styles from './GlowingColorsSummary.module.scss';
 
 const GlowingColorsSummary = () => {
   return (
     <ProjectSummary>
-      <div>
+      <div className={styles.GlowingColorsSummary}>
         <h2>Glowing Colors</h2>
         <div>
           <p>
