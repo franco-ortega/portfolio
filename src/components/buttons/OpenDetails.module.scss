@@ -11,4 +11,8 @@
 
   color: hsl(0, 0%, 0%);
   font-size: var(--project-summary-button-text);
+
+  &:hover {
+    cursor: pointer;
+  }
 }
