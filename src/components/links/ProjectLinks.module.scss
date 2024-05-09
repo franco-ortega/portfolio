@@ -7,6 +7,7 @@
   display: grid;
   grid-template-columns: 9fr auto 9fr;
   grid-template-rows: 1;
+  gap: 0.5rem;
 
   span {
     text-align: center;
