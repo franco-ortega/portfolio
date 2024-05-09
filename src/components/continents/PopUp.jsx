@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import { FocusOn } from 'react-focus-on';
 import { useHistory } from 'react-router-dom';
 import ClosePopup from '../buttons/ClosePopup';
-import styles from './ContinentPopUp.module.scss';
+import styles from './PopUp.module.scss';
 
-const ContinentPopUp = ({ children }) => {
+const PopUp = ({ children }) => {
   let history = useHistory();
 
   return (
-    <main className={styles.ContinentPopUp}>
+    <main className={styles.PopUp}>
       <FocusOn onEscapeKey={() => history.push('/')}>
         <ClosePopup path={''} />
         {children}
@@ -18,8 +18,8 @@ const ContinentPopUp = ({ children }) => {
   );
 };
 
-ContinentPopUp.propTypes = {
+PopUp.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
-export default ContinentPopUp;
+export default PopUp;
