@@ -5,9 +5,8 @@
   font-weight: 550;
 
   display: grid;
-  grid-template-columns: 9fr 1fr 9fr;
+  grid-template-columns: 9fr auto 9fr;
   grid-template-rows: 1;
-  gap: 0.5rem;
 
   span {
     text-align: center;
@@ -23,6 +22,7 @@
 
   span {
     border-radius: 5rem;
+    // outline: 1px solid yellow;
 
     a {
       color: inherit;
