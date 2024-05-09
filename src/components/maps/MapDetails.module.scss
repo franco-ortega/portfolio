@@ -5,20 +5,31 @@
   overflow: auto;
   padding-block: 1rem;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  justify-content: center;
 
   font-family: var(--continent-font-bold);
   font-size: var(--map-title);
 
   p {
     margin-bottom: 1rem;
+    // background-color: green;s
+    text-align: center;
   }
 
-  img {
-    border-radius: 1.25rem;
-    max-width: 75%;
-    max-height: 40rem;
+  div {
+    height: 90%;
+    overflow: auto;
+    // background-color: red;
+    line-height: 0;
+    text-align: center;
+
+    img {
+      border-radius: 1.25rem;
+      max-width: 75%;
+      max-height: 90%;
+    }
   }
+
 }
