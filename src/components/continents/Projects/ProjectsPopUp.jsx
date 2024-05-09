@@ -1,11 +1,11 @@
 import React from 'react';
 import PopUp from '../PopUp';
 import RootRPGSummary from '../../projects/RootRPG/RootRPGSummary';
+import GlowingColorsSummary from '../../projects/GlowingColors/GlowingColorsSummary';
 import EbbSummary from '../../projects/Ebb/EbbSummary';
 import WeatherBeatsSummary from '../../projects/WeatherBeats/WeatherBeatsSummary';
 import BeHumanSummary from '../../projects/BeHuman/BeHumanSummary';
 import MajorArcanaSummary from '../../projects/MajorArcana/MajorArcanaSummary';
-import GlowingColorsSummary from '../../projects/GlowingColors/GlowingColorsSummary';
 
 import styles from './ProjectsPopUp.module.scss';
 

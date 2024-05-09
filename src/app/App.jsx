@@ -17,6 +17,7 @@ import Gruenne from '../components/maps/Gruenne';
 import MarneOsso from '../components/maps/MarneOsso';
 import Strigi from '../components/maps/Strigi';
 import './App.scss';
+import GlowingColorsDetails from '../components/projects/GlowingColors/GlowingColorsDetails';
 
 const App = () => {
   return (
@@ -27,6 +28,11 @@ const App = () => {
           <Route exact path='/projects' component={ProjectsPopUp} />
           <Route exact path='/profile' component={ProfilePopUp} />
           <Route exact path='/root-rpg' component={RootRPGDetails} />
+          <Route
+            exact
+            path='/glowing-colors'
+            component={GlowingColorsDetails}
+          />
           <Route exact path='/glowing-colors' component={RootRPGDetails} />
           <Route exact path='/ebb' component={EbbDetails} />
           <Route exact path='/weatherbeats' component={WeatherBeatsDetails} />
