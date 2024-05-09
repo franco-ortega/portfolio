@@ -1,0 +1,23 @@
+@use '../../../scss/' as *;
+
+.GlowingColorsDetails {
+  
+  border-color: inherit;
+  border-width: medium;
+  border-style: solid;
+
+  background: linear-gradient(
+      180deg,
+      hsl(260, 80%, 30%),
+      hsl(260, 70%, 20%),
+      hsl(260, 70%, 15%),
+      hsl(260, 70%, 5%),
+    );
+
+  color: hsl(220, 90%, 90%);
+
+  
+  @include media-query-new(tablet-new) {
+    border-radius: var(--popup-border-radius);
+  }
+}
