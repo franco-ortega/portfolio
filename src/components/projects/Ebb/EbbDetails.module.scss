@@ -2,9 +2,6 @@
 
 .EbbDetails {
   color: #f3f3f3;
-  border-color: inherit;
-  border-width: medium;
-  border-style: solid;
 
   background: linear-gradient(
       0deg,
@@ -15,8 +12,4 @@
       rgba(55, 87, 149, 0.82)
     ),
     rgb(18, 18, 18);  
-
-  @include media-query-new(tablet-new) {
-    border-radius: var(--popup-border-radius);
-  }
 }

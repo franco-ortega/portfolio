@@ -2,32 +2,37 @@
 
 .ProjectLinks {
   font-size: var(--project-details-links);
-  font-weight: 600;
+  font-weight: 550;
 
   display: grid;
-  grid-template-columns: 9fr 1fr 9fr;
+  grid-template-columns: 9fr auto 9fr;
   grid-template-rows: 1;
   gap: 0.5rem;
+
+  span {
+    text-align: center;
+  }
 
   span:first-child {
     text-align: right;
   }
+  
   span:last-child {
     text-align: left;
   }
 
   span {
-    border-radius: 5rem;
+    border-radius: 5rem;;
 
     a {
       color: inherit;
       padding: 0.25rem 0.5rem;
-      outline-width: 0.15rem;
+      outline-width: thin;
       outline-style: solid;
       outline-color: transparent;
-      transition: outline-color 500ms ease-in;
+      transition: outline-color 250ms ease-in;
 
-      &:focus,
+      &:focus-visible,
       &:hover {
         outline-color: inherit;
       }

@@ -9,7 +9,6 @@
 
 body {
   min-width: 350px;
-  // height: 100dvh;
 }
 
 @font-face {
@@ -90,7 +89,7 @@ body {
   /* new mobile-first styles */
   --continent-header-margin-block: 1rem;
   --popup-header-margin-block: 1rem;
-  --popup-border-radius: 1rem;
+  --popup-border-radius: 0rem;
 
   --popup-bkgd: hsl(0, 0%, 5%);
   --popup-text-color: hsl(0, 0%, 90%);
@@ -104,7 +103,7 @@ body {
   --project-details-title: 2.5rem;
   --project-details-tech: 1.75rem;
   --project-details-text: 1.25rem;
-  --project-details-links: 1.5rem;
+  --project-details-links: 1.25rem;
 
   --map-title: 3rem;
 
@@ -112,6 +111,7 @@ body {
 
   @include media-query-new(tablet-new) {
     --continent-title-size: clamp(2.25rem, 6vw, 5rem);
+    --popup-border-radius: 0.75rem;
     --popup-title-size: 5rem;
   }
 

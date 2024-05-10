@@ -1,8 +1,7 @@
 @use '../../scss/' as *;
 
 .ProjectDetails {
-  background-color: lightgreen;
-
+  border-radius: var(--popup-border-radius);
   height: 100%;
   width: 100%;
   max-width: 50rem;
@@ -20,6 +19,11 @@
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     height: 100%;
+
+    border-color: inherit;
+    border-radius: inherit;
+    border-style: solid;
+    border-width: medium;
     
     display: flex;
     flex-direction: column;
@@ -57,7 +61,6 @@
   }
 
   @include media-query-new(tablet-new) {
-    border-radius: 1rem;
     width: 90%;
     height: 75%;
 

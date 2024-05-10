@@ -2,10 +2,7 @@
 
 .BeHumanDetails {
   color: hsl(0, 0%, 0%);
-  border-color: inherit;
-  border-width: medium;
-  border-style: solid;
-
+  
   background: linear-gradient(
       180deg,
       hsl(199, 42%, 73%, 100%),
@@ -21,9 +18,5 @@
     border-radius: 50%;
     width: 12rem;
     margin-top: 1.5rem;
-  }
-
-  @include media-query-new(tablet-new) {
-    border-radius: var(--popup-border-radius);
   }
 }
