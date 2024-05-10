@@ -2,34 +2,28 @@
 
 .MapDetails {
   height: 100%;
-  overflow: auto;
   padding-block: 1rem;
 
   display: grid;
-  grid-template-rows: 1fr 10fr;
-  justify-content: center;
+  grid-template-rows: auto 1fr;
 
   font-family: var(--continent-font-bold);
   font-size: var(--map-title);
+  text-align: center;
 
   p {
     margin-bottom: 1rem;
-    // background-color: green;s
-    text-align: center;
+    line-height: 1;
   }
 
   div {
-    height: 90%;
     overflow: auto;
-    // background-color: red;
     line-height: 0;
-    text-align: center;
 
     img {
       border-radius: 1.25rem;
       max-width: 75%;
-      max-height: 90%;
+      max-height: 100%;
     }
   }
-
 }

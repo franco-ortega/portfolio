@@ -9,12 +9,12 @@ const PopUp = ({ children }) => {
   let history = useHistory();
 
   return (
-    <main className={styles.PopUp}>
-      <FocusOn onEscapeKey={() => history.push('/')}>
+    <FocusOn onEscapeKey={() => history.push('/')}>
+      <main className={styles.PopUp}>
         <ClosePopup path={''} />
         {children}
-      </FocusOn>
-    </main>
+      </main>
+    </FocusOn>
   );
 };
 
