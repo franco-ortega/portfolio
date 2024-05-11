@@ -1,9 +1,7 @@
 import React from 'react';
-import { useHistory } from 'react-router';
-import { FocusOn } from 'react-focus-on';
 import { Link } from 'react-router-dom';
-import ClosePopup from '../../buttons/ClosePopup';
 import PopUp from '../PopUp';
+import ClosePopup from '../../buttons/ClosePopup';
 import April from '../../../assets/maps/April.png';
 import Ganderlund from '../../../assets/maps/Ganderlund.png';
 import Gruenne from '../../../assets/maps/Gruenne.png';
@@ -13,14 +11,9 @@ import Strigi from '../../../assets/maps/Strigi.png';
 import styles from './CartographyPopUp.module.scss';
 
 const CartographyPopUp = () => {
-  let history = useHistory();
-
   return (
     <PopUp>
-      <FocusOn
-        onEscapeKey={() => history.push('/')}
-        className={styles.CartographyPopUp}
-      >
+      <div className={styles.CartographyPopUp}>
         <ClosePopup path={''} />
         <header>
           <h2>Cartography</h2>
@@ -88,7 +81,7 @@ const CartographyPopUp = () => {
             </Link>
           </section>
         </div>
-      </FocusOn>
+      </div>
     </PopUp>
   );
 };

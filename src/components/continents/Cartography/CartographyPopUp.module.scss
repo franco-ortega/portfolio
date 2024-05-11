@@ -3,16 +3,9 @@
 .CartographyPopUp {
   text-align: center;
   padding-block: 1rem;
-  padding-inline: 2rem;
 
   height: calc(100dvh - var(--border-width) * 2);
   overflow: auto;
-
-  line-height: 1.25;
-
-  display: grid;
-  grid-template-rows: 1fr 10fr;
-  
 
   header {
     h2 {
@@ -54,6 +47,7 @@
   & > div {
     height: 90%;
     overflow: auto;
+    padding-inline: 2rem;
     
     section {
       font-size: var(--popup-text);
@@ -91,8 +85,14 @@
       }
       
       @include media-query-new(desktop-medium-new) {
-        max-width: 50rem;
+        max-width: 100%;
       }
     }
   }
+
+  @include media-query-new(tablet-new) {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+  }
+  
 }
