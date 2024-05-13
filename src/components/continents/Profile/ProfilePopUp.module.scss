@@ -4,7 +4,6 @@
   --profile-popup-padding-top: 1rem;
   --profile-popup-padding-bottom: 1rem;
 
-
   padding-top: var(--profile-popup-padding-top);
   padding-bottom: var(--profile-popup-padding-bottom);
   padding-inline: 1.5rem;
@@ -81,8 +80,19 @@
 
   @include media-query-new(tablet-new) {
     --profile-popup-padding-bottom: 3rem;
-    
+
     height: calc(100dvh - var(--profile-popup-padding-top) - var(--profile-popup-padding-bottom));
+  }
+
+  @include media-query-landscape-mobile {
+    display: flex;
+    gap: 1rem;
+    
+    --profile-popup-padding-bottom: 2rem;
+
+    & > div {
+      height: 100%;
+    }
   }
 
 }
