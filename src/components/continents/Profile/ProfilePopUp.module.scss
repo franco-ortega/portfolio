@@ -1,13 +1,18 @@
 @use '../../../scss/' as *;
 
 .ProfilePopUp {
-  padding: 2rem 1.5rem;
+  // padding: 2rem 1.5rem;
+  padding-top: 1rem;
+  padding-inline: 1.5rem;
 
   height: calc(100dvh - var(--border-width) * 2);
-  overflow: auto;
+  // overflow: auto;
 
   display: grid;
   grid-template-rows: auto auto;
+  grid-template-rows: 1fr 10fr;
+  // gap: 2rem;
+  // display: flex;
 
   header {
     text-align: center;
@@ -49,6 +54,10 @@
 
   // bio
   & > div {
+    grid-template-rows: 2 / 3;
+    height: 100%;
+    overflow: auto;
+    
     border: 1px solid var(--popup-text-color);
     border-radius: 0.5rem;
     box-shadow: 0 0 0.25rem 0.01rem var(--popup-text-color);
@@ -59,13 +68,14 @@
 
     font-size: var(--continent-popup-text);
     text-align: justify;
+    
 
     p + p {
       margin-top: 0.75rem;
     }
     
     @include media-query-new(tablet-new) {
-      overflow: auto;
+      // overflow: auto;
     }
   }
 
