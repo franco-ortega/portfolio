@@ -2,7 +2,7 @@
 
 .ProfilePopUp {
   --profile-popup-padding-top: 1rem;
-  --profile-popup-padding-bottom: 2rem;
+  --profile-popup-padding-bottom: 1rem;
 
 
   padding-top: var(--profile-popup-padding-top);
@@ -57,6 +57,7 @@
   & > div {
     grid-template-rows: 2 / 3;
     height: 100%;
+    height: calc(100% - 1rem);
     overflow: auto;
     
     border: 1px solid var(--popup-text-color);
