@@ -3,16 +3,13 @@
 .ProfilePopUp {
   // padding: 2rem 1.5rem;
   padding-top: 1rem;
+  padding-bottom: 2rem;
   padding-inline: 1.5rem;
 
   height: calc(100dvh - var(--border-width) * 2);
-  // overflow: auto;
 
   display: grid;
   grid-template-rows: auto auto;
-  grid-template-rows: 1fr 10fr;
-  // gap: 2rem;
-  // display: flex;
 
   header {
     text-align: center;
@@ -32,6 +29,7 @@
     h2 {
       font-size: var(--popup-title-size);
       font-family: var(--continent-font-bold);
+      font-weight: 400;
       line-height: 1.25;
     }
 
