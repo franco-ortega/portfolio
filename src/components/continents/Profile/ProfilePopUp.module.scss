@@ -1,7 +1,6 @@
 @use '../../../scss/' as *;
 
 .ProfilePopUp {
-  // padding: 2rem 1.5rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
   padding-inline: 1.5rem;
@@ -75,6 +74,10 @@
     @include media-query-new(tablet-new) {
       height: auto;
     }
+  }
+
+  @include media-query-new(tablet-new) {
+    // height: auto;
   }
 
 }
