@@ -1,8 +1,12 @@
 @use '../../../scss/' as *;
 
 .ProfilePopUp {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  --profile-popup-padding-top: 1rem;
+  --profile-popup-padding-bottom: 2rem;
+
+
+  padding-top: var(--profile-popup-padding-top);
+  padding-bottom: var(--profile-popup-padding-bottom);
   padding-inline: 1.5rem;
 
   height: calc(100dvh - var(--border-width) * 2);
@@ -78,7 +82,7 @@
   @include media-query-new(tablet-new) {
     // height: auto;
     height: 50%;
-    height: calc(100dvh - 4rem);
+    height: calc(100dvh - var(--profile-popup-padding-top) - var(--profile-popup-padding-bottom) - 1rem);
   }
 
 }
