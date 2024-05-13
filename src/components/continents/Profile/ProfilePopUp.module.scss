@@ -60,7 +60,6 @@
     box-shadow: 0 0 0.25rem 0.01rem var(--popup-text-color);
 
     margin-top: 1rem;
-    margin-bottom: 4rem;
     padding: 1rem;
 
     font-size: var(--continent-popup-text);
@@ -78,6 +77,8 @@
 
   @include media-query-new(tablet-new) {
     // height: auto;
+    height: 50%;
+    height: calc(100dvh - 4rem);
   }
 
 }
