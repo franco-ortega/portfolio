@@ -1,10 +1,14 @@
 @use '../../../scss/' as *;
 
 .ProfilePopUp {
-  padding: 2rem 1.5rem;
+  --profile-popup-padding-top: 1rem;
+  --profile-popup-padding-bottom: 1rem;
+
+  padding-top: var(--profile-popup-padding-top);
+  padding-bottom: var(--profile-popup-padding-bottom);
+  padding-inline: 1.5rem;
 
   height: calc(100dvh - var(--border-width) * 2);
-  overflow: auto;
 
   display: grid;
   grid-template-rows: auto auto;
@@ -27,6 +31,7 @@
     h2 {
       font-size: var(--popup-title-size);
       font-family: var(--continent-font-bold);
+      font-weight: 400;
       line-height: 1.25;
     }
 
@@ -49,24 +54,44 @@
 
   // bio
   & > div {
+    grid-template-rows: 2 / 3;
+    height: calc(100% - var(--profile-popup-padding-bottom));
+    overflow: auto;
+    
     border: 1px solid var(--popup-text-color);
     border-radius: 0.5rem;
     box-shadow: 0 0 0.25rem 0.01rem var(--popup-text-color);
 
     margin-top: 1rem;
-    margin-bottom: 4rem;
     padding: 1rem;
 
     font-size: var(--continent-popup-text);
     text-align: justify;
+    
 
     p + p {
       margin-top: 0.75rem;
     }
     
     @include media-query-new(tablet-new) {
-      overflow: auto;
+      height: auto;
     }
   }
 
+  @include media-query-new(tablet-new) {
+    --profile-popup-padding-bottom: 3rem;
+
+    height: calc(100dvh - var(--profile-popup-padding-top) - var(--profile-popup-padding-bottom));
+  }
+
+  @include media-query-landscape-mobile {
+    display: flex;
+    gap: 1rem;
+    
+    --profile-popup-padding-bottom: 2rem;
+
+    & > div {
+      height: 100%;
+    }
+  }
 }
