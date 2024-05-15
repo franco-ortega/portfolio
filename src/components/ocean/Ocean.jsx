@@ -12,6 +12,7 @@ import Email from '../islands/Email';
 import GitHub from '../islands/GitHub';
 import LinkedIn from '../islands/LinkedIn';
 import styles from './Ocean.module.scss';
+import CartographyContinent from '../continents/Cartography/CartographyContinent';
 
 const Ocean = () => {
   return (
@@ -25,6 +26,7 @@ const Ocean = () => {
         <ProfileContinent />
         <ResumeContinent />
         <Cartography />
+        <CartographyContinent />
 
         {/* Islands */}
         <GitHub />

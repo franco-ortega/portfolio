@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ProfileContinent.module.scss';
+import styles from './CartographyContinent.module.scss';
 import Continent from '../Continent';
 
 const CartographyContinent = () => {
