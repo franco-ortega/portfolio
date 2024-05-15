@@ -1,6 +1,8 @@
 @use '../../../scss/' as *;
 
 .CartographyContinent {
+  --continent-cartography-fs-multiplier: 0.75;
+
   grid-column: 2 / 8;
   grid-row: 18 / 23;
 
@@ -11,19 +13,11 @@
   border-radius: 60% 40% 60% 35%;
   transform: rotate(-15deg);
   
-  
-  outline: dashed 3px white;
-  z-index: 2;
-
-   & div a div div {
-    background-color: pink;
-    color: yellow;
-    font-size: 2rem;
-
-    div {
+   & div a div span {
+      display: inline-block;
+      padding-block: 0.5rem;
       transform: rotate(-7.5deg);
-    }
-    
+      font-size: calc(var(--continent-title-size) * var(--continent-cartography-fs-multiplier));
   }
 
   @include media-query-new(tablet-new) {
@@ -32,8 +26,13 @@
   }
 
   @include media-query-new(desktop-small-new) {
+    --continent-cartography-fs-multiplier: 0.5;
+
     grid-column: 7 / 11;
     grid-row: 17 / 25;
-  }
 
+    & div a div span {
+      padding-block: 0.25rem;
+    }
+  }
 }
