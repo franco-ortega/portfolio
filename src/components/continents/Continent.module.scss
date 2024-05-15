@@ -32,9 +32,9 @@
 
     div {
       // LAND
-      min-width: fit-content;
-
       @extend %continent;
+      
+      min-width: fit-content;
       padding: 0.5rem 1rem;
 
       // CONTINENT FONT SIZE FOR TITLE
