@@ -8,6 +8,24 @@
   align-items: center;
   justify-content: center;
 
+  border-radius: 60% 40% 60% 35%;
+  transform: rotate(-15deg);
+  
+  
+  outline: dashed 3px white;
+  z-index: 2;
+
+   & div a div div {
+    background-color: pink;
+    color: yellow;
+    font-size: 2rem;
+
+    div {
+      transform: rotate(-7.5deg);
+    }
+    
+  }
+
   @include media-query-new(tablet-new) {
     grid-column: 4 / 9;
     grid-row: 19 / 23;

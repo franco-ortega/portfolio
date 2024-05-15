@@ -4,6 +4,8 @@
   width: 55%;
   min-width: fit-content;
   text-align: center;
+
+  border-radius: inherit;
   
   // OUTER COASTLINE
   @extend %coastal-shadow-and-waves;
@@ -38,7 +40,9 @@
       padding: 0.5rem 1rem;
 
       // CONTINENT FONT SIZE FOR TITLE
-      font-size: var(--continent-title-size);
+      span {
+        font-size: var(--continent-title-size);
+      }
       
       @include media-query-landscape-mobile {
         // --continent-title-size: 1.5rem;
