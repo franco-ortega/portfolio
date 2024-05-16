@@ -7,17 +7,26 @@
   grid-row: 18 / 23;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 60% 40% 60% 35%;
-  transform: rotate(-15deg);
   
-   & div a div span {
+  /* unique styles for Continent component that only apply to CartographyContinent */
+  & > div {
+    transform: rotate(-15deg);
+    margin: auto;
+    border-radius: 60% 40% 60% 35%;
+    height: fit-content;
+
+    &:hover {
+      transform: rotate(-15deg);
+      scale: 1.075;
+    }
+
+    /* unique styles for CartographyContinent title SPAN */
+    a div span {
       display: inline-block;
       padding-block: 0.5rem;
       transform: rotate(-7.5deg);
       font-size: calc(var(--continent-title-size) * var(--continent-cartography-fs-multiplier));
+    }
   }
 
   @include media-query-new(tablet-new) {

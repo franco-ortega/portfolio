@@ -13,13 +13,13 @@
   @extend %half-second-transition;
 
   &:focus-within {
-    transform: scale(1.075);
+    scale: 1.075;
   }
   
   // RESTRICT TRANSFORM TO DEVICES THAT HOVER
   @media (hover: hover) and (pointer: fine) {
     &:hover {
-      transform: scale(1.075);
+      scale: 1.075;
     }
   }
 
