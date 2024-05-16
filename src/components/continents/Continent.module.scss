@@ -1,7 +1,6 @@
 @use '../../scss/' as *;
 
 .Continent {
-  width: 55%;
   min-width: fit-content;
   text-align: center;
 
@@ -22,10 +21,6 @@
     &:hover {
       transform: scale(1.075);
     }
-  }
-
-  @include media-query-new(desktop-small-new) {
-    width: 50%;
   }
 
   div {
