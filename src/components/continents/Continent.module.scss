@@ -1,9 +1,10 @@
 @use '../../scss/' as *;
 
 .Continent {
-  width: 55%;
   min-width: fit-content;
   text-align: center;
+
+  border-radius: inherit;
   
   // OUTER COASTLINE
   @extend %coastal-shadow-and-waves;
@@ -12,18 +13,14 @@
   @extend %half-second-transition;
 
   &:focus-within {
-    transform: scale(1.075);
+    scale: 1.075;
   }
   
   // RESTRICT TRANSFORM TO DEVICES THAT HOVER
   @media (hover: hover) and (pointer: fine) {
     &:hover {
-      transform: scale(1.075);
+      scale: 1.075;
     }
-  }
-
-  @include media-query-new(desktop-small-new) {
-    width: 50%;
   }
 
   div {
@@ -32,13 +29,15 @@
 
     div {
       // LAND
-      min-width: fit-content;
-
       @extend %continent;
+      
+      min-width: fit-content;
       padding: 0.5rem 1rem;
 
       // CONTINENT FONT SIZE FOR TITLE
-      font-size: var(--continent-title-size);
+      span {
+        font-size: var(--continent-title-size);
+      }
       
       @include media-query-landscape-mobile {
         // --continent-title-size: 1.5rem;

@@ -7,7 +7,7 @@ import Title from '../mapElements/title/Title';
 import ProjectsContinent from '../continents/Projects/ProjectsContinent';
 import ProfileContinent from '../continents/Profile/ProfileContinent';
 import ResumeContinent from '../continents/Resume/ResumeContinent';
-import Cartography from '../continents/Cartography/Cartography';
+import CartographyContinent from '../continents/Cartography/CartographyContinent';
 import Email from '../islands/Email';
 import GitHub from '../islands/GitHub';
 import LinkedIn from '../islands/LinkedIn';
@@ -24,7 +24,7 @@ const Ocean = () => {
         <ProjectsContinent />
         <ProfileContinent />
         <ResumeContinent />
-        <Cartography />
+        <CartographyContinent />
 
         {/* Islands */}
         <GitHub />

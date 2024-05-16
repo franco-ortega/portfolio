@@ -9,13 +9,17 @@ const Continent = ({ path, title }) => {
       {path.includes('Resume_Franco_Ortega') ? (
         <a href={path} rel='noreferrer' target='_blank'>
           <div>
-            <div>{title}</div>
+            <div>
+              <span>{title}</span>
+            </div>
           </div>
         </a>
       ) : (
         <Link to={path}>
           <div>
-            <div>{title}</div>
+            <div>
+              <span>{title}</span>
+            </div>
           </div>
         </Link>
       )}

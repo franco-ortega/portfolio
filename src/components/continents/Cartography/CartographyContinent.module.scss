@@ -1,0 +1,43 @@
+@use '../../../scss/' as *;
+
+.CartographyContinent {
+  --continent-cartography-fs-multiplier: 0.75;
+
+  grid-column: 2 / 8;
+  grid-row: 18 / 23;
+
+  display: flex;
+  
+  /* unique styles for Continent component that only apply to CartographyContinent */
+  & > div {
+    transform: rotate(-15deg);
+    margin: auto;
+    border-radius: 60% 40% 60% 35%;
+    height: fit-content;
+
+    &:hover {
+      transform: rotate(-15deg);
+      scale: 1.075;
+    }
+
+    /* unique styles for CartographyContinent title SPAN */
+    a div span {
+      display: inline-block;
+      padding-block: 0.5rem;
+      transform: rotate(-7.5deg);
+      font-size: calc(var(--continent-title-size) * var(--continent-cartography-fs-multiplier));
+    }
+  }
+
+  @include media-query-new(tablet-new) {
+    grid-column: 4 / 9;
+    grid-row: 19 / 23;
+  }
+
+  @include media-query-new(desktop-small-new) {
+    --continent-cartography-fs-multiplier: 0.6;
+
+    grid-column: 7 / 11;
+    grid-row: 17 / 25;
+  }
+}
