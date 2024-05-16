@@ -75,11 +75,12 @@
   }
 }
 
-// media queries used
-// @include media-query-new(desktop-small-new) {
-// @include media-query-new(desktop-large-new) {
-// @media (prefers-reduced-motion: reduce) {
-// @include media-query-landscape-mobile {
+/* media queries used
+@include media-query-new(tablet-new) {
+@include media-query-new(desktop-large-new) {
+@media (prefers-reduced-motion: no-preference) {
+@include media-query-landscape-mobile {
+  */
 
 
   @keyframes coastal-wave {
