@@ -1,9 +1,5 @@
 @use '../../scss/' as *;
 
-.OuterCoastline:focus-within {
-  scale: 1.15;
-}
-
 .OuterCoastline {
   background: var(--outer-coastline-bkgd);
   background-size: 15% 15%;
@@ -17,12 +13,11 @@
   box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow-color);
 
   padding: 0.2rem;
-
-  @extend %half-second-transition;
 }
 
+.OuterCoastline:focus-within,
 .OuterCoastline:hover {
-  scale: 1.15;
+  box-shadow: 0px 0px 2px 5px var(--focus-hover-highlight);
 }
 
 .InnerCoastline {
@@ -64,28 +59,28 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .OuterCoastline:focus-within {
-    transform: none;
-
-    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
-  }
-
+@media (prefers-reduced-motion: no-preference) {
+  .OuterCoastline:focus-within,
   .OuterCoastline:hover {
-    transform: none;
-    box-shadow: 0 0 1vw 0.75vw var(--focus-hover-highlight);
+    box-shadow: none;
+    scale: 1.15;
   }
 
   .OuterCoastline {
-    animation: none;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
   }
 }
 
-// media queries used
-// @include media-query-new(desktop-small-new) {
-// @include media-query-new(desktop-large-new) {
-// @media (prefers-reduced-motion: reduce) {
-// @include media-query-landscape-mobile {
+/* media queries used
+@include media-query-new(tablet-new) {
+@include media-query-new(desktop-large-new) {
+@media (prefers-reduced-motion: no-preference) {
+@include media-query-landscape-mobile {
+  */
 
 
   @keyframes coastal-wave {
