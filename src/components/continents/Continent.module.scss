@@ -7,10 +7,78 @@
   border-radius: inherit;
   
   // OUTER COASTLINE
-  @extend %coastal-shadow-and-waves;
+  box-shadow: var(--coastline-shadow);
+
+  padding: var(--outer-coastline-padding);
+
+  background: var(--outer-coastline-bkgd);
+  background-size: var(--outer-coastline-bkgd-size);
+  animation: coastal-wave 20s ease infinite both;
+  -moz-animation: coastal-wave 20s ease infinite both;
+  -webkit-animation: coastal-wave 20s ease infinite both;
+  -o-animation: coastal-wave 20s ease infinite both;
+  -ms-animation: coastal-wave 20s ease infinite both;
+
+  @keyframes coastal-wave {
+    0% {
+      background-position: 0 100%;
+    }
+    25% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 75%;
+    }
+    100% {
+      background-position: 0 100%;
+    }
+  }
+  
+  @-moz-keyframes coastal-wave {
+    0% {
+      background-position: 0 50%;
+    }
+    25% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 75%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  
+  @-webkit-keyframes coastal-wave {
+    0% {
+      background-position: 0 50%;
+    }
+    25% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 75%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
   
   // TRANSFORMS ON FOCUS AND HOVER
-  @extend %half-second-transition;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
 
   &:focus-within {
     scale: 1.075;
@@ -25,11 +93,19 @@
 
   div {
     // INNER COASTLINE
-    @extend %inner-coastline;
+    padding: var(--inner-coastline-padding);
+    border-radius: inherit;
+    background: var(--inner-coastline);
 
     div {
       // LAND
-      @extend %continent;
+      border: var(--continent-border);
+      border-radius: inherit;
+      
+      background: var(--continent-bkgd);
+      background-size: 115% 115%;
+      
+      font-family: var(--continent-font-bold);
       
       min-width: fit-content;
       padding: 0.5rem 1rem;
