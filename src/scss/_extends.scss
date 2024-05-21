@@ -1,12 +1,5 @@
 @use './breakpoints' as *;
 
-
-%inner-coastline {
-  padding: var(--inner-coastline-padding);
-  border-radius: inherit;
-  background: var(--inner-coastline);
-}
-
 %continent {
   border: var(--continent-border);
   border-radius: inherit;
