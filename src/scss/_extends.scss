@@ -5,28 +5,3 @@
   align-items: center;
   justify-content: center;
 }
-
-%outline {
-  background-color: hsl(0, 0%, 100%, 0.5);
-  outline: 3px dotted lightcoral;
-
-  @include media-query-new(tablet-new) {
-    background-color: hsl(60, 100%, 50%, 0.5);
-    outline: 3px dotted red;
-  }
-
-  @include media-query-new(desktop-small-new) {
-    background-color: hsl(180, 100%, 50%, 0.5);
-    outline: 3px dotted lightgreen;
-  }
-
-  @include media-query-new(desktop-medium-new) {
-    background-color: hsla(300, 59%, 55%, 0.5);
-    outline: 3px dotted white;
-  }
-
-  @include media-query-new(desktop-large-new) {
-    background-color: hsl(120, 73%, 75%, 0.5);
-    outline: 3px dotted yellow;
-  }
-}
