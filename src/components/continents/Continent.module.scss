@@ -99,7 +99,13 @@
 
     div {
       // LAND
-      @extend %continent;
+      border: var(--continent-border);
+      border-radius: inherit;
+      
+      background: var(--continent-bkgd);
+      background-size: 115% 115%;
+      
+      font-family: var(--continent-font-bold);
       
       min-width: fit-content;
       padding: 0.5rem 1rem;

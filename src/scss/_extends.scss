@@ -1,15 +1,5 @@
 @use './breakpoints' as *;
 
-%continent {
-  border: var(--continent-border);
-  border-radius: inherit;
-  
-  background: var(--continent-bkgd);
-  background-size: 115% 115%;
-  
-  font-family: var(--continent-font-bold);
-}
-
 %island-centering {
   display: flex;
   align-items: center;
