@@ -10,7 +10,11 @@
   @extend %coastal-shadow-and-waves;
   
   // TRANSFORMS ON FOCUS AND HOVER
-  @extend %half-second-transition;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
 
   &:focus-within {
     scale: 1.075;
