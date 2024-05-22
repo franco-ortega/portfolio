@@ -138,7 +138,7 @@ a:hover {
 
 /* 
 media queries used
-  @include media-query-new(tablet-new) {
-  @include media-query-new(desktop-small-new) {
-  @include media-query-landscape-mobile {
+  @include media-query-new(tablet-new)
+  @include media-query-new(desktop-small-new)
+  @include media-query-landscape-mobile
 */
