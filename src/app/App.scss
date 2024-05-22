@@ -83,7 +83,6 @@ body {
   --continent-popup-header: 1.25rem;
   --continent-popup-text: 1.2rem;
   --popup-title-size: 4rem;
-  --popup-text: 1.1rem;
   
   /* new mobile-first styles */
   --continent-header-margin-block: 1rem;
@@ -139,25 +138,21 @@ a:hover {
 
 @include media-query(desktop-medium) {
   :root {
-    --popup-text: 1.5vw;
   }
 }
 
 @include media-query(tablet) {
   :root {
-    --popup-text: 2.75vw;
   }
 }
 
 @include media-query(mobile) {
   :root {
-    --popup-text: 3.75vw;
   }
 }
 
 @include media-maxWidth-orientation(tablet, landscape) {
   :root {
-    --popup-text: 2vw;
   }
 }
 
