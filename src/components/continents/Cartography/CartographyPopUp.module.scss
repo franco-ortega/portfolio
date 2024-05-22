@@ -50,7 +50,6 @@
     padding-inline: 2rem;
     
     section {
-      font-size: var(--popup-text);
       font-size: var(--continent-popup-text);
 
       text-align: justify;
@@ -94,5 +93,10 @@
     display: grid;
     grid-template-rows: 1fr 10fr;
   }
-  
 }
+
+/* media queries used
+  @include media-query-new(tablet-new)
+  @include media-query-new(desktop-small-new)
+  @include media-query-new(desktop-medium-new)
+*/

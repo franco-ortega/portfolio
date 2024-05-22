@@ -23,7 +23,6 @@
     padding-inline: 1rem;
     
     max-width: 95%;
-    // height: calc(100% - var(--popup-title-size) - var(--popup-header-margin-block) - var(--border-width) * 3);
     overflow: auto;
     
     display: grid;
@@ -52,6 +51,7 @@
 }
 
 /* MEDIA QUERIES USED:
-  @include media-query-new(desktop-small-new) {
-  @include media-query-new(desktop-large-new) {
+  @include media-query-new(tablet-new)
+  @include media-query-new(desktop-small-new)
+  @include media-query-new(desktop-large-new)
 */

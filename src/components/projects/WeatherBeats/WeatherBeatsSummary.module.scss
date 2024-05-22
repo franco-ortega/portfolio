@@ -1,24 +1,10 @@
 @use '../../../scss/' as *;
 
 .WeatherBeatsSummary {
-  border-color: hsl(0, 0%, 0%);
-
   background-image: url(../../../assets/WeatherBeats_mobile.jpg);
-  background-position: 50% 5%;
+  background-position: 50% 55%;
   background-repeat: no-repeat;
   background-size: cover;
 
   color: hsl(0, 0%, 0%);
-
-  @include media-query(desktop-medium) {
-    background-position: 50% 5%;
-  }
-
-  @include media-query(tablet) {
-    background-position: 50% 50%;
-  }
-
-  @include media-query(mobile) {
-    background-position: 50% 55%;
-  }
 }

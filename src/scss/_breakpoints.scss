@@ -1,20 +1,6 @@
 @use 'sass:map';
 
 $breakpoints: (
-  desktop-medium: 85rem,
-  // 1360px
-  desktop-small: 70rem,
-  // 1120px
-  tablet-wide: 62.5rem,
-  // 1000px
-  tablet: 56rem,
-  // 900px
-  junior: 45rem,
-  // 720px
-  mobile: 35rem,
-  // 560px,
-  mobile-narrow: 18.75rem,
-  // 300px
   tablet-new: 35rem,
   // 560px
   desktop-small-new: 56.25rem,
@@ -25,14 +11,6 @@ $breakpoints: (
   // 1360px
 );
 
-@mixin media-query($key) {
-  $size: map.get($breakpoints, $key);
-
-  @media (max-width: $size) {
-    @content;
-  }
-}
-
 @mixin media-query-new($key) {
   $size: map.get($breakpoints, $key);
 
@@ -41,16 +19,13 @@ $breakpoints: (
   }
 }
 
-@mixin media-landscape($key) {
-  $size: map.get($breakpoints, $key);
-
-  @media (max-height: $size) {
-    height: 100%;
-    overflow: auto;
+@mixin media-query-landscape-mobile {
+  @media (max-height: 450px) {
     @content;
   }
 }
 
+/* mixins not currently in use: */
 @mixin media-maxWidth-orientation($key, $orientation) {
   $size: map.get($breakpoints, $key);
 
@@ -68,14 +43,18 @@ $breakpoints: (
   }
 }
 
-@mixin media-mobile-landscape() {
-  @media (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+@mixin media-landscape($key) {
+  $size: map.get($breakpoints, $key);
+
+  @media (max-height: $size) {
+    height: 100%;
+    overflow: auto;
     @content;
   }
 }
 
-@mixin media-query-landscape-mobile {
-  @media (max-height: 450px) {
+@mixin media-mobile-landscape() {
+  @media (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
     @content;
   }
 }

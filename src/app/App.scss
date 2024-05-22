@@ -83,8 +83,6 @@ body {
   --continent-popup-header: 1.25rem;
   --continent-popup-text: 1.2rem;
   --popup-title-size: 4rem;
-  --popup-header-text: 1.35rem;
-  --popup-text: 1.1rem;
   
   /* new mobile-first styles */
   --continent-header-margin-block: 1rem;
@@ -138,40 +136,9 @@ a:hover {
   color: var(--darkestblue);
 }
 
-@include media-query(desktop-medium) {
-  :root {
-    --popup-header-text: 1.75vw;
-    --popup-text: 1.5vw;
-  }
-}
-
-@include media-query(tablet) {
-  :root {
-    --popup-header-text: 3vw;
-    --popup-text: 2.75vw;
-  }
-}
-
-@include media-maxWidth-orientation(tablet, landscape) {
-  :root {
-    --popup-header-text: 2.25vw;
-    --popup-text: 2vw;
-  }
-}
-
-@include media-query(mobile) {
-  :root {
-    // --popup-title-size: 4rem;
-    --popup-header-text: 3.4vw;
-    --popup-text: 3.75vw;
-  }
-}
-
-// media queries used
-// @include media-query-new(tablet-new) {
-// @include media-query-new(desktop-small-new) {
-// @include media-query-landscape-mobile {
-// @include media-query(desktop-medium) {
-// @include media-query(tablet) {
-// @include media-maxWidth-orientation(tablet, landscape) {
-// @include media-query(mobile) {
+/* 
+media queries used
+  @include media-query-new(tablet-new)
+  @include media-query-new(desktop-small-new)
+  @include media-query-landscape-mobile
+*/

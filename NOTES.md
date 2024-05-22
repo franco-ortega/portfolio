@@ -2,165 +2,81 @@
 
 ## Sass Breakpoints
 
-1. desktop-medium: 1200px
-1. tablet-wide: 1000px
-1. tablet: 900px
-1. junior: 700px
-1. mobile: 500px
-1. mobile-narrow: 300px
+1. tablet-new: 35rem = 560px
+1. desktop-small-new: 56.25rem = 900px
+1. desktop-medium-new: 70rem = 1120px
+1. desktop-large-new: 85rem = 1360px
 
 ## Sass Media Query Mixins
 
-1. media-query(key)
-1. media-maxWidth-orientation(key, orientation)
-1. media-maxWidth-minHeight(key1, key2)
-1. media-mobile-landscape()
+1. Active
+   1. @mixin media-query-new($key)
+   1. @mixin media-query-landscape-mobile
+1. Inactive
+   1. @mixin media-maxWidth-orientation($key, $orientation)
+   1. @mixin media-maxWidth-minHeight($key1, $key2)
+   1. @mixin media-landscape($key)
+   1. @mixin media-mobile-landscape()
 
 ## Media Queries
 
-1. @include media-query(desktop-medium) {
-1. @include media-query(tablet) {
-1. @include media-maxWidth-orientation(tablet, landscape) {
-1. @include media-maxWidth-minHeight(tablet, tablet-wide) {
-1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @media screen and (max-width: 900px) and (max-height: 500px) {
-1. @media screen and (max-width: 900px) and (min-width: 700px) and (max-height: 500px) and (orientation: landscape) {
-1. @include media-query(junior) {
-1. @include media-maxWidth-orientation(junior, landscape) {
-1. @media screen and (max-width: 500px) and (max-height: 700px) {
-1. @include media-query(mobile) {
-1. @include media-mobile-landscape() {
-1. @include media-maxWidth-orientation(mobile, portrait) {
-1. @include media-query(mobile-narrow) {
-1. @media (prefers-reduced-motion: reduce) {
+1. @media (max-height: 700px) in CartographyPopUp
+1. @media (max-height: 650px) in CompassNew
+1. @media (min-height: 700px) in Title
+1. 1. @media (prefers-reduced-motion: reduce) in Continent and Island
 
 ---
 
-## App: 3
-
-1. @include media-query(desktop-medium) {
-1. @include media-maxWidth-orientation(tablet, landscape) {
-1. @include media-query(mobile) {
+## App:
 
 ## Buttons x 1 set (2 components)
 
-### ClosePopUp / OpenDetails: 3
+### ClosePopUp / OpenDetails:
 
-1. @include media-query(desktop-medium) {
-1. @include media-query(tablet) {
-1. @include media-query(mobile) {
+## Continent
 
-## Continents x 6 sets (3 components / 1 / 1 / 1 / 1 / 1)
+1. @media (prefers-reduced-motion: reduce)
 
-### Cartography / Projects / Resume: 4
+### Continents x 4
 
-1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @include media-mobile-landscape() {
-1. @include media-query(mobile) {
-1. @media (prefers-reduced-motion: reduce) {
+---
 
-### CartographyDetails: 3
+### CartographyDetails:
 
-1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @include media-maxWidth-orientation(tablet, landscape) {
-1. @include media-query(mobile) {
+### Profile:
 
-### Profile: 4
+### ProfileDetails:
 
-1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @include media-mobile-landscape() {
-1. @include media-maxWidth-orientation(mobile, portrait) {
-1. @media (prefers-reduced-motion: reduce) {
+### ProjectsDetails:
 
-### ProfileDetails: 4
+### ContinentDetails:
 
-1. @include media-query(desktop-medium) {
-1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @include media-maxWidth-orientation(tablet, landscape) {
-1. @include media-query(mobile) {
+---
 
-### ProjectsDetails: 5
+## Island -> Email / GitHub / LinkedIn / Twitter: 1 -> 4
 
-1. @include media-query(desktop-medium) {
-1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @include media-maxWidth-minHeight(tablet, tablet-wide) {
-1. @include media-mobile-landscape() {
-1. @include media-query(mobile) {
+1. @media (prefers-reduced-motion: reduce)
 
-### ContinentDetails: 2
-
-1. @include media-query(desktop-medium) {
-1. @include media-query(tablet) {
-
-## Islands x 2 sets (1 component / 5 components)
-
-### Island: 4
-
-1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @include media-maxWidth-orientation(tablet, landscape) {
-1. @include media-query(mobile) {
-1. @media (prefers-reduced-motion: reduce) {
-
-### IslandChain / Email / GitHub / LinkedIn / Twitter: 3
-
-1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @include media-mobile-landscape() {
-1. @include media-query(mobile) {
+---
 
 ## Map Elements x 4
 
 ### BorderCorner: 2
 
-1. @include media-query(tablet) {
-1. @include media-query(mobile) {
+### Compass:
 
-### Compass: 6
+### Legend:
 
-1. @include media-query(desktop-medium) {
-1. @include media-query(tablet) {
-1. @include media-maxWidth-minHeight(tablet, tablet-wide) {
-1. @media screen and (max-width: 900px) and (min-width: 700px) and (max-height: 500px) and (orientation: landscape) {
-1. @include media-maxWidth-orientation(junior, landscape) {
-1. @include media-query(mobile) {
-
-### Legend: 8
-
-1. @include media-query(desktop-medium) {
-1. @include media-query(tablet) {
-1. @include media-maxWidth-minHeight(tablet, tablet-wide) {
-1. @media screen and (max-width: 900px) and (max-height: 500px) {
-1. @include media-query(junior) {
-1. @include media-query(mobile) {
-1. @media screen and (max-width: 500px) and (max-height: 700px) {
-1. @include media-query(mobile-narrow) {
-
-### Scale: 3
-
-1. @include media-query(tablet) {
-1. @include media-mobile-landscape() {
-1. @include media-query(mobile) {
+### Scale:
 
 ## Maps x 1 set (2 components)
 
 ### MapDetails / MapTallDetails: 4
 
-1. @include media-query(desktop-medium) {
-1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @include media-maxWidth-orientation(tablet, landscape) {
-1. @include media-query(mobile) {
-
-## Ocean: 3
-
-1. @include media-query(tablet) {
-1. @include media-maxWidth-orientation(tablet, landscape) {
-1. @include media-query(mobile) {
+## Ocean: 1
 
 ---
 
-## Projects x 1 set (10 components)
+## Projects x 6 (6 x 2 components = 10 components)
 
-### BeHuman / BeHumanDetails / ChooseGif / ChooseGifDetails / Ebb / EbbDetails / MajorArcana / MajorArcanaDetails / WeatherBeats / WeatherBeatsDetails: 3
-
-1. @include media-query(desktop-medium) {
-1. @include media-query(tablet) {
-1. @include media-query(mobile) {
+### Root / Glowing Colors / BeHuman / Ebb / MajorArcana / WeatherBeats
