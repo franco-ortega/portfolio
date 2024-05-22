@@ -14,6 +14,12 @@
   color: var(--popup-text-color);
   font-family: var(--main-font);
 
+  /* styles for title in popup header */
+  & header h2 {
+    font-size: var(--popup-title-size);
+    font-family: var(--continent-font-bold);
+  }
+
   & p {
     line-height: 1.25;
   }

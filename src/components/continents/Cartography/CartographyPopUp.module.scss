@@ -7,13 +7,6 @@
   height: calc(100dvh - var(--border-width) * 2);
   overflow: auto;
 
-  header {
-    h2 {
-      font-family: var(--continent-font-bold);
-      font-size: var(--popup-title-size);
-    }
-  }
-
   img {
     border: 2px solid var(--bordercolor-one);
     border-radius: 0.25rem;
