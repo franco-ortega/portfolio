@@ -14,7 +14,7 @@ const ProjectsPopUp = () => {
     <PopUp>
       <div className={styles.ProjectsPopUp}>
         <header>
-          <p>Projects</p>
+          <h2>Projects</h2>
         </header>
         <ul>
           <RootRPGSummary />
