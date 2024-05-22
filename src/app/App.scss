@@ -63,7 +63,7 @@ body {
     );
   --inner-coastline-padding: 0.2rem;
 
-  --continent-border-color: brown;
+  --continent-border-color: hsl(0, 59%, 41%);
   --continent-border: 0.2vw solid var(--continent-border-color);
   --continent-bkgd: linear-gradient(
     30deg,
