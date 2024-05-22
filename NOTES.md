@@ -2,12 +2,10 @@
 
 ## Sass Breakpoints
 
-1. desktop-medium: 1200px
-1. tablet-wide: 1000px
-1. tablet: 900px
-1. junior: 700px
-1. mobile: 500px
-1. mobile-narrow: 300px
+1. tablet-new: 35rem = 560px
+1. desktop-small-new: 56.25rem = 900px
+1. desktop-medium-new: 70rem = 1120px
+1. desktop-large-new: 85rem = 1360px
 
 ## Sass Media Query Mixins
 
