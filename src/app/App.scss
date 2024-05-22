@@ -136,32 +136,9 @@ a:hover {
   color: var(--darkestblue);
 }
 
-@include media-query(desktop-medium) {
-  :root {
-  }
-}
-
-@include media-query(tablet) {
-  :root {
-  }
-}
-
-@include media-query(mobile) {
-  :root {
-  }
-}
-
-@include media-maxWidth-orientation(tablet, landscape) {
-  :root {
-  }
-}
-
-
-// media queries used
-// @include media-query-new(tablet-new) {
-// @include media-query-new(desktop-small-new) {
-// @include media-query-landscape-mobile {
-// @include media-query(desktop-medium) {
-// @include media-query(tablet) {
-// @include media-maxWidth-orientation(tablet, landscape) {
-// @include media-query(mobile) {
+/* 
+media queries used
+  @include media-query-new(tablet-new) {
+  @include media-query-new(desktop-small-new) {
+  @include media-query-landscape-mobile {
+*/
