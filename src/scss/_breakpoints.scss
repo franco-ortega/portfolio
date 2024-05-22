@@ -19,16 +19,13 @@ $breakpoints: (
   }
 }
 
-@mixin media-landscape($key) {
-  $size: map.get($breakpoints, $key);
-
-  @media (max-height: $size) {
-    height: 100%;
-    overflow: auto;
+@mixin media-query-landscape-mobile {
+  @media (max-height: 450px) {
     @content;
   }
 }
 
+/* mixins not currently in use: */
 @mixin media-maxWidth-orientation($key, $orientation) {
   $size: map.get($breakpoints, $key);
 
@@ -46,14 +43,18 @@ $breakpoints: (
   }
 }
 
-@mixin media-mobile-landscape() {
-  @media (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+@mixin media-landscape($key) {
+  $size: map.get($breakpoints, $key);
+
+  @media (max-height: $size) {
+    height: 100%;
+    overflow: auto;
     @content;
   }
 }
 
-@mixin media-query-landscape-mobile {
-  @media (max-height: 450px) {
+@mixin media-mobile-landscape() {
+  @media (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
     @content;
   }
 }
