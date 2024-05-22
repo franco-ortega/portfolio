@@ -151,12 +151,9 @@ a:hover {
 
 @include media-query(mobile) {
   :root {
-    --popup-title-size: 4rem;
     --popup-text: 3.75vw;
   }
 }
-
-
 
 @include media-maxWidth-orientation(tablet, landscape) {
   :root {
