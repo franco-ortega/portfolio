@@ -9,28 +9,21 @@
 
 ## Sass Media Query Mixins
 
-1. media-query(key)
-1. media-maxWidth-orientation(key, orientation)
-1. media-maxWidth-minHeight(key1, key2)
-1. media-mobile-landscape()
+1. Active
+   1. @mixin media-query-new($key)
+   1. @mixin media-query-landscape-mobile
+1. Inactive
+   1. @mixin media-maxWidth-orientation($key, $orientation)
+   1. @mixin media-maxWidth-minHeight($key1, $key2)
+   1. @mixin media-landscape($key)
+   1. @mixin media-mobile-landscape()
 
 ## Media Queries
 
-1. @include media-query(desktop-medium) {
-1. @include media-query(tablet) {
-1. @include media-maxWidth-orientation(tablet, landscape) {
-1. @include media-maxWidth-minHeight(tablet, tablet-wide) {
-1. @include media-maxWidth-minHeight(tablet, mobile) {
-1. @media screen and (max-width: 900px) and (max-height: 500px) {
-1. @media screen and (max-width: 900px) and (min-width: 700px) and (max-height: 500px) and (orientation: landscape) {
-1. @include media-query(junior) {
-1. @include media-maxWidth-orientation(junior, landscape) {
-1. @media screen and (max-width: 500px) and (max-height: 700px) {
-1. @include media-query(mobile) {
-1. @include media-mobile-landscape() {
-1. @include media-maxWidth-orientation(mobile, portrait) {
-1. @include media-query(mobile-narrow) {
-1. @media (prefers-reduced-motion: reduce) {
+1. @media (max-height: 700px) in CartographyPopUp
+1. @media (max-height: 650px) in CompassNew
+1. @media (min-height: 700px) in Title
+1. 1. @media (prefers-reduced-motion: reduce) in Continent and Island
 
 ---
 
