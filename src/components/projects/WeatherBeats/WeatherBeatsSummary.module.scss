@@ -1,8 +1,6 @@
 @use '../../../scss/' as *;
 
 .WeatherBeatsSummary {
-  border-color: hsl(0, 0%, 0%);
-
   background-image: url(../../../assets/WeatherBeats_mobile.jpg);
   background-position: 50% 55%;
   background-repeat: no-repeat;
