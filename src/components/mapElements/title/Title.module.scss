@@ -3,7 +3,8 @@
 .Title {
   grid-column: 1 / 13;
   grid-row: 1 / 5;
-  align-self: center;
+  padding-top: 2rem;
+  // outline: dashed lightblue 2px;
 
   header {
     color: gold;
@@ -60,6 +61,8 @@
 
   @include media-query-new(desktop-medium-new) {
     grid-row: 1 / 7;
+    margin-block: auto;
+    padding: 0;
   }
 
   @include media-query-new(desktop-large-new) {
@@ -75,7 +78,14 @@
   }
 
   @include media-query-landscape-mobile {
-    grid-row: 1 / 9;
+    grid-row: 1 / 8;
+    padding-top: 1.5rem;
+
+    header {
+      h1 {
+        font-size: 3.75rem;
+      }
+    }
   }
 }
 

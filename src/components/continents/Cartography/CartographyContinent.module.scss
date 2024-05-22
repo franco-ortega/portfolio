@@ -26,6 +26,11 @@
       padding-block: 0.5rem;
       transform: rotate(-7.5deg);
       font-size: calc(var(--continent-title-size) * var(--continent-cartography-fs-multiplier));
+
+      @include media-query-landscape-mobile {
+        --continent-title-size: 1.25rem;
+        padding-block: 0.25rem;
+      }
     }
   }
 

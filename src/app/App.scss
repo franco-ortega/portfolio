@@ -11,10 +11,10 @@ body {
   min-width: 350px;
 }
 
-@font-face {
-  font-family: 'Tangerine';
-  src: url(../fonts/tangerine/Tangerine_Regular.ttf);
-}
+// @font-face {
+//   font-family: 'Tangerine';
+//   src: url(../fonts/tangerine/Tangerine_Regular.ttf);
+// }
 
 @font-face {
   font-family: 'Tangerine Bold';
@@ -63,7 +63,7 @@ body {
     );
   --inner-coastline-padding: 0.2rem;
 
-  --continent-border-color: brown;
+  --continent-border-color: hsl(0, 59%, 41%);
   --continent-border: 0.2vw solid var(--continent-border-color);
   --continent-bkgd: linear-gradient(
     30deg,
@@ -75,7 +75,7 @@ body {
     hsl(35, 25%, 65%)
   );
 
-  --continent-font: 'Tangerine';
+  // --continent-font: 'Tangerine';
   --continent-font-bold: 'Tangerine Bold';
   --main-font: Arial, sans-serif;
   --continent-title-size: clamp(2.25rem, 5vw, 6rem);
@@ -122,6 +122,10 @@ body {
     --continent-title-size: clamp(2.25rem, 5vw, 6rem);
     --popup-title-size: 4rem;
     --popup-header-margin-block: 0.75rem;
+  }
+
+  @include media-query-landscape-mobile {
+    --continent-title-size: 1.75rem;
   }
 }
 

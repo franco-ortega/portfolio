@@ -114,10 +114,6 @@
       span {
         font-size: var(--continent-title-size);
       }
-      
-      @include media-query-landscape-mobile {
-        // --continent-title-size: 1.5rem;
-      }
 
       @include media-query-new(desktop-small-new) {
         padding: 0.8rem 1.2rem;
