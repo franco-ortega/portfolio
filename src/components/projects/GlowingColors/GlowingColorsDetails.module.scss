@@ -1,15 +1,8 @@
 @use '../../../scss/' as *;
 
 .GlowingColorsDetails {
-  color: hsl(220, 90%, 90%);
-  
-  background: linear-gradient(
-      180deg,
-      hsl(260, 80%, 30%),
-      hsl(260, 70%, 20%),
-      hsl(260, 70%, 15%),
-      hsl(260, 70%, 5%),
-    );
+  background: var(--glowing-colors-gradient);
+  color: var(--blue-light-one);
   
   @include media-query-new(tablet-new) {
     border-radius: var(--popup-border-radius);

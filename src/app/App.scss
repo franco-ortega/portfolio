@@ -23,8 +23,9 @@ body {
 
 :root {
   
-  --blue-light-one: hsl(250, 90%, 90%);
-  --blue-light-two: hsl(250, 90%, 80%);
+  --blue-light-one: hsl(220, 90%, 90%);
+  --blue-light-two: hsl(250, 90%, 90%);
+  --blue-light-three: hsl(250, 90%, 80%);
 
   --blue-mid-one: hsl(214, 82%, 45%);
   --blue-mid-two: hsl(234, 75%, 45%);
@@ -36,8 +37,8 @@ body {
 
   --blue-hue: 200;
   --blue-sat: 40%;
-  --blue-light-one: 75%;
-  --blue-light-two: 70%;
+  --blue-light-two: 75%;
+  --blue-light-three: 70%;
   --blue-light-three: 65%;
   --blue-light-four: 60%;
   --blue-light-five: 55%;
@@ -49,6 +50,13 @@ body {
   --orange-light-three: 45%;
   --orange-light-four: 40%;
   --orange-light-five: 35%;
+
+  --blue-dark-hue: 260;
+  --blue-dark-sat: 80%;
+  --blue-dark-light-one: 30%;
+  --blue-dark-light-two: 20%;
+  --blue-dark-light-three: 15%;
+  --blue-dark-light-four: 5%;
 
   --blue-coastal-one: hsl(203, 68%, 61%);
   --blue-coastal-two: hsl(203, 56%, 43%);
@@ -133,8 +141,8 @@ body {
   --popup-bkgd: var(--black-two);
   --popup-text-color: var(--white-one);
 
-  --profile-popup-link: var(--blue-light-two);
-  --profile-popup-link-hover: var(--blue-light-one); 
+  --profile-popup-link: var(--blue-light-three);
+  --profile-popup-link-hover: var(--blue-light-two); 
 
   --project-summary-title: 1.1rem;
   --project-summary-text: 1.1rem;
@@ -171,8 +179,8 @@ body {
 
   --be-human-gradient: linear-gradient(
     180deg,
-    hsl( var(--blue-hue), var(--blue-sat), var(--blue-light-one)),
-    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-two)),
+    hsl( var(--blue-hue), var(--blue-sat), var(--blue-light-two)),
+    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-three)),
     hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-three)),
     hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-four)),
     hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-five))
@@ -186,6 +194,15 @@ body {
     hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-four)),
     hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-five))
   );
+
+  --glowing-colors-gradient: linear-gradient(
+    180deg,
+    hsl( var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-one)),
+    hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-two)),
+    hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-three)),
+    hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-four))
+  );
+  
 }
 
 a {
