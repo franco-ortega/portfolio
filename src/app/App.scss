@@ -39,6 +39,7 @@ body {
   --light-silver: hsl(0, 0%, 95%);
   --dark-silver: hsl(0, 0%, 75%);
   --green: hsl(120, 100%, 25%);
+  --dark-green: hsl(90, 60%, 6%, 0.8);
   --black: hsl(0, 0%, 0%);
 
   --bordercolor-one: var(--light-silver);
@@ -129,7 +130,7 @@ body {
 }
 
 a {
-  color: hsl(90, 60%, 6%, 0.8);
+  color: var(--dark-green);
   text-decoration: none;
   outline: none;
   border-radius: inherit;
