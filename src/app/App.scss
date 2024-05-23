@@ -23,6 +23,9 @@ body {
 
 :root {
   
+  --light-blue-one: hsl(250, 90%, 90%);
+  --light-blue-two: hsl(250, 90%, 80%);
+
   --lightest-blue: hsl(214, 82%, 45%);
   --lighter-blue: hsl(234, 75%, 45%);
   --middleblue: hsl(246, 75%, 46%);
@@ -49,8 +52,10 @@ body {
   --dark-silver: hsl(0, 0%, 75%);
   --green: hsl(120, 100%, 25%);
   --dark-green: hsl(90, 60%, 6%, 0.8);
-  --black: hsl(0, 0%, 0%);
+  --black-one: hsl(0, 0%, 0%);
+  --black-two: hsl(0, 0%, 5%);
   --brown: hsl(0, 59%, 41%);
+  --white-one: hsl(0, 0%, 90%);
 
   --continent-tan-one: hsl(34, 49%, 62%);
   --continent-tan-two: hsl(45, 51%, 72%);
@@ -108,10 +113,11 @@ body {
   --popup-header-margin-block: 1rem;
   --popup-border-radius: 0rem;
 
-  --popup-bkgd: hsl(0, 0%, 5%);
-  --popup-text-color: hsl(0, 0%, 90%);
-  --popup-link-text: hsl(250, 90%, 80%);
-  --popup-link-text-hover: hsl(250, 90%, 90%);
+  --popup-bkgd: var(--black-two);
+  --popup-text-color: var(--white-one);
+
+  --profile-popup-link: var(--light-blue-two);
+  --profile-popup-link-hover: var(--light-blue-one); 
 
   --project-summary-title: 1.1rem;
   --project-summary-text: 1.1rem;

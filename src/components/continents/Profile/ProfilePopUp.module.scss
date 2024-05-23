@@ -41,10 +41,10 @@
       font-size: var(--continent-popup-header);
 
       a {
-        color: var(--popup-link-text);
+        color: var(--profile-popup-link);
   
         &:hover {
-          color: var(--popup-link-text-hover);
+          color: var(--profile-popup-link-hover);
         }
       }
     }
