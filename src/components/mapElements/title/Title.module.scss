@@ -55,23 +55,23 @@
   }
 
   @include media-query-new(desktop-small-new) {
-    grid-row: 1 / 6;
+    grid-column: 4 / 10;
   }
 
   @include media-query-new(desktop-medium-new) {
-    grid-row: 1 / 7;
-    margin-block: auto;
-    padding: 0;
+    grid-row: 1 / 6;
   }
 
   @include media-query-new(desktop-large-new) {
+    grid-column: 5 / 9;
+
     header {
       h1 {
         font-size: 6rem;
       }
       
       h2 {
-        font-size: 4rem;
+        font-size: 3.5rem;
       }
      }
   }
