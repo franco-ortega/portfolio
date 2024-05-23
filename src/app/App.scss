@@ -34,6 +34,7 @@ body {
   --yellow-three: hsl(60, 86%, 72%);
   --yellow-four: hsl(60, 92%, 67%);
   --yellow-five: hsl(60, 83%, 77%);
+  --yellow-six: hsl(60, 100%, 50%);
 
   --light-silver: hsl(0, 0%, 95%);
   --dark-silver: hsl(0, 0%, 75%);
@@ -107,7 +108,7 @@ body {
 
   --map-title: 3rem;
 
-  --focus-hover-highlight: yellow;
+  --focus-hover-highlight: var(--yellow-six);
 
   @include media-query-new(tablet-new) {
     --continent-title-size: clamp(2.25rem, 6vw, 5rem);
