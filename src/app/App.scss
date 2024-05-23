@@ -42,6 +42,14 @@ body {
   --blue-light-four: 60%;
   --blue-light-five: 55%;
 
+  --orange-hue: 25;
+  --orange-sat: 65%;
+  --orange-light-one: 55%;
+  --orange-light-two: 50%;
+  --orange-light-three: 45%;
+  --orange-light-four: 40%;
+  --orange-light-five: 35%;
+
   --blue-coastal-one: hsl(203, 68%, 61%);
   --blue-coastal-two: hsl(203, 56%, 43%);
   --blue-coastal-three: hsl(203, 65%, 65%);
@@ -168,6 +176,15 @@ body {
     hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-three)),
     hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-four)),
     hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-five))
+  );
+  
+  --root-rpg-gradient: linear-gradient(
+    180deg,
+    hsl( var(--orange-hue), var(--orange-sat), var(--orange-light-one)),
+    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-two)),
+    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-three)),
+    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-four)),
+    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-five))
   );
 }
 

@@ -1,18 +1,9 @@
 @use '../../../scss/' as *;
 
 .RootRPGDetails {
-  color: hsl(0, 0%, 0%);
-
-  background: linear-gradient(
-      180deg,
-      hsl(23, 63%, 55%, 100%),
-      hsl(23, 63%, 55%, 80%),
-      hsl(23, 63%, 55%, 60%),
-      hsl(23, 63%, 55%, 40%),
-      hsl(23, 63%, 55%, 20%)
-    ),
-    hsl(23, 63%, 38%);
-
+  background: var(--root-rpg-gradient);
+  color: var(--black-one);
+  
   & > h4 {
     position: relative;
 
