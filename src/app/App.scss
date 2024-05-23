@@ -43,13 +43,12 @@ body {
   --blue-light-four: 60%;
   --blue-light-five: 55%;
 
-  --orange-hue: 25;
-  --orange-sat: 65%;
-  --orange-light-one: 55%;
-  --orange-light-two: 50%;
-  --orange-light-three: 45%;
-  --orange-light-four: 40%;
-  --orange-light-five: 35%;
+  --blue-mid-hue: 220;
+  --blue-mid-sat: 45%;
+  --blue-mid-light-one: 30%;
+  --blue-mid-light-two: 25%;
+  --blue-mid-light-three: 20%;
+  --blue-mid-light-four: 15%;
 
   --blue-dark-hue: 260;
   --blue-dark-sat: 80%;
@@ -63,6 +62,14 @@ body {
   --black-gold-light-one: 15%;
   --black-gold-light-two: 10%;
   --black-gold-light-three: 5%;
+
+  --orange-hue: 25;
+  --orange-sat: 65%;
+  --orange-light-one: 55%;
+  --orange-light-two: 50%;
+  --orange-light-three: 45%;
+  --orange-light-four: 40%;
+  --orange-light-five: 35%;
 
   --blue-coastal-one: hsl(203, 68%, 61%);
   --blue-coastal-two: hsl(203, 56%, 43%);
@@ -208,6 +215,14 @@ body {
     hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-two)),
     hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-three)),
     hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-four))
+  );
+  
+  --ebb-gradient: linear-gradient(
+    180deg,
+    hsl( var(--blue-mid-hue), var(--blue-mid-sat), var(--blue-mid-light-one)),
+    hsl(var(--blue-mid-hue), var(--blue-mid-sat), var(--blue-mid-light-two)),
+    hsl(var(--blue-mid-hue), var(--blue-mid-sat), var(--blue-mid-light-three)),
+    hsl(var(--blue-mid-hue), var(--blue-mid-sat), var(--blue-mid-light-four))
   );
   
   --major-arcana-gradient: linear-gradient(
