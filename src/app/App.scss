@@ -26,8 +26,16 @@ body {
   --lightest-blue: hsl(214, 82%, 45%);
   --lighter-blue: hsl(234, 75%, 45%);
   --middleblue: hsl(246, 75%, 46%);
-  --darker-blue: hsl(253, 77%, 29%);
+  --dark-blue: hsl(253, 77%, 29%);
+  --darker-blue: hsl(240, 100%, 27%);
   --darkest-blue: hsl(240, 60%, 25%);
+
+  --coastal-blue-one: hsl(203, 68%, 61%);
+  --coastal-blue-two: hsl(203, 56%, 43%);
+  --coastal-blue-three: hsl(203, 65%, 65%);
+  --coastal-blue-four: hsl(203, 47%, 52%);
+  --coastal-blue-five: hsl(203, 59%, 52%);
+  --coastal-blue-six: hsl(203, 52%, 60%);
 
   --yellow-one: hsl(60, 89%, 64%);
   --yellow-two: hsl(60, 83%, 77%);
@@ -46,24 +54,24 @@ body {
   --bordercolor-two: var(--darkest-blue);
   --border-width: 0.5rem;
 
-  --coastline-shadow: 0vw 0vw 2vw 1.5vw darkblue;
+  --coastline-shadow: 0vw 0vw 2vw 1.5vw var(--darker-blue);
 
   --outer-coastline-bkgd: linear-gradient(
     90deg,
-    hsl(203, 68%, 61%),
-    hsl(203, 56%, 43%),
-    hsl(203, 65%, 65%),
-    hsl(203, 47%, 52%)
+    var(--coastal-blue-one),
+    var(--coastal-blue-two),
+    var(--coastal-blue-three),
+    var(--coastal-blue-four)
     );
     --outer-coastline-bkgd-size: 15% 15%;
     --outer-coastline-padding: 0.2rem;
   
     --inner-coastline: linear-gradient(
       90deg,
-      hsl(203, 68%, 61%),
-      hsl(203, 59%, 52%),
-      hsl(203, 65%, 65%),
-      hsl(203, 52%, 60%)
+      var(--coastal-blue-one),
+      var(--coastal-blue-five),
+      var(--coastal-blue-three),
+      var(--coastal-blue-six),
     );
   --inner-coastline-padding: 0.2rem;
 
@@ -137,7 +145,7 @@ a {
 }
 
 a:hover {
-  color: var(--darker-blue);
+  color: var(--dark-blue);
 }
 
 /* 
