@@ -52,6 +52,11 @@ body {
   --black: hsl(0, 0%, 0%);
   --brown: hsl(0, 59%, 41%);
 
+  --continent-tan-one: hsl(34, 49%, 62%);
+  --continent-tan-two: hsl(45, 51%, 72%);
+  --continent-tan-three: hsl(34, 49%, 62%);
+  --continent-tan-four: hsl(35, 25%, 65%);
+
   --bordercolor-one: var(--light-silver);
   --bordercolor-two: var(--darkest-blue);
   --border-width: 0.5rem;
@@ -81,12 +86,12 @@ body {
   --continent-border: 0.2vw solid var(--continent-border-color);
   --continent-bkgd: linear-gradient(
     30deg,
-    hsl(34, 49%, 62%),
-    hsl(34, 49%, 62%),
-    hsl(45, 51%, 72%),
-    hsl(34, 49%, 62%),
-    hsl(45, 51%, 72%),
-    hsl(35, 25%, 65%)
+    var(--continent-tan-one),
+    var(--continent-tan-one),
+    var(--continent-tan-two),
+    var(--continent-tan-three),
+    var(--continent-tan-two),
+    var(--continent-tan-four)
   );
 
   // --continent-font: 'Tangerine';
