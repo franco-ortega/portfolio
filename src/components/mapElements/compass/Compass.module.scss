@@ -30,10 +30,10 @@
 .OuterRing {
   background: linear-gradient(
     25deg,
-    var(--dark-silver),
+    var(--silver-dark),
     hsl(120, 100%, 25%),
     var(--yellow-three),
-    var(--dark-silver),
+    var(--silver-dark),
     var(--green)
   );
   background-size: 30% 30%;
@@ -53,10 +53,10 @@
 .OuterCircle {
   background: linear-gradient(
     135deg,
-    var(--middleblue),
-    var(--lightest-blue),
-    var(--lighter-blue),
-    var(--lightest-blue)
+    var(--blue-mid-three),
+    var(--blue-mid-one),
+    var(--blue-mid-two),
+    var(--blue-mid-one)
   );
   background-blend-mode: soft-light;
   background-size: 100% 100%;
@@ -132,10 +132,10 @@
   grid-row: 3 / 5;
   background: linear-gradient(
     125deg,
-    var(--dark-silver),
+    var(--silver-dark),
     var(--green),
     var(--yellow-three),
-    var(--dark-silver)
+    var(--silver-dark)
   );
   background-size: 50% 50%;
   border: 0.4vw solid var(--black-one);
@@ -155,10 +155,10 @@
 .InnerCircle {
   background: linear-gradient(
     135deg,
-    var(--middleblue),
-    var(--lightest-blue),
-    var(--lighter-blue),
-    var(--lightest-blue)
+    var(--blue-mid-three),
+    var(--blue-mid-one),
+    var(--blue-mid-two),
+    var(--blue-mid-one)
   );
   background-blend-mode: soft-light;
   background-size: 100% 100%;

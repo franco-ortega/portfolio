@@ -23,22 +23,22 @@ body {
 
 :root {
   
-  --light-blue-one: hsl(250, 90%, 90%);
-  --light-blue-two: hsl(250, 90%, 80%);
+  --blue-light-one: hsl(250, 90%, 90%);
+  --blue-light-two: hsl(250, 90%, 80%);
 
-  --lightest-blue: hsl(214, 82%, 45%);
-  --lighter-blue: hsl(234, 75%, 45%);
-  --middleblue: hsl(246, 75%, 46%);
-  --dark-blue: hsl(253, 77%, 29%);
-  --darker-blue: hsl(240, 100%, 27%);
-  --darkest-blue: hsl(240, 60%, 25%);
+  --blue-mid-one: hsl(214, 82%, 45%);
+  --blue-mid-two: hsl(234, 75%, 45%);
+  --blue-mid-three: hsl(246, 75%, 46%);
+  --dark-blue-one: hsl(253, 77%, 29%);
+  --dark-blue-two: hsl(240, 100%, 27%);
+  --dark-blue-three: hsl(240, 60%, 25%);
 
-  --coastal-blue-one: hsl(203, 68%, 61%);
-  --coastal-blue-two: hsl(203, 56%, 43%);
-  --coastal-blue-three: hsl(203, 65%, 65%);
-  --coastal-blue-four: hsl(203, 47%, 52%);
-  --coastal-blue-five: hsl(203, 59%, 52%);
-  --coastal-blue-six: hsl(203, 52%, 60%);
+  --blue-coastal-one: hsl(203, 68%, 61%);
+  --blue-coastal-two: hsl(203, 56%, 43%);
+  --blue-coastal-three: hsl(203, 65%, 65%);
+  --blue-coastal-four: hsl(203, 47%, 52%);
+  --blue-coastal-five: hsl(203, 59%, 52%);
+  --blue-coastal-six: hsl(203, 52%, 60%);
 
   --yellow-one: hsl(60, 89%, 64%);
   --yellow-two: hsl(60, 83%, 77%);
@@ -48,42 +48,42 @@ body {
   --yellow-six: hsl(60, 100%, 50%);
   --gold: hsl(50, 100%, 50%);
 
-  --light-silver: hsl(0, 0%, 95%);
-  --dark-silver: hsl(0, 0%, 75%);
-  --green: hsl(120, 100%, 25%);
-  --dark-green: hsl(90, 60%, 6%, 0.8);
   --black-one: hsl(0, 0%, 0%);
   --black-two: hsl(0, 0%, 5%);
   --brown: hsl(0, 59%, 41%);
+  --green: hsl(120, 100%, 25%);
+  --green-dark: hsl(90, 60%, 6%, 0.8);
+  --silver-light: hsl(0, 0%, 95%);
+  --silver-dark: hsl(0, 0%, 75%);
   --white-one: hsl(0, 0%, 90%);
 
-  --continent-tan-one: hsl(34, 49%, 62%);
-  --continent-tan-two: hsl(45, 51%, 72%);
-  --continent-tan-three: hsl(34, 49%, 62%);
-  --continent-tan-four: hsl(35, 25%, 65%);
+  --tan-continent-one: hsl(34, 49%, 62%);
+  --tan-continent-two: hsl(45, 51%, 72%);
+  --tan-continent-three: hsl(34, 49%, 62%);
+  --tan-continent-four: hsl(35, 25%, 65%);
 
-  --bordercolor-one: var(--light-silver);
-  --bordercolor-two: var(--darkest-blue);
+  --bordercolor-one: var(--silver-light);
+  --bordercolor-two: var(--dark-blue-three);
   --border-width: 0.5rem;
 
-  --coastline-shadow: 0vw 0vw 2vw 1.5vw var(--darker-blue);
+  --coastline-shadow: 0vw 0vw 2vw 1.5vw var(--dark-blue-two);
 
   --outer-coastline-bkgd: linear-gradient(
     90deg,
-    var(--coastal-blue-one),
-    var(--coastal-blue-two),
-    var(--coastal-blue-three),
-    var(--coastal-blue-four)
+    var(--blue-coastal-one),
+    var(--blue-coastal-two),
+    var(--blue-coastal-three),
+    var(--blue-coastal-four)
     );
     --outer-coastline-bkgd-size: 15% 15%;
     --outer-coastline-padding: 0.2rem;
   
     --inner-coastline: linear-gradient(
       90deg,
-      var(--coastal-blue-one),
-      var(--coastal-blue-five),
-      var(--coastal-blue-three),
-      var(--coastal-blue-six),
+      var(--blue-coastal-one),
+      var(--blue-coastal-five),
+      var(--blue-coastal-three),
+      var(--blue-coastal-six)
     );
   --inner-coastline-padding: 0.2rem;
 
@@ -91,12 +91,12 @@ body {
   --continent-border: 0.2vw solid var(--continent-border-color);
   --continent-bkgd: linear-gradient(
     30deg,
-    var(--continent-tan-one),
-    var(--continent-tan-one),
-    var(--continent-tan-two),
-    var(--continent-tan-three),
-    var(--continent-tan-two),
-    var(--continent-tan-four)
+    var(--tan-continent-one),
+    var(--tan-continent-one),
+    var(--tan-continent-two),
+    var(--tan-continent-three),
+    var(--tan-continent-two),
+    var(--tan-continent-four)
   );
 
   // --continent-font: 'Tangerine';
@@ -116,8 +116,8 @@ body {
   --popup-bkgd: var(--black-two);
   --popup-text-color: var(--white-one);
 
-  --profile-popup-link: var(--light-blue-two);
-  --profile-popup-link-hover: var(--light-blue-one); 
+  --profile-popup-link: var(--blue-light-two);
+  --profile-popup-link-hover: var(--blue-light-one); 
 
   --project-summary-title: 1.1rem;
   --project-summary-text: 1.1rem;
@@ -151,14 +151,14 @@ body {
 }
 
 a {
-  color: var(--dark-green);
+  color: var(--green-dark);
   text-decoration: none;
   outline: none;
   border-radius: inherit;
 }
 
 a:hover {
-  color: var(--dark-blue);
+  color: var(--dark-blue-one);
 }
 
 /* 
