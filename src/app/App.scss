@@ -50,6 +50,7 @@ body {
   --green: hsl(120, 100%, 25%);
   --dark-green: hsl(90, 60%, 6%, 0.8);
   --black: hsl(0, 0%, 0%);
+  --brown: hsl(0, 59%, 41%);
 
   --bordercolor-one: var(--light-silver);
   --bordercolor-two: var(--darkest-blue);
@@ -76,7 +77,7 @@ body {
     );
   --inner-coastline-padding: 0.2rem;
 
-  --continent-border-color: hsl(0, 59%, 41%);
+  --continent-border-color: var(hsl(0, 59%, 41%));
   --continent-border: 0.2vw solid var(--continent-border-color);
   --continent-bkgd: linear-gradient(
     30deg,
