@@ -188,9 +188,7 @@ body {
     --popup-header-margin-block: 0.75rem;
   }
 
-
   /* project background gradients */
-
   --be-human-gradient: linear-gradient(
     180deg,
     hsl( var(--blue-hue), var(--blue-sat), var(--blue-light-two)),
@@ -199,24 +197,7 @@ body {
     hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-four)),
     hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-five))
   );
-  
-  --root-rpg-gradient: linear-gradient(
-    180deg,
-    hsl( var(--orange-hue), var(--orange-sat), var(--orange-light-one)),
-    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-two)),
-    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-three)),
-    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-four)),
-    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-five))
-  );
 
-  --glowing-colors-gradient: linear-gradient(
-    180deg,
-    hsl( var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-one)),
-    hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-two)),
-    hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-three)),
-    hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-four))
-  );
-  
   --ebb-gradient: linear-gradient(
     180deg,
     hsl( var(--blue-mid-hue), var(--blue-mid-sat), var(--blue-mid-light-one)),
@@ -225,13 +206,29 @@ body {
     hsl(var(--blue-mid-hue), var(--blue-mid-sat), var(--blue-mid-light-four))
   );
   
+  --glowing-colors-gradient: linear-gradient(
+    180deg,
+    hsl( var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-one)),
+    hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-two)),
+    hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-three)),
+    hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-four))
+  );
+  
   --major-arcana-gradient: linear-gradient(
     180deg,
     hsl( var(--black-gold-hue), var(--black-gold-sat), var(--black-gold-light-one)),
     hsl(var(--black-gold-hue), var(--black-gold-sat), var(--black-gold-light-two)),
     hsl(var(--black-gold-hue), var(--black-gold-sat), var(--black-gold-light-three))
   );
-  
+
+  --root-rpg-gradient: linear-gradient(
+    180deg,
+    hsl( var(--orange-hue), var(--orange-sat), var(--orange-light-one)),
+    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-two)),
+    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-three)),
+    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-four)),
+    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-five))
+  );
 }
 
 a {
