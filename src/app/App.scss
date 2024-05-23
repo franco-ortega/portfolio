@@ -34,6 +34,14 @@ body {
   --dark-blue-three: hsl(240, 60%, 25%);
   --dark-blue-four: hsl(258, 100%, 14%);
 
+  --blue-hue: 200;
+  --blue-sat: 40%;
+  --blue-light-one: 75%;
+  --blue-light-two: 70%;
+  --blue-light-three: 65%;
+  --blue-light-four: 60%;
+  --blue-light-five: 55%;
+
   --blue-coastal-one: hsl(203, 68%, 61%);
   --blue-coastal-two: hsl(203, 56%, 43%);
   --blue-coastal-three: hsl(203, 65%, 65%);
@@ -149,6 +157,18 @@ body {
     --popup-title-size: 4rem;
     --popup-header-margin-block: 0.75rem;
   }
+
+
+  /* project background gradients */
+
+  --be-human-bkgd: linear-gradient(
+    180deg,
+    hsl( var(--blue-hue), var(--blue-sat), var(--blue-light-one)),
+    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-two)),
+    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-three)),
+    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-four)),
+    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-five))
+  );
 }
 
 a {
