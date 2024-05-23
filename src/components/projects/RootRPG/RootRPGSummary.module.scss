@@ -1,15 +1,6 @@
 @use '../../../scss/' as *;
 
 .RootRPGSummary {
-  background: linear-gradient(
-      180deg,
-      hsl(23, 63%, 55%, 100%),
-      hsl(23, 63%, 55%, 80%),
-      hsl(23, 63%, 55%, 60%),
-      hsl(23, 63%, 55%, 40%),
-      hsl(23, 63%, 55%, 20%)
-    ),
-    hsl(23, 63%, 38%);
-
-  color: hsl(0, 0%, 0%);
+  background: var(--root-rpg-gradient);
+  color: var(--black-one);
 }
