@@ -23,11 +23,11 @@ body {
 
 :root {
   
-  --lightestblue: hsl(214, 82%, 45%);
-  --lighterblue: hsl(234, 75%, 45%);
+  --lightest-blue: hsl(214, 82%, 45%);
+  --lighter-blue: hsl(234, 75%, 45%);
   --middleblue: hsl(246, 75%, 46%);
-  --darkerblue: hsl(249, 79%, 32%);
-  --darkestblue: hsl(253, 77%, 29%);
+  --darker-blue: hsl(253, 77%, 29%);
+  --darkest-blue: hsl(240, 60%, 25%);
 
   --yellow-one: hsl(60, 89%, 64%);
   --yellow-two: hsl(60, 83%, 77%);
@@ -35,11 +35,11 @@ body {
   --yellow-four: hsl(60, 92%, 67%);
   --yellow-five: hsl(60, 83%, 77%);
 
-  --silver: hsl(0, 0%, 95%);
-  --dark-blue-one: hsl(240, 60%, 25%);
+  --light-silver: hsl(0, 0%, 95%);
+  
 
-  --bordercolor-one: var(--silver);
-  --bordercolor-two: var(--dark-blue-one);
+  --bordercolor-one: var(--light-silver);
+  --bordercolor-two: var(--darkest-blue);
   --border-width: 0.5rem;
 
   --coastline-shadow: 0vw 0vw 2vw 1.5vw darkblue;
@@ -133,7 +133,7 @@ a {
 }
 
 a:hover {
-  color: var(--darkestblue);
+  color: var(--darker-blue);
 }
 
 /* 
