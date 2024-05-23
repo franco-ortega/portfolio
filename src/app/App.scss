@@ -161,7 +161,7 @@ body {
 
   /* project background gradients */
 
-  --be-human-bkgd: linear-gradient(
+  --be-human-gradient: linear-gradient(
     180deg,
     hsl( var(--blue-hue), var(--blue-sat), var(--blue-light-one)),
     hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-two)),
