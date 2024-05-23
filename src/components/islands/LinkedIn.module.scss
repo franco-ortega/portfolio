@@ -9,6 +9,7 @@
   @extend %island-centering;
 
   @include media-query-new(tablet-new) {
+    grid-column: 9 / 11;
     grid-row: 18 / 20;
   }
 

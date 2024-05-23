@@ -16,8 +16,8 @@
   }
 
   @include media-query-new(tablet-new) {
-    grid-column: 2 / 8;
-    grid-row: 9 / 15;
+    grid-column: 3 / 7;
+    grid-row: 10 / 14;
   }
 
   @include media-query-new(desktop-small-new) {

@@ -8,6 +8,11 @@
 
   @extend %island-centering;
   
+  @include media-query-new(tablet-new) {
+    grid-column: 10 / 13;
+    grid-row: 16 / 18;
+  }
+
   @include media-query-new(desktop-small-new) {
     grid-column: 6 / 9;
     grid-row: 15 / 20;
@@ -20,6 +25,7 @@
 }
 
 /* media queries used
+  @include media-query-new(tablet-new)
   @include media-query-new(desktop-small-new)
   @include media-query-landscape-mobile
 */
