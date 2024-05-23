@@ -132,10 +132,10 @@
   grid-row: 3 / 5;
   background: linear-gradient(
     125deg,
-    silver,
+    var(--dark-silver),
     green,
     var(--yellow-three),
-    silver
+    var(--dark-silver)
   );
   background-size: 50% 50%;
   border: 0.4vw solid black;
