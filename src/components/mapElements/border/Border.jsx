@@ -7,9 +7,9 @@ const Border = ({ children }) => {
   const borderCornerGradient = (direction) => {
     return `linear-gradient(
       to ${direction},
-      hsl(240, 60%, 25%),
-      hsl(0, 0%, 95%),
-      hsl(240, 60%, 25%)
+      var(--dark-blue-three),
+      var(--silver-light),
+      var(--dark-blue-three)
     )`;
   };
 
