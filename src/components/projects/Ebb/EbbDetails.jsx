@@ -9,7 +9,11 @@ const EbbDetails = () => {
   return (
     <ProjectDetails>
       <div className={styles.EbbDetails}>
-        <ClosePopup path={'projects'} background={'#F3F3F3'} color={'black'} />
+        <ClosePopup
+          path={'projects'}
+          background={'var(--silver-light)'}
+          color={'var(--black-one)'}
+        />
         <h3>
           <img className={styles.ProjectIcon} src={EbbIcon} alt='Ebb logo' />
         </h3>

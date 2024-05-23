@@ -1,13 +1,13 @@
 @use '../../../scss/' as *;
 
 .WeatherBeatsDetails {
-  color: hsl(0, 0%, 0%);
-
-  background-color: yellow;
+  background-color: var(--yellow-six);
   background-image: url(../../../assets/WeatherBeats_full.jpg);
   background-position: 5% 10%;
   background-repeat: no-repeat;
   background-size: cover;
+
+  color: var(--black-one);
 
   @include media-query-new(tablet-new) {
     border-radius: var(--popup-border-radius);

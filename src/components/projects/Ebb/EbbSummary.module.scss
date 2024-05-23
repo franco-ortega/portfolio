@@ -1,15 +1,6 @@
 @use '../../../scss/' as *;
 
 .EbbSummary {
-  background: linear-gradient(
-      0deg,
-      rgba(55, 87, 149, 0.2),
-      rgba(55, 87, 149, 0.22),
-      rgba(55, 87, 149, 0.42),
-      rgba(55, 87, 149, 0.62),
-      rgba(55, 87, 149, 0.82)
-    ),
-    rgb(18, 18, 18);
-
-  color: #f3f3f3;
+  background: var(--ebb-gradient);
+  color: var(--silver-light);
 }

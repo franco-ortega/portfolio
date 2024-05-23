@@ -1,15 +1,6 @@
 @use '../../../scss/' as *;
 
 .BeHumanSummary {
-  background: linear-gradient(
-      180deg,
-      hsl(199, 42%, 73%, 100%),
-      hsl(199, 42%, 73%, 80%),
-      hsl(199, 42%, 73%, 60%),
-      hsl(199, 42%, 73%, 40%),
-      hsl(199, 42%, 73%, 20%)
-    ),
-    hsl(199, 42%, 45%);
-
-  color: hsl(0, 0%, 0%);
+  background: var(--be-human-gradient);
+  color: var(--black-one);
 }

@@ -23,56 +23,119 @@ body {
 
 :root {
   
-  --lightestblue: hsl(214, 82%, 45%);
-  --lighterblue: hsl(234, 75%, 45%);
-  --middleblue: hsl(246, 75%, 46%);
-  --darkerblue: hsl(249, 79%, 32%);
-  --darkestblue: hsl(253, 77%, 29%);
+  --blue-light-one: hsl(220, 90%, 90%);
+  --blue-light-two: hsl(250, 90%, 90%);
+  --blue-light-three: hsl(250, 90%, 80%);
+
+  --blue-mid-one: hsl(214, 82%, 45%);
+  --blue-mid-two: hsl(234, 75%, 45%);
+  --blue-mid-three: hsl(246, 75%, 46%);
+  --dark-blue-one: hsl(253, 77%, 29%);
+  --dark-blue-two: hsl(240, 100%, 27%);
+  --dark-blue-three: hsl(240, 60%, 25%);
+  --dark-blue-four: hsl(258, 100%, 14%);
+
+  --blue-hue: 200;
+  --blue-sat: 40%;
+  --blue-light-two: 75%;
+  --blue-light-three: 70%;
+  --blue-light-three: 65%;
+  --blue-light-four: 60%;
+  --blue-light-five: 55%;
+
+  --blue-mid-hue: 220;
+  --blue-mid-sat: 45%;
+  --blue-mid-light-one: 30%;
+  --blue-mid-light-two: 25%;
+  --blue-mid-light-three: 20%;
+  --blue-mid-light-four: 15%;
+
+  --blue-dark-hue: 260;
+  --blue-dark-sat: 80%;
+  --blue-dark-light-one: 30%;
+  --blue-dark-light-two: 20%;
+  --blue-dark-light-three: 15%;
+  --blue-dark-light-four: 5%;
+
+  --black-gold-hue: 0;
+  --black-gold-sat: 0%;
+  --black-gold-light-one: 15%;
+  --black-gold-light-two: 10%;
+  --black-gold-light-three: 5%;
+
+  --orange-hue: 25;
+  --orange-sat: 65%;
+  --orange-light-one: 55%;
+  --orange-light-two: 50%;
+  --orange-light-three: 45%;
+  --orange-light-four: 40%;
+  --orange-light-five: 35%;
+
+  --blue-coastal-one: hsl(203, 68%, 61%);
+  --blue-coastal-two: hsl(203, 56%, 43%);
+  --blue-coastal-three: hsl(203, 65%, 65%);
+  --blue-coastal-four: hsl(203, 47%, 52%);
+  --blue-coastal-five: hsl(203, 59%, 52%);
+  --blue-coastal-six: hsl(203, 52%, 60%);
 
   --yellow-one: hsl(60, 89%, 64%);
   --yellow-two: hsl(60, 83%, 77%);
   --yellow-three: hsl(60, 86%, 72%);
   --yellow-four: hsl(60, 92%, 67%);
   --yellow-five: hsl(60, 83%, 77%);
+  --yellow-six: hsl(60, 100%, 50%);
+  --gold: hsl(50, 100%, 50%);
+  --gold-dark: hsl(25, 66%, 69%);
 
-  --silver: hsl(0, 0%, 95%);
-  --dark-blue-one: hsl(240, 60%, 25%);
+  --black-one: hsl(0, 0%, 0%);
+  --black-two: hsl(0, 0%, 5%);
+  --brown: hsl(0, 59%, 41%);
+  --green: hsl(120, 100%, 25%);
+  --green-dark: hsl(90, 60%, 6%, 0.8);
+  --silver-light: hsl(0, 0%, 95%);
+  --silver-dark: hsl(0, 0%, 75%);
+  --white-one: hsl(0, 0%, 90%);
 
-  --bordercolor-one: var(--silver);
-  --bordercolor-two: var(--dark-blue-one);
+  --tan-continent-one: hsl(34, 49%, 62%);
+  --tan-continent-two: hsl(45, 51%, 72%);
+  --tan-continent-three: hsl(34, 49%, 62%);
+  --tan-continent-four: hsl(35, 25%, 65%);
+
+  --bordercolor-one: var(--silver-light);
+  --bordercolor-two: var(--dark-blue-three);
   --border-width: 0.5rem;
 
-  --coastline-shadow: 0vw 0vw 2vw 1.5vw darkblue;
+  --coastline-shadow: 0vw 0vw 2vw 1.5vw var(--dark-blue-two);
 
   --outer-coastline-bkgd: linear-gradient(
     90deg,
-    hsl(203, 68%, 61%),
-    hsl(203, 56%, 43%),
-    hsl(203, 65%, 65%),
-    hsl(203, 47%, 52%)
+    var(--blue-coastal-one),
+    var(--blue-coastal-two),
+    var(--blue-coastal-three),
+    var(--blue-coastal-four)
     );
     --outer-coastline-bkgd-size: 15% 15%;
     --outer-coastline-padding: 0.2rem;
   
     --inner-coastline: linear-gradient(
       90deg,
-      hsl(203, 68%, 61%),
-      hsl(203, 59%, 52%),
-      hsl(203, 65%, 65%),
-      hsl(203, 52%, 60%)
+      var(--blue-coastal-one),
+      var(--blue-coastal-five),
+      var(--blue-coastal-three),
+      var(--blue-coastal-six)
     );
   --inner-coastline-padding: 0.2rem;
 
-  --continent-border-color: hsl(0, 59%, 41%);
+  --continent-border-color: var(--brown);
   --continent-border: 0.2vw solid var(--continent-border-color);
   --continent-bkgd: linear-gradient(
     30deg,
-    hsl(34, 49%, 62%),
-    hsl(34, 49%, 62%),
-    hsl(45, 51%, 72%),
-    hsl(34, 49%, 62%),
-    hsl(45, 51%, 72%),
-    hsl(35, 25%, 65%)
+    var(--tan-continent-one),
+    var(--tan-continent-one),
+    var(--tan-continent-two),
+    var(--tan-continent-three),
+    var(--tan-continent-two),
+    var(--tan-continent-four)
   );
 
   // --continent-font: 'Tangerine';
@@ -89,10 +152,11 @@ body {
   --popup-header-margin-block: 1rem;
   --popup-border-radius: 0rem;
 
-  --popup-bkgd: hsl(0, 0%, 5%);
-  --popup-text-color: hsl(0, 0%, 90%);
-  --popup-link-text: hsl(250, 90%, 80%);
-  --popup-link-text-hover: hsl(250, 90%, 90%);
+  --popup-bkgd: var(--black-two);
+  --popup-text-color: var(--white-one);
+
+  --profile-popup-link: var(--blue-light-three);
+  --profile-popup-link-hover: var(--blue-light-two); 
 
   --project-summary-title: 1.1rem;
   --project-summary-text: 1.1rem;
@@ -105,7 +169,7 @@ body {
 
   --map-title: 3rem;
 
-  --focus-hover-highlight: yellow;
+  --focus-hover-highlight: var(--yellow-six);
 
   @include media-query-new(tablet-new) {
     --continent-title-size: clamp(2.25rem, 6vw, 5rem);
@@ -124,20 +188,58 @@ body {
     --popup-header-margin-block: 0.75rem;
   }
 
-  @include media-query-landscape-mobile {
-    --continent-title-size: 1.75rem;
-  }
+  /* project background gradients */
+  --be-human-gradient: linear-gradient(
+    180deg,
+    hsl( var(--blue-hue), var(--blue-sat), var(--blue-light-two)),
+    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-three)),
+    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-three)),
+    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-four)),
+    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-five))
+  );
+
+  --ebb-gradient: linear-gradient(
+    180deg,
+    hsl( var(--blue-mid-hue), var(--blue-mid-sat), var(--blue-mid-light-one)),
+    hsl(var(--blue-mid-hue), var(--blue-mid-sat), var(--blue-mid-light-two)),
+    hsl(var(--blue-mid-hue), var(--blue-mid-sat), var(--blue-mid-light-three)),
+    hsl(var(--blue-mid-hue), var(--blue-mid-sat), var(--blue-mid-light-four))
+  );
+  
+  --glowing-colors-gradient: linear-gradient(
+    180deg,
+    hsl( var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-one)),
+    hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-two)),
+    hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-three)),
+    hsl(var(--blue-dark-hue), var(--blue-dark-sat), var(--blue-dark-light-four))
+  );
+  
+  --major-arcana-gradient: linear-gradient(
+    180deg,
+    hsl( var(--black-gold-hue), var(--black-gold-sat), var(--black-gold-light-one)),
+    hsl(var(--black-gold-hue), var(--black-gold-sat), var(--black-gold-light-two)),
+    hsl(var(--black-gold-hue), var(--black-gold-sat), var(--black-gold-light-three))
+  );
+
+  --root-rpg-gradient: linear-gradient(
+    180deg,
+    hsl( var(--orange-hue), var(--orange-sat), var(--orange-light-one)),
+    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-two)),
+    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-three)),
+    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-four)),
+    hsl(var(--orange-hue), var(--orange-sat), var(--orange-light-five))
+  );
 }
 
 a {
-  color: hsl(90, 60%, 6%, 0.8);
+  color: var(--green-dark);
   text-decoration: none;
   outline: none;
   border-radius: inherit;
 }
 
 a:hover {
-  color: var(--darkestblue);
+  color: var(--dark-blue-one);
 }
 
 /* 

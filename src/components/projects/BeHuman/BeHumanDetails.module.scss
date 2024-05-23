@@ -1,20 +1,11 @@
 @use '../../../scss/' as *;
 
 .BeHumanDetails {
-  color: hsl(0, 0%, 0%);
-  
-  background: linear-gradient(
-      180deg,
-      hsl(199, 42%, 73%, 100%),
-      hsl(199, 42%, 73%, 80%),
-      hsl(199, 42%, 73%, 60%),
-      hsl(199, 42%, 73%, 40%),
-      hsl(199, 42%, 73%, 20%)
-    ),
-    hsl(199, 42%, 45%);
+  background: var(--be-human-gradient);
+  color: var(--black-two);
 
   img {
-    border: 0.15rem solid black;
+    border: 0.15rem solid var(--black-one);
     border-radius: 50%;
     width: 12rem;
     margin-top: 1.5rem;

@@ -6,11 +6,11 @@
 
   background: linear-gradient(
     90deg,
-    hsl(240, 100%, 27%),
-    hsl(258, 100%, 14%),
-    hsl(240, 100%, 27%),
-    hsl(258, 100%, 14%),
-    hsl(240, 100%, 27%),
+    var(--dark-blue-two),
+    var(--dark-blue-four),
+    var(--dark-blue-two),
+    var(--dark-blue-four),
+    var(--dark-blue-two)
   );
 
   background-blend-mode: soft-light;
