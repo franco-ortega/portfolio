@@ -123,10 +123,6 @@ body {
     --popup-title-size: 4rem;
     --popup-header-margin-block: 0.75rem;
   }
-
-  @include media-query-landscape-mobile {
-    --continent-title-size: 1.75rem;
-  }
 }
 
 a {
