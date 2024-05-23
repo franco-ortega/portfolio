@@ -1,17 +1,8 @@
 @use '../../../scss/' as *;
 
 .MajorArcanaSummary {
-  background: linear-gradient(
-      180deg,
-      hsl(0, 0%, 7%, 20%),
-      hsl(0, 0%, 7%, 40%),
-      hsl(0, 0%, 7%, 60%),
-      hsl(0, 0%, 7%, 80%),
-      hsl(0, 0%, 7%, 100%)
-    ),
-    hsl(0, 0%, 18%);
-
-  color: hsl(25, 66%, 69%);
+  background: var(--major-arcana-gradient);
+  color: var(--gold-dark);
 
   h2 {
     font-size: 1.5rem;
