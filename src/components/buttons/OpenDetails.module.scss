@@ -1,14 +1,14 @@
 @use '../../scss/' as *;
 
 .OpenDetails {
-  background-color: hsl(180, 100%, 95%);
+  background-color: var(--silver-light);
   border-radius: inherit;
   border: 0.1rem solid black;
   
   margin-top: 0.5rem;
   padding: 0.25rem 0.5rem;
 
-  color: hsl(0, 0%, 0%);
+  color: var(--black-one);
   font-size: var(--project-summary-button-text);
 
   &:hover {
