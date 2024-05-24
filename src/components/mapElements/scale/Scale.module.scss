@@ -4,13 +4,10 @@
   grid-column: 1 / 10;
   grid-row: 23 / 25;
 
-  padding: 0vw 0vw 2vw 6vw;
-  padding-block: 0 2vw;
-  padding-inline: 6vw 0;
-
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
 
   position: relative;
   z-index: -1;
@@ -20,15 +17,19 @@
   & > div:last-child {
     div + div {
       visibility: hidden;
+      width: 0;
     }
   }
 
   @include media-query-new(tablet-new) {
     grid-column: 1 / 9;
+    justify-content: flex-start;
+    padding-left: 2rem;
   }
 
   @include media-query-new(desktop-small-new) {
     grid-column: 1 / 6;
+    padding-left: 4rem;
   }
 
   @include media-query-new(desktop-large-new) {
@@ -40,9 +41,8 @@
   }
 
   @include media-query-landscape-mobile {
-    scale: 80%;
-    grid-column: 1 / 7;
-    padding: 0;
+    grid-column: 1 / 6;
+    grid-row: 22 / 25;
   }
 }
 
@@ -69,13 +69,11 @@
 
 .ScaleBlockBlack,
 .ScaleBlockWhite {
-  height: 1vw;
-  width: 4vw;
   border-top: 0.2vw gray solid;
   border-bottom: 0.2vw gray solid;
 
   height: 0.5rem;
-  width: 2.11rem;
+  width: 2rem;
 
   @include media-query-new(tablet-new) {
     height: 0.75rem;
@@ -85,6 +83,11 @@
   @include media-query-new(desktop-large-new) {
     height: 1rem;
     width: 4.25rem;
+  }
+
+  @include media-query-landscape-mobile {
+    height: 0.5rem;
+    width: 1.9rem;
   }
 }
 
