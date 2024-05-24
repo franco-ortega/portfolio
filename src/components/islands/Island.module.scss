@@ -13,6 +13,33 @@
   box-shadow: 0vw 0vw 1vw 1vw var(--coastline-shadow-color);
 
   padding: 0.2rem;
+
+  width: 100%;
+  max-width: 4rem;
+  min-width: fit-content;
+
+  height: 100%;
+  max-height: 3.25rem;
+
+  @include media-query-new(tablet-new) {
+    max-width: 6rem;
+    max-height: 4rem;
+  }
+  
+  @include media-query-new(desktop-small-new) {
+    max-width: 6rem;
+    max-height: 4rem;
+  }
+  
+  @include media-query-new(desktop-large-new) {
+    max-width: 7rem;
+    max-height: 4.5rem;
+  }
+
+  @include media-query-landscape-mobile {
+    max-width: 4rem;
+    max-height: 3rem;
+  }
 }
 
 .OuterCoastline:focus-within,
@@ -26,6 +53,10 @@
 
   padding: 0.25rem;
 
+  width: 100%;
+  height: 100%;
+  
+
   @include media-query-landscape-mobile {
     padding: 0.1rem;
   }
@@ -35,27 +66,30 @@
   border-radius: inherit;
   background: var(--continent-bkgd);
   background-size: 150% 150%;
-  
-  position: relative;
-  z-index: 1;
 
   padding: 0.65rem 0.5rem;
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  
   font-size: 0.75rem;
-  text-align: center;
+
+  p {
+    margin: auto;
+  }
 
   @include media-query-new(tablet-new) {
-    padding: 0.8rem 0.6rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    padding: 0;
   }
 
   @include media-query-new(desktop-large-new) {
-    padding: 0.9rem 0.75rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   @include media-query-landscape-mobile {
-    font-size: 0.5rem;
-    padding: 0.25rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -77,6 +111,7 @@
 
 /* media queries used
 @include media-query-new(tablet-new)
+@include media-query-new(desktop-small-new)
 @include media-query-new(desktop-large-new)
 @media (prefers-reduced-motion: no-preference)
 @include media-query-landscape-mobile

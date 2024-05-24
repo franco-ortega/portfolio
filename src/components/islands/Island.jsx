@@ -7,7 +7,9 @@ const Island = ({ title, url }) => {
     <div className={styles.OuterCoastline}>
       <a href={url} rel='noreferrer' target='_blank'>
         <div className={styles.InnerCoastline}>
-          <div className={styles.Island}>{title}</div>
+          <div className={styles.Island}>
+            <p>{title}</p>
+          </div>
         </div>
       </a>
     </div>
@@ -16,7 +18,7 @@ const Island = ({ title, url }) => {
 
 Island.propTypes = {
   title: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
 };
 
 export default Island;
