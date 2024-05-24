@@ -77,7 +77,8 @@
   }
 
   @include media-query-landscape-mobile {
-    grid-row: 1 / 8;
+    grid-column: 4 / 10;
+    grid-row: 1 / 7;
     padding-top: 1.5rem;
 
     header {
