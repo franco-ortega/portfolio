@@ -8,7 +8,11 @@ const GlowingColorsDetails = () => {
   return (
     <ProjectDetails>
       <div className={styles.GlowingColorsDetails}>
-        <ClosePopup path={'projects'} background={'black'} color={'white'} />
+        <ClosePopup
+          path={'projects'}
+          background={'var(--black-one)'}
+          color={'var(--white-two)'}
+        />
         <h3>Glowing Colors</h3>
         <h4>React | JavaScript | HTML | CSS</h4>
         <p>

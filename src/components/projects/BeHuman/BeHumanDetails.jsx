@@ -9,7 +9,12 @@ const BeHumanDetails = () => {
   return (
     <ProjectDetails>
       <div className={styles.BeHumanDetails}>
-        <ClosePopup path={'projects'} background={'white'} color={'black'} />
+        <ClosePopup
+          path={'projects'}
+          /* FYI: most ClosePopup buttons use --white-two, but --white-two better matched the beHuman image */
+          background={'var(--white-one)'}
+          color={'var(--black-one)'}
+        />
         <h3 className={styles.ProjectTitle}>beHuman</h3>
         <h4 className={styles.ProjectTech}>
           HTML | CSS | JavaScript | SQL | Node | Express | Supertest | Heroku

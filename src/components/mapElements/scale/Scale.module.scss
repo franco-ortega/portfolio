@@ -12,7 +12,7 @@
   position: relative;
   z-index: -1;
 
-  color: var(--white-one);
+  color: var(--white-two);
 
   & > div:last-child {
     div + div {
@@ -60,17 +60,17 @@
 }
 
 .ScaleBlockFirst {
-  border-left: 0.2vw gray solid;
+  border-left: 0.2vw var(--gray-one) solid;
 }
 
 .ScaleBlockLast {
-  border-right: 0.2vw gray solid;
+  border-right: 0.2vw var(--gray-one) solid;
 }
 
 .ScaleBlockBlack,
 .ScaleBlockWhite {
-  border-top: 0.2vw gray solid;
-  border-bottom: 0.2vw gray solid;
+  border-top: 0.2vw var(--gray-one) solid;
+  border-bottom: 0.2vw var(--gray-one) solid;
 
   height: 0.5rem;
   width: 2rem;
@@ -92,11 +92,11 @@
 }
 
 .ScaleBlockBlack {
-  background: black;
+  background-color: var(--black-one);
 }
 
 .ScaleBlockWhite {
-  background: white;
+  background-color: var(--white-one);
 }
 
 /* media queries used:
