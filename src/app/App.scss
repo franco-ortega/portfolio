@@ -90,11 +90,13 @@ body {
   --black-one: hsl(0, 0%, 0%);
   --black-two: hsl(0, 0%, 5%);
   --brown: hsl(0, 59%, 41%);
+  --gray-one: hsl(0, 0%, 50%);
   --green: hsl(120, 100%, 25%);
   --green-dark: hsl(90, 60%, 6%, 0.8);
   --silver-light: hsl(0, 0%, 95%);
   --silver-dark: hsl(0, 0%, 75%);
-  --white-one: hsl(0, 0%, 90%);
+  --white-one: hsl(0, 0%, 100%);
+  --white-two: hsl(0, 0%, 90%);
 
   --tan-continent-one: hsl(34, 49%, 62%);
   --tan-continent-two: hsl(45, 51%, 72%);
@@ -153,7 +155,7 @@ body {
   --popup-border-radius: 0rem;
 
   --popup-bkgd: var(--black-two);
-  --popup-text-color: var(--white-one);
+  --popup-text-color: var(--white-two);
 
   --profile-popup-link: var(--blue-light-three);
   --profile-popup-link-hover: var(--blue-light-two); 
