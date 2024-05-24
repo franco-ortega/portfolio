@@ -11,6 +11,7 @@ const BeHumanDetails = () => {
       <div className={styles.BeHumanDetails}>
         <ClosePopup
           path={'projects'}
+          /* FYI: most ClosePopup buttons use --white-two, but --white-two better matched the beHuman image */
           background={'var(--white-one)'}
           color={'var(--black-one)'}
         />
