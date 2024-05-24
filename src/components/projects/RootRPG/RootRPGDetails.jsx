@@ -8,7 +8,11 @@ const RootRPGDetails = () => {
   return (
     <ProjectDetails>
       <div className={styles.RootRPGDetails}>
-        <ClosePopup path={'projects'} background={'black'} color={'white'} />
+        <ClosePopup
+          path={'projects'}
+          background={'var(--black-one)'}
+          color={'var(--white-two)'}
+        />
         <h3>Root RPG Guide</h3>
         <h4>|</h4>
         <p>

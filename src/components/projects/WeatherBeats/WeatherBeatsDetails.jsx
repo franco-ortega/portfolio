@@ -8,7 +8,11 @@ const WeatherBeatsDetails = () => {
   return (
     <ProjectDetails>
       <div className={styles.WeatherBeatsDetails}>
-        <ClosePopup path={'projects'} background={'yellow'} color={'black'} />
+        <ClosePopup
+          path={'projects'}
+          background={'var(--yellow-four)'}
+          color={'var(--black-one)'}
+        />
         <h3>WeatherBeats</h3>
         <h4>
           React | CSS | Node | Express | WeatherBit API | Spotify API | Heroku |

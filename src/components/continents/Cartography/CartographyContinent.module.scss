@@ -50,7 +50,7 @@
   }
 
   @include media-query-landscape-mobile {
-    grid-column: 7 / 9;
+    grid-column: 6 / 8;
     grid-row: 19 / 25;
 
     & > div {
