@@ -9,7 +9,11 @@ const BeHumanDetails = () => {
   return (
     <ProjectDetails>
       <div className={styles.BeHumanDetails}>
-        <ClosePopup path={'projects'} background={'white'} color={'black'} />
+        <ClosePopup
+          path={'projects'}
+          background={'var(--white-one)'}
+          color={'var(--black-one)'}
+        />
         <h3 className={styles.ProjectTitle}>beHuman</h3>
         <h4 className={styles.ProjectTech}>
           HTML | CSS | JavaScript | SQL | Node | Express | Supertest | Heroku
