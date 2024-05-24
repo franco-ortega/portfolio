@@ -1,16 +1,25 @@
 @use '../../scss/' as *;
 
 .GitHub {
-  grid-column: 6 / 10;
+  grid-column: 7 / 10;
   grid-row: 14 / 18;
 
   z-index: 2;
 
   @extend %island-centering;
-  
+
+  @include media-query-new(tablet-new) {
+    grid-column: 7 / 10;
+    grid-row: 15 / 17;
+  }
+
   @include media-query-new(desktop-small-new) {
     grid-column: 5 / 7;
-    grid-row: 15 / 19;
+    grid-row: 16 / 19;
+  }
+  
+  @include media-query-new(desktop-large-new) {
+    grid-column: 6 / 7;
   }
 
   @include media-query-landscape-mobile {
@@ -20,6 +29,7 @@
 }
 
 /* media queries used
+  @include media-query-new(tablet-new)
   @include media-query-new(desktop-small-new)
   @include media-query-landscape-mobile
 */

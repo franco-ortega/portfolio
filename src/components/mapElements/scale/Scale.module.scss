@@ -1,7 +1,7 @@
 @use '../../../scss/' as *;
 
 .ScaleContainer {
-  grid-column: 1 / 13;
+  grid-column: 1 / 10;
   grid-row: 23 / 25;
 
   padding: 0vw 0vw 2vw 6vw;
@@ -24,7 +24,11 @@
   }
 
   @include media-query-new(tablet-new) {
-    grid-column: 1 / 7;
+    grid-column: 1 / 9;
+  }
+
+  @include media-query-new(desktop-small-new) {
+    grid-column: 1 / 6;
   }
 
   @include media-query-new(desktop-large-new) {
@@ -78,7 +82,7 @@
     width: 2.5rem;
   }
 
-  @include media-query-new(desktop-medium-new) {
+  @include media-query-new(desktop-large-new) {
     height: 1rem;
     width: 4.25rem;
   }
@@ -95,4 +99,5 @@
 /* media queries used:
   @include media-query-new(tablet-new)
   @include media-query-new(desktop-small-new)
+  @include media-query-new(desktop-large-new)
 */
