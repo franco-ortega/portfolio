@@ -4,10 +4,6 @@
   grid-column: 1 / 13;
   grid-row: 1 / 25;
 
-  & > * {
-    // outline: dashed 2px white;
-  }
-
   background: linear-gradient(
     90deg,
     var(--dark-blue-two),
