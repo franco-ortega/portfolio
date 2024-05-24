@@ -13,7 +13,6 @@
     transform: rotate(-15deg);
     margin: auto;
     border-radius: 60% 40% 60% 35%;
-    height: fit-content;
 
     &:hover {
       transform: rotate(-15deg);
@@ -37,6 +36,10 @@
   @include media-query-new(tablet-new) {
     grid-column: 5 / 9;
     grid-row: 20 / 23;
+
+    div {
+      height: fit-content;
+    }
   }
 
   @include media-query-new(desktop-small-new) {
@@ -44,6 +47,16 @@
 
     grid-column: 8 / 11;
     grid-row: 18 / 25;
+  }
+
+  @include media-query-landscape-mobile {
+    grid-column: 7 / 9;
+    grid-row: 19 / 25;
+
+    & > div {
+      height: fit-content;
+    }
+    
   }
 }
 

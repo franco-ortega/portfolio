@@ -24,6 +24,11 @@
     grid-column: 2 / 6;
     grid-row: 13 / 19;
   }
+
+  @include media-query-landscape-mobile {
+    grid-column: 3 / 6;
+    grid-row: 16 / 21;
+  }
 }
 
 /* media queries:
