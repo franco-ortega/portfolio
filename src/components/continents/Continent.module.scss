@@ -127,7 +127,6 @@
       // CONTINENT FONT SIZE FOR TITLE
       span {
         font-size: var(--continent-title-size);
-        // background-color: pink;
       }
 
       @include media-query-new(desktop-small-new) {
@@ -169,11 +168,26 @@
     max-width: 18rem;
     max-height: 10rem;
   }
+
+  @include media-query-landscape-mobile {
+    padding: .25rem;
+
+    max-width: 10rem;
+
+     div {
+      padding: .25rem;
+      div span {
+        // background-color : pink;
+        font-size: 2rem;
+      }
+     }
+  }
 }
 
 
 /* media queries:
   @include media-query-new(tablet-new)
   @include media-query-new(desktop-medium-new)
+  @include media-query-landscape-mobile
   @media (prefers-reduced-motion: reduce)
 */
