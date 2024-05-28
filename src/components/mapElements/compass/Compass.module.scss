@@ -1,19 +1,24 @@
 @use '../../../scss/' as *;
 
 .Compass {
+  grid-column: 10 / 13;
+  grid-row: 1 / 25;
+
+  align-self: flex-end;
+
   display: grid;
   height: 20vw;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
-
-  position: absolute;
-  right: 0;
-  bottom: 5%;
-  z-index: 2;
   
+  @include media-query-new(tablet-new) {
+    // grid-row: 20 / 25;
+  }
+
   @include media-query-new(desktop-small-new) {
     scale: 75%;
     transform: translate(20%, 20%);
+    // grid-row: 18 / 25;
   }
 
   @include media-query-landscape-mobile {
