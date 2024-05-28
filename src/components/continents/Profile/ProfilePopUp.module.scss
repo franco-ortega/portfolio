@@ -84,6 +84,7 @@
 
   @include media-query-landscape-mobile {
     display: flex;
+    align-items: center;
     gap: 1rem;
     
     --profile-popup-padding-bottom: 2rem;
