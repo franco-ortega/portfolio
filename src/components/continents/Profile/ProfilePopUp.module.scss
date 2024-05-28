@@ -24,7 +24,7 @@
       border-color: var(--popup-text-color);
       border-width: 2px;
       width: 15%;
-      min-width: 6rem;
+      min-width: 7rem;
       max-width: 20rem;
       margin-top: 1rem;
     }
@@ -91,6 +91,11 @@
     --profile-popup-padding-bottom: 2rem;
 
     header {
+
+      img {
+        min-width: 6rem;
+      }
+
       h2 {
         line-height: 1;
         text-wrap: nowrap;
