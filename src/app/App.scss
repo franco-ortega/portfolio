@@ -37,11 +37,11 @@ body {
 
   --blue-hue: 200;
   --blue-sat: 40%;
-  --blue-light-two: 75%;
-  --blue-light-three: 70%;
-  --blue-light-three: 65%;
-  --blue-light-four: 60%;
-  --blue-light-five: 55%;
+  --blue-light-75: 75%;
+  --blue-light-70: 70%;
+  --blue-light-65: 65%;
+  --blue-light-60: 60%;
+  --blue-light-55: 55%;
 
   --blue-mid-hue: 220;
   --blue-mid-sat: 45%;
@@ -193,11 +193,11 @@ body {
   /* project background gradients */
   --be-human-gradient: linear-gradient(
     180deg,
-    hsl( var(--blue-hue), var(--blue-sat), var(--blue-light-two)),
-    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-three)),
-    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-three)),
-    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-four)),
-    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-five))
+    hsl( var(--blue-hue), var(--blue-sat), var(--blue-light-75)),
+    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-70)),
+    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-65)),
+    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-60)),
+    hsl(var(--blue-hue), var(--blue-sat), var(--blue-light-55))
   );
 
   --ebb-gradient: linear-gradient(
