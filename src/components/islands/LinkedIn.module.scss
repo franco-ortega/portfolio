@@ -19,6 +19,7 @@
   }
 
   @include media-query-landscape-mobile {
+    grid-column: 9 / 11;
     grid-row: 19 / 23;
   }
 }

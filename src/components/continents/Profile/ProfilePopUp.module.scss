@@ -8,7 +8,7 @@
   padding-bottom: var(--profile-popup-padding-bottom);
   padding-inline: 1.5rem;
 
-  height: calc(100dvh - var(--border-width) * 2);
+  height: 100%;
 
   display: grid;
   grid-template-rows: auto auto;
@@ -71,16 +71,6 @@
     p + p {
       margin-top: 0.75rem;
     }
-    
-    @include media-query-new(tablet-new) {
-      height: auto;
-    }
-  }
-
-  @include media-query-new(tablet-new) {
-    --profile-popup-padding-bottom: 3rem;
-
-    height: calc(100dvh - var(--profile-popup-padding-top) - var(--profile-popup-padding-bottom));
   }
 
   @include media-query-landscape-mobile {
