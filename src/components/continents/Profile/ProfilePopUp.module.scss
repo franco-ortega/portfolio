@@ -88,6 +88,18 @@
     
     --profile-popup-padding-bottom: 2rem;
 
+    header {
+      h2 {
+        line-height: 1;
+        text-wrap: nowrap;
+        font-size: 3rem;
+      }
+
+      & > div {
+        font-size: 1rem;
+      }
+    }
+
     & > div {
       height: 100%;
     }
