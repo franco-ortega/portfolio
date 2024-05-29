@@ -23,13 +23,13 @@
     }
   }
 
-  @include media-query-new(desktop-desktop-new) {
+  @include media-query-new(desktop-medium-new) {
     & > * {
       outline: aliceblue 2px dashed;
     }
   }
 
-  @include media-query-new(desktop-desktop-new) {
+  @include media-query-new(desktop-large-new) {
     & > * {
       outline: gray 2px dashed;
     }

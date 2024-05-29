@@ -8,6 +8,8 @@
   padding-block: 0.5rem;
   padding-inline: 1rem;
 
+  max-width: 20rem;
+
   display: flex;
   align-items: center;
   
@@ -115,15 +117,14 @@
   }
 
   @include media-query-new(desktop-small-new) {
-    grid-column: 9 / 13;
-    grid-row: 5 / 16;
+    grid-column: 10 / 13;
+    grid-row: 5 / 17;
     justify-self: center;
   }
-
+  
   @include media-query-landscape-mobile {
-    grid-column: 9 / 13;
+    grid-column: 10 / 13;
     grid-row: 4 / 16;
-    max-width: 85%;
     max-height: 100%;
     justify-self: center;
   }

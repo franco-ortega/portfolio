@@ -26,6 +26,7 @@
   }
 
   @include media-query-landscape-mobile {
+    grid-column: 1 / 4;
     grid-row: 7 / 13;
   }
 }
