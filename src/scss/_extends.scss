@@ -5,3 +5,35 @@
   align-items: center;
   justify-content: center;
 }
+
+%outline {
+  @include media-query-new(tablet-new) {
+    & > * {
+      outline: red 2px dashed;
+    }
+  }
+  
+  @include media-query-new(desktop-small-new) {
+    & > * {
+      outline: lime 2px dashed;
+    }
+  }
+
+  @include media-query-new(desktop-desktop-new) {
+    & > * {
+      outline: aliceblue 2px dashed;
+    }
+  }
+
+  @include media-query-new(desktop-desktop-new) {
+    & > * {
+      outline: gray 2px dashed;
+    }
+  }
+
+  @include media-query-landscape-mobile() {
+    & > * {
+      outline: yellow 2px dashed;
+    }
+  }
+}
