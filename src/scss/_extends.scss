@@ -7,6 +7,10 @@
 }
 
 %outline {
+  & > * {
+    outline: pink 2px dashed;
+  }
+
   @include media-query-new(tablet-new) {
     & > * {
       outline: red 2px dashed;
